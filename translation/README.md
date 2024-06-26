@@ -11,4 +11,18 @@ API documentation <https://language-tools.ec.europa.eu/>
 
 A token for the service is available, ask Nick, RobK or Paul if you need it.
 
+```mermaid
+classDiagram
+    Translations 
+ 
+    class Translations{
+        key
+        lang_key
+        value
+        lang_value
+        ticket
+        date_inserted
+        date_updated
+    }
 
+```
