@@ -18,11 +18,10 @@ To understand if the dataset has a global, continental, national or regional sco
     - if smaller > regional
 - result is written to as an augmentation in a dedicated table
 
-| metadata-uri | metadata-element | source | value | proces |
-| --- | --- | --- | --- | --- |
-| https://geo.fi/data/ee44-aa22-33 | spatial-scope | 16.7,62.2,18,81.5 |  national | spatial-scope-analyser |
-| https://geo.fi/data/abc1-ba27-67 | spatial-scope | 17.4,68.2,17.6,71,2 |  regional | spatial-scope-analyser |
-
+| metadata-uri | metadata-element | source | value | proces | date |
+| --- | --- | --- | --- | --- | ---|
+| https://geo.fi/data/ee44-aa22-33 | spatial-scope | 16.7,62.2,18,81.5 |  https://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national | spatial-scope-analyser | 2024-07-04 |
+| https://geo.fi/data/abc1-ba27-67 | spatial-scope | 17.4,68.2,17.6,71,2 |  https://inspire.ec.europa.eu/metadata-codelist/SpatialScope/regional | spatial-scope-analyser | 2024-07-04 |
 
 ## Questions
 
