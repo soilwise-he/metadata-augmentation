@@ -30,3 +30,5 @@ To understand if the dataset has a global, continental, national or regional sco
 - in stead of retrieving as xml, we can also query the bbox directly from the harmonised records, not just the harvested iso19139 records?
 - should we consider the local scope (for example boundingbox smaller then 5km?)
 - what do we do with resources which have multiple spatial coverages, or a point as spatial coverage
+- should this component evaluate only EU datasets?
+- what to do with metadata of knowledge resources?
