@@ -32,3 +32,4 @@ To understand if the dataset has a global, continental, national or regional sco
 - what do we do with resources which have multiple spatial coverages, or a point as spatial coverage
 - should this component evaluate only EU datasets?
 - what to do with metadata of knowledge resources?
+- should we run this component also a second time after metadata is enhanced by AI or other metadata-augmentation components? The ratio of location attribute filled in will be assumably higher...
