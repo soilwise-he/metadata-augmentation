@@ -1,5 +1,17 @@
 # Metadata augmentation
 
+Repository relates mainly to task 2.3
+
+>  AI and ML for data findability and accessibility, M7-M46 (ISRIC, EV ILVO, WU, CREA, WE): AI and 
+>  ML techniques will be used to analyze (meta)data gaps and to complete/update metadata from available resources 
+>  to automatize the metadata adoption process and limit the amount of human effort. SIEUSOIL/FAO and INSPIRE 
+>  ontologies will be used as a basis for semantics-related tasks. AI- and ML-based linking and indexing based on 
+>  thesauri and gazetteers will enhance the state-of-the-art cataloguing and findability tools to support stakeholders in 
+>  obtaining the most relevant results. As such, we will provide precise and personalized answers that users can act 
+>  on immediately. AI and ML semantic inference will also be used to check the persistency and consistency of data 
+>  asset identification across multiple resources. [Outcome: D3.1]
+
+
 Use scripting/nlp/llm on a resource to augment metadata statements about a resource.
 
 Augmentations are stored on a dedicated augmentation table, indicating the process which produced it.
