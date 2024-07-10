@@ -2,14 +2,15 @@
 
 Repository relates mainly to task 2.3
 
->  AI and ML for data findability and accessibility, M7-M46 (ISRIC, EV ILVO, WU, CREA, WE): AI and 
->  ML techniques will be used to [analyze (meta)data gaps](#9) and to [complete/update metadata from available resources](#10) 
->  to [automatize the metadata adoption process](#11) and limit the amount of human effort. SIEUSOIL/FAO and INSPIRE 
->  [ontologies will be used as a basis for semantics-related tasks](#13). AI- and ML-based linking and indexing based on 
->  [thesauri and gazetteers](12) will enhance the state-of-the-art cataloguing and findability tools to support stakeholders in 
->  obtaining the most relevant results. As such, we will provide [precise and personalized answers](#14) that [users can act 
->  on immediately](#15). AI and ML semantic inference will also be used to [check the persistency and consistency of data 
->  asset identification](#16) across multiple resources. [Outcome: D3.1]
+>  AI and ML for data findability and accessibility, M7-M46 (ISRIC, EV ILVO, WU, CREA, WE)
+> 
+>  AI and ML techniques will be used to [analyze (meta)data gaps](https://github.com/soilwise-he/metadata-augmentation/issues/9) and to [complete/update metadata from available resources](https://github.com/soilwise-he/metadata-augmentation/issues/10) 
+>  to [automatize the metadata adoption process](https://github.com/soilwise-he/metadata-augmentation/issues/11) and limit the amount of human effort. SIEUSOIL/FAO and INSPIRE 
+>  [ontologies will be used as a basis for semantics-related tasks](https://github.com/soilwise-he/metadata-augmentation/issues/13). AI- and ML-based linking and indexing based on 
+>  [thesauri and gazetteers](https://github.com/soilwise-he/metadata-augmentation/issues/12) will enhance the state-of-the-art cataloguing and findability tools to support stakeholders in 
+>  obtaining the most relevant results. As such, we will provide [precise and personalized answers](https://github.com/soilwise-he/metadata-augmentation/issues/14) that [users can act 
+>  on immediately](https://github.com/soilwise-he/metadata-augmentation/issues/15). AI and ML semantic inference will also be used to [check the persistency and consistency of data 
+>  asset identification](https://github.com/soilwise-he/metadata-augmentation/issues/16) across multiple resources. [Outcome: D3.1](docs/D3.1/index.md)
 
 
 Use scripting/nlp/llm on a resource to augment metadata statements about a resource.
