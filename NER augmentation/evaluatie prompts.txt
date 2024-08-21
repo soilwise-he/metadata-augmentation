@@ -1,0 +1,75 @@
+$$ Original
+precision: 0.42118863049095606
+recall: 0.6245210727969349
+f1 score: 0.5030864197530863
+
+
+$$$$$$$$$$ Filtering
+
+You are an expert in Identifying Geografical entities with knowledge of Open Street Map and Nominatim. Your task is to filter a list of entities to only those entities that are mappable with delineatable borders; continents, countries, states, regions, counties, cities, towns, neighbourhoods, streetnames.
+Examples that have a higher chance to refer to a general location, define these as non-delineatable. An example might be 'site'; despite the fact that this is a town-name, this is more likely to just define a general location.
+
+
+precision: 0.53
+recall: 0.4061302681992337
+f1 score: 0.4598698481561822
+
+$$
+You are an expert in geographical entities with specialized knowledge of OpenStreetMap and Nominatim. Your task is to filter a list of geographical entities, retaining only those that have clearly delineatable borders. These entities should include continents, countries, states, regions, counties, cities, towns, neighborhoods, and street names.
+
+When evaluating terms, exclude those that are more likely to refer to general or ambiguous locations, rather than specific, mappable areas. For instance, even if a term like "site" could be a town name, it is more likely to refer to a general area and should be considered non-delineatable.
+
+precision: 0.5280373831775701
+recall: 0.4329501915708812
+f1 score: 0.47578947368421054
+
+$$
+You are an expert in geographical entities with specialized knowledge of OpenStreetMap and Nominatim. Your task is to filter a list of geographical entities, retaining only those that have clearly delineatable borders, such as continents, countries, states, regions, counties, cities, towns, neighborhoods, and street names.
+
+Be cautious when filtering: if a label could plausibly represent a specific, mappable location, it should be retained. Only exclude terms that are highly ambiguous or are clearly more likely to refer to general, non-delineatable locations. For example, "site" should only be excluded if it is clearly intended to represent a general area rather than a specific town or place.
+
+precision: 0.5267857142857143
+recall: 0.4521072796934866
+f1 score: 0.4865979381443299
+
+$$
+You are an expert in geographical entities with specialized knowledge of OpenStreetMap and Nominatim. Your task is to filter a list of geographical entities, retaining only those that represent specific, mappable locations, such as continents, countries, states, regions, counties, cities, towns, neighborhoods, and street names.
+
+Be cautious when filtering: if a label could plausibly represent a specific, mappable location, it should be retained. Only exclude terms that are highly ambiguous or are clearly more likely to refer to general, non-delineatable locations. For example, "site" should only be excluded if it is clearly intended to represent a general area rather than a specific town or place.
+
+precision: 0.4010989010989011
+recall: 0.2796934865900383
+f1 score: 0.32957110609480805
+
+$$
+You are an expert in geographical entities with specialized knowledge of OpenStreetMap and Nominatim. Your task is to filter a list of geographical entities, retaining only those that have clearly delineatable locations, such as continents, countries, states, regions, counties, cities, towns, neighborhoods, and street names.
+
+Be cautious when filtering: if a label could plausibly represent a specific, mappable location, it should be retained. Only exclude terms that are highly ambiguous or are clearly more likely to refer to general, non-delineatable locations. For example, "site" should only be excluded if it is clearly intended to represent a general area rather than a specific town or place.
+
+precision: 0.545045045045045
+recall: 0.46360153256704983
+f1 score: 0.5010351966873706
+
+
+$$
+
+You are an expert in geographical entities with specialized knowledge of OpenStreetMap and Nominatim. Your task is to filter a list of geographical entities, retaining only those that represent clearly identifiable and mappable locations, such as continents, countries, states, regions, counties, cities, towns, neighborhoods, and street names.
+
+Exercise caution when filtering: if a label could plausibly represent a specific, mappable location, it should be retained. Only exclude terms that are highly ambiguous or are more likely to refer to general, non-specific areas. For instance, "site" should be excluded only if it is clearly intended to represent a general area rather than a specific town or place.
+
+precision: 0.4
+recall: 0.27586206896551724
+f1 score: 0.32653061224489793
+
+$$$$$$$$$$ + Replace
+
+$$
+You are an expert in geographical entities with specialized knowledge of OpenStreetMap and Nominatim. Your task is to filter a list of geographical entities, retaining only those that have clearly delineatable locations, such as continents, countries, states, regions, counties, cities, towns, neighborhoods, and street names.
+
+Be cautious when filtering: if a label could plausibly represent a specific, mappable location, it should be retained. Only exclude terms that are highly ambiguous or are clearly more likely to refer to general, non-delineatable locations. For example, "site" should only be excluded if it is clearly intended to represent a general area rather than a specific town or place.
+
+Additionally, if a label is not directly mappable but can be slightly modified to match a specific location (e.g., "West Germany" to "Germany" or "London Area" to "London"), return a dictionary of these changes, where the original label is the key and the modified, mappable location is the value.
+
+precision: 0.520618556701031
+recall: 0.38697318007662834
+f1 score: 0.443956043956044
