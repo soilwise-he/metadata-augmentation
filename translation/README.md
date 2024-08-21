@@ -38,3 +38,4 @@ Error codes start with -, following error codes are of interest
 | -20021 | Text to translate too long | 
 | -20028 | Concurrency quota exceeded | 
 | -20029 | Document format not supported | 
+
