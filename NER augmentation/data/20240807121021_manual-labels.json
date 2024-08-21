@@ -1,0 +1,39 @@
+{
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/br12007_1.jpg": {
+        "labels": [
+            "Macap\u00e1"
+        ],
+        "text": "Macap\u00e1. Mapa Explorat\u00f3rio de Solos. Folha NA./NB.22. Volume 6. || Macap\u00e1. Mapa Explorat\u00f3rio de Solos. Folha NA./NB.22. Volume 6."
+    },
+    "5e2780c4-4c84-4387-a09f-266cab2b7de8": {
+        "labels": [
+            "Dornburg",
+            "Thuringia"
+        ],
+        "text": "Meteorological data, soil temperature and soil water content for Dornburg Conventional from 2016 to 2017 || The data set was provided by the responsible parties of the SIGNAL sub project \u201cEvaporation and transpiration of agroforestry\u201d. The objective of the sub project was to investigate the effect of agroforestry on evapotranspiration on a whole system scale. We applied the so called surface energy balance method to calculate half hourly evapotranspiration rates. Half hourly evapotranspiration rates were calculated as a residual of the net radiation, the sensible heat flux and the ground heat flux. Besides the latter energy balance components, also standard meteorological data, such as global radiation, air temperature, relative humidity, wind speed and -direction and precipitation were continuously measured since April 2016. All instruments were installed at a 3.5 m tall weather mast and the data were automatically collected. The weather mast was installed at the reference plot of Dornburg (Thuringia). That plot is treated as conventional agriculture, in this case crop land. The collected data at the reference plot were used to compare the evapotranspiration rates and microclimate data of the near by agroforestry plot (in about 500 m distance). The current data set contains standard meteorological data, soil temperature and -water content as 30 minute averages."
+    },
+    "741c911f-0514-407c-97b1-425cc20c45ab": {
+        "labels": [],
+        "text": "Effect of N fertilizers on yield, N-uptake, and N-utilization in wheat, barley, potatoes, and maize. - Plant laboratory values || Table with laboratory data from plant samples\n\nGeneral description see mother table: (https://doi.org/10.20387/bonares-fgzk-4p92); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_tz2020_4velu.jpg": {
+        "labels": [
+            "Mgeta"
+        ],
+        "text": "Lower Mgeta Area. Vegetation and Land Use. Map 5c. D.O.S. (L.U.) 3027A. || Lower Mgeta Area. Vegetation and Land Use. Map 5c. D.O.S. (L.U.) 3027A."
+    },
+    "297d858a-30bf-43e6-8dc9-1ea3dca1f5f3": {
+        "labels": [
+            "Hesse",
+            "Neu-Eichenberg",
+            "Dom\u00e4ne Frankenhausen"
+        ],
+        "text": "Focus Area - North Hessian Hill Country || <p>The Focus Area \u2013 North Hessian Hill Country. is located in the northern part of Hesse, Germany, encompassing two primary research sites: Neu-Eichenberg and Dom\u00e4ne Frankenhausen. This region is characterized by its rolling hills landscape, standing at an elevation ranging from 150 to 600 meters (Hohes Gras 614.8 m above sea level), which significantly influences the local climate and soil conditions.</p>\n<p>The terrain is predominantly formed by loess and clay, with soil types primarily consisting of Luvisols and ###, which are typically fertile but require careful management to prevent compression and ensure sustainability. The soils have a high silt content and a low to moderate clay content, with organic matter levels in the topsoil (0-25 cm) generally around 1.5-3% indicating a good potential for agricultural productivity. Altough it is partly relatively dry in the region.</p>\n<p>According to the K\u00f6ppen\u2013Geiger Climate Classification, the climate of the North Hessian Hill Country. is classified as Cfb, i.e., warm temperate and fully humid, with warm summers, with an average annual precipitation of approximately 600-800 mm and an average annual temperature of around 9.3\u00b0C (reference period 1991-2020). Recent decades have seen a slight increase in temperature reflecting broader patterns of climate change that can affect farming practices and ecosystem resilience in the area.</p>\n<p>The focus of research in Neu-Eichenberg and Dom\u00e4ne Frankenhausen includes the development and testing of sustainable agricultural practices tailored to the conditions of the North Hessian Hill Country. This involves the integration of agroforestry systems, the optimization of crop rotations to enhance soil health and biodiversity, and the implementation of organic farming techniques to reduce chemical inputs.</p>\n<p>Specific long-term experiments conducted in this focus area include studies on the impact of diversified cropping systems on soil fertility and crop yield stability, as well as the efficacy of various conservation tillage practices in preserving soil moisture and preventing erosion.</p>\n<p>The two research sites in the area manage in total over 336 hectares of arable land, with Soilscores ranging from 38-87 supporting a wide range of field trials and observational studies aimed at improving agricultural sustainability and resilience in the face of changing climate conditions. These efforts are crucial for developing adaptive strategies that can ensure food security and environmental protection in the North Hessian Hill Country and beyond.</p>\n<p>The two research sites belong to two different \u201cnatural areas\u201d (ger.: Naturr\u00e4umen). Dom\u00e4ne Frankenhausen belongs to the so called \u201cwesthessische senke (343.4)\u201c and the Research Site Neu-Eichenberg belongs to \u201c Weser-Leine mountain region \u201c (372.70). (Klausing O.1988)</p>"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/AF3011_2.jpg": {
+        "labels": [
+            "The Ghazni Valley"
+        ],
+        "text": "Land Classification Map. The Ghazni Valley. Vol. IV-11. || Land Classification Map. The Ghazni Valley. Vol. IV-11."
+    }
+}
