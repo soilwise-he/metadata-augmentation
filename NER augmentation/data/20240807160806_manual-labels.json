@@ -1,0 +1,90 @@
+{
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_za4000_7to.jpg": {
+        "labels": [
+            "South Africa",
+            "Noodsberg",
+            "Suid-Afrika"
+        ],
+        "text": "Noodsberg. 2930BD. South Africa. [Noodsberg. Suid-Afrika.] T.S.O. 200/4362. || Noodsberg. 2930BD. South Africa. [Noodsberg. Suid-Afrika.] T.S.O. 200/4362."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_kekija2.jpg": {
+        "labels": [],
+        "text": "\"\"\"Kijabe. Sheet \"\"\"\"134/3\"\"\"\". Y731 (D.O.S. 423).\"\"\" || \"\"\"Kijabe. Sheet \"\"\"\"134/3\"\"\"\". Y731 (D.O.S. 423).\"\"\""
+    },
+    "a45c7a1f-3dc5-478f-9d25-50dacd607d02": {
+        "labels": [
+            "Brandenburg"
+        ],
+        "text": "Soil values from the agricultural soil valuation for Brandenburg || The data set contains the results of the assessment of soil values for the entire state of Brandenburg. The assessment of soil values has been done according to the soil valuation law (Bodensch\u00e4tzungsgesetz, BodSch\u00e4tzG) with an established method for mapping and evaluating the natural productivity of all agriculturally areas including arable and grassland in Germany. The soil quality estimates result in values that indicate the ratio of the productivity of the estimated to the most productive agricultural area with a maximum value of 100 for arable land and 88 for grassland. The values are determined from information on soil type, geological formation of the soil, status level, and general climate and water conditions. The results of the assessment of soil values are available in digital form via the official real estate cadastre information system (Amtliches Liegenschaftskatasterinformationssystem, ALKIS) and are available throughout Germany (with the exception of Berlin). We extracted the soil values from the ALKIS for the whole state of Brandenburg to make these available digitally for further use."
+    },
+    "10.1785/0120190121": {
+        "labels": [
+            "Aceh",
+            "Andaman",
+            "Maule",
+            "Tohoku"
+        ],
+        "text": "Variability of ETAS Parameters in Global Subduction Zones and Applications to Mainshock\u00e2\u20ac\u201cAftershock Hazard Assessment || Megathrust earthquake sequences can impact buildings and infrastructure due to not only the mainshock but also the triggered aftershocks along the subduction interface and in the overriding crust. To give realistic ranges of aftershock simulations in regions with limited data and to provide time\u2010dependent seismic hazard information right after a future giant shock, we assess the variability of the epidemic\u2010type aftershock sequence (ETAS) model parameters in subduction zones that have experienced\u00a0M\u22657.5M\u22657.5\u00a0earthquakes, comparing estimates from long time windows with those from individual sequences. Our results show that the ETAS parameters are more robust if estimated from a long catalog than from individual sequences, given individual sequences have fewer data including missing early aftershocks. Considering known biases of the parameters (due to model formulation, the isotropic spatial aftershock distribution, and finite size effects of catalogs), we conclude that the variability of the ETAS parameters that we observe from robust estimates is not significant, neither across different subduction\u2010zone regions nor as a function of maximum observed magnitudes. We also find that ETAS parameters do not change when multiple\u00a0MM\u00a08.0\u20139.0 events are included in a region, mainly because an\u00a0MM\u00a09.0 sequence dominates the number of events in the catalog. Based on the ETAS parameter estimates in the long time period window, we propose a set of ETAS parameters for future\u00a0MM\u00a09.0 sequences for aftershock hazard assessment (\u2060K0=0.04\u00b10.02K0=0.04\u00b10.02\u2060,\u00a0\u03b1=2.3\u03b1=2.3\u2060,\u00a0c=0.03\u00b10.01c=0.03\u00b10.01\u2060,\u00a0p=1.21\u00b10.08p=1.21\u00b10.08\u2060,\u00a0\u03b3=1.61\u00b10.29\u03b3=1.61\u00b10.29\u2060,\u00a0d=23.48\u00b118.17d=23.48\u00b118.17\u2060, and\u00a0q=1.68\u00b10.55q=1.68\u00b10.55\u2060). Synthetic catalogs created with the suggested ETAS parameters show good agreement with three observed\u00a0MM\u00a09.0 sequences since 1965 (the 2004\u00a0MM\u00a09.1 Aceh\u2013Andaman earthquake, the 2010\u00a0MM\u00a08.8 Maule earthquake, and the 2011\u00a0MM\u00a09.0 Tohoku earthquake)."
+    },
+    "0086CC52-6F67-4393-99BE-7D3AB1B84160": {
+        "labels": [
+            "Germany"
+        ],
+        "text": "Boden\u00fcbersichtskarte der Bundesrepublik Deutschland 1:5.000.000 || Soil Map of the Federal Republic of Germany 1:5,000,000. Focused on information about the parent material, and generalization"
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=11#11-23": {
+        "labels": [
+            "Europe"
+        ],
+        "text": "Soil Resources of Europe, Second edition || Soil Resources of Europe, Second edition"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_za4000_2toso.jpg": {
+        "labels": [
+            "South Africa",
+            "Suid-Afrika"
+        ],
+        "text": "Bodemcaart. South Africa. [Bodemcaart. Suid-Afrika.] || Bodemcaart. South Africa. [Bodemcaart. Suid-Afrika.]"
+    },
+    "10.1016/j.enggeo.2016.09.005": {
+        "labels": [],
+        "text": "A general analytical solution for the evolution of cliffs accounting for strength degradation, seismic action, formation of tension cracks and seepage || Abstract   The evolution of natural slopes over time is ruled by several concurrent physical phenomena, namely the strength of its component geomaterials and their weakening over time due to weathering processes, the occurrence of seismic events, seepage and the formation of tension cracks. The paper presents analytical solutions obtained considering a succession of discrete failure events (landslides) progressively altering the slope morphology over time. The model, derived in the framework of limit analysis assuming plane strain conditions, provides a tool for the assessment of whether manufacts and/or infrastructures located on a slope subject to various natural degradation phenomena will be affected by the occurrence of failures.  Unlike current empirical and semi-empirical models of slope evolution, the analytical solution that is here presented is derived by applying principles of soil and rock mechanics, therefore it is of general validity, so that no ad\u2013hoc calibration against past observations of the evolving slope is needed. This analytical technique only requires knowledge of the (geotechnical) parameters characterising the geomaterials comprising the slope of interest, namely angle of shearing resistance, \u03d5, cohesion, c, tensile strength, unit weight, together with knowledge of the relevant seepage scenarios, strength degradation processes, and seismic events likely to occur.  Results show that that earthquake loading and seepage can substantially decrease slope stability, increase the volume of material sliding away during each landslide event and alter the evolution of the slope over time, while tensile strength exhibits a less strong influence especially as strength degradation progresses. Dimensionless ready-to-use charts are provided for the benefit of practitioners."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_acz_6_1.jpg": {
+        "labels": [
+            "Africa"
+        ],
+        "text": "Agro-Climatic Zonification. Major Climatic Divisions and Lengths of Growing Period Zones. Africa. Sheet VI-1. || Agro-Climatic Zonification. Major Climatic Divisions and Lengths of Growing Period Zones. Africa. Sheet VI-1."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_tz2020_1to.jpg": {
+        "labels": [
+            "Lower Mgeta Area",
+            "Mgeta"
+        ],
+        "text": "Lower Mgeta Area. Environmental Zones. Map 3. D.O.S. (L.U.) 3027B. || Lower Mgeta Area. Environmental Zones. Map 3. D.O.S. (L.U.) 3027B."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_kemwrsm.jpg": {
+        "labels": [
+            "Mandera District",
+            "Wajir District",
+            "Mandera",
+            "Wajir"
+        ],
+        "text": "Mandera District. Map 12a. Wajir District. Map 12b. Richness in soils minerals. For key to Landforms and soils symbols see Map 11a and Map 11b. || Mandera District. Map 12a. Wajir District. Map 12b. Richness in soils minerals. For key to Landforms and soils symbols see Map 11a and Map 11b."
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=0#0-24": {
+        "labels": [],
+        "text": "Progress and challenges in sustainable land management initiatives: A global review || Progress and challenges in sustainable land management initiatives: A global review"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_cpdo.jpg": {
+        "labels": [
+            "Dahomey"
+        ],
+        "text": "Carte Pedologique de la Republique du Dahomey. || Carte Pedologique de la Republique du Dahomey."
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=14#14-12": {
+        "labels": [
+            "Pavia"
+        ],
+        "text": "Il Suolo della Provincia di Pavia (Volume II) || Il Suolo della Provincia di Pavia (Volume II)"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/LK3018_LU.jpg": {
+        "labels": [
+            "Vavuniya District"
+        ],
+        "text": "Vavuniya District. Land Use. || Vavuniya District. Land Use."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/MY3005_1SO.jpg": {
+        "labels": [
+            "West Malaysia",
+            "Malaysia"
+        ],
+        "text": "Present Land Use. West Malaysia. Sheet 1. || Present Land Use. West Malaysia. Sheet 1."
+    }
+}
