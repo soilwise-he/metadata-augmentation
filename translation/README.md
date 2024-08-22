@@ -16,10 +16,10 @@ classDiagram
     Translations 
  
     class Translations{
-        key
-        lang_key
-        value
-        lang_value
+        source
+        target
+        lang_source
+        lang_target
         ticket
         date_inserted
         date_updated
@@ -27,5 +27,15 @@ classDiagram
 
 ```
 
-## actual translations
+## Error codes
+
+Error codes start with -, following error codes are of interest
+
+| code   | description |
+| ---    | --- | 
+| -20001 | Invalid source language | 
+| -20003 | Invalid target language(s) | 
+| -20021 | Text to translate too long | 
+| -20028 | Concurrency quota exceeded | 
+| -20029 | Document format not supported | 
 
