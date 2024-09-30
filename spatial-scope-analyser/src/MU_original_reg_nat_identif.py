@@ -10,10 +10,10 @@ import geopandas as gpd
 import folium
 from shapely.geometry import Polygon
 # %%
-with open('../coverage/countries-area.json', 'r', encoding='utf-8') as f:
+with open('countries-area.json', 'r', encoding='utf-8') as f:
     states_areas = json.load(f)
 
-with open('../countrylist.json', 'r') as f:
+with open('countrylist.json', 'r') as f:
     countries = json.load(f)
 
 # %%
@@ -22,6 +22,7 @@ YEAR = 2022
 
 DATA_DIR = '../SIEUSOILmining'
 folders = os.listdir(DATA_DIR)
+
 # FUNCTIONS
 
 
