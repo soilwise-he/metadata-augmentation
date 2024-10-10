@@ -70,80 +70,42 @@ class trans(BaseModel):
     source: str
     context: str
 
-@app.post("/translate") #we use post, to prevent non url safe chars
-def translate(tdata: trans):
-    lang_source = tdata.lang_source
-    lang_target = tdata.lang_target
-    source = tdata.source
-    tcontext = tdata.context or ''
-    ls = isoMatch(lang_source)
-    ts = isoMatch(lang_target)
+# @app.post("/translate") #we use post, to prevent non url safe chars
+# def translate(tdata: trans):
+#     lang_source = tdata.lang_source
+#     lang_target = tdata.lang_target
+#     source = tdata.source
+#     tcontext = tdata.context or ''
+#     ls = isoMatch(lang_source)
+#     ts = isoMatch(lang_target)
     
-    if not (ls and ts and f"{ls}-{ts}".upper() in LanguagePairs):
-        raise HTTPException(status_code=404, detail=f"Translation {ls}-{ts} not available")
+#     if not (ls and ts and f"{ls}-{ts}".upper() in LanguagePairs):
+#         raise HTTPException(status_code=404, detail=f"Translation {ls}-{ts} not available")
     
-    # query database on existance of string in language
-    myrec = dbQuery("select target, source from harvest.translations where source=%s and lang_source=%s and lang_target=%s;",(source,ls,ts))
+#     # query database on existance of string in language
+#     myrec = dbQuery("select target, source from harvest.translations where source=%s and lang_source=%s and lang_target=%s;",(source,ls,ts))
 
-    # if yes, return it
-    if myrec and len(myrec) > 0: 
-        for r in myrec:
-            target, source = r 
-            return(target)
-    else: 
-        # if not return default, # todo: insert it, to be translated
-        myrec = insertSQL("harvest.translations",['source','lang_source','lang_target','date_inserted','context'],(source,ls,ts,datetime.now(),tcontext))
-        # todo: request translation?
-        # requestRecord(lang_source,lang_target,source)
-        return(source)
+#     # if yes, return it
+#     if myrec and len(myrec) > 0: 
+#         for r in myrec:
+#             target, source = r 
+#             return(target)
+#     else: 
+#         # if not return default, # todo: insert it, to be translated
+#         myrec = insertSQL("harvest.translations",['source','lang_source','lang_target','date_inserted','context'],(source,ls,ts,datetime.now(),tcontext))
+#         # todo: request translation?
+#         # requestRecord(lang_source,lang_target,source)
+#         return(source)
 
-@app.get('/requestTrans')
-def requestTrans():
 
-    # query database for pending translations
-    myrecs = dbQuery('select source,lang_source,lang_target from harvest.translations where ticket is null and target is null')
-    # for each string to be translated, make a request
-    for rec in myrecs:
-        source,lang_source,lang_target = rec 
-        requestRecord(lang_source,lang_target,source)
-        
-    return "OK"
-
-def requestRecord(lang_source,lang_target,source):
-
-    translationRequest = {}
-    translationRequest['sourceLanguage'] = lang_source
-    translationRequest['targetLanguages'] = [lang_target]
-    translationRequest['callerInformation'] = {"application" : applicationName, "username":"ingest-bot"}
-    translationRequest['textToTranslate'] = source
-    translationRequest['requesterCallback'] = f'{domain}/callback'
-
-    jsonTranslationRequest = json.dumps(translationRequest)
-    jsonHeader = {'Content-Type': 'application/json', 'Accept': 'application/json'}
-    requestId = None
-
-    try:
-        response = requests.post(eTranslationRestUrl, auth=HTTPDigestAuth(applicationName, password), headers = jsonHeader, data=jsonTranslationRequest)  
-        response.raise_for_status()
-        requestId = response.text
-    except requests.exceptions.HTTPError as err:
-        print(err)
-        
-    print(response.text)
-
-    if(requestId and requestId not in [None,'']):
-        # insert the ticket to the database, to identify which string to be updated
-        dbQuery("update harvest.translations set ticket=%s where lang_source=%s and lang_target=%s and source=%s;",(requestId,lang_source,lang_target,source),hasoutput=False)
-        return requestId
-    else:
-        return "Error: No requestId"
 
 @app.post('/callback')
 def callback(requestId: Annotated[str, Form(alias="request-id")], 
              targetLanguage: Annotated[str, Form(alias="target-language")], 
              translatedText: Annotated[str, Form(alias="translated-text")]):
 
-    dbQuery("update harvest.translations set target=%s, date_updated=%s where ticket=%s and lang_target=%s;",(translatedText,datetime.now(),requestId,targetLanguage),hasoutput=False)
+    print(f'{requestId}: {translatedText} ({targetLanguage})')
+    dbQuery("update harvest.translations set target=%s, date_updated=%s where ticket=%s",(translatedText,datetime.now(),requestId),hasoutput=False)
 
     # update string in translation table with updated value (remove ticket)
 
