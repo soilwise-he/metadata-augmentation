@@ -1,0 +1,43 @@
+{
+    "05abfa4d-110f-45cc-aabb-b1074b9c4809": {
+        "labels": [],
+        "text": "International long-term experiment (LTE) 'Organic and Mineral Nitrogen Fertilization Experiment' (IOSDV) - Table 'PROBENAHME_BODEN' || Child table of long-term field experiment 'Organic and Mineral Nitrogen Fertilization Experiment (IOSDV)'. This data set contains information on the soil cultivation measures that were carried out each year. General description about the IOSDV experiment can be found in the table 'Plots'.\nRelated datasets are listed in the metadata element 'Related Identifier'.\n\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//Eudasm/NL/neth_x166.jpg": {
+        "labels": [
+            "Nederland Aalten",
+            "Aalten"
+        ],
+        "text": "Bodemkaart van Nederland Aalten || Bodemkaart van Nederland Aalten"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/TH3016_9TOVE.jpg": {
+        "labels": [
+            "Changwat Rayong",
+            "Rayong"
+        ],
+        "text": "Changwat Rayong. Series 1501 S. Sheet ND 47-16. || Changwat Rayong. Series 1501 S. Sheet ND 47-16."
+    },
+    "c7818e71-2f69-424c-b9bc-de160aaf127c": {
+        "labels": [],
+        "text": "Determination of spider mite abundance in soil of field-grown cucumbers and in plants under predatory mite pressure in invasive infestations using HRM real-time PCR assay (Part 1 of data collection, table KERSTEN_ET_AL_DATA_FIG4) || Between 2017 and 2019 we studied the abundance of spider mites in the soil to estimate the potential infestation pressure of soil colonizing spider mites. The spider mites were heterogeneously distributed in small concentrations in the soil. Soil colonizing spider mites did not affect spider mite abundance on plants and reversed. We observed that spider mite migration occurred primarily from the edge of the field adjacent to the weed strip. In 2020 and 2021, we investigated the efficacy of the predatory mite Neoseiulus californicus (McGregor) for suppressing spider mite hotspots in the cropland. We compared untreated spider mite hotspots with N. californicus treated hotspots and showed that a single release of predatory mites could result in a high level of control when spider mite infestation density was initially high. With this study, soil can be ruled out as a habitat for spider mites, and attention to spider mite pest control can be directed to plant infestations. The highly sensitive HRM real-time PCR assay was used for the quantification of the spider mites. Tetranychus urticae served as reference. Research domain: Soil Sciences Research question: Does the soil serve as a shelter for spider mites and must the soil be included in control strategies? Does invasive infestation by spider mites occur on crops starting from the soil? Can the targeted use of predatory mites contain spider mite hotspots?\ntable KERSTEN_ET_AL_DATA_FIG4:\nSpider mite abundance in the soil of cucumber plots measured 2017 to 2019. Three different open field cucumber plots were investigated per year: A-C 2017; D-F 2018; G-I 2019. Sampling always took place in April, July, and September. Spider mites were detected by HRM real-time PCR (spider mite number/ 100 g sample).\n\nRelated datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/KZ/russ_x62.jpg": {
+        "labels": [
+            "Kazakh SSR"
+        ],
+        "text": "Title in Russian. (Agricultural Landscape of the Kazakh SSR, USSR (West Part)). || Title in Russian. (Agricultural Landscape of the Kazakh SSR, USSR (West Part))."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_gma_s1.jpg": {
+        "labels": [
+            "Africa"
+        ],
+        "text": "Geological Map of Africa. Sheet No. 1. [Carte G\u00e9ologique de l || Geological Map of Africa. Sheet No. 1. [Carte G\u00e9ologique de l"
+    },
+    "https://esdac.jrc.ec.europa.eu//content/phosphorus-cycle-european-agricultural-soils": {
+        "labels": [
+            "UK",
+            "EU"
+        ],
+        "text": "Phosphorus cycle in European agricultural soils - ESDAC - European Commission || Title: Modelled phosphorus cycle in European agricultural soils.\nDescription: Phosphorus (P) is an essential nutrient for all crops, yet its excess negatively affects public health, the environment, and the economy. At the same time, rock P is a critical raw material due to its importance for food production, the finite geological deposits, and its unequal regional distribution. Process-based biogeochemical models are valuable instruments to monitor the P cycle and predict the effect of agricultural management policies. Therefore, we upscale the calibrated DayCent model at the European level using data-derived soil properties, advanced input data sets, and representative management practices. Our results depicted a P budget, total soil P, and available P content consistent with literature and national statistics. Agricultural management scenarios revealed a range of potential changes in the P budget by 2030 and 2050, influenced by the interlink of P with biogeochemical carbon and nitrogen cycles. Thus, the approach used was capable of i) identifying areas with P surplus or deficit at high spatial resolution of 1 km2, ii) pinpointing areas where a change in agricultural management would be most urgent to reach policy goals in terms of environmental pollution, food security and resource efficiency of a critical raw material, and iii) predicting the response of the P cycle to modifications in agricultural management. Available datasets include Current P Budget and Soil Pools, Projected P Budget and Soil Pools for the EU and UK as well the datasets corresponding to the figures of the related manuscript.Spatial coverage: EU+UKPixel size: 1kmMeasurement Unit: kg ha-1 year-1 for balance - Other measurement units for the rest of the files (described in detail in the Download page)Projection: ETRS89-LAEATemporal coverage:\u00a0 2010-2019 and future projections for 2020-2029 and 2040-2049\nType of Dataset: GeoTiff.\nReference: Muntwyler, A., Panagos, P., Pfister, S., & Lugato, E. (2024). Assessing the phosphorus cycle in European agricultural soils: Looking beyond current national phosphorus budgets. Science of The Total Environment, 906: 167143.\nAll Rasterfiles, R scripts and QGIS project used for the analyses presented in Muntwyler et al. are available for download. Associated README document mentions the libraries needed and the purposes of each script or project in the workflow. The R scripts can also be accessed from the GitHub account annam-esd (https://github.com/annam-esd/P_EU)."
+    }
+}
