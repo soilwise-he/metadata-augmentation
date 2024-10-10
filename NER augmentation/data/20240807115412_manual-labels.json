@@ -1,0 +1,46 @@
+{
+    "https://esdac.jrc.ec.europa.eu//Eudasm/UK/South-West_Scotland6.jpg": {
+        "labels": [
+            "Scotland"
+        ],
+        "text": "Soil Survey of Scotland 1:250 000 scale soil map of South West Scotland; Sheet 6 || Soil Survey of Scotland 1:250 000 scale soil map of South West Scotland; Sheet 6"
+    },
+    "c01d7dcc-ff05-4773-9c0b-6de920bb2434": {
+        "labels": [
+            "Forst"
+        ],
+        "text": "Web Map Service of the dataset 'Pich\u00e9 evaporation at agroforestry site in Forst, 2019 and 2020' || This Web Map Service includes spatial information used by datasets 'AGIS Map Service of the dataset 'Pich\u00e9 evaporation at agroforestry site in Forst, 2019 and 2020''"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_kemaiko.jpg": {
+        "labels": [
+            "East Africa"
+        ],
+        "text": "\"\"\"Maikona. Sheet \"\"\"\"43\"\"\"\". Metre Grid (East Africa). Zone H. Series Y633.\"\"\" || \"\"\"Maikona. Sheet \"\"\"\"43\"\"\"\". Metre Grid (East Africa). Zone H. Series Y633.\"\"\""
+    },
+    "09adf1ad-a388-40e0-a61f-ba30d300cef9": {
+        "labels": [
+            "Germany"
+        ],
+        "text": "Tree species composition of a landscape in north-eastern Germany in 1780, 1890 and 2010 || This data set contains information about main tree species in 1780 and 1890 derived from different sources. Geodata base is the hand drawn Schmettau Map (1:50.000, ca. 1780) and the Prussian Land Survey (scale 1:25.000, ca. 1890). Additional information from other sources where aligned and added. In total about 200 maps and the same number of archival documents where checked for reconstruction of spatial explicit tree species localities.  This table contains the index of all tables forming this data collection.\n\nRelated datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "6b664e1e-15ff-4bcb-8cd6-fef048a653a6": {
+        "labels": [],
+        "text": "Validation and field application of a low-cost device to measure CO2 and ET fluxes - Field ET flux measurements || ET flux measurements from field trial application of low-cost measurement device.\n\nRelated datasets are listed in the metadata element 'Related Identifier'."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_shlu5c.jpg": {
+        "labels": [
+            "St. Helena"
+        ],
+        "text": "St. Helena. Land Use. Map 5c. || St. Helena. Land Use. Map 5c."
+    },
+    "70304e68-c369-4c1b-8d54-79f48bc182c4": {
+        "labels": [],
+        "text": "Web Map Service of the dataset 'Influence of crop rotational position on soil structure under and rooting of winter wheat' || This WMS  Map Service includes spatial information used by datasets 'Web Map Service of the dataset 'Influence of crop rotational position on soil structure under and rooting of winter wheat''"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/uy13003_su.jpg": {
+        "labels": [
+            "Laguna Merin"
+        ],
+        "text": "Mapa de Aptitud para Riego. Proyecto Regional Laguna Merin. [Map on Irrigation Suitability] || Mapa de Aptitud para Riego. Proyecto Regional Laguna Merin. [Map on Irrigation Suitability]"
+    }
+}

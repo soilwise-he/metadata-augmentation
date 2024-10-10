@@ -1,6 +1,30 @@
 # Metadata augmentation
 
-Use nlp/llm on a resource to augment metadata statements about a resource
+Repository relates mainly to task 2.3
+
+>  AI and ML for data findability and accessibility, M7-M46 (ISRIC, EV ILVO, WU, CREA, WE)
+> 
+>  AI and ML techniques will be used to [analyze (meta)data gaps](https://github.com/soilwise-he/metadata-augmentation/issues/9) and to [complete/update metadata from available resources](https://github.com/soilwise-he/metadata-augmentation/issues/10) 
+>  to [automatize the metadata adoption process](https://github.com/soilwise-he/metadata-augmentation/issues/11) and limit the amount of human effort. SIEUSOIL/FAO and INSPIRE 
+>  [ontologies will be used as a basis for semantics-related tasks](https://github.com/soilwise-he/metadata-augmentation/issues/13). AI- and ML-based linking and indexing based on 
+>  [thesauri and gazetteers](https://github.com/soilwise-he/metadata-augmentation/issues/12) will enhance the state-of-the-art cataloguing and findability tools to support stakeholders in 
+>  obtaining the most relevant results. As such, we will provide [precise and personalized answers](https://github.com/soilwise-he/metadata-augmentation/issues/14) that [users can act 
+>  on immediately](https://github.com/soilwise-he/metadata-augmentation/issues/15). AI and ML semantic inference will also be used to [check the persistency and consistency of data 
+>  asset identification](https://github.com/soilwise-he/metadata-augmentation/issues/16) across multiple resources. [Outcome: D3.1](docs/D3.1/index.md)
+
+
+Use scripting/nlp/llm on a resource to augment metadata statements about a resource.
+
+Augmentations are stored on a dedicated augmentation table, indicating the process which produced it.
+
+| metadata-uri | metadata-element | source | value | proces | date |
+| --- | --- | --- | --- | --- | --- |
+| https://geo.fi/data/ee44-aa22-33 | spatial-scope | 16.7,62.2,18,81.5 |  https://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national | spatial-scope-analyser | 2024-07-04 |
+| https://geo.fi/data/abc1-ba27-67 | soil-thread | This dataset is used to evaluate Soil Compaction in Nuohous Sundström | http://aims.fao.org/aos/agrovoc/c_7163 | keyword-analyser | 2024-06-28 |
+
+Scripts in this repo extract a subset of records for which no augmentation has been predicted yet, or an existing augmentation should be updated (and the source record does not already provide the missing content). This can be achieved by querying the records table with a left-join to the augmentation table (or an inner query). Database connection parameters are inserted via environment variables.
+
+At intervals the code is released as a docker image, which can be used in CI-CD scripts.
 
 ## Translation module
 
@@ -12,13 +36,22 @@ Many records arrive in a local language, we aim to capture at least english main
 
 Read more at <https://language-tools.ec.europa.eu/>
 
+[read more](./translation/)
+
 ## Keyword Matcher
 
 Analyses existing keywords on a metadata record, it matches an existing keyword to a list of predefined keywords, augmenting the keyword to include a thesaurus and uri reference (potentially a translation to english)
 
 It requires a database (relational or rdf) with common thesauri
 
+[read more](./keyword-matcher/)
+
 ## Spatial Locator
 
 Analyses existing keywords to find a relevant geography for the record, it then uses the geonames api to find spatial coordinates for the geography, which are inserted into the metadata record
 
+[read more](./spatial-locator/)
+
+## spatial scope analyser
+
+[read more](./spatial-scope-analyser/)
