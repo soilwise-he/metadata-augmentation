@@ -1,0 +1,132 @@
+{
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_tdnmpd.jpg": {
+        "labels": [
+            "Niellim.",
+            "Tchad"
+        ],
+        "text": "Carte P\u00e9dologique de Reconnaissance de la R\u00e9publique du Tchad. Niellim. || Carte P\u00e9dologique de Reconnaissance de la R\u00e9publique du Tchad. Niellim."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_veg1.jpg": {
+        "labels": [],
+        "text": "Carte Agricole de l || Carte Agricole de l"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/US/us_x19back.jpg": {
+        "labels": [],
+        "text": "Soil Conservation Service Activities (sheet no.2) || Soil Conservation Service Activities (sheet no.2)"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/US/us12.jpg": {
+        "labels": [
+            "Idaho"
+        ],
+        "text": "General Soil Map Idaho || General Soil Map Idaho"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_s5_goc.jpg": {
+        "labels": [
+            "Afrika"
+        ],
+        "text": "Afrika Kartenwerk Serie S || Afrika Kartenwerk Serie S"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/LK3004_GE.jpg": {
+        "labels": [
+            "Sri-Lanka"
+        ],
+        "text": "Geological Map of Sri-Lanka. || Geological Map of Sri-Lanka."
+    },
+    "dd49a3c4-38a2-4695-be36-72ff9303487c": {
+        "labels": [
+            "Rostock",
+            "Saskatoon"
+        ],
+        "text": "Lysimeter data Rostock: P speciation of soil as determined by P K-edge XANES (Data collection) || The dataset contains P K-edge XANES data for soils from three sampling depths of three soil profiles from along a hill slope in Northern Germany. Monoliths of these profiles were later used in lysimeter experiments. Data inform about the proportion of different P-species in soil as determined by P K-edge X-ray absorption near-edge structure (XANES) spectroscopy carried out at the SXRMB beamline at the Canadian Light Source (Saskatoon, Canada). They are published in Baumann et al. 2020, Speciation and sorption of phosphorus in agricultural soil profiles of redoximorphic character, EGAH, doi: 10.1007/s10653-020-00561-y \n\nResearch area: Soil science\n\nResearch question: Controlled drainage may affect phosphorus mobilization in soil. To assess the P mobilization potential, three soil profiles with redoximorphic features were selected along a slight hill slope and soil samples were taken from three different depths. The characterization of P K-edge X-ray absorption near edge structures (XANEs) informs about the species of P present at different soil depths. Since soil profiles were excavated during lysimeter monolith sampling, P K-edge XANEs also reflect the monolith P species occurring at different depths in the lysimeters."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/XA2009_2SU.jpg": {
+        "labels": [
+            "Lower Mekong Basin",
+            "Bassin Inferieur du Mekong",
+            "Mekong"
+        ],
+        "text": "Lower Mekong Basin. Crop Suitability Map. South Sheet. [Bassin Inferieur du Mekong. Carte d || Lower Mekong Basin. Crop Suitability Map. South Sheet. [Bassin Inferieur du Mekong. Carte d"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/br12004_1so.jpg": {
+        "labels": [
+            "Pico da Neblina"
+        ],
+        "text": "Pico da Neblina. Mapa Explorat\u00f3rio de Solos. Folha NA.19. Volume 11. || Pico da Neblina. Mapa Explorat\u00f3rio de Solos. Folha NA.19. Volume 11."
+    },
+    "https://esdac.jrc.ec.europa.eu//Eudasm/NL/neth_x90.jpg": {
+        "labels": [
+            "Nederland Winschoten",
+            "Winschoten"
+        ],
+        "text": "Bodemkaart van Nederland Winschoten || Bodemkaart van Nederland Winschoten"
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=13#13-22": {
+        "labels": [],
+        "text": "An Evaluation of the Short-Term Progress of Restoration Combining Ecological Assessment and Public Perception || An Evaluation of the Short-Term Progress of Restoration Combining Ecological Assessment and Public Perception"
+    },
+    "3a8e2bed-60d3-4264-8f8a-e6c83131addc": {
+        "labels": [
+            "Northern Germany",
+            "Germany"
+        ],
+        "text": "Spatial and temporal spider abundance and emergence data for five temperate alley-cropping agroforestry sites from 2022 || This dataset is provided by the SIGNAL subproject \u201cMacrofauna diversity and pest control in temperate agroforestry systems\u201d and contains spider count data from emergence traps of five cropland alley-cropping sites in Northern Germany. Each site comprised a paired alley-cropping agroforestry system (AF) and an adjacent open cropland system (OC) serving as a reference land-use system without trees. At each agroforestry system, four subplots were arranged along linear transects orthogonal to the orientation of the tree rows, with a sampling point at the center of the tree row and at 1, 7, and 24 m (center of the crop row) distance from the tree row edge into the crop row. Open cropland systems had 4 subplots (sampling point) with a minimum distance of 25 m between each other and at least 30 m to the field margins. In total, 20 emergence traps (16 agroforestry, 4 open cropland) were set up at each site. Emergence traps consisted of a white gauze tent covering an area of 0.36 m2 (60 x 60 cm; height: 60 cm) with sides buried 10 cm deep to ensure no exchange between inside and outside. Inside the tents, a pitfall trap (95mm opening diameter, 639 ml volume) and a bottle at the top of the tent were filled with a 50/50 mixture of propylene glycol and water to catch arthropods. Traps were emptied from March to July 2022 monthly, yielding five trapping periods. Adult spiders were identified to species level.\n\nResearch domain: Ecology of Agricultural Landscapes\n\nResearch question: Do alley-cropping agroforestry systems provide more spider overwintering and emergence habitats than open cropland systems and therefore enable earlier build-up of predator communities?"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/uy13003_su.jpg": {
+        "labels": [],
+        "text": "Mapa de Aptitud para Riego. Proyecto Regional Laguna Merin. [Map on Irrigation Suitability] || Mapa de Aptitud para Riego. Proyecto Regional Laguna Merin. [Map on Irrigation Suitability]"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_mmps.jpg": {
+        "labels": [
+            "Prov\u00edncia de Maputo",
+            "Maputo"
+        ],
+        "text": "Prov\u00edncia de Maputo. Carta de Solos. || Prov\u00edncia de Maputo. Carta de Solos."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/TH3004_1SO.jpg": {
+        "labels": [
+            "Nakhonnayok Province",
+            "Nakhonnayok"
+        ],
+        "text": "Major Soil Characteristics Nakhonnayok Province. Legend. || Major Soil Characteristics Nakhonnayok Province. Legend."
+    },
+    "10.1016/j.scitotenv.2020.144026": {
+        "labels": [],
+        "text": "Treated wastewater reuse for irrigation: Pros and cons || The appropriateness of using treated wastewater for crop or agricultural irrigation remains a bone of contention among experts and policymakers. Here, we outline and analyze not only the benefits but also the drawbacks of such a practice in order to suggest a way forward. To ensure that our review reflects the state-of-the-art in terms of technological advances and best practices, only literature published in the last decade is considered except for literature on the history of reuse. The review begins by highlighting growing water scarcity, the history of wastewater reuse in agriculture, and the limitations of existing studies. A short overview of the approach used in the write-up is outlined after the introduction. It then proceeds with an in-depth look at three broad areas: environmental impacts, public health impacts, and economic impacts. In terms of environmental impacts, effects on soil quality, water resources, plant growth, and soil microbial communities are analyzed. For each sub-area, the positive effects are described before the negative ones. The same approach is then applied to public health impacts, the focus of which is on human exposure to heavy metals and pathogens, and economic impacts, which are assessed with particular reference to investment cost, financial benefit to wastewater treatment plants (WWTPs), farm expenditure and income. Having weighed the advantages and disadvantages in each area, innovative measures are proposed for optimizing the benefits and mitigating the drawbacks of using treated wastewater for crop irrigation. Special consideration was given to contaminants of emerging concern and the known or perceived environmental and health risks associated with these contaminants."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_kesoko2.jpg": {
+        "labels": [
+            "Sokoke"
+        ],
+        "text": "\"\"\"Sokoke. Sheet \"\"\"\"192/4\"\"\"\". Series Y731 (SK 61).\"\"\" || \"\"\"Sokoke. Sheet \"\"\"\"192/4\"\"\"\". Series Y731 (SK 61).\"\"\""
+    },
+    "cb4d8fea-3d77-4c03-8741-787339c5cdfb": {
+        "labels": [
+            "Benin"
+        ],
+        "text": "Improving the water use efficiency of irrigated rice cultivation in Benin, West Africa - Yields || Grain and straw yield from the harvested area.\n\nGeneral description see mother table: (https://doi.org/10.4228/zalf-yjjf-j357); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/VN2001_2SO.jpg": {
+        "labels": [
+            "Kontum Province",
+            "Kontum"
+        ],
+        "text": "Soil Resources of Kontum Province. || Soil Resources of Kontum Province."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/PG3004_3.jpg": {
+        "labels": [
+            "Papua New Guinea",
+            "Kerema"
+        ],
+        "text": "Kerema-Vailala Area. Territory of Papua New Guinea. Vegetation and Forest Resources. || Kerema-Vailala Area. Territory of Papua New Guinea. Vegetation and Forest Resources."
+    },
+    "4fcaa48d-aef8-4f80-aa54-5dd992ad4333": {
+        "labels": [
+            "Germany"
+        ],
+        "text": "Variance Analysis Dataset - Yields N-level Environment || This table (Variance Analysis Dataset - Yields N-level Environment) is part of a larger file dataset that contains processed data and information used in the meta-analysis \u201cYield development of German winter wheat between 1958 and 2015\u201d of the Project \u201cData-Meta Analysis to assess the productivity development of cultivated plants\u201d funded by the DFG. This table contains the final data used for the variance analysis in this project and derived from the entire dataset, which comprises the following data:\n- Winter wheat (Triticum aestivum) yields and nitrogen application amounts from nitrogen fertilization experiments of variable duration (1-6 years) carried out at 43 locations across Germany and between 1958 and 2015 found in 34 different sources in the literature.\n- The derived maximum yields (Ymax) and optimal nitrogen amounts (Nopt) from the nitrogen experiments, function coefficients, and statistics.\n- Geographical information (latitude, longitude, altitude) and other site specific information of the experimental sites (soil type, soil yield potential, mean annual temperature, mean annual precipitation, mean annual climatic water balance, soil climate region, cultivation region).\n- Processed phenological and climatic data for each experimental site."
+    },
+    "10.1016/j.scitotenv.2021.147527": {
+        "labels": [],
+        "text": "Cerium, gadolinium, lanthanum, and neodymium effects in simplified acid mine discharges to Raphidocelis subcapitata, Lepidium sativum, and Vicia faba || The alteration of rare earth elements (REEs) biogeochemical cycles has increased the potential effects related to their environmental exposure in a one-health perspective. Cerium (Ce), gadolinium (Gd), lanthanum (La), and neodymium (Nd) are frequently related to technological applications and their environmental concentrations are already in the \u03bcg/kg \u2013 mg/kg (i.e., or L) range depending on the considered matrices. The effect of Ce, Gd, La, and Nd was investigated in a simulated AMD (0.01\u201310.22 mg/L) at pH 4 and 6 considering a battery of photosynthetic organisms (Raphidocelis subcapitata, Lepidium sativum, and Vicia faba) according to a multiple-endpoint approach (growth inhibition, germination index, and mutagenicity). According to modelled chemical speciation, the considered elements were mostly in the trivalent free form (86\u201388%) at pH 4. Gd, La, and Nd exerted the most relevant toxic effect at pH 4. The pH 6 scenario evidenced a reduction in REEs toxicity level. Mutagenicity was detected only at pH 4 by Gd (up to 3-fold compared to negative controls), La and Nd, while Ce did not show any adverse effect. Toxic effects due to Ce, Gd, La, and Nd can be reduced by controlling the pH, but several gaps of knowledge still remain about their uptake and trophic transfer, and long-term effects on targeted species."
+    }
+}
