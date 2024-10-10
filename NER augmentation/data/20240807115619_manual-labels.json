@@ -1,0 +1,14 @@
+{
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/MY3006_4LU.jpg": {
+        "labels": [
+            "Kuching. Sarawak"
+        ],
+        "text": "Kuching. Sarawak. Land Use. Series No. 22. Sheet NA 49-10. || Kuching. Sarawak. Land Use. Series No. 22. Sheet NA 49-10."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_kekili1.jpg": {
+        "labels": [
+            "Kilifi"
+        ],
+        "text": "\"\"\"Kilifi. Sheet \"\"\"\"198/2\"\"\"\". Series Y731.\"\"\" || \"\"\"Kilifi. Sheet \"\"\"\"198/2\"\"\"\". Series Y731.\"\"\""
+    }
+}

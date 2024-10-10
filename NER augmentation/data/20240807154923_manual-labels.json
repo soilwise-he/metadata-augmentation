@@ -1,0 +1,499 @@
+{
+    "05abfa4d-110f-45cc-aabb-b1074b9c4809": {
+        "labels": [],
+        "text": "International long-term experiment (LTE) 'Organic and Mineral Nitrogen Fertilization Experiment' (IOSDV) - Table 'PROBENAHME_BODEN' || Child table of long-term field experiment 'Organic and Mineral Nitrogen Fertilization Experiment (IOSDV)'. This data set contains information on the soil cultivation measures that were carried out each year. General description about the IOSDV experiment can be found in the table 'Plots'.\nRelated datasets are listed in the metadata element 'Related Identifier'.\n\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//Eudasm/NL/neth_x166.jpg": {
+        "labels": [
+            "Nederland Aalten",
+            "Aalten"
+        ],
+        "text": "Bodemkaart van Nederland Aalten || Bodemkaart van Nederland Aalten"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/TH3003_1SO.jpg": {
+        "labels": [
+            "Chanthaburi Province",
+            "Chanthaburi"
+        ],
+        "text": "Detailed Reconnaissance Soil Map of Chanthaburi Province. [Base: AMS Topo Map Series L 7017, Scale 1:50,000] || Detailed Reconnaissance Soil Map of Chanthaburi Province. [Base: AMS Topo Map Series L 7017, Scale 1:50,000]"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/RS/russ_x84.jpg": {
+        "labels": [
+            "Serbia"
+        ],
+        "text": "Soil Map Serbia || Soil Map Serbia"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/US/us_x16.jpg": {
+        "labels": [
+            "Hawaii"
+        ],
+        "text": "Generilized Soil Map Island Of Hawaii || Generilized Soil Map Island Of Hawaii"
+    },
+    "379b2ed1-741d-484f-97a6-cdf5dcf4fa5b": {
+        "labels": [
+            "Hohenschulen"
+        ],
+        "text": "RhizoWheat \u2013 Agronomic data, long term experiment \u201cV68\u201d || The project RhizoWheat aims at elucidating processes leading to yield decline of wheat grown in self-succession. The long-term experiment \u201cV68\u201d established in 1989, was a long-term crop rotation field experiment at Kiel University\u00b4s experiment station \u201cHohenschulen\u201d. During the last years of the experiment the crop rotation was faba bean- oat- oilseed rape, wheat, wheat, wheat. The first and the third wheat after oilseed rape was cultivated with four different N fertilization levels (0, 120, 240, 320 kg N ha-1) and three wheat varieties (Nordkap, Elixer, Tobak) were used. Here we present soil moisture data of the last three seasons of the experiment (2019/20 to 2021/22) for wheat."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/US/us_x20leg.jpg": {
+        "labels": [
+            "United States"
+        ],
+        "text": "Soils In The United States || Soils In The United States"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_mazcspd2.jpg": {
+        "labels": [
+            "Chaouia"
+        ],
+        "text": "Carte P\u00e9dologique des Zaers. De la Basse Chaouia (N.E.) et des Sehouls. Panneau Est. || Carte P\u00e9dologique des Zaers. De la Basse Chaouia (N.E.) et des Sehouls. Panneau Est."
+    },
+    "10.1016/j.jbiomech.2016.04.023": {
+        "labels": [],
+        "text": "Mapping soil deformation around plant roots using in vivo 4D X-ray computed tomography and digital volume correlation || The mechanical impedance of soils inhibits the growth of plant roots, often being the most significant physical limitation to root system development. Non-invasive imaging techniques have recently been used to investigate the development of root system architecture over time, but the relationship with soil deformation is usually neglected. Correlative mapping approaches parameterised using 2D and 3D image data have recently gained prominence for quantifying physical deformation in composite materials including fibre-reinforced polymers and trabecular bone. Digital Image Correlation (DIC) and Digital Volume Correlation (DVC) are computational techniques which use the inherent material texture of surfaces and volumes, captured using imaging techniques, to map full-field deformation components in samples during physical loading.<br/><br/>Here we develop an experimental assay and methodology for four-dimensional, in vivo X-ray Computed Tomography (XCT) and apply a Digital Volume Correlation (DVC) approach to the data to quantify deformation. The method is validated for a field-derived soil under conditions of uniaxial compression, and a calibration study is used to quantify thresholds of displacement and strain measurement. The validated and calibrated approach is then demonstrated for an in vivo test case in which an extending maize root in field-derived soil was imaged hourly using XCT over a growth period of 19 h. This allowed full-field soil deformation data and 3D root tip dynamics to be quantified in parallel for the first time.<br/><br/>This method paves the way for comparative studies of contrasting soils and plant genotypes, improving our understanding of the fundamental mechanical processes which influence root system development."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/xs11009_2.jpg": {
+        "labels": [
+            "South America"
+        ],
+        "text": "Tectonic Map of South America. || Tectonic Map of South America."
+    },
+    "5392b39d-fd8c-4f6e-9522-c77f76a81941": {
+        "labels": [],
+        "text": "Effect of N fertilizers on yield, N-uptake, and N-utilization in wheat, barley, potatoes, and maize. - Plant protection || Table with information about applied plant protection measures\n\nGeneral description see mother table: (https://doi.org/10.20387/bonares-fgzk-4p92); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=19#19-14": {
+        "labels": [
+            "Crete"
+        ],
+        "text": "Seasonal monitoring of soil erosion at regional scale: An application of the G2 model in Crete focusing on agricultural land uses || Seasonal monitoring of soil erosion at regional scale: An application of the G2 model in Crete focusing on agricultural land uses"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/LK2008.jpg": {
+        "labels": [
+            "Sri-Lanka",
+            "Ceylon"
+        ],
+        "text": "Sri-Lanka (Ceylon). || Sri-Lanka (Ceylon)."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_nig_smmr.jpg": {
+        "labels": [],
+        "text": "Soil/Morphological Map of Rivers State. (By Slar Imagery Interpretation Supplementary Lines from Existing Maps). Figure 5. || Soil/Morphological Map of Rivers State. (By Slar Imagery Interpretation Supplementary Lines from Existing Maps). Figure 5."
+    },
+    "6171c625-898c-431b-9353-e22f8039781d": {
+        "labels": [
+            "Dikopshof"
+        ],
+        "text": "Long-Term Fertilization Trial Dikopshof List of Harvesting Dates || This table lists the known harvesting dates for all crops cultivated in the long-term fertilization experiment Dikopshof within the period 1906-2009.\nThe data collection \"Long-Term Fertilization Trial Dikopshof\" consists of 16 tables, which are related to each other. A proper citation notice can be found in the \u201cAccess\u201d section."
+    },
+    "2a3d1b59-350c-4db6-a28c-ed31407c1fa4": {
+        "labels": [],
+        "text": "Kinetics of P-desorption from Fe- and Al-hydroxides using KCl, KNO3, histidine, and malic acid || The dataset describes phosphorus kinetic desorption data from crystalline and amorphous Fe- and Al-hydroxides with reaction times of 2, 6, 24, 48, 168, and 336 h by using 0.005 and 0.05 M KCl, KNO3, histidine, and malic acid at pH 6.\n\nResearch domain: Plant Nutrition\n\nResearch question: How do organic and inorganic compounds affect potential phosphorus mobilization from single and binary Fe- and Al-hydroxides?"
+    },
+    "29bb7bff-e98b-4c1a-8c0d-65dd7de5cced": {
+        "labels": [
+            "G\u00fclzow"
+        ],
+        "text": "Model Output Scenario Analysis 2023 - Dataset GUL Rothardt Kage 2023 || This tables contains plant-soil-process-model results for the years 1990 to 2015 for G\u00fclzow.\n\nGeneral description see mother table: (https://doi.org/10.20387/bonares-kp4s-ddbj); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//content/isoil-project-interactions-between-soil-related-sciences": {
+        "labels": [
+            "Rosslau",
+            "Fuhrberger Feld",
+            "Nischwitz",
+            "Bad Lauchst\u00e4dt",
+            "Litavka River",
+            "Lany Farm",
+            "Kremikovtsi",
+            "Rosslau",
+            "Ruzyne",
+            "Wagna"
+        ],
+        "text": "iSOIL project (Interactions between soil related sciences) - ESDAC - European Commission || iSOIL project is an FP7 one dealing with new technologies for assessing soil properties along depth accurately and with high resolution by combining existing sensors as well as exploring emerging technologies (mainly geophysical). The current page is including a Data Dissemination Platform for the test sites of iSoil Project. iSOIL has generated a wealth of data (maps and associated data sets) integrated for the Nine (9) main project field sites that can be used by other scientists. The following sites and datasets are included in the iSOIL Data:\n\nRosslau (Germany): EM31, EM38DD, Gamma, Magnetics, Geoelectrics, Surface Wave\nFuhrberger Feld (Germany): EM38DD (Geophysics EMI), Natural gamma-ray spectrometry\nNischwitz (Germany): EM38DD\nBad Lauchst\u00e4dt (Germany): EM38, Geophysics Gamma Spectrometry, Surface wave, Magnetics\nLitavka River (Czech Republic): EM38, Geophysics Gamma Spectrometry\nLany Farm (Czech Republic): Cation Exchange Capacity (CEC), EM31, EM38DD(Geophysics EMI), Magnetics, FeOxides, Geophysics Gamma Spectrometry, pH, SOM, Grain size, Geoelectrics\nRuzyne (Czech Republic): EM38DD (Geophysics EMI), Geophysics Gamma Spectrometry\nWagna (Austria): EM38DD (Geophysics EMI), Geophysics Gamma Spectrometry\nKremikovtsi (Bulgaria): EM38 (Geophysics EMI), Geophysics Gamma Spectrometry, Magnetics\n\niSOIL data are integrated into the European Soil Data Centre(ESDAC) in order to enhance the collaboration on, and further use of, the data generated in the iSOIL project, also beyopnd the project's lifetime. The data can be downloaded for free and used under the conditions set in the License agreement. More information about the iSoil Project.\n\u00a0\nDownload the Data\nThe data of iSoil are provided in various formats (Shape files, Text files, etc). To get access to the data of the iSOIL project (9 Catchments), please compile the Request form; instructions will then follow how to download the data.\n\n\u00a0\n\nExample of Catchment: Rosslau\nBrief Description: Map of apparent electrical conductivity and soil moisture content at the iSOIL field site in Rosslau measured by Helmholtz Centre for Environmental Research- UFZ\n\n\n\nCatchment Location\nZoom Area\nDescription;\nMetadata\nData\n\n\n\n\nMap of apparent electrical conductivity and soil moisture content at the iSOIL field site in Rosslau measured by Helmholtz Centre for Environmental Research- UFZ\nVolumetric soil moisture content (%) measured by Time Domain Reflectance (TDR); point dataApparent electrical conductivity (mS/m) measured with EM31-MK2\u00a0\nMetadata\n\nVolumetric soil moisture content (%) as measured by TDR (Time Domain Reflectance); point data\nApparent electrical conductivity(mS/m) measured with EM31-MK2 ; continuous data\nNew Dykesite\nOld Dyke site\nHabitats"
+    },
+    "500e7063-e828-4e82-b533-91c80a010817": {
+        "labels": [
+            "Czech"
+        ],
+        "text": "P\u016fdn\u00ed mapa 1 : 50 000 || Soil map at a scale of 1 : 50,000 of the new digital edition of the Czech Geological Survey (since 2012)"
+    },
+    "154f64b7-3117-4a32-b7cb-5749c5dc9d2a": {
+        "labels": [
+            "Hohenschulen"
+        ],
+        "text": "Maize and cover crop biomass development, soil mineral N and water contents at Hohenschulen field site in the first and second trial year of Rhizo4Bio \u2013 RootWayS project. - Green area index of maize during the second trial (2022) || Green area index was determined 4 times during the vegetation period (2022). Green area index was measured using LI-3100C Area Meter.\n\nGeneral description see mother table: (https://doi.org/10.20387/bonares-kja7-z295); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/MY2000_SOTO.jpg": {
+        "labels": [
+            "Malaya"
+        ],
+        "text": "Soil Map of Malaya, 1962. || Soil Map of Malaya, 1962."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_zw3003_1to.jpg": {
+        "labels": [
+            "Zimbabwe"
+        ],
+        "text": "Zimbabwe. Plumtree. Sheet SF-35-3. || Zimbabwe. Plumtree. Sheet SF-35-3."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_ngsrsp1.jpg": {
+        "labels": [
+            "Nigeria"
+        ],
+        "text": "Soil Resources map of Nigeria. Map of soil potentialities. Based on predicted results from adequate soil management practices. Based on the soil map of Africa by C.C.T.A. || Soil Resources map of Nigeria. Map of soil potentialities. Based on predicted results from adequate soil management practices. Based on the soil map of Africa by C.C.T.A."
+    },
+    "8ef45947-3c2a-4bbf-896f-796cb2593af8": {
+        "labels": [],
+        "text": "Web Map Service of the dataset 'Spectra LUCAS for BonaRes database I4S' || This WMS Map Service includes spatial information used by datasets 'AGIS Map Service of the dataset 'Spectra LUCAS for BonaRes database I4S''"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_ngsms1.jpg": {
+        "labels": [
+            "Nigeria"
+        ],
+        "text": "Soils map of Nigeria. || Soils map of Nigeria."
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=1#1-3": {
+        "labels": [
+            "Europe"
+        ],
+        "text": "Land-use-and climate-mediated variations in soil bacterial and fungal biomass across Europe and their driving factors || Land-use-and climate-mediated variations in soil bacterial and fungal biomass across Europe and their driving factors"
+    },
+    "3fcd463d-3d28-401e-9fc3-d4a8ad2a9df4": {
+        "labels": [
+            "Hohenschulen"
+        ],
+        "text": "Soil and rhizosphere properties related to carbon allocation processe at Hohenschulen field site in the first trial year of Rhizo4Bio \u2013 RootWayS project. - Acid phosphatase affinity to the substrate in soil samples at maize BBCH50 || Acid phosphatase affinity was measured in soil samples from cover crop root channels and maize rhizosphere at maize BBCH stage 50 (18 weeks after termination of the cover crops).\n\nGeneral description see mother table: (https://doi.org/10.20387/bonares-mpsx-gk22); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "10.1016/j.geoderma.2020.114851": {
+        "labels": [],
+        "text": "Fusion of Vis-NIR and XRF spectra for estimation of key soil attributes || Abstract   Precision agriculture (PA) is an integrated solution to optimize the application of farming inputs site-specifically to increase crops efficiency, reduce resources consumption, and protect the environment. Recently, visible-near- infrared (Vis-NIR) and X-ray-fluorescence (XRF) have emerged as efficient and inexpensive proximal soil sensing (PSS) methods for assessment of soil attributes in support of PA applications. The goal of this study was to explore the potential of data fusion in accuracy improvement of predicting key soil attributes using Vis-NIR and XRF spectra. More specifically, local weighted regression (LWR) and partial least squares (PLS) regression methods were examined and compared in prediction of the following soil attributes: pH, organic carbon (OC), phosphorous (P), magnesium (Mg), calcium (Ca), and sodium (Na). Besides the individual-sensor models, we evaluated three data fusion approaches basedon spectra fusion (SF). The first method concatenates the full Vis-NIR and XRF spectra before PLS (SF1-PLS). In the second SF approach (SF2-PLS), the concatenation of the principal components (PCs) of the two spectra types \u2013 each resulted from a principal component analysis (PCA) \u2013 were used as input to PLS. The last proposed method, SF-CNN, uses a convolutional neural network (CNN) with input in form of a matrix whose columns are the PCs of the Vis-NIR and the PCs of the XRF spectra. To evaluate the proposed methods, a total 267 soil samples of nine arable fields were collected and scanned in laboratory settings using a Vis-NIR and an XRF spectrometer. For each soil attribute, the samples of six fields were used as the calibration set while the samples of the remaining three fields were used for validating the prediction models. The individual-sensor and SF models were evaluated in terms of ratio of performance to inter-quartile (RPIQ), root mean square error (RMSE), and Lin\u2019s concordance correlation coefficient (LCCC). The validation results showed that PLS generally outperforms LWR. Also, the prediction accuracy obtained from Vis-NIR spectra was better than that of XRF for all the attributes, except for Ca. The proposed SF schemes, especially the SF-CNN, outperformed the individual models in the prediction of all attributes, except P and Ca. The best improvement of the prediction results, compared to the individual-sensor models, was obtained for Mg (RPIQ\u00a0=\u00a01.60, RMSE\u00a0=\u00a06.88\u00a0mg/100\u00a0g, LCCC\u00a0=\u00a00.93), successively followed by pH (RPIQ\u00a0=\u00a02.52, RMSE\u00a0=\u00a00.36, LCCC\u00a0=\u00a00.68), and Na (RPIQ\u00a0=\u00a01.69, RMSE\u00a0=\u00a02.55\u00a0mg/100\u00a0g, LCCC\u00a0=\u00a00.65). Overall, the results of this study suggest the CNN-based fusion for the prediction of the studied key soil fertility attributes in order to enable making accurate decisions and control loop in PA applications using high-resolution data on spatiotemporal variability of soil."
+    },
+    "a8151020-b06a-427c-9565-d63236a8787d": {
+        "labels": [
+            "Germany"
+        ],
+        "text": "Survey of farmers on their perception of soil compaction and application of soil conservation measures || While the scientific aspects of soil compaction are studied since decades, there is hardly insight on knowledge and perception of this topic among farmers. Furthermore, there is hardly information on the dissemination of soil conservation measures to avoid soil compaction. For this reason, we conducted a German-wide online survey among farmers on this topic in autumn/winter 2017/2018. A further aim was to collect information on the dissemination of new technologies (apps) and to identify possible gaps in information services. The quantitative survey was conducted with the software LimeSurvey. Farmers were invited via various channels (professional journals, mailing lists of interest groups, Th\u00fcnen homepage). The questionnaire contained the following thematic blocks: 1. general information on the farm, 2. soil compaction (perception and measures), 3. crop rotation and soil tillage, 4. technical equipment/process organisation (incl. contractors), 5. consulting and information offers (incl. apps). \n\nResearch domain: Agricultural Economics and Sociology"
+    },
+    "29944FE2-7DCC-4322-82CA-960ED066B6D3": {
+        "labels": [
+            "Deutschland"
+        ],
+        "text": "Potentielle Erosionsgef\u00e4hrdung der Ackerb\u00f6den durch Wind in Deutschland 1:1.000.000 || Bodenerosion durch Wind tritt vor allem auf sandigen, humusarmen und organischen B\u00f6den auf. Besonders gef\u00e4hrdet sind windexponierte Fl\u00e4chen ohne Vegetation. Die Karte zur potentiellen Winderosionsgef\u00e4hrdung in Deutschland zeigt regionale Schwerpunkte mit dem Risiko von Bodenabtrag durch Wind. Der Kennwert wird durch die Bodenart, den Humusgehalt der B\u00f6den und die mittlere j\u00e4hrliche Windgeschwindigkeit in 10 Metern H\u00f6he bestimmt. Besondere Beachtung finden zudem ackerbauliche Moorb\u00f6den sowie Tief- und Sandmischkulturen. Die Methode ist in der DIN 19706:2013 ver\u00f6ffentlicht und in die Methodendokumentation der Ad-hoc-AG Boden aufgenommen worden. F\u00fcr die Anwendung auf Bodenkarten wurde das Verfahren von der Bundesanstalt f\u00fcr Geowissenschaften und Rohstoffe (BGR) angepasst. Die Karte zeigt die Erosionsgef\u00e4hrdung f\u00fcr Ackerb\u00f6den in Deutschland auf Basis der nutzungsdifferenzierten Boden\u00fcbersichtskarte im Ma\u00dfstab 1:1.000.000 sowie der mittleren j\u00e4hrlichen Windgeschwindigkeit in 10 Metern H\u00f6he f\u00fcr die Klimaperiode 1980\u20132000 (DWD) auf. Grunds\u00e4tzlich ist aber nur bei Ackernutzung und einer geringen Bodenbedeckung durch die Kultur von einer tats\u00e4chlichen Gef\u00e4hrdung auszugehen. Die Karte zeigt eine potentielle Gef\u00e4hrdungssituation ohne Ber\u00fccksichtigung von Windhindernissen und der Anbaukultur."
+    },
+    "4d3c311c-4272-4562-92b9-0e723462f4a8": {
+        "labels": [],
+        "text": "Earthworm Biodiversity Data Lietzen I - Earthworm abundance || This table describes earthworm abundance and diversity (Aporrectodea caliginosa, Aporrectodea rosea, Lumbricus terrestris) from each of 42 plots under reduced and conventional tillage between 1997 and 2007.\n\nGeneral description see mother table: (https://www.doi.org/10.4228/ZALF.DK.113); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "fbdd1c72-5681-4b93-9ce3-39889667d055": {
+        "labels": [],
+        "text": "WMS Service of the dataset 'Cropland agroforestry 2015-2018' || This WMS Service includes spatial information used by datasets 'AGIS Map Service of the dataset 'Cropland agroforestry 2015-2018''"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/US/us1_3.jpg": {
+        "labels": [
+            "United States"
+        ],
+        "text": "General Soil map Of The United States (sheet no.3) || General Soil map Of The United States (sheet no.3)"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/br12020_4.jpg": {
+        "labels": [
+            "Jaguaribe/Natal",
+            "Jaguaribe",
+            "Natal"
+        ],
+        "text": "Jaguaribe/Natal. Mapa Metalogen\u00e9tico Previsional. Folha SB.24/25. Volume 23. || Jaguaribe/Natal. Mapa Metalogen\u00e9tico Previsional. Folha SB.24/25. Volume 23."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/SE/Se_14000_01.jpg": {
+        "labels": [
+            "Sverige",
+            "Sweden",
+            "Kulb\u00e4cksliden",
+            "Kulbacksliden",
+            "Vindeln"
+        ],
+        "text": "Ekonomisk Karta Over Sverige (21 J Vindeln 5 g Kulbacksliden). [Economic Map of Sweden (21 J Vindeln 5 g Kulbacksliden)]. || Ekonomisk Karta Over Sverige (21 J Vindeln 5 g Kulbacksliden). [Economic Map of Sweden (21 J Vindeln 5 g Kulbacksliden)]."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/TR/TR_13000.jpg": {
+        "labels": [
+            "Great Konya Basin",
+            "Konya",
+            "Konya Basin"
+        ],
+        "text": "Soil Map of the Great Konya Basin.  Buyuk Konya Havzasinin Toprak Haritasi. || Soil Map of the Great Konya Basin.  Buyuk Konya Havzasinin Toprak Haritasi."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_cprpkb.jpg": {
+        "labels": [
+            "B\u00e9nin"
+        ],
+        "text": "Carte P\u00e9dologique de Reconnaissance \u00e0 1: 200,000. Porga-Karimama. R\u00e9publique Populaire du B\u00e9nin. || Carte P\u00e9dologique de Reconnaissance \u00e0 1: 200,000. Porga-Karimama. R\u00e9publique Populaire du B\u00e9nin."
+    },
+    "https://esdac.jrc.ec.europa.eu/public_path//shared_folder/doc_pub/KJNA31163ENN.en_.pdf": {
+        "labels": [
+            "Western Balkans",
+            "Balkans"
+        ],
+        "text": "Soil health in the Western Balkans || Soil health in the Western Balkans"
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=19#19-13": {
+        "labels": [
+            "EU",
+            "Europa",
+            "Europe"
+        ],
+        "text": "Advances in soil erosion modelling through remote sensing data availability at European scale || Advances in soil erosion modelling through remote sensing data availability at European scale"
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=3#3-1": {
+        "labels": [],
+        "text": "Agricultural Adaptation to Climate Change || Agricultural Adaptation to Climate Change"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_tz2021_2ge.jpg": {
+        "labels": [
+            "Mbozi Area",
+            "Mbozi"
+        ],
+        "text": "Geological Reconnaissance Map of the Mbozi Area. Geological Survey. G.S.790. || Geological Reconnaissance Map of the Mbozi Area. Geological Survey. G.S.790."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/PG2002_1LU.jpg": {
+        "labels": [
+            "Papua New Guinea"
+        ],
+        "text": "Land Limitation and Agricultural Land Use Potential of Papua New Guinea. Sheet 1. || Land Limitation and Agricultural Land Use Potential of Papua New Guinea. Sheet 1."
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=16#16-10": {
+        "labels": [],
+        "text": "Biochar application to soils || Biochar application to soils"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_n10_eth.jpg": {
+        "labels": [
+            "Tunesien",
+            "Algerien"
+        ],
+        "text": "Afrika. Kartenwerk. N10. Blatt 10: Ethnographie. Serie N: Nordafrika (Tunesien, Algerien). [Sheet 10: Ethnography. Series N: North Africa (Tunesin, Algeria)]. [Feuille 9: Ethnographie de l || Afrika. Kartenwerk. N10. Blatt 10: Ethnographie. Serie N: Nordafrika (Tunesien, Algerien). [Sheet 10: Ethnography. Series N: North Africa (Tunesin, Algeria)]. [Feuille 9: Ethnographie de l"
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=12#12-8": {
+        "labels": [
+            "Southern Europe"
+        ],
+        "text": "Organic Matter in the Soils of Southern Europe. || Organic Matter in the Soils of Southern Europe."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/IR4001_2SO.jpg": {
+        "labels": [
+            "Khuzistan",
+            "Aghili"
+        ],
+        "text": "Soil Map of Aghili Plains. Khuzistan. Iran. || Soil Map of Aghili Plains. Khuzistan. Iran."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/TH3016_7TOVE.jpg": {
+        "labels": [
+            "Bangkok"
+        ],
+        "text": "Bangkok Metropolis. Series 1501 S. Sheet ND 47-12. || Bangkok Metropolis. Series 1501 S. Sheet ND 47-12."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_sd4000_1.jpg": {
+        "labels": [],
+        "text": "Plantations, Species & Age Classes. Map 1. D.O.S. 3254A. || Plantations, Species & Age Classes. Map 1. D.O.S. 3254A."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_sd2006_so.jpg": {
+        "labels": [
+            "Sudan Democratic Republic"
+        ],
+        "text": "Soil Map of Arab Countries. Sudan Democratic Republic. || Soil Map of Arab Countries. Sudan Democratic Republic."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/EU/eu_x50.jpg": {
+        "labels": [
+            "Europe"
+        ],
+        "text": "Types of Agriculture Map of Europe || Types of Agriculture Map of Europe"
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=17#17-7": {
+        "labels": [
+            "Italy"
+        ],
+        "text": "Soil Erosion Risk Assessment in Italy. || Soil Erosion Risk Assessment in Italy."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/pe12008_2sox.jpg": {
+        "labels": [
+            "Peru"
+        ],
+        "text": "Mapa de Suelos del Peru. Tercera Approximacion. SHEET 2 || Mapa de Suelos del Peru. Tercera Approximacion. SHEET 2"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/US/us20b.jpg": {
+        "labels": [
+            "Kansas"
+        ],
+        "text": "Soils Of Kansas || Soils Of Kansas"
+    },
+    "4a90cb4d-957f-480d-b109-f7b3981cd58d": {
+        "labels": [],
+        "text": "Effect of N fertilizers on yield, N-uptake, and N-utilization in wheat, barley, potatoes, and maize. - Crop rotation || Chronological list of the cultivated crops\n\nGeneral description see mother table: (https://doi.org/10.20387/bonares-fgzk-4p92); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "973b20a8-bd62-4f02-bdf7-d5a2cbd91735": {
+        "labels": [
+            "Darmstadt"
+        ],
+        "text": "Long-term fertilization field experiment Darmstadt (Feld E) from 1996 to 2009 - Soil sampling (Data collection) || Child table of \u201cLong-term fertilization field experiment Darmstadt (Feld E) from 1996 to 2009\u201d. Table with information about soil sampling. General description can be found in the parent table - Plot information. More information about database schema, assorted literature overview, the detailed location plan, etc.can be found in the supplemental material.\n\nDataset version 1.0"
+    },
+    "2e1eeba3-97f8-43c1-8d20-ba4870a236f4": {
+        "labels": [],
+        "text": "Effect of N fertilizers on yield, N-uptake, and N-utilization in wheat, barley, potatoes, and maize. - Plant sampling || Table with information about soil sampling\n\nGeneral description see mother table: (https://doi.org/10.20387/bonares-fgzk-4p92); Related datasets are listed in the metadata element 'Related Identifier'.\nDataset version 1.0"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_kesskan.jpg": {
+        "labels": [
+            "Kangondi"
+        ],
+        "text": "\"\"\"Kangondi. Soil Survey. Sheet \"\"\"\"150/1\"\"\"\".\"\"\" || \"\"\"Kangondi. Soil Survey. Sheet \"\"\"\"150/1\"\"\"\".\"\"\""
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_nig_adrluveg.jpg": {
+        "labels": [
+            "Nigeria",
+            "Anambra-Do Rivers"
+        ],
+        "text": "Nigeria. Anambra-Do Rivers Area. Land Use and Vegetation Map. D.O.S. (MISC) 252b. || Nigeria. Anambra-Do Rivers Area. Land Use and Vegetation Map. D.O.S. (MISC) 252b."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/mex_x1.jpg": {
+        "labels": [
+            "Huatabampo",
+            "Mexicanos"
+        ],
+        "text": "Carta Edapologica - Estardos Unidos Mexicanos - Huatabampo G12-6 || Carta Edapologica - Estardos Unidos Mexicanos - Huatabampo G12-6"
+    },
+    "https://esdac.jrc.ec.europa.eu//Eudasm/NL/neth_x84.jpg": {
+        "labels": [
+            "Zwolle",
+            "Nederland Zwolle"
+        ],
+        "text": "Bodemkaart van Nederland Zwolle || Bodemkaart van Nederland Zwolle"
+    },
+    "b89da85c-84e8-4664-b138-86faeb5ae2f8": {
+        "labels": [
+            "Dikopshof"
+        ],
+        "text": "Long-Term Fertilization Trial Dikopshof Description of Soil Profiles || This table contains the description of two soil profiles that were dug and examined on the field of the long-term fertilizer experiment Dikopshof in February 1992. The first profile was placed on plot A12_12 (no fertilizer application), the second profile was placed on plot E1_13 (Base fertilisation plus supplementary fertilisation plus manue application). The description contains information about the soil layer sequence, soil color, soil texture and root penetration.\nThe information is provided in addition as a PDF document in the supplemental information section. It is provided in German language only."
+    },
+    "10.1016/j.agwat.2020.106546": {
+        "labels": [
+            "Morocco",
+            "Tensift-basin",
+            "Tensift"
+        ],
+        "text": "Performance of the HYDRUS-1D model for water balance components assessment of irrigated winter wheat under different water managements in semi-arid region of Morocco || Open AccessInternational audience The main goal of this research was to evaluate the potential of the HYDRUS-1D numerical model for estimating the soil moisture (\u03b8) at different depths, actual crop evapotranspiration (ETa) and its components (crop transpiration, Ta and soil evaporation, Ea) as well as the deep percolation (DP) of irrigated winter wheat under different water managements in the semi-arid region of Tensift-basin (central Morocco). The HYDRUS-1D simulations were performed at daily time step during the two growing seasons: 2002/2003 and 2015/2016. The model was firstly calibrated based on one field 'denoted F1' data during the 2002/2003 cropping season by using the Levenberg-Marquardt method implemented in HYDRUS-1D model for optimizing various parameters of Van Genuchten equation that provide the minimum difference between measured and simulated soil moisture at four layers of soil (0-5, 5-10, 10-20, 20-30, 30-50 cm). Afterwards, the model validation was done based on the data from four fields of wheat: two fields 'denoted F2 and F3' during the 2002/2003 and two other fields 'denoted F4 and F5' during the 2015/2016 cropping season. All fields were irrigated with flooding system except the field F5 where drip irrigation was undertaken. In-situ measurements of \u03b8 was carried out using Time Domain Reflectometry (TDR) and gravimetric method ETa was measured by the Eddy Covariance system Ta and Ea were monitored using a lysimeter in F5 field. The results showed that the HYDRUS-1D model simulates the \u03b8, ETa, Ta and Ea reasonably well. Additionally, the evaluation of the irrigation system on DP losses was investigated by comparing the simulation results over flood (F4) and drip (F5) irrigated fields. It was found that about 56% and 20% of seasonal supplied water were lost by DP in F4 and F5 sites, respectively. Such unexpected high amount of DP taking place in F5 field is due to the improper use of the drip irrigation system.."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/MY3002_2SO.jpg": {
+        "labels": [
+            "Sarawak",
+            "Malaysia",
+            "Timor"
+        ],
+        "text": "Soil Map of Sarawak. Malaysia Timor. Sheet B. || Soil Map of Sarawak. Malaysia Timor. Sheet B."
+    },
+    "https://esdac.jrc.ec.europa.eu/resource-type/documents?page=4#4-1": {
+        "labels": [
+            "European",
+            "Europe"
+        ],
+        "text": "Mercury in European topsoils: Anthropogenic sources, stocks and fluxes || Mercury in European topsoils: Anthropogenic sources, stocks and fluxes"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/uy13000_to.jpg": {
+        "labels": [
+            "Montevideo",
+            "Uruguay"
+        ],
+        "text": "Mapa de la Republica Oriental del Uruguay. Red de Carreteras y Caminos. And Mapa Montevideo. Plano Parcial. 1: 25,000. || Mapa de la Republica Oriental del Uruguay. Red de Carreteras y Caminos. And Mapa Montevideo. Plano Parcial. 1: 25,000."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/US/us21_3.jpg": {
+        "labels": [
+            "Kauai Island Hawaii"
+        ],
+        "text": "General Soil Map Kauai Island Hawaii || General Soil Map Kauai Island Hawaii"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Africa/images/maps/download/afr_mgfvdfn.jpg": {
+        "labels": [
+            "Madagascar"
+        ],
+        "text": "Formations V\u00e9g\u00e9tales et Domaine Forestier National de Madagascar. || Formations V\u00e9g\u00e9tales et Domaine Forestier National de Madagascar."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/IR2002_1SO.jpg": {
+        "labels": [
+            "Khuzistan"
+        ],
+        "text": "Generalized Map of the Great Soil Groups of the Khuzistan Plains. || Generalized Map of the Great Soil Groups of the Khuzistan Plains."
+    },
+    "bad17a4e-e19e-4a45-aeae-70f3bf856a33": {
+        "labels": [
+            "Germany"
+        ],
+        "text": "Trial conditions || This table (Trial conditions) is part of a larger file dataset that contains processed data and information used in the meta-analysis \u201cYield development of German winter wheat between 1958 and 2015\u201d of the Project \u201cData-Meta Analysis to assess the productivity development of cultivated plants\u201d funded by the DFG. This table holds information about the general environmental conditions at the experimental sites used in this project and can be used together with the entire dataset, which comprises the following data:\n- Winter wheat (Triticum aestivum) yields and nitrogen application amounts from nitrogen fertilization experiments of variable duration (1-6 years) carried out at 43 locations across Germany, between 1958 and 2015, and found in 34 different sources in the literature.\n- The derived maximum yields (Ymax) and optimal nitrogen amounts (Nopt) from the nitrogen experiments, function coefficients, and statistics.\n- Geographical information (latitude, longitude, altitude) and other site specific information of the experimental sites (soil type, soil yield potential, mean annual temperature, mean annual precipitation, mean annual climatic water balance, soil climate region, cultivation region).\n- Processed phenological and climatic data for each experimental site."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/IR3003_1.jpg": {
+        "labels": [
+            "Garmsar",
+            "Tehran"
+        ],
+        "text": "Regional Map of Land Resources and Potentialities. Central Province. (Tehran-Garmsar). Sheet 428 B I. || Regional Map of Land Resources and Potentialities. Central Province. (Tehran-Garmsar). Sheet 428 B I."
+    },
+    "https://esdac.jrc.ec.europa.eu//Eudasm/NL/neth_x12.jpg": {
+        "labels": [
+            "Netherlands"
+        ],
+        "text": "Generalised soil map of the Netherlands || Generalised soil map of the Netherlands"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/XA2017_4TOPH.jpg": {
+        "labels": [
+            "Enarotali"
+        ],
+        "text": "Enarotali. Seri IND-B1 Lembar M13-4. Edisi 1. || Enarotali. Seri IND-B1 Lembar M13-4. Edisi 1."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/latinamerica/images/maps/download/xs11004_2hu.jpg": {
+        "labels": [
+            "South America"
+        ],
+        "text": "South America. Potential Population Supporting Capacities (Average Densities). High Levels of Inputs. || South America. Potential Population Supporting Capacities (Average Densities). High Levels of Inputs."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/AF3000_1SO.jpg": {
+        "labels": [
+            "Jilga"
+        ],
+        "text": "Soil Map. The Jilga Valley. Vol. IV-13. || Soil Map. The Jilga Valley. Vol. IV-13."
+    },
+    "2f32fbe1-30fd-4472-8b97-e02267c34ca6": {
+        "labels": [
+            "Paulinenaue"
+        ],
+        "text": "WMS Service of datasets from the 'ZALF Focus Area - Paulinenaue' || This AGIS Map Service includes spatial information used by datasets 'AGIS Map Service of the dataset 'ZALF Focus Area - Paulinenaue''"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/IR4002_3LU.jpg": {
+        "labels": [
+            "Iran"
+        ],
+        "text": "land Use Map of Diful II Project. Ostan VII Iran. || land Use Map of Diful II Project. Ostan VII Iran."
+    },
+    "10.1016/j.chemgeo.2021.120327": {
+        "labels": [
+            "Eyjafjallaj\u00c3\u00b6kull volcano",
+            "Iceland",
+            "Eyjafjallajokull volcano"
+        ],
+        "text": "Eruptive style controls the formation of silicon hexafluoride salts on volcanic ash: The case of the 2010 eruption of Eyjafjallaj\u00c3\u00b6kull volcano, Iceland || Abstract   The presence of fluoride (F\u2212)-bearing compounds in volcanic ash fallout is recognised to pose significant environmental and health hazards. Nevertheless, understanding of the formation and composition of these compounds remains limited, or even inconsistent. This hampers full comprehension of the risks and impacts elicited by fluorine-rich ash emissions after an explosive eruption. The 2010 activity of Eyjafjallajokull volcano in Iceland was characterised by contrasted eruptive styles - phreatomagmatic and magmatic - which produced ash deposits with distinct soluble F\u2212 contents. Based on X-ray photoelectron spectroscopy and leachate analyses of Eyjafjallajokull ash materials, we infer the existence of silicon hexafluoride salts, particularly Na2SiF6, dominantly if not exclusively on the magmatic ash, and suggest a reaction mechanism for their formation. The presence of Na2SiF6 explains the much greater F\u2212 concentration and higher acidity measured in leachates of the magmatic ash compared to those of the phreatomagmatic ash. River waters affected by ash deposition during the magmatic activity showed a temporary increase in F\u2212 and decrease in dissolved silicon isotope values (\u03b430Si). We contend that the formation of silicon hexafluoride salts on ash leads to a surface enrichment of the ash's silicate glass and mineral components in 28Si, with the release of this light Si from the magmatic ash during the early stage of weathering causing a depression in the riverine \u03b430Si. This supports existing evidence of silicate dissolution processes being influenced by the presence of fluorine. Our study also points to the likely important role of Na2SiF6 in modulating the environmental and health effects of ash emissions from fluorine-rich magmatic eruptions."
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/SK/cze_x1back.jpg": {
+        "labels": [
+            "Slovakia"
+        ],
+        "text": "Soil Map Slovakia - pody || Soil Map Slovakia - pody"
+    },
+    "https://esdac.jrc.ec.europa.eu//images/Eudasm/Asia/images/maps/download/LK3022_LU.jpg": {
+        "labels": [
+            "Colombo",
+            "Kalutara",
+            "Kalutara District",
+            "Colombo District"
+        ],
+        "text": "Colombo and Kalutara Districts. Land Use. || Colombo and Kalutara Districts. Land Use."
+    },
+    "5187f8c5-38ef-4b07-bc26-a5e257a8ef59": {
+        "labels": [],
+        "text": "| || |"
+    },
+    "f5bcf938-44cc-41fd-8d03-5543933d1d79": {
+        "labels": [
+            "Alaska"
+        ],
+        "text": "Web Map Service of the dataset 'Permafrost degradation in Interior Alaska - Study site data' || This Web Map Service includes spatial information used by datasets 'Web Map Service of the dataset 'Permafrost degradation in Interior Alaska - Study site data''"
+    }
+}
