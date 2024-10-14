@@ -1,5 +1,7 @@
 fastapi
 requests
+pydantic
 python-dotenv
+python-multipart
 uvicorn
 psycopg2-binary
