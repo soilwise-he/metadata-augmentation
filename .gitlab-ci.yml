@@ -8,7 +8,7 @@ stages:
 ######
 # Tag stage
 tag:
-  image: harbor.containers.wurnet.nl/proxy-cache/library/node:18-bullseye-slim
+  image: harbor.containers.wurnet.nl/proxy-cache/library/node:16.14.0-bullseye-slim@sha256:3861f41484125c13894363623c004b5af76ac73b7889c7feafa807d1d144895a
   stage: tag
   before_script:
     - apt-get update && apt-get install -y --no-install-recommends git-core git-lfs ca-certificates
