@@ -8,11 +8,12 @@ stages:
 ######
 # Tag stage
 tag:
-  image: harbor.containers.wurnet.nl/proxy-cache/library/node:14.18-buster-slim
+  image: harbor.containers.wurnet.nl/proxy-cache/library/node:16.14.0-bullseye-slim@sha256:3861f41484125c13894363623c004b5af76ac73b7889c7feafa807d1d144895a
   stage: tag
   before_script:
-    - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
-    - npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/gitlab @semantic-release/git @semantic-release/npm @semantic-release/release-notes-generator conventional-changelog conventional-changelog-conventionalcommits 
+    - apt-get update && apt-get install -y --no-install-recommends git-core git-lfs ca-certificates
+    - npm install -g semantic-release@v19.0.2 @semantic-release/commit-analyzer@v9.0.2 @semantic-release/gitlab@v7.0.4 @semantic-release/git@v10.0.1 @semantic-release/npm@v9.0.1 @semantic-release/release-notes-generator@v10.0.3 @semantic-release/changelog@v6.0.1 @semantic-release/commit-analyzer@v9.0.2 conventional-changelog-eslint@v3.0.9 conventional-changelog-conventionalcommits
+    - npm install -g @commitlint/config-conventional@v16.2.1 @commitlint/cli@v16.2.1 semantic-release-commitlint@v1.2.2
   script:
     - semantic-release
   when: on_success
