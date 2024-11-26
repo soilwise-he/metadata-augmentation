@@ -46,6 +46,13 @@ def insertRecord(identifier,resulttype,resultobject,hashcode,source,title="",lan
     insertSQL('harvest.item_duplicates',['identifier','identifiertype','source','hash'],(identifier,identifiertype,source,hashcode))
 
 
+def insertMatch(re_identifier, hash, c_identifier, lab):
+
+    insertSQL('harvest.match', 
+              ["record_identifier", "hash", "concept_identifier", "label"],
+              (re_identifier, hash, c_identifier, lab))
+    
+
 def insertSQL(table, fields, values):
     
     sql = f"INSERT INTO {table} ({', '.join(fields)}) values ({','.join(['%s' for x in range(len(fields))])}) ON CONFLICT DO NOTHING;"

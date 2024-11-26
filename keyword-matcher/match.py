@@ -1,18 +1,18 @@
 # match the records with the concepts
 
-from database import dbQuery
+# when updates on the knowlewdge graph: delete the match table and run match.py
+# When update on records: run match.py
+
+import sys
+sys.path.append('utils')
+
+from database import dbQuery, insertMatch
 
 from dotenv import load_dotenv
 
 from rdflib import Graph
 
 from thefuzz import fuzz
-from thefuzz import process
-
-from SPARQLWrapper import SPARQLWrapper, JSON
-
-import re
-import requests
 import json
 
 load_dotenv()
@@ -21,7 +21,6 @@ def turple2dict(rows): # transform a query result from turple to dict
     col_names = ['identifier', 'hash', 'uri', 'turtle']  
     return [dict(zip(col_names, row)) for row in rows]
 
-i = 0
 
 def rdfSearchKeys(rdf):
     # When there is syntex error in the rdf?
@@ -78,7 +77,7 @@ def label_fuzzmatch(subs, keyword, threshold=80):
     flag = 0
 
     for sub in subs:
-        subject_id = sub['subject_id']
+        subject_id = sub['identifier']
         labels = sub['labels']
         
         # Flatten labels: include all labels in 'en' and the specified language (if exists)
@@ -101,7 +100,7 @@ def label_fuzzmatch(subs, keyword, threshold=80):
         
     # check if the matching value with the threshold
     if flag > threshold:
-        print('find matched label:', key_value, best_match_subject, flag)
+        #print('find matched label:', key_value, best_match_subject, flag)
         return best_match_subject
     else:
         return None
@@ -111,8 +110,8 @@ def url_match(subs, themes):
     matched_subs = []
 
     for sub in subs:
-        sub_id = sub['subject_id']
-        sub_urls = sub['urls']
+        sub_id = sub['identifier']
+        sub_urls = sub['relevant_uris']
         
         if any(url in themes for url in sub_urls):
             matched_subs.append(sub_id)
@@ -126,12 +125,11 @@ SELECT * FROM harvest.item_contain_keyword
 result = turple2dict(dbQuery(sql, hasoutput=True))
 
 # get defined subjects
-with open('utils/subjects.json', 'r') as f:
+with open("./keyword-matcher/concepts.json", "r") as f:
     subs = json.load(f)
 
 matched_data = []
 
-i=0
 
 for res in result:
     turtle = res['turtle']
@@ -146,9 +144,6 @@ for res in result:
         sub_key = label_fuzzmatch(subs, key, threshold = 80)
         if sub_key is not None:
             subs_related.append(sub_key)
-    
-    if len(subs_related) > 0:
-        i = i+1
 
     # match the themes
     sub_theme = url_match(subs, themes)
@@ -160,17 +155,18 @@ for res in result:
     if len(unique_subs_related) > 0:
         for sub_id in unique_subs_related:
             # Find the corresponding subject by subject_id
-            matched_subject = next((sub for sub in subs if sub['subject_id'] == sub_id), None)
+            matched_subject = next((sub for sub in subs if sub['identifier'] == sub_id), None)
             if matched_subject:
-                matched_data.append({
-                    'identifier': res['identifier'],
-                    'hash': res['hash'],
-                    'subject_id': sub_id,
-                    'url': matched_subject['urls'][0]
-                })
+                insertMatch(res['identifier'], res['hash'], sub_id, matched_subject["labels"]["en"][0] )
+                # matched_data.append({
+                #     'record_identifier': res['identifier'],
+                #     'hash': res['hash'],
+                #     'concept_identifier': sub_id,
+                #     'label': matched_subject["labels"]["en"][0]
+                # })
 
-print(matched_data)
-print('matched label number', i)
+#print(matched_data)
+
 
 
 
