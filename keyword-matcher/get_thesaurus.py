@@ -1,8 +1,8 @@
 # get concepts from soil-health knowledge graph and :
 # attach the exactMatch Agrovoc and iso urls;
-# attach labels (v1--: en, fr, de, it, es)
+# attach labels (en, fr, de, it, es)
 
-import sys, time, hashlib, os
+import sys
 sys.path.append('utils')
 from sparql import sparqlLocal, sparqlRemote
 import json
@@ -108,14 +108,6 @@ def mergeLabels(dict_a, dict_b):
         merged_dict[lang] = list(dict.fromkeys(merged_dict[lang]))
     return merged_dict
 
-# res = searchIso("https://data.geoscience.earth/ncl/ISO11074/7.1.5")
-# mode = 2
-# langs = ["en", "fr", "de", "it", "es"]
-
-# print(processLabels(res, 2, langs, "initial label"))
-
-# print(res)
-
 # Change below to a remote sparql query when the KG updated to triple store
 kg_path = "./keyword-matcher/soil_health_KG.ttl"
 
@@ -132,6 +124,7 @@ WHERE {
 '''    
 
 kg_concs = sparqlLocal(kg_path, query, "ttl")
+# issue: a concept can have multiple labels
 langs = ["en", "fr", "de", "it", "es"]
 
 formatted_cons = []
@@ -177,10 +170,9 @@ for c in kg_concs: # <= 1 exact match, <= 1 close match
     
     formatted_cons.append(con_dict) 
 
-print(formatted_cons)
 
 with open("./keyword-matcher/concepts.json", "w") as json_file:
-    json.dump(formatted_cons, json_file, indent=4)  # Use indent=4 for pretty formatting
+    json.dump(formatted_cons, json_file, indent=4) 
 
 
 
