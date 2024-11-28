@@ -1,9 +1,5 @@
 [
   [
-    "Bodem",
-    "nl"
-  ],
-  [
     "DOV",
     "nl"
   ],
@@ -436,10 +432,6 @@
     "de"
   ],
   [
-    "EU",
-    "it"
-  ],
-  [
     "geomorphology",
     "it"
   ],
@@ -656,10 +648,6 @@
     "en"
   ],
   [
-    "EU",
-    "it"
-  ],
-  [
     "geomorphology",
     "it"
   ],
@@ -856,10 +844,6 @@
     "en"
   ],
   [
-    "Production",
-    "en"
-  ],
-  [
     "DummyKeyword",
     "de"
   ],
@@ -1016,10 +1000,6 @@
     "nl"
   ],
   [
-    "EU",
-    "it"
-  ],
-  [
     "hydrogeology",
     "it"
   ],
@@ -1050,10 +1030,6 @@
   [
     "inspireidentifiziert",
     "de"
-  ],
-  [
-    "EU",
-    "it"
   ],
   [
     "hydrogeology",
@@ -1497,10 +1473,6 @@
   ],
   [
     "carbiosol",
-    "fr"
-  ],
-  [
-    "carbosol",
     "fr"
   ],
   [
@@ -2204,10 +2176,6 @@
     "en"
   ],
   [
-    "microrespiration",
-    "en"
-  ],
-  [
     "opendata",
     "en"
   ],
@@ -2501,10 +2469,6 @@
   ],
   [
     "organic carbon content",
-    "en"
-  ],
-  [
-    "organische Substanz",
     "en"
   ],
   [
@@ -3100,10 +3064,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -3688,10 +3648,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water accounting",
     "en"
   ],
@@ -3725,10 +3681,6 @@
   ],
   [
     "land use",
-    "en"
-  ],
-  [
-    "GeoCarbon",
     "en"
   ],
   [
@@ -3773,10 +3725,6 @@
   ],
   [
     "CARBIOSOL",
-    "fr"
-  ],
-  [
-    "CARBOSOL",
     "fr"
   ],
   [
@@ -4025,10 +3973,6 @@
   ],
   [
     "LGP",
-    "en"
-  ],
-  [
-    "Production",
     "en"
   ],
   [
@@ -5292,10 +5236,6 @@
     "en"
   ],
   [
-    "organische Substanz",
-    "en"
-  ],
-  [
     "Eurasia",
     "en"
   ],
@@ -5421,10 +5361,6 @@
   ],
   [
     "carbiosol",
-    "fr"
-  ],
-  [
-    "carbosol",
     "fr"
   ],
   [
@@ -6224,10 +6160,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Geology",
     "en"
   ],
@@ -6665,10 +6597,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -7156,10 +7084,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Drainage",
     "en"
   ],
@@ -7641,10 +7565,6 @@
   ],
   [
     "carbiosol",
-    "fr"
-  ],
-  [
-    "carbosol",
     "fr"
   ],
   [
@@ -10028,10 +9948,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water Accounting",
     "en"
   ],
@@ -10412,10 +10328,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Forestry",
     "en"
   ],
@@ -10720,10 +10632,6 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "elevation and terrain slopes",
     "en"
   ],
@@ -10784,10 +10692,6 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "elevation and terrain slopes",
     "en"
   ],
@@ -10833,10 +10737,6 @@
   ],
   [
     "agro-ecological zones",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -10893,10 +10793,6 @@
   ],
   [
     "agroecological zones",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -11445,10 +11341,6 @@
   ],
   [
     "Tunisia",
-    "en"
-  ],
-  [
-    "GeoCarbon",
     "en"
   ],
   [
@@ -12364,10 +12256,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -13077,10 +12965,6 @@
   ],
   [
     "WaPOR",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -13972,10 +13856,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Crops",
     "en"
   ],
@@ -14189,10 +14069,6 @@
   ],
   [
     "WaPOR_2_Basin",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -14960,10 +14836,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Geology",
     "en"
   ],
@@ -15308,10 +15180,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Costa Rica",
     "en"
   ],
@@ -15349,10 +15217,6 @@
   ],
   [
     "Arid Zones",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -15565,10 +15429,6 @@
   ],
   [
     "bodemerosie",
-    "nl"
-  ],
-  [
-    "erosie",
     "nl"
   ],
   [
@@ -15828,10 +15688,6 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "elevation and terrain slopes",
     "en"
   ],
@@ -15985,10 +15841,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -16288,10 +16140,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water accounting",
     "en"
   ],
@@ -16540,10 +16388,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water Accounting",
     "en"
   ],
@@ -16672,10 +16516,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water accounting",
     "en"
   ],
@@ -16693,10 +16533,6 @@
   ],
   [
     "Bangladesh",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -16825,10 +16661,6 @@
   ],
   [
     "EJP Country survey",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -17445,10 +17277,6 @@
   ],
   [
     "Soil Types",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -18344,10 +18172,6 @@
     "en"
   ],
   [
-    "microrespiration",
-    "en"
-  ],
-  [
     "opendata",
     "en"
   ],
@@ -18413,10 +18237,6 @@
   ],
   [
     "agro-ecological zones",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -18532,10 +18352,6 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "elevation and terrain slopes",
     "en"
   ],
@@ -18604,10 +18420,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water Accounting",
     "en"
   ],
@@ -18664,15 +18476,7 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "climate impact",
-    "en"
-  ],
-  [
-    "crop production",
     "en"
   ],
   [
@@ -18681,10 +18485,6 @@
   ],
   [
     "temperature",
-    "en"
-  ],
-  [
-    "water",
     "en"
   ],
   [
@@ -18732,15 +18532,7 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ESDAC",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -18836,10 +18628,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "European J Soil Science",
     "en"
   ],
@@ -18873,10 +18661,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -19164,10 +18948,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water accounting",
     "en"
   ],
@@ -19201,10 +18981,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -19304,10 +19080,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -19380,19 +19152,11 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "EJP Country survey",
     "en"
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -19536,10 +19300,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ESDAC",
     "en"
   ],
@@ -19581,10 +19341,6 @@
   ],
   [
     "WaPOR_2_Basin",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -19637,10 +19393,6 @@
   ],
   [
     "Argentina",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -19741,10 +19493,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -19916,10 +19664,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Congo, Dem R",
     "en"
   ],
@@ -19965,10 +19709,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -20160,10 +19900,6 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "hydrology",
     "en"
   ],
@@ -20244,15 +19980,7 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "climate impact",
-    "en"
-  ],
-  [
-    "crop production",
     "en"
   ],
   [
@@ -20265,10 +19993,6 @@
   ],
   [
     "temperature",
-    "en"
-  ],
-  [
-    "water",
     "en"
   ],
   [
@@ -20336,23 +20060,11 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "climate impact",
     "en"
   ],
   [
-    "crop production",
-    "en"
-  ],
-  [
     "crop yield",
-    "en"
-  ],
-  [
-    "water",
     "en"
   ],
   [
@@ -20408,10 +20120,6 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "climate impact",
     "en"
   ],
@@ -20421,10 +20129,6 @@
   ],
   [
     "temperature",
-    "en"
-  ],
-  [
-    "water",
     "en"
   ],
   [
@@ -20457,10 +20161,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -20512,10 +20212,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -20548,10 +20244,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "EJP Country survey",
     "en"
   ],
@@ -20576,19 +20268,11 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Tag_LUS",
     "en"
   ],
   [
     "Tag_land",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -20633,10 +20317,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -20768,10 +20448,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yemen",
     "en"
   ],
@@ -20840,10 +20516,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Tag_LUS",
     "en"
   ],
@@ -20897,10 +20569,6 @@
   ],
   [
     "WaPOR_2_Continental",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -20984,10 +20652,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -21009,10 +20673,6 @@
   ],
   [
     "WaPOR_2_Continental",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -21057,10 +20717,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -21200,10 +20856,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yemen",
     "en"
   ],
@@ -21241,10 +20893,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -21376,10 +21024,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "El Salvador",
     "en"
   ],
@@ -21437,10 +21081,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -21521,10 +21161,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -21640,10 +21276,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Burkina Faso",
     "en"
   ],
@@ -21689,10 +21321,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -21776,10 +21404,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -21808,10 +21432,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Dekadal",
     "en"
   ],
@@ -21833,10 +21453,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -21877,10 +21493,6 @@
   ],
   [
     "meta-barcode sequencing of bacterial community",
-    "en"
-  ],
-  [
-    "microrespiration",
     "en"
   ],
   [
@@ -21932,10 +21544,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Ethiopia",
     "en"
   ],
@@ -21981,10 +21589,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -22045,10 +21649,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -22148,10 +21748,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -22176,19 +21772,11 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yanze",
     "en"
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -22249,10 +21837,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -22400,10 +21984,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Zankalon",
     "en"
   ],
@@ -22524,10 +22104,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Tag_LUS",
     "en"
   ],
@@ -22581,10 +22157,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -22672,10 +22244,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "hydrogeology",
     "it"
   ],
@@ -22713,10 +22281,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -22884,10 +22448,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yemen",
     "en"
   ],
@@ -22976,10 +22536,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Indonesia",
     "en"
   ],
@@ -23056,10 +22612,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Gambia",
     "en"
   ],
@@ -23116,10 +22668,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "assetto strutturale",
     "it"
   ],
@@ -23165,10 +22713,6 @@
   ],
   [
     "World",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -23241,10 +22785,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -23332,10 +22872,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ESDAC",
     "en"
   ],
@@ -23377,10 +22913,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -23481,10 +23013,6 @@
   ],
   [
     "Bangladesh",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -23648,10 +23176,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Drainage",
     "en"
   ],
@@ -23685,10 +23209,6 @@
   ],
   [
     "Argentina",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -23740,10 +23260,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Drainage",
     "en"
   ],
@@ -23769,10 +23285,6 @@
   ],
   [
     "Soil Types",
-    "en"
-  ],
-  [
-    "Vegetation",
     "en"
   ],
   [
@@ -23857,10 +23369,6 @@
   ],
   [
     "Soil Types",
-    "en"
-  ],
-  [
-    "Vegetation",
     "en"
   ],
   [
@@ -23953,10 +23461,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -24148,10 +23652,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Costa Rica",
     "en"
   ],
@@ -24208,10 +23708,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -24256,10 +23752,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ambiente, aree protette e difesa del suolo",
     "it"
   ],
@@ -24274,10 +23766,6 @@
   [
     "provincia di lecco",
     "it"
-  ],
-  [
-    "Climate",
-    "en"
   ],
   [
     "Geology",
@@ -24440,10 +23928,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -24564,10 +24048,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -24672,10 +24152,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -24713,10 +24189,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -24909,10 +24381,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -25184,10 +24652,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -25217,10 +24681,6 @@
   ],
   [
     "Soil Types",
-    "en"
-  ],
-  [
-    "Vegetation",
     "en"
   ],
   [
@@ -25300,10 +24760,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Drainage",
     "en"
   ],
@@ -25329,10 +24785,6 @@
   ],
   [
     "Soil Types",
-    "en"
-  ],
-  [
-    "Vegetation",
     "en"
   ],
   [
@@ -25608,10 +25060,6 @@
     "en"
   ],
   [
-    "Production",
-    "en"
-  ],
-  [
     "Suriname",
     "en"
   ],
@@ -25697,10 +25145,6 @@
   ],
   [
     "meta-barcode sequencing of bacterial community",
-    "en"
-  ],
-  [
-    "microrespiration",
     "en"
   ],
   [
@@ -26113,10 +25557,6 @@
   ],
   [
     "World",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -26653,10 +26093,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -27644,10 +27080,6 @@
     "fr"
   ],
   [
-    "carbosol",
-    "fr"
-  ],
-  [
     "horizon de sol",
     "fr"
   ],
@@ -27725,10 +27157,6 @@
   ],
   [
     "CARBIOSOL",
-    "fr"
-  ],
-  [
-    "CARBOSOL",
     "fr"
   ],
   [
@@ -28344,10 +27772,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water Accounting",
     "en"
   ],
@@ -28437,10 +27861,6 @@
   ],
   [
     "WaPOR_2_Basin",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -28788,10 +28208,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -28825,10 +28241,6 @@
   ],
   [
     "Bangladesh",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -29184,10 +28596,6 @@
     "en"
   ],
   [
-    "water",
-    "en"
-  ],
-  [
     "digital soil mapping",
     "en"
   ],
@@ -29341,10 +28749,6 @@
   ],
   [
     "soil degradation processes",
-    "nl"
-  ],
-  [
-    "watererosie",
     "nl"
   ],
   [
@@ -30164,10 +29568,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water Accounting",
     "en"
   ],
@@ -30201,10 +29601,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -30300,10 +29696,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -30353,10 +29745,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -30576,10 +29964,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "opendata",
     "en"
   ],
@@ -30609,10 +29993,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -30657,10 +30037,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -30760,10 +30136,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -30828,10 +30200,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Growth Period",
     "en"
   ],
@@ -30849,10 +30217,6 @@
   ],
   [
     "Bangladesh",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -30928,10 +30292,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "BMGF-AWS",
     "en"
   ],
@@ -30997,10 +30357,6 @@
   ],
   [
     "Arid Zones",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -31141,10 +30497,6 @@
   ],
   [
     "agro-ecological zones",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -31368,10 +30720,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water Accounting",
     "en"
   ],
@@ -31437,10 +30785,6 @@
   ],
   [
     "World",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -31536,10 +30880,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water accounting",
     "en"
   ],
@@ -31573,10 +30913,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -31617,10 +30953,6 @@
   ],
   [
     "Arid Zones",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -31677,10 +31009,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -31820,10 +31148,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "EJP Country survey",
     "en"
   ],
@@ -31853,10 +31177,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -31900,10 +31220,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "EJP Country survey",
     "en"
   ],
@@ -31932,10 +31248,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "EJP Country survey",
     "en"
   ],
@@ -31961,10 +31273,6 @@
   ],
   [
     "WaPOR_2_Continental",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32052,10 +31360,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "soil type",
     "en"
   ],
@@ -32089,10 +31393,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32132,10 +31432,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Zankalon",
     "en"
   ],
@@ -32165,10 +31461,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32209,10 +31501,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32257,10 +31545,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32316,10 +31600,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ESDAC",
     "en"
   ],
@@ -32356,10 +31636,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ESDAC",
     "en"
   ],
@@ -32393,10 +31669,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32440,10 +31712,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ESDAC",
     "en"
   ],
@@ -32492,10 +31760,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "EJP Country survey",
     "en"
   ],
@@ -32533,10 +31797,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32580,10 +31840,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "EJP Country survey",
     "en"
   ],
@@ -32621,10 +31877,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -32908,10 +32160,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Zankalon",
     "en"
   ],
@@ -32952,10 +32200,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "soil type",
     "lt"
   ],
@@ -32989,10 +32233,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33036,19 +32276,11 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Water accounting",
     "en"
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -33100,10 +32332,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -33133,10 +32361,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33177,10 +32401,6 @@
   ],
   [
     ".All Subjects",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -33268,10 +32488,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -33301,10 +32517,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33340,10 +32552,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -33373,10 +32581,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33476,10 +32680,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "soil type",
     "sk"
   ],
@@ -33509,10 +32709,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33573,10 +32769,6 @@
   ],
   [
     "WaPOR_2_Basin",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33660,10 +32852,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Agroecological zones",
     "en"
   ],
@@ -33716,10 +32904,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -33748,10 +32932,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Congo, Dem R",
     "en"
   ],
@@ -33773,10 +32953,6 @@
   ],
   [
     "CIFA Technical Paper 27",
-    "en"
-  ],
-  [
-    "Climate",
     "en"
   ],
   [
@@ -33828,10 +33004,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -33857,10 +33029,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33897,10 +33065,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -33941,10 +33105,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -34104,10 +33264,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "assetto strutturale",
     "it"
   ],
@@ -34161,10 +33317,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -34272,10 +33424,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ambiente",
     "it"
   ],
@@ -34321,10 +33469,6 @@
   ],
   [
     "AET",
-    "en"
-  ],
-  [
-    "AI",
     "en"
   ],
   [
@@ -34496,10 +33640,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "ambiente",
     "it"
   ],
@@ -34592,10 +33732,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yanze",
     "en"
   ],
@@ -34624,10 +33760,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -34649,10 +33781,6 @@
   ],
   [
     "WaPOR_2_Continental",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -34689,10 +33817,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -34801,10 +33925,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35004,10 +34124,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -35037,10 +34153,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35136,10 +34248,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Drainage",
     "en"
   ],
@@ -35196,10 +34304,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yanze",
     "en"
   ],
@@ -35229,10 +34333,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35393,10 +34493,6 @@
   ],
   [
     "WaPOR_2_National",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35557,10 +34653,6 @@
   ],
   [
     "WaPOR_2_National",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35601,10 +34693,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35668,10 +34756,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -35701,10 +34785,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35769,10 +34849,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -35900,10 +34976,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Geology",
     "en"
   ],
@@ -35948,10 +35020,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "soil type",
     "en"
   ],
@@ -35989,10 +35057,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36044,10 +35108,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Geology",
     "en"
   ],
@@ -36088,10 +35148,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Zankalon",
     "en"
   ],
@@ -36121,10 +35177,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36184,10 +35236,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -36217,10 +35265,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36256,10 +35300,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Environmental Modelling &amp; Software",
     "en"
   ],
@@ -36288,10 +35328,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "GAEZ v4",
     "en"
   ],
@@ -36309,10 +35345,6 @@
   ],
   [
     "crop area",
-    "en"
-  ],
-  [
-    "crop production",
     "en"
   ],
   [
@@ -36341,10 +35373,6 @@
   ],
   [
     "WaPOR_2_Continental",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36380,10 +35408,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Africa and Near East",
     "en"
   ],
@@ -36409,10 +35433,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36444,10 +35464,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Applied Spectroscopy Reviews",
     "en"
   ],
@@ -36473,10 +35489,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36548,10 +35560,6 @@
     "en"
   ],
   [
-    "Climate",
-    "en"
-  ],
-  [
     "Costa Rica",
     "en"
   ],
@@ -36608,10 +35616,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Global Change Biology",
     "en"
   ],
@@ -36633,10 +35637,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36768,10 +35768,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yemen",
     "en"
   ],
@@ -36805,10 +35801,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36888,10 +35880,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Annual",
     "en"
   ],
@@ -36913,10 +35901,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -36949,10 +35933,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -37120,10 +36100,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yemen",
     "en"
   ],
@@ -37184,10 +36160,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "GAEZ v4",
     "en"
   ],
@@ -37197,10 +36169,6 @@
   ],
   [
     "agro-climatic resources",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -37360,10 +36328,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yemen",
     "en"
   ],
@@ -37384,10 +36348,6 @@
     "en"
   ],
   [
-    "Transpiration",
-    "en"
-  ],
-  [
     "WaPOR",
     "en"
   ],
@@ -37397,10 +36357,6 @@
   ],
   [
     "WaPOR_2_Subnational",
-    "en"
-  ],
-  [
-    "Water",
     "en"
   ],
   [
@@ -37660,10 +36616,6 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "climate impact",
     "en"
   ],
@@ -37920,19 +36872,11 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "climate impact",
     "en"
   ],
   [
     "runoff",
-    "en"
-  ],
-  [
-    "water",
     "en"
   ],
   [
@@ -38060,10 +37004,6 @@
     "en"
   ],
   [
-    "Water",
-    "en"
-  ],
-  [
     "Yemen",
     "en"
   ],
@@ -38136,15 +37076,7 @@
     "en"
   ],
   [
-    "crop production",
-    "en"
-  ],
-  [
     "crop yield",
-    "en"
-  ],
-  [
-    "water",
     "en"
   ],
   [
@@ -38273,10 +37205,6 @@
   ],
   [
     "WP3",
-    "en"
-  ],
-  [
-    "climate",
     "en"
   ],
   [
@@ -38508,15 +37436,7 @@
     "en"
   ],
   [
-    "climate",
-    "en"
-  ],
-  [
     "climate impact",
-    "en"
-  ],
-  [
-    "crop production",
     "en"
   ],
   [
@@ -38525,10 +37445,6 @@
   ],
   [
     "temperature",
-    "en"
-  ],
-  [
-    "water",
     "en"
   ],
   [
