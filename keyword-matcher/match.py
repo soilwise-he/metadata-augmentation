@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from rdflib import Graph
 
 from thefuzz import fuzz
-import json
+import json, csv
 
 load_dotenv()
 
@@ -44,7 +44,6 @@ def rdfSearchKeys(rdf):
     
     except:
         print(f"Error in RDF parsing or query")
-        i = i + 1
         return []
     
 def rdfSearchSubThes(rdf):
@@ -70,6 +69,8 @@ def rdfSearchSubThes(rdf):
 
 # To find the most matching subject (if exsists) by the labels
 
+vague_match = []
+
 def label_fuzzmatch(subs, keyword, threshold=80):
     
     key_value, key_lang = keyword
@@ -79,18 +80,19 @@ def label_fuzzmatch(subs, keyword, threshold=80):
 
     for sub in subs:
         subject_id = sub['identifier']
-        labels = sub['labels']
+        label_dict = sub['labels']
         
         # Flatten labels: include all labels in 'en' and the specified language (if exists)
-        all_labels = labels.get('en', [])  # Default to 'en' labels
-        if key_lang in labels and key_lang != 'en':
-            all_labels.extend(labels[key_lang])  # Add labels for the specified language
+        # all_labels = labels.get('en', [])  # Default to 'en' labels
+        # if key_lang in labels and key_lang != 'en':
+        #     all_labels.extend(labels[key_lang])  # Add labels for the specified language
+        all_labels = [label for labels in label_dict.values() for label in labels]
         
         sub_flag = 0
         # get the highest matched value of this sub
         for lab in all_labels:
             matched_ratio = fuzz.ratio(key_value.lower(), lab.lower()) # if case sensitive. fuzz.ratio ("water", "water") = 80, short words can have a low match score
-            if matched_ratio > flag:
+            if matched_ratio > sub_flag:
                 sub_flag = matched_ratio
         
         # get the highest matched subject and the matched value
@@ -102,6 +104,10 @@ def label_fuzzmatch(subs, keyword, threshold=80):
     # check if the matching value with the threshold
     if flag >= threshold:
         #print('find matched label:', key_value, best_match_subject, flag)
+        if flag < 100:
+            list = [keyword, best_match_subject, flag]
+            if list not in vague_match:
+                vague_match.append(list)
         return best_match_subject
     else:
         return None
@@ -165,7 +171,7 @@ for res in result:
             # Find the corresponding subject by subject_id
             matched_subject = next((sub for sub in subs if sub['identifier'] == sub_id), None)
             if matched_subject:
-                # insertMatch(res['identifier'], res['hash'], sub_id, matched_subject["labels"]["en"][0] )
+                insertMatch(res['identifier'], res['hash'], sub_id, matched_subject["labels"]["en"][0] )
                 matched_data.append({
                     'record_identifier': res['identifier'],
                     'hash': res['hash'],
@@ -181,6 +187,9 @@ with open("./keyword-matcher/match.json", "w", encoding='utf-8') as json_file:
 with open("./keyword-matcher/mis_keys.json", "w", encoding='utf-8') as json_file:
     json.dump(mismatched_keys, json_file, ensure_ascii=False, indent=2) 
 
+with open('./keyword-matcher/vague_match.csv', 'w', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerows(vague_match)
 
 # def getThesaurus(): # get concepts (uri and label) from knowledge graph. language issue!! has only 10000 records?
 #     # query_str = "https://sparql.soilwise-he.containers.wur.nl/sparql/?default-graph-uri=&query=PREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E+%0D%0Aprefix+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A%0D%0Aselect+%3Fconcept+%3Flabel%0D%0Awhere+%7B%0D%0A%3Fconcept+a+skos%3AConcept+%3B%0D%0Askos%3AprefLabel+%3Flabel%0D%0A%7D%0D%0A&format=application%2Fsparql-results%2Bjson&timeout=0&signal_void=on"
