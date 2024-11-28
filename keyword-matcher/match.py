@@ -69,6 +69,7 @@ def rdfSearchSubThes(rdf):
         return []
 
 # To find the most matching subject (if exsists) by the labels
+
 def label_fuzzmatch(subs, keyword, threshold=80):
     
     key_value, key_lang = keyword
@@ -88,7 +89,7 @@ def label_fuzzmatch(subs, keyword, threshold=80):
         sub_flag = 0
         # get the highest matched value of this sub
         for lab in all_labels:
-            matched_ratio = fuzz.ratio(key_value, lab)
+            matched_ratio = fuzz.ratio(key_value.lower(), lab.lower()) # if case sensitive. fuzz.ratio ("water", "water") = 80, short words can have a low match score
             if matched_ratio > flag:
                 sub_flag = matched_ratio
         
@@ -99,7 +100,7 @@ def label_fuzzmatch(subs, keyword, threshold=80):
 
         
     # check if the matching value with the threshold
-    if flag > threshold:
+    if flag >= threshold:
         #print('find matched label:', key_value, best_match_subject, flag)
         return best_match_subject
     else:
@@ -123,12 +124,17 @@ sql = '''
 SELECT * FROM harvest.item_contain_keyword
 '''
 result = turple2dict(dbQuery(sql, hasoutput=True))
+# for quick testing
+# result = result[:100]
+
+# add code here to extract records which not exsists in the matabl table, and process those records
 
 # get defined subjects
 with open("./keyword-matcher/concepts.json", "r") as f:
     subs = json.load(f)
 
 matched_data = []
+mismatched_keys = []
 
 
 for res in result:
@@ -144,6 +150,8 @@ for res in result:
         sub_key = label_fuzzmatch(subs, key, threshold = 80)
         if sub_key is not None:
             subs_related.append(sub_key)
+        else:
+            mismatched_keys.append(key)
 
     # match the themes
     sub_theme = url_match(subs, themes)
@@ -157,18 +165,21 @@ for res in result:
             # Find the corresponding subject by subject_id
             matched_subject = next((sub for sub in subs if sub['identifier'] == sub_id), None)
             if matched_subject:
-                insertMatch(res['identifier'], res['hash'], sub_id, matched_subject["labels"]["en"][0] )
-                # matched_data.append({
-                #     'record_identifier': res['identifier'],
-                #     'hash': res['hash'],
-                #     'concept_identifier': sub_id,
-                #     'label': matched_subject["labels"]["en"][0]
-                # })
+                # insertMatch(res['identifier'], res['hash'], sub_id, matched_subject["labels"]["en"][0] )
+                matched_data.append({
+                    'record_identifier': res['identifier'],
+                    'hash': res['hash'],
+                    'concept_identifier': sub_id,
+                    'label': matched_subject["labels"]["en"][0]
+                })
 
 #print(matched_data)
+with open("./keyword-matcher/match.json", "w", encoding='utf-8') as json_file:
+    json.dump(matched_data, json_file, ensure_ascii=False, indent=2) 
 
-
-
+# analyze the mismatched keywords
+with open("./keyword-matcher/mis_keys.json", "w", encoding='utf-8') as json_file:
+    json.dump(mismatched_keys, json_file, ensure_ascii=False, indent=2) 
 
 
 # def getThesaurus(): # get concepts (uri and label) from knowledge graph. language issue!! has only 10000 records?
