@@ -111,7 +111,11 @@ def mergeLabels(dict_a, dict_b):
 # Change below to a remote sparql query when the KG updated to triple store
 kg_path = "./keyword-matcher/soil_health_KG.ttl"
 
+# ! needs to be modified
 # assume only 1 exact match or close match
+# assume only 1 prefLabel
+
+
 query = '''
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT DISTINCT ?concept ?label ?exact_match_uri ?close_match_uri
@@ -145,14 +149,16 @@ for c in kg_concs: # <= 1 exact match, <= 1 close match
         con_dict["relevant_uris"].append(uri)
         if uri.startswith("http://aims.fao.org/aos/agrovoc"):
             res_agro = searchAgro(uri)
-            lab_dict = processLabels(res_agro, 1, langs)
-            con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
+            if res_agro is not None:
+                lab_dict = processLabels(res_agro, 1, langs)
+                con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
                 
             
         elif uri.startswith("https://data.geoscience.earth/ncl/ISO11074"):
             res_iso = searchIso(uri)
-            lab_dict = processLabels(res_iso, 2, langs)
-            con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
+            if res_iso is not None:
+                lab_dict = processLabels(res_iso, 2, langs)
+                con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
         # if uri not from agro or iso, do nothing
 
     if c.get("close_match_uri"):# if close match exsists
@@ -160,19 +166,21 @@ for c in kg_concs: # <= 1 exact match, <= 1 close match
         con_dict["relevant_uris"].append(uri)
         if uri.startswith("http://aims.fao.org/aos/agrovoc"):
             res_agro = searchAgro(uri)
-            lab_dict = processLabels(res_agro, 1, langs)
-            con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
+            if res_agro is not None:
+                lab_dict = processLabels(res_agro, 1, langs)
+                con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
                         
         elif uri.startwith("https://data.geoscience.earth/ncl/ISO11074"):
             res_iso = searchIso(uri)
-            lab_dict = processLabels(res_iso, 2, langs)
-            con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
+            if res_iso is not None:
+                lab_dict = processLabels(res_iso, 2, langs)
+                con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
     
     formatted_cons.append(con_dict) 
 
 
-with open("./keyword-matcher/concepts.json", "w") as json_file:
-    json.dump(formatted_cons, json_file, indent=4) 
+with open("./keyword-matcher/concepts.json", "w", encoding='utf-8') as json_file:
+    json.dump(formatted_cons, json_file, ensure_ascii=False, indent=2) 
 
 
 
