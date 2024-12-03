@@ -46,6 +46,26 @@ def rdfSearchKeys(rdf):
         print(f"Error in RDF parsing or query")
         return []
     
+def rdfSearchDctSub(rdf):
+    try:
+        rdf_pre = 'PREFIX  dct:  <http://purl.org/dc/terms/> ' + rdf
+        g = Graph()
+        g.parse(data=rdf_pre, format="turtle")
+
+        query = '''
+        SELECT ?keyword
+        WHERE {
+            ?p dct:subject ?keyword
+        }
+        ''' 
+        results = g.query(query)
+        keywords = [[str(row[0]), 'en'] for row in results]
+        return keywords
+    
+    except:
+        # print(f"Error in RDF parsing or query")
+        return []
+    
 def rdfSearchSubThes(rdf):
     try:
         g = Graph()
@@ -145,9 +165,16 @@ mismatched_keys = []
 
 for res in result:
     turtle = res['turtle']
+    themes = []
 
-    keys = rdfSearchKeys(turtle)
-    themes = rdfSearchSubThes(turtle)
+    if 'dct:subject' in turtle:
+        terms = rdfSearchDctSub(turtle)
+        keys = [term for term in terms if not term[0].startswith('http')]
+        themes = [term[0] for term in terms if term[0].startswith('http')]
+    
+    else:
+        keys = rdfSearchKeys(turtle)
+        themes = rdfSearchSubThes(turtle)
 
     subs_related = []
 
