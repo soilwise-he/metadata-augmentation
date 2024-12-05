@@ -13,6 +13,17 @@ A match is made by label, or aliases (sameAs, closeMatch), may require translati
 
 - In next iteration, the keywords can be populated from a sparql query: `select skos:concept where skos:prefLabel[@lang=='{language}']=={keyword}`, it means we should prepare a triple store with selected taxonomies (glosis, agrovoc, gemet, inspire, ...). To verify if [soilhealth knowledge graph](https://github.com/soilwise-he/soil-health-knowledge-graph) is a good location for this.
 
+## A brief reading guide(28-11-2024):
+
+- code:
+    - ***get_thesaurus.py***: tranform soil health knowledge to a concept set (concept.json) by fetching labels from Agrovoc and iso.
+    - ***match.py***: match records with the concept set
+
+- result data:
+    - ***match.json***: result of maching records with concepts, the same as the db table: harvest.match
+    - ***mis_keys.json***: a list of keywords that failed to find a match from the concepts
+    - ***vague_match***: matched labels with a similarity score >= 80 and <100
+
 
 
 
