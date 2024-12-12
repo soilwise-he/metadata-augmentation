@@ -21,6 +21,15 @@ def turple2dict(rows): # transform a query result from turple to dict
     col_names = ['identifier', 'hash', 'uri', 'turtle']  
     return [dict(zip(col_names, row)) for row in rows]
 
+def formatString(input_string): # remove prefix numbers from a label
+    stripped_string = input_string.lstrip()
+    
+    # Check if the stripped string starts with a number
+    if stripped_string and stripped_string[0].isdigit():
+        # Remove leading numbers
+        return stripped_string.lstrip('0123456789')
+    
+    return input_string.lstrip()
 
 def rdfSearchKeys(rdf):
     # When there is syntex error in the rdf?
@@ -94,6 +103,7 @@ vague_match = []
 def label_fuzzmatch(subs, keyword, threshold=80):
     
     key_value, key_lang = keyword
+    key_value = formatString(key_value) # remove the number prefix
     best_match_subject = None
     
     flag = 0
@@ -177,6 +187,7 @@ for res in result:
         themes = rdfSearchSubThes(turtle)
 
     subs_related = []
+
 
     # match the keys
     for key in keys:

@@ -75,4 +75,19 @@ def hasSource(label,url,filter,type):
     sources = dbQuery(f"select name from harvest.sources where name = upper('{label}')")
     if not len(sources):
         dbQuery(f"insert into harvest.sources (name,url,filter,type) values ('{label.upper()}','{url}','{filter}','{type}')",(),False)
+
+def deleteTable(table):
     
+    sql = f"DELETE FROM {table} ON CONFLICT DO NOTHING;"
+
+    dbconn = dbInit()
+    with dbconn.cursor() as cur:
+        try:
+            # execute the INSERT statement
+            cur.execute(sql)
+            # commit the changes to the database
+            dbconn.commit()
+        except Exception as e:
+            print(f"Error: {str(e)}")
+        finally:
+            dbconn.close();
