@@ -1,28 +1,10 @@
 [
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#AggregateStability",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "aggregate stability"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#AgriculturalAreaUnderSevereErosion",
     "relevant_uris": [],
     "labels": {
       "en": [
         "agricultural area under severe erosion"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#AgriculturalSubsidies",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "agricultural subsidies"
       ]
     }
   },
@@ -58,78 +40,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#ClimateResilience",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_8a6031d8"
-    ],
-    "labels": {
-      "en": [
-        "climate resilience"
-      ],
-      "fr": [
-        "résilience face au climat"
-      ],
-      "de": [
-        "Klimaresilienz"
-      ],
-      "es": [
-        "Resiliencia al clima"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#ComplexSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "complex soil parameters"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#ContaminatedSites",
     "relevant_uris": [],
     "labels": {
       "en": [
         "contaminated sites"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#CulturalServices",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_f359b8d7"
-    ],
-    "labels": {
-      "en": [
-        "cultural services"
-      ],
-      "fr": [
-        "service culturel"
-      ],
-      "de": [
-        "kulturelle Leistungen"
-      ],
-      "es": [
-        "Servicio cultural"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#DeadOrganicComponents",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "dead organic components"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#DynamicSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "dynamic soil parameters"
       ]
     }
   },
@@ -157,38 +72,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#EnvironmentalQuality",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "environmental quality"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#ErosionByWater",
     "relevant_uris": [],
     "labels": {
       "en": [
         "erosion by water"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#ExclusionCriteria",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "exclusion criteria"
-      ]
-    }
-  },
-  {
-    "identifier": "n672e7055bfa745f2954bb0d09f550bd9b1",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "does not pass through a 2-mm sieve"
       ]
     }
   },
@@ -202,61 +90,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#FacultativeParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "facultative parameters"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#FoodProduction",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_3025"
-    ],
-    "labels": {
-      "en": [
-        "food production"
-      ],
-      "fr": [
-        "production alimentaire"
-      ],
-      "de": [
-        "Lebensmittelproduktion"
-      ],
-      "it": [
-        "Produzione alimentare"
-      ],
-      "es": [
-        "Producción alimentaria"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#ForestFloors",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "forest floors"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#FunctionalSoilCarbonIndicator",
     "relevant_uris": [],
     "labels": {
       "en": [
         "functional soil carbon indicator"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#GeneralSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "general soil parameters"
       ]
     }
   },
@@ -279,24 +117,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#HumanWellbeing",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "human well-being"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "intrinsic soil properties"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#LandAreaSOCContent",
     "relevant_uris": [],
     "labels": {
@@ -315,97 +135,11 @@
     }
   },
   {
-    "identifier": "n672e7055bfa745f2954bb0d09f550bd9b2",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "land area SOC content"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Mineralization",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "mineralisation"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#MorphologicalSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "morphological soil parameters"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Nutrients",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_5274"
-    ],
-    "labels": {
-      "en": [
-        "nutrients",
-        "dietary components"
-      ],
-      "fr": [
-        "substance nutritive",
-        "composant du régime",
-        "élément nutritif",
-        "élément fertilisant",
-        "nutriment"
-      ],
-      "de": [
-        "Nährstoff"
-      ],
-      "it": [
-        "Principi nutritivi",
-        "Componenti della dieta"
-      ],
-      "es": [
-        "Nutriente",
-        "Componentes de la dieta",
-        "Sustancias nutritivas",
-        "Nutrimentos"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#ObligatorySoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "obligatory parameters"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#People",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "people"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#PerMassOfSoil",
     "relevant_uris": [],
     "labels": {
       "en": [
         "per mass of soil"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#PhysicalSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "physical soil parameters"
       ]
     }
   },
@@ -429,220 +163,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#PreventiveActivity",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "preventive activity"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Productivity",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_6210"
-    ],
-    "labels": {
-      "en": [
-        "productivity"
-      ],
-      "fr": [
-        "productivité",
-        "Rendement économique"
-      ],
-      "de": [
-        "Produktivität"
-      ],
-      "it": [
-        "Produttività"
-      ],
-      "es": [
-        "Productividad"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#ProvisioningServices",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_7e12eb3f"
-    ],
-    "labels": {
-      "en": [
-        "provisioning services"
-      ],
-      "fr": [
-        "services d'approvisionnement"
-      ],
-      "de": [
-        "Versorgungsleistungen"
-      ],
-      "es": [
-        "Servicios de abastecimiento"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#RegulatingServices",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_eff3625d"
-    ],
-    "labels": {
-      "en": [
-        "regulating services"
-      ],
-      "fr": [
-        "service de régulation"
-      ],
-      "de": [
-        "Regulierungsleistungen"
-      ],
-      "es": [
-        "Servicios de regulación"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#RestorativeActivity",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "restorative activity"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#RiskAssessment",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_37932"
-    ],
-    "labels": {
-      "en": [
-        "risk assessment",
-        "risk evaluation"
-      ],
-      "fr": [
-        "évaluation du risque",
-        "estimation du risque"
-      ],
-      "de": [
-        "Risikobewertung",
-        "Risikoabschätzung",
-        "Risikoeinschätzung"
-      ],
-      "it": [
-        "Analisi e valutazione del rischio",
-        "Valutazione del rischio"
-      ],
-      "es": [
-        "Evaluación de riesgos",
-        "Estimación del riesgo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#RiskAssessment",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/5.2.26"
-    ],
-    "labels": {
-      "en": [
-        "risk assessment"
-      ],
-      "fr": [
-        "appréciation du risque"
-      ],
-      "de": [
-        "Gefährdungseinschätzung"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SOCContent",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "SOC content"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SOMLoss",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "SOM loss"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SocStock",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soc stock"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Society",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_50309"
-    ],
-    "labels": {
-      "en": [
-        "society"
-      ],
-      "fr": [
-        "société"
-      ],
-      "de": [
-        "Bürgerliche Gesellschaft"
-      ],
-      "it": [
-        "Società"
-      ],
-      "es": [
-        "Sociedad"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilAggregateHighlyUnstable",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil aggregates highly unstable"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilAggregateStabilityDeterioration",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil aggregate stability deterioration"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilBiologicalProperties",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil biological properties"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilCapability",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil capability"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilCarbonConcentration",
     "relevant_uris": [],
     "labels": {
@@ -661,193 +181,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilChemicalProperties",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil chemical properties"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilCondition",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil condition"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilEcologicalDegradation",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil ecological degradation"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilErosionRatesPerUnitOfLandCover",
     "relevant_uris": [],
     "labels": {
       "en": [
         "soil erosion rates per unit of land cover"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctionIndicator",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil function indicator"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilNutrientStatus",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil nutrient status"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilOrganicCarbonThreshold",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soc threshold"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilPhysicalProperties",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_7182"
-    ],
-    "labels": {
-      "en": [
-        "soil physical properties",
-        "soil chemicophysical properties",
-        "soil physicochemical properties"
-      ],
-      "fr": [
-        "propriété physicochimique du sol",
-        "Propriété physique du sol"
-      ],
-      "de": [
-        "physikochemische Bodeneigenschaft",
-        "chemophysikalische Bodeneigenschaft",
-        "bodenphysikalische Eigenschaft"
-      ],
-      "it": [
-        "Proprietà chimico-fisiche del suolo",
-        "Proprietà fisicochimiche del suolo",
-        "Proprietà fisiche del suolo"
-      ],
-      "es": [
-        "Propiedades físico - químicas suelo",
-        "Propiedades físicas del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilPollution",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_7183"
-    ],
-    "labels": {
-      "en": [
-        "soil pollution"
-      ],
-      "fr": [
-        "pollution du sol"
-      ],
-      "de": [
-        "Bodenverschmutzung"
-      ],
-      "it": [
-        "Inquinamento del suolo"
-      ],
-      "es": [
-        "Polución del suelo",
-        "Contaminación del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilPotential",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil potential"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilProductivity",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/5.1.10",
-      "http://aims.fao.org/aos/agrovoc/c_7170"
-    ],
-    "labels": {
-      "en": [
-        "soil productivity",
-        "soil fertility",
-        "soil nutrient content",
-        "soil nutrient balance",
-        "nutrient status (soil)"
-      ],
-      "fr": [
-        "productivité du sol",
-        "fertilité du sol",
-        "teneur en nutriments (sol)",
-        "équilibre nutritif du sol",
-        "statut en nutriments (sol)",
-        "infertilité du sol"
-      ],
-      "de": [
-        "landwirtschaftliche Ertragsfähigkeit",
-        "Bodenfruchtbarkeit",
-        "Bodenproduktivität",
-        "Nährstoffgehalt (Boden)",
-        "Nährstoffgleichgewicht des Bodens",
-        "Nährstoffstatus (Boden)"
-      ],
-      "it": [
-        "Fertilità del suolo",
-        "Produttività del suolo",
-        "Tenore in elementi nutritivi del suolo",
-        "Equilibrio nutritivo del suolo",
-        "Stato nutritivo (suolo)"
-      ],
-      "es": [
-        "Fertilidad del suelo",
-        "Productividad del suelo",
-        "Contenido de nutrientes (suelo)",
-        "Equilibrio nutritivo del suelo",
-        "Estado en nutrientes (suelo)",
-        "Infertilidad del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilRestoration",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/5.2.28"
-    ],
-    "labels": {
-      "en": [
-        "soil restoration"
-      ],
-      "fr": [
-        "réhabilitation du sol"
-      ],
-      "de": [
-        "Bodensanierung"
       ]
     }
   },
@@ -870,15 +208,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilThreat",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil threat"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilVariability",
     "relevant_uris": [],
     "labels": {
@@ -897,44 +226,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#StateOfSoil",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "state of soil"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#StaticSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "static soil parameters"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SupportingServices",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_0f955994"
-    ],
-    "labels": {
-      "en": [
-        "supporting services"
-      ],
-      "fr": [
-        "service d'appui"
-      ],
-      "de": [
-        "unterstützende Leistungen"
-      ],
-      "es": [
-        "Servicios de apoyo"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#SusceptibilityToCompaction",
     "relevant_uris": [],
     "labels": {
@@ -949,15 +240,6 @@
     "labels": {
       "en": [
         "sustainable development goal"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#TerrestrialEcosystems",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "terrestrial ecosystems"
       ]
     }
   },
@@ -1007,52 +289,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#WaterCapacity",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "water capacity"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#WaterConservation",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_8315"
-    ],
-    "labels": {
-      "en": [
-        "water conservation",
-        "conserving water",
-        "water protection (resource)",
-        "water saving"
-      ],
-      "fr": [
-        "conservation de l'eau",
-        "économie de l'eau",
-        "protection de l'eau (ressource)",
-        "maîtrise de l'eau",
-        "gestion de l'eau"
-      ],
-      "de": [
-        "Wasserschutz",
-        "Gewässerschutz (Ressource)",
-        "Wassereinsparung"
-      ],
-      "it": [
-        "Conservazione dell'acqua",
-        "Tutela dell'acqua (risorsa)",
-        "Risparmio d'acqua"
-      ],
-      "es": [
-        "Conservación de aguas",
-        "Protección de las aguas (recursos)",
-        "Ahorro de agua",
-        "Gestión del agua"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#WindErosionRate",
     "relevant_uris": [],
     "labels": {
@@ -1094,39 +330,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#Acidification00093",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_9000093"
-    ],
-    "labels": {
-      "en": [
-        "land cover change"
-      ],
-      "fr": [
-        "changement de couvert végétal"
-      ],
-      "de": [
-        "Veränderung der Landbedeckung"
-      ],
-      "it": [
-        "Cambiamento della copertura del suolo"
-      ],
-      "es": [
-        "Alteración de la cubierta vegetal",
-        "Cambios en la cubierte terrestre"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#AdditionalSources",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "additional sources"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#AggregateMeanWeightDiameter_0_4_8",
     "relevant_uris": [],
     "labels": {
@@ -1145,11 +348,20 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#AgriculturalManagementInputs",
+    "identifier": "https://soilwise-he.github.io/soil-health#AggregateStability",
     "relevant_uris": [],
     "labels": {
       "en": [
-        "agricultural management inputs"
+        "aggregate stability"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#AgriculturalSubsidies",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "agricultural subsidies"
       ]
     }
   },
@@ -1209,33 +421,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#AnimalHealth",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_431"
-    ],
-    "labels": {
-      "en": [
-        "animal health",
-        "animal fitness"
-      ],
-      "fr": [
-        "santé animale",
-        "aptitude physique animale"
-      ],
-      "de": [
-        "Tiergesundheit"
-      ],
-      "it": [
-        "Salute degli animali",
-        "Salute fisica degli animali"
-      ],
-      "es": [
-        "Sanidad animal",
-        "Aptitud física animal"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#AnimalManure",
     "relevant_uris": [],
     "labels": {
@@ -1279,17 +464,11 @@
   {
     "identifier": "https://soilwise-he.github.io/soil-health#AvailableWaterCapacity",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/2.1.3"
+      "http://data.geoscience.earth/ncl/ISO11074/2.1.3"
     ],
     "labels": {
       "en": [
         "available water capacity"
-      ],
-      "fr": [
-        "réserve utile en eau"
-      ],
-      "de": [
-        "nutzbare Feldkapazität"
       ]
     }
   },
@@ -1363,17 +542,11 @@
   {
     "identifier": "https://soilwise-he.github.io/soil-health#Biodiversity",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/7.1.2"
+      "http://data.geoscience.earth/ncl/ISO11074/7.1.2"
     ],
     "labels": {
       "en": [
         "biodiversity"
-      ],
-      "fr": [
-        "biodiversité"
-      ],
-      "de": [
-        "Biodiversität"
       ]
     }
   },
@@ -1389,17 +562,11 @@
   {
     "identifier": "https://soilwise-he.github.io/soil-health#BulkDensity",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/3.1.1"
+      "http://data.geoscience.earth/ncl/ISO11074/3.1.1"
     ],
     "labels": {
       "en": [
         "bulk density"
-      ],
-      "fr": [
-        "masse volumique"
-      ],
-      "de": [
-        "Rohdichte"
       ]
     }
   },
@@ -1441,20 +608,31 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#CarbonStocks",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "carbon stocks"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#ChemicalCompositionOfSoc",
     "relevant_uris": [],
     "labels": {
       "en": [
         "chemical composition of SOC"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#ClimateResilience",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_8a6031d8"
+    ],
+    "labels": {
+      "en": [
+        "climate resilience"
+      ],
+      "fr": [
+        "résilience face au climat"
+      ],
+      "de": [
+        "Klimaresilienz"
+      ],
+      "es": [
+        "Resiliencia al clima"
       ]
     }
   },
@@ -1528,18 +706,11 @@
   {
     "identifier": "https://soilwise-he.github.io/soil-health#Contamination",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/2.3.6"
+      "http://data.geoscience.earth/ncl/ISO11074/2.3.6"
     ],
     "labels": {
       "en": [
         "contamination"
-      ],
-      "fr": [
-        "contamination"
-      ],
-      "de": [
-        "Verunreinigung",
-        "Kontamination"
       ]
     }
   },
@@ -1562,64 +733,22 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#Cultivation",
+    "identifier": "https://soilwise-he.github.io/soil-health#CulturalServices",
     "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_2018"
+      "http://aims.fao.org/aos/agrovoc/c_f359b8d7"
     ],
     "labels": {
       "en": [
-        "cultivation",
-        "crop husbandry",
-        "plant cultivation"
+        "cultural services"
       ],
       "fr": [
-        "pratique culturale",
-        "phytotechnie",
-        "façon culturale"
+        "service culturel"
       ],
       "de": [
-        "Pflanzenbau",
-        "Anbau",
-        "Ackerbau"
-      ],
-      "it": [
-        "Coltivazione",
-        "Allevamento vegetale",
-        "Coltivazione delle piante"
+        "kulturelle Leistungen"
       ],
       "es": [
-        "Cultivo",
-        "Fitotecnia"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Decomposition",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/3.3.7",
-      "http://aims.fao.org/aos/agrovoc/c_2159"
-    ],
-    "labels": {
-      "en": [
-        "decomposition",
-        "degradation"
-      ],
-      "fr": [
-        "décomposition",
-        "dégradation",
-        "altération"
-      ],
-      "de": [
-        "Zersetzung",
-        "Abbau"
-      ],
-      "it": [
-        "Degradazione",
-        "Decomposizione"
-      ],
-      "es": [
-        "Degradación",
-        "Descomposición"
+        "Servicio cultural"
       ]
     }
   },
@@ -1707,6 +836,15 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#DynamicSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "dynamic soil parameters"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#Earth",
     "relevant_uris": [
       "http://aims.fao.org/aos/agrovoc/c_2437"
@@ -1776,6 +914,33 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#ExclusionCriteria",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "exclusion criteria"
+      ]
+    }
+  },
+  {
+    "identifier": "nebf2cc52113544a4bcb527386b30e8ebb1",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "does not pass through a 2-mm sieve"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#FacultativeParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "facultative parameters"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#FineSoilFraction",
     "relevant_uris": [],
     "labels": {
@@ -1785,7 +950,7 @@
     }
   },
   {
-    "identifier": "n672e7055bfa745f2954bb0d09f550bd9b3",
+    "identifier": "nebf2cc52113544a4bcb527386b30e8ebb2",
     "relevant_uris": [],
     "labels": {
       "en": [
@@ -1794,43 +959,52 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#FoodSecurity",
+    "identifier": "https://soilwise-he.github.io/soil-health#FoodProduction",
     "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_10967"
+      "http://aims.fao.org/aos/agrovoc/c_3025"
     ],
     "labels": {
       "en": [
-        "food security"
+        "food production"
       ],
       "fr": [
-        "sécurité alimentaire"
+        "production alimentaire"
       ],
       "de": [
-        "Nahrungssicherheit",
-        "Ernährungssicherung"
+        "Lebensmittelproduktion"
       ],
       "it": [
-        "Sicurezza alimentare"
+        "Produzione alimentare"
       ],
       "es": [
-        "Seguridad alimentaria"
+        "Producción alimentaria"
       ]
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#HumanHealth",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_c722a312"
-    ],
+    "identifier": "https://soilwise-he.github.io/soil-health#ForestFloors",
+    "relevant_uris": [],
     "labels": {
       "en": [
-        "human health"
-      ],
-      "fr": [
-        "santé humaine"
-      ],
-      "es": [
-        "Salud humana"
+        "forest floors"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#GeneralSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "general soil parameters"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#HumanWellbeing",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "human well-being"
       ]
     }
   },
@@ -1892,25 +1066,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#IndustrialPollutants",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_3846"
-    ],
+    "identifier": "https://soilwise-he.github.io/soil-health#InherentSoilAttributes",
+    "relevant_uris": [],
     "labels": {
       "en": [
-        "industrial pollutants"
-      ],
-      "fr": [
-        "polluant industriel"
-      ],
-      "de": [
-        "industrieller Schadstoff"
-      ],
-      "it": [
-        "Inquinanti industriali"
-      ],
-      "es": [
-        "Contaminante industrial"
+        "inherent soil attributes"
       ]
     }
   },
@@ -1987,6 +1147,15 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "intrinsic soil properties"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#LabileFractionOfSoc",
     "relevant_uris": [],
     "labels": {
@@ -2001,29 +1170,6 @@
     "labels": {
       "en": [
         "land cultivation"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#LandDegradation",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_34823"
-    ],
-    "labels": {
-      "en": [
-        "land degradation"
-      ],
-      "fr": [
-        "dégradation des terres"
-      ],
-      "de": [
-        "Landdegradation"
-      ],
-      "it": [
-        "Degradazione dei terreni"
-      ],
-      "es": [
-        "Degradación de tierras"
       ]
     }
   },
@@ -2059,29 +1205,6 @@
     "labels": {
       "en": [
         "land management changes"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#LandProductivity",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_4176"
-    ],
-    "labels": {
-      "en": [
-        "land productivity"
-      ],
-      "fr": [
-        "productivité des terres"
-      ],
-      "de": [
-        "Flächenproduktivität"
-      ],
-      "it": [
-        "Produttività dei terreni"
-      ],
-      "es": [
-        "Productividad de la tierra"
       ]
     }
   },
@@ -2275,6 +1398,24 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#Mineralization",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "mineralisation"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#MorphologicalSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "morphological soil parameters"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#NaturalCapital",
     "relevant_uris": [
       "http://aims.fao.org/aos/agrovoc/c_dfe84e21"
@@ -2359,6 +1500,47 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#Nutrients",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_5274"
+    ],
+    "labels": {
+      "en": [
+        "nutrients",
+        "dietary components"
+      ],
+      "fr": [
+        "substance nutritive",
+        "composant du régime",
+        "élément nutritif",
+        "élément fertilisant",
+        "nutriment"
+      ],
+      "de": [
+        "Nährstoff"
+      ],
+      "it": [
+        "Principi nutritivi",
+        "Componenti della dieta"
+      ],
+      "es": [
+        "Nutriente",
+        "Componentes de la dieta",
+        "Sustancias nutritivas",
+        "Nutrimentos"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#ObligatorySoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "obligatory parameters"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#OnePointFivePercentSOC",
     "relevant_uris": [],
     "labels": {
@@ -2390,17 +1572,11 @@
   {
     "identifier": "https://soilwise-he.github.io/soil-health#OrganicCarbon",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/2.1.7"
+      "http://data.geoscience.earth/ncl/ISO11074/2.1.7"
     ],
     "labels": {
       "en": [
         "organic carbon"
-      ],
-      "fr": [
-        "carbone organique"
-      ],
-      "de": [
-        "organischer Kohlenstoff"
       ]
     }
   },
@@ -2494,41 +1670,20 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#PlantHealth",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_25398"
-    ],
+    "identifier": "https://soilwise-he.github.io/soil-health#People",
+    "relevant_uris": [],
     "labels": {
       "en": [
-        "plant health",
-        "plant condition",
-        "plant quality",
-        "plant fitness"
-      ],
-      "fr": [
-        "santé des plantes",
-        "état de la plante",
-        "qualité des plantes",
-        "aptitude physique de la plante",
-        "santé des végétaux"
-      ],
-      "de": [
-        "Pflanzengesundheit",
-        "Pflanzenzustand",
-        "Pflanzenqualität"
-      ],
-      "it": [
-        "Salute delle piante",
-        "Condizione della pianta",
-        "Qualità della pianta",
-        "Stato fisiologico della pianta"
-      ],
-      "es": [
-        "Sanidad vegetal",
-        "Condición de la planta",
-        "Calidad de la planta",
-        "Aptitud física de las plantas",
-        "Salud de la planta"
+        "people"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#PhysicalSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "physical soil parameters"
       ]
     }
   },
@@ -2603,6 +1758,55 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#PreventiveActivity",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "preventive activity"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#ProvisioningServices",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_7e12eb3f"
+    ],
+    "labels": {
+      "en": [
+        "provisioning services"
+      ],
+      "fr": [
+        "services d'approvisionnement"
+      ],
+      "de": [
+        "Versorgungsleistungen"
+      ],
+      "es": [
+        "Servicios de abastecimiento"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#RegulatingServices",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_eff3625d"
+    ],
+    "labels": {
+      "en": [
+        "regulating services"
+      ],
+      "fr": [
+        "service de régulation"
+      ],
+      "de": [
+        "Regulierungsleistungen"
+      ],
+      "es": [
+        "Servicios de regulación"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#Respiration",
     "relevant_uris": [
       "http://aims.fao.org/aos/agrovoc/c_9421"
@@ -2629,24 +1833,81 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#RestorativeActivity",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "restorative activity"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#RiskAssessment",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_37932"
+    ],
+    "labels": {
+      "en": [
+        "risk assessment",
+        "risk evaluation"
+      ],
+      "fr": [
+        "évaluation du risque",
+        "estimation du risque"
+      ],
+      "de": [
+        "Risikobewertung",
+        "Risikoabschätzung",
+        "Risikoeinschätzung"
+      ],
+      "it": [
+        "Analisi e valutazione del rischio",
+        "Valutazione del rischio"
+      ],
+      "es": [
+        "Evaluación de riesgos",
+        "Estimación del riesgo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#RiskAssessment",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/5.2.26"
+    ],
+    "labels": {
+      "en": [
+        "risk assessment"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SOCContent",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "SOC content"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#SOCStabilisation",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/6.4.43",
+      "http://data.geoscience.earth/ncl/ISO11074/6.4.43",
       "http://aims.fao.org/aos/agrovoc/c_7353"
     ],
     "labels": {
       "en": [
         "stabilisation",
-        "stabilization",
-        "economic stabilization"
+        "economic stabilization",
+        "stabilization"
       ],
       "fr": [
-        "stabilisation",
         "stabilisation économique"
       ],
       "de": [
-        "Stabilisierung",
-        "ökonomische Stabilisierung"
+        "ökonomische Stabilisierung",
+        "Stabilisierung"
       ],
       "it": [
         "Stabilizzazione economica",
@@ -2764,15 +2025,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SocContentThreshold",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "SOC content threshold"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#SocLossesInPeatSoils",
     "relevant_uris": [],
     "labels": {
@@ -2787,6 +2039,47 @@
     "labels": {
       "en": [
         "SOC response to climatic changes"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Society",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_50309"
+    ],
+    "labels": {
+      "en": [
+        "society"
+      ],
+      "fr": [
+        "société"
+      ],
+      "de": [
+        "Bürgerliche Gesellschaft"
+      ],
+      "it": [
+        "Società"
+      ],
+      "es": [
+        "Sociedad"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilAggregateHighlyUnstable",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil aggregates highly unstable"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilAggregateStabilityDeterioration",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil aggregate stability deterioration"
       ]
     }
   },
@@ -2827,11 +2120,20 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilBiologicalDegradation",
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilBiologicalProperties",
     "relevant_uris": [],
     "labels": {
       "en": [
-        "soil biological degradation"
+        "soil biological properties"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilCapability",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil capability"
       ]
     }
   },
@@ -2845,11 +2147,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilChemicalDegradation",
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilChemicalProperties",
     "relevant_uris": [],
     "labels": {
       "en": [
-        "soil chemical degradation"
+        "soil chemical properties"
       ]
     }
   },
@@ -2919,17 +2221,11 @@
   {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilFertility",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/5.1.9"
+      "http://data.geoscience.earth/ncl/ISO11074/5.1.9"
     ],
     "labels": {
       "en": [
         "soil fertility"
-      ],
-      "fr": [
-        "fertilité du sol"
-      ],
-      "de": [
-        "Bodenfruchtbarkeit"
       ]
     }
   },
@@ -2943,29 +2239,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctioning",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil functioning"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilHealthIndicator",
     "relevant_uris": [],
     "labels": {
       "en": [
         "soil health indicator"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilIndicators",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil indicators"
       ]
     }
   },
@@ -2979,45 +2257,6 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilLayers",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil layers"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilManagement",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_7176"
-    ],
-    "labels": {
-      "en": [
-        "soil management"
-      ],
-      "fr": [
-        "gestion du sol",
-        "mise en état des sols",
-        "dérochage",
-        "mise en valeur agricole (terre)",
-        "mise en valeur du sol"
-      ],
-      "de": [
-        "Bodenbewirtschaftung"
-      ],
-      "it": [
-        "Gestione del suolo"
-      ],
-      "es": [
-        "Manejo del suelo",
-        "Administración del suelo",
-        "Ordenación de suelos",
-        "gestión del suelo"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilNutrientAvailability",
     "relevant_uris": [],
     "labels": {
@@ -3027,45 +2266,97 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilPhysicalDegradation",
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilNutrientStatus",
     "relevant_uris": [],
     "labels": {
       "en": [
-        "soil physical degradation"
+        "soil nutrient status"
       ]
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilProcesses",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/3.3.32"
-    ],
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilOrganicCarbonThreshold",
+    "relevant_uris": [],
     "labels": {
       "en": [
-        "soil processes"
-      ],
-      "fr": [
-        "processus du sol"
-      ],
-      "de": [
-        "Bodenprozesse"
+        "soc threshold"
       ]
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilProtection",
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilPhysicalProperties",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/5.3.4"
+      "http://aims.fao.org/aos/agrovoc/c_7182"
     ],
     "labels": {
       "en": [
-        "soil protection"
+        "soil physical properties",
+        "soil chemicophysical properties",
+        "soil physicochemical properties"
       ],
       "fr": [
-        "protection du sol"
+        "propriété physicochimique du sol",
+        "Propriété physique du sol"
       ],
       "de": [
-        "Bodenschutz"
+        "physikochemische Bodeneigenschaft",
+        "chemophysikalische Bodeneigenschaft",
+        "bodenphysikalische Eigenschaft"
+      ],
+      "it": [
+        "Proprietà chimico-fisiche del suolo",
+        "Proprietà fisicochimiche del suolo",
+        "Proprietà fisiche del suolo"
+      ],
+      "es": [
+        "Propiedades físico - químicas suelo",
+        "Propiedades físicas del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilProductivity",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/5.1.10",
+      "http://aims.fao.org/aos/agrovoc/c_7170"
+    ],
+    "labels": {
+      "en": [
+        "soil productivity",
+        "soil fertility",
+        "soil nutrient content",
+        "soil nutrient balance",
+        "nutrient status (soil)"
+      ],
+      "fr": [
+        "fertilité du sol",
+        "productivité du sol",
+        "teneur en nutriments (sol)",
+        "équilibre nutritif du sol",
+        "statut en nutriments (sol)",
+        "infertilité du sol"
+      ],
+      "de": [
+        "Bodenfruchtbarkeit",
+        "Bodenproduktivität",
+        "Nährstoffgehalt (Boden)",
+        "Nährstoffgleichgewicht des Bodens",
+        "Nährstoffstatus (Boden)"
+      ],
+      "it": [
+        "Fertilità del suolo",
+        "Produttività del suolo",
+        "Tenore in elementi nutritivi del suolo",
+        "Equilibrio nutritivo del suolo",
+        "Stato nutritivo (suolo)"
+      ],
+      "es": [
+        "Fertilidad del suelo",
+        "Productividad del suelo",
+        "Contenido de nutrientes (suelo)",
+        "Equilibrio nutritivo del suelo",
+        "Estado en nutrientes (suelo)",
+        "Infertilidad del suelo"
       ]
     }
   },
@@ -3097,11 +2388,13 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilServices",
-    "relevant_uris": [],
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilRestoration",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/5.2.28"
+    ],
     "labels": {
       "en": [
-        "soil services"
+        "soil restoration"
       ]
     }
   },
@@ -3136,17 +2429,11 @@
   {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilStructure",
     "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/2.1.17"
+      "http://data.geoscience.earth/ncl/ISO11074/2.1.17"
     ],
     "labels": {
       "en": [
         "soil structure"
-      ],
-      "fr": [
-        "structure du sol"
-      ],
-      "de": [
-        "Bodengefüge"
       ]
     }
   },
@@ -3183,6 +2470,15 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#StaticSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "static soil parameters"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#StorageWithinSoilAggregates",
     "relevant_uris": [],
     "labels": {
@@ -3201,20 +2497,31 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#SupportingServices",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_0f955994"
+    ],
+    "labels": {
+      "en": [
+        "supporting services"
+      ],
+      "fr": [
+        "service d'appui"
+      ],
+      "de": [
+        "unterstützende Leistungen"
+      ],
+      "es": [
+        "Servicios de apoyo"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#SurfaceRun-off",
     "relevant_uris": [],
     "labels": {
       "en": [
         "surface run-off"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#TerrestrialLayer",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "terrestrial layer"
       ]
     }
   },
@@ -3332,57 +2639,48 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#WaterErosion",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_8318"
-    ],
+    "identifier": "https://soilwise-he.github.io/soil-health#WaterCapacity",
+    "relevant_uris": [],
     "labels": {
       "en": [
-        "water erosion",
-        "rain erosion"
-      ],
-      "fr": [
-        "érosion hydrique",
-        "érosion pluviale",
-        "ravinement"
-      ],
-      "de": [
-        "Wassererosion",
-        "Regenerosion"
-      ],
-      "it": [
-        "erosione provocata dall'acqua",
-        "Erosione idrica",
-        "Erosione pluviale"
-      ],
-      "es": [
-        "Erosión hídrica",
-        "Erosión por el agua",
-        "Erosión pluvial",
-        "Derrubio"
+        "water capacity"
       ]
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#WaterHoldingCapacity",
+    "identifier": "https://soilwise-he.github.io/soil-health#WaterConservation",
     "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_25304"
+      "http://aims.fao.org/aos/agrovoc/c_8315"
     ],
     "labels": {
       "en": [
-        "water holding capacity"
+        "water conservation",
+        "conserving water",
+        "water protection (resource)",
+        "water saving"
       ],
       "fr": [
-        "capacité de rétention d'eau"
+        "conservation de l'eau",
+        "économie de l'eau",
+        "protection de l'eau (ressource)",
+        "maîtrise de l'eau",
+        "gestion de l'eau"
       ],
       "de": [
-        "Wasserhaltekapazität"
+        "Wasserschutz",
+        "Gewässerschutz (Ressource)",
+        "Wassereinsparung"
       ],
       "it": [
-        "Capacità di ritenzione dell'acqua"
+        "Conservazione dell'acqua",
+        "Tutela dell'acqua (risorsa)",
+        "Risparmio d'acqua"
       ],
       "es": [
-        "Capacidad de retención de agua"
+        "Conservación de aguas",
+        "Protección de las aguas (recursos)",
+        "Ahorro de agua",
+        "Gestión del agua"
       ]
     }
   },
@@ -3473,25 +2771,44 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#WindErosion",
+    "identifier": "https://soilwise-he.github.io/soil-health#Acidification00093",
     "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_8393"
+      "http://aims.fao.org/aos/agrovoc/c_9000093"
     ],
     "labels": {
       "en": [
-        "wind erosion"
+        "land cover change"
       ],
       "fr": [
-        "érosion éolienne"
+        "changement de couvert végétal"
       ],
       "de": [
-        "Winderosion"
+        "Veränderung der Landbedeckung"
       ],
       "it": [
-        "Erosione eolica"
+        "Cambiamento della copertura del suolo"
       ],
       "es": [
-        "Erosión eólica"
+        "Alteración de la cubierta vegetal",
+        "Cambios en la cubierte terrestre"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#BiologicalProductivity",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "biological productivity"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#CarbonStocks",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "carbon stocks"
       ]
     }
   },
@@ -3552,6 +2869,15 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#ComplexSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "complex soil parameters"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#ConditionOfLand",
     "relevant_uris": [],
     "labels": {
@@ -3579,11 +2905,447 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#Cultivation",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_2018"
+    ],
+    "labels": {
+      "en": [
+        "cultivation",
+        "crop husbandry",
+        "plant cultivation"
+      ],
+      "fr": [
+        "pratique culturale",
+        "phytotechnie",
+        "façon culturale"
+      ],
+      "de": [
+        "Pflanzenbau",
+        "Anbau",
+        "Ackerbau"
+      ],
+      "it": [
+        "Coltivazione",
+        "Allevamento vegetale",
+        "Coltivazione delle piante"
+      ],
+      "es": [
+        "Cultivo",
+        "Fitotecnia"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#DeadOrganicComponents",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "dead organic components"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Decomposition",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/3.3.7",
+      "http://aims.fao.org/aos/agrovoc/c_2159"
+    ],
+    "labels": {
+      "en": [
+        "decomposition",
+        "degradation"
+      ],
+      "fr": [
+        "dégradation",
+        "décomposition",
+        "altération"
+      ],
+      "de": [
+        "Abbau",
+        "Zersetzung"
+      ],
+      "it": [
+        "Degradazione",
+        "Decomposizione"
+      ],
+      "es": [
+        "Degradación",
+        "Descomposición"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#DegradedSoils",
     "relevant_uris": [],
     "labels": {
       "en": [
         "degraded soils"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#HealthySoils",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "healthy soils"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#IndustrialPollutants",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_3846"
+    ],
+    "labels": {
+      "en": [
+        "industrial pollutants"
+      ],
+      "fr": [
+        "polluant industriel"
+      ],
+      "de": [
+        "industrieller Schadstoff"
+      ],
+      "it": [
+        "Inquinanti industriali"
+      ],
+      "es": [
+        "Contaminante industrial"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#LandProductivity",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_4176"
+    ],
+    "labels": {
+      "en": [
+        "land productivity"
+      ],
+      "fr": [
+        "productivité des terres"
+      ],
+      "de": [
+        "Flächenproduktivität"
+      ],
+      "it": [
+        "Produttività dei terreni"
+      ],
+      "es": [
+        "Productividad de la tierra"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#ManageableSoilAttributes",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "manageable soil attributes"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Mineralisation",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "mineralisation"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctioning",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil functioning"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilLayers",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil layers"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilPotential",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil potential"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilProcesses",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/3.3.32"
+    ],
+    "labels": {
+      "en": [
+        "soil processes"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilProtection",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/5.3.4"
+    ],
+    "labels": {
+      "en": [
+        "soil protection"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilServices",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil services"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilStability",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil stability"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#TerrestrialEcosystems",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "terrestrial ecosystems"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#TerrestrialLayer",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "terrestrial layer"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#WaterInfiltration",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "water infiltration"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#AdditionalSources",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "additional sources"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#FoodSecurity",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_10967"
+    ],
+    "labels": {
+      "en": [
+        "food security"
+      ],
+      "fr": [
+        "sécurité alimentaire"
+      ],
+      "de": [
+        "Nahrungssicherheit",
+        "Ernährungssicherung"
+      ],
+      "it": [
+        "Sicurezza alimentare"
+      ],
+      "es": [
+        "Seguridad alimentaria"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Productivity",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_6210"
+    ],
+    "labels": {
+      "en": [
+        "productivity"
+      ],
+      "fr": [
+        "productivité",
+        "Rendement économique"
+      ],
+      "de": [
+        "Produktivität"
+      ],
+      "it": [
+        "Produttività"
+      ],
+      "es": [
+        "Productividad"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SOMLoss",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "SOM loss"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SpatialData",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_379bbe9f"
+    ],
+    "labels": {
+      "en": [
+        "spatial data",
+        "geospatial data",
+        "geodata"
+      ],
+      "fr": [
+        "données spatiales",
+        "données géospatiales"
+      ],
+      "de": [
+        "räumliche Daten"
+      ],
+      "it": [
+        "Dati spaziali"
+      ],
+      "es": [
+        "Datos espaciales",
+        "Datos geoespaciales"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SpecificSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "specific soil parameters"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#TwoPercentSOC",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "2% soc"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#WaterErosion",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_8318"
+    ],
+    "labels": {
+      "en": [
+        "water erosion",
+        "rain erosion"
+      ],
+      "fr": [
+        "érosion hydrique",
+        "érosion pluviale",
+        "ravinement"
+      ],
+      "de": [
+        "Wassererosion",
+        "Regenerosion"
+      ],
+      "it": [
+        "erosione provocata dall'acqua",
+        "Erosione idrica",
+        "Erosione pluviale"
+      ],
+      "es": [
+        "Erosión hídrica",
+        "Erosión por el agua",
+        "Erosión pluvial",
+        "Derrubio"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#WaterHoldingCapacity",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_25304"
+    ],
+    "labels": {
+      "en": [
+        "water holding capacity"
+      ],
+      "fr": [
+        "capacité de rétention d'eau"
+      ],
+      "de": [
+        "Wasserhaltekapazität"
+      ],
+      "it": [
+        "Capacità di ritenzione dell'acqua"
+      ],
+      "es": [
+        "Capacidad de retención de agua"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#WindErosion",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_8393"
+    ],
+    "labels": {
+      "en": [
+        "wind erosion"
+      ],
+      "fr": [
+        "érosion éolienne"
+      ],
+      "de": [
+        "Winderosion"
+      ],
+      "it": [
+        "Erosione eolica"
+      ],
+      "es": [
+        "Erosión eólica"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#BasicSoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "basic soil parameters"
       ]
     }
   },
@@ -3611,29 +3373,11 @@
     }
   },
   {
-    "identifier": "https://soilwise-he.github.io/soil-health#HealthySoils",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "healthy soils"
-      ]
-    }
-  },
-  {
     "identifier": "https://soilwise-he.github.io/soil-health#LifeSupportFunctions",
     "relevant_uris": [],
     "labels": {
       "en": [
         "life support functions"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Mineralisation",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "mineralisation"
       ]
     }
   },
@@ -3647,11 +3391,625 @@
     }
   },
   {
+    "identifier": "https://soilwise-he.github.io/soil-health#SocStock",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soc stock"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilPollution",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_7183"
+    ],
+    "labels": {
+      "en": [
+        "soil pollution"
+      ],
+      "fr": [
+        "pollution du sol"
+      ],
+      "de": [
+        "Bodenverschmutzung"
+      ],
+      "it": [
+        "Inquinamento del suolo"
+      ],
+      "es": [
+        "Polución del suelo",
+        "Contaminación del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilSealing",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_f9554e7c"
+    ],
+    "labels": {
+      "en": [
+        "soil sealing"
+      ],
+      "fr": [
+        "imperméabilisation des sols"
+      ],
+      "de": [
+        "Bodenversiegelung"
+      ],
+      "it": [
+        "Impermeabilizzazione del suolo"
+      ],
+      "es": [
+        "Sellado de la superficie del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#AnimalHealth",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_431"
+    ],
+    "labels": {
+      "en": [
+        "animal health",
+        "animal fitness"
+      ],
+      "fr": [
+        "santé animale",
+        "aptitude physique animale"
+      ],
+      "de": [
+        "Tiergesundheit"
+      ],
+      "it": [
+        "Salute degli animali",
+        "Salute fisica degli animali"
+      ],
+      "es": [
+        "Sanidad animal",
+        "Aptitud física animal"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#HumanHealth",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_c722a312"
+    ],
+    "labels": {
+      "en": [
+        "human health"
+      ],
+      "fr": [
+        "santé humaine"
+      ],
+      "es": [
+        "Salud humana"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#PlantHealth",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_25398"
+    ],
+    "labels": {
+      "en": [
+        "plant health",
+        "plant condition",
+        "plant quality",
+        "plant fitness"
+      ],
+      "fr": [
+        "santé des plantes",
+        "état de la plante",
+        "qualité des plantes",
+        "aptitude physique de la plante",
+        "santé des végétaux"
+      ],
+      "de": [
+        "Pflanzengesundheit",
+        "Pflanzenzustand",
+        "Pflanzenqualität"
+      ],
+      "it": [
+        "Salute delle piante",
+        "Condizione della pianta",
+        "Qualità della pianta",
+        "Stato fisiologico della pianta"
+      ],
+      "es": [
+        "Sanidad vegetal",
+        "Condición de la planta",
+        "Calidad de la planta",
+        "Aptitud física de las plantas",
+        "Salud de la planta"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilAttributes",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil attributes"
+      ]
+    }
+  },
+  {
     "identifier": "https://soilwise-he.github.io/soil-health#SoilCover",
     "relevant_uris": [],
     "labels": {
       "en": [
         "soil cover"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctionIndicator",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil function indicator"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilManagement",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_7176"
+    ],
+    "labels": {
+      "en": [
+        "soil management"
+      ],
+      "fr": [
+        "gestion du sol",
+        "mise en état des sols",
+        "dérochage",
+        "mise en valeur agricole (terre)",
+        "mise en valeur du sol"
+      ],
+      "de": [
+        "Bodenbewirtschaftung"
+      ],
+      "it": [
+        "Gestione del suolo"
+      ],
+      "es": [
+        "Manejo del suelo",
+        "Administración del suelo",
+        "Ordenación de suelos",
+        "gestión del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Thresholds",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "thresholds"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#LandDegradation",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_34823"
+    ],
+    "labels": {
+      "en": [
+        "land degradation"
+      ],
+      "fr": [
+        "dégradation des terres"
+      ],
+      "de": [
+        "Landdegradation"
+      ],
+      "it": [
+        "Degradazione dei terreni"
+      ],
+      "es": [
+        "Degradación de tierras"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SocContentThreshold",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "SOC content threshold"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilCondition",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil condition"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilErosion",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_2651"
+    ],
+    "labels": {
+      "en": [
+        "soil erosion",
+        "erosion",
+        "soil erosion phenomena"
+      ],
+      "fr": [
+        "érosion",
+        "érosion du sol"
+      ],
+      "de": [
+        "Erosion",
+        "Bodenerosion",
+        "Erosionserscheinungen"
+      ],
+      "it": [
+        "Erosione",
+        "Erosione del suolo"
+      ],
+      "es": [
+        "Erosión",
+        "Erosión del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilHealth",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_a9645d28"
+    ],
+    "labels": {
+      "en": [
+        "soil health",
+        "soil quality"
+      ],
+      "fr": [
+        "qualité du sol"
+      ],
+      "de": [
+        "Bodengüte",
+        "Bodenqualität"
+      ],
+      "it": [
+        "Qualità del suolo"
+      ],
+      "es": [
+        "Calidad del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#StateOfSoil",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "state of soil"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Indicators",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_330058"
+    ],
+    "labels": {
+      "en": [
+        "indicators"
+      ],
+      "fr": [
+        "indicateur"
+      ],
+      "de": [
+        "Indikator"
+      ],
+      "it": [
+        "Indicatori"
+      ],
+      "es": [
+        "indicador"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilBiologicalDegradation",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil biological degradation"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilParameters",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil parameters"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#EnvironmentalQuality",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "environmental quality"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilEcologicalDegradation",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil ecological degradation"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctions",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_e5629cbd"
+    ],
+    "labels": {
+      "en": [
+        "soil functions"
+      ],
+      "fr": [
+        "fonction du sol"
+      ],
+      "de": [
+        "Bodenfunktionen"
+      ],
+      "it": [
+        "Funzioni del suolo"
+      ],
+      "es": [
+        "Funciones del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctions",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/3.3.31"
+    ],
+    "labels": {
+      "en": [
+        "soil functions"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#AgriculturalManagementInputs",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "agricultural management inputs"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilQuality",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_a9645d28"
+    ],
+    "labels": {
+      "en": [
+        "soil quality",
+        "soil health"
+      ],
+      "fr": [
+        "qualité du sol"
+      ],
+      "de": [
+        "Bodengüte",
+        "Bodenqualität"
+      ],
+      "it": [
+        "Qualità del suolo"
+      ],
+      "es": [
+        "Calidad del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilQuality",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/2.1.15"
+    ],
+    "labels": {
+      "en": [
+        "soil quality"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilChemicalDegradation",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil chemical degradation"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilThreats",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil threats"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Soil",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_7156"
+    ],
+    "labels": {
+      "en": [
+        "soil"
+      ],
+      "fr": [
+        "sol"
+      ],
+      "de": [
+        "Boden"
+      ],
+      "it": [
+        "Suolo"
+      ],
+      "es": [
+        "Suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#Soil",
+    "relevant_uris": [
+      "http://data.geoscience.earth/ncl/ISO11074/2.1.11"
+    ],
+    "labels": {
+      "en": [
+        "soil"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilOrganicMatter",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_35657"
+    ],
+    "labels": {
+      "en": [
+        "soil organic matter",
+        "SOM"
+      ],
+      "fr": [
+        "matière organique du sol"
+      ],
+      "de": [
+        "organische Bodensubstanz",
+        "organische Substanz des Bodens",
+        "OBS"
+      ],
+      "it": [
+        "Sostanza organica del suolo"
+      ],
+      "es": [
+        "Materia orgánica del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilPhysicalDegradation",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil physical degradation"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilIndicators",
+    "relevant_uris": [],
+    "labels": {
+      "en": [
+        "soil indicators"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilProperties",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_330883"
+    ],
+    "labels": {
+      "en": [
+        "soil properties"
+      ],
+      "fr": [
+        "propriété du sol",
+        "caractéristique du sol"
+      ],
+      "de": [
+        "Bodeneigenschaft"
+      ],
+      "it": [
+        "Proprietà del suolo",
+        "Proprietà del terreno"
+      ],
+      "es": [
+        "Propiedades del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#SoilDegradation",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_7168"
+    ],
+    "labels": {
+      "en": [
+        "soil degradation",
+        "soil deterioration"
+      ],
+      "fr": [
+        "dégradation du sol",
+        "détérioration du sol"
+      ],
+      "de": [
+        "Bodendegradation",
+        "Bodenverschlechterung"
+      ],
+      "it": [
+        "Degradazione del suolo",
+        "Deterioramento del suolo"
+      ],
+      "es": [
+        "Degradación del suelo",
+        "Deterioro del suelo"
+      ]
+    }
+  },
+  {
+    "identifier": "https://soilwise-he.github.io/soil-health#EcosystemServices",
+    "relevant_uris": [
+      "http://aims.fao.org/aos/agrovoc/c_1348040570280"
+    ],
+    "labels": {
+      "en": [
+        "ecosystem services",
+        "ecosystem goods and services"
+      ],
+      "fr": [
+        "services écosystémiques",
+        "services écologiques"
+      ],
+      "de": [
+        "Ökosystemdienstleistung"
+      ],
+      "it": [
+        "Servizi ecosistemici"
+      ],
+      "es": [
+        "Servicio de los ecosistemas",
+        "servicios ecosistémicos"
       ]
     }
   },
@@ -3705,442 +4063,6 @@
       ],
       "es": [
         "Carbono orgánico del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilStability",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil stability"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SpecificSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "specific soil parameters"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#WaterInfiltration",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "water infiltration"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#BasicSoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "basic soil parameters"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Indicators",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_330058"
-    ],
-    "labels": {
-      "en": [
-        "indicators"
-      ],
-      "fr": [
-        "indicateur"
-      ],
-      "de": [
-        "Indikator"
-      ],
-      "it": [
-        "Indicatori"
-      ],
-      "es": [
-        "indicador"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Soil",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_7156"
-    ],
-    "labels": {
-      "en": [
-        "soil"
-      ],
-      "fr": [
-        "sol"
-      ],
-      "de": [
-        "Boden"
-      ],
-      "it": [
-        "Suolo"
-      ],
-      "es": [
-        "Suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Soil",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/2.1.11"
-    ],
-    "labels": {
-      "en": [
-        "soil"
-      ],
-      "fr": [
-        "sol"
-      ],
-      "de": [
-        "Boden"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilAttributes",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil attributes"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilErosion",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_2651"
-    ],
-    "labels": {
-      "en": [
-        "soil erosion",
-        "erosion",
-        "soil erosion phenomena"
-      ],
-      "fr": [
-        "érosion",
-        "érosion du sol"
-      ],
-      "de": [
-        "Erosion",
-        "Bodenerosion",
-        "Erosionserscheinungen"
-      ],
-      "it": [
-        "Erosione",
-        "Erosione del suolo"
-      ],
-      "es": [
-        "Erosión",
-        "Erosión del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SpatialData",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_379bbe9f"
-    ],
-    "labels": {
-      "en": [
-        "spatial data",
-        "geospatial data",
-        "geodata"
-      ],
-      "fr": [
-        "données spatiales",
-        "données géospatiales"
-      ],
-      "de": [
-        "räumliche Daten"
-      ],
-      "it": [
-        "Dati spaziali"
-      ],
-      "es": [
-        "Datos espaciales",
-        "Datos geoespaciales"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#TwoPercentSOC",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "2% soc"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilSealing",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_f9554e7c"
-    ],
-    "labels": {
-      "en": [
-        "soil sealing"
-      ],
-      "fr": [
-        "imperméabilisation des sols"
-      ],
-      "de": [
-        "Bodenversiegelung"
-      ],
-      "it": [
-        "Impermeabilizzazione del suolo"
-      ],
-      "es": [
-        "Sellado de la superficie del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilHealth",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_a9645d28"
-    ],
-    "labels": {
-      "en": [
-        "soil health",
-        "soil quality"
-      ],
-      "fr": [
-        "qualité du sol"
-      ],
-      "de": [
-        "Bodengüte",
-        "Bodenqualität"
-      ],
-      "it": [
-        "Qualità del suolo"
-      ],
-      "es": [
-        "Calidad del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#Thresholds",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "thresholds"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctions",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_e5629cbd"
-    ],
-    "labels": {
-      "en": [
-        "soil functions"
-      ],
-      "fr": [
-        "fonction du sol"
-      ],
-      "de": [
-        "Bodenfunktionen"
-      ],
-      "it": [
-        "Funzioni del suolo"
-      ],
-      "es": [
-        "Funciones del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilFunctions",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/3.3.31"
-    ],
-    "labels": {
-      "en": [
-        "soil functions"
-      ],
-      "fr": [
-        "fonctions du sol"
-      ],
-      "de": [
-        "Bodenfunktionen"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilOrganicMatter",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_35657"
-    ],
-    "labels": {
-      "en": [
-        "soil organic matter",
-        "SOM"
-      ],
-      "fr": [
-        "matière organique du sol"
-      ],
-      "de": [
-        "organische Bodensubstanz",
-        "organische Substanz des Bodens",
-        "OBS"
-      ],
-      "it": [
-        "Sostanza organica del suolo"
-      ],
-      "es": [
-        "Materia orgánica del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilParameters",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil parameters"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilProperties",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_330883"
-    ],
-    "labels": {
-      "en": [
-        "soil properties"
-      ],
-      "fr": [
-        "propriété du sol",
-        "caractéristique du sol"
-      ],
-      "de": [
-        "Bodeneigenschaft"
-      ],
-      "it": [
-        "Proprietà del suolo",
-        "Proprietà del terreno"
-      ],
-      "es": [
-        "Propiedades del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilQuality",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_a9645d28"
-    ],
-    "labels": {
-      "en": [
-        "soil quality",
-        "soil health"
-      ],
-      "fr": [
-        "qualité du sol"
-      ],
-      "de": [
-        "Bodengüte",
-        "Bodenqualität"
-      ],
-      "it": [
-        "Qualità del suolo"
-      ],
-      "es": [
-        "Calidad del suelo"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilQuality",
-    "relevant_uris": [
-      "https://data.geoscience.earth/ncl/ISO11074/2.1.15"
-    ],
-    "labels": {
-      "en": [
-        "soil quality"
-      ],
-      "fr": [
-        "qualité du sol"
-      ],
-      "de": [
-        "Bodenbeschaffenheit"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilThreats",
-    "relevant_uris": [],
-    "labels": {
-      "en": [
-        "soil threats"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#EcosystemServices",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_1348040570280"
-    ],
-    "labels": {
-      "en": [
-        "ecosystem services",
-        "ecosystem goods and services"
-      ],
-      "fr": [
-        "services écosystémiques",
-        "services écologiques"
-      ],
-      "de": [
-        "Ökosystemdienstleistung"
-      ],
-      "it": [
-        "Servizi ecosistemici"
-      ],
-      "es": [
-        "Servicio de los ecosistemas",
-        "servicios ecosistémicos"
-      ]
-    }
-  },
-  {
-    "identifier": "https://soilwise-he.github.io/soil-health#SoilDegradation",
-    "relevant_uris": [
-      "http://aims.fao.org/aos/agrovoc/c_7168"
-    ],
-    "labels": {
-      "en": [
-        "soil degradation",
-        "soil deterioration"
-      ],
-      "fr": [
-        "dégradation du sol",
-        "détérioration du sol"
-      ],
-      "de": [
-        "Bodendegradation",
-        "Bodenverschlechterung"
-      ],
-      "it": [
-        "Degradazione del suolo",
-        "Deterioramento del suolo"
-      ],
-      "es": [
-        "Degradación del suelo",
-        "Deterioro del suelo"
       ]
     }
   }
