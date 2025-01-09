@@ -13,7 +13,10 @@ from dotenv import load_dotenv
 from rdflib import Graph
 
 from thefuzz import fuzz
+
 import json, csv
+
+from collections import Counter
 
 load_dotenv()
 
@@ -155,6 +158,19 @@ def url_match(subs, themes):
     
     return matched_subs
 
+
+def miskeys2csv(mkeys, output_file):
+    en_keys = [item[0].lower() for item in mkeys if item[1] == "en"] # lower case
+    label_counts = Counter(en_keys)
+
+    sorted_labels = sorted(label_counts.items(), key=lambda x: x[1], reverse=True)
+
+    with open (output_file, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(["Label", "Count"])
+        for label, count in sorted_labels:
+            csvwriter.writerow([label, count])
+
 def main():
     # clear the match table
     sql = '''
@@ -222,9 +238,9 @@ def main():
         json.dump(matched_data, json_file, ensure_ascii=False, indent=2) 
 
     # analyze the mismatched keywords
-    with open("./keyword-matcher/mis_keys.json", "w", encoding='utf-8') as json_file:
-        json.dump(mismatched_keys, json_file, ensure_ascii=False, indent=2) 
+    miskeys2csv(mismatched_keys, "./keyword-matcher/unmatched_terms.csv")
 
+    # vague match terms
     with open('./keyword-matcher/vague_match.csv', 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerows(vague_match)
