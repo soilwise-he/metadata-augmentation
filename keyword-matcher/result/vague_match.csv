@@ -1,0 +1,553 @@
+"['Bodem', 'nl']",https://soilwise-he.github.io/soil-health#Soil,80
+"['basic soil properties', 'nl']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['Ecosystem', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,95
+"['Soil Threats Data', 'en']",https://soilwise-he.github.io/soil-health#SoilThreats,83
+"['Rehabilitation', 'en']",https://soilwise-he.github.io/soil-health#SoilRehabilitation,88
+"['microrespiration', 'en']",https://soilwise-he.github.io/soil-health#Respiration,81
+"['Agrobiodiversity', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,86
+"['EU', 'it']",https://soilwise-he.github.io/soil-health#Water,80
+"['Soil Pollutants', 'en']",https://soilwise-he.github.io/soil-health#SoilPollution,83
+"['canopy organic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,80
+"['nutrient addition', 'en']",https://soilwise-he.github.io/soil-health#NutrientDepletion,80
+"['Soil Classification', 'en']",https://soilwise-he.github.io/soil-health#TypologicalClassification,80
+"['Soils', 'en']",https://soilwise-he.github.io/soil-health#Soil,89
+"['dissolved organic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,84
+"['Production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['N Deposition', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,80
+"['Nutrient Addition', 'en']",https://soilwise-he.github.io/soil-health#NutrientDepletion,80
+"['Inspiration', 'en']",https://soilwise-he.github.io/soil-health#Respiration,82
+"['Wasserkapazität', 'de']",https://soilwise-he.github.io/soil-health#WaterHoldingCapacity,86
+"['Agricultural management', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalManagementInputs,87
+"['Geodaten', 'de']",https://soilwise-he.github.io/soil-health#SpatialData,80
+"['Nutrient', 'en']",https://soilwise-he.github.io/soil-health#Nutrients,94
+"['Suitability', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,80
+"['Terrestrial ecosystem', 'en']",https://soilwise-he.github.io/soil-health#TerrestrialEcosystems,98
+"['Ecosystem Functioning', 'en']",https://soilwise-he.github.io/soil-health#EcosystemFunctions,90
+"['carbosol', 'fr']",https://soilwise-he.github.io/soil-health#Carbon,80
+"['SO', 'de']",https://soilwise-he.github.io/soil-health#Soil,80
+"['Crop Production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['denitrification', 'en']",https://soilwise-he.github.io/soil-health#Desertification,80
+"['nutrient availability', 'en']",https://soilwise-he.github.io/soil-health#MicronutrientAvailability,89
+"['SoilLayer', 'de']",https://soilwise-he.github.io/soil-health#SoilLayers,90
+"['basic soil properties', 'de']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['basic soil properties', 'hu']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['organic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,85
+"['organische Substanz', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,88
+"['organischer Kohlenstoffgehalt', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,88
+"['soil process', 'en']",https://soilwise-he.github.io/soil-health#SoilProcesses,92
+"['Air Pollution', 'en']",https://soilwise-he.github.io/soil-health#SoilPollution,81
+"['basic soil properties', 'fr']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['soil classification', 'en']",https://soilwise-he.github.io/soil-health#TypologicalClassification,80
+"['basic soil properties', 'bg']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['Available Water Storage Capacity', 'en']",https://soilwise-he.github.io/soil-health#AvailableWaterCapacity,86
+"['Bodenfunktion', 'de']",https://soilwise-he.github.io/soil-health#SoilFunctions,93
+"['Cell Respiration', 'en']",https://soilwise-he.github.io/soil-health#Respiration,81
+"['Net primary productivity', 'en']",https://soilwise-he.github.io/soil-health#NetBiomeProductivity,83
+"['Africa', 'en']",https://soilwise-he.github.io/soil-health#Air,80
+"['GeoCarbon', 'en']",https://soilwise-he.github.io/soil-health#Carbon,80
+"['CARBOSOL', 'fr']",https://soilwise-he.github.io/soil-health#Carbon,80
+"['Sustainable Development', 'en']",https://soilwise-he.github.io/soil-health#SustainableDevelopmentGoal,90
+"['manejo do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,80
+"['microbial biomass N', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,94
+"['infiltration', 'en']",https://soilwise-he.github.io/soil-health#WaterInfiltration,80
+"['starch content', 'en']",https://soilwise-he.github.io/soil-health#SOCContent,80
+"['oil content', 'en']",https://soilwise-he.github.io/soil-health#SOCContent,82
+"['SOIL QUALITY INDICATORS', 'en']",https://soilwise-he.github.io/soil-health#SoilHealthIndicator,82
+"['Organic foods', 'en']",https://soilwise-he.github.io/soil-health#OrganicCompounds,80
+"['Bodennutzbarkeit', 'de']",https://soilwise-he.github.io/soil-health#SoilFertility,82
+"['Microbial biomass C and N', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,81
+"['Carbón', 'en']",https://soilwise-he.github.io/soil-health#Carbon,83
+"['Rangeland management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,86
+"['carbon stock', 'en']",https://soilwise-he.github.io/soil-health#CarbonStocks,96
+"['Oxisols', 'en']",https://soilwise-he.github.io/soil-health#Lixisols,80
+"['WASS', 'en']",https://soilwise-he.github.io/soil-health#Water,80
+"['Plantain', 'en']",https://soilwise-he.github.io/soil-health#Plants,86
+"['variability', 'en']",https://soilwise-he.github.io/soil-health#SoilVariability,81
+"['management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,80
+"['soil respiration', 'en']",https://soilwise-he.github.io/soil-health#SoilRestoration,88
+"['Soil microbial bioma', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,81
+"['Subsoil Organic Carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,93
+"['Soil evaporation', 'en']",https://soilwise-he.github.io/soil-health#SoilRestoration,81
+"['RAM', 'pt']",https://soilwise-he.github.io/soil-health#Space,86
+"['Chemical Compounds', 'en']",https://soilwise-he.github.io/soil-health#MineralCompounds,80
+"['agricultural residues', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,84
+"['microbial biomass carbon', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,83
+"['Denitrification', 'en']",https://soilwise-he.github.io/soil-health#Desertification,80
+"['soils', 'en']",https://soilwise-he.github.io/soil-health#Soil,89
+"['Identification', 'en']",https://soilwise-he.github.io/soil-health#Desertification,83
+"['EU', 'en']",https://soilwise-he.github.io/soil-health#Water,80
+"['matéria orgânica do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,80
+"['Matéria orgânica do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,80
+"['N mineralization', 'en']",https://soilwise-he.github.io/soil-health#Mineralization,87
+"['Complexation', 'en']",https://soilwise-he.github.io/soil-health#Compaction,82
+"['soil aggregate stability', 'en']",https://soilwise-he.github.io/soil-health#AggregateStability,88
+"['Filtration', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,80
+"['land use change', 'en']",https://soilwise-he.github.io/soil-health#Acidification00093,81
+"['ecosystem', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,95
+"['soil suitability', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,93
+"['basic soil properties', 'sv']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['eu', 'it']",https://soilwise-he.github.io/soil-health#Water,80
+"['EO_Data', 'en']",https://soilwise-he.github.io/soil-health#SpatialData,86
+"['Spatial variability', 'en']",https://soilwise-he.github.io/soil-health#SoilVariability,86
+"['MICROBIAL BIOMASSE', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,97
+"['FERTILITE DU SOL', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,94
+"['FERTILISATION DU SOL', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,83
+"['Diversification', 'en']",https://soilwise-he.github.io/soil-health#Desertification,80
+"['Weather', 'en']",https://soilwise-he.github.io/soil-health#Water,83
+"['microbial biomass-c', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,94
+"['agroecosystems', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,83
+"['Organic carbon pools', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,82
+"['forest ecosystem services', 'en']",https://soilwise-he.github.io/soil-health#EcosystemServices,84
+"['MANAGEMENT', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,80
+"['Bodenschätzung', 'de']",https://soilwise-he.github.io/soil-health#SoilPollution,81
+"['Bioindicators', 'en']",https://soilwise-he.github.io/soil-health#Indicators,87
+"['Pyrogenic carbon', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,80
+"['Bodeneigenschaften', 'de']",https://soilwise-he.github.io/soil-health#SoilProperties,94
+"['Organic fertilizers', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,95
+"['systems', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,82
+"['Soil organic matter;', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,97
+"['Soil respiration', 'en']",https://soilwise-he.github.io/soil-health#SoilRestoration,88
+"['soil organic-matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,95
+"['agricultural soils', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,80
+"['soil bulk density', 'en']",https://soilwise-he.github.io/soil-health#BulkDensity,83
+"['basic soil properties', 'en']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['microbial necromass', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,83
+"['Soil ecosystem services', 'en']",https://soilwise-he.github.io/soil-health#EcosystemServices,88
+"['SEWAGE-SLUDGE', 'en']",https://soilwise-he.github.io/soil-health#SewageSludge,92
+"['acque', 'it']",https://soilwise-he.github.io/soil-health#Water,80
+"['organic-carbon', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,93
+"['organic fertilizer', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,92
+"['spatial variability', 'en']",https://soilwise-he.github.io/soil-health#SoilVariability,86
+"['forest floor', 'en']",https://soilwise-he.github.io/soil-health#ForestFloors,96
+"['chemical deterioration', 'en']",https://soilwise-he.github.io/soil-health#SoilDegradation,80
+"['physical deterioration', 'en']",https://soilwise-he.github.io/soil-health#SoilDegradation,85
+"[""CAPACITE D'ECHANGE CATIONIQUE"", 'en']",https://soilwise-he.github.io/soil-health#CationExchangeCapacity,93
+"['DEGRADATION DU SOL', 'en']",https://soilwise-he.github.io/soil-health#SoilDegradation,94
+"['compensation', 'en']",https://soilwise-he.github.io/soil-health#Compaction,82
+"['Compensation', 'en']",https://soilwise-he.github.io/soil-health#Compaction,82
+"['Soil Functions Data', 'en']",https://soilwise-he.github.io/soil-health#SoilFunctions,85
+"['conservation', 'en']",https://soilwise-he.github.io/soil-health#WaterConservation,80
+"['regeneration', 'en']",https://soilwise-he.github.io/soil-health#WaterErosion,83
+"['SO', 'fr']",https://soilwise-he.github.io/soil-health#Soil,80
+"['Soils', 'fr']",https://soilwise-he.github.io/soil-health#Soil,89
+"['Surface runoff', 'en']",https://soilwise-he.github.io/soil-health#SurfaceRun-off,97
+"['carbonate', 'en']",https://soilwise-he.github.io/soil-health#Carbon,88
+"['Fine root production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['available field capacity', 'de']",https://soilwise-he.github.io/soil-health#AvailableWaterCapacity,83
+"['Land use change', 'en']",https://soilwise-he.github.io/soil-health#Acidification00093,81
+"['grassland management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,86
+"['Microbial biomass carbon', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,83
+"['Environmental Policy', 'en']",https://soilwise-he.github.io/soil-health#EnvironmentalQuality,83
+"['mineralization', 'en']",https://soilwise-he.github.io/soil-health#Mineralization,93
+"['Fluvisols', 'en']",https://soilwise-he.github.io/soil-health#Alfisols,94
+"['Soil organic carbon stocks', 'en']",https://soilwise-he.github.io/soil-health#SOCLoss,88
+"['MINERALIZATION', 'en']",https://soilwise-he.github.io/soil-health#Mineralization,93
+"['Nitrogenase', 'en']",https://soilwise-he.github.io/soil-health#Nitrogen,84
+"['effective cation exchange capacity', 'en']",https://soilwise-he.github.io/soil-health#CationExchangeCapacity,83
+"['organic matter fractionation', 'en']",https://soilwise-he.github.io/soil-health#OrganicMatterAccumulation,80
+"['crop residue', 'en']",https://soilwise-he.github.io/soil-health#PlantResidues,96
+"['Fertilidade do Solo.', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,80
+"['erosie', 'nl']",https://soilwise-he.github.io/soil-health#SoilErosion,86
+"['bioindicators', 'en']",https://soilwise-he.github.io/soil-health#Indicators,87
+"['Photochemical Processes', 'en']",https://soilwise-he.github.io/soil-health#BiochemicalProcesses,86
+"['suitability', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,80
+"['Soil nutrients', 'en']",https://soilwise-he.github.io/soil-health#SoilNutrientStatus,82
+"['Forest floor', 'en']",https://soilwise-he.github.io/soil-health#ForestFloors,96
+"['Soil Respiration', 'en']",https://soilwise-he.github.io/soil-health#SoilRestoration,88
+"['soil compaction', 'en']",https://soilwise-he.github.io/soil-health#Compaction,80
+"['cation-exchange capacity', 'en']",https://soilwise-he.github.io/soil-health#CationExchangeCapacity,96
+"['nutrient', 'en']",https://soilwise-he.github.io/soil-health#Nutrients,94
+"['soil property', 'en']",https://soilwise-he.github.io/soil-health#SoilProperties,86
+"['water contamination', 'en']",https://soilwise-he.github.io/soil-health#Contamination,81
+"['deposition', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,87
+"['Peatlands degradation', 'en']",https://soilwise-he.github.io/soil-health#LandDegradation,86
+"['Soil water availability', 'en']",https://soilwise-he.github.io/soil-health#SoilNutrientAvailability,82
+"['Saturation', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,80
+"['soil microbial bioma', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,81
+"['Transpiration', 'en']",https://soilwise-he.github.io/soil-health#Respiration,83
+"['soil physical fractions', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalDegradation,83
+"['ORGANIC-CARBON', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,93
+"['SYSTEM', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,80
+"['soil carbon storage', 'en']",https://soilwise-he.github.io/soil-health#SoilCarbonStock,83
+"['Conservation', 'en']",https://soilwise-he.github.io/soil-health#WaterConservation,80
+"['Mineralization', 'en']",https://soilwise-he.github.io/soil-health#Mineralization,93
+"['basic soil properties', 'fi']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['Physiological parameters', 'en']",https://soilwise-he.github.io/soil-health#PhysicalSoilParameters,83
+"['composts', 'en']",https://soilwise-he.github.io/soil-health#Compost,93
+"['Crop Management', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,80
+"['soil organic C', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,85
+"['crop production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['Diversity', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,86
+"['C mineralisation', 'en']",https://soilwise-he.github.io/soil-health#Mineralization,93
+"['microbial biomass C', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,94
+"['Global land cover change', 'en']",https://soilwise-he.github.io/soil-health#Acidification00093,83
+"['soil n-availability', 'en']",https://soilwise-he.github.io/soil-health#SoilVariability,86
+"['Total organic carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,87
+"['weather', 'en']",https://soilwise-he.github.io/soil-health#Water,83
+"['Manejo do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,80
+"['total organic carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,87
+"['Microbial bioma', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,94
+"['Nutrient status', 'en']",https://soilwise-he.github.io/soil-health#SoilNutrientStatus,86
+"['bioorganic fertilizers', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,93
+"['composition', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,92
+"['Bioorganic fertilizers', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,93
+"['Labile organic carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,85
+"['ecosystem function', 'en']",https://soilwise-he.github.io/soil-health#EcosystemFunctions,97
+"['plant productivity', 'en']",https://soilwise-he.github.io/soil-health#LandProductivity,91
+"['crop productivity', 'en']",https://soilwise-he.github.io/soil-health#Productivity,83
+"['Food Contamination', 'en']",https://soilwise-he.github.io/soil-health#Contamination,84
+"['Fine-root production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['vincolo idrogeologico', 'it']",https://soilwise-he.github.io/soil-health#HydrologicalCycle,81
+"['Solo', 'pt']",https://soilwise-he.github.io/soil-health#Soil,89
+"['Biodegradation', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,88
+"['biodegradation', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,88
+"['Soil water erosion', 'en']",https://soilwise-he.github.io/soil-health#WaterErosion,84
+"['Soil organic matter (SOM)', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,86
+"['Soil organic carbon (SOC)', 'en']",https://soilwise-he.github.io/soil-health#SOCLoss,86
+"['soil and water conservation', 'en']",https://soilwise-he.github.io/soil-health#WaterConservation,80
+"['Soil compaction', 'en']",https://soilwise-he.github.io/soil-health#Compaction,80
+"['suoli', 'it']",https://soilwise-he.github.io/soil-health#Soil,80
+"['inorganic carbon', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,93
+"['lake management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,87
+"['Crop production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['Crop management', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,80
+"['nutrient pollution', 'en']",https://soilwise-he.github.io/soil-health#NutrientDepletion,83
+"['vegetation shift', 'en']",https://soilwise-he.github.io/soil-health#Vegetation,80
+"['Eroded organic carbon', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,80
+"['Topsoil Organic Carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,93
+"['Soil fractions', 'en']",https://soilwise-he.github.io/soil-health#SoilFunctions,86
+"['Dissolved Organic Carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,84
+"['basic soil properties', 'lv']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['Soil Organic Carbon Content', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,83
+"['soil salinity', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,81
+"['SOIL SALINITY', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,81
+"['basic soil properties', 'it']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['basic soil properties', 'lt']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['AGRICULTURAL SOILS', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,80
+"['Böden', 'de']",https://soilwise-he.github.io/soil-health#Soil,80
+"['ARISA', 'en']",https://soilwise-he.github.io/soil-health#Air,89
+"['protection', 'en']",https://soilwise-he.github.io/soil-health#SoilProtection,80
+"['Carbon stock', 'en']",https://soilwise-he.github.io/soil-health#CarbonStocks,96
+"['Plantago', 'en']",https://soilwise-he.github.io/soil-health#Plants,86
+"['land production', 'en']",https://soilwise-he.github.io/soil-health#LandProductivity,81
+"['watererosie', 'nl']",https://soilwise-he.github.io/soil-health#WaterErosion,83
+"['soil organic carbon stocks', 'en']",https://soilwise-he.github.io/soil-health#SOCLoss,88
+"['DESTABILIZATION', 'en']",https://soilwise-he.github.io/soil-health#SOCStabilisation,93
+"['CONSERVATION', 'en']",https://soilwise-he.github.io/soil-health#WaterConservation,80
+"['Soil classification', 'en']",https://soilwise-he.github.io/soil-health#TypologicalClassification,80
+"['NANOMATERIALS', 'en']",https://soilwise-he.github.io/soil-health#Biomaterials,80
+"['Pyrogenic Carbon', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,80
+"['nitrogeno', 'en']",https://soilwise-he.github.io/soil-health#Nitrogen,94
+"['Cation exchange capacity (CEC)', 'en']",https://soilwise-he.github.io/soil-health#CationExchangeCapacity,89
+"['SOIL FUNCTIONALITY', 'en']",https://soilwise-he.github.io/soil-health#SoilFunctioning,82
+"['Esterification', 'en']",https://soilwise-he.github.io/soil-health#Desertification,90
+"['Solos', 'en']",https://soilwise-he.github.io/soil-health#Soil,80
+"['indicator', 'en']",https://soilwise-he.github.io/soil-health#Indicators,95
+"['plant', 'en']",https://soilwise-he.github.io/soil-health#Plants,91
+"['Plant', 'en']",https://soilwise-he.github.io/soil-health#Plants,91
+"['Indicator', 'en']",https://soilwise-he.github.io/soil-health#Indicators,95
+"['Bodem', 'en']",https://soilwise-he.github.io/soil-health#Soil,80
+"['bodemdegradatie', 'en']",https://soilwise-he.github.io/soil-health#SoilDegradation,84
+"['OGC services', 'en']",https://soilwise-he.github.io/soil-health#SoilServices,80
+"['Management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,80
+"['pine', 'en']",https://soilwise-he.github.io/soil-health#Plants,80
+"['basic soil properties', 'sk']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['Soil inorganic carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,95
+"['soil acidification', 'en']",https://soilwise-he.github.io/soil-health#Acidification,84
+"['Ice content', 'en']",https://soilwise-he.github.io/soil-health#SOCContent,82
+"['soil-n availability', 'en']",https://soilwise-he.github.io/soil-health#SoilVariability,86
+"['fine-root production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['Labile organic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,85
+"['basic soil properties', 'es']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['water productivity', 'en']",https://soilwise-he.github.io/soil-health#LandProductivity,80
+"['AI', 'en']",https://soilwise-he.github.io/soil-health#Air,80
+"['Soil organic matter (SOM);', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,84
+"['basic soil properties', 'el']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['animal manures', 'en']",https://soilwise-he.github.io/soil-health#AnimalManure,96
+"['Microbial biomass content', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,81
+"['Sectie Bodemkwaliteit', 'en']",https://soilwise-he.github.io/soil-health#SoilHealth,80
+"['Water limitation', 'en']",https://soilwise-he.github.io/soil-health#WaterInfiltration,82
+"['oil', 'en']",https://soilwise-he.github.io/soil-health#Soil,86
+"['N deposition', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,80
+"['transpiration', 'en']",https://soilwise-he.github.io/soil-health#Respiration,83
+"['soil carbon loss', 'en']",https://soilwise-he.github.io/soil-health#SoilCarbonStocks,82
+"['organic matter addition', 'en']",https://soilwise-he.github.io/soil-health#OrganicMatterAccumulation,80
+"['Agricultural Systems', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,81
+"['Soil water conservation', 'en']",https://soilwise-he.github.io/soil-health#WaterConservation,88
+"['SOIL WATER CONSERVATION', 'en']",https://soilwise-he.github.io/soil-health#WaterConservation,88
+"['Agricultural systems', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,81
+"['LAND USE CHANGE', 'en']",https://soilwise-he.github.io/soil-health#Acidification00093,81
+"['soil organic carbon dynamics', 'en']",https://soilwise-he.github.io/soil-health#SOCLoss,81
+"['Biohydrogen', 'en']",https://soilwise-he.github.io/soil-health#Hydrogen,84
+"['Biological activity', 'en']",https://soilwise-he.github.io/soil-health#SoilBiologicalActivity,88
+"['biological activity', 'en']",https://soilwise-he.github.io/soil-health#SoilBiologicalActivity,88
+"['atividade biológica', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,82
+"['Atividade biológica', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,82
+"['Aralia', 'en']",https://soilwise-he.github.io/soil-health#Air,80
+"['Certification', 'en']",https://soilwise-he.github.io/soil-health#Desertification,86
+"['Soil Nutrient Management', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,80
+"['basic soil properties', 'ru']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['basic soil properties', 'pl']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['basic soil properties', 'sl']",https://soilwise-he.github.io/soil-health#IntrinsicSoilProperties,83
+"['Eating', 'en']",https://soilwise-he.github.io/soil-health#Respiration,80
+"['biodivers', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,86
+"['ecosystem functioning', 'en']",https://soilwise-he.github.io/soil-health#EcosystemFunctions,90
+"['Soil microbial biomass', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,87
+"['soil microbial biomass', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,87
+"['Soil CO', 'en']",https://soilwise-he.github.io/soil-health#SoilCover,82
+"['Soil salinity', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,81
+"['Soil carbon content', 'en']",https://soilwise-he.github.io/soil-health#SoilCarbonConcentration,80
+"['C mineralization', 'en']",https://soilwise-he.github.io/soil-health#Mineralization,87
+"['dissolved organic carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,84
+"['NUTRIENT CONTENT', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,86
+"['Soilorganic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,97
+"['soil quality indicator', 'en']",https://soilwise-he.github.io/soil-health#SoilHealthIndicator,84
+"['carbono orgânico', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,94
+"['Pine', 'en']",https://soilwise-he.github.io/soil-health#Plants,80
+"['bank erosion', 'en']",https://soilwise-he.github.io/soil-health#WaterErosion,83
+"['Organic matter addition', 'en']",https://soilwise-he.github.io/soil-health#OrganicMatterAccumulation,80
+"['Ocean acidification', 'en']",https://soilwise-he.github.io/soil-health#Acidification,81
+"['soil cations', 'en']",https://soilwise-he.github.io/soil-health#SoilFunctions,85
+"['Soil acidification', 'en']",https://soilwise-he.github.io/soil-health#Acidification,84
+"['Soil Hydraulic Properties', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalProperties,82
+"['US soil properties', 'en']",https://soilwise-he.github.io/soil-health#SoilProperties,91
+"['Afrika', 'en']",https://soilwise-he.github.io/soil-health#Air,80
+"['Soil organic matter turnover', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,81
+"['Forest fires', 'en']",https://soilwise-he.github.io/soil-health#ForestFloors,80
+"['Dissolved organic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,84
+"['C stocks', 'en']",https://soilwise-he.github.io/soil-health#SocStock,82
+"['Physical attributes', 'en']",https://soilwise-he.github.io/soil-health#SoilAttributes,82
+"['physical attributes', 'en']",https://soilwise-he.github.io/soil-health#SoilAttributes,82
+"['soil contamination', 'en']",https://soilwise-he.github.io/soil-health#Contamination,84
+"['restoration', 'en']",https://soilwise-he.github.io/soil-health#Respiration,82
+"['capacité d échange cationique', 'en']",https://soilwise-he.github.io/soil-health#CationExchangeCapacity,97
+"['biodiversity loss', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,83
+"['N DEPOSITION', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,80
+"['vegetation type', 'en']",https://soilwise-he.github.io/soil-health#Vegetation,97
+"['Vertisol', 'en']",https://soilwise-he.github.io/soil-health#Entisols,80
+"['Canada soil carbon stock', 'en']",https://soilwise-he.github.io/soil-health#SoilCarbonStock,83
+"['SOIL MICROBIAL BIOMASS', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,87
+"['Soil organic carbon storage', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,83
+"['Agricultural soils', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,80
+"['physical-properties', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalProperties,84
+"['Ecosystem service', 'en']",https://soilwise-he.github.io/soil-health#EcosystemServices,97
+"['Agroecossistema', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,80
+"['Labile fraction', 'en']",https://soilwise-he.github.io/soil-health#LabileFractionOfSoc,81
+"['labile fraction', 'en']",https://soilwise-he.github.io/soil-health#LabileFractionOfSoc,81
+"['soil functional genes', 'en']",https://soilwise-he.github.io/soil-health#SoilFunctions,80
+"['Soil condition indicators', 'en']",https://soilwise-he.github.io/soil-health#SoilFunctionIndicators,86
+"['Decontamination', 'en']",https://soilwise-he.github.io/soil-health#Contamination,93
+"['Soil protease', 'en']",https://soilwise-he.github.io/soil-health#SoilProcesses,81
+"['Soil nitrate availability', 'en']",https://soilwise-he.github.io/soil-health#SoilNutrientAvailability,86
+"['net primary productivity', 'en']",https://soilwise-he.github.io/soil-health#NetBiomeProductivity,83
+"['Labile soil organic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,84
+"['Total Organic Carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,87
+"['Soil R', 'en']",https://soilwise-he.github.io/soil-health#Soil,80
+"['soil solution', 'en']",https://soilwise-he.github.io/soil-health#SoilPollution,89
+"['carbon stocks.', 'en']",https://soilwise-he.github.io/soil-health#CarbonStocks,96
+"['diversity', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,86
+"['Soil matric potential', 'en']",https://soilwise-he.github.io/soil-health#SoilPotential,80
+"['DIVERSITY', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,86
+"['Plant facilitation', 'en']",https://soilwise-he.github.io/soil-health#Cultivation,80
+"['plant facilitation', 'en']",https://soilwise-he.github.io/soil-health#Cultivation,80
+"['microbial productivity', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,82
+"['Microbial productivity', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,82
+"['soil fractions', 'en']",https://soilwise-he.github.io/soil-health#SoilFunctions,86
+"['soil carbon protection', 'en']",https://soilwise-he.github.io/soil-health#SoilProtection,81
+"['mySOIL', 'en']",https://soilwise-he.github.io/soil-health#Soil,80
+"['microbial biomass n', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,94
+"['microbial biomass c', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,94
+"['certification', 'en']",https://soilwise-he.github.io/soil-health#Desertification,86
+"['LITTER QUALITY', 'en']",https://soilwise-he.github.io/soil-health#WaterQuality,81
+"['ARID ECOSYSTEMS', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,80
+"['Basin Properties', 'en']",https://soilwise-he.github.io/soil-health#SoilProperties,84
+"['Feed production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,87
+"['soil organic c', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,85
+"['AFRICA', 'en']",https://soilwise-he.github.io/soil-health#Air,80
+"['SYSTEMS', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,82
+"['SOIL ORGANIC-MATTER', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,95
+"['Crop residue', 'en']",https://soilwise-he.github.io/soil-health#PlantResidues,96
+"['air pollution', 'en']",https://soilwise-he.github.io/soil-health#SoilPollution,81
+"['Air pollution', 'en']",https://soilwise-he.github.io/soil-health#SoilPollution,81
+"['Chemical composition', 'en']",https://soilwise-he.github.io/soil-health#ChemicalCompositionOfSoc,85
+"['Water aggregate stability', 'en']",https://soilwise-he.github.io/soil-health#AggregateStability,86
+"['Plantes', 'en']",https://soilwise-he.github.io/soil-health#Plants,92
+"['soil nutrients', 'en']",https://soilwise-he.github.io/soil-health#SoilNutrientStatus,82
+"['ECOSYSTEM', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,95
+"['recompaction', 'en']",https://soilwise-he.github.io/soil-health#Compaction,91
+"['air capacity', 'en']",https://soilwise-he.github.io/soil-health#WaterCapacity,85
+"['terrestrial ecosystem model', 'en']",https://soilwise-he.github.io/soil-health#TerrestrialEcosystems,86
+"['Respiración del suelo', 'en']",https://soilwise-he.github.io/soil-health#SoilDegradation,81
+"['risk management', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,80
+"['Cation-exchange capacity', 'en']",https://soilwise-he.github.io/soil-health#CationExchangeCapacity,96
+"['Solo.', 'en']",https://soilwise-he.github.io/soil-health#Soil,80
+"['soil microbial activity', 'en']",https://soilwise-he.github.io/soil-health#SoilBiologicalActivity,81
+"['Respiration rate', 'en']",https://soilwise-he.github.io/soil-health#Respiration,81
+"['litter quality', 'en']",https://soilwise-he.github.io/soil-health#WaterQuality,81
+"['ENTRAINMENT', 'en']",https://soilwise-he.github.io/soil-health#Nutrients,80
+"['Carbono orgânico', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,94
+"['Latosol', 'en']",https://soilwise-he.github.io/soil-health#Leptosols,80
+"['Manejo do Solo', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,80
+"['soil management.', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,97
+"['Timber', 'en']",https://soilwise-he.github.io/soil-health#Time,80
+"['organo-mineral fertilizer', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,82
+"['soil redox potential', 'en']",https://soilwise-he.github.io/soil-health#SoilPotential,82
+"['Fertilidade do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,82
+"['Soil organic carbon level', 'en']",https://soilwise-he.github.io/soil-health#SOCLoss,86
+"['soil decomposition', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,84
+"['soil pore structure', 'en']",https://soilwise-he.github.io/soil-health#SoilStructure,85
+"['Assessment', 'en']",https://soilwise-he.github.io/soil-health#Compaction,84
+"['CLIMAITE', 'en']",https://soilwise-he.github.io/soil-health#Climate,93
+"['solubilization', 'en']",https://soilwise-he.github.io/soil-health#SOCStabilisation,81
+"['gasification', 'en']",https://soilwise-he.github.io/soil-health#Acidification,80
+"['Rice cultivation', 'en']",https://soilwise-he.github.io/soil-health#Cultivation,81
+"['rare ecosystems', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,80
+"['soil organic nitrogen', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,80
+"['africa', 'en']",https://soilwise-he.github.io/soil-health#Air,80
+"['soil mechanical properties', 'en']",https://soilwise-he.github.io/soil-health#SoilChemicalProperties,88
+"['Animal Management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,81
+"['edge state', 'en']",https://soilwise-he.github.io/soil-health#Digestate,84
+"['RANGELAND DEGRADATION', 'en']",https://soilwise-he.github.io/soil-health#LandDegradation,86
+"['IDENTIFICATION', 'en']",https://soilwise-he.github.io/soil-health#Desertification,83
+"['Solo', 'en']",https://soilwise-he.github.io/soil-health#Soil,89
+"['Rangeland Degradation', 'en']",https://soilwise-he.github.io/soil-health#LandDegradation,86
+"['soil organic carbon (SOC)', 'en']",https://soilwise-he.github.io/soil-health#SOCLoss,86
+"['wood production', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,93
+"['ENVIRONMENTAL REMEDIATION', 'en']",https://soilwise-he.github.io/soil-health#EnvironmentalDegradation,85
+"['photodegradation', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,81
+"['planten', 'en']",https://soilwise-he.github.io/soil-health#Plants,92
+"['stikstof', 'en']",https://soilwise-he.github.io/soil-health#Nitrogen,89
+"['Labile C fractions', 'en']",https://soilwise-he.github.io/soil-health#LabileFractionOfSoc,80
+"['Microbial biomass C', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,94
+"['SOIL PHYSICAL-PROPERTIES', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalProperties,96
+"['DENITRIFICATION', 'en']",https://soilwise-he.github.io/soil-health#Desertification,80
+"['LABILE FRACTIONS', 'en']",https://soilwise-he.github.io/soil-health#LabileFractionOfSoc,84
+"['Soil loss', 'en']",https://soilwise-he.github.io/soil-health#SOMLoss,82
+"['CONTAMINATED SOILS', 'en']",https://soilwise-he.github.io/soil-health#ContaminatedSites,89
+"['Soil carbon storage', 'en']",https://soilwise-he.github.io/soil-health#SoilCarbonStock,83
+"['Range management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,84
+"['system', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,80
+"['Body composition', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,83
+"['ecosystem functions and services', 'en']",https://soilwise-he.github.io/soil-health#EcosystemServices,83
+"['valuing soil biodiversity', 'en']",https://soilwise-he.github.io/soil-health#SoilBiodiversity,81
+"['Organic matter', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,85
+"['Carbon quality', 'en']",https://soilwise-he.github.io/soil-health#AirQuality,80
+"['crop management', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,80
+"['soil-structure', 'en']",https://soilwise-he.github.io/soil-health#SoilStructure,93
+"['Carbon-13', 'en']",https://soilwise-he.github.io/soil-health#Carbon,80
+"['Soil microbial activity', 'en']",https://soilwise-he.github.io/soil-health#SoilBiologicalActivity,81
+"['Crop productivity', 'en']",https://soilwise-he.github.io/soil-health#Productivity,83
+"['Plastic degradation', 'en']",https://soilwise-he.github.io/soil-health#LandDegradation,80
+"['matière organique', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicMatter,83
+"['land use management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,88
+"['Soil C', 'en']",https://soilwise-he.github.io/soil-health#Soil,80
+"['SOIL INORGANIC N', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,80
+"['SOIL ORDER', 'en']",https://soilwise-he.github.io/soil-health#SoilCover,80
+"['SEED PRODUCTION', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['CLIMATE EFFECT', 'en']",https://soilwise-he.github.io/soil-health#Climate,87
+"['NUTRIENT AVAILABILITY', 'en']",https://soilwise-he.github.io/soil-health#MicronutrientAvailability,89
+"['PLANT', 'en']",https://soilwise-he.github.io/soil-health#Plants,91
+"['Grain quality', 'en']",https://soilwise-he.github.io/soil-health#AirQuality,83
+"['Decomposition rates', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,81
+"['SOIL BULK DENSITY', 'en']",https://soilwise-he.github.io/soil-health#BulkDensity,83
+"['Soil property', 'en']",https://soilwise-he.github.io/soil-health#SoilProperties,86
+"['assessment', 'en']",https://soilwise-he.github.io/soil-health#Compaction,84
+"['Ornamental quality', 'en']",https://soilwise-he.github.io/soil-health#EnvironmentalQuality,82
+"['Carbone organique dissous', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,86
+"['Nutrient content', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,86
+"['Nutrient availability', 'en']",https://soilwise-he.github.io/soil-health#MicronutrientAvailability,89
+"['Composts', 'en']",https://soilwise-he.github.io/soil-health#Compost,93
+"['rehabilitation', 'en']",https://soilwise-he.github.io/soil-health#SoilRehabilitation,88
+"['enracinement', 'en']",https://soilwise-he.github.io/soil-health#WaterErosion,82
+"['Slope Stability', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,83
+"['Slope stability', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,83
+"['Soil Compaction', 'en']",https://soilwise-he.github.io/soil-health#Compaction,80
+"['Crop Productivity', 'en']",https://soilwise-he.github.io/soil-health#Productivity,83
+"['nutrient use', 'en']",https://soilwise-he.github.io/soil-health#Nutrients,86
+"['Water scarcity', 'en']",https://soilwise-he.github.io/soil-health#WaterCapacity,86
+"['Yield stability', 'en']",https://soilwise-he.github.io/soil-health#SoilStability,83
+"['Yield response', 'en']",https://soilwise-he.github.io/soil-health#CropYieldResponse,85
+"['Weed management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,80
+"['FOREST FLOOR', 'en']",https://soilwise-he.github.io/soil-health#ForestFloors,96
+"['carbono orgânico do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,86
+"['Carbono orgânico do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,86
+"['Mineral fertilization', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,80
+"['Ecosystem function and services', 'en']",https://soilwise-he.github.io/soil-health#EcosystemServices,81
+"['Microbial biomarkers', 'en']",https://soilwise-he.github.io/soil-health#MicrobialBiomass,86
+"['Soil solution', 'en']",https://soilwise-he.github.io/soil-health#SoilPollution,89
+"['PRODUCTION', 'en']",https://soilwise-he.github.io/soil-health#FoodProduction,80
+"['Composting', 'en']",https://soilwise-he.github.io/soil-health#Compost,82
+"['Soil bulk density', 'en']",https://soilwise-he.github.io/soil-health#BulkDensity,83
+"['Organic fertiliser', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,87
+"['Desnitrificació', 'en']",https://soilwise-he.github.io/soil-health#Desertification,80
+"['organoleptic compounds', 'en']",https://soilwise-he.github.io/soil-health#OrganicCompounds,87
+"['combination', 'en']",https://soilwise-he.github.io/soil-health#Contamination,83
+"['Gasification', 'en']",https://soilwise-he.github.io/soil-health#Acidification,80
+"['bio-indicators', 'en']",https://soilwise-he.github.io/soil-health#Indicators,83
+"['soil ecosystems', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,80
+"['PHYSICAL-PROPERTIES', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalProperties,84
+"['Soil organic C', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,85
+"['Soil pores', 'en']",https://soilwise-he.github.io/soil-health#SoilProperties,80
+"['Biodiversitat', 'en']",https://soilwise-he.github.io/soil-health#Biodiversity,92
+"['Restoration', 'en']",https://soilwise-he.github.io/soil-health#Respiration,82
+"['VARIABILITY', 'en']",https://soilwise-he.github.io/soil-health#SoilVariability,81
+"['animal management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,81
+"['N content', 'en']",https://soilwise-he.github.io/soil-health#SOCContent,80
+"['Oil quality', 'en']",https://soilwise-he.github.io/soil-health#SoilHealth,96
+"['nitrogen (N)', 'en']",https://soilwise-he.github.io/soil-health#Nitrogen,80
+"['Environmental interactions', 'en']",https://soilwise-he.github.io/soil-health#EnvironmentalDegradation,83
+"['SOIL RECLAMATION', 'en']",https://soilwise-he.github.io/soil-health#SoilExcavation,84
+"['soil organic-carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,95
+"['Dissolved organic carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,84
+"['Disinfection', 'en']",https://soilwise-he.github.io/soil-health#WaterPurification,80
+"['RESTORATION', 'en']",https://soilwise-he.github.io/soil-health#Respiration,82
+"['Ecosystem services (ES)', 'en']",https://soilwise-he.github.io/soil-health#EcosystemServices,88
+"['Systems', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,82
+"['erosion rate', 'en']",https://soilwise-he.github.io/soil-health#WindErosionRate,83
+"['chemical-composition', 'en']",https://soilwise-he.github.io/soil-health#ChemicalCompositionOfSoc,81
+"['pyrogenic carbon', 'en']",https://soilwise-he.github.io/soil-health#OrganicCarbon,80
+"['SOC stocks', 'en']",https://soilwise-he.github.io/soil-health#SocStock,95
+"['Grassland degradation', 'en']",https://soilwise-he.github.io/soil-health#LandDegradation,86
+"['PLANTATIONS', 'en']",https://soilwise-he.github.io/soil-health#Vegetation,81
+"['Biological activities', 'en']",https://soilwise-he.github.io/soil-health#SoilBiologicalActivity,80
+"['Chemical Properties', 'en']",https://soilwise-he.github.io/soil-health#SoilChemicalProperties,88
+"['bio-acidification', 'en']",https://soilwise-he.github.io/soil-health#Acidification,87
+"['Plastic residues', 'en']",https://soilwise-he.github.io/soil-health#PlantResidues,87
+"['Soil water management', 'en']",https://soilwise-he.github.io/soil-health#SoilManagement,83
+"['90301 Biomaterials', 'en']",https://soilwise-he.github.io/soil-health#Biomaterials,96
+"['MINERAL FERTILIZATION', 'en']",https://soilwise-he.github.io/soil-health#MineralFertilisers,80
+"['SOLOS', 'en']",https://soilwise-he.github.io/soil-health#Soil,80
+"['Primer evaluation', 'en']",https://soilwise-he.github.io/soil-health#RiskAssessment,81
+"['primer evaluation', 'en']",https://soilwise-he.github.io/soil-health#RiskAssessment,81
+"['Nitrogentap', 'en']",https://soilwise-he.github.io/soil-health#Nitrogen,84
+"['optical properties', 'en']",https://soilwise-he.github.io/soil-health#SoilProperties,85
+"['Soil organic c', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,85
+"['water and soil conservation', 'en']",https://soilwise-he.github.io/soil-health#WaterConservation,80
+"['Soil content', 'en']",https://soilwise-he.github.io/soil-health#SOCContent,87
+"['estrutura do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilStructure,81
+"['root productivity', 'en']",https://soilwise-he.github.io/soil-health#Productivity,83
+"['bog vegetation', 'en']",https://soilwise-he.github.io/soil-health#Vegetation,83
+"['BOG VEGETATION', 'en']",https://soilwise-he.github.io/soil-health#Vegetation,83
+"['sustainable development goals', 'en']",https://soilwise-he.github.io/soil-health#SustainableDevelopmentGoal,98
+"['heath', 'en']",https://soilwise-he.github.io/soil-health#Earth,80
+"['Ecosystem functioning', 'en']",https://soilwise-he.github.io/soil-health#EcosystemFunctions,90
+"['Agroecosystems', 'en']",https://soilwise-he.github.io/soil-health#Ecosystems,83
+"['propriedades físicas do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalProperties,88
+"['porosidad del suelo', 'en']",https://soilwise-he.github.io/soil-health#SoilProperties,85
+"['carbon stabilization', 'en']",https://soilwise-he.github.io/soil-health#SOCStabilisation,81
+"['Osmolar Concentration', 'en']",https://soilwise-he.github.io/soil-health#SoilCarbonConcentration,81
+"['grassland productivity', 'en']",https://soilwise-he.github.io/soil-health#LandProductivity,87
+"['biogeochemical properties', 'en']",https://soilwise-he.github.io/soil-health#SoilChemicalProperties,82
+"['net nitrogen', 'en']",https://soilwise-he.github.io/soil-health#Nitrogen,80
+"['agricultural systems', 'en']",https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,81
+"['Decomposição', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,80
+"['soil labile organic carbon', 'en']",https://soilwise-he.github.io/soil-health#SoilOrganicCarbon,84
+"['rangeland management', 'en']",https://soilwise-he.github.io/soil-health#LandManagement,86
+"['Ecosystem Science', 'en']",https://soilwise-he.github.io/soil-health#EcosystemServices,80
+"['propriedades físico-químicas do solo', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalProperties,87
+"['Chemico-physical soil properties', 'en']",https://soilwise-he.github.io/soil-health#SoilPhysicalProperties,83
+"['Vegetatie', 'en']",https://soilwise-he.github.io/soil-health#Vegetation,84
+"['SOC mineralization', 'en']",https://soilwise-he.github.io/soil-health#Mineralization,81
+"['soil organic carbon erosion', 'en']",https://soilwise-he.github.io/soil-health#SOCLoss,86
+"['P35 - Fertilité du sol', 'en']",https://soilwise-he.github.io/soil-health#SoilFertility,84
+"['SOM decomposition', 'en']",https://soilwise-he.github.io/soil-health#Decomposition,87

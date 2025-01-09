@@ -1,6 +1,7 @@
 # script to return the argumented result to database
 # required input: terms.csv and match.json
 
+
 import sys
 sys.path.append('utils')
 
@@ -32,76 +33,80 @@ def get_class(t_id, mapping): # get the class by a term id
             break
     return result_c
 
-terms = read_csv_to_dict('keyword-matcher/terms.csv')
-classes = [item['class'] for item in terms if item['class'] is not None]
-classes_uniq = list(set(classes))
-cols = ['identifier'] + [c.replace(" ", "_") for c in classes_uniq]
 
-# start to work on database
-load_dotenv()
+def main():
 
-# first drop the m-view and the tamp table
-sql = '''
-DROP MATERIALIZED VIEW IF EXISTS records_argumented;
-DROP TABLE IF EXISTS keywords_temp;
-'''
-result = dbQuery(sql,  hasoutput=False)
+    terms = read_csv_to_dict('keyword-matcher/terms.csv')
+    classes = [item['class'] for item in terms if item['class'] is not None]
+    classes_uniq = list(set(classes))
+    cols = ['identifier'] + [c.replace(" ", "_") for c in classes_uniq]
 
-# create temp table
-sql = '''
-SELECT harvest.create_dynamic_table(%s, %s);
-'''
-result = dbQuery(sql, ('keywords_temp', cols), hasoutput=False)
+    # start to work on database
+    load_dotenv()
 
-# create a mapping object
-mapping = {key: [] for key in classes_uniq}
-for t in terms:
-    if t['class'] is not None:
-        c = t['class']
-        i = t['identifier']
-        mapping[c].append(i)
+    # first drop the m-view and the tamp table
+    sql = '''
+    DROP TABLE IF EXISTS records_argumented;
+    DROP TABLE IF EXISTS keywords_temp;
+    '''
+    result = dbQuery(sql,  hasoutput=False)
 
-c_mapping = {key.replace(" ", "_"): value for key, value in mapping.items()} 
+    # create temp table
+    sql = '''
+    SELECT harvest.create_dynamic_table(%s, %s);
+    '''
+    result = dbQuery(sql, ('keywords_temp', cols), hasoutput=False)
+
+    # create a mapping object
+    mapping = {key: [] for key in classes_uniq}
+    for t in terms:
+        if t['class'] is not None:
+            c = t['class']
+            i = t['identifier']
+            mapping[c].append(i)
+
+    c_mapping = {key.replace(" ", "_"): value for key, value in mapping.items()} 
 
 
-with open("keyword-matcher/match.json", "r") as f:
-    match = json.load(f)
-match_withterms =[]
-keys = ['identifier'] + list(c_mapping.keys())
-default_value = None
+    with open("keyword-matcher/match.json", "r") as f:
+        match = json.load(f)
+    keys = ['identifier'] + list(c_mapping.keys())
 
-# Group matches by record_identifier
-records = {}
-for m in match:
-    record_id = m["record_identifier"]
-    term_id = m["concept_identifier"]
-    records.setdefault(record_id, []).append(term_id) # records with unique identifier
+    # Group matches by record_identifier
+    records = {}
+    for m in match:
+        record_id = m["record_identifier"]
+        term_id = m["concept_identifier"]
+        records.setdefault(record_id, []).append(term_id) # records with unique identifier
 
-# insert target data
-res = []
-for record_id, term_ids in records.items(): # for each record (unique)
-    dic = {key: None for key in keys} # initialize the div
-    dic['identifier'] = record_id
-    for t_id in term_ids: # for each term id of that record
-        t_class = get_class(t_id, c_mapping)
-        
-        if t_class is not None: # find a class
-            t_label = get_label(terms, t_id) # get the label from that id
-            if t_label is not None:
-                if dic[t_class] is None: # if it is the first term of that class
-                    dic[t_class] = t_label
-                else:
-                    dic[t_class] = dic[t_class] + ',' + t_label
-    # insert row here
-    insertSQL('keywords_temp', cols, list(dic.values()) )
-    res.append(dic)
+    # insert target data to the temp table
+    res = []
+    for record_id, term_ids in records.items(): # for each record (unique)
+        dic = {key: None for key in keys} # initialize the div
+        dic['identifier'] = record_id
+        for t_id in term_ids: # for each term id of that record
+            t_class = get_class(t_id, c_mapping)
+            
+            if t_class is not None: # find a class
+                t_label = get_label(terms, t_id) # get the label from that id
+                if t_label is not None:
+                    if dic[t_class] is None: # if it is the first term of that class
+                        dic[t_class] = t_label
+                    else:
+                        dic[t_class] = dic[t_class] + ',' + t_label
+        # insert row here
+        insertSQL('keywords_temp', cols, list(dic.values()) )
+        res.append(dic)
 
-# create materialized view
-## the m-view depends on the temp table, the temp_table cannot be dropped if the m-view exsists
-sql = '''
-SELECT harvest.create_dynamic_mview();
-'''
-result = dbQuery(sql, hasoutput=False)
-print('done!')
+    # create materialized view
+    ## the m-view depends on the temp table, the temp_table cannot be dropped if the m-view exsists
+    sql = '''
+    SELECT harvest.create_argumented_table();
+    '''
+    result = dbQuery(sql, hasoutput=False)
+    print('argumented records dumped to table')
+
+if __name__ == "__main__":
+    main()
 
 
