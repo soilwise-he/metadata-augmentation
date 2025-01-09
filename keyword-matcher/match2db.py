@@ -46,7 +46,7 @@ def main():
 
     # first drop the m-view and the tamp table
     sql = '''
-    DROP MATERIALIZED VIEW IF EXISTS records_argumented;
+    DROP TABLE IF EXISTS records_argumented;
     DROP TABLE IF EXISTS keywords_temp;
     '''
     result = dbQuery(sql,  hasoutput=False)
@@ -70,9 +70,7 @@ def main():
 
     with open("keyword-matcher/match.json", "r") as f:
         match = json.load(f)
-    match_withterms =[]
     keys = ['identifier'] + list(c_mapping.keys())
-    default_value = None
 
     # Group matches by record_identifier
     records = {}
@@ -103,10 +101,10 @@ def main():
     # create materialized view
     ## the m-view depends on the temp table, the temp_table cannot be dropped if the m-view exsists
     sql = '''
-    SELECT harvest.create_dynamic_mview();
+    SELECT harvest.create_argumented_table();
     '''
     result = dbQuery(sql, hasoutput=False)
-    print('argumented records dumped to materialized view')
+    print('argumented records dumped to table')
 
 if __name__ == "__main__":
     main()
