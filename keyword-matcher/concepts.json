@@ -68,6 +68,9 @@
       ],
       "es": [
         "Entisol"
+      ],
+      "nl": [
+        "entisols"
       ]
     }
   },
@@ -408,6 +411,9 @@
       ],
       "es": [
         "Calidad del aire"
+      ],
+      "nl": [
+        "luchtkwaliteit"
       ]
     }
   },
@@ -923,7 +929,7 @@
     }
   },
   {
-    "identifier": "nebf2cc52113544a4bcb527386b30e8ebb1",
+    "identifier": "n6e0c905e3d934bd490d4a615a7050000b1",
     "relevant_uris": [],
     "labels": {
       "en": [
@@ -950,7 +956,7 @@
     }
   },
   {
-    "identifier": "nebf2cc52113544a4bcb527386b30e8ebb2",
+    "identifier": "n6e0c905e3d934bd490d4a615a7050000b2",
     "relevant_uris": [],
     "labels": {
       "en": [
@@ -1566,6 +1572,9 @@
       ],
       "es": [
         "Carbono orgánico"
+      ],
+      "nl": [
+        "organische koolstof"
       ]
     }
   },
@@ -3181,6 +3190,9 @@
       ],
       "es": [
         "Seguridad alimentaria"
+      ],
+      "nl": [
+        "voedselzekerheid"
       ]
     }
   },
@@ -3487,6 +3499,9 @@
       ],
       "es": [
         "Salud humana"
+      ],
+      "nl": [
+        "menselijke gezondheid"
       ]
     }
   },
@@ -3526,6 +3541,9 @@
         "Calidad de la planta",
         "Aptitud física de las plantas",
         "Salud de la planta"
+      ],
+      "nl": [
+        "plantgezondheid"
       ]
     }
   },
@@ -3688,6 +3706,9 @@
       ],
       "es": [
         "Calidad del suelo"
+      ],
+      "nl": [
+        "bodemkwaliteit"
       ]
     }
   },
@@ -3824,6 +3845,9 @@
       ],
       "es": [
         "Calidad del suelo"
+      ],
+      "nl": [
+        "bodemkwaliteit"
       ]
     }
   },
