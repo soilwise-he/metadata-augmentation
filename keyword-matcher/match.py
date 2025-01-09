@@ -167,9 +167,9 @@ def miskeys2csv(mkeys, output_file):
 
     with open (output_file, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(["Label", "Count"])
+        csvwriter.writerow(["Label", "Count"， "Remarks"])
         for label, count in sorted_labels:
-            csvwriter.writerow([label, count])
+            csvwriter.writerow([label, count, None])
 
 def main():
     # clear the match table
