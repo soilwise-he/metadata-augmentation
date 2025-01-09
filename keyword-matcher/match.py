@@ -1,21 +1,26 @@
 # match the records with the concepts
 
-# when updates on the knowlewdge graph: delete the match table and run match.py
-# When update on records: run match.py
+# result: database table: harvest.match, file: match.json
+# other output: mis_keys.json, vague_match.csv
 
 import sys
 sys.path.append('utils')
 
-from database import dbQuery, insertMatch
+from database import dbQuery, insertMatch, deleteTable
 
 from dotenv import load_dotenv
 
 from rdflib import Graph
 
 from thefuzz import fuzz
+
 import json, csv
 
+from collections import Counter
+
 load_dotenv()
+
+vague_match = []
 
 def turple2dict(rows): # transform a query result from turple to dict
     col_names = ['identifier', 'hash', 'uri', 'turtle']  
@@ -96,12 +101,10 @@ def rdfSearchSubThes(rdf):
         # print(f"Error in RDF parsing or query")
         return []
 
-# To find the most matching subject (if exsists) by the labels
-
-vague_match = []
 
 def label_fuzzmatch(subs, keyword, threshold=80):
     
+
     key_value, key_lang = keyword
     key_value = formatString(key_value) # remove the number prefix
     best_match_subject = None
@@ -156,139 +159,96 @@ def url_match(subs, themes):
     return matched_subs
 
 
-sql = '''
-SELECT * FROM harvest.item_contain_keyword
-'''
-result = turple2dict(dbQuery(sql, hasoutput=True))
-# for quick testing
-# result = result[:100]
+def miskeys2csv(mkeys, output_file):
+    en_keys = [item[0].lower() for item in mkeys if item[1] == "en"] # lower case
+    label_counts = Counter(en_keys)
 
-# add code here to extract records which not exsists in the matabl table, and process those records
+    sorted_labels = sorted(label_counts.items(), key=lambda x: x[1], reverse=True)
 
-# get defined subjects
-with open("./keyword-matcher/concepts.json", "r") as f:
-    subs = json.load(f)
+    with open (output_file, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(["Label", "Count"， "Remarks"])
+        for label, count in sorted_labels:
+            csvwriter.writerow([label, count, None])
 
-matched_data = []
-mismatched_keys = []
+def main():
+    # clear the match table
+    sql = '''
+    TRUNCATE TABLE harvest.match;
+    '''
+    result = dbQuery(sql, hasoutput=False)
 
+    # find the records that contain keywords
+    sql = '''
+    SELECT * FROM harvest.item_contain_keyword;
+    '''
+    result = turple2dict(dbQuery(sql, hasoutput=True))
 
-for res in result:
-    turtle = res['turtle']
-    themes = []
+    # get defined Concepts
+    with open("./keyword-matcher/concepts.json", "r") as f:
+        subs = json.load(f)
 
-    if 'dct:subject' in turtle:
-        terms = rdfSearchDctSub(turtle)
-        keys = [term for term in terms if not term[0].startswith('http')]
-        themes = [term[0] for term in terms if term[0].startswith('http')]
+    matched_data = []
+    mismatched_keys = []
     
-    else:
-        keys = rdfSearchKeys(turtle)
-        themes = rdfSearchSubThes(turtle)
+    for res in result:
+        turtle = res['turtle']
+        themes = []
 
-    subs_related = []
-
-
-    # match the keys
-    for key in keys:
-        sub_key = label_fuzzmatch(subs, key, threshold = 80)
-        if sub_key is not None:
-            subs_related.append(sub_key)
+        if 'dct:subject' in turtle:
+            terms = rdfSearchDctSub(turtle)
+            keys = [term for term in terms if not term[0].startswith('http')]
+            themes = [term[0] for term in terms if term[0].startswith('http')]
+        
         else:
-            mismatched_keys.append(key)
+            keys = rdfSearchKeys(turtle)
+            themes = rdfSearchSubThes(turtle)
 
-    # match the themes
-    sub_theme = url_match(subs, themes)
-    subs_related.extend(sub_theme)
+        subs_related = []
 
-    # get all the matched subject id
-    unique_subs_related = list(set(subs_related))
+        # match the keys
+        for key in keys:
+            sub_key = label_fuzzmatch(subs, key, threshold = 80)
+            if sub_key is not None:
+                subs_related.append(sub_key)
+            else:
+                mismatched_keys.append(key)
 
-    if len(unique_subs_related) > 0:
-        for sub_id in unique_subs_related:
-            # Find the corresponding subject by subject_id
-            matched_subject = next((sub for sub in subs if sub['identifier'] == sub_id), None)
-            if matched_subject:
-                insertMatch(res['identifier'], res['hash'], sub_id, matched_subject["labels"]["en"][0] )
-                matched_data.append({
-                    'record_identifier': res['identifier'],
-                    'hash': res['hash'],
-                    'concept_identifier': sub_id,
-                    'label': matched_subject["labels"]["en"][0]
-                })
+        # match the themes
+        sub_theme = url_match(subs, themes)
+        subs_related.extend(sub_theme)
 
-#print(matched_data)
-with open("./keyword-matcher/match.json", "w", encoding='utf-8') as json_file:
-    json.dump(matched_data, json_file, ensure_ascii=False, indent=2) 
+        # get all the matched subject id
+        unique_subs_related = list(set(subs_related))
 
-# analyze the mismatched keywords
-with open("./keyword-matcher/mis_keys.json", "w", encoding='utf-8') as json_file:
-    json.dump(mismatched_keys, json_file, ensure_ascii=False, indent=2) 
+        if len(unique_subs_related) > 0:
+            for sub_id in unique_subs_related:
+                # Find the corresponding subject by subject_id
+                matched_subject = next((sub for sub in subs if sub['identifier'] == sub_id), None)
+                if matched_subject:
+                    insertMatch(res['identifier'], res['hash'], sub_id, matched_subject["labels"]["en"][0] )
+                    matched_data.append({
+                        'record_identifier': res['identifier'],
+                        'hash': res['hash'],
+                        'concept_identifier': sub_id,
+                        'label': matched_subject["labels"]["en"][0]
+                    })
+    # write output to json file
+    with open("./keyword-matcher/match.json", "w", encoding='utf-8') as json_file:
+        json.dump(matched_data, json_file, ensure_ascii=False, indent=2) 
 
-with open('./keyword-matcher/vague_match.csv', 'w', newline='') as csvfile:
-    csvwriter = csv.writer(csvfile)
-    csvwriter.writerows(vague_match)
+    # analyze the mismatched keywords
+    miskeys2csv(mismatched_keys, "./keyword-matcher/unmatched_terms.csv")
 
-# def getThesaurus(): # get concepts (uri and label) from knowledge graph. language issue!! has only 10000 records?
-#     # query_str = "https://sparql.soilwise-he.containers.wur.nl/sparql/?default-graph-uri=&query=PREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E+%0D%0Aprefix+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A%0D%0Aselect+%3Fconcept+%3Flabel%0D%0Awhere+%7B%0D%0A%3Fconcept+a+skos%3AConcept+%3B%0D%0Askos%3AprefLabel+%3Flabel%0D%0A%7D%0D%0A&format=application%2Fsparql-results%2Bjson&timeout=0&signal_void=on"
-#     query_str = "https://sparql.soilwise-he.containers.wur.nl/sparql/?default-graph-uri=&query=prefix+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A%0D%0Aselect+%3Fconcept+%3Flabel%0D%0Awhere+%7B%0D%0A%3Fconcept+a+skos%3AConcept+%3B%0D%0Askos%3AprefLabel+%3Flabel%0D%0Afilter+isURI%28%3Fconcept%29%0D%0A%7D&format=application%2Fsparql-results%2Bjson&timeout=0&signal_void=on"
-#     resp = requests.get(query_str)
-#     if resp.ok:
-#         res = resp.json()
-#         results = res['results']['bindings']
-#         uri_labels = []
-#         for r in results:
-#             uri = r['concept']['value']
-#             label = r['label']['value']
-#             uri_labels.append({'uri': uri, 'label':label})
-#         return (uri_labels)
-#     else:
-#         print ('fail to fetch concept')
-#         return []
-
-
-# thes = getThesaurus()
-
-# def searchKeyword(rdf): # find keyword section from a rdf string using regular expression
-#     pattern = r'dcat:keyword\s+((?:"[^"]+"@\w{2}\s*(?:,\s*"[^"]+"@\w{2}\s*)*));'
-#     keyword_match = re.search(pattern, rdf, re.MULTILINE | re.DOTALL)
-#     if keyword_match:
-#         keyword_section = keyword_match.group(1)
-#         matches = re.findall(r'"([^"]+)"@(\w{2})', keyword_section)
-#         keywords = [{"keyword": value, "language": lang} for value, lang in matches]
-#         return keywords
-#     else:
-#         # print("No dcat:keyword section found.")
-#         return False
-
-
-# record_keyword = []
-
-# for res in result:
-#     keys = searchKeyword(res['turtle'])
-#     if not keys:
-#         # print(res['identifier'])
-#         continue
+    # vague match terms
+    with open('./keyword-matcher/vague_match.csv', 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerows(vague_match)
     
-#     for key in keys:
-#         keyword_uri = None
+    # add code here to update terms.csv
 
-#         for conc in thes:
-#             if key['keyword'] == conc['label']:
-#                 keyword_uri = conc['uri']
+    print("match records successfully, find " + str(len(matched_data)) + " matches")
 
-#                 row = {
-#                     'identifier': res['identifier'],
-#                     'date': res['date'],
-#                     'uri': res['uri'],
-#                     'keyword_label': key['keyword'],
-#                     'lang': key['language'],
-#                     'keyword_uri': keyword_uri
-#                 }
-#                 record_keyword.append(row)
-#                 break
-#         # if not keyword_uri:
-#         #     print(f"No matching concept found for keyword: {key['keyword']}")
-#         #     continue
-# print(len(record_keyword))
-# print(record_keyword[:3])
+if __name__ == "__main__":
+    main()
+    
