@@ -18,7 +18,7 @@ classDiagram
     class Translations{
         source
         target
-        lang_source
+        lang_source # has value 'LD' if lang is not known
         lang_target
         ticket
         date_inserted
@@ -60,4 +60,4 @@ Error codes start with -, following error codes are of interest
 | -20021 | Text to translate too long | 
 | -20028 | Concurrency quota exceeded | 
 | -20029 | Document format not supported | 
-
+| -20049 | Language can not be detected | 
