@@ -1,4 +1,4 @@
-# Metadata augmentation
+# Intro
 
 The metadata augmentation repository contains a number of modules each performing specific tasks on the metadata. For each module a dedicated design document is provided.
 

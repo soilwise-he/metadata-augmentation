@@ -1,5 +1,5 @@
 
-# Design Document: 
+# Design Document: NER Augmentation
 
 ## Introduction
 

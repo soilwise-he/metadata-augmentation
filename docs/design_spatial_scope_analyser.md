@@ -1,5 +1,5 @@
 
-# Design Document: 
+# Design Document: Spatial Scope Analyser
 
 ## Introduction
 
