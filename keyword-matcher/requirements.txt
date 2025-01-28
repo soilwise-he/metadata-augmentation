@@ -1,0 +1,3 @@
+rdflib
+dotenv
+thefuzz
