@@ -1,13 +1,8 @@
-# a inspire harvest, db credentials are populated with git ci variables
-default:
-  interruptible: false
-stages:
-  - run-augment
 
 # metadata
 keyword-match-dev:
   image: harbor.containers.wurnet.nl/proxy-cache/library/python:3.10.8-slim-buster
-  stage: run-augment
+  stage: augment
   script:
     - export POSTGRES_HOST=$POSTGRES_HOST_TEST
     - export POSTGRES_PORT=$POSTGRES_PORT_TEST
@@ -26,9 +21,9 @@ keyword-match-dev:
 
 
 # metadata
-harvest-bonares-prod:
+keyword-match-prod:
   image: harbor.containers.wurnet.nl/proxy-cache/library/python:3.10.8-slim-buster
-  stage: run-augment
+  stage: augment
   script:
     - export POSTGRES_HOST=$POSTGRES_HOST_TEST
     - export POSTGRES_PORT=$POSTGRES_PORT_TEST
@@ -36,7 +31,6 @@ harvest-bonares-prod:
     - export POSTGRES_USER=$POSTGRES_USER_TEST
     - export POSTGRES_PASSWORD=$POSTGRES_PASSWORD_TEST
     
-
     - pip3 install -r keyword-matcher/requirements.txt
     #- python3 keyword-matcher/get_thesaurus.py
     - python3 keyword-matcher/match2keytemp.py
