@@ -5,6 +5,16 @@ stages:
   - build
   - deploy
 
+
+
+workflow:
+  name: 'Augment: $PROJECT'
+
+include:
+  - local: "/CI/.keyword-match-temp.yaml"
+
+
+
 ######
 # Tag stage
 tag:
