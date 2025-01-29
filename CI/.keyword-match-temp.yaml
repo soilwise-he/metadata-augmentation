@@ -17,7 +17,7 @@ keyword-match-dev:
   rules:
     - if: $PROJECT != "KWMATCH"
       when: never
-    - if: $CI_COMMIT_REF_NAME == "dev"
+    - if: $CI_COMMIT_REF_NAME == "develop"
 
 
 # metadata
