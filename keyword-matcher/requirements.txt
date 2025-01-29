@@ -1,3 +1,4 @@
 rdflib
-dotenv
+psycopg2-binary
+python-dotenv
 thefuzz
