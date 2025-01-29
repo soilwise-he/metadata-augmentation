@@ -1,39 +1,14 @@
 default:
   interruptible: false
 stages:
-  - tag
   - build
-  - deploy
-
-
+  - augment
 
 workflow:
   name: 'Augment: $PROJECT'
 
 include:
   - local: "/CI/.keyword-match-temp.yaml"
-
-
-
-######
-# Tag stage
-tag:
-  image: harbor.containers.wurnet.nl/proxy-cache/library/node:16.14.0-bullseye-slim@sha256:3861f41484125c13894363623c004b5af76ac73b7889c7feafa807d1d144895a
-  stage: tag
-  before_script:
-    - apt-get update && apt-get install -y --no-install-recommends git-core git-lfs ca-certificates
-    - npm install -g semantic-release@v19.0.2 @semantic-release/commit-analyzer@v9.0.2 @semantic-release/gitlab@v7.0.4 @semantic-release/git@v10.0.1 @semantic-release/npm@v9.0.1 @semantic-release/release-notes-generator@v10.0.3 @semantic-release/changelog@v6.0.1 @semantic-release/commit-analyzer@v9.0.2 conventional-changelog-eslint@v3.0.9 conventional-changelog-conventionalcommits
-    - npm install -g @commitlint/config-conventional@v16.2.1 @commitlint/cli@v16.2.1 semantic-release-commitlint@v1.2.2
-  script:
-    - semantic-release
-  when: on_success
-  only:
-    - main
-  except:
-    refs:
-      - tags
-    variables:
-      - $CI_COMMIT_TITLE =~ /^RELEASE:.+$/
 
 ######
 # build stage
@@ -52,33 +27,6 @@ build:
     #- /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $HARBOR_REGISTRY/$HARBOR_PROJECT/$CI_PROJECT_NAME:$CI_COMMIT_TAG --destination $HARBOR_REGISTRY/$HARBOR_PROJECT/$CI_PROJECT_NAME:latest
     - if [ -z $CI_COMMIT_TAG ]; then /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $HARBOR_REGISTRY/$HARBOR_PROJECT/metadata-augmentation:$CI_COMMIT_SHORT_SHA --destination $HARBOR_REGISTRY/$HARBOR_PROJECT/metadata-augmentation:latest;  else /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR --destination $HARBOR_REGISTRY/$HARBOR_PROJECT/metadata-augmentation:$CI_COMMIT_TAG --destination $HARBOR_REGISTRY/$HARBOR_PROJECT/metadata-augmentation:latest; fi
   only:
-    - develop
     - tags
 
-deploy-dev:
-  stage: deploy
-  image: harbor.containers.wurnet.nl/proxy-cache/library/alpine:3
-  before_script:
-    - apk add curl
-  script: 
-    - echo "deploy-dev; $CI_COMMIT_SHORT_SHA/$CI_COMMIT_REF_NAME"
-    - curl -X POST -F token=${DEPLOY_TOKEN} -F "ref=master" -F "variables[VERSION_TAG]=${CI_COMMIT_SHORT_SHA}" -F "variables[ENVIRONMENT]=dev" -F "variables[PROJECT]=metadata-augmentation" https://git.wur.nl/api/v4/projects/7515/trigger/pipeline
-  only:
-    - develop
-  environment:
-    name: dev
-    url: https://trans.soilwise.containers.wurnet.nl
-    
-deploy-prod:
-  stage: deploy
-  image: harbor.containers.wurnet.nl/proxy-cache/library/alpine:3
-  before_script:
-    - apk add curl
-  script: 
-    - echo "deploy-prod; $CI_COMMIT_TAG/$CI_COMMIT_REF_NAME"
-#    - curl -X POST -F token=${DEPLOY_TOKEN} -F "ref=master" -F "variables[VERSION_TAG]=${CI_COMMIT_TAG}" -F "variables[ENVIRONMENT]=prod" -F "variables[PROJECT]=metadata-augmentation" https://git.wur.nl/api/v4/projects/7515/trigger/pipeline
-  only:
-    - tags
-  environment:
-    name: Production
-    url: https://trans.soilwise.containers.wur.nl
+
