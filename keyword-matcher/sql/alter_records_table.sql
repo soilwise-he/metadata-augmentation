@@ -1,15 +1,13 @@
-
-ALTER TABLE records
-ADD color VARCHAR(255); 
-    soil_functions text  ,
-    soil_physical_properties text ,
-    productivity text  ,
-    soil_services text ,
-    soil_classification text ,
-    soil_processes text ,
-    soil_biological_properties text ,
-    contamination text ,
-    soil_properties text ,
-    soil_threats text ,
-    ecosystem_services text ,
-    soil_chemical_properties text
+ALTER TABLE records 
+   ADD column soil_functions text  ,
+   ADD column  soil_physical_properties text ,
+   ADD column  productivity text  ,
+   ADD column  soil_services text ,
+   ADD column  soil_classification text ,
+   ADD column  soil_processes text ,
+   ADD column  soil_biological_properties text ,
+   ADD column  contamination text ,
+   ADD column  soil_properties text ,
+   ADD column  soil_threats text ,
+   ADD column  ecosystem_services text ,
+   ADD column  soil_chemical_properties text
