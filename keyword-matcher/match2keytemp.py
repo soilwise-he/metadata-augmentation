@@ -15,6 +15,8 @@ from thefuzz import fuzz
 
 import json, csv
 
+import logging
+
 
 def turple2dict(rows): # transform a query result from turple to dict
     col_names = ['identifier', 'hash', 'uri', 'turtle']  
@@ -51,7 +53,7 @@ def rdfSearchKeys(rdf):
         return keywords
     
     except:
-        print(f"Error in RDF parsing or query")
+        logging.error(f"Error in RDF parsing or query")
         return []
     
 def rdfSearchDctSub(rdf):
@@ -269,23 +271,16 @@ def main():
     matched_data = match(result, subs)
     # add code here to update terms.csv
 
-    print("match records successfully, find " + str(len(matched_data)) + " matches")
+    logging.info(f"Match records successfully, found {len(matched_data)} matches")
 
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
     c_mapping, cols = get_mapping(terms)
 
-    # first drop the temp table
+    # first truncate the temp table
     sql = '''
-    DROP TABLE IF EXISTS keywords_temp;
+    TRUNCATE TABLE keywords_temp;
     '''
     result = dbQuery(sql,  hasoutput=False)
-
-    # create temp table
-    sql = '''
-    SELECT harvest.create_dynamic_table(%s, %s);
-    '''
-    result = dbQuery(sql, ('keywords_temp', cols), hasoutput=False)
-    print('temp table created, start to insert')
 
     keys = ['identifier'] + list(c_mapping.keys())
 
@@ -315,7 +310,8 @@ def main():
         # insert row here
         insertSQL('keywords_temp', cols, list(dic.values()) )  
         count_row += 1
-    print(str(count_row) + " rows inserted to the keywords_temp table") 
+
+    logging.info(f"{count_row} rows inserted to the keywords_temp table")
 
     # # join and insert into records
     # sql = '''
