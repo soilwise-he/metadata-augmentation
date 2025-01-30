@@ -19,7 +19,7 @@ import logging
 
 
 def turple2dict(rows): # transform a query result from turple to dict
-    col_names = ['identifier', 'hash', 'uri', 'turtle']  
+    col_names = ['identifier', 'hash', 'uri', 'turtle', 'prefix']  
     return [dict(zip(col_names, row)) for row in rows]
 
 def formatString(input_string): # remove prefix numbers from a label
@@ -52,29 +52,10 @@ def rdfSearchKeys(rdf):
         keywords = [[str(row[0]), str(row[1])] for row in results]
         return keywords
     
-    except:
-        logging.error(f"Error in RDF parsing or query")
+    except Exception as e:
+        print(e)
         return []
-    
-def rdfSearchDctSub(rdf):
-    try:
-        rdf_pre = 'PREFIX  dct:  <http://purl.org/dc/terms/> ' + rdf
-        g = Graph()
-        g.parse(data=rdf_pre, format="turtle")
 
-        query = '''
-        SELECT ?keyword
-        WHERE {
-            ?p dct:subject ?keyword
-        }
-        ''' 
-        results = g.query(query)
-        keywords = [[str(row[0]), 'en'] for row in results]
-        return keywords
-    
-    except:
-        # print(f"Error in RDF parsing or query")
-        return []
     
 def rdfSearchSubThes(rdf):
     try:
@@ -82,6 +63,8 @@ def rdfSearchSubThes(rdf):
         g.parse(data=rdf, format="turtle")
         
         query = '''
+        PREFIX dcat: <http://www.w3.org/ns/dcat#> 
+        PREFIX dcterms: <http://purl.org/dc/terms/> 
         SELECT ?theme
         WHERE {
             { ?s dcat:theme ?theme . } UNION { ?s dcterms:subject ?theme .}
@@ -93,8 +76,29 @@ def rdfSearchSubThes(rdf):
         themes = list(set(themes)) #get unique values (sometimes duplications in themes and subjects)
         return themes
     
-    except:
-        # print(f"Error in RDF parsing or query")
+    except Exception as e:
+        print(e)
+        return []
+
+def rdfSearchDctSub(rdf):
+    try:
+        # rdf_pre = 'PREFIX  dct:  <http://purl.org/dc/terms/> ' + rdf
+        g = Graph()
+        g.parse(data=rdf, format="turtle")
+
+        query = '''
+        prefix dct: <http://purl.org/dc/terms/>
+        SELECT ?keyword
+        WHERE {
+            ?p dct:subject ?keyword
+        }
+        ''' 
+        results = g.query(query)
+        keywords = [[str(row[0]), 'en'] for row in results]
+        return keywords
+    
+    except Exception as e:
+        print(e)
         return []
 
 
@@ -178,13 +182,19 @@ def get_class(t_id, mapping): # get the class by a term id
     return result_c
 
 def match(items, cons):
+    num = 0
     
     matched_data = []
     mismatched_keys = []
     
     for res in items:
-        turtle = res['turtle']
+        if res['prefix'] is not None:
+            turtle = res['prefix'] + res['turtle']
+        else:
+            turtle = res['turtle']
         themes = []
+
+        # issue: some keywords as dct:subject filttered out because of not uri, this part needs to be rewrite
 
         if 'dct:subject' in turtle:
             terms = rdfSearchDctSub(turtle)
@@ -194,6 +204,12 @@ def match(items, cons):
         else:
             keys = rdfSearchKeys(turtle)
             themes = rdfSearchSubThes(turtle)
+        
+        if len(keys) ==0 & len(themes) == 0: # nothing found, wich should not happen
+            num += 1
+            # print(f"No keyword found for record {res['identifier']}")
+    
+
 
         subs_related = []
 
@@ -224,18 +240,8 @@ def match(items, cons):
                         'concept_identifier': sub_id,
                         'label': matched_subject["labels"]["en"][0]
                     })
-    # # eliminate writing output to simply the process
-    # # write output to json file
-    # with open("./keyword-matcher/match.json", "w", encoding='utf-8') as json_file:
-    #     json.dump(matched_data, json_file, ensure_ascii=False, indent=2) 
 
-    # # analyze the mismatched keywords
-    # miskeys2csv(mismatched_keys, "./keyword-matcher/unmatched_terms.csv")
-
-    # # vague match terms
-    # with open('./keyword-matcher/vague_match.csv', 'w', newline='') as csvfile:
-    #     csvwriter = csv.writer(csvfile)
-    #     csvwriter.writerows(vague_match)
+    print('total number of records without keywords:', num)
     return matched_data
 
 def get_mapping(terms):
@@ -318,6 +324,7 @@ def main():
     # SELECT harvest.insert_records_byjoin();
     # '''
     # result = dbQuery(sql,  hasoutput=False)
+
 
 if __name__ == "__main__":
     main()
