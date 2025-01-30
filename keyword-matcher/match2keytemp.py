@@ -181,6 +181,7 @@ def get_class(t_id, mapping): # get the class by a term id
             break
     return result_c
 
+
 def match(items, cons):
     num = 0
     
@@ -265,14 +266,20 @@ def main():
     load_dotenv()
     
     # find the records that contain keywords
+    logging.info("Start to query on the database view")
     sql = '''
     SELECT * FROM harvest.item_contain_keyword;
     '''
     result = turple2dict(dbQuery(sql, hasoutput=True))
+    logging.info("Successfully get query result from the database view")
 
     # get defined Concepts
     with open("./keyword-matcher/concepts.json", "r") as f:
         subs = json.load(f)
+    
+    logging.info("Successfully load concept.json file")
+
+    logging.info("Start matching")
 
     matched_data = match(result, subs)
     # add code here to update terms.csv
@@ -280,6 +287,7 @@ def main():
     logging.info(f"Match records successfully, found {len(matched_data)} matches")
 
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
+    logging.info("Successfully read terms.csv file")
     c_mapping, cols = get_mapping(terms)
 
     # first truncate the temp table
@@ -287,6 +295,7 @@ def main():
     TRUNCATE TABLE keywords_temp;
     '''
     result = dbQuery(sql,  hasoutput=False)
+    logging.info("Successfully truncate keyword_temp table")
 
     keys = ['identifier'] + list(c_mapping.keys())
 
@@ -298,6 +307,7 @@ def main():
         records.setdefault(record_id, []).append(term_id) # records with unique identifier
 
     # insert target data to the temp table
+    logging.info("Start insert data into the keyword_temp table")
     count_row = 0
     for record_id, term_ids in records.items(): # for each record (unique)
         dic = {key: None for key in keys} # initialize the div
