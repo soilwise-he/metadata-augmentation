@@ -7,11 +7,13 @@ CREATE OR REPLACE VIEW harvest.item_contain_keyword
  SELECT items.identifier,
     items.hash,
     items.uri,
-    items.turtle
+    items.turtle,
+    sources.turtle_prefix
    FROM harvest.items
+     LEFT JOIN harvest.sources ON items.source = sources.name::text
   WHERE items.turtle ~~ '%dcat:keyword%'::text OR items.turtle ~~ '%dcat:theme%'::text OR items.turtle ~~ '%dcterms:subject%'::text OR items.turtle ~~ '%dct:subject%'::text;
 
 ALTER TABLE harvest.item_contain_keyword
     OWNER TO soilwise;
 COMMENT ON VIEW harvest.item_contain_keyword
-    IS 'This view is to query records in harvest.items that the turtle contains keywords;
+    IS 'This view is to query records in harvest.items that the turtle contains ''dcat:ketword''';
