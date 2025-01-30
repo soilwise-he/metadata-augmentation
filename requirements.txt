@@ -3,3 +3,6 @@ requests
 python-dotenv
 uvicorn
 psycopg2-binary
+rdflib
+thefuzz
+SPARQLWrapper
