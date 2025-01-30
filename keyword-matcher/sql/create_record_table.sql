@@ -1,4 +1,4 @@
--- Table: public.records_argumented
+-- Table: public.records
 
 DROP TABLE IF EXISTS public.records;
 
@@ -90,4 +90,31 @@ CREATE TABLE IF NOT EXISTS public.records
 TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.records
+    OWNER to soilwise;
+
+
+-- Table: public.keyword-temp
+
+DROP TABLE IF EXISTS public.keywords_temp;
+
+CREATE TABLE IF NOT EXISTS public.keywords_temp
+(
+    identifier text COLLATE pg_catalog."default",
+    soil_properties text COLLATE pg_catalog."default",
+    soil_physical_properties text COLLATE pg_catalog."default",
+    soil_processes text COLLATE pg_catalog."default",
+    soil_biological_properties text COLLATE pg_catalog."default",
+    ecosystem_services text COLLATE pg_catalog."default",
+    soil_services text COLLATE pg_catalog."default",
+    soil_threats text COLLATE pg_catalog."default",
+    soil_chemical_properties text COLLATE pg_catalog."default",
+    soil_classification text COLLATE pg_catalog."default",
+    productivity text COLLATE pg_catalog."default",
+    contamination text COLLATE pg_catalog."default",
+    soil_functions text COLLATE pg_catalog."default"
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.keywords_temp
     OWNER to soilwise;
