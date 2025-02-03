@@ -3,19 +3,40 @@
 # input: concept.json, database..., terms.csv
 # output: database: public.keyword_temp
 
+import time
+
+start_time = time.time()
 import sys
+print(f"Import sys: {time.time() - start_time:.4f} seconds")
+
+start_time = time.time()
 sys.path.append('utils')
+print(f"Append utils to sys.path: {time.time() - start_time:.4f} seconds")
 
+start_time = time.time()
 from database import dbQuery, insertSQL
+print(f"Import dbQuery, insertSQL from database: {time.time() - start_time:.4f} seconds")
+
+start_time = time.time()
 from dotenv import load_dotenv
+print(f"Import load_dotenv from dotenv: {time.time() - start_time:.4f} seconds")
 
+start_time = time.time()
 from rdflib import Graph
+print(f"Import Graph from rdflib: {time.time() - start_time:.4f} seconds")
 
+start_time = time.time()
 from thefuzz import fuzz
+print(f"Import fuzz from thefuzz: {time.time() - start_time:.4f} seconds")
 
+start_time = time.time()
 import json, csv
+print(f"Import json, csv: {time.time() - start_time:.4f} seconds")
 
+start_time = time.time()
 import logging
+print(f"Import logging: {time.time() - start_time:.4f} seconds")
+
 
 
 def turple2dict(rows): # transform a query result from turple to dict
@@ -242,7 +263,7 @@ def match(items, cons):
                         'label': matched_subject["labels"]["en"][0]
                     })
 
-    print('total number of records without keywords:', num)
+    print('Total number of records failed to find keywords: ', num)
     return matched_data
 
 def get_mapping(terms):
@@ -263,39 +284,41 @@ def get_mapping(terms):
 
 def main():
     
-    print("Load environment variable -p")
-    logging.info("Load environment variable")
+    start_time = time.time()
+    print("Load environment variable")
+
     load_dotenv()
     
     # find the records that contain keywords
-    print("Environment variables loaded -p")
-    logging.info("Environment variables loaded")
+    print("Environment variables loaded")
+
     sql = '''
     SELECT * FROM harvest.item_contain_keyword;
     '''
     result = turple2dict(dbQuery(sql, hasoutput=True))
-    print("got query result from the database view -p")
-    logging.info("got query result from the database view")
+    print("got query result from the database view")
+    
+    print(f"Database query execution: {time.time() - start_time:.4f} seconds")
 
     # get defined Concepts
+    start_time = time.time()
     with open("./keyword-matcher/concepts.json", "r") as f:
         subs = json.load(f)
-    print("concept.json file loaded -p")
-    logging.info("concept.json file loaded")
+    print("concept.json file loaded")
 
-    print("Start matching -p")
-    logging.info("Start matching")
+    print("Start matching")
 
     matched_data = match(result, subs)
     # add code here to update terms.csv
 
-    print("Match records successfully, found ", len(matched_data), " matches -p")
-    logging.info(f"Match records successfully, found {len(matched_data)} matches")
+    print("Match records successfully, found ", len(matched_data), " matches")
+    print(f"Matching execution: {time.time() - start_time:.4f} seconds")
+
+    start_time = time.time()
 
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
 
-    print("terms.csv file loaded -p")
-    logging.info("terms.csv file loaded")
+    print("terms.csv file loaded")
     c_mapping, cols = get_mapping(terms)
 
     # first truncate the temp table
@@ -304,8 +327,7 @@ def main():
     '''
     result = dbQuery(sql,  hasoutput=False)
 
-    print("Truncated keyword_temp table -p")
-    logging.info("Truncated keyword_temp table")
+    print("Truncated keyword_temp table")
 
     keys = ['identifier'] + list(c_mapping.keys())
 
@@ -317,7 +339,7 @@ def main():
         records.setdefault(record_id, []).append(term_id) # records with unique identifier
 
     # insert target data to the temp table
-    logging.info("Start insert data into the keyword_temp table")
+    print("Start insert data into the keyword_temp table")
     count_row = 0
     for record_id, term_ids in records.items(): # for each record (unique)
         dic = {key: None for key in keys} # initialize the div
@@ -337,8 +359,8 @@ def main():
         insertSQL('keywords_temp', cols, list(dic.values()) )  
         count_row += 1
 
-    print(f"{count_row} rows inserted to the keywords_temp table -p")
-    logging.info(f"{count_row} rows inserted to the keywords_temp table")
+    print(f"{count_row} rows inserted to the keywords_temp table")
+    print(f"Inserting data to the database: {time.time() - start_time:.4f} seconds")
 
     # # join and insert into records
     # sql = '''
@@ -348,4 +370,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print("Starting script execution")
     main()
