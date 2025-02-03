@@ -262,11 +262,12 @@ def get_mapping(terms):
 
 
 def main():
-
+    
+    logging.info("Load environment variable")
     load_dotenv()
     
     # find the records that contain keywords
-    logging.info("Start to query on the database view")
+    logging.info("Environment variables loaded")
     sql = '''
     SELECT * FROM harvest.item_contain_keyword;
     '''
