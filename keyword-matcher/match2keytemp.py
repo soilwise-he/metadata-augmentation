@@ -5,37 +5,19 @@
 
 import time
 
-start_time = time.time()
 import sys
-print(f"Import sys: {time.time() - start_time:.4f} seconds")
 
-start_time = time.time()
 sys.path.append('utils')
-print(f"Append utils to sys.path: {time.time() - start_time:.4f} seconds")
 
-start_time = time.time()
 from database import dbQuery, insertSQL
-print(f"Import dbQuery, insertSQL from database: {time.time() - start_time:.4f} seconds")
 
-start_time = time.time()
 from dotenv import load_dotenv
-print(f"Import load_dotenv from dotenv: {time.time() - start_time:.4f} seconds")
 
-start_time = time.time()
 from rdflib import Graph
-print(f"Import Graph from rdflib: {time.time() - start_time:.4f} seconds")
 
-start_time = time.time()
 from thefuzz import fuzz
-print(f"Import fuzz from thefuzz: {time.time() - start_time:.4f} seconds")
 
-start_time = time.time()
 import json, csv
-print(f"Import json, csv: {time.time() - start_time:.4f} seconds")
-
-start_time = time.time()
-import logging
-print(f"Import logging: {time.time() - start_time:.4f} seconds")
 
 
 
