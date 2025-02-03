@@ -263,32 +263,39 @@ def get_mapping(terms):
 
 def main():
     
+    print("Load environment variable -p")
     logging.info("Load environment variable")
     load_dotenv()
     
     # find the records that contain keywords
+    print("Environment variables loaded -p")
     logging.info("Environment variables loaded")
     sql = '''
     SELECT * FROM harvest.item_contain_keyword;
     '''
     result = turple2dict(dbQuery(sql, hasoutput=True))
-    logging.info("Successfully get query result from the database view")
+    print("got query result from the database view -p")
+    logging.info("got query result from the database view")
 
     # get defined Concepts
     with open("./keyword-matcher/concepts.json", "r") as f:
         subs = json.load(f)
-    
-    logging.info("Successfully load concept.json file")
+    print("concept.json file loaded -p")
+    logging.info("concept.json file loaded")
 
+    print("Start matching -p")
     logging.info("Start matching")
 
     matched_data = match(result, subs)
     # add code here to update terms.csv
 
+    print("Match records successfully, found ", len(matched_data), " matches -p")
     logging.info(f"Match records successfully, found {len(matched_data)} matches")
 
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
-    logging.info("Successfully read terms.csv file")
+
+    print("terms.csv file loaded -p")
+    logging.info("terms.csv file loaded")
     c_mapping, cols = get_mapping(terms)
 
     # first truncate the temp table
@@ -296,7 +303,9 @@ def main():
     TRUNCATE TABLE keywords_temp;
     '''
     result = dbQuery(sql,  hasoutput=False)
-    logging.info("Successfully truncate keyword_temp table")
+
+    print("Truncated keyword_temp table -p")
+    logging.info("Truncated keyword_temp table")
 
     keys = ['identifier'] + list(c_mapping.keys())
 
@@ -328,6 +337,7 @@ def main():
         insertSQL('keywords_temp', cols, list(dic.values()) )  
         count_row += 1
 
+    print(f"{count_row} rows inserted to the keywords_temp table -p")
     logging.info(f"{count_row} rows inserted to the keywords_temp table")
 
     # # join and insert into records
