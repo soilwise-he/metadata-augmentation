@@ -3,10 +3,14 @@
 # input: concept.json, database..., terms.csv
 # output: database: public.keyword_temp
 
+import time
+
 import sys
+
 sys.path.append('utils')
 
 from database import dbQuery, insertSQL
+
 from dotenv import load_dotenv
 
 from rdflib import Graph
@@ -15,7 +19,6 @@ from thefuzz import fuzz
 
 import json, csv
 
-import logging
 
 
 def turple2dict(rows): # transform a query result from turple to dict
@@ -181,6 +184,7 @@ def get_class(t_id, mapping): # get the class by a term id
             break
     return result_c
 
+
 def match(items, cons):
     num = 0
     
@@ -241,7 +245,7 @@ def match(items, cons):
                         'label': matched_subject["labels"]["en"][0]
                     })
 
-    print('total number of records without keywords:', num)
+    print('Total number of records failed to find keywords: ', num)
     return matched_data
 
 def get_mapping(terms):
@@ -261,25 +265,42 @@ def get_mapping(terms):
 
 
 def main():
+    
+    start_time = time.time()
+    print("Load environment variable")
 
     load_dotenv()
     
     # find the records that contain keywords
+    print("Environment variables loaded")
+
     sql = '''
     SELECT * FROM harvest.item_contain_keyword;
     '''
     result = turple2dict(dbQuery(sql, hasoutput=True))
+    print("got query result from the database view")
+    
+    print(f"Database query execution: {time.time() - start_time:.4f} seconds")
 
     # get defined Concepts
+    start_time = time.time()
     with open("./keyword-matcher/concepts.json", "r") as f:
         subs = json.load(f)
+    print("concept.json file loaded")
+
+    print("Start matching")
 
     matched_data = match(result, subs)
     # add code here to update terms.csv
 
-    logging.info(f"Match records successfully, found {len(matched_data)} matches")
+    print("Match records successfully, found ", len(matched_data), " matches")
+    print(f"Matching execution: {time.time() - start_time:.4f} seconds")
+
+    start_time = time.time()
 
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
+
+    print("terms.csv file loaded")
     c_mapping, cols = get_mapping(terms)
 
     # first truncate the temp table
@@ -287,6 +308,8 @@ def main():
     TRUNCATE TABLE keywords_temp;
     '''
     result = dbQuery(sql,  hasoutput=False)
+
+    print("Truncated keyword_temp table")
 
     keys = ['identifier'] + list(c_mapping.keys())
 
@@ -298,6 +321,7 @@ def main():
         records.setdefault(record_id, []).append(term_id) # records with unique identifier
 
     # insert target data to the temp table
+    print("Start insert data into the keyword_temp table")
     count_row = 0
     for record_id, term_ids in records.items(): # for each record (unique)
         dic = {key: None for key in keys} # initialize the div
@@ -317,7 +341,8 @@ def main():
         insertSQL('keywords_temp', cols, list(dic.values()) )  
         count_row += 1
 
-    logging.info(f"{count_row} rows inserted to the keywords_temp table")
+    print(f"{count_row} rows inserted to the keywords_temp table")
+    print(f"Inserting data to the database: {time.time() - start_time:.4f} seconds")
 
     # # join and insert into records
     # sql = '''
@@ -327,4 +352,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print("Starting script execution")
     main()
