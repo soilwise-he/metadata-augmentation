@@ -21,6 +21,27 @@ keyword-match-dev:
 
 
 # metadata
+keyword-match-dev-batch:
+  image: harbor.containers.wurnet.nl/proxy-cache/library/python:3.10.8-slim-buster
+  stage: augment
+  script:
+    - export POSTGRES_HOST=$POSTGRES_HOST_TEST
+    - export POSTGRES_PORT=$POSTGRES_PORT_TEST
+    - export POSTGRES_DB=$POSTGRES_DB_TEST
+    - export POSTGRES_USER=$POSTGRES_USER_TEST
+    - export POSTGRES_PASSWORD=$POSTGRES_PASSWORD_TEST
+    
+
+    - pip3 install -r keyword-matcher/requirements.txt
+    #- python3 keyword-matcher/get_thesaurus.py
+    - python3 keyword-matcher/match2keytemp.py -b True
+  rules:
+    - if: $PROJECT != "KWMATCH-BATCH"
+      when: never
+    - if: $CI_COMMIT_REF_NAME == "develop"
+
+
+# metadata
 keyword-match-prod:
   image: harbor.containers.wurnet.nl/proxy-cache/library/python:3.10.8-slim-buster
   stage: augment
