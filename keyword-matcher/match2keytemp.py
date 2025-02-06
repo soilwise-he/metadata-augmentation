@@ -5,6 +5,8 @@
 
 import time
 
+import datetime
+
 import sys
 
 sys.path.append('utils')
@@ -18,6 +20,10 @@ from rdflib import Graph
 from thefuzz import fuzz
 
 import json, csv
+
+import getopt
+
+import logging
 
 
 
@@ -263,53 +269,105 @@ def get_mapping(terms):
     c_mapping = {key.replace(" ", "_"): value for key, value in mapping.items()} 
     return c_mapping, cols
 
-
-def main():
+def update_keywords_temp(col_values):
     
+    sql = '''
+    INSERT INTO public.keywords_temp 
+    (identifier, 
+    soil_threats,
+    soil_processes, 
+    soil_classification, 
+    soil_properties, 
+    soil_functions, 
+    soil_chemical_properties,
+    productivity, 
+    contamination, 
+    soil_services, 
+    soil_physical_properties, 
+    ecosystem_services, 
+    soil_biological_properties) 
+    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    ON CONFLICT(identifier) DO UPDATE 
+    SET 
+    soil_threats = EXCLUDED.soil_threats,
+    soil_processes = EXCLUDED.soil_processes,
+    soil_classification = EXCLUDED.soil_classification,
+    soil_properties = EXCLUDED.soil_properties,
+    soil_functions = EXCLUDED.soil_functions,
+    soil_chemical_properties = EXCLUDED.soil_chemical_properties,
+    productivity = EXCLUDED.productivity,
+    contamination = EXCLUDED.contamination,
+    soil_services = EXCLUDED.soil_services,
+    soil_physical_properties = EXCLUDED.soil_physical_properties,
+    ecosystem_services = EXCLUDED.ecosystem_services,
+    soil_biological_properties = EXCLUDED.soil_biological_properties
+    '''
+
+    dbQuery(sql, tuple(col_values), hasoutput=False)
+
+def update_tracking(hash_val, time_now):
+    
+    sql = '''
+    INSERT INTO harvest.process_tracking 
+    (process_id, hash, last_run)
+    VALUES ('keyword', %s, %s)
+    ON CONFLICT(hash) DO UPDATE 
+    SET 
+    process_id = EXCLUDED.process_id,
+    hash = EXCLUDED.hash,
+    last_run = EXCLUDED.last_run
+    '''
+
+    dbQuery(sql, (hash_val, time_now), hasoutput=False)
+
+def full_process():
     start_time = time.time()
-    print("Load environment variable")
 
     load_dotenv()
     
     # find the records that contain keywords
-    print("Environment variables loaded")
+    logging.info("Querying records from the database view")
 
     sql = '''
     SELECT * FROM harvest.item_contain_keyword;
     '''
-    result = turple2dict(dbQuery(sql, hasoutput=True))
-    print("got query result from the database view")
+    result_items = turple2dict(dbQuery(sql, hasoutput=True))
+
+    logging.info(f"Query completed, find {len(result_items)} records")
     
-    print(f"Database query execution: {time.time() - start_time:.4f} seconds")
+    logging.info(f"Query execution: {time.time() - start_time:.4f} seconds")
 
     # get defined Concepts
     start_time = time.time()
+
+    logging.info("Matching records with concepts")
+    
     with open("./keyword-matcher/concepts.json", "r") as f:
         subs = json.load(f)
-    print("concept.json file loaded")
+    logging.info("concept.json file loaded")
 
-    print("Start matching")
+    terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
+    logging.info("terms.csv file loaded")
 
-    matched_data = match(result, subs)
+    matched_data = match(result_items, subs)
     # add code here to update terms.csv
 
-    print("Match records successfully, found ", len(matched_data), " matches")
-    print(f"Matching execution: {time.time() - start_time:.4f} seconds")
+    logging.info(f"Match records successfully, found {len(matched_data)} matches")
+    logging.info(f"Matching execution: {time.time() - start_time:.4f} seconds")
+
+    logging.info("Truncating and inserting data into the keyword_temp table")
 
     start_time = time.time()
 
-    terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
-
-    print("terms.csv file loaded")
     c_mapping, cols = get_mapping(terms)
 
     # first truncate the temp table
     sql = '''
     TRUNCATE TABLE keywords_temp;
     '''
-    result = dbQuery(sql,  hasoutput=False)
+    dbQuery(sql,  hasoutput=False)
 
-    print("Truncated keyword_temp table")
+    logging.info("Truncated keyword_temp table")
 
     keys = ['identifier'] + list(c_mapping.keys())
 
@@ -321,7 +379,6 @@ def main():
         records.setdefault(record_id, []).append(term_id) # records with unique identifier
 
     # insert target data to the temp table
-    print("Start insert data into the keyword_temp table")
     count_row = 0
     for record_id, term_ids in records.items(): # for each record (unique)
         dic = {key: None for key in keys} # initialize the div
@@ -341,8 +398,151 @@ def main():
         insertSQL('keywords_temp', cols, list(dic.values()) )  
         count_row += 1
 
-    print(f"{count_row} rows inserted to the keywords_temp table")
-    print(f"Inserting data to the database: {time.time() - start_time:.4f} seconds")
+    logging.info(f"{count_row} rows inserted to the keywords_temp table")
+    logging.info(f"Update keywords_temp table execution: {time.time() - start_time:.4f} seconds")
+    
+    start_time = time.time()
+    logging.info("Updating tracking table")
+    # update track table
+    sql = '''
+    DELETE FROM harvest.process_tracking
+    WHERE process_id = 'keyword';
+    '''
+    dbQuery(sql,  hasoutput=False)
+    logging.info("Deleted tracking table")
+
+    time_n = datetime.datetime.now()
+
+    for res in result_items:
+        insertSQL('harvest.process_tracking', ['process_id', 'hash', 'last_run'], ['keyword', res['hash'], time_n] )  
+
+    logging.info(f"Update tracking table execution: {time.time() - start_time:.4f} seconds")
+
+def batch_process(interval):
+
+    start_time = time.time()
+
+    load_dotenv()
+    
+    # find the records that contain keywords
+    logging.info("Querying records from the database view")
+
+    # the query filter out records that have been processed, can be changed to filter on interval
+    sql = '''
+    SELECT harvest.item_contain_keyword.* FROM harvest.item_contain_keyword 
+    LEFT JOIN 
+    (
+    SELECT * FROM harvest.process_tracking
+    WHERE harvest.process_tracking.process_id = 'keyword'
+    ) AS p_keyword
+    ON harvest.item_contain_keyword.hash = p_keyword.hash
+    WHERE
+    p_keyword.hash ISNULL
+    '''
+    result_items = turple2dict(dbQuery(sql, hasoutput=True))
+
+    if len(result_items) == 0:
+        logging.info("All records have been processed for the keyword-matcher")
+        return
+
+    logging.info(f"Query completed, find {len(result_items)} new records")
+    
+    logging.info(f"Query execution: {time.time() - start_time:.4f} seconds")
+
+    # get defined Concepts
+    start_time = time.time()
+
+    with open("./keyword-matcher/concepts.json", "r") as f:
+        subs = json.load(f)
+    logging.info("concept.json file loaded")
+
+    terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
+
+    logging.info("terms.csv file loaded")
+    c_mapping, cols = get_mapping(terms)
+
+    logging.info("Matching records with concepts")
+
+    matched_data = match(result_items, subs)
+    # add code here to update terms.csv
+
+    logging.info(f"Match completed, found {len(matched_data)} matches")
+    logging.info(f"Match execution: {time.time() - start_time:.4f} seconds")
+
+    start_time = time.time()
+
+    keys = ['identifier'] + list(c_mapping.keys())
+
+    # Group matches by record_identifier
+    records = {}
+    for m in matched_data:
+        record_id = m["record_identifier"]
+        term_id = m["concept_identifier"]
+        records.setdefault(record_id, []).append(term_id) # records with unique identifier
+
+    # insert target data to the temp table
+
+    logging.info("Inserting or updating data into the keyword_temp table")
+    count_row = 0
+    for record_id, term_ids in records.items(): # for each record (unique)
+        dic = {key: None for key in keys} # initialize the div
+        dic['identifier'] = record_id
+        
+        for t_id in term_ids: # for each term id of that record
+            t_class = get_class(t_id, c_mapping)
+            
+            if t_class is not None: # find a class
+                t_label = get_label(terms, t_id) # get the label from that id
+                if t_label is not None:
+                    if dic[t_class] is None: # if it is the first term of that class
+                        dic[t_class] = t_label
+                    else:
+                        dic[t_class] = dic[t_class] + ',' + t_label
+        # insert or update row here
+        update_keywords_temp(list(dic.values()) ) 
+        count_row += 1
+    
+    logging.info(f"Keywords_temp table update execution: {time.time() - start_time:.4f} seconds")
+    logging.info(f"{count_row} rows updated to the keywords_temp table")
+
+    logging.info("Updating tracking table")
+
+    start_time = time.time()
+
+    time_n = datetime.datetime.now()
+    for res in result_items:
+        update_tracking(res['hash'], time_n)
+
+    logging.info(f"Tracking table execution: {time.time() - start_time:.4f} seconds")
+
+
+def main(argv):
+
+    arg_help = "dummy help message".format(argv[0])
+    arg_batch = False
+    arg_time = 0
+    opts, args = getopt.getopt(argv[1:], "hb:t:", ["help", "batch=", "time="])
+
+    logging.basicConfig(level=logging.INFO, format = '%(message)s')
+
+    for opt, arg in opts:
+        if opt in ("-h", "--help"):
+            print(arg_help)
+            sys.exit()
+        elif opt in ("-b", "--batch"):
+            arg_batch = arg.lower() == 'true'
+        elif opt in ("-t", "--time"):
+            arg_time = arg
+    
+    if arg_batch is False:
+        logging.info("Start full process running")
+        full_process()
+    else:
+        logging.info("Start batch process running")
+        batch_process(arg_time)
+
+
+    
 
     # # join and insert into records
     # sql = '''
@@ -352,5 +552,4 @@ def main():
 
 
 if __name__ == "__main__":
-    print("Starting script execution")
-    main()
+    main(sys.argv)
