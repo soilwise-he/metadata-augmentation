@@ -311,7 +311,7 @@ def update_tracking(hash_val, time_now):
     INSERT INTO harvest.process_tracking 
     (process_id, hash, last_run)
     VALUES ('keyword', %s, %s)
-    ON CONFLICT(hash) DO UPDATE 
+    ON CONFLICT(hash, process_id) DO UPDATE 
     SET 
     process_id = EXCLUDED.process_id,
     hash = EXCLUDED.hash,
