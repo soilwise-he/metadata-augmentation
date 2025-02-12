@@ -48,6 +48,25 @@ When matching the terms, we use fuzzy match to allow some slight difference betw
 
 - In next iteration, the keywords can be populated from a sparql query: `select skos:concept where skos:prefLabel[@lang=='{language}']=={keyword}`, it means we should prepare a triple store with selected taxonomies (glosis, agrovoc, gemet, inspire, ...). To verify if [soilhealth knowledge graph](https://github.com/soilwise-he/soil-health-knowledge-graph) is a good location for this. -->
 
+## For Catalogue Developers
+
+The keyword-matcher is triggered by running the script [match2keytemp.py](match2keytemp.py).
+
+Full process:
+
+```shell
+python3 ./keyword-matcher/match2keytemp.py
+
+```
+
+Batch process:
+
+```shell
+python3 ./keyword-matcher/match2keytemp.py -b True
+
+```
+
+The full process runs on all records from the database, and the batch process runs only on new-added records that have not been process by the keyword-matcher.
 
 
 

@@ -18,7 +18,7 @@ classDiagram
     class Translations{
         source
         target
-        lang_source
+        lang_source # has value 'LD' if lang is not known
         lang_target
         ticket
         date_inserted
@@ -26,6 +26,28 @@ classDiagram
     }
 
 ```
+
+## Callback API
+
+Install & run:
+
+Set up environment variables
+
+```
+POSTGRES_HOST=example
+POSTGRES_PORT=5432
+POSTGRES_DB=example
+POSTGRES_USER=example
+POSTGRES_PASSWORD=xxx
+```
+
+Install requirements and run api locally
+```
+pip install -r requirements.txt
+cd translation
+python3 -m uvicorn api:app --reload --host 0.0.0.0 --port 8000
+```
+
 
 ## Error codes
 
@@ -38,4 +60,4 @@ Error codes start with -, following error codes are of interest
 | -20021 | Text to translate too long | 
 | -20028 | Concurrency quota exceeded | 
 | -20029 | Document format not supported | 
-
+| -20049 | Language can not be detected | 
