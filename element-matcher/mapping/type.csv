@@ -1,0 +1,36 @@
+source_label,target_label
+journalpaper,journalpaper
+dataset,dataset
+http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset,dataset
+document,document
+service,service
+http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service,service
+series,other
+http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series,other
+Best practices and tools,document
+Other,other
+Education &amp; Training material,document
+nonGeographicDataset,datatset
+Publications &amp; reports,document
+journal-article,journalpaper
+Scientific,journalpaper
+Interview,document
+software,other
+Conference deliverables,document
+EU policy document,document
+Policy documents,document
+General articles,document
+National policy document,document
+journalarticle,journalpaper
+Policy recommendations,document
+computationalnotebook,other
+other,other
+image,other
+text,document
+Vocational education &amp; training,document
+datapaper,document
+model,other
+Secondary education,document
+video,other
+audiovisual,other
+MAP,dataset
