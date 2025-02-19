@@ -117,6 +117,7 @@ def match_elements():
         item['type'] = get_element(item)
     logging.info(f"Sparql query execution: {time.time() - start_time:.4f} seconds")
 
+    logging.info("Matching elements and inserting to the augmentation table")
     # get mapping from csv
     start_time = time.time()
 
@@ -133,6 +134,10 @@ def match_elements():
         else:
             logging.info(f"Type {source_type} not found in the mapping file")
             item['type'] = 'other'
+        insertSQL('harvest.augmentation', ['identifier', 'type'], [item['identifier'], item['type']] )
+    
+    logging.info(f"Inserting execution: {time.time() - start_time:.4f} seconds")
+    
     return
 
     logging.info("Matching records with concepts")
