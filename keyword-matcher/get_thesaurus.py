@@ -179,7 +179,7 @@ def main():
         
         formatted_cons.append(con_dict) 
 
-
+    print(f"Total concepts: {len(formatted_cons)}")
     with open("./keyword-matcher/concepts.json", "w", encoding='utf-8') as json_file:
         json.dump(formatted_cons, json_file, ensure_ascii=False, indent=2) 
 

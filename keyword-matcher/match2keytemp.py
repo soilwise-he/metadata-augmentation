@@ -25,6 +25,8 @@ import getopt
 
 import logging
 
+from collections import Counter
+
 
 
 def turple2dict(rows): # transform a query result from turple to dict
@@ -216,10 +218,9 @@ def match(items, cons):
             themes = rdfSearchSubThes(turtle)
         
         if len(keys) ==0 & len(themes) == 0: # nothing found, wich should not happen
+            # print(f"No keyword found for record {res['identifier']}")
             num += 1
             # print(f"No keyword found for record {res['identifier']}")
-    
-
 
         subs_related = []
 
@@ -228,8 +229,8 @@ def match(items, cons):
             sub_key = label_fuzzmatch(cons, key, threshold = 80)
             if sub_key is not None:
                 subs_related.append(sub_key)
-            # else:
-            #     mismatched_keys.append(key)
+            else:
+                mismatched_keys.append(key)
 
         # match the themes
         sub_theme = url_match(cons, themes)
@@ -252,7 +253,38 @@ def match(items, cons):
                     })
 
     print('Total number of records failed to find keywords: ', num)
-    return matched_data
+    return matched_data, mismatched_keys
+
+def update_termsf(matched_d, file_path):
+    pass
+
+def update_outputf(matched_d, cons, mis_keys):
+    # the function to update the output files: unmatched_keywords and unmatched_concepts
+
+    # unmatched concepts
+
+    con_id_matched = list(set([item['concept_identifier'] for item in matched_d]))
+
+
+    unmatched_concepts = [item for item in cons if item['identifier'] not in con_id_matched]
+    res_csv = [[item['identifier'], item['labels']['en'][0]]for item in unmatched_concepts]
+
+    with open('keyword-matcher/result/unmatched_concepts.csv', 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['identifier', 'label'])
+        writer.writerows(res_csv)
+    logging.info(f"Unmatched concepts file updated")
+    
+    # unmatched keywords
+    en_keys = [item[0].lower() for item in mis_keys if item[1] == "en"] # lower case
+    label_counts = Counter(en_keys)
+    sorted_labels = sorted(label_counts.items(), key=lambda x: x[1], reverse=True)
+    with open ('keyword-matcher/result/unmatched_keywords.csv', 'w', newline='') as f:
+        csvwriter = csv.writer(f)
+        csvwriter.writerow(["Label", "Count", "Remarks"])
+        for label, count in sorted_labels:
+            csvwriter.writerow([label, count, None])
+    logging.info(f"Unmatched keywords file updated")
 
 def get_mapping(terms):
     classes = [item['class'] for item in terms if item['class'] is not None] # can be harcoded but leave it like this for now
@@ -320,9 +352,9 @@ def update_tracking(hash_val, time_now):
 
     dbQuery(sql, (hash_val, time_now), hasoutput=False)
 
-def full_process():
+def full_process(opt_output: bool):
     start_time = time.time()
-
+    
     load_dotenv()
     
     # find the records that contain keywords
@@ -346,14 +378,21 @@ def full_process():
         subs = json.load(f)
     logging.info("concept.json file loaded")
 
+
+    matched_data, mis_keys = match(result_items, subs)
+    
+    # add code here to update terms.csv
+    if opt_output is True:
+        # update_termsf(matched_data, 'keyword-matcher/result/terms.csv')
+        update_outputf(matched_data, subs, mis_keys)
+    
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
     logging.info("terms.csv file loaded")
 
-    matched_data = match(result_items, subs)
-    # add code here to update terms.csv
-
     logging.info(f"Match records successfully, found {len(matched_data)} matches")
     logging.info(f"Matching execution: {time.time() - start_time:.4f} seconds")
+
+    return
 
     logging.info("Truncating and inserting data into the keyword_temp table")
 
@@ -520,35 +559,32 @@ def main(argv):
 
     arg_help = "dummy help message".format(argv[0])
     arg_batch = False
+    arg_output = False
     arg_time = 0
-    opts, args = getopt.getopt(argv[1:], "hb:t:", ["help", "batch=", "time="])
+    opts, args = getopt.getopt(argv[1:], "hb:t:o:", ["help", "batch=", "time=", "output="])
 
     logging.basicConfig(level=logging.INFO, format = '%(message)s')
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
-            print(arg_help)
+            logging.info(arg_help)
             sys.exit()
         elif opt in ("-b", "--batch"):
             arg_batch = arg.lower() == 'true'
+        elif opt in ("-o", "--option"):
+            arg_output = arg.lower() == 'true'
         elif opt in ("-t", "--time"):
             arg_time = arg
     
     if arg_batch is False:
         logging.info("Start full process running")
-        full_process()
+        full_process(arg_output)
     else:
+        if arg_output is True:
+            logging.error("batch process does not support updating output")
+            sys.exit()
         logging.info("Start batch process running")
         batch_process(arg_time)
-
-
-    
-
-    # # join and insert into records
-    # sql = '''
-    # SELECT harvest.insert_records_byjoin();
-    # '''
-    # result = dbQuery(sql,  hasoutput=False)
 
 
 if __name__ == "__main__":
