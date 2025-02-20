@@ -255,8 +255,58 @@ def match(items, cons):
     print('Total number of records failed to find keywords: ', num)
     return matched_data, mismatched_keys
 
-def update_termsf(matched_d, file_path):
-    pass
+def update_termsf(matched_d, cons):
+    # this function is to update the terms.csv file when knowledge graph updated
+    
+    # read terms.csv file:
+    with open('keyword-matcher/result/terms.csv', 'r', encoding='utf-8') as f:
+        csvreader = csv.DictReader(f)
+        terms = [row for row in csvreader]
+    # get all matched terms file
+    matched_ids = [item['concept_identifier'] for item in matched_d]
+    matched_ids = list(set(matched_ids))
+    logging.info(f"Number of matched terms: {len(matched_ids)}")
+    
+    terms_new = []
+    for term in terms:
+        if term['identifier'] in matched_ids:
+            # keep this term, need to update the uri and label
+            con_l = [con for con in cons if con['identifier'] == term['identifier']]
+            if len(con_l) == 1:
+                t = con_l[0]
+                uri_list = t['relevant_uris']
+                uri = uri_list[0] if len(uri_list) > 0 else ''
+                terms_new.append({
+                    'identifier': term['identifier'], # from original terms.csv
+                    'label': t['labels']['en'][0],
+                    'uri': uri,
+                    'class': term.get('class', '') # from original terms.csv
+                })
+        else:
+            logging.info(f"Term {term['identifier']} removed from the terms.csv file")
+    
+    for matched_id in matched_ids:
+        if matched_id not in [term['identifier'] for term in terms_new]:
+            term_l = [con for con in cons if con['identifier'] == matched_id]
+            if len(term_l) == 1:
+                term = term_l[0]
+                uri_list = term['relevant_uris']
+                uri = uri_list[0] if len(uri_list) > 0 else ''
+                terms_new.append({
+                    'identifier': term['identifier'],
+                    'label': term['labels']['en'][0],
+                    'uri': uri,
+                    'class': ''
+                })
+                logging.info(f"Term {term['identifier']} added to the terms.csv file")
+    
+    with open('keyword-matcher/result/terms.csv', 'w', newline='', encoding='utf-8') as f:
+        csvwriter = csv.DictWriter(f, fieldnames=['identifier', 'label', 'uri', 'class'])
+        csvwriter.writeheader()
+        csvwriter.writerows(terms_new)
+
+    logging.info("terms.csv file updated")
+    
 
 def update_outputf(matched_d, cons, mis_keys):
     # the function to update the output files: unmatched_keywords and unmatched_concepts
@@ -383,9 +433,10 @@ def full_process(opt_output: bool):
     
     # add code here to update terms.csv
     if opt_output is True:
-        # update_termsf(matched_data, 'keyword-matcher/result/terms.csv')
+        update_termsf(matched_data, subs)
         update_outputf(matched_data, subs, mis_keys)
     
+    return
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
     logging.info("terms.csv file loaded")
 
