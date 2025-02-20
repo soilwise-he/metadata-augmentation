@@ -1,125 +1,134 @@
 identifier,label
-https://soilwise-he.github.io/soil-health#AgriculturalAreaUnderSevereErosion,agricultural area under severe erosion
-https://soilwise-he.github.io/soil-health#ErosionByWater,erosion by water
-https://soilwise-he.github.io/soil-health#ExtentOfOrganicSoils,extent of organic soils
-https://soilwise-he.github.io/soil-health#FunctionalSoilCarbonIndicator,functional soil carbon indicator
-https://soilwise-he.github.io/soil-health#GrossNutrientBalance,gross nutrient balance
-https://soilwise-he.github.io/soil-health#HotSpots,hot spots
-https://soilwise-he.github.io/soil-health#LandAreaSOCContent,land area SOC content
-https://soilwise-he.github.io/soil-health#LandAreaSOCDegraded,land area SOC degraded
-https://soilwise-he.github.io/soil-health#PerMassOfSoil,per mass of soil
-https://soilwise-he.github.io/soil-health#PotentialYield,potential yield
-https://soilwise-he.github.io/soil-health#SoilErosionRatesPerUnitOfLandCover,soil erosion rates per unit of land cover
-https://soilwise-he.github.io/soil-health#SoilSample,soil sample
-https://soilwise-he.github.io/soil-health#SoilStabilityLoss,structural soil stability loss
-https://soilwise-he.github.io/soil-health#SpatialQuantification,spatial quantification
-https://soilwise-he.github.io/soil-health#SusceptibilityToCompaction,susceptibility to compaction
-https://soilwise-he.github.io/soil-health#TopsoilNitrogenConcentration,topsoil nitrogen concentration
-https://soilwise-he.github.io/soil-health#TopsoilPhosphorousConcentration,topsoil phosphorous concentration
-https://soilwise-he.github.io/soil-health#TrendsInSocStocksInCropland,trends in SOC stocks in cropland
+https://soilwise-he.github.io/soil-health#AcidNeutralisingCapacity,Acid neutralising capacity
+https://soilwise-he.github.io/soil-health#AlfisolsCriticalSOCRange,0.5-0.77% SOC
+https://soilwise-he.github.io/soil-health#AssociatedRisksFromPollutants,Associated risks from pollutants
+https://soilwise-he.github.io/soil-health#CurrentStateOfSoils,Current state of soils
+https://soilwise-he.github.io/soil-health#EntisolsCriticalSOCRange,1.03-1.16% SOC
+https://soilwise-he.github.io/soil-health#HarmonisingThresholds,Harmonising thresholds
+https://soilwise-he.github.io/soil-health#ImpactOfSoilPollution,Impact of soil pollution
+https://soilwise-he.github.io/soil-health#InputsAndOutputsOfSubstances,Inputs and outputs of substances
+https://soilwise-he.github.io/soil-health#LowPH,Low pH
+https://soilwise-he.github.io/soil-health#LowSOCLevel,SOC levels below 1%
+https://soilwise-he.github.io/soil-health#MinimumSOC2Percent,minimum of 2% SOC
+https://soilwise-he.github.io/soil-health#ProvisionOfCleanWater,Provision of clean water
+https://soilwise-he.github.io/soil-health#RiskAssessmentProcedures,Risk assessment procedures
+https://soilwise-he.github.io/soil-health#SOC1_2To1_5Percent,SOC content is 1.2-1.5%
+https://soilwise-he.github.io/soil-health#SoilQualityAssessment,soil quality assessment
+https://soilwise-he.github.io/soil-health#SoilScreeningValues,Soil screening values
+https://soilwise-he.github.io/soil-health#SoilTypologicalClassification,soil typological classification
+https://soilwise-he.github.io/soil-health#SuitableHabitatForSoilDwellingOrganisms,Suitable habitat for soil dwelling organisms
 https://soilwise-he.github.io/soil-health#UndisturbedConditionsBeingRare,undisturbed conditions being rare
 https://soilwise-he.github.io/soil-health#AggregateMeanWeightDiameter_0_4_8,mean weight diameter between 0.4mm and 0.8mm
 https://soilwise-he.github.io/soil-health#AggregateMeanWeightDiameter_Less_Than_0_4,mean weight diameter less than 0.4mm
+https://soilwise-he.github.io/soil-health#AgriculturalAreaUnderSevereErosion,agricultural area under severe erosion
 https://soilwise-he.github.io/soil-health#AluminiumToxicity,aluminium toxicity
 https://soilwise-he.github.io/soil-health#AnimalResidues,animal residues
 https://soilwise-he.github.io/soil-health#BindingWithSoilMinerals,binding with soil minerals
-https://soilwise-he.github.io/soil-health#CalciumDeficiency,calcium deficiency
-https://soilwise-he.github.io/soil-health#ClimateResilience,climate resilience
 https://soilwise-he.github.io/soil-health#ClimaticConditions,climatic conditions
 https://soilwise-he.github.io/soil-health#CoarseMineralFragmentContent,coarse mineral fragment content
-https://soilwise-he.github.io/soil-health#CropType,crop type
-https://soilwise-he.github.io/soil-health#Crusting,crusting
-https://soilwise-he.github.io/soil-health#CulturalServices,cultural services
-https://soilwise-he.github.io/soil-health#DynamicSoilParameters,dynamic soil parameters
-https://soilwise-he.github.io/soil-health#ElementCycling,element cycling
-https://soilwise-he.github.io/soil-health#ExclusionCriteria,exclusion criteria
-n6e0c905e3d934bd490d4a615a7050000b1,does not pass through a 2-mm sieve
-https://soilwise-he.github.io/soil-health#FacultativeParameters,facultative parameters
-https://soilwise-he.github.io/soil-health#FineSoilFraction,fine soil fraction
-n6e0c905e3d934bd490d4a615a7050000b2,fractions <2mm
-https://soilwise-he.github.io/soil-health#GeneralSoilParameters,general soil parameters
+https://soilwise-he.github.io/soil-health#EphemeralGullyErosion,Ephemeral gully erosion
+https://soilwise-he.github.io/soil-health#ExtentOfOrganicSoils,extent of organic soils
+https://soilwise-he.github.io/soil-health#FacultativeSoilParameters,facultative soil parameters
+https://soilwise-he.github.io/soil-health#FertilisedSoils,fertilised soils
+https://soilwise-he.github.io/soil-health#GrossNutrientBalance,gross nutrient balance
+https://soilwise-he.github.io/soil-health#GullyErosion,Gully erosion
+https://soilwise-he.github.io/soil-health#HarvestingErosion,Harvesting erosion
+https://soilwise-he.github.io/soil-health#HeavyMachinery,Heavy machinery
+https://soilwise-he.github.io/soil-health#HotSpots,hot spots
 https://soilwise-he.github.io/soil-health#HumanWellbeing,human well-being
+https://soilwise-he.github.io/soil-health#HydrogenIons,Hydrogen ions
+https://soilwise-he.github.io/soil-health#IndustrialPollutantInputs,industrial pollutant inputs
 https://soilwise-he.github.io/soil-health#InherentSoilAttributes,inherent soil attributes
-https://soilwise-he.github.io/soil-health#InputsOfCadmium,inputs of cadmium
-https://soilwise-he.github.io/soil-health#InputsOfCopper,inputs of copper
-https://soilwise-he.github.io/soil-health#InputsOfK,inputs of K
-https://soilwise-he.github.io/soil-health#InputsOfN,inputs of N
-https://soilwise-he.github.io/soil-health#InputsOfP,inputs of P
-https://soilwise-he.github.io/soil-health#InputsOfZinc,inputs of zinc
-https://soilwise-he.github.io/soil-health#InputsViaAir,inputs via air
-https://soilwise-he.github.io/soil-health#InputsViaSedimentation,inputs via sedimentation
-https://soilwise-he.github.io/soil-health#LandCultivation,land cultivation
-https://soilwise-he.github.io/soil-health#LandManagementChanges,land management changes
+https://soilwise-he.github.io/soil-health#InterrillErosion,Interrill erosion
+https://soilwise-he.github.io/soil-health#LandAreaSOCContent,Land area SOC content
 https://soilwise-he.github.io/soil-health#LayerThickness,layer thickness
-https://soilwise-he.github.io/soil-health#LeachingOfNutrients,leaching of nutrients
+https://soilwise-he.github.io/soil-health#LivestockTramplingErosion,Erosion caused by livestock trampling
 https://soilwise-he.github.io/soil-health#LivingOrganisms,living organisms
 https://soilwise-he.github.io/soil-health#LossOfSocContentAndSoilDegradation,loss of SOC content and soil degradation
-https://soilwise-he.github.io/soil-health#MagnesiumDeficiency,magnesium deficiency
 https://soilwise-he.github.io/soil-health#ManganeseToxicity,manganese toxicity
+https://soilwise-he.github.io/soil-health#MicronutrientAvailability,micronutrient availability
 https://soilwise-he.github.io/soil-health#MorphologicalSoilParameters,morphological soil parameters
-https://soilwise-he.github.io/soil-health#NaturalCapital,natural capital
 https://soilwise-he.github.io/soil-health#NaturalEquilibrium,natural equilibrium
+https://soilwise-he.github.io/soil-health#NaturallyAcidicSoils,Naturally acidic soils
 https://soilwise-he.github.io/soil-health#ObligatorySoilParameters,obligatory parameters
-https://soilwise-he.github.io/soil-health#OnePointFivePercentSOC,1.5% soc
+https://soilwise-he.github.io/soil-health#OnePointFivePercentSOC,1.5% SOC
+https://soilwise-he.github.io/soil-health#OperationsAtCriticalSoilMoistureLevels,Operations at critical soil moisture levels
 https://soilwise-he.github.io/soil-health#OrganicResidues,organic residues
-https://soilwise-he.github.io/soil-health#OrganicSoilResidue,organic soil residues
+https://soilwise-he.github.io/soil-health#ParticleSurfaceAccessibility,Particle surface accessibility
 https://soilwise-he.github.io/soil-health#People,people
-https://soilwise-he.github.io/soil-health#PoreContinuity,pore continuity
+https://soilwise-he.github.io/soil-health#PhosphorusRunOff,phosphorus run-off
+https://soilwise-he.github.io/soil-health#PipingErosion,Piping erosion
+https://soilwise-he.github.io/soil-health#PollutantsInSoil,Pollutants in soil
 https://soilwise-he.github.io/soil-health#PoreGeometry,pore geometry
+https://soilwise-he.github.io/soil-health#PoreVolume,Pore volume
+https://soilwise-he.github.io/soil-health#PotentialYields,potential yields
 https://soilwise-he.github.io/soil-health#PreventiveActivity,preventive activity
-https://soilwise-he.github.io/soil-health#ProvisioningServices,provisioning services
+https://soilwise-he.github.io/soil-health#RapidDeclineInStability,rapid decline in stability
+https://soilwise-he.github.io/soil-health#RelevantSoilFunctions,Relevant soil functions
 https://soilwise-he.github.io/soil-health#RestorativeActivity,restorative activity
-https://soilwise-he.github.io/soil-health#SOC_0_5_0_77_Alfisols,soc for alfisols
-https://soilwise-he.github.io/soil-health#SOC_0_5_0_77_Percent,0.5-0.77% soc for alfisols
-https://soilwise-he.github.io/soil-health#SOC_1_03_1_16_Entisols,soc for entisols
-https://soilwise-he.github.io/soil-health#SOC_1_03_1_16_Percent,1.03-1.16% soc for entisols
-https://soilwise-he.github.io/soil-health#SOC_Below_1_Percent,soc below 1 percent constraint
-https://soilwise-he.github.io/soil-health#SOC_Level_1_2_1_5_Percent,soc 1.2-1.5 percent
-https://soilwise-he.github.io/soil-health#SOC_Level_2_Percent_Minimum,minimum 2 percent soc for stability
-https://soilwise-he.github.io/soil-health#SocContent,soc content
-https://soilwise-he.github.io/soil-health#SocLossesInPeatSoils,SOC losses in peat soils
+https://soilwise-he.github.io/soil-health#RillErosion,Rill erosion
+https://soilwise-he.github.io/soil-health#SOCThresholds,soil organic carbon thresholds
+https://soilwise-he.github.io/soil-health#Salinisation,salinisation
 https://soilwise-he.github.io/soil-health#SocResponseToClimaticChanges,SOC response to climatic changes
 https://soilwise-he.github.io/soil-health#SoilAggregateHighlyUnstable,soil aggregates highly unstable
 https://soilwise-he.github.io/soil-health#SoilAggregateStabilityDeterioration,soil aggregate stability deterioration
 https://soilwise-he.github.io/soil-health#SoilAndEnvironmentalConditions,soil and environmental conditions
 https://soilwise-he.github.io/soil-health#SoilBiodiversityPotential,soil biodiversity potential
-https://soilwise-he.github.io/soil-health#SoilBiologicalProperties,soil biological properties
-https://soilwise-he.github.io/soil-health#SoilCapability,soil capability
+https://soilwise-he.github.io/soil-health#SoilCondition,soil condition
 https://soilwise-he.github.io/soil-health#SoilContaminationOrPollution,soil contamination or pollution
-https://soilwise-he.github.io/soil-health#SoilLayerOrHorizon,soil layer or soil horizon
-https://soilwise-he.github.io/soil-health#SoilOrganicCarbonThreshold,soc threshold
-https://soilwise-he.github.io/soil-health#SoilTemperatureFluctuations,soil temperature fluctuations
+https://soilwise-he.github.io/soil-health#SoilErosionRatesPerUnitOfLandCover,soil erosion rates per unit of land cover
+https://soilwise-he.github.io/soil-health#SoilHorizon,soil horizon
+https://soilwise-he.github.io/soil-health#SoilSample,soil sample
+https://soilwise-he.github.io/soil-health#SpecificDepth,specific depth
 https://soilwise-he.github.io/soil-health#StaticSoilParameters,static soil parameters
 https://soilwise-he.github.io/soil-health#StorageWithinSoilAggregates,storage within soil aggregates
 https://soilwise-he.github.io/soil-health#StructuralStabilityOfSoils,structural stability of soils
-https://soilwise-he.github.io/soil-health#SupportingServices,supporting services
+https://soilwise-he.github.io/soil-health#SulphurDioxide,Sulphur dioxide
 https://soilwise-he.github.io/soil-health#Threshold,threshold
+https://soilwise-he.github.io/soil-health#TopsoilNitrogenConcentration,topsoil nitrogen concentration
+https://soilwise-he.github.io/soil-health#TopsoilPhosphorousConcentration,topsoil phosphorous concentration
+https://soilwise-he.github.io/soil-health#TrendsInSOCStocksInCropland,trends in SOC stocks in cropland
+https://soilwise-he.github.io/soil-health#TwoMmSieve,2-mm sieve
 https://soilwise-he.github.io/soil-health#WaterSecurity,water security
 https://soilwise-he.github.io/soil-health#WaterStableSoilAggregation,degree of water-stable soil aggregation
-https://soilwise-he.github.io/soil-health#BiologicalProductivity,biological productivity
+https://soilwise-he.github.io/soil-health#BelowGroundFoodWeb,Below-ground food web
+https://soilwise-he.github.io/soil-health#CommercialArea,Commercial area
 https://soilwise-he.github.io/soil-health#ComplexSoilParameters,complex soil parameters
 https://soilwise-he.github.io/soil-health#ConditionOfLand,condition of land
 https://soilwise-he.github.io/soil-health#ConditionOfSoil,condition of soil
+https://soilwise-he.github.io/soil-health#ContaminantInputs,contaminant inputs
+https://soilwise-he.github.io/soil-health#CropType,crop type
+https://soilwise-he.github.io/soil-health#CulturalServices,cultural services
 https://soilwise-he.github.io/soil-health#DeadOrganicComponents,dead organic components
+https://soilwise-he.github.io/soil-health#FunctionalSoilCarbonIndicator,functional soil carbon indicator
 https://soilwise-he.github.io/soil-health#HealthySoils,healthy soils
-https://soilwise-he.github.io/soil-health#IndustrialPollutants,industrial pollutants
+https://soilwise-he.github.io/soil-health#HighPhosphorusStatus,high phosphorus status
+https://soilwise-he.github.io/soil-health#LandAreaSOCDegraded,Land area SOC degraded
 https://soilwise-he.github.io/soil-health#ManageableSoilAttributes,manageable soil attributes
 https://soilwise-he.github.io/soil-health#Mineralisation,mineralisation
-https://soilwise-he.github.io/soil-health#TerrestrialLayer,terrestrial layer
-https://soilwise-he.github.io/soil-health#AdditionalSources,additional sources
-https://soilwise-he.github.io/soil-health#SpecificSoilParameters,specific soil parameters
-https://soilwise-he.github.io/soil-health#TwoPercentSOC,2% soc
-https://soilwise-he.github.io/soil-health#BasicSoilParameters,basic soil parameters
-https://soilwise-he.github.io/soil-health#LifeSupportFunctions,life support functions
-https://soilwise-he.github.io/soil-health#SoilSealing,soil sealing
-https://soilwise-he.github.io/soil-health#PlantHealth,plant health
-https://soilwise-he.github.io/soil-health#SoilFunctionIndicator,soil function indicator
+https://soilwise-he.github.io/soil-health#NutrientInputs,nutrient inputs
+https://soilwise-he.github.io/soil-health#OrganicSoilResidues,organic soil residues
+https://soilwise-he.github.io/soil-health#PlantSpeciesDiversity,plant species diversity
+https://soilwise-he.github.io/soil-health#PoreContinuity,Pore continuity
+https://soilwise-he.github.io/soil-health#PoreContinuity,pore continuity
+https://soilwise-he.github.io/soil-health#ProvisioningServices,provisioning services
+https://soilwise-he.github.io/soil-health#SoilLayers,soil layers
+https://soilwise-he.github.io/soil-health#SoilStructuralAttributes,soil structural attributes
+https://soilwise-he.github.io/soil-health#StateOfSoils,state of soils
+https://soilwise-he.github.io/soil-health#SupportingServices,supporting services
 https://soilwise-he.github.io/soil-health#Thresholds,thresholds
-https://soilwise-he.github.io/soil-health#SocContentThreshold,SOC content threshold
-https://soilwise-he.github.io/soil-health#SoilCondition,soil condition
-https://soilwise-he.github.io/soil-health#StateOfSoil,state of soil
-https://soilwise-he.github.io/soil-health#SoilBiologicalDegradation,soil biological degradation
-https://soilwise-he.github.io/soil-health#SoilParameters,soil parameters
+https://soilwise-he.github.io/soil-health#DynamicSoilParameters,dynamic soil parameters
+https://soilwise-he.github.io/soil-health#HighNitrogenStatus,high nitrogen status
+https://soilwise-he.github.io/soil-health#LifeSupportFunctions,life support functions
+https://soilwise-he.github.io/soil-health#SoilBiochemicalProcesses,Soil biochemical processes
 https://soilwise-he.github.io/soil-health#SoilEcologicalDegradation,soil ecological degradation
+https://soilwise-he.github.io/soil-health#SpecificSoilParameters,specific soil parameters
+https://soilwise-he.github.io/soil-health#TwoPercentSOC,2% SOC
+https://soilwise-he.github.io/soil-health#StateOfSoil,state of soil
+https://soilwise-he.github.io/soil-health#BasicSoilParameters,basic soil parameters
+https://soilwise-he.github.io/soil-health#GeneralSoilIndicators,general soil indicators
+https://soilwise-he.github.io/soil-health#GeneralSoilProperties,general soil properties
+https://soilwise-he.github.io/soil-health#SealedLand,Sealed land
+https://soilwise-he.github.io/soil-health#SoilBiologicalDegradation,soil biological degradation
 https://soilwise-he.github.io/soil-health#SoilChemicalDegradation,soil chemical degradation
 https://soilwise-he.github.io/soil-health#SoilIndicators,soil indicators
