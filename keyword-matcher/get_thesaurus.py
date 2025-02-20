@@ -6,6 +6,7 @@ import sys
 sys.path.append('utils')
 from sparql import sparqlLocal, sparqlRemote
 import json
+from collections import Counter
 
 
 def searchAgro(ag_uri):
@@ -108,6 +109,20 @@ def mergeLabels(dict_a, dict_b):
         merged_dict[lang] = list(dict.fromkeys(merged_dict[lang]))
     return merged_dict
 
+def remove_redun_cons(concepts):
+    ids = [con['identifier'] for con in concepts]# many concepts are repeated, remove the repeated ones
+    counts = Counter(ids)
+    redun_ids = [k for k, v in counts.items() if v > 1]
+    for reid in redun_ids:
+        redun_cons = [con for con in concepts if con['identifier'] == reid]
+        if len(redun_cons) == 2: # now only consider 2 repeated concepts
+           redun_cons[0]['relevant_uris'].extend(redun_cons[1]['relevant_uris']) # merge the relevant_uris
+           redun_cons[0]['labels'] = mergeLabels(redun_cons[0]['labels'], redun_cons[1]['labels']) # merge the labels
+           concepts.remove(redun_cons[1])
+        else:
+            print(f"more than 2 repeated concepts: {reid}")
+    print(f"length of concepts after removing redun: {len(concepts)}")
+    return concepts
 
 def main():
     # Change below to a remote sparql query when the KG updated to triple store
@@ -180,8 +195,11 @@ def main():
         formatted_cons.append(con_dict) 
 
     print(f"Total concepts: {len(formatted_cons)}")
+
+    concepts_f = remove_redun_cons(formatted_cons)
+
     with open("./keyword-matcher/concepts.json", "w", encoding='utf-8') as json_file:
-        json.dump(formatted_cons, json_file, ensure_ascii=False, indent=2) 
+        json.dump(concepts_f, json_file, ensure_ascii=False, indent=2) 
 
     print("concepts.json updated")
 

@@ -272,7 +272,7 @@ def update_termsf(matched_d, cons):
         if term['identifier'] in matched_ids:
             # keep this term, need to update the uri and label
             con_l = [con for con in cons if con['identifier'] == term['identifier']]
-            if len(con_l) == 1:
+            if len(con_l) > 0:
                 t = con_l[0]
                 uri_list = t['relevant_uris']
                 uri = uri_list[0] if len(uri_list) > 0 else ''
@@ -286,9 +286,9 @@ def update_termsf(matched_d, cons):
             logging.info(f"Term {term['identifier']} removed from the terms.csv file")
     
     for matched_id in matched_ids:
-        if matched_id not in [term['identifier'] for term in terms_new]:
+        if matched_id not in [term['identifier'] for term in terms_new]: # new terms
             term_l = [con for con in cons if con['identifier'] == matched_id]
-            if len(term_l) == 1:
+            if len(term_l) > 0:
                 term = term_l[0]
                 uri_list = term['relevant_uris']
                 uri = uri_list[0] if len(uri_list) > 0 else ''
@@ -436,7 +436,6 @@ def full_process(opt_output: bool):
         update_termsf(matched_data, subs)
         update_outputf(matched_data, subs, mis_keys)
     
-    return
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
     logging.info("terms.csv file loaded")
 
