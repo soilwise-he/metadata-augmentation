@@ -1,19 +1,6 @@
 # Metadata augmentation
 
-Repository relates mainly to task 2.3
-
->  AI and ML for data findability and accessibility, M7-M46 (ISRIC, EV ILVO, WU, CREA, WE)
-> 
->  AI and ML techniques will be used to [analyze (meta)data gaps](https://github.com/soilwise-he/metadata-augmentation/issues/9) and to [complete/update metadata from available resources](https://github.com/soilwise-he/metadata-augmentation/issues/10) 
->  to [automatize the metadata adoption process](https://github.com/soilwise-he/metadata-augmentation/issues/11) and limit the amount of human effort. SIEUSOIL/FAO and INSPIRE 
->  [ontologies will be used as a basis for semantics-related tasks](https://github.com/soilwise-he/metadata-augmentation/issues/13). AI- and ML-based linking and indexing based on 
->  [thesauri and gazetteers](https://github.com/soilwise-he/metadata-augmentation/issues/12) will enhance the state-of-the-art cataloguing and findability tools to support stakeholders in 
->  obtaining the most relevant results. As such, we will provide [precise and personalized answers](https://github.com/soilwise-he/metadata-augmentation/issues/14) that [users can act 
->  on immediately](https://github.com/soilwise-he/metadata-augmentation/issues/15). AI and ML semantic inference will also be used to [check the persistency and consistency of data 
->  asset identification](https://github.com/soilwise-he/metadata-augmentation/issues/16) across multiple resources. [Outcome: D3.1](docs/D3.1/index.md)
-
-
-Use scripting/nlp/llm on a resource to augment metadata statements about a resource.
+This component include a number of module which each apply a certain methodology to augment metadata records to better fit the discoverability, accessibility and reusability of the resource.
 
 Augmentations are stored on a dedicated augmentation table, indicating the process which produced it.
 
@@ -24,7 +11,9 @@ Augmentations are stored on a dedicated augmentation table, indicating the proce
 
 Scripts in this repo extract a subset of records for which no augmentation has been predicted yet, or an existing augmentation should be updated (and the source record does not already provide the missing content). This can be achieved by querying the records table with a left-join to the augmentation table (or an inner query). Database connection parameters are inserted via environment variables.
 
-At intervals the code is released as a docker image, which can be used in CI-CD scripts.
+Augmentation tasks can best be triggered from a task runner, such as a CI-CD pipeline. Configuration scripts for running various tasks in a Gitlab CI-CD environment are available in [CI](./CI/). Tasks are configured using environment variables. 
+
+The following modules are available:
 
 ## Translation module
 
@@ -36,7 +25,7 @@ Many records arrive in a local language, we aim to capture at least english main
 
 Read more at <https://language-tools.ec.europa.eu/>
 
-[read more](./translation/)
+[Read more](./translation/)
 
 ## Keyword Matcher
 
@@ -44,14 +33,42 @@ Analyses existing keywords on a metadata record, it matches an existing keyword 
 
 It requires a database (relational or rdf) with common thesauri
 
-[read more](./keyword-matcher/)
+[Read more](./keyword-matcher/)
+
+## Element matcher
+
+Applies a similar mechanism as the keyword matcher, but to any configured metadata element. It clusters the content of an element to a set of given values, based on configured synonyms and translations. Unmatched terms are kept aside in order to update the configuration for later iterations.
+
+[Read more](./element-matcher)
 
 ## Spatial Locator
 
 Analyses existing keywords to find a relevant geography for the record, it then uses the geonames api to find spatial coordinates for the geography, which are inserted into the metadata record
 
-[read more](./spatial-locator/)
+[Read more](./spatial-locator/)
 
-## spatial scope analyser
+## Spatial scope analyser
 
-[read more](./spatial-scope-analyser/)
+An algorythm to understand if the spatial scope mentioned in a record, matches with a local, regional, national or continental scope.
+
+[Read more](./spatial-scope-analyser/)
+
+---
+
+## SoilWise-he project
+
+This work has been initiated as part of the [Soilwise-he project](https://soilwise-he.eu). 
+The project receives funding from the European Union’s HORIZON Innovation Actions 2022 under grant agreement No. 101112838.
+
+The work relates to task 2.3 of the project
+
+> AI and ML for data findability and accessibility 
+> Partners involved are: ISRIC, EV ILVO, WU, CREA, WE
+> 
+>  AI and ML techniques will be used to [analyze (meta)data gaps](https://github.com/soilwise-he/metadata-augmentation/issues/9) and to [complete/update metadata from available resources](https://github.com/soilwise-he/metadata-augmentation/issues/10) 
+>  to [automatize the metadata adoption process](https://github.com/soilwise-he/metadata-augmentation/issues/11) and limit the amount of human effort. SIEUSOIL/FAO and INSPIRE 
+>  [ontologies will be used as a basis for semantics-related tasks](https://github.com/soilwise-he/metadata-augmentation/issues/13). AI- and ML-based linking and indexing based on 
+>  [thesauri and gazetteers](https://github.com/soilwise-he/metadata-augmentation/issues/12) will enhance the state-of-the-art cataloguing and findability tools to support stakeholders in 
+>  obtaining the most relevant results. As such, we will provide [precise and personalized answers](https://github.com/soilwise-he/metadata-augmentation/issues/14) that [users can act 
+>  on immediately](https://github.com/soilwise-he/metadata-augmentation/issues/15). AI and ML semantic inference will also be used to [check the persistency and consistency of data 
+>  asset identification](https://github.com/soilwise-he/metadata-augmentation/issues/16) across multiple resources. [Outcome: D3.1](docs/D3.1/index.md)
