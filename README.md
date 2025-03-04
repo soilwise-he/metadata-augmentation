@@ -1,5 +1,7 @@
 # Metadata augmentation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14924182.svg)](https://doi.org/10.5281/zenodo.14924182)
+
 This component include a number of module which each apply a certain methodology to augment metadata records to better fit the discoverability, accessibility and reusability of the resource.
 
 Augmentations are stored on a dedicated augmentation table, indicating the process which produced it.
