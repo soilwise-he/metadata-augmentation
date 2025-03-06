@@ -441,14 +441,17 @@ def full_process(opt_output: bool):
 
     logging.info(f"Match records successfully, found {len(matched_data)} matches")
     logging.info(f"Matching execution: {time.time() - start_time:.4f} seconds")
+    
+    c_mapping, cols = get_mapping(terms)
+    # # save c_mapping into json file
+    # with open('keyword-matcher/c_mapping.json', 'w') as f:
+    #     json.dump(c_mapping, f, indent=2)
 
     return
 
     logging.info("Truncating and inserting data into the keyword_temp table")
 
     start_time = time.time()
-
-    c_mapping, cols = get_mapping(terms)
 
     # first truncate the temp table
     sql = '''
