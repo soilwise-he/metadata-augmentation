@@ -337,16 +337,31 @@ def update_outputf(matched_d, cons, mis_keys):
     logging.info(f"Unmatched keywords file updated")
 
 def get_mapping(terms):
-    classes = [item['class'] for item in terms if item['class'] is not None] # can be harcoded but leave it like this for now
-    classes_uniq = list(set(classes))
-    cols = ['identifier'] + [c.replace(" ", "_") for c in classes_uniq]
+    # classes = [item['class'] for item in terms if item['class'] is not None] # can be harcoded but leave it like this for now
+    classes = ["soil chemical properties", 
+               "soil biological properties", 
+               "soil physical properties",
+               "soil classification", 
+               "soil functions", 
+               "soil threats", 
+               "soil processes", 
+               "soil management",
+               "ecosystem services"]
+    terms_classes = list(set([item['class'] for item in terms if item['class'] is not None]))
+    for c in classes:
+        if c not in terms_classes:
+            logging.error(f"Class {c} not found in terms.csv file")
+            return None
+    
+    cols = ['identifier'] + [c.replace(" ", "_") for c in classes]
     # create a mapping object
-    mapping = {key: [] for key in classes_uniq}
+    mapping = {key: [] for key in classes}
     for t in terms:
         if t['class'] is not None:
-            c = t['class']
-            i = t['identifier']
-            mapping[c].append(i)
+            if t['class'] in classes:
+                c = t['class']
+                i = t['identifier']
+                mapping[c].append(i)
 
     c_mapping = {key.replace(" ", "_"): value for key, value in mapping.items()} 
     return c_mapping, cols
@@ -443,11 +458,16 @@ def full_process(opt_output: bool):
     logging.info(f"Matching execution: {time.time() - start_time:.4f} seconds")
     
     c_mapping, cols = get_mapping(terms)
+    
+    # for c, con_ids in c_mapping.items():
+    #     for con_id in con_ids:
+    #         count_term = sum(1 for item in matched_data if item['concept_identifier'] == con_id)
+    #         index = c_mapping[c].index(con_id)
+    #         c_mapping[c][index] = [con_id, count_term]
+
     # # save c_mapping into json file
     # with open('keyword-matcher/c_mapping.json', 'w') as f:
     #     json.dump(c_mapping, f, indent=2)
-
-    return
 
     logging.info("Truncating and inserting data into the keyword_temp table")
 
@@ -487,7 +507,7 @@ def full_process(opt_output: bool):
                     else:
                         dic[t_class] = dic[t_class] + ',' + t_label
         # insert row here
-        insertSQL('keywords_temp', cols, list(dic.values()) )  
+        insertSQL('keywords_temp', cols, list(dic.values()) )  # order insensitive
         count_row += 1
 
     logging.info(f"{count_row} rows inserted to the keywords_temp table")
