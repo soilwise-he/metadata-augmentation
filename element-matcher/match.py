@@ -43,18 +43,7 @@ def csv2mapping(csv_file):
             mapping[source_label] = target_label
     return mapping
 
-
-
-def get_element(item):
-
-    if item['turtle'] is None:
-        return None
-    
-    if item['prefix'] is not None:
-        turtle = item['prefix'] + item['turtle']
-    else:
-        turtle = item['turtle']
-
+def get_element_type(turtle):
     try:
         g = Graph()
         g.parse(data=turtle, format="turtle")
@@ -87,7 +76,42 @@ def get_element(item):
     except Exception as e:
         logging.error(e)
         return None
-       
+
+def get_element_license(turtle):
+    try:
+        g = Graph()
+        g.parse(data=turtle, format="turtle")
+
+        query = '''
+        prefix dcterms: <http://purl.org/dc/terms/> 
+        select ?license
+        {
+        ?s dcterms:license ?license.
+        FILTER (isIRI(?license) || isLiteral(?license))
+        }
+        ''' 
+        results = g.query(query)
+        for row in results:
+            return str(row['license'])
+        # return [str(row['type']) for row in results]
+
+    except Exception as e:
+        logging.error(e)
+        return None
+
+def get_element(item):
+
+    if item['turtle'] is None:
+        return None
+    
+    if item['prefix'] is not None:
+        turtle = item['prefix'] + item['turtle']
+    else:
+        turtle = item['turtle']
+
+    ele_type = get_element_type(turtle)
+    ele_license = get_element_license(turtle)
+    return ele_license  
 
 def match_elements():
     start_time = time.time()
@@ -112,10 +136,19 @@ def match_elements():
     # Query elements from the record turtle
     logging.info("Querying elements from the record turtle")
 
-
+    license = []
     for item in result_items:
-        item['type'] = get_element(item)
+        # item['type'] = get_element(item)
+        license.append(get_element(item))
+
+    license = list(set(license))
+    with open('element-matcher/mapping/license.csv', 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['source_label', 'target_label'])
+        for l in license:
+            writer.writerow([l, ''])
     logging.info(f"Sparql query execution: {time.time() - start_time:.4f} seconds")
+    return
 
     logging.info("Matching elements and inserting to the augmentation table")
     # get mapping from csv
