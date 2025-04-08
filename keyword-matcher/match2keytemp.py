@@ -181,7 +181,7 @@ def read_csv_to_dict(filename):
 def get_label(data, identifier):
     for item in data:
         if item["identifier"] == identifier:
-            return item["label"]
+            return item["label"].lower() # transform to lower case
     return None  # Return None if not found
 
 def get_class(t_id, mapping): # get the class by a term id
