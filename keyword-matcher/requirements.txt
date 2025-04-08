@@ -2,3 +2,4 @@ rdflib
 psycopg2-binary
 python-dotenv
 thefuzz
+sparqlwrapper
