@@ -32,3 +32,5 @@ https://soilwise-he.github.io/soil-health#Time,time,http://aims.fao.org/aos/agro
 https://soilwise-he.github.io/soil-health#LandCultivation,land cultivation,,cultivate already exists
 https://soilwise-he.github.io/soil-health#UnlimedAgriculturalLand,Unlimed agricultural land,,too specific
 https://soilwise-he.github.io/soil-health#Land,Land,http://aims.fao.org/aos/agrovoc/c_4172,
+https://soilwise-he.github.io/soil-health#Indicators,indicators,http://aims.fao.org/aos/agrovoc/c_330058,
+https://soilwise-he.github.io/soil-health#SoilPotential,soil potential,,
