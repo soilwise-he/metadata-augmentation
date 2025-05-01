@@ -25,7 +25,6 @@ https://soilwise-he.github.io/soil-health#Plants,plants,http://aims.fao.org/aos/
 https://soilwise-he.github.io/soil-health#Vegetation,vegetation,http://aims.fao.org/aos/agrovoc/c_8176,soil biological properties
 https://soilwise-he.github.io/soil-health#WaterHoldingCapacity,water holding capacity,http://aims.fao.org/aos/agrovoc/c_25304,soil physical properties
 https://soilwise-he.github.io/soil-health#SoilStability,soil stability,,soil physical properties
-https://soilwise-he.github.io/soil-health#Indicators,indicators,http://aims.fao.org/aos/agrovoc/c_330058,
 https://soilwise-he.github.io/soil-health#EcosystemServices,ecosystem services,http://aims.fao.org/aos/agrovoc/c_1348040570280,soil functions
 https://soilwise-he.github.io/soil-health#EnvironmentalDegradation,environmental degradation,http://aims.fao.org/aos/agrovoc/c_34821,soil threats
 https://soilwise-he.github.io/soil-health#BulkDensity,bulk density,https://data.geoscience.earth/ncl/ISO11074/3.1.1,soil physical properties
@@ -38,10 +37,9 @@ https://soilwise-he.github.io/soil-health#FoodSecurity,food security,http://aims
 https://soilwise-he.github.io/soil-health#WaterInfiltration,water infiltration,,soil physical properties
 https://soilwise-he.github.io/soil-health#SoilRestoration,soil restoration,https://data.geoscience.earth/ncl/ISO11074/5.2.28,soil management
 https://soilwise-he.github.io/soil-health#WaterConservation,water conservation,http://aims.fao.org/aos/agrovoc/c_8315,soil functions
-https://soilwise-he.github.io/soil-health#SoilPotential,soil potential,,
 https://soilwise-he.github.io/soil-health#Compost,compost,,soil management
 https://soilwise-he.github.io/soil-health#AirQuality,air quality,http://aims.fao.org/aos/agrovoc/c_a2ef545f,
-https://soilwise-he.github.io/soil-health#Biomaterials,biomaterials,,
+https://soilwise-he.github.io/soil-health#Biomaterials,biomaterials,,soil management
 https://soilwise-he.github.io/soil-health#TerrestrialEcosystems,terrestrial ecosystems,,ecosystem services
 https://soilwise-he.github.io/soil-health#Acidification,acidification,http://aims.fao.org/aos/agrovoc/c_90,soil threats
 https://soilwise-he.github.io/soil-health#SoilBiodiversity,Soil biodiversity,,soil functions
@@ -50,13 +48,12 @@ https://soilwise-he.github.io/soil-health#NutrientDepletion,nutrient depletion,h
 https://soilwise-he.github.io/soil-health#LandDegradation,land degradation,http://aims.fao.org/aos/agrovoc/c_34823,soil threats
 https://soilwise-he.github.io/soil-health#EcosystemFunctions,ecosystem functions,,ecosystem services
 https://soilwise-he.github.io/soil-health#Contamination,contamination,http://aims.fao.org/aos/agrovoc/c_28317,soil threats
-https://soilwise-he.github.io/soil-health#HydrologicalCycle,hydrological cycle,http://aims.fao.org/aos/agrovoc/c_11670,
+https://soilwise-he.github.io/soil-health#HydrologicalCycle,hydrological cycle,http://aims.fao.org/aos/agrovoc/c_11670,ecosystem services
 https://soilwise-he.github.io/soil-health#AgriculturalSubsidies,agricultural subsidies,,economics
 https://soilwise-he.github.io/soil-health#Productivity,productivity,http://aims.fao.org/aos/agrovoc/c_6210,soil functions
 https://soilwise-he.github.io/soil-health#Cultivation,cultivation,http://aims.fao.org/aos/agrovoc/c_2018,soil management
 https://soilwise-he.github.io/soil-health#CarbonStocks,carbon stocks,,soil chemical properties
 https://soilwise-he.github.io/soil-health#SoilBiologicalActivity,Soil biological activity,,soil biological properties
-https://soilwise-he.github.io/soil-health#SoilCover,soil cover,,
 https://soilwise-he.github.io/soil-health#SoilProtection,soil protection,https://data.geoscience.earth/ncl/ISO11074/5.3.4,soil management
 https://soilwise-he.github.io/soil-health#CropYieldResponse,crop yield response,,soil biological properties
 https://soilwise-he.github.io/soil-health#SoilVariability,soil variability,,
@@ -70,8 +67,9 @@ https://soilwise-he.github.io/soil-health#LandProductivity,land productivity,htt
 https://soilwise-he.github.io/soil-health#SpatialQuantification,spatial quantification,,
 https://soilwise-he.github.io/soil-health#SewageSludge,sewage sludge,http://aims.fao.org/aos/agrovoc/c_7008,soil management
 https://soilwise-he.github.io/soil-health#Antibiotics,antibiotics,http://aims.fao.org/aos/agrovoc/c_492,soil threats
-https://soilwise-he.github.io/soil-health#ElementCycling,element cycling,,
 https://soilwise-he.github.io/soil-health#WaterPurification,water purification,http://aims.fao.org/aos/agrovoc/c_34145,soil functions
+https://soilwise-he.github.io/soil-health#SoilCover,soil cover,,
+https://soilwise-he.github.io/soil-health#ElementCycling,element cycling,,
 https://soilwise-he.github.io/soil-health#WindErosionRate,wind erosion rate,,soil threats
 https://soilwise-he.github.io/soil-health#PlantHealth,Plant health,http://aims.fao.org/aos/agrovoc/c_25398,ecosystem services
 https://soilwise-he.github.io/soil-health#SoilCapability,soil capability,,soil functions
