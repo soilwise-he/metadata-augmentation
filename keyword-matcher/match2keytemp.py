@@ -25,6 +25,8 @@ import getopt
 
 import logging
 
+from collections import Counter
+
 
 
 def turple2dict(rows): # transform a query result from turple to dict
@@ -179,7 +181,7 @@ def read_csv_to_dict(filename):
 def get_label(data, identifier):
     for item in data:
         if item["identifier"] == identifier:
-            return item["label"]
+            return item["label"].lower() # transform to lower case
     return None  # Return None if not found
 
 def get_class(t_id, mapping): # get the class by a term id
@@ -216,10 +218,9 @@ def match(items, cons):
             themes = rdfSearchSubThes(turtle)
         
         if len(keys) ==0 & len(themes) == 0: # nothing found, wich should not happen
+            # print(f"No keyword found for record {res['identifier']}")
             num += 1
             # print(f"No keyword found for record {res['identifier']}")
-    
-
 
         subs_related = []
 
@@ -228,8 +229,8 @@ def match(items, cons):
             sub_key = label_fuzzmatch(cons, key, threshold = 80)
             if sub_key is not None:
                 subs_related.append(sub_key)
-            # else:
-            #     mismatched_keys.append(key)
+            else:
+                mismatched_keys.append(key)
 
         # match the themes
         sub_theme = url_match(cons, themes)
@@ -252,19 +253,115 @@ def match(items, cons):
                     })
 
     print('Total number of records failed to find keywords: ', num)
-    return matched_data
+    return matched_data, mismatched_keys
+
+def update_termsf(matched_d, cons):
+    # this function is to update the terms.csv file when knowledge graph updated
+    
+    # read terms.csv file:
+    with open('keyword-matcher/result/terms.csv', 'r', encoding='utf-8') as f:
+        csvreader = csv.DictReader(f)
+        terms = [row for row in csvreader]
+    # get all matched terms file
+    matched_ids = [item['concept_identifier'] for item in matched_d]
+    matched_ids = list(set(matched_ids))
+    logging.info(f"Number of matched terms: {len(matched_ids)}")
+    
+    terms_new = []
+    for term in terms:
+        if term['identifier'] in matched_ids:
+            # keep this term, need to update the uri and label
+            con_l = [con for con in cons if con['identifier'] == term['identifier']]
+            if len(con_l) > 0:
+                t = con_l[0]
+                uri_list = t['relevant_uris']
+                uri = uri_list[0] if len(uri_list) > 0 else ''
+                terms_new.append({
+                    'identifier': term['identifier'], # from original terms.csv
+                    'label': t['labels']['en'][0],
+                    'uri': uri,
+                    'class': term.get('class', '') # from original terms.csv
+                })
+        else:
+            logging.info(f"Term {term['identifier']} removed from the terms.csv file")
+    
+    for matched_id in matched_ids:
+        if matched_id not in [term['identifier'] for term in terms_new]: # new terms
+            term_l = [con for con in cons if con['identifier'] == matched_id]
+            if len(term_l) > 0:
+                term = term_l[0]
+                uri_list = term['relevant_uris']
+                uri = uri_list[0] if len(uri_list) > 0 else ''
+                terms_new.append({
+                    'identifier': term['identifier'],
+                    'label': term['labels']['en'][0],
+                    'uri': uri,
+                    'class': ''
+                })
+                logging.info(f"Term {term['identifier']} added to the terms.csv file")
+    
+    with open('keyword-matcher/result/terms.csv', 'w', newline='', encoding='utf-8') as f:
+        csvwriter = csv.DictWriter(f, fieldnames=['identifier', 'label', 'uri', 'class'])
+        csvwriter.writeheader()
+        csvwriter.writerows(terms_new)
+
+    logging.info("terms.csv file updated")
+    
+
+def update_outputf(matched_d, cons, mis_keys):
+    # the function to update the output files: unmatched_keywords and unmatched_concepts
+
+    # unmatched concepts
+
+    con_id_matched = list(set([item['concept_identifier'] for item in matched_d]))
+
+
+    unmatched_concepts = [item for item in cons if item['identifier'] not in con_id_matched]
+    res_csv = [[item['identifier'], item['labels']['en'][0]]for item in unmatched_concepts]
+
+    with open('keyword-matcher/result/unmatched_concepts.csv', 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['identifier', 'label'])
+        writer.writerows(res_csv)
+    logging.info(f"Unmatched concepts file updated")
+    
+    # unmatched keywords
+    en_keys = [item[0].lower() for item in mis_keys if item[1] == "en"] # lower case
+    label_counts = Counter(en_keys)
+    sorted_labels = sorted(label_counts.items(), key=lambda x: x[1], reverse=True)
+    with open ('keyword-matcher/result/unmatched_keywords.csv', 'w', newline='') as f:
+        csvwriter = csv.writer(f)
+        csvwriter.writerow(["Label", "Count", "Remarks"])
+        for label, count in sorted_labels:
+            csvwriter.writerow([label, count, None])
+    logging.info(f"Unmatched keywords file updated")
 
 def get_mapping(terms):
-    classes = [item['class'] for item in terms if item['class'] is not None] # can be harcoded but leave it like this for now
-    classes_uniq = list(set(classes))
-    cols = ['identifier'] + [c.replace(" ", "_") for c in classes_uniq]
+    # classes = [item['class'] for item in terms if item['class'] is not None] # can be harcoded but leave it like this for now
+    classes = ["soil chemical properties", 
+               "soil biological properties", 
+               "soil physical properties",
+               "soil classification", 
+               "soil functions", 
+               "soil threats", 
+               "soil processes", 
+               "soil management",
+               "ecosystem services"]
+    terms_classes = list(set([item['class'] for item in terms if item['class'] is not None]))
+    for c in classes:
+        if c not in terms_classes:
+            logging.error(f"Class {c} not found in terms.csv file")
+            return None
+    
+    cols = ['identifier'] + [c.replace(" ", "_") for c in classes]
     # create a mapping object
-    mapping = {key: [] for key in classes_uniq}
+    mapping = {key: [] for key in classes}
     for t in terms:
         if t['class'] is not None:
-            c = t['class']
-            i = t['identifier']
-            mapping[c].append(i)
+            if t['class'] in classes:
+                c = t['class']
+                i = t['identifier']
+                mapping[c].append(i)
 
     c_mapping = {key.replace(" ", "_"): value for key, value in mapping.items()} 
     return c_mapping, cols
@@ -320,9 +417,9 @@ def update_tracking(hash_val, time_now):
 
     dbQuery(sql, (hash_val, time_now), hasoutput=False)
 
-def full_process():
+def full_process(opt_output: bool):
     start_time = time.time()
-
+    
     load_dotenv()
     
     # find the records that contain keywords
@@ -346,20 +443,35 @@ def full_process():
         subs = json.load(f)
     logging.info("concept.json file loaded")
 
+
+    matched_data, mis_keys = match(result_items, subs)
+    
+    # add code here to update terms.csv
+    if opt_output is True:
+        update_termsf(matched_data, subs)
+        update_outputf(matched_data, subs, mis_keys)
+    
     terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
     logging.info("terms.csv file loaded")
 
-    matched_data = match(result_items, subs)
-    # add code here to update terms.csv
-
     logging.info(f"Match records successfully, found {len(matched_data)} matches")
     logging.info(f"Matching execution: {time.time() - start_time:.4f} seconds")
+    
+    c_mapping, cols = get_mapping(terms)
+    
+    # for c, con_ids in c_mapping.items():
+    #     for con_id in con_ids:
+    #         count_term = sum(1 for item in matched_data if item['concept_identifier'] == con_id)
+    #         index = c_mapping[c].index(con_id)
+    #         c_mapping[c][index] = [con_id, count_term]
+
+    # # save c_mapping into json file
+    # with open('keyword-matcher/c_mapping.json', 'w') as f:
+    #     json.dump(c_mapping, f, indent=2)
 
     logging.info("Truncating and inserting data into the keyword_temp table")
 
     start_time = time.time()
-
-    c_mapping, cols = get_mapping(terms)
 
     # first truncate the temp table
     sql = '''
@@ -395,7 +507,7 @@ def full_process():
                     else:
                         dic[t_class] = dic[t_class] + ',' + t_label
         # insert row here
-        insertSQL('keywords_temp', cols, list(dic.values()) )  
+        insertSQL('keywords_temp', cols, list(dic.values()) )  # order insensitive
         count_row += 1
 
     logging.info(f"{count_row} rows inserted to the keywords_temp table")
@@ -520,35 +632,32 @@ def main(argv):
 
     arg_help = "dummy help message".format(argv[0])
     arg_batch = False
+    arg_output = False
     arg_time = 0
-    opts, args = getopt.getopt(argv[1:], "hb:t:", ["help", "batch=", "time="])
+    opts, args = getopt.getopt(argv[1:], "hb:t:o:", ["help", "batch=", "time=", "output="])
 
     logging.basicConfig(level=logging.INFO, format = '%(message)s')
 
     for opt, arg in opts:
         if opt in ("-h", "--help"):
-            print(arg_help)
+            logging.info(arg_help)
             sys.exit()
         elif opt in ("-b", "--batch"):
             arg_batch = arg.lower() == 'true'
+        elif opt in ("-o", "--option"):
+            arg_output = arg.lower() == 'true'
         elif opt in ("-t", "--time"):
             arg_time = arg
     
     if arg_batch is False:
         logging.info("Start full process running")
-        full_process()
+        full_process(arg_output)
     else:
+        if arg_output is True:
+            logging.error("batch process does not support updating output")
+            sys.exit()
         logging.info("Start batch process running")
         batch_process(arg_time)
-
-
-    
-
-    # # join and insert into records
-    # sql = '''
-    # SELECT harvest.insert_records_byjoin();
-    # '''
-    # result = dbQuery(sql,  hasoutput=False)
 
 
 if __name__ == "__main__":
