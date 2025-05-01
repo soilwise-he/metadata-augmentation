@@ -68,6 +68,9 @@ python3 ./keyword-matcher/match2keytemp.py -b True
 
 The full process runs on all records from the database, and the batch process runs only on new-added records that have not been process by the keyword-matcher.
 
+The structure of the keyword-matcher is as below:
+![keyword-matcher](./img/keyword-matcher.png)
+
 
 
 
