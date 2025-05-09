@@ -64,7 +64,7 @@ def rdfSearchKeys(rdf):
         return keywords
     
     except Exception as e:
-        print(e)
+        logging.error(e)
         return []
 
     
@@ -88,7 +88,7 @@ def rdfSearchSubThes(rdf):
         return themes
     
     except Exception as e:
-        print(e)
+        logging.info(e)
         return []
 
 def rdfSearchDctSub(rdf):
@@ -109,7 +109,7 @@ def rdfSearchDctSub(rdf):
         return keywords
     
     except Exception as e:
-        print(e)
+        logging.info(e)
         return []
 
 
@@ -251,8 +251,7 @@ def match(items, cons):
                         'concept_identifier': sub_id,
                         'label': matched_subject["labels"]["en"][0]
                     })
-
-    print('Total number of records failed to find keywords: ', num)
+    logging.info(f"Total number of records failed to find keywords:: {num}")
     return matched_data, mismatched_keys
 
 def update_termsf(matched_d, cons):
@@ -286,7 +285,7 @@ def update_termsf(matched_d, cons):
             logging.info(f"Term {term['identifier']} removed from the terms.csv file")
     
     for matched_id in matched_ids:
-        if matched_id not in [term['identifier'] for term in terms_new]: # new terms
+        if matched_id not in [term['identifier'] for term in terms_new]: # new terms, add here to consider discard terms
             term_l = [con for con in cons if con['identifier'] == matched_id]
             if len(term_l) > 0:
                 term = term_l[0]
@@ -575,7 +574,7 @@ def batch_process(interval):
 
     logging.info("Matching records with concepts")
 
-    matched_data = match(result_items, subs)
+    matched_data, mis_keys = match(result_items, subs)
     # add code here to update terms.csv
 
     logging.info(f"Match completed, found {len(matched_data)} matches")
