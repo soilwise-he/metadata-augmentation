@@ -132,11 +132,15 @@ def match_elements():
     logging.info(f"Query completed, find {len(result_items)} records")
     
     logging.info(f"Query execution: {time.time() - start_time:.2f} seconds")
+    
+    logging.info("Quering elements from turtles")
 
     start_time = time.time()
 
     for item in result_items:
         item['type'] = get_element(item)
+
+    logging.info(f"Turtle query: {(time.time() - start_time)/60:.2f} minutes")
         
     logging.info("Matching elements and inserting to the augmentation table")
     # get mapping from csv
