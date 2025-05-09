@@ -110,8 +110,9 @@ def get_element(item):
         turtle = item['turtle']
 
     ele_type = get_element_type(turtle)
-    ele_license = get_element_license(turtle)
-    return ele_license  
+    # ele_license = get_element_license(turtle)
+    # return ele_license  
+    return ele_type
 
 def match_elements():
     start_time = time.time()
@@ -122,39 +123,28 @@ def match_elements():
     logging.info("Querying records from the database table")
 
     sql = '''
-    SELECT items.identifier,items.hash,items.uri,items.turtle,sources.turtle_prefix
-    FROM harvest.items LEFT JOIN harvest.sources ON items.source = sources.name::text;
+    SELECT i.identifier,i.hash,i.uri,i.turtle,sources.turtle_prefix 
+    FROM harvest.items i LEFT JOIN harvest.sources ON i.source = sources.name::text
+    WHERE i.insert_date = (( SELECT max(t.insert_date) AS max FROM harvest.items t WHERE t.identifier = i.identifier));
     '''
     result_items = turple2dict(dbQuery(sql, hasoutput=True))
 
     logging.info(f"Query completed, find {len(result_items)} records")
     
-    logging.info(f"Query execution: {time.time() - start_time:.4f} seconds")
+    logging.info(f"Query execution: {time.time() - start_time:.2f} seconds")
 
     start_time = time.time()
 
-    # Query elements from the record turtle
-    logging.info("Querying elements from the record turtle")
-
-    license = []
     for item in result_items:
-        # item['type'] = get_element(item)
-        license.append(get_element(item))
-
-    license = list(set(license))
-    with open('element-matcher/mapping/license.csv', 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['source_label', 'target_label'])
-        for l in license:
-            writer.writerow([l, ''])
-    logging.info(f"Sparql query execution: {time.time() - start_time:.4f} seconds")
-    return
-
+        item['type'] = get_element(item)
+        
     logging.info("Matching elements and inserting to the augmentation table")
     # get mapping from csv
     start_time = time.time()
 
     m_type = csv2mapping('element-matcher/mapping/type.csv')
+
+    dbQuery('TRUNCATE table harvest.augmentation', hasoutput=False)
     
     # match
     for item in result_items:
@@ -166,91 +156,12 @@ def match_elements():
             item['type'] = target_type
         else:
             logging.info(f"Type {source_type} not found in the mapping file")
-            item['type'] = 'other'
+            item['type'] = None
         insertSQL('harvest.augmentation', ['identifier', 'type'], [item['identifier'], item['type']] )
     
-    logging.info(f"Inserting execution: {time.time() - start_time:.4f} seconds")
+    logging.info(f"Inserting execution: {(time.time() - start_time)/60:.2f} minutes")
     
     return
-
-    logging.info("Matching records with concepts")
-    
-    with open("./keyword-matcher/concepts.json", "r") as f:
-        subs = json.load(f)
-    logging.info("concept.json file loaded")
-
-    terms = read_csv_to_dict('keyword-matcher/result/terms.csv')
-    logging.info("terms.csv file loaded")
-
-    matched_data = match(result_items, subs)
-    # add code here to update terms.csv
-
-    logging.info(f"Match records successfully, found {len(matched_data)} matches")
-    logging.info(f"Matching execution: {time.time() - start_time:.4f} seconds")
-
-    logging.info("Truncating and inserting data into the keyword_temp table")
-
-    start_time = time.time()
-
-    c_mapping, cols = get_mapping(terms)
-
-    # first truncate the temp table
-    sql = '''
-    TRUNCATE TABLE keywords_temp;
-    '''
-    dbQuery(sql,  hasoutput=False)
-
-    logging.info("Truncated keyword_temp table")
-
-    keys = ['identifier'] + list(c_mapping.keys())
-
-    # Group matches by record_identifier
-    records = {}
-    for m in matched_data:
-        record_id = m["record_identifier"]
-        term_id = m["concept_identifier"]
-        records.setdefault(record_id, []).append(term_id) # records with unique identifier
-
-    # insert target data to the temp table
-    count_row = 0
-    for record_id, term_ids in records.items(): # for each record (unique)
-        dic = {key: None for key in keys} # initialize the div
-        dic['identifier'] = record_id
-        
-        for t_id in term_ids: # for each term id of that record
-            t_class = get_class(t_id, c_mapping)
-            
-            if t_class is not None: # find a class
-                t_label = get_label(terms, t_id) # get the label from that id
-                if t_label is not None:
-                    if dic[t_class] is None: # if it is the first term of that class
-                        dic[t_class] = t_label
-                    else:
-                        dic[t_class] = dic[t_class] + ',' + t_label
-        # insert row here
-        insertSQL('keywords_temp', cols, list(dic.values()) )  
-        count_row += 1
-
-    logging.info(f"{count_row} rows inserted to the keywords_temp table")
-    logging.info(f"Update keywords_temp table execution: {time.time() - start_time:.4f} seconds")
-    
-    start_time = time.time()
-    logging.info("Updating tracking table")
-    # update track table
-    sql = '''
-    DELETE FROM harvest.process_tracking
-    WHERE process_id = 'keyword';
-    '''
-    dbQuery(sql,  hasoutput=False)
-    logging.info("Deleted tracking table")
-
-    time_n = datetime.datetime.now()
-
-    for res in result_items:
-        insertSQL('harvest.process_tracking', ['process_id', 'hash', 'last_run'], ['keyword', res['hash'], time_n] )  
-
-    logging.info(f"Update tracking table execution: {time.time() - start_time:.4f} seconds")
-
 
 
 def main(argv):
@@ -277,8 +188,6 @@ def main(argv):
         logging.info("Start batch process running")
         return
         batch_process(arg_time)
-
-
 
 if __name__ == "__main__":
     main(sys.argv)
