@@ -28,8 +28,7 @@ import logging
 from collections import Counter
 
 
-def turple2dict(rows): # transform a query result from turple to dict
-    col_names = ['identifier', 'hash', 'uri', 'turtle', 'prefix']  
+def turple2dict(rows, col_names): # transform a query result from turple to dict 
     return [dict(zip(col_names, row)) for row in rows]
 
 
@@ -39,7 +38,10 @@ def csv2mapping(csv_file):
         reader = csv.DictReader(f)
         for row in reader:   
             source_label = row['source_label']
-            target_label = row['target_label']
+            if row['target_label'] == '':
+                target_label = None
+            else:
+                target_label = row['target_label']
             mapping[source_label] = target_label
     return mapping
 
@@ -127,7 +129,7 @@ def match_elements():
     FROM harvest.items i LEFT JOIN harvest.sources ON i.source = sources.name::text
     WHERE i.insert_date = (( SELECT max(t.insert_date) AS max FROM harvest.items t WHERE t.identifier = i.identifier));
     '''
-    result_items = turple2dict(dbQuery(sql, hasoutput=True))
+    result_items = turple2dict(dbQuery(sql, hasoutput=True), ['identifier', 'hash', 'uri', 'turtle', 'prefix'] )
 
     logging.info(f"Query completed, find {len(result_items)} records")
     
@@ -167,6 +169,52 @@ def match_elements():
     
     return
 
+def match_elements_precords():
+    start_time = time.time()
+
+    load_dotenv()
+    
+    # find the records that contain keywords
+    logging.info("Querying records from the database table")
+
+    sql = '''
+    SELECT identifier, type FROM public.records;
+    '''
+    result_items = turple2dict(dbQuery(sql, hasoutput=True), ['identifier', 'type'] )
+
+    logging.info(f"Query completed, find {len(result_items)} records")
+    
+    logging.info(f"Query execution: {time.time() - start_time:.2f} seconds")
+    
+    logging.info("Quering elements from turtles")
+
+    start_time = time.time()
+        
+    logging.info("Matching elements and inserting to the augmentation table")
+    # get mapping from csv
+    start_time = time.time()
+
+    m_type = csv2mapping('element-matcher/mapping/type.csv')
+    target_type_list = list(set(i for i in m_type.values() if i is not None))
+
+    dbQuery('TRUNCATE table harvest.augmentation', hasoutput=False)
+    
+    # match
+    for item in result_items:
+        if item['type'] is None:
+            continue
+        source_type = item['type']
+        target_type = m_type.get(source_type, 'no match')
+        if target_type != 'no match': # find a match
+            item['type'] = target_type
+        elif source_type in target_type_list: # already transformed
+            item['type'] = source_type 
+        else: # can't find a match
+            logging.info(f"Type {source_type} not found in the mapping file")
+            item['type'] = None
+        insertSQL('harvest.augmentation', ['identifier', 'value', 'element_type'], [item['identifier'], item['type'], 'type'] )
+    
+    logging.info(f"Inserting execution: {(time.time() - start_time)/60:.2f} minutes")
 
 def main(argv):
 
@@ -187,7 +235,7 @@ def main(argv):
             arg_time = arg
     
     if arg_batch is False:
-        match_elements()
+        match_elements_precords()
     else:
         logging.info("Start batch process running")
         return
