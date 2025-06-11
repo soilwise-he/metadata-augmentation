@@ -169,37 +169,7 @@ def match_elements():
     
     return
 
-def match_elements_precords():
-    start_time = time.time()
-
-    load_dotenv()
-    
-    # find the records that contain keywords
-    logging.info("Querying records from the database table")
-
-    sql = '''
-    SELECT identifier, type FROM public.records;
-    '''
-    result_items = turple2dict(dbQuery(sql, hasoutput=True), ['identifier', 'type'] )
-
-    logging.info(f"Query completed, find {len(result_items)} records")
-    
-    logging.info(f"Query execution: {time.time() - start_time:.2f} seconds")
-    
-    logging.info("Quering elements from turtles")
-
-    start_time = time.time()
-        
-    logging.info("Matching elements and inserting to the augmentation table")
-    # get mapping from csv
-    start_time = time.time()
-
-    m_type = csv2mapping('element-matcher/mapping/type.csv')
-    target_type_list = list(set(i for i in m_type.values() if i is not None))
-
-    dbQuery('TRUNCATE table harvest.augmentation', hasoutput=False)
-    
-    # match
+def match_types(result_items, m_type, target_type_list):
     for item in result_items:
         if item['type'] is None:
             continue
@@ -213,8 +183,37 @@ def match_elements_precords():
             logging.info(f"Type {source_type} not found in the mapping file")
             item['type'] = None
         insertSQL('harvest.augmentation', ['identifier', 'value', 'element_type'], [item['identifier'], item['type'], 'type'] )
+
+def match_elements_precords():
+    start_time = time.time()
+
+    load_dotenv()
     
-    logging.info(f"Inserting execution: {(time.time() - start_time)/60:.2f} minutes")
+    # find the records that contain keywords
+    logging.info("Querying records from the database table")
+
+    sql = '''
+    SELECT identifier, type FROM public.records2;
+    '''
+    result_items = turple2dict(dbQuery(sql, hasoutput=True), ['identifier', 'type'] )
+
+    logging.info(f"Query completed, find {len(result_items)} records")
+    
+    logging.info(f"Query execution: {time.time() - start_time:.2f} seconds")
+    
+    # get mapping from csv
+    m_type = csv2mapping('element-matcher/mapping/type.csv')
+    target_type_list = list(set(i for i in m_type.values() if i is not None))
+
+    start_time = time.time()
+    logging.info("Matching elements and inserting type to the augmentation table")
+
+    dbQuery('TRUNCATE table harvest.augmentation', hasoutput=False)
+    
+    # match
+    match_types(result_items, m_type, target_type_list)
+    
+    logging.info(f"Inserting type execution: {(time.time() - start_time)/60:.2f} minutes")
 
 def main(argv):
 
