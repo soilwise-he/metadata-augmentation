@@ -1,6 +1,6 @@
 
 # metadata
-keyword-match-dev:
+element-match-dev:
   image: harbor.containers.wurnet.nl/proxy-cache/library/python:3.10.8-slim-buster
   stage: augment
   script:
@@ -20,7 +20,7 @@ keyword-match-dev:
 
 
 # metadata
-keyword-match-prod:
+element-match-prod:
   image: harbor.containers.wurnet.nl/proxy-cache/library/python:3.10.8-slim-buster
   stage: augment
   script:
