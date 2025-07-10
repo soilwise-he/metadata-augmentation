@@ -261,15 +261,21 @@ def update_termsf(matched_d, cons):
     with open('keyword-matcher/result/terms.csv', 'r', encoding='utf-8') as f:
         csvreader = csv.DictReader(f)
         terms = [row for row in csvreader]
-    # get all matched terms file
+
+    with open('keyword-matcher/result/discard_terms.csv', 'r', encoding='utf-8') as f:
+        csvreader = csv.DictReader(f)
+        discarded_terms = [row for row in csvreader]
+    
+    discarded_term_ids = [term['identifier'] for term in discarded_terms]
+
     matched_ids = [item['concept_identifier'] for item in matched_d]
     matched_ids = list(set(matched_ids))
     logging.info(f"Number of matched terms: {len(matched_ids)}")
     
     terms_new = []
     for term in terms:
+        # term in terms.csv, also found in matched terms, keep it and update the uri and label
         if term['identifier'] in matched_ids:
-            # keep this term, need to update the uri and label
             con_l = [con for con in cons if con['identifier'] == term['identifier']]
             if len(con_l) > 0:
                 t = con_l[0]
@@ -282,22 +288,25 @@ def update_termsf(matched_d, cons):
                     'class': term.get('class', '') # from original terms.csv
                 })
         else:
+            # term in terms.csv, but no found in matched terms. means that this term is not matched with records anymore, need to remove it.
             logging.info(f"Term {term['identifier']} removed from the terms.csv file")
     
     for matched_id in matched_ids:
-        if matched_id not in [term['identifier'] for term in terms_new]: # new terms, add here to consider discard terms
-            term_l = [con for con in cons if con['identifier'] == matched_id]
-            if len(term_l) > 0:
-                term = term_l[0]
-                uri_list = term['relevant_uris']
-                uri = uri_list[0] if len(uri_list) > 0 else ''
-                terms_new.append({
-                    'identifier': term['identifier'],
-                    'label': term['labels']['en'][0],
-                    'uri': uri,
-                    'class': ''
-                })
-                logging.info(f"Term {term['identifier']} added to the terms.csv file")
+        # We found new terms not yet in the terms.csv, because kg updated or because new records have new matched. We add them to the terms.csv, but if it is discarded terms we don't add it
+        if matched_id not in [term['identifier'] for term in terms_new]: 
+            if matched_id not in discarded_term_ids: # if it is not in the discarded terms
+                term_l = [con for con in cons if con['identifier'] == matched_id]
+                if len(term_l) > 0:
+                    term = term_l[0]
+                    uri_list = term['relevant_uris']
+                    uri = uri_list[0] if len(uri_list) > 0 else ''
+                    terms_new.append({
+                        'identifier': term['identifier'],
+                        'label': term['labels']['en'][0],
+                        'uri': uri,
+                        'class': ''
+                    })
+                    logging.info(f"Term {term['identifier']} added to the terms.csv file, needs to assign a class")
     
     with open('keyword-matcher/result/terms.csv', 'w', newline='', encoding='utf-8') as f:
         csvwriter = csv.DictWriter(f, fieldnames=['identifier', 'label', 'uri', 'class'])
