@@ -1,36 +1,36 @@
 source_label,target_label
-journalpaper,JournalArticle
+journalpaper,Journal Article
 dataset,Dataset
 http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset,Dataset
 document,Document
-datapaper,DataPaper
+datapaper,Data Paper
 service,Service
 http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service,Service
 series,Dataset
 http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series,Dataset
-Best practices and tools,BestPractices
+Best practices and tools,Best Practices
 nonGeographicDataset,Dataset
 Publications &amp; reports,Report
-journal-article,JournalArticle
+journal-article,Journal Article
 Interview,Interview
 software,Software
-Conference deliverables,ConferenceProceeding
-EU policy document,PolicyDocument
-Policy documents,PolicyDocument
-General articles,JournalArticle
-journalarticle,JournalArticle
-National policy document,PolicyDocument
-Science-based policy advice,PolicyDocument
-Policy recommendations,PolicyDocument
-Education &amp; Training material,EducationAndTrainingMaterial
-Vocational education &amp; training,EducationAndTrainingMaterial
-Secondary education,EducationAndTrainingMaterial
-Higher education,EducationAndTrainingMaterial
+Conference deliverables,Conference Proceeding
+EU policy document,Policy Document
+Policy documents,Policy Document
+General articles,Journal Article
+journalarticle,Journal Article
+National policy document,Policy Document
+Science-based policy advice,Policy Document
+Policy recommendations,Policy Document
+Education &amp; Training material,Education and Training Material
+Vocational education &amp; training,Education and Training Material
+Secondary education,Education and Training Material
+Higher education,Education and Training Material
 MAP,Dataset
 project,Project
-publication,JournalArticle
+publication,Journal Article
 Other,Other
 other,Other
 text,Text
-Scientific,
-computationalnotebook,ComputationalNotebook
+Scientific,Scientific
+computationalnotebook,Computational Notebook
