@@ -181,7 +181,7 @@ def match_types(result_items, m_type, target_type_list):
         elif source_type in target_type_list: # already transformed
             item['type'] = source_type 
         elif source_type not in missing_types: # can't find a match, log once
-            logging.info(f"Type {source_type} not found in the mapping file")
+            logging.info(f"Type {source_type} from the record {item['identifier']} not found in the mapping file")
             missing_types.append(source_type)
             item['type'] = None
         else:
