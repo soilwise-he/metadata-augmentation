@@ -170,6 +170,7 @@ def match_elements():
     return
 
 def match_types(result_items, m_type, target_type_list):
+    missing_types = []
     for item in result_items:
         if item['type'] is None:
             continue
@@ -179,8 +180,11 @@ def match_types(result_items, m_type, target_type_list):
             item['type'] = target_type
         elif source_type in target_type_list: # already transformed
             item['type'] = source_type 
-        else: # can't find a match
+        elif source_type not in missing_types: # can't find a match, log once
             logging.info(f"Type {source_type} not found in the mapping file")
+            missing_types.append(source_type)
+            item['type'] = None
+        else:
             item['type'] = None
         insertSQL('harvest.augmentation', ['identifier', 'value', 'element_type'], [item['identifier'], item['type'], 'type'] )
 
