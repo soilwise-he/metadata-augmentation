@@ -230,7 +230,33 @@ def main():
     }
     
     pipeline = NERAugmentationPipeline(args.model_path, db_config)
-    pipeline.process_batch()
+
+    total_processed = 0
+    batch_index = 1
+
+    while True:
+        
+        logger.info(f"Starting batch {batch_index}...")
+
+
+        try:
+            processed = pipeline.process_batch()
+            total_processed += processed
+            logger.info(f"Batch {batch_index} completed. Processed: {processed}")
+        except Exception as e:
+            logger.error(f"Batch {batch_index} failed with error: {e}")
+            processed = -1
+
+        if processed == 0:
+            logger.info("No more records to process.")
+            break
+
+        batch_index += 1
+
+    logger.info(
+        f"Augmentation completed. "
+        f"Total processed: {total_processed}. "
+    )
 
 
 if __name__ == '__main__':
