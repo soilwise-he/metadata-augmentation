@@ -9,8 +9,7 @@ This repository contains a Python pipeline for augmenting metadata records with 
 - Extracts `Location_positive` entities using a custom spaCy model  
 - Processes metadata in batches  
 - Writes augmentations to `metadata.augments`  
-- Tracks processing status in `metadata.augment_status`  
-- Supports forced reprocessing (`--force`)  
+- Tracks processing status in `metadata.augment_status`
 - Uses structured logging for full visibility  
 
 ---
@@ -68,6 +67,5 @@ uv run ner_augment.py
 --database <db_name> 
 --user <db_user> 
 --password <db_password>
---force # forces reporcessing already processed items  
 ```
 
