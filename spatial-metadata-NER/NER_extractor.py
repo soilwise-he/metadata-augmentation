@@ -20,31 +20,22 @@ class NERAugmentationPipeline:
         self.db_config = db_config
         self.process_name = "NER-augmentation"
         
-    def get_unprocessed_records(self, limit: int = 100, force: bool = False) -> List[Tuple]:
+    def get_unprocessed_records(self, limit: int = 100) -> List[Tuple]:
         """Query records that haven't been processed"""
         try:
             conn = psycopg2.connect(**self.db_config)
             cur = conn.cursor()
             
-            if force:
-                query = """
-                SELECT h.identifier, h.title, h.abstract
-                FROM harvest.items h
-                LEFT JOIN metadata.augment_status a 
-                    ON h.identifier = a.record_id 
-                    AND a.process = %s
-                LIMIT %s;
-                """
-            else:                
-                query = """
-                SELECT h.identifier, h.title, h.abstract
-                FROM harvest.items h
-                LEFT JOIN metadata.augment_status a 
-                    ON h.identifier = a.record_id 
-                    AND a.process = %s
-                WHERE a.record_id IS NULL
-                LIMIT %s;
-                """
+               
+            query = """
+            SELECT h.identifier, h.title, h.abstract
+            FROM harvest.items h
+            LEFT JOIN metadata.augment_status a 
+                ON h.identifier = a.record_id 
+                AND a.process = %s
+            WHERE a.record_id IS NULL
+            LIMIT %s;
+            """
             
             cur.execute(query, (self.process_name, limit))
             records = cur.fetchall()
@@ -151,12 +142,10 @@ class NERAugmentationPipeline:
             logger.error(f"Database error saving augmentations: {e}")
             return False
     
-    def process_batch(self, force: bool = False) -> int:
+    def process_batch(self) -> int:
         """Process a batch of records"""
-        if force:
-            logger.info("Force flag set - will reprocess all records")
         
-        records = self.get_unprocessed_records(limit=100, force=force)
+        records = self.get_unprocessed_records(limit=100)
         processed_count = 0
         
         for record_id, title, abstract in records:
@@ -228,11 +217,7 @@ def main():
         required=True,
         help='Database password'
     )
-    parser.add_argument(
-        '--force',
-        action='store_true',
-        help='Force reprocessing of all records'
-    )
+
     
     args = parser.parse_args()
     
@@ -245,7 +230,7 @@ def main():
     }
     
     pipeline = NERAugmentationPipeline(args.model_path, db_config)
-    pipeline.process_batch(force=args.force)
+    pipeline.process_batch()
 
 
 if __name__ == '__main__':
