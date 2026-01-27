@@ -3,3 +3,4 @@ spatial-metadata-NER/trained_models/* filter=lfs diff=lfs merge=lfs -text
 *.model filter=lfs diff=lfs merge=lfs -text
 *vocab/vectors filter=lfs diff=lfs merge=lfs -text
 spatial-metadata-NER/trained_models/** filter=lfs diff=lfs merge=lfs -text
+*tok2vec/model filter=lfs diff=lfs merge=lfs -text
