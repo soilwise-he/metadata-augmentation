@@ -74,7 +74,7 @@ def write_output(output_f, record: dict):
         output_f.write(json.dumps(record, default=str) + '\n')
         output_f.flush()
 
-def process_csv_with_link_check(csv_path, output_file=None, limit=None, check_links=True):
+def process_csv_with_link_check(csv_path, output_file=None, start_from=1, limit=None, check_links=True):
     """
     Process CSV with link validation first
     
@@ -94,7 +94,8 @@ def process_csv_with_link_check(csv_path, output_file=None, limit=None, check_li
     
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        output_f = open(output_file, 'w') if output_file else None
+        mode = 'a' if start_from > 1 else 'w'
+        output_f = open(output_file, mode) if output_file else None
         
         rows_processed = 0
 
@@ -251,4 +252,4 @@ if __name__ == "__main__":
         print(f"Error: {args.csv_file} not found")
         exit(1)
     
-    process_csv_with_link_check(args.csv_file, args.output, args.limit, check_links=not args.no_link_check)
+    process_csv_with_link_check(args.csv_file, args.output, args.start_from, args.limit, check_links=not args.no_link_check)
