@@ -105,11 +105,12 @@ pip install gdal aiohttp asyncio
 |-------------------|---------------------------------------|------------------------------------|
 | `csv_file`        | Path to input CSV file (required)     |                                    |
 | `--output`        | Output JSONL file path                | `spatial_metadata_augmented.jsonl` |
+| `--start-from`    | Skipp already processed rows          | None (starts at 1) 
 | `--limit`         | Maximum number of records to process  | None (process all)                 |
 | `--no-link-check` | Skip URL validation step              | False (validation enabled)         |
 
 ### Example
 ```bash
 # Process first 10 records with link validation
-python spatial_metadata_processor.py datasets.csv --output results.jsonl --limit 10
+python spatial_metadata_processor.py datasets.csv --output results.jsonl --start-from 1 --limit 10
 ```
