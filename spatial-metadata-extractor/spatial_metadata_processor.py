@@ -88,7 +88,7 @@ def process_csv_with_link_check(csv_path, output_file=None, limit=None, check_li
         "error": null
     }
     """
-    extractor = SpatialMetadataExtractor(max_features=100)
+    extractor = SpatialMetadataExtractor(max_features=10)
     stats = {'processed': 0, 'valid_urls': 0, 'invalid_urls': 0, 'skipped': 0, 'errors': 0}
     results = []
     
@@ -96,9 +96,16 @@ def process_csv_with_link_check(csv_path, output_file=None, limit=None, check_li
         reader = csv.DictReader(f)
         output_f = open(output_file, 'w') if output_file else None
         
+        rows_processed = 0
+
         try:
             for row_idx, row in enumerate(reader, 1):
-                if limit and (stats['processed'] + stats['errors']) >= limit:
+                if row_idx < args.start_from:
+                    continue
+                # Increment rows processed
+                rows_processed += 1
+                if limit and rows_processed >= limit:
+                    print(f"\nReached limit of {limit} rows, stopping...")
                     break
                 
                 identifier = row.get('identifier', 'unknown')
@@ -118,12 +125,9 @@ def process_csv_with_link_check(csv_path, output_file=None, limit=None, check_li
                     print(f"[{row_idx}] SKIP {identifier}: Already has wkt_geometry")
                     stats['skipped'] += 1
                     continue
-                
+
                 # Process each URL
                 for url_idx, url in enumerate(urls):
-                    if limit and (stats['processed'] + stats['errors']) >= limit:
-                        break
-                    
                     print(f"\n[{row_idx}.{url_idx}] PROCESS {identifier}")
                     print(f"URL: {url[:80]}...")
                     
@@ -237,6 +241,8 @@ if __name__ == "__main__":
     parser.add_argument('csv_file', help='CSV file path')
     parser.add_argument('--output', help='Output JSONL file', default='spatial_metadata_augmented.jsonl')
     parser.add_argument('--limit', type=int, help='Limit records to process')
+    parser.add_argument('--start-from', type=int, default=1, 
+                        help='Start processing from this row number (for resuming)')
     parser.add_argument('--no-link-check', action='store_true', help='Skip link validation')
     
     args = parser.parse_args()
