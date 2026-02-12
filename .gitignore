@@ -1,0 +1,4 @@
+/bin/
+/lib/
+*.env
+keyword-matcher/cache_trankit_models*
