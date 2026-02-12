@@ -4,7 +4,13 @@ from psycopg2.extras import execute_values
 import logging
 import argparse
 from typing import List, Tuple
-import json
+import json,sys,os
+sys.path.append('utils')
+from database import dbInit
+from dotenv import load_dotenv
+load_dotenv()
+
+
 
 # Configure logging
 logging.basicConfig(
@@ -14,22 +20,20 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class NERAugmentationPipeline:
-    def __init__(self, model_path: str, db_config: dict):
+    def __init__(self, model_path: str):
         """Initialize the augmentation pipeline"""
         self.nlp = spacy.load(model_path)
-        self.db_config = db_config
         self.process_name = "NER-augmentation"
         
     def get_unprocessed_records(self, limit: int = 100) -> List[Tuple]:
         """Query records that haven't been processed"""
         try:
-            conn = psycopg2.connect(**self.db_config)
+            conn = dbInit()
             cur = conn.cursor()
             
-               
             query = """
             SELECT h.identifier, h.title, h.abstract
-            FROM harvest.items h
+            FROM metadata.records h
             LEFT JOIN metadata.augment_status a 
                 ON h.identifier = a.record_id 
                 AND a.process = %s
@@ -69,7 +73,7 @@ class NERAugmentationPipeline:
         
         """Save batch augmentation results to database"""
         try:
-            conn = psycopg2.connect(**self.db_config)
+            conn = dbInit()
             cur = conn.cursor()
             
             if augment_rows:
@@ -104,7 +108,7 @@ class NERAugmentationPipeline:
     def save_augmentations(self, record_id: str, augmentations: dict) -> bool:
         """Save augmentation results to database"""
         try:
-            conn = psycopg2.connect(**self.db_config)
+            conn = dbInit()
             cur = conn.cursor()
             
             # Insert augmentations
@@ -188,48 +192,16 @@ def main():
     )
     parser.add_argument(
         '--model-path',
-        required=True,
+        required=False,
         help='Path to trained spaCy model'
     )
-    parser.add_argument(
-        '--host',
-        default='localhost',
-        help='Database host'
-    )
-    parser.add_argument(
-        '--port',
-        default=5432,
-        type=int,
-        help='Database port'
-    )
-    parser.add_argument(
-        '--database',
-        default='soilwise',
-        help='Database name'
-    )
-    parser.add_argument(
-        '--user',
-        required=True,
-        help='Database user'
-    )
-    parser.add_argument(
-        '--password',
-        required=True,
-        help='Database password'
-    )
-
     
     args = parser.parse_args()
     
-    db_config = {
-        'host': args.host,
-        'port': args.port,
-        'database': args.database,
-        'user': args.user,
-        'password': args.password
-    }
     
-    pipeline = NERAugmentationPipeline(args.model_path, db_config)
+    model_path = args.model_path or os.getenv("MODEL_PATH") or "trained_models/20251204_output/model-best"
+    
+    pipeline = NERAugmentationPipeline(model_path)
 
     total_processed = 0
     batch_index = 1

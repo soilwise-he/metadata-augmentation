@@ -26,7 +26,7 @@ This repository contains a Python pipeline for augmenting metadata records with 
 
 ## Expected Database Tables
 
-### `harvest.items`
+### `metadata.records`
 | Column       | Description |
 |--------------|-------------|
 | identifier   | Primary key |
@@ -60,12 +60,16 @@ uv sync
 
 ## Usage
 ```bash
-uv run ner_augment.py 
---model-path trained_models/20251204_output/model-best
---host <db_host> 
---port <db_port> 
---database <db_name> 
---user <db_user> 
---password <db_password>
+uv run ner_augment.py --model-path trained_models/20251204_output/model-best
 ```
 
+Create a .ENV file with db connect parameters
+
+```
+POSTGRES_HOST=exampl.com
+POSTGRES_PORT=5432
+POSTGRES_DB=test
+POSTGRES_USER=test
+POSTGRES_PASSWORD=*****
+MODEL_PATH=spatial-metadata-NER/trained_models/20251204_output/model-best
+```
