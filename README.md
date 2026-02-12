@@ -13,16 +13,41 @@ Repository relates mainly to task 2.3
 >  asset identification](https://github.com/soilwise-he/metadata-augmentation/issues/16) across multiple resources. [Outcome: D3.1](docs/D3.1/index.md)
 
 
-Use scripting/nlp/llm on a resource to augment metadata statements about a resource.
+## Storage
 
 Augmentations are stored on a dedicated augmentation table, indicating the process which produced it.
 
-| metadata-uri | metadata-element | source | value | proces | date |
-| --- | --- | --- | --- | --- | --- |
-| https://geo.fi/data/ee44-aa22-33 | spatial-scope | 16.7,62.2,18,81.5 |  https://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national | spatial-scope-analyser | 2024-07-04 |
-| https://geo.fi/data/abc1-ba27-67 | soil-thread | This dataset is used to evaluate Soil Compaction in Nuohous Sundström | http://aims.fao.org/aos/agrovoc/c_7163 | keyword-analyser | 2024-06-28 |
+On the database we have 2 tables related to augmentation
 
-Scripts in this repo extract a subset of records for which no augmentation has been predicted yet, or an existing augmentation should be updated (and the source record does not already provide the missing content). This can be achieved by querying the records table with a left-join to the augmentation table (or an inner query). Database connection parameters are inserted via environment variables.
+```SQL
+    CREATE TABLE IF NOT EXISTS metadata.augments
+    (
+    record_id text,
+    property text,
+    value text,
+    process text,
+    date timestamp with time zone DEFAULT now()
+    );
+
+    CREATE TABLE IF NOT EXISTS metadata.augment_status
+    (
+    record_id text,
+    status text,
+    process text,
+    date timestamp with time zone DEFAULT now()
+    );
+```
+
+An augment process is typically organised as: 
+
+- Each augmenter will run a query against harvest.items joined to augment_status to see if there are records to be processed.
+- processes a limited set (100) and continue with the next set via task-scheduler
+- augment results are written to metadata.augments, please specify:
+    - the record_id processed
+    - the property which is improved (for example: title, abstract, keywords, license)
+    - the value which has been calculated
+    - the process which produced the value (for example NER-augmenation, spatial locator)
+- Finally the augment_stutus is updated to indicate that the record has been processed
 
 At intervals the code is released as a docker image, which can be used in CI-CD scripts.
 
@@ -46,12 +71,42 @@ It requires a database (relational or rdf) with common thesauri
 
 [read more](./keyword-matcher/)
 
+## Element matcher
+
+Matches elements such as license, type using a similar approach as keyword matcher
+
+## Keyword extracter
+
+Use NLP/LLM to extract relevant keywords from title/abstract/content
+
 ## Spatial Locator
 
 Analyses existing keywords to find a relevant geography for the record, it then uses the geonames api to find spatial coordinates for the geography, which are inserted into the metadata record
 
 [read more](./spatial-locator/)
 
-## spatial scope analyser
+## Spatial scope analyser
 
 [read more](./spatial-scope-analyser/)
+
+## DOI enricher
+
+This script identifies records identified by a DOI, DOI metadata is extracted from OpenAire or Datacite to enrich the record.
+
+## Youtube
+
+This script identifies records refering to a youtube video or youtube playlist. If so, metadata of the video is ingested from the youtube platform.
+
+[read more](./youtube/)
+
+## GDAL metadata
+
+For those records which refer to a spatial file or spatial data service, the file or service is analysed for technical details such as format, projection, geometry type, bounding box. The record is enriched with this information.
+
+## Schema.org enricher
+
+For those records which refer to a website, the website is analysed to understand if it contains schema.org or open graph metadata.
+
+## Zenodo enricher
+
+Zenodo is an important repository for Horizon Europe. Zenodo captures some metadata elements which are not propagated by OpenAire. If a record refers to zenodo, these additional elements are captured from a dedicated Zenodo API.
