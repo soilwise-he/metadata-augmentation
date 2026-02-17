@@ -2,15 +2,21 @@ source_label,target_label
 journalpaper,Journal Article
 dataset,Dataset
 http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset,Dataset
+{'resource': 'http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset'},Dataset
+{'resource': 'http://dcat-ap.de/def/datasetTypes/collection'},Dataset
 document,Document
 datapaper,Data Paper
 service,Service
 http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service,Service
+{'resource': 'http://inspire.ec.europa.eu/metadata-codelist/ResourceType/services'},Service
 series,Dataset
+{'resource': 'http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series'},Dataset
 http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series,Dataset
 Best practices and tools,Best Practices
 nonGeographicDataset,Dataset
 Publications &amp; reports,Report
+publication,Report
+report,Report
 journal-article,Journal Article
 Interview,Interview
 software,Software
@@ -28,7 +34,6 @@ Secondary education,Education and Training Material
 Higher education,Education and Training Material
 MAP,Dataset
 project,Project
-publication,Report
 Other,Other
 other,Other
 text,Text
