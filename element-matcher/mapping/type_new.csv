@@ -1,2 +1,40 @@
 source_label,target_label
+Article,Journal Article
+Audiovisual,Audiovisual
+Book,Book
+Collection,Collection
+computationalnotebook,Computational Notebook
+Conference object,Conference Proceeding
+Contribution for newspaper or weekly magazine,Text
+Data Management Plan,Output Management Plan
+datapaper,Data Paper
+dataset,Dataset
+Doctoral thesis,Dissertation
+External research report,Report
+Image,Image
+InteractiveResource,Interactive Resource
+Journal,Journal
+journalarticle,Journal Article
 journalpaper,Journal Article
+Lecture,Audiovisual
+Master thesis,Dissertation
+Model,Model
+nonGeographicDataset,Dataset
+other,Other
+Other dataset type,Dataset
+Other literature type,Other
+Other ORP type,Other
+Part of book or chapter of book,Book Chapter
+Preprint,Preprint
+Presentation,Other
+Project deliverable,Project
+Report,Report
+Research,Other
+Review,Journal Article
+series,Dataset
+service,Service
+software,Software
+text,Text
+Thesis,Dissertation
+UNKNOWN,Other
+,Unknown
