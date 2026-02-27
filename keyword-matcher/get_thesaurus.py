@@ -115,12 +115,24 @@ def remove_redun_cons(concepts):
     redun_ids = [k for k, v in counts.items() if v > 1]
     for reid in redun_ids:
         redun_cons = [con for con in concepts if con['identifier'] == reid]
-        if len(redun_cons) == 2: # now only consider 2 repeated concepts
-           redun_cons[0]['relevant_uris'].extend(redun_cons[1]['relevant_uris']) # merge the relevant_uris
-           redun_cons[0]['labels'] = mergeLabels(redun_cons[0]['labels'], redun_cons[1]['labels']) # merge the labels
-           concepts.remove(redun_cons[1])
-        else:
-            print(f"more than 2 repeated concepts: {reid}")
+    
+        # Keep the first concept and merge all others into it
+        base_concept = redun_cons[0]
+        
+        # Process all duplicate concepts after the first one
+        for duplicate in redun_cons[1:]:
+            # Merge relevant URIs
+            base_concept['relevant_uris'].extend(duplicate['relevant_uris'])
+            # Remove duplicates in relevant_uris while preserving order
+            base_concept['relevant_uris'] = list(dict.fromkeys(base_concept['relevant_uris']))
+            
+            # Merge labels
+            base_concept['labels'] = mergeLabels(base_concept['labels'], duplicate['labels'])
+            
+            # Remove the duplicate from the original concepts list
+            concepts.remove(duplicate)
+        
+        print(f"Merged {len(redun_cons)} instances of concept: {reid}")
     print(f"length of concepts after removing redun: {len(concepts)}")
     return concepts
 
@@ -186,7 +198,7 @@ def main():
                     lab_dict = processLabels(res_agro, 1, langs)
                     con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
                             
-            elif uri.startwith("https://data.geoscience.earth/ncl/ISO11074"):
+            elif uri.startswith("https://data.geoscience.earth/ncl/ISO11074"):
                 res_iso = searchIso(uri)
                 if res_iso is not None:
                     lab_dict = processLabels(res_iso, 2, langs)

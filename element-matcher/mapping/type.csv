@@ -1,36 +1,36 @@
 source_label,target_label
-journalpaper,journalpaper
-dataset,dataset
-http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset,dataset
-document,document
-service,service
-http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service,service
-series,other
-http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series,other
-Best practices and tools,document
-Other,other
-Education &amp; Training material,document
-nonGeographicDataset,datatset
-Publications &amp; reports,document
-journal-article,journalpaper
-Scientific,journalpaper
-Interview,document
-software,other
-Conference deliverables,document
-EU policy document,document
-Policy documents,document
-General articles,document
-National policy document,document
-journalarticle,journalpaper
-Policy recommendations,document
-computationalnotebook,other
-other,other
-image,other
-text,document
-Vocational education &amp; training,document
-datapaper,document
-model,other
-Secondary education,document
-video,other
-audiovisual,other
-MAP,dataset
+journalpaper,Journal Article
+dataset,Dataset
+http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset,Dataset
+document,Document
+datapaper,Data Paper
+service,Service
+http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service,Service
+series,Dataset
+http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series,Dataset
+Best practices and tools,Best Practices
+nonGeographicDataset,Dataset
+Publications &amp; reports,Report
+journal-article,Journal Article
+Interview,Interview
+software,Software
+Conference deliverables,Conference Proceeding
+EU policy document,Policy Document
+Policy documents,Policy Document
+General articles,Journal Article
+journalarticle,Journal Article
+National policy document,Policy Document
+Science-based policy advice,Policy Document
+Policy recommendations,Policy Document
+Education &amp; Training material,Education and Training Material
+Vocational education &amp; training,Education and Training Material
+Secondary education,Education and Training Material
+Higher education,Education and Training Material
+MAP,Dataset
+project,Project
+publication,Report
+Other,Other
+other,Other
+text,Text
+Scientific,Scientific
+computationalnotebook,Computational Notebook

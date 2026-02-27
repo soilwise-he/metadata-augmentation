@@ -9,6 +9,7 @@ workflow:
 
 include:
   - local: "/CI/.keyword-match-temp.yaml"
+  - local: "/CI/.element-match.yaml"
 
 ######
 # build stage

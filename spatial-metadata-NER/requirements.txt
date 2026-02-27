@@ -1,0 +1,3 @@
+spacy
+psycopg2-binary
+python-dotenv
