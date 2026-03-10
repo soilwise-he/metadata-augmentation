@@ -1,4 +1,5 @@
 import json, os, psycopg2
+from psycopg2.extras import execute_values
 from datetime import datetime
 
 
@@ -68,6 +69,41 @@ def insertSQL(table, fields, values):
             print(f"Error: {str(e)}")
         finally:
             dbconn.close();
+
+
+def insertBulkSQL(table, fields, values_list):
+    """
+    Insert multiple rows into a table efficiently using batch insert.
+    
+    Args:
+        table: Table name (e.g., 'metadata.subjects')
+        fields: List of field names (e.g., ['identifier', 'name'])
+        values_list: List of tuples/lists containing values for each row
+                    (e.g., [(1, 'John'), (2, 'Jane')])
+    
+    Example:
+        insertBulkSQL('metadata.subjects', 
+                      ['identifier', 'name'], 
+                      [(1, 'John'), (2, 'Jane'), (3, 'Bob')])
+    """
+    if not values_list:
+        return  # Nothing to insert
+    
+    sql = f"INSERT INTO {table} ({', '.join(fields)}) VALUES %s ON CONFLICT DO NOTHING;"
+    
+    dbconn = dbInit()
+    with dbconn.cursor() as cur:
+        try:
+            # execute_values is much faster than executemany for bulk inserts
+            execute_values(cur, sql, values_list)
+            # commit the changes to the database
+            dbconn.commit()
+            print(f"Successfully inserted {len(values_list)} rows into {table}")
+        except Exception as e:
+            print(f"Error: {str(e)}")
+            dbconn.rollback()
+        finally:
+            dbconn.close()
       
 
 def hasSource(label,url,filter,type):
