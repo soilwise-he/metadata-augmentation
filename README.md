@@ -99,6 +99,12 @@ This script identifies records refering to a youtube video or youtube playlist. 
 
 [read more](./youtube/)
 
+## RORCID Matcher
+
+Matches persons by ORCID and organizations by ROR and the employments of persons at organizations
+
+[read more](./RORCIDmatcher/)
+
 ## GDAL metadata
 
 For those records which refer to a spatial file or spatial data service, the file or service is analysed for technical details such as format, projection, geometry type, bounding box. The record is enriched with this information.
