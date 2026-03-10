@@ -157,23 +157,29 @@ class NERAugmentationPipeline:
                 augmentations = {}
                 
                 # Extract from title
-                if title:
-                    locations_title = self.extract_locations(title)
-                    if locations_title:
-                        augmentations['title'] = json.dumps([
-                            {'text': ent[0], 'start_char': ent[1], 'end_char': ent[2]} 
-                            for ent in locations_title
-                        ])
+
+                # if title:
+                #     locations_title = self.extract_locations(title)
+                #     if locations_title:
+                #         augmentations['title'] = json.dumps([
+                #             {'text': ent[0], 'start_char': ent[1], 'end_char': ent[2]} 
+                #             for ent in locations_title
+                #         ])
                 
-                # Extract from abstract
-                if abstract:
-                    locations_abstract = self.extract_locations(abstract)
-                    if locations_abstract:
-                        augmentations['abstract'] = json.dumps([
-                            {'text': ent[0], 'start_char': ent[1], 'end_char': ent[2]} 
-                            for ent in locations_abstract
-                        ])
-                
+                # # Extract from abstract
+                # if abstract:
+                #     locations_abstract = self.extract_locations(abstract)
+                #     if locations_abstract:
+                #         augmentations['abstract'] = json.dumps([
+                #             {'text': ent[0], 'start_char': ent[1], 'end_char': ent[2]} 
+                #             for ent in locations_abstract
+                #         ])
+                        
+                if title or abstract :
+                    locations_title_abstract = self.extract_locations(' | '.join([title,abstract]))
+                    if locations_title_abstract:
+                        augmentations['spatial_description'] = list({ent[0] for ent in locations_title_abstract})
+
                 # Save results
                 if self.save_augmentations(record_id, augmentations):
                     processed_count += 1
@@ -199,7 +205,7 @@ def main():
     args = parser.parse_args()
     
     
-    model_path = args.model_path or os.getenv("MODEL_PATH") or "trained_models/20251204_output/model-best"
+    model_path = args.model_path or os.getenv("MODEL_PATH") or "trained_models/20260204_output/model-best"
     
     pipeline = NERAugmentationPipeline(model_path)
 
