@@ -28,6 +28,7 @@ class NERAugmentationPipeline:
         if "gliner_spacy" not in self.nlp.pipe_names:
             self.nlp.add_pipe("gliner_spacy",
                                 config={
+                                    "gliner_model": "urchade/gliner_multi",
                                     "labels":ent_list
                                 }, last=True)
         self.process_name = "GliNER-augmentation"
