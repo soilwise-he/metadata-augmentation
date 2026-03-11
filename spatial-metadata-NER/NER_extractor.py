@@ -1,5 +1,5 @@
 import spacy
-import psycopg2
+import psycopg2, traceback
 from psycopg2.extras import execute_values
 import logging
 import argparse
@@ -50,7 +50,7 @@ class NERAugmentationPipeline:
             return records
             
         except psycopg2.Error as e:
-            logger.error(f"Database error retrieving records: {e}")
+            logger.error(f"Database error retrieving records: {e} {traceback.format_exc()}")
             return []
     
     def extract_locations(self, text: str) -> List[str]:
@@ -64,7 +64,7 @@ class NERAugmentationPipeline:
                         if ent.label_ == 'Location_positive']
             return locations
         except Exception as e:
-            logger.error(f"Error extracting locations: {e}")
+            logger.error(f"Error extracting locations: {e} {traceback.format_exc()}")
             return []
     
     def save_batch_augmentations(self, augment_rows: List[Tuple[str, str, str, str]],
@@ -102,7 +102,7 @@ class NERAugmentationPipeline:
             return True
             
         except psycopg2.Error as e:
-            logger.error(f"Database error saving batch augmentations: {e}")
+            logger.error(f"Database error saving batch augmentations: {e} {traceback.format_exc()}")
             return False
 
     def save_augmentations(self, record_id: str, augmentations: dict) -> bool:
@@ -143,7 +143,7 @@ class NERAugmentationPipeline:
             return True
             
         except psycopg2.Error as e:
-            logger.error(f"Database error saving augmentations: {e}")
+            logger.error(f"Database error saving augmentations: {e} {traceback.format_exc()}")
             return False
     
     def process_batch(self) -> int:
@@ -176,16 +176,16 @@ class NERAugmentationPipeline:
                 #         ])
                         
                 if title or abstract :
-                    locations_title_abstract = self.extract_locations(' | '.join([title,abstract]))
+                    locations_title_abstract = self.extract_locations(' | '.join([(title or ''),(abstract or '')]))
                     if locations_title_abstract:
-                        augmentations['spatial_description'] = list({ent[0] for ent in locations_title_abstract})
+                        augmentations['spatial_description'] = ";".join(list({ent[0] for ent in locations_title_abstract if ent[0] not in [None,'']}))
 
                 # Save results
                 if self.save_augmentations(record_id, augmentations):
                     processed_count += 1
                     
             except Exception as e:
-                logger.error(f"Error processing record {record_id}: {e}")
+                logger.error(f"Error processing record {record_id}: {e} {traceback.format_exc()}")
                 continue
         
         logger.info(f"Processed {processed_count}/{len(records)} records")
@@ -222,7 +222,7 @@ def main():
             total_processed += processed
             logger.info(f"Batch {batch_index} completed. Processed: {processed}")
         except Exception as e:
-            logger.error(f"Batch {batch_index} failed with error: {e}")
+            logger.error(f"Batch {batch_index} failed with error: {e} {traceback.format_exc()}")
             processed = -1
 
         if processed == 0:
