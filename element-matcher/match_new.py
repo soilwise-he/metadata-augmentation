@@ -11,7 +11,7 @@ import sys
 
 sys.path.append('utils')
 
-from database import dbQuery, insertSQL
+from database import dbQuery, insertSQL, insertBulkSQL
 
 from dotenv import load_dotenv
 
@@ -46,86 +46,6 @@ def csv2mapping(csv_file):
     return mapping
 
 
-def match_elements():
-    start_time = time.time()
-
-    load_dotenv()
-    
-    # find the records that contain keywords
-    logging.info("Querying records from the database table")
-
-    sql = '''
-    SELECT i.identifier,i.hash,i.uri,i.turtle,sources.turtle_prefix 
-    FROM harvest.items i LEFT JOIN harvest.sources ON i.source = sources.name::text
-    WHERE i.insert_date = (( SELECT max(t.insert_date) AS max FROM harvest.items t WHERE t.identifier = i.identifier));
-    '''
-    result_items = turple2dict(dbQuery(sql, hasoutput=True), ['identifier', 'hash', 'uri', 'turtle', 'prefix'] )
-
-    logging.info(f"Query completed, find {len(result_items)} records")
-    
-    logging.info(f"Query execution: {time.time() - start_time:.2f} seconds")
-    
-    logging.info("Quering elements from turtles")
-
-    start_time = time.time()
-
-    for item in result_items:
-        item['type'] = get_element(item)
-
-    logging.info(f"Turtle query: {(time.time() - start_time)/60:.2f} minutes")
-        
-    logging.info("Matching elements and inserting to the augmentation table")
-    # get mapping from csv
-    start_time = time.time()
-
-    m_type = csv2mapping('element-matcher/mapping/type.csv')
-
-    dbQuery('TRUNCATE table harvest.augmentation', hasoutput=False)
-    
-    # match
-    for item in result_items:
-        if item['type'] is None:
-            continue
-        source_type = item['type']
-        target_type = m_type.get(source_type, 'no match')
-        if target_type != 'no match':
-            item['type'] = target_type
-        else:
-            logging.info(f"Type {source_type} not found in the mapping file")
-            item['type'] = None
-        insertSQL('harvest.augmentation', ['identifier', 'type'], [item['identifier'], item['type']] )
-    
-    logging.info(f"Inserting execution: {(time.time() - start_time)/60:.2f} minutes")
-    
-    return
-
-# def match_types(result_items):
-#     """
-    
-    
-    
-#     """
-#     # get mapping from csv
-#     m_type = csv2mapping('element-matcher/mapping/type.csv')
-#     target_type_list = list(set(i for i in m_type.values() if i is not None))
-
-#     missing_types = []
-#     res_type = []
-#     for item in result_items:
-#         if item['type'] is None:
-#             continue
-#         source_type = item['type']
-#         target_type = m_type.get(source_type, 'no match')
-#         if target_type != 'no match': # find a match
-#             item['type'] = target_type
-#         elif source_type in target_type_list: # already transformed
-#             item['type'] = source_type 
-#         elif source_type not in missing_types: # can't find a match, log once
-#             logging.info(f"Type {source_type} from the record {item['identifier']} not found in the mapping file")
-#             missing_types.append(source_type)
-#             item['type'] = None
-#         else:
-#             item['type'] = None
 
 def match_types(result_items, mapping_file, process_time):
     """
@@ -186,6 +106,62 @@ def match_types(result_items, mapping_file, process_time):
         logging.info(f"Found {len(missing_types)} unmapped type values: {sorted(missing_types)}")
     
     return res_type
+
+
+def match_langs(result_items, mapping_file, process_time):
+    """
+    Match element languages using CSV mapping and prepare data for database insert.
+    
+    Args:
+        result_items: List of dicts with 'identifier' and 'lang' keys
+        mapping_file: Path of the mapping csv file
+        process_time: Time of processing
+        
+    Returns:
+        List of tuples ready for insert: (identifier, mapped_lang, element_type, process)
+    """
+    # Load mapping from CSV
+    m_lang = csv2mapping(mapping_file)
+    
+    # Initialize output and tracking
+    res_lang = []
+    missing_langs = set()  # Use set instead of list for O(1) lookup
+
+    process_datetime = datetime.datetime.fromtimestamp(process_time, tz=datetime.timezone.utc)
+    
+    for item in result_items:
+        # Case 1: lang is None or empty string
+        if item['lang'] is None or item['lang'] == '':
+            target_lang = 'UNKNOWN'
+        else:    
+            source_lang = item['lang']
+            target_lang = m_lang.get(source_lang, 'no match')
+        
+        if target_lang != 'no match':
+            # Case 2: Found a match
+            final_lang = target_lang
+        else:
+            # Case 4: No match found, skip it
+            if source_lang not in missing_langs:
+                logging.info(f"Language '{source_lang}' from record '{item['identifier']}' not found in mapping file")
+                missing_langs.add(source_lang)
+            final_lang = None
+        
+        # Only add successfully mapped items to output
+        if final_lang is not None:
+            res_lang.append((
+                item['identifier'],
+                'language',
+                final_lang,
+                'element-matcher',
+                process_datetime
+            ))
+
+    if missing_langs:
+        logging.info(f"Found {len(missing_langs)} unmapped language values: {sorted(missing_langs)}")
+    
+    
+    return res_lang
         
 
 def match_elements_precords():
@@ -202,13 +178,12 @@ def match_elements_precords():
     logging.info("Querying records from the database table")
 
     sql = '''
-    SELECT r.identifier, r.type, r.license from metadata.records r
+    SELECT r.identifier, r.type, r.license, r.language from metadata.records r
     where r.identifier not in
     (select record_id from metadata.augments
     where process ilike 'element-matcher');
     '''
-    result_items = turple2dict(dbQuery(sql, hasoutput=True), ['identifier', 'type', 'license'] ) # Currently include here type and license
-
+    result_items = turple2dict(dbQuery(sql, hasoutput=True), ['identifier', 'type', 'license', 'lang'] ) # Currently include here type and license
     # Deplicate (temperory solution)
     seen_identifiers = set()
     deduplicated_items = []
@@ -241,22 +216,33 @@ def match_elements_precords():
 
     logging.info('Inserting type result into the aguments table')
 
-
-    for row in result_type:
-        # add the insertSql function here to insert values
-        insertSQL('metadata.augments', ['record_id', 'property', 'value', 'process', 'date'], row)
+    insertBulkSQL('metadata.augments',['record_id', 'property', 'value', 'process', 'date'], result_type )
 
     logging.info(f"Insert type completed, {len(result_type)} rows inserted")
 
-    logging.info(f"Insert type execution: {(time.time() - start_time)/60:.2f} minutes")
+    logging.info(f"Insert type execution: {time.time() - start_time:.2f} seconds")
     start_time = time.time()
 
-    # later to add other EM, license, ...
+    # ---------------------Element: language------------------------------
+
+    logging.info('Matching language')
+    result_lang = match_langs(result_items, 'element-matcher/mapping/lang.csv', start_time)
+    
+    logging.info(f"Matching language completed, execution: {time.time() - start_time:.2f} seconds")
+    start_time = time.time()
+
+    logging.info('Inserting language result into the aguments table')
+
+    insertBulkSQL('metadata.augments',['record_id', 'property', 'value', 'process', 'date'], result_lang )
+
+    logging.info(f"Insert language completed, {len(result_lang)} rows inserted")
+
+    logging.info(f"Insert language execution: {time.time() - start_time:.2f} seconds")
+    start_time = time.time()
 
     return
     
     # match
-    match_types(result_items, m_type, target_type_list)
     
     logging.info(f"Inserting type execution: {(time.time() - start_time)/60:.2f} minutes")
 

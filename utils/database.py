@@ -76,15 +76,10 @@ def insertBulkSQL(table, fields, values_list):
     Insert multiple rows into a table efficiently using batch insert.
     
     Args:
-        table: Table name (e.g., 'metadata.subjects')
-        fields: List of field names (e.g., ['identifier', 'name'])
+        table: Table name 
+        fields: List of field names 
         values_list: List of tuples/lists containing values for each row
-                    (e.g., [(1, 'John'), (2, 'Jane')])
     
-    Example:
-        insertBulkSQL('metadata.subjects', 
-                      ['identifier', 'name'], 
-                      [(1, 'John'), (2, 'Jane'), (3, 'Bob')])
     """
     if not values_list:
         return  # Nothing to insert
@@ -98,7 +93,7 @@ def insertBulkSQL(table, fields, values_list):
             execute_values(cur, sql, values_list)
             # commit the changes to the database
             dbconn.commit()
-            print(f"Successfully inserted {len(values_list)} rows into {table}")
+
         except Exception as e:
             print(f"Error: {str(e)}")
             dbconn.rollback()
