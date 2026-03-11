@@ -168,7 +168,11 @@ def batch_process(interval):
 
     # the query filter out subjects that have been processed
     sql = '''
-    SELECT id, uri, label FROM metadata.subjects
+    SELECT id, uri, label FROM metadata.subjects s
+    WHERE NOT EXISTS (
+    SELECT 1 FROM metadata.keyword_match km 
+    WHERE km.subject_id = s.id
+    )
     '''
     result_items = turple2dict(dbQuery(sql, hasoutput=True))
 
@@ -208,8 +212,6 @@ def batch_process(interval):
                   matched_data_tuples)
 
     logging.info(f"Database insert completed, execution: {time.time() - start_time:.4f} seconds")
-
-
 
 
 def main(argv):
