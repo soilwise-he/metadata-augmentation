@@ -114,38 +114,45 @@ class NERAugmentationPipeline:
     def save_augmentations(self, record_id: str, augmentations: dict) -> bool:
         """Save augmentation results to database"""
         try:
-            conn = dbInit()
-            cur = conn.cursor()
+
+            # TODO: undo hiding after testing
+            # conn = dbInit()
+            # cur = conn.cursor()
             
             # Insert augmentations
-            augment_rows = [
-                (record_id, property_name, value, self.process_name)
-                for property_name, value in augmentations.items()
-                if value
-            ]
+            # augment_rows = [
+            #     (record_id, property_name, value, self.process_name)
+            #     for property_name, value in augmentations.items()
+            #     if value
+            # ]
+
+            #TODO: printstatement for debugging. DEL later
+            for property_name, value in augmentations.items():
+                if value:
+                    print(record_id, property_name, value, self.process_name)
+            # TODO: undo hiding after testing
+            # if augment_rows:
+            #     execute_values(
+            #         cur,
+            #         """INSERT INTO metadata.augments 
+            #            (record_id, property, value, process) 
+            #            VALUES %s""",
+            #         augment_rows
+            #     )
             
-            if augment_rows:
-                execute_values(
-                    cur,
-                    """INSERT INTO metadata.augments 
-                       (record_id, property, value, process) 
-                       VALUES %s""",
-                    augment_rows
-                )
+            # # Update augment_status
+            # cur.execute(
+            #     """INSERT INTO metadata.augment_status 
+            #        (record_id, status, process) 
+            #        VALUES (%s, %s, %s)""",
+            #     (record_id, 'processed', self.process_name)
+            # )
             
-            # Update augment_status
-            cur.execute(
-                """INSERT INTO metadata.augment_status 
-                   (record_id, status, process) 
-                   VALUES (%s, %s, %s)""",
-                (record_id, 'processed', self.process_name)
-            )
+            # conn.commit()
+            # cur.close()
+            # conn.close()
             
-            conn.commit()
-            cur.close()
-            conn.close()
-            
-            logger.info(f"Saved augmentations for record: {record_id}")
+            # logger.info(f"Saved augmentations for record: {record_id}")
             return True
             
         except psycopg2.Error as e:
@@ -207,7 +214,7 @@ def main():
         'end_date',
         'project_time',
     ]
-    
+
     model_path = args.model_path or os.getenv("MODEL_PATH") or "en_core_web_sm"
 
 
