@@ -42,7 +42,7 @@ def csv2mapping(csv_file):
                 target_label = None
             else:
                 target_label = row['target_label']
-            mapping[source_label] = target_label
+            mapping[source_label.lower()] = target_label
     return mapping
 
 
@@ -61,8 +61,7 @@ def match_types(result_items, mapping_file, process_time):
     """
     # Load mapping from CSV
     m_type = csv2mapping(mapping_file)
-    target_type_list = set(i for i in m_type.values() if i is not None)  # Use set for O(1) lookup
-    
+
     # Initialize output and tracking
     res_type = []
     missing_types = set()  # Use set instead of list for O(1) lookup
@@ -70,35 +69,26 @@ def match_types(result_items, mapping_file, process_time):
     process_datetime = datetime.datetime.fromtimestamp(process_time, tz=datetime.timezone.utc)
     
     for item in result_items:
-        # Case 1: type is None
-        if item['type'] is None:
-            target_type = 'Unknown'
-        else:    
-            source_type = item['type']
-            target_type = m_type.get(source_type, 'no match')
-        
-        if target_type != 'no match':
-            # Case 2: Found a match
-            final_type = target_type
-        elif source_type in target_type_list:
-            # Case 3: Already in target format
-            final_type = source_type
-        else:
-            # Case 4: No match found, skip it
-            if source_type not in missing_types:
-                logging.info(f"Type '{source_type}' from record '{item['identifier']}' not found in mapping file")
-                missing_types.add(source_type)
+        if item['type'] is None or item['type'] == '':
             final_type = None
-        
-        # Only add successfully mapped items to output
-        if final_type is not None:
-            res_type.append((
-                item['identifier'],
-                'type',
-                final_type,
-                'element-matcher',
-                process_datetime
-            ))
+        else:
+            source_type = item['type']
+            target_type = m_type.get(source_type.lower())
+            if target_type is not None:
+                final_type = target_type
+            else:
+                if source_type not in missing_types:
+                    logging.info(f"Type '{source_type}' from record '{item['identifier']}' not found in mapping file")
+                    missing_types.add(source_type)
+                final_type = None
+
+        res_type.append((
+            item['identifier'],
+            'type',
+            final_type,
+            'element-matcher',
+            process_datetime
+        ))
     
     # Log summary statistics
     logging.info(f"Successfully mapped {len(res_type)} record types")
@@ -130,32 +120,26 @@ def match_langs(result_items, mapping_file, process_time):
     process_datetime = datetime.datetime.fromtimestamp(process_time, tz=datetime.timezone.utc)
     
     for item in result_items:
-        # Case 1: lang is None or empty string
         if item['lang'] is None or item['lang'] == '':
-            target_lang = 'UNKNOWN'
-        else:    
-            source_lang = item['lang']
-            target_lang = m_lang.get(source_lang, 'no match')
-        
-        if target_lang != 'no match':
-            # Case 2: Found a match
-            final_lang = target_lang
-        else:
-            # Case 4: No match found, skip it
-            if source_lang not in missing_langs:
-                logging.info(f"Language '{source_lang}' from record '{item['identifier']}' not found in mapping file")
-                missing_langs.add(source_lang)
             final_lang = None
-        
-        # Only add successfully mapped items to output
-        if final_lang is not None:
-            res_lang.append((
-                item['identifier'],
-                'language',
-                final_lang,
-                'element-matcher',
-                process_datetime
-            ))
+        else:
+            source_lang = item['lang']
+            target_lang = m_lang.get(source_lang.lower())
+            if target_lang is not None:
+                final_lang = target_lang
+            else:
+                if source_lang not in missing_langs:
+                    logging.info(f"Language '{source_lang}' from record '{item['identifier']}' not found in mapping file")
+                    missing_langs.add(source_lang)
+                final_lang = None
+
+        res_lang.append((
+            item['identifier'],
+            'language',
+            final_lang,
+            'element-matcher',
+            process_datetime
+        ))
 
     if missing_langs:
         logging.info(f"Found {len(missing_langs)} unmapped language values: {sorted(missing_langs)}")

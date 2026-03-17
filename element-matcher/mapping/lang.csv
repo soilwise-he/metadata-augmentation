@@ -5,6 +5,7 @@ ces/cze,cs
 cze,cs
 da,da
 dan,da
+de,de
 deu/ger,de
 dut,nl
 en,en
@@ -29,13 +30,13 @@ http://publications.europa.eu/resource/authority/language/LAV,lv
 http://publications.europa.eu/resource/authority/language/POL,pl
 http://publications.europa.eu/resource/authority/language/SPA,es
 hun,hu
-Indeterminado,UNKNOWN
+Indeterminado,
 it,it
 ita,it
 lav,lv
 lit,lt
 nor,nn
-null,UNKNOWN
+null,
 pol,pl
 por,pt
 ron/rum,ro
@@ -48,4 +49,4 @@ spa,es
 sr (cyrillic script),OTHER
 srp,OTHER
 swe,sv
-und,UNKNOWN
+und,

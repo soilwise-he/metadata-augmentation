@@ -7,6 +7,7 @@ computationalnotebook,Computational Notebook
 Conference object,Conference Proceeding
 Contribution for newspaper or weekly magazine,Text
 Data Management Plan,Output Management Plan
+Data Paper,Data Paper
 datapaper,Data Paper
 dataset,Dataset
 Doctoral thesis,Dissertation
@@ -37,4 +38,3 @@ software,Software
 text,Text
 Thesis,Dissertation
 UNKNOWN,Other
-,Unknown
