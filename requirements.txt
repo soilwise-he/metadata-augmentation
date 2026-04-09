@@ -8,3 +8,7 @@ psycopg2-binary
 rdflib
 thefuzz
 SPARQLWrapper
+yt_dlp
+spacy
+
+

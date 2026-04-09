@@ -1,5 +1,5 @@
 import spacy
-import psycopg2, traceback
+import psycopg2
 from psycopg2.extras import execute_values
 import logging
 import argparse
@@ -20,10 +20,18 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class NERAugmentationPipeline:
-    def __init__(self, model_path: str):
+    def __init__(self, model_path: str,ent_list: List[str]):
         """Initialize the augmentation pipeline"""
+
+        self.ent_list=ent_list
         self.nlp = spacy.load(model_path)
-        self.process_name = "NER-augmentation"
+        if "gliner_spacy" not in self.nlp.pipe_names:
+            self.nlp.add_pipe("gliner_spacy",
+                                config={
+                                    "gliner_model": "urchade/gliner_multi",
+                                    "labels":ent_list
+                                }, last=True)
+        self.process_name = "GliNER-augmentation"
         
     def get_unprocessed_records(self, limit: int = 100) -> List[Tuple]:
         """Query records that haven't been processed"""
@@ -50,23 +58,22 @@ class NERAugmentationPipeline:
             return records
             
         except psycopg2.Error as e:
-            logger.error(f"Database error retrieving records: {e} {traceback.format_exc()}")
+            logger.error(f"Database error retrieving records: {e}")
             return []
-    
-    def extract_locations(self, text: str) -> List[str]:
+         
+    def extract_zero_shot_ner(self, text: str) -> List[Tuple]:
         """Extract location entities from text using trained model"""
         if not text:
             return []
         
         try:
             doc = self.nlp(text)
-            locations = [(ent.text,ent.start_char, ent.end_char) for ent in doc.ents 
-                        if ent.label_ == 'Location_positive']
-            return locations
+            ner = [(ent.text,ent.start_char, ent.end_char,ent.label_) for ent in doc.ents]
+            return ner
         except Exception as e:
-            logger.error(f"Error extracting locations: {e} {traceback.format_exc()}")
+            logger.error(f"Error extracting locations: {e}")
             return []
-    
+        
     def save_batch_augmentations(self, augment_rows: List[Tuple[str, str, str, str]],
                                         status_rows: List[Tuple[str, str, str]]
                                         ) -> bool:
@@ -102,48 +109,55 @@ class NERAugmentationPipeline:
             return True
             
         except psycopg2.Error as e:
-            logger.error(f"Database error saving batch augmentations: {e} {traceback.format_exc()}")
+            logger.error(f"Database error saving batch augmentations: {e}")
             return False
 
     def save_augmentations(self, record_id: str, augmentations: dict) -> bool:
         """Save augmentation results to database"""
         try:
-            conn = dbInit()
-            cur = conn.cursor()
+
+            # TODO: undo hiding after testing
+            # conn = dbInit()
+            # cur = conn.cursor()
             
             # Insert augmentations
-            augment_rows = [
-                (record_id, property_name, value, self.process_name)
-                for property_name, value in augmentations.items()
-                if value
-            ]
+            # augment_rows = [
+            #     (record_id, property_name, value, self.process_name)
+            #     for property_name, value in augmentations.items()
+            #     if value
+            # ]
+
+            #TODO: printstatement for debugging. DEL later
+            for property_name, value in augmentations.items():
+                if value:
+                    print(record_id, property_name, value, self.process_name)
+            # TODO: undo hiding after testing
+            # if augment_rows:
+            #     execute_values(
+            #         cur,
+            #         """INSERT INTO metadata.augments 
+            #            (record_id, property, value, process) 
+            #            VALUES %s""",
+            #         augment_rows
+            #     )
             
-            if augment_rows:
-                execute_values(
-                    cur,
-                    """INSERT INTO metadata.augments 
-                       (record_id, property, value, process) 
-                       VALUES %s""",
-                    augment_rows
-                )
+            # # Update augment_status
+            # cur.execute(
+            #     """INSERT INTO metadata.augment_status 
+            #        (record_id, status, process) 
+            #        VALUES (%s, %s, %s)""",
+            #     (record_id, 'processed', self.process_name)
+            # )
             
-            # Update augment_status
-            cur.execute(
-                """INSERT INTO metadata.augment_status 
-                   (record_id, status, process) 
-                   VALUES (%s, %s, %s)""",
-                (record_id, 'processed', self.process_name)
-            )
+            # conn.commit()
+            # cur.close()
+            # conn.close()
             
-            conn.commit()
-            cur.close()
-            conn.close()
-            
-            logger.info(f"Saved augmentations for record: {record_id}")
+            # logger.info(f"Saved augmentations for record: {record_id}")
             return True
             
         except psycopg2.Error as e:
-            logger.error(f"Database error saving augmentations: {e} {traceback.format_exc()}")
+            logger.error(f"Database error saving augmentations: {e}")
             return False
     
     def process_batch(self) -> int:
@@ -155,37 +169,28 @@ class NERAugmentationPipeline:
         for record_id, title, abstract in records:
             try:
                 augmentations = {}
-                
-                # Extract from title
-
-                # if title:
-                #     locations_title = self.extract_locations(title)
-                #     if locations_title:
-                #         augmentations['title'] = json.dumps([
-                #             {'text': ent[0], 'start_char': ent[1], 'end_char': ent[2]} 
-                #             for ent in locations_title
-                #         ])
-                
-                # # Extract from abstract
-                # if abstract:
-                #     locations_abstract = self.extract_locations(abstract)
-                #     if locations_abstract:
-                #         augmentations['abstract'] = json.dumps([
-                #             {'text': ent[0], 'start_char': ent[1], 'end_char': ent[2]} 
-                #             for ent in locations_abstract
-                #         ])
                         
                 if title or abstract :
-                    locations_title_abstract = self.extract_locations(' | '.join([(title or ''),(abstract or '')]))
-                    if locations_title_abstract:
-                        augmentations['spatial_description'] = ";".join(list({ent[0] for ent in locations_title_abstract if ent[0] not in [None,'']}))
+                    GliNER_title_abstract = self.extract_zero_shot_ner(' | '.join(filter(None, [title, abstract])))
+                    if GliNER_title_abstract:
+                        labels = {ent_tuple[3] for ent_tuple in GliNER_title_abstract}
+                        for label in labels:
+                            augmemtation_keyword = f'NER_description|{label}'
+
+                            augmentations[augmemtation_keyword] = ";".join(list(
+                                                                                {
+                                                                                    ent_tuple[0]
+                                                                                    for ent_tuple in GliNER_title_abstract
+                                                                                    if ent_tuple[3] ==  label and label[0] not in (None, "")
+                                                                                }
+                                                                            ))
 
                 # Save results
                 if self.save_augmentations(record_id, augmentations):
                     processed_count += 1
                     
             except Exception as e:
-                logger.error(f"Error processing record {record_id}: {e} {traceback.format_exc()}")
+                logger.error(f"Error processing record {record_id}: {e}")
                 continue
         
         logger.info(f"Processed {processed_count}/{len(records)} records")
@@ -204,10 +209,19 @@ def main():
     
     args = parser.parse_args()
     
-    
-    model_path = args.model_path or os.getenv("MODEL_PATH") or "trained_models/20260204_output/model-best"
-    
-    pipeline = NERAugmentationPipeline(model_path)
+    ent_list = [
+        'temporal',
+        'start_date',
+        'end_date',
+        'project_time',
+    ]
+
+    model_path = args.model_path or os.getenv("MODEL_PATH") or "en_core_web_sm"
+
+
+    pipeline = NERAugmentationPipeline(model_path = model_path,
+                                       ent_list=ent_list,
+                                       )
 
     total_processed = 0
     batch_index = 1
@@ -222,7 +236,7 @@ def main():
             total_processed += processed
             logger.info(f"Batch {batch_index} completed. Processed: {processed}")
         except Exception as e:
-            logger.error(f"Batch {batch_index} failed with error: {e} {traceback.format_exc()}")
+            logger.error(f"Batch {batch_index} failed with error: {e}")
             processed = -1
 
         if processed == 0:
