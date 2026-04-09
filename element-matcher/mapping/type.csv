@@ -1,36 +1,42 @@
 source_label,target_label
-journalpaper,Journal Article
-dataset,Dataset
-http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset,Dataset
-document,Document
-datapaper,Data Paper
-service,Service
-http://inspire.ec.europa.eu/metadata-codelist/ResourceType/service,Service
-series,Dataset
-http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series,Dataset
-Best practices and tools,Best Practices
-nonGeographicDataset,Dataset
-Publications &amp; reports,Report
-journal-article,Journal Article
-Interview,Interview
-software,Software
-Conference deliverables,Conference Proceeding
-EU policy document,Policy Document
-Policy documents,Policy Document
-General articles,Journal Article
-journalarticle,Journal Article
-National policy document,Policy Document
-Science-based policy advice,Policy Document
-Policy recommendations,Policy Document
-Education &amp; Training material,Education and Training Material
-Vocational education &amp; training,Education and Training Material
-Secondary education,Education and Training Material
-Higher education,Education and Training Material
-MAP,Dataset
-project,Project
-publication,Report
-Other,Other
-other,Other
-text,Text
-Scientific,Scientific
+Article,Journal Article
+Audiovisual,Audiovisual
+Book,Book
+Collection,Collection
 computationalnotebook,Computational Notebook
+Conference object,Conference Proceeding
+Contribution for newspaper or weekly magazine,Text
+Data Management Plan,Output Management Plan
+Data Paper,Data Paper
+datapaper,Data Paper
+dataset,Dataset
+Doctoral thesis,Dissertation
+External research report,Report
+Image,Image
+InteractiveResource,Interactive Resource
+Journal,Journal
+journalarticle,Journal Article
+journalpaper,Journal Article
+journal-article,Journal Article
+Lecture,Audiovisual
+Master thesis,Dissertation
+Bachelor thesis,Dissertation
+Model,Model
+nonGeographicDataset,Dataset
+other,Other
+Other dataset type,Dataset
+Other literature type,Other
+Other ORP type,Other
+Part of book or chapter of book,Book Chapter
+Preprint,Preprint
+Presentation,Other
+Project deliverable,Project
+Report,Report
+Research,Other
+Review,Journal Article
+series,Dataset
+service,Service
+software,Software
+text,Text
+Thesis,Dissertation
+UNKNOWN,Other
