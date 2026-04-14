@@ -187,7 +187,7 @@ def batch_process(interval):
     # get defined Concepts
     start_time = time.time()
 
-    with open("./keyword-matcher_new/concepts.json", "r") as f:
+    with open("./keyword-matcher/concepts.json", "r") as f:
         cons = json.load(f)
     logging.info("concept.json file loaded")
 

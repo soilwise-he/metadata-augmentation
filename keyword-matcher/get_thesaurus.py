@@ -27,7 +27,7 @@ def searchAgro(ag_uri):
 
 def searchIso(iso_uri):
     # query the iso11074 by an iso uri, to get prelabels and altLabels
-    iso_path = "keyword-matcher_new/vocabs/ISO11074.ttl"
+    iso_path = "keyword-matcher/vocabs/ISO11074.ttl"
     sparql = f'''
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
@@ -138,7 +138,7 @@ def remove_redun_cons(concepts):
 
 def main():
     # Change below to a remote sparql query when the KG updated to triple store
-    kg_path = "./keyword-matcher_new/vocabs/SoilVoc.ttl"
+    kg_path = "./keyword-matcher/vocabs/SoilVoc.ttl"
 
     # Query for all concepts with their labels, exact matches, and close matches
     # Removed DISTINCT to allow duplicates when a concept has multiple matches
@@ -233,7 +233,7 @@ def main():
 
 
     # Save the concepts to JSON file
-    with open("./keyword-matcher_new/concepts.json", "w", encoding='utf-8') as json_file:
+    with open("./keyword-matcher/concepts.json", "w", encoding='utf-8') as json_file:
         json.dump(formatted_cons, json_file, ensure_ascii=False, indent=2) 
 
     print("concepts.json updated")
