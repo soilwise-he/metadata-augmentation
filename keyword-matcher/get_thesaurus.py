@@ -27,7 +27,7 @@ def searchAgro(ag_uri):
 
 def searchIso(iso_uri):
     # query the iso11074 by an iso uri, to get prelabels and altLabels
-    iso_path = "./keyword-matcher/ISO11074.ttl"
+    iso_path = "keyword-matcher_new/vocabs/ISO11074.ttl"
     sparql = f'''
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
@@ -138,15 +138,13 @@ def remove_redun_cons(concepts):
 
 def main():
     # Change below to a remote sparql query when the KG updated to triple store
-    kg_path = "./keyword-matcher/soil_health_KG.ttl"
+    kg_path = "./keyword-matcher_new/vocabs/SoilVoc.ttl"
 
-    # ! needs to be modified
-    # assume only 1 exact match or close match
-    # assume only 1 prefLabel
-
+    # Query for all concepts with their labels, exact matches, and close matches
+    # Removed DISTINCT to allow duplicates when a concept has multiple matches
     query = '''
     prefix skos: <http://www.w3.org/2004/02/skos/core#>
-    SELECT DISTINCT ?concept ?label ?exact_match_uri ?close_match_uri
+    SELECT ?concept ?label ?exact_match_uri ?close_match_uri
     WHERE {
         ?concept a skos:Concept;
                 skos:prefLabel ?label.
@@ -156,62 +154,87 @@ def main():
     '''    
 
     kg_concs = sparqlLocal(kg_path, query, "ttl")
-    # issue: a concept can have multiple labels
     langs = ["en", "fr", "de", "it", "es", "nl"]
 
+    # Initialize a list to hold formatted concepts
     formatted_cons = []
 
-    for c in kg_concs: # <= 1 exact match, <= 1 close match
+    # Process each item from the query result
+    for c in kg_concs:
+        concept_id = c.get('concept', '')
         
-        # initialize the concept dict
-        con_dict = {
-            "identifier": c.get('concept', ''),
-            "relevant_uris": [],  
-            "labels": {
-                "en": [c.get('label', '')] if c.get('label') else []
+        # Check if identifier already exists in the list
+        existing_concept = None
+        for con in formatted_cons:
+            if con['identifier'] == concept_id:
+                existing_concept = con
+                break
+        
+        # If identifier doesn't exist, create a new dict
+        if existing_concept is None:
+            con_dict = {
+                "identifier": concept_id,
+                "uris": [],  
+                "labels": {
+                    "en": [c.get('label', '')] if c.get('label') else []
+                }
             }
-        }
-
-        if c.get("exact_match_uri"):# if exact match exsists
-            uri = c["exact_match_uri"]
-            con_dict["relevant_uris"].append(uri)
-            if uri.startswith("http://aims.fao.org/aos/agrovoc"):
-                res_agro = searchAgro(uri)
-                if res_agro is not None:
-                    lab_dict = processLabels(res_agro, 1, langs)
-                    con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
-                    
-                
-            elif uri.startswith("https://data.geoscience.earth/ncl/ISO11074"):
-                res_iso = searchIso(uri)
-                if res_iso is not None:
-                    lab_dict = processLabels(res_iso, 2, langs)
-                    con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
-            # if uri not from agro or iso, do nothing
-
-        if c.get("close_match_uri"):# if close match exsists
-            uri = c["close_match_uri"]
-            con_dict["relevant_uris"].append(uri)
-            if uri.startswith("http://aims.fao.org/aos/agrovoc"):
-                res_agro = searchAgro(uri)
-                if res_agro is not None:
-                    lab_dict = processLabels(res_agro, 1, langs)
-                    con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
-                            
-            elif uri.startswith("https://data.geoscience.earth/ncl/ISO11074"):
-                res_iso = searchIso(uri)
-                if res_iso is not None:
-                    lab_dict = processLabels(res_iso, 2, langs)
-                    con_dict["labels"] = mergeLabels(con_dict["labels"], lab_dict)
+            formatted_cons.append(con_dict)
+            existing_concept = con_dict
+        else:
+            # If identifier exists, add label if not already present
+            label = c.get('label', '')
+            if label and label not in existing_concept["labels"].get("en", []):
+                if "en" not in existing_concept["labels"]:
+                    existing_concept["labels"]["en"] = []
+                existing_concept["labels"]["en"].append(label)
         
-        formatted_cons.append(con_dict) 
+        # Process exact match URI
+        if c.get("exact_match_uri"):
+            uri = c["exact_match_uri"]
+            # Add URI to the list if not already present
+            if uri not in existing_concept["uris"]:
+                existing_concept["uris"].append(uri)
+                
+                # Query for labels based on URI type
+                if uri.startswith("http://aims.fao.org/aos/agrovoc"):
+                    res_agro = searchAgro(uri)
+                    if res_agro is not None:
+                        lab_dict = processLabels(res_agro, 1, langs)
+                        existing_concept["labels"] = mergeLabels(existing_concept["labels"], lab_dict)
+                        
+                elif uri.startswith("https://data.geoscience.earth/ncl/ISO11074"):
+                    res_iso = searchIso(uri)
+                    if res_iso is not None:
+                        lab_dict = processLabels(res_iso, 2, langs)
+                        existing_concept["labels"] = mergeLabels(existing_concept["labels"], lab_dict)
+        
+        # Process close match URI
+        if c.get("close_match_uri"):
+            uri = c["close_match_uri"]
+            # Add URI to the list if not already present
+            if uri not in existing_concept["uris"]:
+                existing_concept["uris"].append(uri)
+                
+                # Query for labels based on URI type
+                if uri.startswith("http://aims.fao.org/aos/agrovoc"):
+                    res_agro = searchAgro(uri)
+                    if res_agro is not None:
+                        lab_dict = processLabels(res_agro, 1, langs)
+                        existing_concept["labels"] = mergeLabels(existing_concept["labels"], lab_dict)
+                        
+                elif uri.startswith("https://data.geoscience.earth/ncl/ISO11074"):
+                    res_iso = searchIso(uri)
+                    if res_iso is not None:
+                        lab_dict = processLabels(res_iso, 2, langs)
+                        existing_concept["labels"] = mergeLabels(existing_concept["labels"], lab_dict)
 
     print(f"Total concepts: {len(formatted_cons)}")
 
-    concepts_f = remove_redun_cons(formatted_cons)
 
-    with open("./keyword-matcher/concepts.json", "w", encoding='utf-8') as json_file:
-        json.dump(concepts_f, json_file, ensure_ascii=False, indent=2) 
+    # Save the concepts to JSON file
+    with open("./keyword-matcher_new/concepts.json", "w", encoding='utf-8') as json_file:
+        json.dump(formatted_cons, json_file, ensure_ascii=False, indent=2) 
 
     print("concepts.json updated")
 
