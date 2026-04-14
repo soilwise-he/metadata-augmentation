@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "van Genuchten"
+  given-names: "Paul"
+  email: "paul.vangenuchten@wur.nl"
+  affiliation: "ISRIC World Soil Information"
+  orcid: "https://orcid.org/0000-0002-4789-174X"
+- family-names: "Vercruyssen"
+  given-names: "Max"
+  email: "max.vercruyssen@Vlaanderen.be"
+  affiliation: "Departement Omgeving"
+- given-names: "Vassilis"
+  family-names: "Gkoles"
+  email: "v_gkoles@neuropublic.gr"
+  affiliation: "Neuropublic S.A."
+- family-names: "Li"
+  given-names: "Jiarong"
+  email: "jiarong.li@wur.nl"
+  affiliation: "Wageningen University & Research"
+title: "Metadata-augmentation"
+version: 0.3.0
+date-released: 2026-04-14
+url: "https://github.com/soilwise-he/metadata-augmentation"
+license: MIT
+identifiers:
+  - type: other
+    value: "101112838"
+    description: "EU Horizon grant agreement number"
+  - type: other
+    name: "Departement Omgeving"
+    value: "https://ror.org/0558ewf28"
+references:
+  - type: grant
+    title: "SoilWise — Enabling Soil Data and Knowledge for Informed Decision-Making"
+  - name: "European Commission"
+    number: "101112838"
+    url: "https://doi.org/10.3030/101112838"
