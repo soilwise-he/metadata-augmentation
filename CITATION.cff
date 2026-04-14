@@ -36,3 +36,23 @@ references:
   - name: "European Commission"
     number: "101112838"
     url: "https://doi.org/10.3030/101112838"
+keywords:
+  - "soil data"
+  - SoilWise
+  - "Metadata Catalogue"
+  - "soil"
+  - "Augmentation"
+  - EU
+  - "Horizon Europe"
+  - "NER"
+  - "spatial augementation"
+  - AI
+  - ML
+  - "keyword matcher"
+  - "element matcher"
+  - "link liveliness assessment"
+  - "keyword finder"
+  - "spatial scope"
+  - "Translation"
+
+
