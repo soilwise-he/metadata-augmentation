@@ -10,5 +10,8 @@ thefuzz
 SPARQLWrapper
 yt_dlp
 spacy
-
+beautifulsoup4
+asyncio
+aiohttp
+asyncpg
 
