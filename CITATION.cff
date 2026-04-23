@@ -17,7 +17,8 @@ authors:
 - family-names: "Li"
   given-names: "Jiarong"
   email: "jiarong.li@wur.nl"
-  affiliation: "Wageningen University & Research"
+  affiliation: "ISRIC World Soil Information"
+  orcid: "https://orcid.org/0009-0002-6433-9217"
 title: "Metadata-augmentation"
 version: 0.3.0
 date-released: 2026-04-14
