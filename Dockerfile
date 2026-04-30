@@ -1,11 +1,9 @@
-
-FROM python:3.12-slim-trixie
+FROM python:3.13-slim-trixie
 LABEL maintainer="genuchten@yahoo.com"
 
 RUN apt-get update && apt-get install --yes \
         ca-certificates libexpat1 \
     && rm -rf /var/lib/apt/lists/*
-
 
 ENV POSTGRES_HOST=host.docker.internal
 ENV POSTGRES_PORT=5432
@@ -25,3 +23,4 @@ RUN pip install -U pip && \
 COPY . .
 
 ENTRYPOINT [ "" ]
+
