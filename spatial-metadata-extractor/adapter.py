@@ -304,12 +304,17 @@ class ZenodoAdapter(SourceAdapter):
         zenodo_id = str(deposit.get("id", "unknown"))
         doi       = deposit.get("doi", "")
         title     = deposit.get("metadata", {}).get("title", "")
-        keywords  = deposit.get("metadata", {}).get("keywords", [])
         files     = deposit.get("files", [])
 
-        if not files:
-            logger.debug(f"[Zenodo] Deposit {zenodo_id} has no files — skipped")
-            return
+        # Build deposit-level file list summary
+        file_summary = [
+            {
+                "name":     f.get("key", ""),
+                "mimetype": f.get("type") or f.get("mimetype"),
+                "size":     f.get("size"),
+            }
+            for f in files
+        ]
 
         for file_entry in files:
             url = (
@@ -325,13 +330,12 @@ class ZenodoAdapter(SourceAdapter):
                 mediatype=file_entry.get("type") or None,
                 skip_link_check=True,
                 extra={
-                    "zenodo_id": zenodo_id,
-                    "doi":       doi,
-                    "title":     title,
-                    "keywords":  keywords,
-                    "filename":  file_entry.get("key", ""),
-                    "filesize":  file_entry.get("size"),
-                    "checksum":  file_entry.get("checksum"),
+                    "zenodo_id":    zenodo_id,
+                    "doi":          doi,
+                    "title":        title,
+                    "filename":     file_entry.get("key", ""),
+                    "filesize":     file_entry.get("size"),
+                    "deposit_files": file_summary,  # ← all files in the deposit
                 },
             )
 

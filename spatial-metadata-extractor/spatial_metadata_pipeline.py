@@ -58,21 +58,26 @@ def insert_augment_status(conn, record_id: str, status: str, process: str = 'spa
 def write_metadata_to_db(conn, record_id: str, metadata: dict, status: str = 'success'):
     try:
         if metadata:
-            for key, value in metadata.items():
-                if value is not None:
-                    insert_augment_record(conn, record_id, key,
-                        json.dumps(value) if isinstance(value, (dict, list)) else str(value))
+            with conn.cursor() as cur:
+                cur.execute(
+                    """INSERT INTO metadata.augments (record_id, metadata, process, date)
+                       VALUES (%s, %s, 'spatial-extractor', now())
+                       ON CONFLICT (record_id, process) DO UPDATE 
+                       SET metadata = EXCLUDED.metadata, date = now()""",
+                    (record_id, json.dumps(metadata))
+                )
         insert_augment_status(conn, record_id, status)
+        conn.commit()
         return True
     except Exception as e:
-        conn.rollback()   # <-- critical: reset aborted transaction
+        conn.rollback()
         print(f"Error writing to database: {e}")
         try:
             insert_augment_status(conn, record_id, f"error: {str(e)}")
         except Exception:
             conn.rollback()
         return False
-
+    
 async def check_url_validity(url: str, identifier: str = None, lname: str = None) -> dict:
     """Check if URL is valid using link checker"""
     async with AsyncURLChecker(timeout=10) as checker:
