@@ -3,6 +3,204 @@
 Incidentally metadata records are marginally populated. This component aims to enrich poor metadata records from their context.
 The processes runs at intervals on newly acquired records.
 
+## Relational Data Model
+
+```mermaid
+erDiagram
+
+    RECORDS {
+        TEXT identifier PK
+        TEXT source PK
+        TEXT md_lang
+        TIMESTAMP md_date
+        TIMESTAMP harvest_date
+        TEXT title
+        TEXT abstract
+        TEXT language
+        TEXT edition
+        TEXT format
+        TEXT type
+        TIMESTAMP revisiondate
+        TIMESTAMP creationdate
+        TIMESTAMP publicationdate
+        TIMESTAMP embargodate
+        TEXT resolution
+        TEXT denominator
+        TEXT accessconstraints
+        TEXT license
+        TEXT rights
+        TEXT lineage
+        TEXT spatial
+        TEXT spatial_desc
+        TEXT datamodel
+        TIMESTAMP temporal_start
+        TIMESTAMP temporal_end
+        TEXT thumbnail
+        TEXT md5_hash UK
+        TEXT raw_mcf
+    }
+
+    RECORDS_FAILED {
+        TEXT identifier
+        TEXT hash PK
+        TEXT error
+        TIMESTAMP date
+    }
+
+    RECORDS_PROCESSED {
+        TEXT identifier
+        TEXT hash PK
+        TEXT source
+        TEXT final_id
+        TEXT mode
+        TIMESTAMP date
+    }
+
+    PERSON {
+        INT id PK
+        TEXT name
+        TEXT alias
+        TEXT email
+        TEXT orcid
+    }
+
+    ORGANIZATION {
+        INT id PK
+        TEXT name
+        TEXT alias
+        TEXT phone
+        TEXT ror
+        TEXT address
+        TEXT postalcode
+        TEXT city
+        TEXT administrativearea
+        TEXT country
+        TEXT url
+    }
+
+    CONTACT_IN_RECORD {
+        INT id PK
+        INT fk_organization FK
+        INT fk_person FK
+        TEXT record_id
+        TEXT role
+        TEXT position
+    }
+
+    SUBJECTS {
+        INT id PK
+        TEXT uri
+        TEXT label
+        TEXT thesaurus_name
+        TEXT thesaurus_url
+    }
+
+    RECORD_SUBJECT {
+        INT id PK
+        TEXT record_id
+        INT subject_id FK
+    }
+
+    ATTRIBUTES {
+        INT id PK
+        TEXT record_id
+        TEXT name
+        TEXT title
+        TEXT url
+        TEXT units
+        TEXT type
+    }
+
+    RELATIONS {
+        INT id PK
+        TEXT record_id
+        TEXT identifier
+        TEXT scheme
+        TEXT type
+    }
+
+    SOURCES {
+        TEXT name PK
+        TEXT description
+    }
+
+    RECORD_SOURCES {
+        TEXT record_id PK
+        TEXT fk_source PK,FK
+    }
+
+    RECORD_IN_PROJECT {
+        INT id PK
+        TEXT record_id UK
+        TEXT project
+    }
+
+    ALTERNATE_IDENTIFIERS {
+        TEXT record_id PK
+        TEXT alt_identifier PK
+        TEXT scheme
+    }
+
+    DISTRIBUTIONS {
+        INT id PK
+        TEXT record_id
+        TEXT name
+        TEXT format
+        TEXT url
+        TEXT description
+    }
+
+    AUGMENTS {
+        TEXT record_id
+        TEXT property
+        TEXT value
+        TEXT process
+        TIMESTAMPTZ date
+    }
+
+    AUGMENT_STATUS {
+        TEXT record_id
+        TEXT status
+        TEXT process
+        TIMESTAMPTZ date
+    }
+
+    EMPLOYMENT {
+        INT person_id PK,FK
+        INT organization_id PK,FK
+        TEXT role
+        TIMESTAMP start_date
+        TIMESTAMP end_date
+        TEXT source
+        TIMESTAMP date
+    }
+
+    %% Relationships
+
+    ORGANIZATION ||--o{ CONTACT_IN_RECORD : "referenced by"
+    PERSON ||--o{ CONTACT_IN_RECORD : "referenced by"
+
+    SUBJECTS ||--o{ RECORD_SUBJECT : "linked to"
+
+    SOURCES ||--o{ RECORD_SOURCES : "used in"
+
+    PERSON ||--o{ EMPLOYMENT : "employed at"
+    ORGANIZATION ||--o{ EMPLOYMENT : "employs"
+
+    %% Logical relationships (not enforced with FK in SQL)
+
+    RECORDS ||--o{ CONTACT_IN_RECORD : "has contacts"
+    RECORDS ||--o{ RECORD_SUBJECT : "has subjects"
+    RECORDS ||--o{ ATTRIBUTES : "has attributes"
+    RECORDS ||--o{ RELATIONS : "has relations"
+    RECORDS ||--o{ RECORD_SOURCES : "has sources"
+    RECORDS ||--|| RECORD_IN_PROJECT : "belongs to project"
+    RECORDS ||--o{ ALTERNATE_IDENTIFIERS : "has alternate IDs"
+    RECORDS ||--o{ DISTRIBUTIONS : "has distributions"
+    RECORDS ||--o{ AUGMENTS : "has augments"
+    RECORDS ||--o{ AUGMENT_STATUS : "has augment status"
+```
+
 ## Features
 - Translation module
 - keyword matcher
