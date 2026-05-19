@@ -8,6 +8,10 @@ The processes runs at intervals on newly acquired records.
 ```mermaid
 erDiagram
 
+    classDef augmentation fill:#d2691e,stroke:#ebe4d8,stroke-width:2px
+    classDef augmentation_4_0 fill:#1ed22de8,stroke:#c9ddcbe8,stroke-width:2px
+    classDef matview fill:#4a90d9,stroke:#2c5f8a,stroke-width:2px,stroke-dasharray:5 5
+
     RECORDS {
         TEXT identifier PK
         TEXT source PK
@@ -175,6 +179,77 @@ erDiagram
         TIMESTAMP date
     }
 
+    %% new tables
+    AUGMENTS_EVENTS {
+        TEXT event_id PK
+        TEXT records_id FK
+        TEXT agent_id FK
+
+        TEXT process
+        TEXT status
+        TIMESTAMPTZ started_at
+        TIMESTAMPTZ ended_at
+
+        JSONB parameters
+
+    }
+
+    AGENT{
+        TEXT agent_id PK
+        TEXT agent_type
+        TEXT name
+        TEXT version
+        JSONB parameters
+    }
+
+    %% types for old_value and new_value. Maybe miscalenious?
+    AUGMENTS_ASSERTION {
+        TEXT assertion_ID PK
+        TEXT event_id FK
+        TEXT record_id FK
+
+        TEXT field_path
+        FLOAT confidence
+        
+        JSONB old_value
+        JSONB new_value
+        TIMESTAMPTZ created_at
+    }
+
+    REVIEW {
+        TEXT review_id PK
+        TEXT assertion_ID FK
+        TEXT agent_id FK
+
+        TEXT decision
+        TIMESTAMPTZ created_at
+    }
+
+    %% [?] maybe selection_logic_id just link to fixed/versioned github script
+    SELECTION_RESULT {
+        TEXT selection_id PK
+        TEXT selected_assertion_id FK
+
+        TEXT selection_logic_id 
+        TEXT field_path
+        FLOAT confidence
+
+        TIMESTAMPTZ selected_at
+        TIMESTAMPTZ created_at
+    }
+
+    %% [MV] materialized view - denormalises selected augmentation values onto records
+    MV_RECORDS_AUGMENTED {
+        TEXT identifier
+        TEXT METADATA_FIELDS
+    }
+
+    class AUGMENTS,AUGMENT_STATUS augmentation
+    class AUGMENTS_EVENTS,AUGMENTS_ASSERTION,AGENT,REVIEW,SELECTION_RESULT augmentation_4_0
+    class MV_RECORDS_AUGMENTED matview
+
+
+
     %% Relationships
 
     ORGANIZATION ||--o{ CONTACT_IN_RECORD : "referenced by"
@@ -199,7 +274,25 @@ erDiagram
     RECORDS ||--o{ DISTRIBUTIONS : "has distributions"
     RECORDS ||--o{ AUGMENTS : "has augments"
     RECORDS ||--o{ AUGMENT_STATUS : "has augment status"
+
+    %% New relationships
+
+    RECORDS ||--o{ AUGMENTS_EVENTS : "has augments"
+    AUGMENTS_EVENTS ||--o{ AUGMENTS_ASSERTION : "has assertions"
+    AUGMENTS_ASSERTION ||--o{ REVIEW : "has reviews"
+    SELECTION_RESULT ||--o{ AUGMENTS_ASSERTION : "has selection results"
+    AGENT ||--o{ AUGMENTS_EVENTS : "processed_by"
+    AGENT ||--o{ REVIEW : "processed_by"
+
+    AUGMENTS }o..|| AUGMENTS_ASSERTION: "will be replaced by"
+    AUGMENT_STATUS }o..|| AUGMENTS_EVENTS: "will be replaced by"
+
+    RECORDS ||--o{ MV_RECORDS_AUGMENTED : "source"
+    SELECTION_RESULT ||--o{ MV_RECORDS_AUGMENTED : "selected into"
 ```
+### Detail of additional tables
+![detail of augmentation tables](docs/ERD.png)
+
 
 ## Features
 - Translation module
