@@ -5,3 +5,4 @@ keyword-matcher/cache_trankit_models*
 __pycache__/
 *.venv
 **/datadump/
+**/.ipynb_checkpoints/*
