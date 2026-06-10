@@ -1,26 +1,46 @@
 """Classify WGS 84 bounding boxes by their overlap with European countries.
 
-Each bbox is labelled as "single_country_eu", "multi_country_eu", or
-"non_european".  Area calculations use EPSG:3035 (equal-area).
+Each bbox is labelled as ``single_country_eu``, ``multi_country_eu``, or
+``non_european``.  Area calculations use EPSG:3035 (equal-area).
 
-Classification uses two complementary dominance signals:
+Algorithm
+---------
+1. **Parse** the bbox string into (west, south, east, north) coordinates.
+2. **Pre-filter** — reject bboxes that are unlikely to cover Europe.
+   A bbox passes if its centroid falls within a coarse European bounding
+   box **or** if it covers at least ``_EUROPEAN_OVERLAP_THRESHOLD``
+   (15 %) of the European reference bbox.  The latter catches large
+   bboxes (e.g. worldwide) whose centroid drifts outside Europe, 
+   but avoids selecting bboxes that merely clip the edge of Europe 
+   (e.g. a bbox around the African continent).
+   Rejected bboxes are labelled ``non_european``.
+3. **Intersect** the reprojected bbox polygon with every European country
+   geometry.  If no country is hit, label ``non_european``.
+4. **Single-country shortcut** — exactly one intersection →
+   ``single_country_eu``.
+5. **Multi-country classification** — apply the following rules in order
+   (first match wins):
 
-**Raw dominance ratio** (ratio of largest / second-largest intersection area).
-This catches cases where one country dominates the bbox by sheer area — e.g. a bbox
-covering Germany plus small parts of its neighbours.  Large countries tend
-to have high raw ratios even when the bbox also covers parts of others.
+   a. **Raw dominance ratio** (largest intersection area / runner-up area).
+      If the ratio exceeds *cutoff* (default 2.0), the bbox is dominated
+      by one country → ``single_country_eu``.
 
-**Area-normalised dominance ratio** (calculate intersection_area / total_country_area,
-then ratio of the top coverage fraction vs the runner-up). This catches cases where a
-small country is entirely inside the bbox but doesn't dominate by raw
-area because a larger neighbour contributes more absolute surface.  For
-example, a Portugal bbox covers 100 % of Portugal but only 18 % of Spain;
-the raw ratio is only 1.05 (Spain covers more area in the bbox) 
-but the coverage ratio is 5.4 (Portugal is far more completely covered).
+      *Russia override*: even when the raw ratio is high, if Russia is
+      present alongside more than *russia_country_threshold* (default 10)
+      other countries, override to ``multi_country_eu``.  Russia's massive
+      area would otherwise inflate the ratio for pan-European bboxes.
 
-The two rules fire in sequence: raw ratio first (catches most cases),
-then coverage ratio as a fallback for the ambiguous cases that the raw ratio
-cannot resolve.
+   b. **Coverage dominance ratio** (fallback).  For each country, compute
+      *coverage fraction* = intersection_area / total_country_area, then
+      take the ratio of the top fraction to the runner-up.  If this
+      *coverage ratio* exceeds ``_COVERAGE_RATIO_THRESHOLD`` **and** the top
+      country's raw share of total intersection area exceeds
+      ``_COVERAGE_RAW_SHARE_MIN``, label ``single_country_eu``.  This catches
+      small countries that are fully inside the bbox but don't dominate by
+      raw area — e.g. a Portugal bbox covers 100 % of Portugal but only
+      18 % of Spain; raw ratio is 1.05 but coverage ratio is 5.4.
+
+   c. **Default** → ``multi_country_eu``.
 """
 
 import ast
@@ -31,6 +51,9 @@ from shapely.geometry import box
 EQUAL_AREA_CRS = "EPSG:3035"
 GEOJSON_PATH = "./datadump/world-administrative-boundaries.geojson"
 EUROPEAN_BBOX = (-30, 30, 60, 75)
+_COVERAGE_RATIO_THRESHOLD = 3.0
+_COVERAGE_RAW_SHARE_MIN = 0.10
+_EUROPEAN_OVERLAP_THRESHOLD = 0.15
 
 _TURKEY_OVERRIDE = "Turkey" #added to the list of European countries
 _RUSSIA_NAME = "Russian Federation" #exceptions are made for Russia as it dominates most bboxes (wrongfully classifying the bbox as single-country)
@@ -88,6 +111,24 @@ def _centroid_in_europe(west, south, east, north):
     return ew <= clon <= ee and es <= clat <= en
 
 
+def _european_overlap_fraction(west, south, east, north):
+    """Return the fraction of the European reference rectangle covered by the bbox.
+
+    Catches large bboxes (e.g. worldwide) whose centroid falls outside Europe
+    but which still cover a meaningful portion of it.
+    """
+    ew, es, ee, en = EUROPEAN_BBOX
+    overlap_w = max(west, ew)
+    overlap_s = max(south, es)
+    overlap_e = min(east, ee)
+    overlap_n = min(north, en)
+    if overlap_e <= overlap_w or overlap_n <= overlap_s:
+        return 0.0
+    overlap_area = (overlap_e - overlap_w) * (overlap_n - overlap_s)
+    eu_area = (ee - ew) * (en - es)
+    return overlap_area / eu_area
+
+
 def _compute_country_areas(european_gdf):
     """Return a dict mapping country name to total area in EPSG:3035."""
     return {row["name"]: row.geometry.area for _, row in european_gdf.iterrows()}
@@ -100,53 +141,51 @@ def _classify_intersections(intersections, country_areas, cutoff,
     Rules are evaluated in order; the first match wins:
 
     1. **Raw dominance**: if ``largest_area / runner_up_area > cutoff``
-       the bbox represents one (european) country.  An exception is
-       made when Russia is present alongside many countries (see rule 2).
-    2. **Russia override**: if Russia is among the
-       intersecting countries and more than *russia_country_threshold*
-       countries are present, override to ``multi_country_eu``.  This
-       prevents Russia's massive area from inflating the raw ratio for
-       pan-European bboxes that span 11–43 countries.
-    3. **Coverage-dominance fallback**: compute *coverage fraction*
+       the bbox is dominated by one country → ``single_country_eu``.
+
+       *Russia override*: even when the raw ratio exceeds the cutoff,
+       if Russia is present alongside more than *russia_country_threshold*
+       countries, override to ``multi_country_eu``.  Russia's massive area
+       would otherwise inflate the ratio for pan-European bboxes.
+    2. **Coverage-dominance fallback**: compute *coverage fraction*
        (``intersection_area / total_country_area``) for each country, then
        take the ratio of the highest coverage to the second highest.  If this
-       *coverage ratio* exceeds 3.0 **and** the top country's raw share
-       of total intersection area exceeds 0.10, classify as
-       ``single_country_eu``.  The latter catches small-country spillover where
-       the country of interest is fully inside the bbox but doesn't
-       dominate by raw area.
-    4. **Default**: ``multi_country_eu``.
+       *coverage ratio* exceeds ``_COVERAGE_RATIO_THRESHOLD`` **and** the top
+       country's raw share of total intersection area exceeds
+       ``_COVERAGE_RAW_SHARE_MIN``, classify as ``single_country_eu``.
+       This catches small-country spillover where the country of interest
+       is fully inside the bbox but doesn't dominate by raw area.
+    3. **Default**: ``multi_country_eu``.
+
+    Args:
+        intersections: List of ``(country_name, area)`` tuples.
+        country_areas: Dict mapping country name to total area in EPSG:3035.
+        cutoff: Raw dominance ratio threshold.
+        russia_country_threshold: Country count threshold for Russia override.
     """
     intersections.sort(key=lambda x: x[1], reverse=True)
     total_area = sum(a for _, a in intersections)
-    countries = {name: round(area / total_area, 4) for name, area in intersections}
-    country_names = set(countries)
+    country_shares = {name: round(area / total_area, 4) for name, area in intersections}
+    country_names = set(country_shares)
 
     raw_ratio = intersections[0][1] / intersections[1][1]
 
-    result_base = {
-        "countries": countries,
+    base_result = {
+        "countries": country_shares,
         "ratio": round(number=raw_ratio, ndigits=4),
     }
 
     if raw_ratio > cutoff:
-        if (
+        is_russia_override = (
             _RUSSIA_NAME in country_names
             and len(intersections) > russia_country_threshold
-        ):
-            return {
-                **result_base,
-                "classification": "multi_country_eu",
-                "coverage_ratio": None,
-                "coverage_top_country": None,
-            }
-        else: 
-            return {
-                **result_base,
-                "classification": "single_country_eu",
-                "coverage_ratio": None,
-                "coverage_top_country": None,
-            }
+        )
+        return {
+            **base_result,
+            "classification": "multi_country_eu" if is_russia_override else "single_country_eu",
+            "coverage_ratio": None,
+            "coverage_top_country": None,
+        }
 
     coverages = [
         (name, raw_area, raw_area / country_areas[name])
@@ -163,16 +202,16 @@ def _classify_intersections(intersections, country_areas, cutoff,
         else None
     )
 
-    if coverage_ratio is not None and coverage_ratio > 3.0 and top_raw_share > 0.10:
+    if coverage_ratio is not None and coverage_ratio > _COVERAGE_RATIO_THRESHOLD and top_raw_share > _COVERAGE_RAW_SHARE_MIN:
         return {
-            **result_base,
+            **base_result,
             "classification": "single_country_eu",
             "coverage_ratio": round(number=coverage_ratio, ndigits=3),
             "coverage_top_country": top_name,
         }
 
     return {
-        **result_base,
+        **base_result,
         "classification": "multi_country_eu",
         "coverage_ratio": round(number=coverage_ratio, ndigits=3) if coverage_ratio is not None else None,
         "coverage_top_country": top_name,
@@ -190,7 +229,9 @@ def classify_bbox(bbox_str, european_gdf, country_areas=None, cutoff=2.0,
     Steps:
 
     1. Parse the bbox; return ``None`` if unparseable.
-    2. Skip non-European bboxes via centroid check.
+    2. Skip bboxes unlikely to cover Europe (centroid outside the European
+       reference rectangle **and** overlap with that rectangle below
+       ``_EUROPEAN_OVERLAP_THRESHOLD``).
     3. Reproject to EPSG:3035 and intersect with each country.
     4. Single-country overlap → ``"single_country_eu"``.
     5. Two or more countries → delegate to
@@ -231,7 +272,9 @@ def classify_bbox(bbox_str, european_gdf, country_areas=None, cutoff=2.0,
 
     west, south, east, north = bbox
 
-    if not _centroid_in_europe(west, south, east, north):
+    if (not _centroid_in_europe(west, south, east, north)
+            and _european_overlap_fraction(west, south, east, north)
+                < _EUROPEAN_OVERLAP_THRESHOLD):
         return {
             "classification": "non_european",
             "countries": {},
@@ -269,7 +312,6 @@ def classify_bbox(bbox_str, european_gdf, country_areas=None, cutoff=2.0,
         }
 
     if len(intersections) == 1:
-        total_area = intersections[0][1]
         return {
             "classification": "single_country_eu",
             "countries": {intersections[0][0]: 1.0},
