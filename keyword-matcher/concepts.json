@@ -102,7 +102,8 @@
     ],
     "labels": {
       "en": [
-        "antecedent soil moisture contents"
+        "antecedent soil moisture contents",
+        "antecedent soil moisture content"
       ]
     }
   },
@@ -135,7 +136,8 @@
     ],
     "labels": {
       "en": [
-        "biological features"
+        "biological features",
+        "biological feature"
       ]
     }
   },
@@ -263,7 +265,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "carbon pools"
+        "carbon pools",
+        "carbon pool"
       ]
     }
   },
@@ -285,7 +288,8 @@
     ],
     "labels": {
       "en": [
-        "carbonate contents"
+        "carbonate contents",
+        "carbonate content"
       ]
     }
   },
@@ -296,7 +300,8 @@
     ],
     "labels": {
       "en": [
-        "carbonate forms"
+        "carbonate forms",
+        "carbonate form"
       ]
     }
   },
@@ -331,7 +336,8 @@
     ],
     "labels": {
       "en": [
-        "cation sum"
+        "cation sum",
+        "cations sum"
       ]
     }
   },
@@ -482,7 +488,8 @@
     ],
     "labels": {
       "en": [
-        "coating forms"
+        "coating forms",
+        "coating form"
       ]
     }
   },
@@ -551,7 +558,8 @@
     ],
     "labels": {
       "en": [
-        "conservative solutes"
+        "conservative solutes",
+        "conservative solute"
       ]
     }
   },
@@ -606,7 +614,8 @@
     ],
     "labels": {
       "en": [
-        "critical soil organic matter contents"
+        "critical soil organic matter contents",
+        "critical soil organic matter content"
       ]
     }
   },
@@ -679,7 +688,8 @@
     ],
     "labels": {
       "en": [
-        "cultural services"
+        "cultural services",
+        "cultural service"
       ],
       "fr": [
         "service culturel"
@@ -757,6 +767,7 @@
     "labels": {
       "en": [
         "earthworms",
+        "earthworm",
         "earth worms"
       ],
       "fr": [
@@ -780,7 +791,8 @@
     ],
     "labels": {
       "en": [
-        "emissions"
+        "emissions",
+        "emission"
       ]
     }
   },
@@ -793,6 +805,7 @@
     "labels": {
       "en": [
         "environmental factors",
+        "environmental factor",
         "environmental conditions",
         "ambient conditions"
       ],
@@ -1060,7 +1073,8 @@
     ],
     "labels": {
       "en": [
-        "grasses"
+        "grasses",
+        "grass"
       ],
       "fr": [
         "graminée"
@@ -1117,7 +1131,8 @@
     ],
     "labels": {
       "en": [
-        "gypsum contents"
+        "gypsum contents",
+        "gypsum content"
       ]
     }
   },
@@ -1128,7 +1143,8 @@
     ],
     "labels": {
       "en": [
-        "gypsum forms"
+        "gypsum forms",
+        "gypsum form"
       ]
     }
   },
@@ -1161,7 +1177,8 @@
     ],
     "labels": {
       "en": [
-        "habitats"
+        "habitats",
+        "habitat"
       ],
       "fr": [
         "habitat"
@@ -1236,7 +1253,8 @@
     ],
     "labels": {
       "en": [
-        "index based on texture and cementing agents"
+        "index based on texture and cementing agents",
+        "index based on texture and cementing agent"
       ]
     }
   },
@@ -1292,7 +1310,8 @@
     ],
     "labels": {
       "en": [
-        "inputs"
+        "inputs",
+        "input"
       ],
       "fr": [
         "input agricole"
@@ -1326,7 +1345,8 @@
     ],
     "labels": {
       "en": [
-        "interaggregate pores"
+        "interaggregate pores",
+        "interaggregate pore"
       ]
     }
   },
@@ -1370,7 +1390,8 @@
     ],
     "labels": {
       "en": [
-        "interstructural pores"
+        "interstructural pores",
+        "interstructural pore"
       ]
     }
   },
@@ -1392,7 +1413,8 @@
     ],
     "labels": {
       "en": [
-        "intraaggregate pores"
+        "intraaggregate pores",
+        "intraaggregate pore"
       ]
     }
   },
@@ -1452,7 +1474,8 @@
     ],
     "labels": {
       "en": [
-        "labile solutes"
+        "labile solutes",
+        "labile solute"
       ]
     }
   },
@@ -1485,7 +1508,8 @@
     ],
     "labels": {
       "en": [
-        "land use forests"
+        "land use forests",
+        "land use forest"
       ]
     }
   },
@@ -1496,7 +1520,8 @@
     ],
     "labels": {
       "en": [
-        "land use grasses"
+        "land use grasses",
+        "land use grass"
       ]
     }
   },
@@ -1507,7 +1532,8 @@
     ],
     "labels": {
       "en": [
-        "land use shrubs"
+        "land use shrubs",
+        "land use shrub"
       ]
     }
   },
@@ -1614,7 +1640,8 @@
     ],
     "labels": {
       "en": [
-        "major land forms"
+        "major land forms",
+        "major land form"
       ]
     }
   },
@@ -1625,7 +1652,8 @@
     ],
     "labels": {
       "en": [
-        "matrix pores"
+        "matrix pores",
+        "matrix pore"
       ]
     }
   },
@@ -1685,6 +1713,7 @@
     "labels": {
       "en": [
         "microbes",
+        "microbe",
         "microorganisms",
         "micro-organisms"
       ],
@@ -1715,6 +1744,7 @@
     "labels": {
       "en": [
         "microorganisms",
+        "microorganism",
         "microbes",
         "micro-organisms"
       ],
@@ -1831,7 +1861,8 @@
     ],
     "labels": {
       "en": [
-        "mineral contents"
+        "mineral contents",
+        "mineral content"
       ]
     }
   },
@@ -1842,7 +1873,8 @@
     ],
     "labels": {
       "en": [
-        "mineral fragments"
+        "mineral fragments",
+        "mineral fragment"
       ]
     }
   },
@@ -1887,7 +1919,8 @@
     ],
     "labels": {
       "en": [
-        "mottle abundance"
+        "mottle abundance",
+        "mottles abundance"
       ]
     }
   },
@@ -1898,7 +1931,8 @@
     ],
     "labels": {
       "en": [
-        "mottle boundary classification"
+        "mottle boundary classification",
+        "mottles boundary classification"
       ]
     }
   },
@@ -1909,7 +1943,8 @@
     ],
     "labels": {
       "en": [
-        "mottle colour"
+        "mottle colour",
+        "mottles colour"
       ]
     }
   },
@@ -1920,7 +1955,8 @@
     ],
     "labels": {
       "en": [
-        "mottle contrast"
+        "mottle contrast",
+        "mottles contrast"
       ]
     }
   },
@@ -1931,7 +1967,8 @@
     ],
     "labels": {
       "en": [
-        "mottle presence"
+        "mottle presence",
+        "mottles presence"
       ]
     }
   },
@@ -1942,7 +1979,8 @@
     ],
     "labels": {
       "en": [
-        "mottle size"
+        "mottle size",
+        "mottles size"
       ]
     }
   },
@@ -2008,7 +2046,8 @@
     ],
     "labels": {
       "en": [
-        "non matrix pores"
+        "non matrix pores",
+        "non matrix pore"
       ]
     }
   },
@@ -2041,7 +2080,8 @@
     ],
     "labels": {
       "en": [
-        "nutrient dynamics"
+        "nutrient dynamics",
+        "nutrient dynamic"
       ]
     }
   },
@@ -2229,7 +2269,8 @@
     ],
     "labels": {
       "en": [
-        "plant available water contents"
+        "plant available water contents",
+        "plant available water content"
       ]
     }
   },
@@ -2285,7 +2326,8 @@
     ],
     "labels": {
       "en": [
-        "pore abundance"
+        "pore abundance",
+        "pores abundance"
       ]
     }
   },
@@ -2330,7 +2372,8 @@
     ],
     "labels": {
       "en": [
-        "provisioning services"
+        "provisioning services",
+        "provisioning service"
       ],
       "fr": [
         "services d'approvisionnement"
@@ -2380,7 +2423,8 @@
     ],
     "labels": {
       "en": [
-        "reactive solutes"
+        "reactive solutes",
+        "reactive solute"
       ]
     }
   },
@@ -2392,7 +2436,8 @@
     ],
     "labels": {
       "en": [
-        "regulating services"
+        "regulating services",
+        "regulating service"
       ],
       "fr": [
         "service de régulation"
@@ -2447,7 +2492,8 @@
     ],
     "labels": {
       "en": [
-        "rock outcrop cover"
+        "rock outcrop cover",
+        "rock outcrops cover"
       ]
     }
   },
@@ -2458,7 +2504,8 @@
     ],
     "labels": {
       "en": [
-        "rock outcrop distance"
+        "rock outcrop distance",
+        "rock outcrops distance"
       ]
     }
   },
@@ -2491,7 +2538,8 @@
     ],
     "labels": {
       "en": [
-        "root abundance"
+        "root abundance",
+        "roots abundance"
       ]
     }
   },
@@ -2514,7 +2562,8 @@
     ],
     "labels": {
       "en": [
-        "root presence"
+        "root presence",
+        "roots presence"
       ]
     }
   },
@@ -2537,7 +2586,8 @@
     ],
     "labels": {
       "en": [
-        "soil organic carbon loss"
+        "soil organic carbon loss",
+        "SOC loss"
       ]
     }
   },
@@ -2559,7 +2609,8 @@
     ],
     "labels": {
       "en": [
-        "salt contents"
+        "salt contents",
+        "salt content"
       ]
     }
   },
@@ -2800,7 +2851,8 @@
     ],
     "labels": {
       "en": [
-        "slope forms"
+        "slope forms",
+        "slope form"
       ]
     }
   },
@@ -2855,7 +2907,8 @@
     ],
     "labels": {
       "en": [
-        "slope pathways"
+        "slope pathways",
+        "slope pathway"
       ]
     }
   },
@@ -3089,7 +3142,8 @@
     ],
     "labels": {
       "en": [
-        "soil algal crusts"
+        "soil algal crusts",
+        "soil algal crust"
       ]
     }
   },
@@ -3155,7 +3209,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological functions"
+        "soil biological functions",
+        "soil biological function"
       ]
     }
   },
@@ -3210,7 +3265,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical crusts"
+        "soil chemical crusts",
+        "soil chemical crust"
       ]
     }
   },
@@ -3232,7 +3288,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical functions"
+        "soil chemical functions",
+        "soil chemical function"
       ]
     }
   },
@@ -3281,7 +3338,8 @@
     ],
     "labels": {
       "en": [
-        "soil clay contents"
+        "soil clay contents",
+        "soil clay content"
       ]
     }
   },
@@ -3522,7 +3580,8 @@
     ],
     "labels": {
       "en": [
-        "soil depositional crusts"
+        "soil depositional crusts",
+        "soil depositional crust"
       ]
     }
   },
@@ -3862,7 +3921,8 @@
     ],
     "labels": {
       "en": [
-        "soil gravel contents"
+        "soil gravel contents",
+        "soil gravel content"
       ]
     }
   },
@@ -3873,7 +3933,8 @@
     ],
     "labels": {
       "en": [
-        "soil gravimetric moisture contents"
+        "soil gravimetric moisture contents",
+        "soil gravimetric moisture content"
       ]
     }
   },
@@ -4024,7 +4085,8 @@
     ],
     "labels": {
       "en": [
-        "soil immobile water contents"
+        "soil immobile water contents",
+        "soil immobile water content"
       ]
     }
   },
@@ -4170,7 +4232,8 @@
     ],
     "labels": {
       "en": [
-        "soil microbiotic crusts"
+        "soil microbiotic crusts",
+        "soil microbiotic crust"
       ]
     }
   },
@@ -4254,7 +4317,8 @@
     ],
     "labels": {
       "en": [
-        "soil mobile water contents"
+        "soil mobile water contents",
+        "soil mobile water content"
       ]
     }
   },
@@ -4296,7 +4360,8 @@
     ],
     "labels": {
       "en": [
-        "soil moisture characteristics"
+        "soil moisture characteristics",
+        "soil moisture characteristic"
       ]
     }
   },
@@ -4368,7 +4433,8 @@
     ],
     "labels": {
       "en": [
-        "soil nitrogen loss"
+        "soil nitrogen loss",
+        "soil N loss"
       ]
     }
   },
@@ -4458,7 +4524,8 @@
     ],
     "labels": {
       "en": [
-        "soil organic matter contents"
+        "soil organic matter contents",
+        "soil organic matter content"
       ]
     }
   },
@@ -4535,7 +4602,8 @@
     ],
     "labels": {
       "en": [
-        "soil phosphorus loss"
+        "soil phosphorus loss",
+        "soil P loss"
       ]
     }
   },
@@ -4679,7 +4747,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical functions"
+        "soil physical functions",
+        "soil physical function"
       ]
     }
   },
@@ -5059,7 +5128,8 @@
     ],
     "labels": {
       "en": [
-        "soil sand contents"
+        "soil sand contents",
+        "soil sand content"
       ]
     }
   },
@@ -5103,7 +5173,8 @@
     ],
     "labels": {
       "en": [
-        "soil secondary particles"
+        "soil secondary particles",
+        "soil secondary particle"
       ]
     }
   },
@@ -5203,7 +5274,8 @@
     ],
     "labels": {
       "en": [
-        "soil silt contents"
+        "soil silt contents",
+        "soil silt content"
       ]
     }
   },
@@ -5404,7 +5476,8 @@
     ],
     "labels": {
       "en": [
-        "soil structural crusts"
+        "soil structural crusts",
+        "soil structural crust"
       ]
     }
   },
@@ -5598,7 +5671,8 @@
     ],
     "labels": {
       "en": [
-        "soil types"
+        "soil types",
+        "soil type"
       ],
       "fr": [
         "type de sol"
@@ -5643,7 +5717,8 @@
     ],
     "labels": {
       "en": [
-        "soil volumetric moisture contents"
+        "soil volumetric moisture contents",
+        "soil volumetric moisture content"
       ]
     }
   },
@@ -5728,7 +5803,8 @@
     ],
     "labels": {
       "en": [
-        "soil water characteristics"
+        "soil water characteristics",
+        "soil water characteristic"
       ],
       "fr": [
         "caractéristique hydrique du sol"
@@ -5880,7 +5956,8 @@
     ],
     "labels": {
       "en": [
-        "soil water sorption properties"
+        "soil water sorption properties",
+        "soil water sorption property"
       ]
     }
   },
@@ -5946,7 +6023,8 @@
     ],
     "labels": {
       "en": [
-        "soluble anion total"
+        "soluble anion total",
+        "soluble anions total"
       ]
     }
   },
@@ -5957,7 +6035,8 @@
     ],
     "labels": {
       "en": [
-        "soluble cation total"
+        "soluble cation total",
+        "soluble cations total"
       ]
     }
   },
@@ -6005,7 +6084,8 @@
     ],
     "labels": {
       "en": [
-        "structural pores"
+        "structural pores",
+        "structural pore"
       ]
     }
   },
@@ -6050,7 +6130,8 @@
     ],
     "labels": {
       "en": [
-        "supporting services"
+        "supporting services",
+        "supporting service"
       ],
       "fr": [
         "service d'appui"
@@ -6112,6 +6193,7 @@
     "labels": {
       "en": [
         "termites",
+        "termite",
         "white ants"
       ],
       "fr": [
@@ -6143,7 +6225,8 @@
     ],
     "labels": {
       "en": [
-        "textural pores"
+        "textural pores",
+        "textural pore"
       ]
     }
   },
@@ -6297,7 +6380,8 @@
     ],
     "labels": {
       "en": [
-        "void classification"
+        "void classification",
+        "voids classification"
       ]
     }
   },
@@ -6308,7 +6392,8 @@
     ],
     "labels": {
       "en": [
-        "void diameter"
+        "void diameter",
+        "voids diameter"
       ]
     }
   },
@@ -6404,7 +6489,8 @@
     ],
     "labels": {
       "en": [
-        "weathering fragments"
+        "weathering fragments",
+        "weathering fragment"
       ]
     }
   },
@@ -8688,7 +8774,8 @@
     ],
     "labels": {
       "en": [
-        "ions"
+        "ions",
+        "ion"
       ],
       "fr": [
         "ion"
@@ -8764,7 +8851,8 @@
     ],
     "labels": {
       "en": [
-        "pavements"
+        "pavements",
+        "pavement"
       ]
     }
   },
@@ -8988,7 +9076,8 @@
     ],
     "labels": {
       "en": [
-        "soil air contents"
+        "soil air contents",
+        "soil air content"
       ]
     }
   },
@@ -9021,7 +9110,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological crusts"
+        "soil biological crusts",
+        "soil biological crust"
       ]
     }
   },
@@ -9194,7 +9284,8 @@
     ],
     "labels": {
       "en": [
-        "soil inorganic components"
+        "soil inorganic components",
+        "soil inorganic component"
       ]
     }
   },
@@ -9216,7 +9307,8 @@
     ],
     "labels": {
       "en": [
-        "soil organic components"
+        "soil organic components",
+        "soil organic component"
       ]
     }
   },
@@ -9249,7 +9341,8 @@
     ],
     "labels": {
       "en": [
-        "soil oxygen contents"
+        "soil oxygen contents",
+        "soil oxygen content"
       ]
     }
   },
@@ -9325,7 +9418,8 @@
     ],
     "labels": {
       "en": [
-        "soil pore size"
+        "soil pore size",
+        "pores size"
       ]
     }
   },
@@ -9638,7 +9732,8 @@
     ],
     "labels": {
       "en": [
-        "trees"
+        "trees",
+        "tree"
       ],
       "fr": [
         "arbre"
@@ -9846,7 +9941,8 @@
     ],
     "labels": {
       "en": [
-        "exchangeable cations"
+        "exchangeable cations",
+        "exchangeable cation"
       ]
     }
   },
@@ -9858,7 +9954,8 @@
     ],
     "labels": {
       "en": [
-        "floods"
+        "floods",
+        "flood"
       ]
     }
   },
@@ -9898,7 +9995,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "mineral particles"
+        "mineral particles",
+        "mineral particle"
       ]
     }
   },
@@ -9939,7 +10037,8 @@
     ],
     "labels": {
       "en": [
-        "nonconservative solutes"
+        "nonconservative solutes",
+        "nonconservative solute"
       ]
     }
   },
@@ -9950,7 +10049,8 @@
     ],
     "labels": {
       "en": [
-        "non-soil indicators"
+        "non-soil indicators",
+        "non-soil indicator"
       ]
     }
   },
@@ -9970,7 +10070,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "rock outcrops"
+        "rock outcrops",
+        "rock outcrop"
       ]
     }
   },
@@ -9983,7 +10084,8 @@
     ],
     "labels": {
       "en": [
-        "roots"
+        "roots",
+        "root"
       ],
       "fr": [
         "racine"
@@ -10111,7 +10213,8 @@
     ],
     "labels": {
       "en": [
-        "soil contaminants"
+        "soil contaminants",
+        "soil contaminant"
       ]
     }
   },
@@ -10122,7 +10225,8 @@
     ],
     "labels": {
       "en": [
-        "soil cracking physical properties"
+        "soil cracking physical properties",
+        "soil cracking physical property"
       ]
     }
   },
@@ -10247,7 +10351,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical crusts"
+        "soil physical crusts",
+        "soil physical crust"
       ]
     }
   },
@@ -10409,7 +10514,8 @@
     ],
     "labels": {
       "en": [
-        "soil swell shrink properties"
+        "soil swell shrink properties",
+        "soil swell shrink property"
       ]
     }
   },
@@ -10756,7 +10862,8 @@
     ],
     "labels": {
       "en": [
-        "coarse fragments"
+        "coarse fragments",
+        "coarse fragment"
       ]
     }
   },
@@ -11047,7 +11154,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological properties"
+        "soil biological properties",
+        "soil biological property"
       ]
     }
   },
@@ -11058,7 +11166,8 @@
     ],
     "labels": {
       "en": [
-        "soil charge properties"
+        "soil charge properties",
+        "soil charge property"
       ]
     }
   },
@@ -11120,7 +11229,8 @@
     ],
     "labels": {
       "en": [
-        "soil cracks"
+        "soil cracks",
+        "soil crack"
       ]
     }
   },
@@ -11131,7 +11241,8 @@
     ],
     "labels": {
       "en": [
-        "soil crust physical properties"
+        "soil crust physical properties",
+        "soil crust physical property"
       ]
     }
   },
@@ -11216,7 +11327,8 @@
     ],
     "labels": {
       "en": [
-        "soil indicators"
+        "soil indicators",
+        "soil indicator"
       ]
     }
   },
@@ -11239,7 +11351,8 @@
     ],
     "labels": {
       "en": [
-        "soil nutrients"
+        "soil nutrients",
+        "soil nutrient"
       ]
     }
   },
@@ -11252,6 +11365,7 @@
     "labels": {
       "en": [
         "soil organisms",
+        "soil organism",
         "soil life"
       ],
       "fr": [
@@ -11288,7 +11402,8 @@
     ],
     "labels": {
       "en": [
-        "soil primary particles"
+        "soil primary particles",
+        "soil primary particle"
       ]
     }
   },
@@ -11301,7 +11416,8 @@
     ],
     "labels": {
       "en": [
-        "soil processes"
+        "soil processes",
+        "soil process"
       ]
     }
   },
@@ -11344,7 +11460,8 @@
     ],
     "labels": {
       "en": [
-        "soil solute physical properties"
+        "soil solute physical properties",
+        "soil solute physical property"
       ]
     }
   },
@@ -11377,7 +11494,8 @@
     ],
     "labels": {
       "en": [
-        "soil thermal properties"
+        "soil thermal properties",
+        "soil thermal property"
       ]
     }
   },
@@ -11388,7 +11506,8 @@
     ],
     "labels": {
       "en": [
-        "soil voids"
+        "soil voids",
+        "soil void"
       ]
     }
   },
@@ -11399,7 +11518,8 @@
     ],
     "labels": {
       "en": [
-        "soil water contents"
+        "soil water contents",
+        "soil water content"
       ]
     }
   },
@@ -11487,6 +11607,7 @@
     "labels": {
       "en": [
         "ecosystem services",
+        "ecosystem service",
         "ecosystem goods and services"
       ],
       "fr": [
@@ -11512,7 +11633,8 @@
     ],
     "labels": {
       "en": [
-        "external factors"
+        "external factors",
+        "external factor"
       ]
     }
   },
@@ -11521,7 +11643,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "fragments"
+        "fragments",
+        "fragment"
       ]
     }
   },
@@ -11623,7 +11746,8 @@
     ],
     "labels": {
       "en": [
-        "salts"
+        "salts",
+        "salt"
       ],
       "fr": [
         "sel"
@@ -11707,7 +11831,8 @@
     ],
     "labels": {
       "en": [
-        "soil air physical properties"
+        "soil air physical properties",
+        "soil air physical property"
       ]
     }
   },
@@ -11719,7 +11844,8 @@
     ],
     "labels": {
       "en": [
-        "soil crusts"
+        "soil crusts",
+        "soil crust"
       ],
       "fr": [
         "croûte du sol"
@@ -11812,7 +11938,8 @@
     ],
     "labels": {
       "en": [
-        "soil particles"
+        "soil particles",
+        "soil particle"
       ]
     }
   },
@@ -11823,7 +11950,8 @@
     ],
     "labels": {
       "en": [
-        "soil spatial properties"
+        "soil spatial properties",
+        "soil spatial property"
       ]
     }
   },
@@ -11834,7 +11962,8 @@
     ],
     "labels": {
       "en": [
-        "soil thermal processes"
+        "soil thermal processes",
+        "soil thermal process"
       ]
     }
   },
@@ -11856,7 +11985,8 @@
     ],
     "labels": {
       "en": [
-        "soluble salts"
+        "soluble salts",
+        "soluble salt"
       ]
     }
   },
@@ -11868,7 +11998,8 @@
     ],
     "labels": {
       "en": [
-        "macronutrients"
+        "macronutrients",
+        "macronutrient"
       ],
       "fr": [
         "macronutriment"
@@ -11891,7 +12022,8 @@
     ],
     "labels": {
       "en": [
-        "planetary phenomena"
+        "planetary phenomena",
+        "planetary phenomenon"
       ]
     }
   },
@@ -11913,7 +12045,8 @@
     ],
     "labels": {
       "en": [
-        "soil air physical processes"
+        "soil air physical processes",
+        "soil air physical process"
       ]
     }
   },
@@ -11933,7 +12066,8 @@
     ],
     "labels": {
       "en": [
-        "soil environmental functions"
+        "soil environmental functions",
+        "soil environmental function"
       ]
     }
   },
@@ -11976,7 +12110,8 @@
     ],
     "labels": {
       "en": [
-        "soil properties"
+        "soil properties",
+        "soil property"
       ],
       "fr": [
         "propriété du sol",
@@ -12195,7 +12330,8 @@
     ],
     "labels": {
       "en": [
-        "soil particle physical properties"
+        "soil particle physical properties",
+        "soil particle physical property"
       ]
     }
   },
@@ -12217,7 +12353,8 @@
     ],
     "labels": {
       "en": [
-        "soil solutes"
+        "soil solutes",
+        "soil solute"
       ]
     }
   },
@@ -12406,6 +12543,7 @@
     "labels": {
       "en": [
         "micronutrients",
+        "micronutrient",
         "trace elements",
         "microelements"
       ],
@@ -12440,7 +12578,8 @@
     ],
     "labels": {
       "en": [
-        "soil aggregate physical properties"
+        "soil aggregate physical properties",
+        "soil aggregate physical property"
       ]
     }
   },
@@ -12451,7 +12590,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological processes"
+        "soil biological processes",
+        "soil biological process"
       ]
     }
   },
@@ -12556,7 +12696,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical degradative processes"
+        "soil chemical degradative processes",
+        "soil chemical degradative process"
       ]
     }
   },
@@ -12591,7 +12732,8 @@
     ],
     "labels": {
       "en": [
-        "soil function indicators"
+        "soil function indicators",
+        "soil function indicator"
       ]
     }
   },
@@ -12602,7 +12744,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical degradative processes"
+        "soil physical degradative processes",
+        "soil physical degradative process"
       ]
     }
   },
@@ -12624,7 +12767,8 @@
     ],
     "labels": {
       "en": [
-        "soil phenomena"
+        "soil phenomena",
+        "soil phenomenon"
       ]
     }
   },
@@ -12683,7 +12827,8 @@
     ],
     "labels": {
       "en": [
-        "soil contents"
+        "soil contents",
+        "soil content"
       ]
     }
   },
@@ -12769,7 +12914,8 @@
     ],
     "labels": {
       "en": [
-        "soil threats"
+        "soil threats",
+        "soil threat"
       ]
     }
   },
@@ -12802,7 +12948,8 @@
     ],
     "labels": {
       "en": [
-        "hydrogen exchangeable bases"
+        "hydrogen exchangeable bases",
+        "hydrogen exchangeable base"
       ]
     }
   },
@@ -12813,7 +12960,8 @@
     ],
     "labels": {
       "en": [
-        "magnesium exchangeable bases"
+        "magnesium exchangeable bases",
+        "magnesium exchangeable base"
       ]
     }
   },
@@ -12824,7 +12972,8 @@
     ],
     "labels": {
       "en": [
-        "manganese exchangeable bases"
+        "manganese exchangeable bases",
+        "manganese exchangeable base"
       ]
     }
   },
@@ -12846,7 +12995,8 @@
     ],
     "labels": {
       "en": [
-        "potassium exchangeable bases"
+        "potassium exchangeable bases",
+        "potassium exchangeable base"
       ]
     }
   },
@@ -12857,7 +13007,8 @@
     ],
     "labels": {
       "en": [
-        "sodium exchangeable bases"
+        "sodium exchangeable bases",
+        "sodium exchangeable base"
       ]
     }
   },
@@ -12868,7 +13019,8 @@
     ],
     "labels": {
       "en": [
-        "soil engineering functions"
+        "soil engineering functions",
+        "soil engineering function"
       ]
     }
   },
@@ -12917,7 +13069,8 @@
     ],
     "labels": {
       "en": [
-        "soil agricultural functions"
+        "soil agricultural functions",
+        "soil agricultural function"
       ]
     }
   },
@@ -12929,7 +13082,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical properties"
+        "soil chemical properties",
+        "soil chemical property"
       ]
     }
   },
@@ -12942,7 +13096,8 @@
     ],
     "labels": {
       "en": [
-        "soil functions"
+        "soil functions",
+        "soil function"
       ],
       "fr": [
         "fonction du sol"
@@ -13449,7 +13604,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical processes"
+        "soil chemical processes",
+        "soil chemical process"
       ]
     }
   },
@@ -13460,7 +13616,8 @@
     ],
     "labels": {
       "en": [
-        "soil pore physical properties"
+        "soil pore physical properties",
+        "soil pore physical property"
       ]
     }
   },
@@ -13471,7 +13628,8 @@
     ],
     "labels": {
       "en": [
-        "soil water physical processes"
+        "soil water physical processes",
+        "soil water physical process"
       ]
     }
   },
@@ -13482,7 +13640,8 @@
     ],
     "labels": {
       "en": [
-        "soil components"
+        "soil components",
+        "soil component"
       ]
     }
   },
@@ -13503,7 +13662,8 @@
     ],
     "labels": {
       "en": [
-        "soil pores"
+        "soil pores",
+        "soil pore"
       ]
     }
   },
@@ -13515,7 +13675,9 @@
     ],
     "labels": {
       "en": [
-        "soil moisture contents"
+        "soil moisture contents",
+        "moisture content",
+        "soil moisture content"
       ]
     }
   },
@@ -13526,7 +13688,8 @@
     ],
     "labels": {
       "en": [
-        "aluminium total elements"
+        "aluminium total elements",
+        "aluminium total element"
       ]
     }
   },
@@ -13537,7 +13700,8 @@
     ],
     "labels": {
       "en": [
-        "boron total elements"
+        "boron total elements",
+        "boron total element"
       ]
     }
   },
@@ -13548,7 +13712,8 @@
     ],
     "labels": {
       "en": [
-        "cadmium total elements"
+        "cadmium total elements",
+        "cadmium total element"
       ]
     }
   },
@@ -13691,7 +13856,8 @@
     ],
     "labels": {
       "en": [
-        "soil water physical properties"
+        "soil water physical properties",
+        "soil water physical property"
       ]
     }
   },
@@ -13702,7 +13868,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical processes"
+        "soil physical processes",
+        "soil physical process"
       ]
     }
   },
@@ -13713,7 +13880,8 @@
     ],
     "labels": {
       "en": [
-        "aluminium extractable elements"
+        "aluminium extractable elements",
+        "aluminium extractable element"
       ]
     }
   },
@@ -13724,7 +13892,8 @@
     ],
     "labels": {
       "en": [
-        "boron extractable elements"
+        "boron extractable elements",
+        "boron extractable element"
       ]
     }
   },
@@ -13735,7 +13904,8 @@
     ],
     "labels": {
       "en": [
-        "cadmium extractable elements"
+        "cadmium extractable elements",
+        "cadmium extractable element"
       ]
     }
   },
@@ -13909,6 +14079,7 @@
     "labels": {
       "en": [
         "soil physical properties",
+        "soil physical property",
         "soil chemicophysical properties",
         "soil physicochemical properties"
       ],

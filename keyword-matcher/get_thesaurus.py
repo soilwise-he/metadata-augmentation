@@ -144,14 +144,15 @@ def main():
     # Removed DISTINCT to allow duplicates when a concept has multiple matches
     query = '''
     prefix skos: <http://www.w3.org/2004/02/skos/core#>
-    SELECT ?concept ?label ?exact_match_uri ?close_match_uri
+    SELECT ?concept ?label ?alt_label ?exact_match_uri ?close_match_uri
     WHERE {
         ?concept a skos:Concept;
                 skos:prefLabel ?label.
+        OPTIONAL { ?concept skos:altLabel ?alt_label }
         OPTIONAL { ?concept skos:exactMatch ?exact_match_uri }
         OPTIONAL { ?concept skos:closeMatch ?close_match_uri }
     }
-    '''    
+    '''
 
     kg_concs = sparqlLocal(kg_path, query, "ttl")
     langs = ["en", "fr", "de", "it", "es", "nl"]
@@ -188,7 +189,12 @@ def main():
                 if "en" not in existing_concept["labels"]:
                     existing_concept["labels"]["en"] = []
                 existing_concept["labels"]["en"].append(label)
-        
+
+        # Add the English altLabel from the KG if present and not already listed
+        alt_label = c.get('alt_label', '')
+        if alt_label and alt_label not in existing_concept["labels"].get("en", []):
+            existing_concept["labels"].setdefault("en", []).append(alt_label)
+
         # Process exact match URI
         if c.get("exact_match_uri"):
             uri = c["exact_match_uri"]
