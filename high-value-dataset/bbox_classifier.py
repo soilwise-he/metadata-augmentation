@@ -13,6 +13,16 @@ Each bbox is labelled as exactly one of:
 Intersections are computed in EPSG:4326; areas and lengths are measured in
 EPSG:3035 (a projection optimized to preserve area in Europe).
 
+Two terms recur below and differ only by denominator:
+
+- **coverage** (of a country) = ``intersection_area / country_total_area`` — the
+  fraction of the *country* that sits inside the bbox (country-centric).
+- **share** (of a country) = ``intersection_area / total_EU_intersection_area`` —
+  the country's fraction of the *EU overlap* in the bbox (intersection-centric).
+
+Same numerator, different denominator: in Russia's own bbox Russia has coverage
+~1.0 (all of European Russia is inside) but share ~0.64 (it is 64% of the EU overlap).
+
 Algorithm
 ---------
 Each bbox is intersected with **all** countries, not just the European set:
@@ -22,7 +32,8 @@ from an accidental border clip. Rationale and threshold choices live in
 
 STEP 0 — LOAD (once)
     EU set = ``(continent == "Europe" AND status == "Member State")
-    ∪ {Turkey, Cyprus}``; Russia is clipped to west of 60°E.  
+    ∪ {Turkey, Cyprus}``; Russia is clipped to longitudes ``[0, 60°E]``
+    (so that it onlt contains the European/western part of Russia).
     Non-EU set = all other countries.
 
 STEP 1 — PARSE
@@ -62,15 +73,20 @@ STEP 4 — RELEVANCE TEST (Path B only)
 
 STEP 5 — SINGLE- vs MULTI-EUROPEAN
     Exactly 1 EU hit → ``single_country_eu``.  
-    With 2+ EU hits, :func:`_classify_intersections` applies these rules in order:
+    With 2+ EU hits, :func:`_classify_eu_intersections` applies these rules in order:
 
-    1. **Raw dominance** — if the largest intersection measure is more than
-       *cutoff* times the runner-up, one country dominates → single.
-       *Russia override*: Russia is so large it would dominate almost any
-       pan-European bbox by area alone, so when it appears alongside many
-       countries the result is forced to ``multi_country_eu``.
-    2. **Coverage-dominance fallback** — when no country
-       wins on raw area (i.e. raw domninance ratio < cutoff), 
+    1. **Dominance** — the largest intersection resolves ``single_country_eu``
+       when it dominates by raw area (more than *_RAW_DOMINANCE_CUTOFF* times
+       the runner-up) **or**, for polygons, when it holds a majority of the EU
+       intersection area (*_SINGLE_COUNTRY_SHARE_THRESHOLD* of it). The two
+       gates are OR-ed so that a ratio-dominant national bbox whose subject
+       sits just under the majority line and a majority-dominant bbox that
+       fails the ratio gate both resolve single.
+       *Russia override*: Russia is so large it dominates almost any
+       pan-European bbox by raw area even when it is not the subject, so when
+       Russia is the largest intersection without a majority the result is
+       forced to ``multi_country_eu`` regardless of ratio.
+    2. **Coverage-dominance fallback** — when rule 1 did not settle it,
        compare how *fully* each country sits inside the
        bbox (coverage fraction).  If one country is far more fully covered
        than the others, it is the country of interest → single — this
@@ -88,8 +104,10 @@ EQUAL_AREA_CRS = "EPSG:3035"
 GEOJSON_PATH = "./datadump/world-administrative-boundaries.geojson"
 
 # --- multi-country classification thresholds ---
-_COVERAGE_RATIO_THRESHOLD = 3.0       # coverage-dominance fallback (Step 5)
-_COVERAGE_RAW_SHARE_MIN = 0.10        #   ...and the top country's raw share minimum
+_RAW_DOMINANCE_CUTOFF = 2            # raw dominance ratio (Step 5, rule 1)
+_SINGLE_COUNTRY_SHARE_THRESHOLD = 0.50  # majority-of-EU-intersection gate (Step 5, rule 1, polygons only)
+_COVERAGE_RATIO_THRESHOLD = 1.5        # coverage-dominance fallback (Step 5, rule 2)
+_COVERAGE_FALLBACK_MIN_SHARE = 0.10    #   ...and the coverage-top country's min share of total EU intersection area
 
 # --- relevance-test thresholds (Step 4, Path B) ---
 _MEANINGFUL_COVERAGE_THRESHOLD = 0.50  # is this country "substantially inside" the bbox
@@ -133,7 +151,7 @@ def load_countries(geojson_path=GEOJSON_PATH):
 
     russia_mask = eu_gdf["name"] == _RUSSIA_NAME
     if russia_mask.any():
-        clip_polygon = box(-180, -90, _EUROPEAN_RUSSIA_CLIP_LON, 90)
+        clip_polygon = box(0, -90, _EUROPEAN_RUSSIA_CLIP_LON, 90)
         russia_idx = eu_gdf.loc[russia_mask].index[0]
         eu_gdf.at[russia_idx, "geometry"] = eu_gdf.at[russia_idx, "geometry"].intersection(clip_polygon)
 
@@ -214,16 +232,17 @@ def _compute_country_areas(european_gdf):
 
 
 def _relevance_test(eu_hits):
-    """Decide whether a bbox's EU overlap is intentional or accidental.
+    """Decide whether a bbox is intentionally or accidentally about Europe.
 
     Runs only on Path B (the bbox hits both EU and non-EU countries).  Both
     gates must pass:
 
-    - **coverage ≥ 50%** — at least one EU country is substantially inside
-      the bbox, not just a border clip.
-    - **collective_share ≥ 10%** — those meaningful countries contribute real
-      area, so the result is not swung by tiny islands dwarfed by a large
-      partial clip.
+    - **coverage ≥ 50%** — at least one EU country has ≥50% of its area
+      inside the bbox, not just a border clip.
+    - **collective_share ≥ 10%** — those meaningful countries contribute
+      substantial area, so the result is not skewed by tiny islands
+      sitting alongside a large partial clip (e.g. Malta has coverage 100% 
+      in the African bbox but does not contribute substantial area)
 
     Args:
         eu_hits: list of :data:`_EuHit` (name, area, coverage).
@@ -285,8 +304,7 @@ def _classify_point_bbox(east, north, eu_gdf):
     }
 
 
-def _classify_line_bbox(west, south, east, north, eu_gdf, country_areas,
-                        cutoff, russia_country_threshold):
+def _classify_line_bbox(west, south, east, north, eu_gdf, country_areas):
     """Classify a line bbox (exactly one of ``west==east`` / ``south==north``).
 
     Length-based, mirroring the area pipeline: for each EU country the
@@ -296,13 +314,13 @@ def _classify_line_bbox(west, south, east, north, eu_gdf, country_areas,
 
     - 0 EU hits → ``non_european``
     - 1 EU hit → ``single_country_eu``
-    - 2+ EU hits → raw length dominance only (``> cutoff`` → single, Russia
-      override, else multi); the coverage fallback is skipped because
-      ``length / total_country_area`` is meaningless.
-
-    Known limitation: a line that runs mostly through a non-EU country but
-    clips an EU border resolves to that single EU country. See
-    ``docs/adr/0001-bbox-classifier-design-choices.md``.
+    - 2+ EU hits → classified by raw length dominance only. If the longest
+      intersection is more than *_RAW_DOMINANCE_CUTOFF* times the runner-up
+      → ``single_country_eu`` (the Russia override of
+      :func:`_classify_eu_intersections` still applies); otherwise
+      ``multi_country_eu``. The majority-of-intersection gate and the
+      coverage-dominance fallback are not used because length-based share and
+      ``length / total_country_area`` are not meaningful signals.
     """
     line = LineString([(west, south), (east, north)])
     intersections = []
@@ -330,74 +348,90 @@ def _classify_line_bbox(west, south, east, north, eu_gdf, country_areas,
             "coverage_ratio": None,
             "coverage_top_country": None,
         }
-    return _classify_intersections(
-        intersections, country_areas, cutoff, russia_country_threshold,
-        use_coverage_fallback=False,
+    return _classify_eu_intersections(
+        intersections, country_areas,
+        is_polygon=False,
     )
 
 
-def _classify_intersections(intersections, country_areas, cutoff,
-                            russia_country_threshold, use_coverage_fallback=True):
-    """Step 5 in the algoritm: Apply the single/multi classification pipeline.
+def _classify_eu_intersections(intersections, country_areas,
+                               is_polygon=True):
+    """Step 5 in the algorithm: Apply the single/multi classification pipeline.
 
     Rules are evaluated in order:
 
-    1. **Raw dominance** — if ``largest / runner_up > cutoff`` the bbox is
-       dominated by one country → ``single_country_eu``.
+    1. **Dominance** — the largest intersection resolves ``single_country_eu``
+       when it dominates by raw area (``largest / runner_up >
+       _RAW_DOMINANCE_CUTOFF``) **or**, for polygons
+       (``is_polygon``), when it holds a majority of the EU
+       intersection area (``top_share >= _SINGLE_COUNTRY_SHARE_THRESHOLD``).
 
-       *Russia override*: even when the raw ratio exceeds the cutoff, if
-       Russia is present alongside more than *russia_country_threshold*
-       countries, override to ``multi_country_eu`` — Russia's area would
-       otherwise dominate almost any pan-European bbox.
-    2. **Coverage-dominance fallback** (polygons only; skipped for lines via
-       ``use_coverage_fallback=False``) — compute the *coverage fraction*
-       (``intersection_measure / total_country_area``) for each country,
-       then take the ratio of the highest coverage to the second highest.
-       If this *coverage ratio* exceeds ``_COVERAGE_RATIO_THRESHOLD``
-       **and** the top country's raw share of total intersection exceeds
-       ``_COVERAGE_RAW_SHARE_MIN``, classify as ``single_country_eu``.
-       This catches small countries that are fully inside the bbox but 
-       don't dominate by raw area — e.g. a Portugal bbox covers 100 % of Portugal 
-       but only 18 % of Spain; raw ratio is 1.05 (i.e. both take up an equal 
-       amount of space in the bbox) but coverage ratio is 5.4 (Portugal is more represented).
+       *Russia override*: Russia is so large that it dominates by raw area in
+       pan-European bboxes where it is not the subject, so when Russia is the
+       largest intersection without a majority (``top_share <
+       _SINGLE_COUNTRY_SHARE_THRESHOLD``) the result is forced to
+       ``multi_country_eu`` regardless of ratio.
+     2. **Coverage-dominance fallback** (polygons only; runs only when rule 1
+        did not settle it; skipped for lines via ``is_polygon=False``)
+       — compute the *coverage fraction* for each country
+       (coverage: what fraction of the country sits inside the bbox, i.e.
+       ``intersection_measure / total_country_area``), then take the ratio
+       of the highest coverage to the second highest.  If this *coverage
+       ratio* exceeds ``_COVERAGE_RATIO_THRESHOLD`` **and** the top-coverage
+       country's share of total EU intersection area exceeds
+       ``_COVERAGE_FALLBACK_MIN_SHARE``, classify as ``single_country_eu``.
+       This catches small countries that are fully inside the bbox but
+       don't dominate by raw area — e.g. a Luxembourg bbox covers ~100 % of
+       Luxembourg but only ~6 % of Belgium and <1 % of Germany; Germany takes
+       up the most raw area (ratio ~1.1, below the cutoff) yet the coverage
+       ratio is ~16 (Luxembourg is fully inside while its neighbours are barely
+       clipped).
     3. **Default** → ``multi_country_eu``.
 
     Args:
         intersections: List of ``(country_name, measure)`` tuples, where
             *measure* is intersection area (polygons) or length (lines).
         country_areas: Dict mapping country name to total area in EPSG:3035.
-            Unused when ``use_coverage_fallback`` is False.
-        cutoff: Raw dominance ratio threshold.
-        russia_country_threshold: Country count threshold for Russia override.
-        use_coverage_fallback: When False (lines), skip the coverage branch —
-            ``length / total_country_area`` is meaningless.
+            Unused when ``is_polygon`` is False.
+        is_polygon: When False (lines), skip the area-based majority and
+            coverage gates — ``length / total_country_area`` and length-based
+            share are not meaningful signals.
     """
     intersections.sort(key=lambda x: x[1], reverse=True)
     total_area = sum(a for _, a in intersections)
     country_shares = {name: round(area / total_area, 4) for name, area in intersections}
-    country_names = set(country_shares)
 
-    raw_ratio = intersections[0][1] / intersections[1][1] 
+    raw_ratio = intersections[0][1] / intersections[1][1]
+    top_name, top_area = intersections[0]
+    top_share = top_area / total_area
 
     base_result = {
         "countries": country_shares,
         "ratio": round(number=raw_ratio, ndigits=4),
     }
 
-    if raw_ratio > cutoff:
-        is_russia_override = (
-            _RUSSIA_NAME in country_names
-            and len(intersections) > russia_country_threshold
-        )
+    russia_not_subject = (
+        top_name == _RUSSIA_NAME and top_share < _SINGLE_COUNTRY_SHARE_THRESHOLD
+    )
+    if russia_not_subject:
         return {
             **base_result,
-            "classification": "multi_country_eu" if is_russia_override else "single_country_eu",
+            "classification": "multi_country_eu",
+            "coverage_ratio": None,
+            "coverage_top_country": None,
+        }
+    if raw_ratio > _RAW_DOMINANCE_CUTOFF or (
+        is_polygon and top_share >= _SINGLE_COUNTRY_SHARE_THRESHOLD
+    ):
+        return {
+            **base_result,
+            "classification": "single_country_eu",
             "coverage_ratio": None,
             "coverage_top_country": None,
         }
 
-    # Lines stop here: coverage = length / total_country_area is meaningless.
-    if not use_coverage_fallback:
+    # Lines stop here: the coverage fallback needs area / total_country_area.
+    if not is_polygon:
         return {
             **base_result,
             "classification": "multi_country_eu",
@@ -406,43 +440,42 @@ def _classify_intersections(intersections, country_areas, cutoff,
         }
 
     coverages = [
-        (name, raw_area, raw_area / country_areas[name])
+        (name, raw_area, raw_area / country_areas[name])  # coverage: what fraction of the country sits inside the bbox
         for name, raw_area in intersections
     ]
     coverages.sort(key=lambda x: x[2], reverse=True)
 
-    top_name, top_raw_area, top_coverage = coverages[0] #country with highest coverage
-    top_raw_share = top_raw_area / total_area
+    coverage_top_name, coverage_top_area, coverage_top_coverage = coverages[0] #country with highest coverage
+    top_coverage_country_share = coverage_top_area / total_area
 
     coverage_ratio = (
-        top_coverage / coverages[1][2]
+        coverage_top_coverage / coverages[1][2]
         if len(coverages) >= 2 and coverages[1][2] > 0
         else None
     )
 
-    if coverage_ratio is not None and coverage_ratio > _COVERAGE_RATIO_THRESHOLD and top_raw_share > _COVERAGE_RAW_SHARE_MIN:
+    if coverage_ratio is not None and coverage_ratio > _COVERAGE_RATIO_THRESHOLD and top_coverage_country_share > _COVERAGE_FALLBACK_MIN_SHARE:
         return {
             **base_result,
             "classification": "single_country_eu",
             "coverage_ratio": round(number=coverage_ratio, ndigits=3),
-            "coverage_top_country": top_name,
+            "coverage_top_country": coverage_top_name,
         }
 
     return {
         **base_result,
         "classification": "multi_country_eu",
         "coverage_ratio": round(number=coverage_ratio, ndigits=3) if coverage_ratio is not None else None,
-        "coverage_top_country": top_name,
+        "coverage_top_country": coverage_top_name,
     }
 
 
-def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None,
-                  cutoff=2.0, russia_country_threshold=10):
+def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None):
     """Classify a single bbox by its overlap with European countries.
 
     Implements the pipeline described in the module docstring (Steps 1–5):
     parse, validate, short-circuit degenerate cases, intersect, then hand
-    multi-country cases to :func:`_classify_intersections`.
+    multi-country cases to :func:`_classify_eu_intersections`.
 
     Args:
         bbox_str: String like ``"[west, south, east, north]"``.
@@ -451,10 +484,6 @@ def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None,
             :func:`load_countries`.
         country_areas: Dict mapping EU country name to total area in
             EPSG:3035.  Computed from *eu_gdf* if not provided.
-        cutoff: Raw dominance ratio threshold (default 2.0).
-        russia_country_threshold: Pan-European override threshold
-            (default 10 — bboxes with Russia + more than 10 countries
-            are classified as multi-country regardless of ratio).
 
     Returns:
         ``None`` if unparseable, else ``dict`` with keys:
@@ -467,7 +496,7 @@ def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None,
           second-largest intersection measure).
         - ``coverage_ratio`` (float or None): ratio of the top country's
           coverage fraction to the runner-up's.  ``None`` when the raw
-          ratio settled it (i.e. raw ratio > cutoff) or for point/line bboxes.
+          ratio settled it (i.e. raw ratio > _RAW_DOMINANCE_CUTOFF) or for point/line bboxes.
         - ``coverage_top_country`` (str or None): country with the highest
           coverage fraction.
     """
@@ -491,7 +520,6 @@ def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None,
     if lon_collapsed != lat_collapsed:  # XOR — exactly one axis collapsed
         return _classify_line_bbox(
             west, south, east, north, eu_gdf, country_areas,
-            cutoff, russia_country_threshold,
         )
 
     # Step 2 — coordinate pre-check: keep only countries that can intersect.
@@ -527,8 +555,8 @@ def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None,
     if not eu_hits:
         return _empty_result(label="non_european")
 
-    # Step 3 (non-EU) — boolean only: areas never needed, break on first hit.
-    # Intersection emptiness is projection-independent, so EPSG:4326 suffices.
+    # Step 3 (non-EU) — boolean only: we only need to know IF any non-EU country
+    # is hit, not how much. Break on first hit. Intersections calculated in EPSG:4326.
     has_non_eu = False
     for _, row in non_eu_gdf.iterrows():
         if not _bounds_overlaps(row.geometry.bounds, west, south, east, north):
@@ -541,7 +569,8 @@ def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None,
             has_non_eu = True
             break
 
-    # Step 4 — relevance test (Path B): is the EU overlap intentional?
+    # Step 4 — relevance test (Path B only): if non-EU countries are also hit,
+    # check whether the EU overlap is intentional. Fails → non_european.
     if has_non_eu and not _relevance_test(eu_hits):
         return _empty_result(label="non_european")
 
@@ -555,13 +584,12 @@ def classify_bbox(bbox_str, eu_gdf, non_eu_gdf, country_areas=None,
             "coverage_ratio": None,
             "coverage_top_country": None,
         }
-    return _classify_intersections(
-        intersections, country_areas, cutoff, russia_country_threshold
+    return _classify_eu_intersections(
+        intersections, country_areas,
     )
 
 
-def classify_bboxes(df, spatial_col="spatial", geojson_path=GEOJSON_PATH,
-                    cutoff=2.0, russia_country_threshold=10):
+def classify_bboxes(df, spatial_col="spatial", geojson_path=GEOJSON_PATH):
     """Apply :func:`classify_bbox` to every row in a DataFrame column.
 
     Loads country geometries once, computes EU-only areas, then classifies
@@ -571,9 +599,6 @@ def classify_bboxes(df, spatial_col="spatial", geojson_path=GEOJSON_PATH,
         df: DataFrame containing a column with bbox strings.
         spatial_col: Name of the column holding bbox strings.
         geojson_path: Path to the world boundaries GeoJSON.
-        cutoff: Raw dominance ratio threshold (default 2.0).
-        russia_country_threshold: Pan-European override threshold
-            (default 10 countries).
 
     Returns:
         List of classification dicts (``None`` for unparseable rows).
@@ -586,8 +611,6 @@ def classify_bboxes(df, spatial_col="spatial", geojson_path=GEOJSON_PATH,
             eu_gdf=eu_gdf,
             non_eu_gdf=non_eu_gdf,
             country_areas=country_areas,
-            cutoff=cutoff,
-            russia_country_threshold=russia_country_threshold,
         )
         for val in df[spatial_col]
     ]
