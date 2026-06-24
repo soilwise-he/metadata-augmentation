@@ -4,7 +4,9 @@ The classifier labels a WGS 84 bounding box as `single_country_eu`,
 `multi_country_eu`, `non_european`, or `invalid`. This document records the
 non-obvious architectural *whys* behind the pipeline. The mechanism (what each
 step does, in what order) lives in the `bbox_classifier.py` module docstring;
-this file is organized to mirror that pipeline, step by step.
+a visual flowchart of that mechanism lives in
+[`bbox-classifier-flowchart.md`](../bbox-classifier-flowchart.md). This file is
+organized to mirror that pipeline, step by step.
 
 ## Language and invariants
 

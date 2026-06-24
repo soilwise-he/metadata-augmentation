@@ -1,10 +1,21 @@
+import re
+from functools import lru_cache
+from pathlib import Path
+
 import pytest
+## In command line run: uv run pytest -v -rx 2>&1
 
 from bbox_classifier import (
     classify_bbox,
     load_countries,
     _compute_country_areas,
     _COVERAGE_RATIO_THRESHOLD,
+    _COVERAGE_FALLBACK_MIN_SHARE,
+    _COLLECTIVE_SHARE_THRESHOLD,
+    _EUROPEAN_RUSSIA_CLIP_LON,
+    _MEANINGFUL_COVERAGE_THRESHOLD,
+    _RAW_DOMINANCE_CUTOFF,
+    _SINGLE_COUNTRY_SHARE_THRESHOLD,
 )
 
 GEOJSON_PATH = "./datadump/world-administrative-boundaries.geojson"
@@ -30,15 +41,6 @@ def test_pan_european_bbox_covers_all_eu_countries(classifier):
     assert len(result["countries"]) == len(eu_gdf)
 
 
-def test_norway_bbox_is_multi_country(classifier):
-    eu_gdf, non_eu_gdf, areas = classifier
-    result = classify_bbox("[3.95507, 57.89150, 31.20117, 71.18775]", eu_gdf, non_eu_gdf, areas)
-    assert result["classification"] == "multi_country_eu"
-    assert "Norway" in result["countries"]
-    assert "Sweden" in result["countries"]
-    assert "Finland" in result["countries"]
-
-
 def test_atlantic_france_bbox_is_multi_country(classifier):
     eu_gdf, non_eu_gdf, areas = classifier
     result = classify_bbox(
@@ -47,6 +49,17 @@ def test_atlantic_france_bbox_is_multi_country(classifier):
     assert result["classification"] == "multi_country_eu"
     assert "France" in result["countries"]
     assert "Spain" in result["countries"]
+
+
+def test_benelux_bbox_is_multi_country(classifier):
+    eu_gdf, non_eu_gdf, areas = classifier
+    result = classify_bbox(
+        "[2.28516, 49.38237, 7.75635, 53.80065]", eu_gdf, non_eu_gdf, areas
+    )
+    assert result["classification"] == "multi_country_eu"
+    assert "Belgium" in result["countries"]
+    assert "Netherlands" in result["countries"]
+    assert "Luxembourg" in result["countries"]
 
 
 # --- single_country_eu cases ---
@@ -262,3 +275,53 @@ def test_each_eu_country_own_bbox_is_single_country(country, bbox_str, classifie
         f"{country} {bbox_str} -> {result['classification']}: {result}"
     )
     assert country in result["countries"]
+
+
+# --- doc/code sync: flowchart thresholds must match bbox_classifier.py ---
+# The bbox-classifier flowchart (docs/bbox-classifier-flowchart.md) embeds the
+# live threshold values as literals at its decision nodes. These tests pin every
+# literal to its constant so the chart cannot drift silently: edit the chart
+# freely, and if a number falls behind, `uv run pytest` fails loudly. If you
+# reword a node so a phrase no longer matches, update the template here.
+
+_FLOWCHART_PATH = Path(__file__).resolve().parent / "docs" / "bbox-classifier-flowchart.md"
+
+
+@lru_cache(maxsize=1)
+def _mermaid_block():
+    text = _FLOWCHART_PATH.read_text(encoding="utf-8")
+    match = re.search(r"```mermaid\n(.*)```", text, re.DOTALL)
+    assert match, f"No ```mermaid block found in {_FLOWCHART_PATH}"
+    return match.group(1)
+
+
+def _pct(x):
+    return f"{float(x) * 100:g}%"
+
+
+def _num(x):
+    return f"{float(x):g}"
+
+
+# (label, module constant, phrase template). {pct} renders a fraction as a
+# percent already including the sign (0.50 -> "50%"); {num} renders a bare
+# number (2 -> "2", 1.5 -> "1.5").
+_FLOWCHART_THRESHOLDS = [
+    ("Russia clip longitude", _EUROPEAN_RUSSIA_CLIP_LON, "[0°, {num}°E]"),
+    ("meaningful coverage", _MEANINGFUL_COVERAGE_THRESHOLD, "coverage ≥ {pct}"),
+    ("collective share", _COLLECTIVE_SHARE_THRESHOLD, "collective share ≥ {pct}"),
+    ("raw dominance cutoff", _RAW_DOMINANCE_CUTOFF, "raw_ratio > {num}"),
+    ("single-country share (majority gate)", _SINGLE_COUNTRY_SHARE_THRESHOLD, "top_share ≥ {pct}"),
+    ("single-country share (Russia override)", _SINGLE_COUNTRY_SHARE_THRESHOLD, "holds < {pct}"),
+    ("coverage ratio", _COVERAGE_RATIO_THRESHOLD, "coverage_ratio > {num}"),
+    ("coverage fallback min share", _COVERAGE_FALLBACK_MIN_SHARE, "share > {pct}"),
+]
+
+
+@pytest.mark.parametrize("label,const,template", _FLOWCHART_THRESHOLDS)
+def test_flowchart_thresholds_match_code(label, const, template):
+    expected = template.format(pct=_pct(const), num=_num(const))
+    assert expected in _mermaid_block(), (
+        f"Flowchart out of sync for '{label}': expected literal '{expected}' "
+        f"(from {const!r}), not found in {_FLOWCHART_PATH.name}."
+    )

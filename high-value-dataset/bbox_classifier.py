@@ -28,7 +28,9 @@ Algorithm
 Each bbox is intersected with **all** countries, not just the European set:
 the non-European overlap is what distinguishes intentional European content
 from an accidental border clip. Rationale and threshold choices live in
-``docs/adr/0001-bbox-classifier-design-choices.md``.
+``docs/adr/0001-bbox-classifier-design-choices.md``; a visual flowchart of this
+pipeline lives in ``docs/bbox-classifier-flowchart.md`` (its threshold
+literals are pinned to the constants below by ``test_bbox_classifier.py``).
 
 STEP 0 — LOAD (once)
     EU set = ``(continent == "Europe" AND status == "Member State")
