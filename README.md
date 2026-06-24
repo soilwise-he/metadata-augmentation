@@ -293,6 +293,14 @@ erDiagram
 ### Detail of additional tables
 ![detail of augmentation tables](docs/ERD.png)
 
+## Augmentation process flow 
+
+- An *AUGMENTS_EVENTS* represents a processing run (one event may target one or many records) executed by an *AGENT*. An agent can identify already processed records by combining record_is, event_id and agent_id. Note: This event can also be a human reviewer that inserts an event and review at the same time.
+- An Event produces multiple *AUGMENTS_ASSERTION* rows (candidate changes per record/field), each with provenance and confidence. To identify the feature augmented, a field_path structure is used (ex; records.spatial)
+- Assertions may be complementary, duplicate, or in conflict. A review process can provide evidence regarding which claims are ultimately used as final augments.
+- The review process is logged in *REVIEW* and executed by an *AGENT*. A review agent can make decissions on multiple features and multiple assertions. Conflicting output between reviews can always be resolved on Agent-priority level
+- The final augmentation(s) are persisted to *SELECTION_RESULT*.
+
 
 ## Features
 - Translation module
@@ -367,6 +375,104 @@ Many records arrive in a local language, we aim to capture at least english main
 Read more at <https://language-tools.ec.europa.eu/>
 
 [read more](./translation/)
+
+## Augmentation ERD (redrawn)
+
+```mermaid
+erDiagram
+
+    classDef augmentation fill:#d2691e,stroke:#ebe4d8,stroke-width:2px
+
+    AGENT {
+        TEXT agent_id PK
+        TEXT agent_type
+        TEXT name
+        TEXT version
+        JSONB parameters
+    }
+
+    AUGMENTS_EVENTS {
+        TEXT event_id PK
+        TEXT records_id FK
+        TEXT agent_id FK
+        TEXT process
+        TEXT status
+        TEXT selection_id NULL
+        TIMESTAMPTZ started_at
+        TIMESTAMPTZ ended_at
+        JSONB parameters
+        TEXT error
+    }
+
+    AUGMENTS_ASSERTION {
+        TEXT assertion_id PK
+        TEXT event_id FK
+        TEXT record_id
+        TEXT field_path
+        JSONB old_value
+        JSONB new_value
+        FLOAT confidence
+        JSONB source_snapshot
+        TIMESTAMPTZ created_at
+    }
+
+    REVIEW {
+        TEXT review_id PK
+        TEXT assertion_id FK
+        TEXT event_id FK
+        TEXT agent_id FK
+        TEXT reviewer_type
+        TEXT decision
+        JSONB selected_value
+        FLOAT confidence_override
+        TEXT comment
+        TIMESTAMPTZ created_at
+    }
+
+    AUGMENTS {
+        TEXT record_id
+        TEXT property
+        TEXT value
+        TEXT process
+        TIMESTAMPTZ date
+    }
+
+    AUGMENT_STATUS {
+        TEXT record_id
+        TEXT status
+        TEXT process
+        TIMESTAMPTZ date
+    }
+
+    AGENT ||--o{ AUGMENTS_EVENTS : "processed_by"
+    AUGMENTS_EVENTS ||--o{ AUGMENTS_ASSERTION : "produces"
+    AUGMENTS_ASSERTION ||--o{ REVIEW : "may_be_reviewed_by"
+    REVIEW ||--o{ AUGMENTS : "accepts_into"
+    AUGMENTS ||--o{ AUGMENT_STATUS : "updates"
+
+    class AGENT,AUGMENTS_EVENTS,AUGMENTS_ASSERTION,REVIEW augmentation
+```
+
+**Process description (redrawn)**
+
+- **Event creation**: An `AUGMENTS_EVENTS` row is created and linked to an `Agent` (`agent_id`). `selection_id` is initially empty (NULL).
+- **Assertion production**: The agent run populates multiple `AUGMENTS_ASSERTION` rows (one or more per `record_id`/`field_path`) with `new_value` and `confidence`.
+- **Selection scheduling**: A selection task filters `AUGMENTS_ASSERTION` grouped by `record_id` and `field_path`, looking for groups where the parent `AUGMENTS_EVENTS.selection_id` is NULL (unselected).
+- **Selection logic**: For each group the selector inspects assertions:
+  - If a single assertion clearly wins (confidence threshold, agent priority, or voting), the selector records the selection by populating the event's `selection_id` (or by writing an automated `REVIEW` with `reviewer_type=automated` and `decision=accept`).
+  - If assertions are complementary (different subfields or non-overlapping JSON paths), the selector may merge into a new assertion with combined `new_value` and a computed `confidence` and write that assertion (linked to the same `event_id`).
+  - If none are acceptable, the selector marks the event `status=needs_review` for human inspection.
+- **Review and finalization**: A `REVIEW` record documents the decision (automated or human). Accepted assertions are promoted to `AUGMENTS` (final stored augmentations) and `AUGMENT_STATUS` is updated for the record/process.
+- **Idempotency & audit**: Keep `old_value` and `source_snapshot` on `AUGMENTS_ASSERTION` and store reviewer rationale in `REVIEW` to allow rollbacks and audits.
+
+**Notes on `selection_id` usage**
+- The `selection_id` stored on `AUGMENTS_EVENTS` acts as a pointer to the selection run that finalized the event. It is NULL while assertions are open. When a selection run commits a decision for the event it should set `selection_id` to the selection run identifier (or the `review_id` if the selection is implemented as a `REVIEW`).
+- This allows subsequent schedulers to skip already-selected events and focus on unresolved items.
+
+**When to keep `SELECTION_RESULT`**
+- If you want a lightweight, immutable record of the automated selection (for analytics or replay) keep a separate `SELECTION_RESULT` table. Otherwise, record selection as an automated `REVIEW` row and drop `SELECTION_RESULT` to reduce duplication.
+
+---
 
 ### Keyword Matcher
 
