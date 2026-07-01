@@ -216,8 +216,6 @@ def test_out_of_range_coords_are_invalid(classifier):
 
 
 # --- every EU country's own bbox (parametrized) ---
-# A country's rectangular bbox is not the country: non-rectangular states fill
-# their bbox with neighbours, so multi_country_eu can be the correct answer.
 #
 # Norway and Croatia are the two cases where it is NOT correct — their bbox is
 # so dominated by neighbours that the country is not even the plurality hit, and

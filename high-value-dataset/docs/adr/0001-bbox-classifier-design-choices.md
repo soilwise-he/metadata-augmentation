@@ -139,6 +139,20 @@ needs to know *whether* any non-EU country is hit, not how much.
 
 ## Step 5 — Single vs multi: dominance, majority, and the Russia special-case
 
+Rule 1 and rule 2 read complementary signals, so neither subsumes the other. Rule 1
+is *share/area*-centric — it resolves the country that owns the bulk of the
+EU-overlap pie. Rule 2 is *coverage-fraction*-centric — it resolves the country
+that is far more *complete* inside the bbox than its neighbours. Each guards a
+national-bbox shape the other is structurally blind to:
+
+- A **large** subject's bbox almost always fully contains a microstate or small
+  neighbour (Monaco, Andorra, San Marino, and Luxembourg sit at ~100% coverage
+  inside France's, Italy's, and Germany's bboxes), which collapses rule 2's
+  coverage ratio below its threshold — only rule 1's majority gate resolves it.
+- A **small** subject fully inside a bbox dominated by a larger neighbour's raw area never reaches a
+ majority. E.g. the bbox around Luxemburg contains large parts of its neighboring countries — only rule 2's coverage ratio resolves it. 
+
+
 A country resolves `single_country_eu` in rule 1 when it dominates the EU
 intersection by raw area (`largest / runner_up > _RAW_DOMINANCE_CUTOFF`,
 default 2) **or**, for polygons, when it holds a majority of the EU
@@ -163,8 +177,16 @@ Two real edge cases still force extra handling on top of the ratio gate:
   inside the bbox (e.g. a Luxembourg bbox) may not dominate by raw area but is
   *fully* covered while its larger neighbours are barely clipped. Comparing
   *coverage fractions* (intersection / total country area) instead of raw area
-  catches this. It is skipped for lines, where length relative to total area is
-  meaningless.
+  catches this — but coverage alone is not enough. "Fully covered" is cheap for
+  any microstate that merely sits inside a larger subject's bbox (Luxembourg is
+  fully inside a Benelux bbox too), so the coverage ratio is gated by a second
+  check: the top-coverage country must also hold more than
+  `_COVERAGE_FALLBACK_MIN_SHARE` (10%) of the EU intersection area — *does that
+  country actually carry weight in the bbox?* This reuses the Step 4
+  coverage-vs-share duality, down to the same 10% floor
+  (`_COLLECTIVE_SHARE_THRESHOLD`): coverage asks "is one country far more
+  *fully* captured than the others?", share asks "and does it matter?". This step is
+  skipped for lines, where length relative to total area is meaningless.
 
 ## Accepted limitations
 

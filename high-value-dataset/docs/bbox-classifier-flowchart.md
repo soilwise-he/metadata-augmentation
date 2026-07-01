@@ -34,8 +34,8 @@ shown, so any bbox can be traced from input to its label.
 - **top_share** — the top EU hit's share of the EU overlap.
 - **coverage_ratio** — `highest coverage ÷ second-highest coverage`.
 - **Path A / Path B** — A: only EU countries are hit (no competition, relevance
-  test skipped); B: both EU and non-EU countries are hit (must prove the EU
-  overlap is intentional).
+  test skipped); B: both EU and non-EU countries are hit (relevance test must prove 
+  the EU overlap is intentional).
 
 ## Outcome colours
 
