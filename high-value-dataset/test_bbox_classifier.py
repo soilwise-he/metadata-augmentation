@@ -17,6 +17,10 @@ from bbox_classifier import (
     _RAW_DOMINANCE_CUTOFF,
     _SINGLE_COUNTRY_SHARE_THRESHOLD,
 )
+from eu_terms_and_countries import (
+    DEFAULT_EU_COUNTRIES,
+    DEFAULT_GEOJSON_NAME_ALIASES,
+)
 
 GEOJSON_PATH = "./datadump/world-administrative-boundaries.geojson"
 
@@ -323,3 +327,29 @@ def test_flowchart_thresholds_match_code(label, const, template):
         f"Flowchart out of sync for '{label}': expected literal '{expected}' "
         f"(from {const!r}), not found in {_FLOWCHART_PATH.name}."
     )
+
+
+# --- shared EU country set: bbox_classifier and spatial_coverage agree ------
+# bbox_classifier partitions the GeoJSON by canonical-name membership in
+# DEFAULT_EU_COUNTRIES (the set shared with spatial_coverage). These pin that
+# the partition is 1:1 with the canonical set, so the two modules never disagree
+# on who counts as European — and that adding a country to the GeoJSON without
+# updating the shared sets (or vice versa) fails loudly.
+from collections import Counter
+
+
+def test_bbox_eu_partition_matches_shared_canonical_set():
+    resolved = {DEFAULT_GEOJSON_NAME_ALIASES[n] for n in _EU_GDF["name"]}
+    assert resolved == DEFAULT_EU_COUNTRIES, (
+        "bbox_classifier's EU partition does not match the shared canonical "
+        "set DEFAULT_EU_COUNTRIES; the two modules would disagree on who is "
+        "European."
+    )
+
+
+def test_geojson_to_canonical_is_one_to_one():
+    # Two GeoJSON EU rows must not collapse to one canonical name (would
+    # duplicate geometry and break area computation).
+    counts = Counter(DEFAULT_GEOJSON_NAME_ALIASES[n] for n in _EU_GDF["name"])
+    dups = {k: v for k, v in counts.items() if v > 1}
+    assert not dups, f"GeoJSON rows collapse to the same canonical name: {dups}"

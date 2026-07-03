@@ -16,9 +16,11 @@ shown, so any bbox can be traced from input to its label.
 
 ## Terms
 
-- **EU set** — the European *continent* per the source boundaries
-  (`continent = "Europe"` AND `status = "Member State"`), plus Turkey and Cyprus
-  (included by name). Russia is clipped west of 60°E. **Not** the European Union.
+- **EU set** — defined in
+  `eu_terms_and_countries.DEFAULT_EU_COUNTRIES` (the continental-Europe set,
+  shared with `spatial_coverage`). Each GeoJSON row is resolved via
+  `DEFAULT_GEOJSON_NAME_ALIASES`; members are European, the rest are not.
+  Russia is clipped west of 60°E. **Not** the European Union.
 - **degenerate bbox** — a point (both axes collapsed) or a line (exactly one axis
   collapsed); zero-area, so resolved by containment (point) or length (line)
   instead of area.
@@ -48,7 +50,7 @@ per-bbox step.
 title: bbox_classifier.classify_bbox — pipeline
 ---
 flowchart TD
-    LOAD["Step 0 · RUN ONCE — load country sets<br/>EU = (continent Europe + Member State) ∪ {Turkey, Cyprus}; Russia clipped to [0°, 60°E]<br/>Non-EU = all other countries"]
+    LOAD["Step 0 · RUN ONCE — load country sets<br/>EU = canonical-name membership in DEFAULT_EU_COUNTRIES (shared with spatial_coverage.py); Russia clipped to [0°, 60°E]<br/>Non-EU = all other countries"]
 
     IN(["Input bbox string"])
     LOAD --> IN

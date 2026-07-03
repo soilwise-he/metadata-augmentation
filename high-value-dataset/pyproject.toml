@@ -5,10 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "geopandas>=1.1.4",
     "ipykernel>=7.3.0",
     "numpy>=2.4.6",
+    "openpyxl>=3.1.5",
     "pandas>=3.0.3",
     "seaborn>=0.13.2",
+    "shapely>=2.1.2",
     "tqdm>=4.67.3",
     "upsetplot>=0.9.0",
 ]
@@ -17,3 +20,6 @@ dependencies = [
 dev = [
     "pytest>=9.0.3",
 ]
+
+[tool.uv.sources]
+upsetplot = { git = "https://github.com/haritha-j/UpSetPlot.git", rev = "9515069c04e97aa73c2c41f6d68843f09094669f" }

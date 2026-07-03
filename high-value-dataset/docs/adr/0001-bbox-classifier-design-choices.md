@@ -13,9 +13,11 @@ organized to mirror that pipeline, step by step.
 The four labels (`single_country_eu`, `multi_country_eu`, `non_european`,
 `invalid`) are defined in the `bbox_classifier.py` module docstring.
 
-- **`_eu` and "EU set" mean the European continent, not the European  Union.**
+- **`_eu` and "EU set" mean the European continent, not the European Union.**
   The set includes non-EU-member states such as Norway, Switzerland, the UK,
-  Turkey, Iceland, and Cyprus. 
+  Turkey, Iceland, and Cyprus. The set is defined in
+  `eu_terms_and_countries.DEFAULT_EU_COUNTRIES` and shared with
+  `spatial_coverage`, so the two signals agree on what "European" means.
 - A bbox resolves to **exactly one** of the four labels.
 - **coverage vs share** — same numerator (a country's intersection area with the
   bbox), different denominator. *coverage* = `÷ country_total_area` (what
@@ -32,9 +34,14 @@ The four labels (`single_country_eu`, `multi_country_eu`, `non_european`,
 
 ## Step 0 — Country set: who counts as "European"
 
-The EU set is `(continent == "Europe" AND status == "Member State") ∪ {Turkey,
-Cyprus}`. Turkey and Cyprus are `continent == "Asia"` in the source GeoJSON but
-are European states, so they are included by name.
+The EU set is defined by **canonical-name membership** in
+`eu_terms_and_countries.DEFAULT_EU_COUNTRIES` — the continental-Europe set
+shared with `spatial_coverage`, so both signals agree on what "European" means
+Each GeoJSON row is resolved to its canonical name via
+`DEFAULT_GEOJSON_NAME_ALIASES`; rows whose canonical name is in the set are
+European, all others are not. The set is the **European continent, not the
+European Union**: it includes non-member states such as Norway, Switzerland,
+the U.K., Iceland, Moldova, Turkey, and Cyprus. 
 
 **Russia is clipped to longitudes `[0°, 60°E]`** (west of the Urals) and lives in the EU set (clipped).
 - *Why clip:* Russia's full geometry would make any Siberian bbox intersect
@@ -198,11 +205,11 @@ All are niche and accepted given the European-mainland focus; where a threshold
 fix is possible, the entry notes why it is not worth the regression it would
 cause.
 
-- **Microstates / overseas territories.** Holy See (Vatican) is a `Permanent
-  Observer`, not a `Member State`, so it is not in the EU set; a Vatican-only
-  bbox hits Italy (<1%) + Holy See (non-EU) → `non_european`. Madeira, the
-  Azores, and Greenland are separate `* Territory` entries (not mainland),
-  likewise excluded because we selected `Status == member state`. 
+- **Microstates / overseas territories.** Holy See (Vatican) is not in the EU
+  set (the canonical `DEFAULT_EU_COUNTRIES` list does not include it); a
+  Vatican-only bbox hits Italy (<1%) + Holy See (non-EU) → `non_european`.
+  Madeira, the Azores, and Greenland are separate territory entries that are
+  likewise not in the canonical set. 
 - **Thin latitudinal transect.** A thin strip across many EU countries where no
   single one reaches 50% coverage (e.g. `[9.87, 50.19, 51.64, 51.64]` — Poland
   30.8%, Czechia 22%, Ukraine 18.5%) is rejected as `non_european`. This is a
@@ -227,9 +234,9 @@ cause.
     Norway is only 27% of the intersection (Sweden 32%, Finland 28%), and
     coverage_ratio is 1.00 — Norway does not lead on coverage either.
   - *Croatia* `[13.50479, 42.39999, 19.42500, 46.53583]` → multi. Croatia
-    wraps around Bosnia & Herzegovina (in the EU set under the continent
-    convention), so its bbox is about as much Bosnia as Croatia: Croatia 36%,
-    Bosnia 33%, Slovenia 11%; coverage_ratio 1.01.
+    wraps around Bosnia & Herzegovina (in the EU set), so its bbox is about as
+    much Bosnia as Croatia: Croatia 36%, Bosnia 33%, Slovenia 11%;
+    coverage_ratio 1.01.
   - *Why accepted:* These misclassifications are hard to classify by the human eye as well.
     Neither a share nor a coverage threshold recovers these —
     the country is not the majority of its own bbox. 

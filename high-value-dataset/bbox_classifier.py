@@ -33,10 +33,13 @@ pipeline lives in ``docs/bbox-classifier-flowchart.md`` (its threshold
 literals are pinned to the constants below by ``test_bbox_classifier.py``).
 
 STEP 0 — LOAD (once)
-    EU set = ``(continent == "Europe" AND status == "Member State")
-    ∪ {Turkey, Cyprus}``; Russia is clipped to longitudes ``[0, 60°E]``
-    (so that it onlt contains the European/western part of Russia).
-    Non-EU set = all other countries.
+    EU set = countries whose canonical name (via
+    ``eu_terms_and_countries.DEFAULT_GEOJSON_NAME_ALIASES``) is in
+    ``eu_terms_and_countries.DEFAULT_EU_COUNTRIES`` — the continental-Europe
+    set shared with :mod:`spatial_coverage`. Russia is clipped to longitudes
+    ``[0, 60°E]`` (so that only the European/western part counts). The
+    GeoJSON keeps its own names in output; membership is decided by canonical
+    lookup. Non-EU set = all other countries.
 
 STEP 1 — PARSE
     ``"[west, south, east, north]"`` → coordinates.  ``None`` if unparseable.
@@ -102,6 +105,11 @@ from collections import namedtuple
 import geopandas as gpd
 from shapely.geometry import LineString, Point, box
 
+from eu_terms_and_countries import (
+    DEFAULT_EU_COUNTRIES,
+    DEFAULT_GEOJSON_NAME_ALIASES,
+)
+
 EQUAL_AREA_CRS = "EPSG:3035"
 GEOJSON_PATH = "./datadump/world-administrative-boundaries.geojson"
 
@@ -115,11 +123,7 @@ _COVERAGE_FALLBACK_MIN_SHARE = 0.10    #   ...and the coverage-top country's min
 _MEANINGFUL_COVERAGE_THRESHOLD = 0.50  # is this country "substantially inside" the bbox
 _COLLECTIVE_SHARE_THRESHOLD = 0.10     # meaningful countries' share of EU intersection
 
-# --- country-set membership ---
-_TURKEY_NAME = "Turkey"
-_CYPRUS_NAME = "Cyprus"
-# Added to the EU set by name (both are classified "Asia" in the GeoJSON but are European states).
-_EXTRA_EU_NAMES = {_TURKEY_NAME, _CYPRUS_NAME}
+# --- Russia: special case ---
 _RUSSIA_NAME = "Russian Federation"
 _EUROPEAN_RUSSIA_CLIP_LON = 60.0  # Longitude clip: approx. the Urals; east of this is Siberia (non-European)
 
@@ -131,23 +135,31 @@ _EuHit = namedtuple("_EuHit", ["name", "area", "coverage"])
 def load_countries(geojson_path=GEOJSON_PATH):
     """Load country geometries and split into European and non-European sets.
 
-    EU set = ``(continent == "Europe" AND status == "Member State") ∪ {Turkey, Cyprus}``.  
-    Turkey and Cyprus are ``continent == "Asia"`` in the source data, so they are included by name.  
+    The EU set is defined by **canonical-name membership** in
+    :data:`eu_terms_and_countries.DEFAULT_EU_COUNTRIES` — the continental-Europe
+    set shared with :mod:`spatial_coverage`. Each GeoJSON row is resolved to its
+    canonical name via
+    :data:`eu_terms_and_countries.DEFAULT_GEOJSON_NAME_ALIASES`; rows whose
+    canonical name is in the set are European, all others are not.
+
+    The returned GeoDataFrames keep the **GeoJSON's own ``name``** (e.g.
+    ``"Russian Federation"``), not the canonical form — geometry code and the
+    country names in :func:`classify_bbox`'s output are unaffected, and the
+    spatial-coverage verdict reads only the bbox *classification label*, never
+    these names.
+
     Russia's geometry is clipped to west of ``_EUROPEAN_RUSSIA_CLIP_LON`` (60°E).
 
     Args:
-        geojson_path: Path to a GeoJSON with columns ``continent``,
-            ``status``, ``name``, ``geometry``.
+        geojson_path: Path to a GeoJSON with a ``name`` column and ``geometry``.
 
     Returns:
         Tuple ``(eu_gdf, non_eu_gdf)`` — GeoDataFrames[``name``, ``geometry``]
         in EPSG:4326.
     """
     gdf = gpd.read_file(filename=geojson_path)
-    eu_mask = (
-        ((gdf["continent"] == "Europe") & (gdf["status"] == "Member State"))
-        | (gdf["name"].isin(_EXTRA_EU_NAMES))
-    )
+    canonical = gdf["name"].map(DEFAULT_GEOJSON_NAME_ALIASES)
+    eu_mask = canonical.isin(DEFAULT_EU_COUNTRIES)
     eu_gdf = gdf.loc[eu_mask, ["name", "geometry"]].reset_index(drop=True)
     non_eu_gdf = gdf.loc[~eu_mask, ["name", "geometry"]].reset_index(drop=True)
 
