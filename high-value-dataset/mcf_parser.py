@@ -1,11 +1,16 @@
 import json
 import re
+import pandas as pd
 
 from eu_terms_and_countries import (
     DEFAULT_EU_COUNTRIES,
     DEFAULT_EU_COUNTRY_ALIASES,
     DEFAULT_CONCRETE_MULTI_COUNTRY_EU_TERMS,
     DEFAULT_BROAD_EU_TERMS,
+    DEFAULT_SCOPE_TAG_VOCABULARY,
+    DEFAULT_SPATIAL_KEYWORD_VOCABULARIES,
+    DEFAULT_SCOPE_TAG_FOR_VALUES,
+    DEFAULT_GLOBAL_THEMATIC_MODIFIERS,
 )
 
 
@@ -31,7 +36,11 @@ class McfParser:
     def __init__(self, df, soil_terms=None,
                  concrete_multi_country_eu_terms=None,
                  broad_eu_terms=None, eu_countries=None,
-                 eu_country_aliases=None):
+                 eu_country_aliases=None,
+                 scope_tag_vocabulary=None,
+                 spatial_keyword_vocabularies=None,
+                 scope_tag_for_values=None,
+                 global_thematic_modifiers=None):
         self._df = df
         self._soil_terms = soil_terms or self.DEFAULT_SOIL_TERMS
         self._concrete_multi_country_eu_terms = (
@@ -41,6 +50,26 @@ class McfParser:
         self._eu_countries = eu_countries or DEFAULT_EU_COUNTRIES
         self._eu_country_aliases = (
             eu_country_aliases or DEFAULT_EU_COUNTRY_ALIASES
+        )
+        self._scope_tag_vocabulary = (
+            scope_tag_vocabulary or DEFAULT_SCOPE_TAG_VOCABULARY
+        )
+        self._spatial_keyword_vocabularies = (
+            spatial_keyword_vocabularies or DEFAULT_SPATIAL_KEYWORD_VOCABULARIES
+        )
+        self._scope_tag_for_values = (
+            scope_tag_for_values or DEFAULT_SCOPE_TAG_FOR_VALUES
+        )
+        # Regex that masks ``global``/``worldwide`` when it is a thematic modifier
+        # (``global warming``, ``worldwide leaf …``) — not a spatial scope. Only the
+        # modifier word is neutralized (→ ``xglobal``), so a genuine ``global``
+        # elsewhere in the same text still fires. See ADR 0002.
+        modifiers = global_thematic_modifiers or DEFAULT_GLOBAL_THEMATIC_MODIFIERS
+        self._thematic_global_re = re.compile(
+            r"\b(global|worldwide)(?=\s+(?:"
+            + "|".join(re.escape(w) for w in sorted(modifiers))
+            + r")\b)",
+            re.IGNORECASE,
         )
         self._parsed = df["raw_mcf"].apply(self._parse)
         self._extractors = {
@@ -170,75 +199,113 @@ class McfParser:
         return found
 
     def _get_eu_from_mcf(self, mcf):
-        """Extract EU evidence from MCF keywords into 3 pooled buckets.
+        """Extract EU evidence from MCF keywords, tagged by provenance band.
 
-        Each lowercased keyword routes to exactly one bucket:
+        Each keyword *group* is routed to a band (see ADR 0002), applied in
+        order (first match wins):
 
-        - ``concrete_multi_country_terms`` — a concrete pan-European acronym
-          (S3), e.g. ``eea39``, ``eu27``.
-        - ``broad_eu_terms`` — a broad EU term (S1): ``europe``, ``europa``,
-          ``european union``.
-        - ``eu_countries`` — a canonical EU country name (S2).
+        - ``scope_tag`` — vocabulary == "Spatial scope" (the INSPIRE codelist).
+          Checked first because it is often mis-typed ``theme``. Its values are
+          scope granularities, split into ``for`` (``european``/``global``) and
+          ``against`` (everything else: ``national``/``regional``/…).
+        - ``place_keyword`` — ``keywords_type == "place"`` **or** a spatial
+          vocabulary name (``Country``, ``Region``, ``Continents, …``). Each
+          value routes to ``concrete_multi_country_terms`` /
+          ``broad_eu_terms`` / ``eu_countries``.
+        - non-spatial groups (theme/untyped + GEMET/AGROVOC) are dropped.
 
-        Returns ``None`` when no keyword yields any evidence.
+        Returns ``{"scope_tag": {...}, "place_keyword": {...}}`` or ``None``.
         """
         if not mcf:
             return None
-        concrete = []
-        broad = []
-        countries = set()
+        scope_for = []
+        scope_against = []
+        pk_concrete = []
+        pk_broad = []
+        pk_countries = set()
         try:
             kw_section = mcf.get("identification", {}).get("keywords", {})
             for _, group in kw_section.items():
-                for kw in group.get("keywords", []):
-                    if not isinstance(kw, str) or not kw.strip():
-                        continue
-                    norm = kw.strip().lower()
-                    if norm in self._concrete_multi_country_eu_terms:
-                        if norm not in concrete:
-                            concrete.append(norm)
-                    elif norm in self._broad_eu_terms:
-                        if norm not in broad:
-                            broad.append(norm)
-                    else:
-                        country = self._eu_country_aliases.get(norm, norm)
-                        if country in self._eu_countries:
-                            countries.add(country)
+                if not isinstance(group, dict):
+                    continue
+                kt = (group.get("keywords_type") or "").strip().lower()
+                vocab = group.get("vocabulary")
+                vname = ""
+                if isinstance(vocab, dict):
+                    vname = (vocab.get("name") or "").strip().lower()
+                if vname == self._scope_tag_vocabulary:
+                    for kw in group.get("keywords", []):
+                        if not isinstance(kw, str) or not kw.strip():
+                            continue
+                        val = kw.strip().lower()
+                        if val in self._scope_tag_for_values:
+                            if val not in scope_for:
+                                scope_for.append(val)
+                        elif val not in scope_against:
+                            scope_against.append(val)
+                elif (kt == "place") or (vname in self._spatial_keyword_vocabularies):
+                    for kw in group.get("keywords", []):
+                        if not isinstance(kw, str) or not kw.strip():
+                            continue
+                        norm = kw.strip().lower()
+                        if norm in self._concrete_multi_country_eu_terms:
+                            if norm not in pk_concrete:
+                                pk_concrete.append(norm)
+                        elif norm in self._broad_eu_terms:
+                            if norm not in pk_broad:
+                                pk_broad.append(norm)
+                        else:
+                            country = self._eu_country_aliases.get(norm, norm)
+                            if country in self._eu_countries:
+                                pk_countries.add(country)
+                # else: non-spatial group -> dropped
         except (TypeError, KeyError):
             pass
-        if not concrete and not broad and not countries:
-            return None
         result = {}
-        if concrete:
-            result["concrete_multi_country_terms"] = concrete
-        if broad:
-            result["broad_eu_terms"] = broad
-        if countries:
-            result["eu_countries"] = sorted(countries)
-        return result
+        if scope_for or scope_against:
+            st = {}
+            if scope_for:
+                st["for"] = scope_for
+            if scope_against:
+                st["against"] = scope_against
+            result["scope_tag"] = st
+        if pk_concrete or pk_broad or pk_countries:
+            pk = {}
+            if pk_concrete:
+                pk["concrete_multi_country_terms"] = pk_concrete
+            if pk_broad:
+                pk["broad_eu_terms"] = pk_broad
+            if pk_countries:
+                pk["eu_countries"] = sorted(pk_countries)
+            result["place_keyword"] = pk
+        return result or None
 
-    def _get_eu_from_title_abstract_row(self, row):
-        """Extract EU evidence from title + abstract into the same 3 buckets.
+    def _scan_free_text(self, text):
+        """Scan one free-text field (title or abstract) into the 3 buckets.
 
-        Free text is scanned for concrete multi-country terms (letter
-        boundaries), broad EU terms (letter boundaries), and EU country names
-        (word boundaries, canonicalized). Buckets are pooled across title and
-        abstract. Returns ``None`` when nothing is found.
+        Concrete terms and broad terms match with letter boundaries; country
+        names with word boundaries (canonicalized). Returns
+        ``{"concrete_multi_country_terms": …, "broad_eu_terms": …,
+        "eu_countries": …}`` or ``None``. The provenance band (title vs
+        abstract) is assigned by the caller; this method only does the matching.
+
+        ``global``/``worldwide`` in a thematic phrase (``"global warming"``) is
+        masked first (ADR 0002), so it does not register as a broad scope term;
+        a genuine ``global`` elsewhere in the same text still fires.
         """
+        if not isinstance(text, str) or not text.strip():
+            return None
+        text = self._thematic_global_re.sub(r"x\1", text)
         concrete = []
         broad = []
         countries = set()
-        for col in ("title", "abstract"):
-            val = row.get(col)
-            if not isinstance(val, str) or not val.strip():
-                continue
-            for t in self._find_terms_in_text(val, self._concrete_multi_country_eu_terms):
-                if t not in concrete:
-                    concrete.append(t)
-            for t in self._find_terms_in_text(val, self._broad_eu_terms):
-                if t not in broad:
-                    broad.append(t)
-            countries |= self._find_countries_in_text(val)
+        for t in self._find_terms_in_text(text, self._concrete_multi_country_eu_terms):
+            if t not in concrete:
+                concrete.append(t)
+        for t in self._find_terms_in_text(text, self._broad_eu_terms):
+            if t not in broad:
+                broad.append(t)
+        countries |= self._find_countries_in_text(text)
         if not concrete and not broad and not countries:
             return None
         result = {}
@@ -252,29 +319,22 @@ class McfParser:
 
     def _extract_eu_related(self, col):
         mcf_results = self._parsed.apply(self._get_eu_from_mcf)
-        ta_results = self._df.apply(self._get_eu_from_title_abstract_row, axis=1)
+        title_results = self._df["title"].apply(self._scan_free_text)
+        abstract_results = self._df["abstract"].apply(self._scan_free_text)
 
-        def merge(mcf_dict, ta_dict):
-            if mcf_dict is None and ta_dict is None:
-                return None
+        def assemble(mcf_dict, title_dict, abstract_dict):
             result = {}
             if mcf_dict:
-                for k, v in mcf_dict.items():
-                    if v:
-                        result[k] = list(v)
-            if ta_dict:
-                for k, v in ta_dict.items():
-                    if v:
-                        if k in result:
-                            for item in v:
-                                if item not in result[k]:
-                                    result[k].append(item)
-                        else:
-                            result[k] = list(v)
-            return result if result else None
+                result.update(mcf_dict)  # scope_tag, place_keyword
+            if title_dict:
+                result["title"] = title_dict
+            if abstract_dict:
+                result["abstract"] = abstract_dict
+            return result or None
 
         self._df[col] = [
-            merge(m, t) for m, t in zip(mcf_results, ta_results)
+            assemble(m, t, a)
+            for m, t, a in zip(mcf_results, title_results, abstract_results)
         ]
 
     def _check_df_title_abstract(self, contains_fn):
@@ -285,6 +345,80 @@ class McfParser:
                     return True
             return False
         return self._df.apply(check_row, axis=1)
+
+    def _route_keyword_band(self, vname, kt):
+        """The band a keyword group routes to (mirrors ``_get_eu_from_mcf``).
+
+        First match wins: ``scope_tag`` is checked before ``place_keyword``
+        because the "Spatial scope" codelist is often mis-typed ``theme``.
+        ``"individual"`` is not a spatial type — its spatial use is caught by
+        the ``kt == "place"`` half — so it falls through to ``dropped`` here.
+        """
+        if vname == self._scope_tag_vocabulary:
+            return "scope_tag"
+        if kt == "place" or vname in self._spatial_keyword_vocabularies:
+            return "place_keyword"
+        return "dropped"
+
+    def keyword_group_census(self):
+        """Tally every ``raw_mcf`` keyword group by ``(vocabulary, type)``.
+
+        Reproduces the empirical evidence behind ADR 0002 § "The raw_mcf keyword
+        structure": each keyword *group* carries a ``keywords_type``, a
+        ``vocabulary.name``, and a ``keywords`` value list, and the vocabulary
+        name is what tells us *what kind of thing* the values are. This method
+        walks every group across the dump, normalises the routing keys
+        (lowercased + stripped, exactly as ``_get_eu_from_mcf`` sees them), and
+        labels each ``(vocabulary, type)`` combination with the band it routes
+        to — ``scope_tag`` / ``place_keyword`` / ``dropped``.
+
+        Returns a :class:`pandas.DataFrame`, one row per distinct
+        ``(vocabulary, keywords_type)`` and sorted by group count (descending),
+        with columns ``vocabulary``, ``keywords_type``, ``group_count``,
+        ``value_count``, ``routed_band``, ``example_keywords`` (up to 5 distinct
+        sample values). ``vocabulary`` / ``keywords_type`` are ``""`` when the
+        group omits them.
+        """
+        tally = {}
+        for mcf in self._parsed:
+            if not isinstance(mcf, dict):
+                continue
+            try:
+                kw_section = mcf.get("identification", {}).get("keywords", {})
+            except (TypeError, KeyError):
+                continue
+            for _, group in kw_section.items():
+                if not isinstance(group, dict):
+                    continue
+                kt = (group.get("keywords_type") or "").strip().lower()
+                vocab = group.get("vocabulary")
+                vname = ""
+                if isinstance(vocab, dict):
+                    vname = (vocab.get("name") or "").strip().lower()
+                band = self._route_keyword_band(vname, kt)
+                values = [kw for kw in group.get("keywords", [])
+                          if isinstance(kw, str) and kw.strip()]
+                cell = tally.setdefault(
+                    (vname, kt),
+                    {"group_count": 0, "value_count": 0,
+                     "routed_band": band, "examples": []})
+                cell["group_count"] += 1
+                cell["value_count"] += len(values)
+                for v in values:
+                    if v not in cell["examples"] and len(cell["examples"]) < 5:
+                        cell["examples"].append(v)
+        rows = [{
+            "vocabulary": vname,
+            "keywords_type": kt,
+            "group_count": cell["group_count"],
+            "value_count": cell["value_count"],
+            "routed_band": cell["routed_band"],
+            "example_keywords": ", ".join(cell["examples"]),
+        } for (vname, kt), cell in tally.items()]
+        df = pd.DataFrame(rows, columns=[
+            "vocabulary", "keywords_type", "group_count", "value_count",
+            "routed_band", "example_keywords"])
+        return df.sort_values("group_count", ascending=False).reset_index(drop=True)
 
     def extract(self, *fields):
         for field in fields:
