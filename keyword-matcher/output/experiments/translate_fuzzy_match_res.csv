@@ -1,0 +1,907 @@
+subject_label,vocab_label,matched_label,matched_lang,is_mt,subject_id,subject_uri,vocab_identifier,fuzzy_score
+microbial activity,soil microbial activity,soil microbial activity,en,False,158939,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,88
+106026 ecosystem research,ecosystem services,ecosystem service,en,False,158947,,https://w3id.org/eusoilvoc#EcosystemServices,80
+soil microbiology,soil microfauna,soil microbiota,en,False,158948,,https://w3id.org/eusoilvoc#SoilMicrofauna,81
+ekologi,geology,Geologie,de,False,158952,,https://w3id.org/eusoilvoc#Geology,80
+ecology,geology,geology,en,False,158953,,https://w3id.org/eusoilvoc#Geology,86
+carbon,carbonate,carbonate,en,False,158957,,https://w3id.org/eusoilvoc#Carbonate,80
+soc content,soil contents,soil content,en,False,158988,,https://w3id.org/eusoilvoc#SoilContents,87
+soil stabilization,soil salinization,soil salinization,en,False,159059,,https://w3id.org/eusoilvoc#SoilSalinization,86
+water,weather,weather,en,False,159064,,https://w3id.org/eusoilvoc#Weather,83
+soil pollutants,soil pollution,soil pollution,en,False,159072,,https://w3id.org/eusoilvoc#SoilPollution,83
+soil microbiome,soil microfauna,soil microbiota,en,False,160133,,https://w3id.org/eusoilvoc#SoilMicrofauna,87
+soil science,soil subsidence,soil subsidence,en,False,159105,,https://w3id.org/eusoilvoc#SoilSubsidence,81
+biological process,soil biological processes,soil biological process,en,False,159142,,https://w3id.org/eusoilvoc#SoilBiologicalProcesses,88
+multiple ecosystem services,ecosystem services,ecosystem services,en,False,159156,,https://w3id.org/eusoilvoc#EcosystemServices,80
+soil modeling,soil melting,soil melting,en,False,159204,,https://w3id.org/eusoilvoc#SoilMelting,88
+solute transport,soil transport,soil transport,en,False,159205,,https://w3id.org/eusoilvoc#SoilTransport,87
+soils,soil,soil,en,False,159210,,https://w3id.org/eusoilvoc#Soil,89
+indicators,soil indicators,soil indicators,en,False,159275,,https://w3id.org/eusoilvoc#SoilIndicators,80
+soil ecosystem services,ecosystem services,ecosystem services,en,False,159276,,https://w3id.org/eusoilvoc#EcosystemServices,88
+organic matter,soil organic matter,soil organic matter,en,False,159279,,https://w3id.org/eusoilvoc#SoilOrganicMatter,85
+soil improvement,soil movement,soil movement,en,False,159280,,https://w3id.org/eusoilvoc#SoilMovement,90
+incubation,inundation,inundation,en,False,159288,,https://w3id.org/eusoilvoc#Inundation,80
+soil profile,soil particles,soil particle,en,False,160234,,https://w3id.org/eusoilvoc#SoilParticles,80
+soil profiles,soil particles,soil particles,en,False,160236,,https://w3id.org/eusoilvoc#SoilParticles,81
+carbone,carbonate,carbonate,en,False,159309,,https://w3id.org/eusoilvoc#Carbonate,88
+pesticides,pesticide use,pesticide use,en,False,159314,,https://w3id.org/eusoilvoc#PesticideUse,87
+agroécologie,geology,géologie,fr,False,159328,,https://w3id.org/eusoilvoc#Geology,80
+land degradation,soil degradation,soil degradation,en,False,159361,,https://w3id.org/eusoilvoc#SoilDegradation,81
+denitrification,soil denitrification,soil denitrification,en,False,159380,,https://w3id.org/eusoilvoc#SoilDenitrification,86
+soil nutrient imbalance,soil productivity,soil nutrient balance,en,False,159412,,https://w3id.org/eusoilvoc#SoilProductivity,95
+salinization,salinisation,salinisation,en,False,159413,,https://w3id.org/eusoilvoc#Salinisation,92
+ghg and climate regulation,climate regulation,climate regulation,en,False,159425,,https://w3id.org/eusoilvoc#ClimateRegulation,82
+soil contamination,soil contaminants,soil contaminant,en,False,159437,,https://w3id.org/eusoilvoc#SoilContaminants,88
+n-mineralization,soil mineralization,soil mineralization,en,False,159450,,https://w3id.org/eusoilvoc#SoilMineralization,80
+tillage,mulching,paillage,fr,False,159458,,https://w3id.org/eusoilvoc#Mulching,80
+evaluation,evapouration,evapouration,en,False,159490,,https://w3id.org/eusoilvoc#Evapouration,82
+land management,soil management,soil management,en,False,159497,,https://w3id.org/eusoilvoc#SoilManagement,80
+2511.04 química de suelos,soil chemical,química del suelo,es,True,159505,,https://w3id.org/eusoilvoc#SoilChemical,84
+soil sampling,soil sealing,soil sealing,en,False,159511,,https://w3id.org/eusoilvoc#SoilSealing,88
+contaminants,soil contaminants,soil contaminants,en,False,159536,,https://w3id.org/eusoilvoc#SoilContaminants,83
+environmental pollution,environmental factors,environmental conditions,en,False,159547,,https://w3id.org/eusoilvoc#EnvironmentalFactors,81
+management,soil management,soil management,en,False,160158,,https://w3id.org/eusoilvoc#SoilManagement,80
+environmental health,environmental factors,environmental factor,en,False,160161,,https://w3id.org/eusoilvoc#EnvironmentalFactors,80
+soil organic carbon (soc),soil organic carbon loss,soil organic carbon loss,en,False,159590,,https://w3id.org/eusoilvoc#SOCLoss,86
+ghg emissions,emissions,emissions,en,False,159597,,https://w3id.org/eusoilvoc#Emissions,82
+soil modelling,soil melting,soil melting,en,False,159600,,https://w3id.org/eusoilvoc#SoilMelting,85
+crop production,food production,food production,en,False,159604,,https://w3id.org/eusoilvoc#FoodProduction,80
+dinitrogen,nitrogen,nitrogen,en,False,159606,,https://w3id.org/eusoilvoc#Nitrogen,89
+soil information,soil formation,soil formation,en,False,159625,,https://w3id.org/eusoilvoc#SoilFormation,93
+soil conservation,soil consolidation,soil consolidation,en,False,159631,,https://w3id.org/eusoilvoc#SoilConsolidation,80
+environmental economics,environmental factors,environmental conditions,en,False,160172,,https://w3id.org/eusoilvoc#EnvironmentalFactors,81
+boreal,boron,bore,fr,False,159718,,https://w3id.org/eusoilvoc#Boron,80
+saline soil classification,soil classification,soil classification,en,False,159758,,https://w3id.org/eusoilvoc#SoilClassification,84
+soil surface properties,soil charge properties,soil charge properties,en,False,159768,,https://w3id.org/eusoilvoc#SoilChargeProperties,80
+dissolved organic carbon,soil organic carbon,soil organic carbon,en,False,159771,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,84
+groundcovers,ground cover,ground cover,en,False,159773,,https://w3id.org/eusoilvoc#GroundCover,92
+atmosphere,soil air,soil atmosphere,en,False,159780,,https://w3id.org/eusoilvoc#SoilAir,80
+environmental monitoring,environmental factors,environmental conditions,en,False,159800,,https://w3id.org/eusoilvoc#EnvironmentalFactors,83
+mitigation,irrigation,irrigation,en,False,159806,,https://w3id.org/eusoilvoc#Irrigation,80
+bulk density,bulk density peat,bulk density peat,en,False,159856,,https://w3id.org/eusoilvoc#BulkDensityPeat,83
+soil organic carbon content,soil organic matter contents,soil organic matter content,en,False,159858,,https://w3id.org/eusoilvoc#SoilOrganicMatterContents,85
+topsoil properties,soil properties,soil properties,en,False,159862,,https://w3id.org/eusoilvoc#SoilProperties,91
+soil organic carbon stock,soil organic carbon loss,soil organic carbon loss,en,False,159863,,https://w3id.org/eusoilvoc#SOCLoss,86
+soil cover,salt cover,salt cover,en,False,159896,,https://w3id.org/eusoilvoc#SaltCover,80
+soil restoration,soil respiration,soil respiration,en,False,159902,,https://w3id.org/eusoilvoc#SoilRespiration,88
+identification,soil denitrification,soil denitrification,en,False,159911,,https://w3id.org/eusoilvoc#SoilDenitrification,82
+socloss,soil organic carbon loss,SOC loss,en,False,159932,,https://w3id.org/eusoilvoc#SOCLoss,93
+vegetation stripes,vegetation,vegetation types,en,False,159954,,https://w3id.org/eusoilvoc#Vegetation,88
+subsoil compaction,soil compaction,soil compaction,en,False,159985,,https://w3id.org/eusoilvoc#SoilCompaction,91
+topsoil compaction,soil compaction,soil compaction,en,False,159986,,https://w3id.org/eusoilvoc#SoilCompaction,91
+n2o emissions,emissions,emissions,en,False,160054,,https://w3id.org/eusoilvoc#Emissions,82
+soil parameter,soil separate,soil separate,en,False,160091,,https://w3id.org/eusoilvoc#SoilSeparate,81
+soil carbon storage,soil water storage,soil water storage,en,False,160118,,https://w3id.org/eusoilvoc#SoilWaterStorage,81
+respiration,transpiration,transpiration,en,False,160214,,https://w3id.org/eusoilvoc#Transpiration,83
+potato production,food production,food production,en,False,160293,,https://w3id.org/eusoilvoc#FoodProduction,81
+wasserbewegung,soil water movement,Bodenwasserbewegung,de,False,161151,,https://w3id.org/eusoilvoc#SoilWaterMovement,85
+bodennutzung,soil settlement,Bodensetzung,de,True,161199,,https://w3id.org/eusoilvoc#SoilSettlement,83
+wasserbindung,soil water retention,Bodenwasserbindung,de,False,161256,,https://w3id.org/eusoilvoc#SoilWaterRetention,84
+photorespiration,root respiration,root respiration,en,False,160384,,https://w3id.org/eusoilvoc#RootRespiration,81
+cell respiration,soil respiration,soil respiration,en,False,160385,,https://w3id.org/eusoilvoc#SoilRespiration,81
+climate action,climate regulation,climate regulation,en,False,160439,,https://w3id.org/eusoilvoc#ClimateRegulation,81
+wasserdurchlässigkeit,soil water permeability,Bodenwasserdurchlässigkeit,de,True,161267,,https://w3id.org/eusoilvoc#SoilWaterPermeability,83
+soil sensing,soil sealing,soil sealing,en,False,160494,,https://w3id.org/eusoilvoc#SoilSealing,83
+"soil, eu mission",soil gaseous emission,soil gaseous emission,en,False,160496,,https://w3id.org/eusoilvoc#SoilGaseousEmission,81
+soil o-live,soil organisms,soil life,en,False,160502,,https://w3id.org/eusoilvoc#SoilOrganisms,80
+fertilizers,fertiliser use,fertiliser use,en,False,160563,,https://w3id.org/eusoilvoc#FertiliserUse,80
+sostanza organica del terreno,soil organic matter,Sostanza organica del suolo,it,False,160612,,https://w3id.org/eusoilvoc#SoilOrganicMatter,82
+no-till,no till,no till,en,False,160613,,https://w3id.org/eusoilvoc#NoTill,86
+no emissions,emissions,emissions,en,False,160616,,https://w3id.org/eusoilvoc#Emissions,86
+emissioni n2o,emissions,emissioni,it,True,160619,,https://w3id.org/eusoilvoc#Emissions,82
+bodenverbreitung,soil tillage,Bodenbearbeitung,de,True,161316,,https://w3id.org/eusoilvoc#SoilTillage,88
+soil-moisture,soil moisture,soil moisture,en,False,161332,,https://w3id.org/eusoilvoc#SoilMoisture,92
+bodenkarte,soil cohesion,Bodenart,de,False,161349,,https://w3id.org/eusoilvoc#SoilCohesion,89
+arsen,sand,Arena,es,False,161367,,https://w3id.org/eusoilvoc#Sand,80
+bodenbelastung,soil aeration,Bodenbelüftung,de,True,161371,,https://w3id.org/eusoilvoc#SoilAeration,86
+gesamtgehalt,boron total elements,Bor – Gesamtgehalt,de,True,161376,,https://w3id.org/eusoilvoc#BoronTotalElements,80
+sickerwasser,soil seepage,Bodensickerwasser,de,True,161393,,https://w3id.org/eusoilvoc#SoilSeepage,83
+pédologie,lithology,pétrologie,fr,False,162946,,https://w3id.org/eusoilvoc#Lithology,84
+soil-texture,soil cohesion,soil texture,en,False,161423,,https://w3id.org/eusoilvoc#SoilCohesion,92
+classification,void classification,void classification,en,False,161424,,https://w3id.org/eusoilvoc#VoidClassification,85
+basic soil properties,soil properties,soil properties,en,False,161442,,https://w3id.org/eusoilvoc#SoilProperties,83
+soilr,soil,soil,en,False,161598,,https://w3id.org/eusoilvoc#Soil,89
+lmineralization,soil mineralization,soil mineralization,en,False,160714,,https://w3id.org/eusoilvoc#SoilMineralization,88
+sonochemical,soil chemical,soil chemical,en,False,160716,,https://w3id.org/eusoilvoc#SoilChemical,80
+species sensitivity,soil sensitivity,soil sensitivity,en,False,160775,,https://w3id.org/eusoilvoc#SoilSensitivity,80
+biodegradation,soil desertification,Bodendegradation,de,True,160782,,https://w3id.org/eusoilvoc#SoilDesertification,87
+groundwater pollution,groundwater reproduction,groundwater reproduction,en,False,160784,,https://w3id.org/eusoilvoc#GroundwaterReproduction,84
+groundwater quality,water quality,water quality,en,False,160787,,https://w3id.org/eusoilvoc#WaterQuality,81
+vapor pressure,soil vapour pressure,soil vapour pressure,en,False,160819,,https://w3id.org/eusoilvoc#SoilVapourPressure,82
+bodenschätzung,soil settlement,Bodensetzung,de,True,161460,,https://w3id.org/eusoilvoc#SoilSettlement,81
+soil-erosion,soil erosion,soil erosion,en,False,161499,,https://w3id.org/eusoilvoc#SoilErosion,92
+environmental covariates,environmental factors,environmental factors,en,False,161513,,https://w3id.org/eusoilvoc#EnvironmentalFactors,80
+temperature,soil temperature,soil temperature,en,False,161518,,https://w3id.org/eusoilvoc#SoilTemperature,81
+island,sand,sand,en,False,161549,,https://w3id.org/eusoilvoc#Sand,80
+soil minerals,soil clay mineral,soil clay mineral,en,False,161571,,https://w3id.org/eusoilvoc#SoilClayMineral,80
+soiltype,soil types,soil type,en,False,161470,,https://w3id.org/eusoilvoc#SoilTypes,94
+bodendaten,soil age,Bodenalter,de,False,161471,,https://w3id.org/eusoilvoc#SoilAge,80
+seasons,season,season,en,False,161621,,https://w3id.org/eusoilvoc#Season,92
+land-use,land use,land use,en,False,161627,,https://w3id.org/eusoilvoc#LandUse,88
+soil carbon data,soil carbon density,soil carbon density,en,False,161633,,https://w3id.org/eusoilvoc#SoilCarbonDensity,80
+soil radiocarbon,soil organic carbon,soil organic carbon,en,False,161637,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,80
+stem respiration,root respiration,root respiration,en,False,161643,,https://w3id.org/eusoilvoc#RootRespiration,81
+decomposition,peat decompostion,peat decompostion,en,False,161685,,https://w3id.org/eusoilvoc#PeatDecompostion,80
+litter quality,water quality,water quality,en,False,161695,,https://w3id.org/eusoilvoc#WaterQuality,81
+microfauna,soil microfauna,soil microfauna,en,False,161708,,https://w3id.org/eusoilvoc#SoilMicrofauna,80
+microbiota,microbes,Microbios,es,False,161747,,https://w3id.org/eusoilvoc#Microbes,84
+soil microhabitat,soil microfauna,soil microbiota,en,False,161748,,https://w3id.org/eusoilvoc#SoilMicrofauna,88
+soil organic matter fractions,soil organic matter contents,soil organic matter contents,en,False,161759,,https://w3id.org/eusoilvoc#SoilOrganicMatterContents,84
+environmental impact,environmental factors,environmental factor,en,False,161770,,https://w3id.org/eusoilvoc#EnvironmentalFactors,85
+biotic properties,soil properties,soil properties,en,False,161773,,https://w3id.org/eusoilvoc#SoilProperties,81
+hydrophobicity,soil hydrophobicity,soil hydrophobicity,en,False,161777,,https://w3id.org/eusoilvoc#SoilHydrophobicity,85
+soil water retention curve,soil water retention,soil water retention,en,False,161778,,https://w3id.org/eusoilvoc#SoilWaterRetention,87
+soil hydraulic properties,soil thermal properties,soil thermal properties,en,False,161782,,https://w3id.org/eusoilvoc#SoilThermalProperties,83
+eu mission,emissions,emission,en,False,162989,,https://w3id.org/eusoilvoc#Emissions,89
+pesticide,pesticide use,pesticide use,en,False,163037,,https://w3id.org/eusoilvoc#PesticideUse,82
+sand content,salt contents,salt content,en,False,163079,,https://w3id.org/eusoilvoc#SaltContents,83
+productividad de la tierra,biomass productivity,productividad de la biomasa,es,True,161823,,https://w3id.org/eusoilvoc#BiomassProductivity,83
+soil heath,soil health,soil health,en,False,161833,,https://w3id.org/eusoilvoc#SoilHealth,95
+crop classification,void classification,void classification,en,False,161838,,https://w3id.org/eusoilvoc#VoidClassification,84
+degradation,soil desertification,Bodendegradation,de,True,161843,,https://w3id.org/eusoilvoc#SoilDesertification,81
+soil microbes,soil micropore,soil micropore,en,False,161845,,https://w3id.org/eusoilvoc#SoilMicropore,81
+land fragmentation,soil fragmentation,soil fragmentation,en,False,161864,,https://w3id.org/eusoilvoc#SoilFragmentation,83
+soil organic carbon density,soil carbon density,soil carbon density,en,False,161872,,https://w3id.org/eusoilvoc#SoilCarbonDensity,83
+spatial aggregation,soil aggregation,soil aggregation,en,False,161874,,https://w3id.org/eusoilvoc#SoilAggregation,86
+particle size distribution,soil particle size distribution,soil particle size distribution,en,False,161880,,https://w3id.org/eusoilvoc#SoilParticleSizeDistribution,91
+grain,rain,rain,en,False,161882,,https://w3id.org/eusoilvoc#Rain,89
+mission,emissions,emission,en,False,161887,,https://w3id.org/eusoilvoc#Emissions,93
+land class,land use class,land use class,en,False,161888,,https://w3id.org/eusoilvoc#LandUseClass,83
+soil mission,soil dispersion,soil dispersion,en,False,161901,,https://w3id.org/eusoilvoc#SoilDispersion,81
+soil health indicators,soil indicators,soil indicators,en,False,161905,,https://w3id.org/eusoilvoc#SoilIndicators,81
+atmospheric conditions,weather,weather conditions,en,False,161908,,https://w3id.org/eusoilvoc#Weather,80
+ecosystem science,ecosystem services,ecosystem service,en,False,161928,,https://w3id.org/eusoilvoc#EcosystemServices,82
+hot temperature,soil temperature,soil temperature,en,False,161929,,https://w3id.org/eusoilvoc#SoilTemperature,84
+conventional farming,conventional drainage,conventional drainage,en,False,163104,,https://w3id.org/eusoilvoc#ConventionalDrainage,83
+total organic carbon,soil organic carbon,soil organic carbon,en,False,162045,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,87
+cesd-soil quality,soil health,soil quality,en,False,162049,,https://w3id.org/eusoilvoc#SoilHealth,83
+root water uptake,plant water uptake,plant water uptake,en,False,162062,,https://w3id.org/eusoilvoc#PlantWaterUptake,80
+pore size distribution (psd),soil pore size distribution,soil pore size distribution,en,False,162077,,https://w3id.org/eusoilvoc#SoilPoreSizeDistribution,80
+soil organic matter (som),soil organic matter,soil organic matter,en,False,162086,,https://w3id.org/eusoilvoc#SoilOrganicMatter,86
+thermal conductivity,soil thermal conductivity,soil thermal conductivity,en,False,162094,,https://w3id.org/eusoilvoc#SoilThermalConductivity,89
+productivity,soil productivity,soil productivity,en,False,162154,,https://w3id.org/eusoilvoc#SoilProductivity,83
+biosorption,soil sorption,Bodensorption,de,False,162197,,https://w3id.org/eusoilvoc#SoilSorption,83
+classification,void classification,void classification,en,False,162270,,https://w3id.org/eusoilvoc#VoidClassification,85
+meteorology,lithology,petrology,en,False,162349,,https://w3id.org/eusoilvoc#Lithology,80
+uv degradation,soil degradation,soil degradation,en,False,162368,,https://w3id.org/eusoilvoc#SoilDegradation,80
+brain,rain,rain,en,False,162588,,https://w3id.org/eusoilvoc#Rain,89
+pesticide mixture,pesticide use,pesticide use,en,False,163123,,https://w3id.org/eusoilvoc#PesticideUse,80
+microbial,microbes,Microbi,it,False,163126,,https://w3id.org/eusoilvoc#Microbes,88
+porosity,air porosity,air porosity,en,False,162708,,https://w3id.org/eusoilvoc#AirPorosity,80
+water content,soil moisture,soil water content,en,False,162751,,https://w3id.org/eusoilvoc#SoilMoisture,84
+filter,filtration,filtering,en,False,162806,,https://w3id.org/eusoilvoc#Filtration,80
+soil nutrient analysis,soil nutrient loss,soil nutrient loss,en,False,162820,,https://w3id.org/eusoilvoc#SoilNutrientLoss,85
+environmental water,environmental factors,environmental factor,en,False,162841,,https://w3id.org/eusoilvoc#EnvironmentalFactors,87
+soc:clay ratio,clay ratio,clay ratio,en,False,163161,,https://w3id.org/eusoilvoc#ClayRatio,83
+senet,sleet,sleet,en,False,163166,,https://w3id.org/eusoilvoc#Sleet,80
+respiration rates,plant respiration,respiration des plantes,fr,True,163192,,https://w3id.org/eusoilvoc#PlantRespiration,80
+soil compounds,soil components,soil components,en,False,163195,,https://w3id.org/eusoilvoc#SoilComponents,83
+soil lipids,soil liquid,soil liquid,en,False,163196,,https://w3id.org/eusoilvoc#SoilLiquid,82
+soil microbial community,soil microbial activity,soil microbial activity,en,False,163234,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,81
+crops,crop,crop,en,False,163243,,https://w3id.org/eusoilvoc#Crop,89
+aggregation,soil aggregation,soil aggregation,en,False,163297,,https://w3id.org/eusoilvoc#SoilAggregation,81
+social identification,soil denitrification,soil denitrification,en,False,163322,,https://w3id.org/eusoilvoc#SoilDenitrification,88
+cultural ecosystem services,ecosystem services,ecosystem services,en,False,163326,,https://w3id.org/eusoilvoc#EcosystemServices,80
+alkalinity,soil pH,soil alkalinity,en,False,163343,,https://w3id.org/eusoilvoc#SoilpH,80
+carbone organique dissout (cod),soil organic carbon,carbone organique du sol,fr,False,163350,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,80
+ecologie,geology,Geologie,de,False,163364,,https://w3id.org/eusoilvoc#Geology,88
+borneo,boron,bore,fr,False,163413,,https://w3id.org/eusoilvoc#Boron,80
+105206 meteorology,lithology,petrology,en,False,163455,,https://w3id.org/eusoilvoc#Lithology,80
+105206 meteorologie,lithology,Petrologie,de,False,163456,,https://w3id.org/eusoilvoc#Lithology,82
+13 climate action,climate regulation,climate regulation,en,False,163556,,https://w3id.org/eusoilvoc#ClimateRegulation,81
+pre depositional,parent deposition,parent deposition,en,False,163629,,https://w3id.org/eusoilvoc#ParentDeposition,85
+error,iron,Ferro,it,False,163639,,https://w3id.org/eusoilvoc#Iron,80
+microfiltration,filtration,filtration,en,False,163646,,https://w3id.org/eusoilvoc#Filtration,80
+soil protection,soil retention,soil retention,en,False,163684,,https://w3id.org/eusoilvoc#SoilRetention,83
+dissolved organic matter,soil organic matter,soil organic matter,en,False,163792,,https://w3id.org/eusoilvoc#SoilOrganicMatter,84
+ecología,geology,Geología,es,False,163830,,https://w3id.org/eusoilvoc#Geology,88
+groundwater inputs,groundwater depth,groundwater depth,en,False,163862,,https://w3id.org/eusoilvoc#GroundwaterDepth,80
+106020 limnologie,lithology,Lithologie,de,False,163878,,https://w3id.org/eusoilvoc#Lithology,80
+co2 emissions,emissions,emissions,en,False,163881,,https://w3id.org/eusoilvoc#Emissions,82
+urban development,land use,arable land development,en,False,163985,,https://w3id.org/eusoilvoc#LandUse,80
+soil physical-properties,soil physical properties,soil physical properties,en,False,164074,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,96
+soil organic carbon dynamics,soil organic carbon loss,soil organic carbon loss,en,False,164088,,https://w3id.org/eusoilvoc#SOCLoss,81
+yield stability,soil stability,soil stability,en,False,164107,,https://w3id.org/eusoilvoc#SoilStability,83
+crop yields,crop yield,crop yield,en,False,164112,,https://w3id.org/eusoilvoc#CropYield,95
+soc saturation,soil saturation,soil saturation,en,False,164119,,https://w3id.org/eusoilvoc#SoilSaturation,90
+desertification,soil desertification,soil desertification,en,False,164138,,https://w3id.org/eusoilvoc#SoilDesertification,86
+risk management,soil management,soil management,en,False,164143,,https://w3id.org/eusoilvoc#SoilManagement,80
+carbono,carbonate,carbonato,it,True,164154,,https://w3id.org/eusoilvoc#Carbonate,88
+plant productivity,soil productivity,soil productivity,en,False,164172,,https://w3id.org/eusoilvoc#SoilProductivity,80
+carbon content,carbonate contents,carbonate content,en,False,164221,,https://w3id.org/eusoilvoc#CarbonateContents,90
+böden,soil,Boden,de,False,164236,,https://w3id.org/eusoilvoc#Soil,80
+soil threats data,soil threats,soil threats,en,False,164257,,https://w3id.org/eusoilvoc#SoilThreats,83
+actual evapotranspiration,evapotranspiration,evapotranspiration,en,False,164259,,https://w3id.org/eusoilvoc#Evapotranspiration,84
+cec (cation exchange capacity),cation exchange capacity,cation exchange capacity,en,False,164279,,https://w3id.org/eusoilvoc#CationExchangeCapacity,89
+soil functions data,soil functions,soil functions,en,False,164292,,https://w3id.org/eusoilvoc#SoilFunctions,85
+soil education,soil location,soil location,en,False,164314,,https://w3id.org/eusoilvoc#SoilLocation,81
+bodenkarten,soil cohesion,Bodenart,de,False,164322,,https://w3id.org/eusoilvoc#SoilCohesion,84
+bodentypen,soil types,Bodentyp,de,False,164329,,https://w3id.org/eusoilvoc#SoilTypes,89
+bodenschätzung,soil settlement,Bodensetzung,de,True,164348,,https://w3id.org/eusoilvoc#SoilSettlement,85
+suoli,soil,Suolo,it,False,164372,,https://w3id.org/eusoilvoc#Soil,80
+landcover,land cover,land cover,en,False,164377,,https://w3id.org/eusoilvoc#LandCover,95
+soil region,soil aggregation,soil aggregation,en,False,164397,,https://w3id.org/eusoilvoc#SoilAggregation,81
+bodenarten,soil cohesion,Bodenart,de,False,164434,,https://w3id.org/eusoilvoc#SoilCohesion,89
+organischer kohlenstoffvorrat,soil organic carbon,organischer Bodenkohlenstoff,de,False,164440,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,81
+effektive kationenaustauschkapazitäten,cation exchange capacity effective,effektive Ionenauswechselkapazität,de,True,164444,,https://w3id.org/eusoilvoc#CationExchangeCapacityEffective,81
+bodenformen,soil pores,Bodenporen,de,True,164449,,https://w3id.org/eusoilvoc#SoilPores,86
+bäume,mist,brume,fr,True,164479,,https://w3id.org/eusoilvoc#Mist,80
+immissionen,emissions,Emissionen,de,True,164483,,https://w3id.org/eusoilvoc#Emissions,86
+deposition,slope orientation,exposition,en,False,164490,,https://w3id.org/eusoilvoc#SlopeOrientation,90
+grondwaterspiegeldiepte,groundwater depth,grondwaterdiepte,nl,True,164495,,https://w3id.org/eusoilvoc#GroundwaterDepth,82
+bodenbewertung,soil movement,Bodenbewegung,de,False,164513,,https://w3id.org/eusoilvoc#SoilMovement,89
+bodenfunktion,soil functions,Bodenfunktionen,de,False,164514,,https://w3id.org/eusoilvoc#SoilFunctions,93
+speicherkapazität,water storage capacity,Wasserspeicherkapazität,de,True,164522,,https://w3id.org/eusoilvoc#WaterStorageCapacity,85
+classificazione,void classification,classificazione vuota,it,True,166622,,https://w3id.org/eusoilvoc#VoidClassification,83
+edificios,building,edificio,it,True,169445,,https://w3id.org/eusoilvoc#Building,94
+1105 ecology,geology,geology,en,False,166631,,https://w3id.org/eusoilvoc#Geology,86
+basensättigung,base saturation,Basensättigung,de,False,166675,,https://w3id.org/eusoilvoc#BaseSaturation,90
+buildings,building,building,en,False,166688,,https://w3id.org/eusoilvoc#Building,94
+atmospheric conditions,weather,weather conditions,en,False,166693,,https://w3id.org/eusoilvoc#Weather,80
+soil layer,soil water,soil water,en,False,164571,,https://w3id.org/eusoilvoc#SoilWater,80
+organic contaminants,soil contaminants,soil contaminants,en,False,164588,,https://w3id.org/eusoilvoc#SoilContaminants,81
+assetto strutturale,structure grade,classe strutturale,it,True,164594,,https://w3id.org/eusoilvoc#StructureGrade,86
+bodenkarte,soil cohesion,Bodenart,de,False,164599,,https://w3id.org/eusoilvoc#SoilCohesion,89
+bodenwasserhaushalt,soil moisture,Bodenwassergehalt,de,False,164601,,https://w3id.org/eusoilvoc#SoilMoisture,83
+sol contaminé,soil contaminants,soil contaminant,en,False,164620,,https://w3id.org/eusoilvoc#SoilContaminants,83
+bodenproben,soil pores,Bodenporen,de,True,164642,,https://w3id.org/eusoilvoc#SoilPores,86
+local contaminant,soil contaminants,soil contaminant,en,False,164647,,https://w3id.org/eusoilvoc#SoilContaminants,85
+bodenzustand,soil location,Bodenstandort,de,True,164671,,https://w3id.org/eusoilvoc#SoilLocation,80
+organische substanz,soil organic matter,organische Bodensubstanz,de,False,164685,,https://w3id.org/eusoilvoc#SoilOrganicMatter,88
+atmosphäre,soil air,Bodenatmosphäre,de,False,164689,,https://w3id.org/eusoilvoc#SoilAir,80
+bodensubstrat,soil substance,Bodensubstanz,de,True,164745,,https://w3id.org/eusoilvoc#SoilSubstance,85
+soil map,soil pH,soil pH,en,False,164820,,https://w3id.org/eusoilvoc#SoilpH,80
+microrespiration,root respiration,root respiration,en,False,164837,,https://w3id.org/eusoilvoc#RootRespiration,81
+avaliable water capacity,soil available water capacity,soil available water capacity,en,False,164847,,https://w3id.org/eusoilvoc#SoilAvailableWaterCapacity,87
+energia convenzionale,conventional drainage,drenaggio convenzionale,it,True,164869,,https://w3id.org/eusoilvoc#ConventionalDrainage,82
+bodenauslaugung,soil slaking,Bodenauslaugen,de,True,164904,,https://w3id.org/eusoilvoc#SoilSlaking,90
+bodenbelastung,soil aeration,Bodenbelüftung,de,True,164906,,https://w3id.org/eusoilvoc#SoilAeration,86
+bodenbiologie,soil biopore,Bodenbiopore,de,True,164908,,https://w3id.org/eusoilvoc#SoilBiopore,80
+bodenfunktion,soil functions,Bodenfunktionen,de,False,164913,,https://w3id.org/eusoilvoc#SoilFunctions,93
+bodengestaltung,soil heat radiation,Bodenstrahlung,de,True,164914,,https://w3id.org/eusoilvoc#SoilHeatRadiation,83
+bodennutzbarkeit,soil productivity,Bodenfruchtbarkeit,de,False,164919,,https://w3id.org/eusoilvoc#SoilProductivity,82
+bodennutzung,soil settlement,Bodensetzung,de,True,164920,,https://w3id.org/eusoilvoc#SoilSettlement,83
+bodeneigenschaften,soil properties,Bodeneigenschaft,de,False,164922,,https://w3id.org/eusoilvoc#SoilProperties,94
+bodenverbreitung,soil tillage,Bodenbearbeitung,de,True,164928,,https://w3id.org/eusoilvoc#SoilTillage,88
+azole,nitrogen,azote,fr,False,164932,,https://w3id.org/eusoilvoc#Nitrogen,80
+bodenbedeckung,soil movement,Bodenbewegung,de,False,164943,,https://w3id.org/eusoilvoc#SoilMovement,81
+meteorology,lithology,petrology,en,False,164986,,https://w3id.org/eusoilvoc#Lithology,80
+air temperature,soil temperature,soil temperature,en,False,164987,,https://w3id.org/eusoilvoc#SoilTemperature,84
+solar radiation,soil heat radiation,soil heat radiation,en,False,164991,,https://w3id.org/eusoilvoc#SoilHeatRadiation,82
+arbres,trees,arbre,fr,False,165017,,https://w3id.org/eusoilvoc#Trees,91
+uso del suolo,land use,Uso del suelo,es,False,165019,,https://w3id.org/eusoilvoc#LandUse,92
+streek,trees,tree,en,False,165050,,https://w3id.org/eusoilvoc#Trees,80
+soilsubstrate,soil substance,soil substance,en,False,165056,,https://w3id.org/eusoilvoc#SoilSubstance,81
+bodemfunctie,soil functions,bodemfuncties,nl,True,165062,,https://w3id.org/eusoilvoc#SoilFunctions,96
+bodemproces,soil processes,bodemprocessen,nl,True,165065,,https://w3id.org/eusoilvoc#SoilProcesses,88
+bodemorganisme,soil organisms,bodemorganismen,nl,True,165070,,https://w3id.org/eusoilvoc#SoilOrganisms,97
+bodemgebruik,land use forests,bosgebruik,nl,True,165074,,https://w3id.org/eusoilvoc#LandUseForests,82
+bodemvocht,soil air,bodemlucht,nl,True,165075,,https://w3id.org/eusoilvoc#SoilAir,80
+bodemvruchtbaarheid,soil compressibility,bodemverdichtbaarheid,nl,True,165082,,https://w3id.org/eusoilvoc#SoilCompressibility,90
+bodemboring,soil formation,bodemvorming,nl,True,165089,,https://w3id.org/eusoilvoc#SoilFormation,87
+sgd_geologie,geology,Geologie,de,False,165115,,https://w3id.org/eusoilvoc#Geology,80
+bodenschicht,soil coating,Bodenbeschichtung,de,True,165129,,https://w3id.org/eusoilvoc#SoilCoating,83
+wasserspeicherung,soil water storage,Bodenwasserspeicherung,de,True,165134,,https://w3id.org/eusoilvoc#SoilWaterStorage,87
+bodenbelastung,soil aeration,Bodenbelüftung,de,True,165137,,https://w3id.org/eusoilvoc#SoilAeration,86
+bodenschädigung,soil saturation,Bodensättigung,de,True,165138,,https://w3id.org/eusoilvoc#SoilSaturation,83
+bodenbedeckung,soil movement,Bodenbewegung,de,False,165194,,https://w3id.org/eusoilvoc#SoilMovement,81
+edifici,building,edificio,it,True,165267,,https://w3id.org/eusoilvoc#Building,93
+biologie du sol,soil biopore,biopore du sol,fr,True,165281,,https://w3id.org/eusoilvoc#SoilBiopore,83
+carbone organique,soil organic carbon,carbone organique du sol,fr,False,165283,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,83
+carbone organique total,soil organic carbon,carbone organique du sol,fr,False,165291,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,85
+matière organique,soil organic matter,matière organique du sol,fr,False,165294,,https://w3id.org/eusoilvoc#SoilOrganicMatter,83
+carbone,carbonate,carbonate,en,False,165295,,https://w3id.org/eusoilvoc#Carbonate,88
+ressources du sol,soil cracks,fissures du sol,fr,True,165305,,https://w3id.org/eusoilvoc#SoilCracks,81
+teneur en carbone,carbonate contents,teneur en carbonate,fr,True,165319,,https://w3id.org/eusoilvoc#CarbonateContents,94
+kohlenstoffreiche böden,soil carbon density,Kohlenstoffdichte im Boden,de,True,165347,,https://w3id.org/eusoilvoc#SoilCarbonDensity,82
+uso do solo,soil flow,fluxo do solo,pt,True,165352,,https://w3id.org/eusoilvoc#SoilFlow,83
+water,weather,weather,en,False,165458,,https://w3id.org/eusoilvoc#Weather,83
+soil maps,soil gas,soil gas,en,False,165471,,https://w3id.org/eusoilvoc#SoilGas,82
+soil fertilisation,soil productivity,soil fertility,en,False,165477,,https://w3id.org/eusoilvoc#SoilProductivity,81
+soil map,soil pH,soil pH,en,False,165478,,https://w3id.org/eusoilvoc#SoilpH,80
+total organic carbon,soil organic carbon,soil organic carbon,en,False,165484,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,87
+salinization,salinisation,salinisation,en,False,165506,,https://w3id.org/eusoilvoc#Salinisation,92
+soil contamination,soil contaminants,soil contaminant,en,False,165512,,https://w3id.org/eusoilvoc#SoilContaminants,88
+bodenartenschichtung,soil coating,Bodenbeschichtung,de,True,166758,,https://w3id.org/eusoilvoc#SoilCoating,86
+available water storage capacity,available water holding capacity,available water holding capacity,en,False,166776,,https://w3id.org/eusoilvoc#AvailableWaterHoldingCapacity,84
+carbon,carbonate,carbonate,en,False,165518,,https://w3id.org/eusoilvoc#Carbonate,80
+tillage,mulching,paillage,fr,False,165528,,https://w3id.org/eusoilvoc#Mulching,80
+bodennutzbarkeit,soil productivity,Bodenfruchtbarkeit,de,False,165626,,https://w3id.org/eusoilvoc#SoilProductivity,82
+bodenzustand,soil location,Bodenstandort,de,True,165628,,https://w3id.org/eusoilvoc#SoilLocation,80
+bodenschicht,soil coating,Bodenbeschichtung,de,True,165629,,https://w3id.org/eusoilvoc#SoilCoating,83
+bodenstruktur,soil structure index,Bodenstrukturindex,de,True,165631,,https://w3id.org/eusoilvoc#SoilStructureIndex,84
+organische substanz,soil organic matter,organische Bodensubstanz,de,False,165635,,https://w3id.org/eusoilvoc#SoilOrganicMatter,88
+infiltration,filtration,filtration,en,False,165641,,https://w3id.org/eusoilvoc#Filtration,91
+topsoil gravel content,soil gravel contents,soil gravel content,en,False,165657,,https://w3id.org/eusoilvoc#SoilGravelContents,93
+vernässungsverhältnisse,weather,Witterungsverhältnisse,de,False,165673,,https://w3id.org/eusoilvoc#Weather,80
+finland,fine sand,Feinsand,de,False,165695,,https://w3id.org/eusoilvoc#FineSand,80
+pédologie,lithology,Petrologie,de,False,165719,,https://w3id.org/eusoilvoc#Lithology,80
+copertura-del-suolo,land cover,Copertura del suolo,it,False,165839,,https://w3id.org/eusoilvoc#LandCover,89
+soil characteristic,soil water characteristics,soil water characteristic,en,False,169464,,https://w3id.org/eusoilvoc#SoilWaterCharacteristics,86
+assetto-strutturale,structure grade,classe strutturale,it,True,165877,,https://w3id.org/eusoilvoc#StructureGrade,81
+finland,fine sand,Feinsand,de,False,166869,,https://w3id.org/eusoilvoc#FineSand,80
+utilizzo-del-territorio,land use,Utilizzazione del territorio,it,False,165903,,https://w3id.org/eusoilvoc#LandUse,82
+finland,fine sand,Feinsand,de,False,165906,,https://w3id.org/eusoilvoc#FineSand,80
+soildepth,soil depth,soil depth,en,False,165907,,https://w3id.org/eusoilvoc#SoilDepth,95
+source,sulfur,soufre,fr,False,166883,,https://w3id.org/eusoilvoc#Sulfur,83
+temperature,soil temperature,soil temperature,en,False,165940,,https://w3id.org/eusoilvoc#SoilTemperature,81
+bodennutzbarkeit,soil productivity,Bodenfruchtbarkeit,de,False,165964,,https://w3id.org/eusoilvoc#SoilProductivity,82
+bodenbiologie,soil biopore,Bodenbiopore,de,True,165965,,https://w3id.org/eusoilvoc#SoilBiopore,80
+bodeneigenschaften,soil properties,Bodeneigenschaft,de,False,165969,,https://w3id.org/eusoilvoc#SoilProperties,94
+bodengestaltung,soil heat radiation,Bodenstrahlung,de,True,165970,,https://w3id.org/eusoilvoc#SoilHeatRadiation,83
+bodensubstrat,soil substance,Bodensubstanz,de,True,165973,,https://w3id.org/eusoilvoc#SoilSubstance,85
+bodenauslaugung,soil slaking,Bodenauslaugen,de,True,165974,,https://w3id.org/eusoilvoc#SoilSlaking,90
+orientation,cementation,cimentation,fr,False,165994,,https://w3id.org/eusoilvoc#Cementation,82
+suitability,soil stability,soil stability,en,False,166012,,https://w3id.org/eusoilvoc#SoilStability,80
+bodemserie,soil erosion,bodemerosie,nl,True,166021,,https://w3id.org/eusoilvoc#SoilErosion,86
+roestverschijnselen,soil phenomena,bodemverschijnselen,nl,True,166023,,https://w3id.org/eusoilvoc#SoilPhenomena,84
+vochtgehalte,soil water contents,bodemvochtgehalte,nl,True,166027,,https://w3id.org/eusoilvoc#SoilWaterContents,83
+soil hydraulic properties,soil thermal properties,soil thermal properties,en,False,166049,,https://w3id.org/eusoilvoc#SoilThermalProperties,83
+soil organic carbon (soc) stock,soil organic carbon loss,soil organic carbon loss,en,False,166063,,https://w3id.org/eusoilvoc#SOCLoss,80
+bodengüte,soil health,Bodengüte,de,False,166906,,https://w3id.org/eusoilvoc#SoilHealth,84
+bodengefüge,soil structure,Bodengefüge,de,False,166909,,https://w3id.org/eusoilvoc#SoilStructure,87
+geologi,geology,Geologie,de,False,166103,,https://w3id.org/eusoilvoc#Geology,93
+sand content,salt contents,salt content,en,False,166110,,https://w3id.org/eusoilvoc#SaltContents,83
+géologie,geology,Geologie,de,False,166916,,https://w3id.org/eusoilvoc#Geology,94
+exchange,ion exchange,ion exchange,en,False,166255,,https://w3id.org/eusoilvoc#IonExchange,80
+soilloss,soil nitrogen loss,soil N loss,en,False,166274,,https://w3id.org/eusoilvoc#SoilNLoss,84
+geologici,geology,Geologie,de,False,166290,,https://w3id.org/eusoilvoc#Geology,82
+microbiomes,microbes,Microbios,es,False,166351,,https://w3id.org/eusoilvoc#Microbes,90
+soil fungi,soil fluid,soil fluid,en,False,166353,,https://w3id.org/eusoilvoc#SoilFluid,80
+crops,crop,crop,en,False,166949,,https://w3id.org/eusoilvoc#Crop,89
+erosion;,soil erosion,erosion,en,False,166418,,https://w3id.org/eusoilvoc#SoilErosion,93
+soil formation;,soil formation,soil formation,en,False,166420,,https://w3id.org/eusoilvoc#SoilFormation,97
+air pollution,soil pollution,soil pollution,en,False,166427,,https://w3id.org/eusoilvoc#SoilPollution,81
+gases,grasses,grasses,en,False,166462,,https://w3id.org/eusoilvoc#Grasses,83
+système de culture,crop class,classe de culture,fr,True,166477,,https://w3id.org/eusoilvoc#CropClass,80
+réchauffement global,soil warming,réchauffement du sol,fr,True,166483,,https://w3id.org/eusoilvoc#SoilWarming,80
+environmental impacts,environmental factors,environmental factors,en,False,166484,,https://w3id.org/eusoilvoc#EnvironmentalFactors,86
+bodenmessaktivität,soil reactivity,Bodenreaktivität,de,True,166516,,https://w3id.org/eusoilvoc#SoilReactivity,88
+conventional tillage,conventional drainage,conventional drainage,en,False,166542,,https://w3id.org/eusoilvoc#ConventionalDrainage,83
+affectation des sols,soil acidification,acidification des sols,fr,True,169481,,https://w3id.org/eusoilvoc#SoilAcidification,81
+produit agricole,inputs,input agricole,fr,False,169482,,https://w3id.org/eusoilvoc#Inputs,80
+occupation du sol,soil flocculation,floculation du sol,fr,True,169483,,https://w3id.org/eusoilvoc#SoilFlocculation,86
+teneur-en-carbone,carbonate contents,teneur en carbonate,fr,True,167012,,https://w3id.org/eusoilvoc#CarbonateContents,83
+utilisation-du-sol,land use,utilisation du sol,fr,False,167024,,https://w3id.org/eusoilvoc#LandUse,89
+usage du sol,soil drying,séchage du sol,fr,True,169495,,https://w3id.org/eusoilvoc#SoilDrying,85
+geologi,geology,Geologie,de,False,167055,,https://w3id.org/eusoilvoc#Geology,93
+social iot,soil biota,soil biota,en,False,167092,,https://w3id.org/eusoilvoc#SoilBiota,80
+pf-wg-kurve,pF curve,pF-Kurve,de,True,167099,,https://w3id.org/eusoilvoc#pFcurve,84
+land-use,land use,land use,en,False,167279,,https://w3id.org/eusoilvoc#LandUse,88
+saturation,soil saturation,soil saturation,en,False,167160,,https://w3id.org/eusoilvoc#SoilSaturation,80
+bodenschicht,soil coating,Bodenbeschichtung,de,True,167173,,https://w3id.org/eusoilvoc#SoilCoating,83
+climats,climate,climat,fr,False,167233,,https://w3id.org/eusoilvoc#Climate,92
+land-cover,land cover,land cover,en,False,167281,,https://w3id.org/eusoilvoc#LandCover,90
+mitigazione,irrigation,Irrigazione,it,False,167302,,https://w3id.org/eusoilvoc#Irrigation,82
+subsoil gravel content,soil gravel contents,soil gravel content,en,False,167306,,https://w3id.org/eusoilvoc#SoilGravelContents,93
+sensitivity,soil sensitivity,soil sensitivity,en,False,167317,,https://w3id.org/eusoilvoc#SoilSensitivity,81
+vervuiling,salinisation,verzilting,nl,True,167341,,https://w3id.org/eusoilvoc#Salinisation,80
+bodennutzung,soil settlement,Bodensetzung,de,True,167345,,https://w3id.org/eusoilvoc#SoilSettlement,83
+soil-drainage,soil drainage,soil drainage,en,False,167350,,https://w3id.org/eusoilvoc#SoilDrainage,92
+soil structural units,soil structural crusts,soil structural crusts,en,False,169572,,https://w3id.org/eusoilvoc#SoilStructuralCrusts,88
+pedologie,lithology,Petrologie,de,False,167406,,https://w3id.org/eusoilvoc#Lithology,84
+crop production,food production,food production,en,False,167459,,https://w3id.org/eusoilvoc#FoodProduction,80
+esondazione,inundation,Inondazione,it,False,167477,,https://w3id.org/eusoilvoc#Inundation,82
+rainfall evapotranspiration,evapotranspiration,evapotranspiration,en,False,167496,,https://w3id.org/eusoilvoc#Evapotranspiration,80
+biological acidification,soil acidification,soil acidification,en,False,173420,,https://w3id.org/eusoilvoc#SoilAcidification,81
+smart materials,parent material,parent material,en,False,167510,,https://w3id.org/eusoilvoc#ParentMaterial,80
+weather data,weather past,weather past,en,False,167586,,https://w3id.org/eusoilvoc#WeatherPast,83
+fertilizers,fertiliser use,fertiliser use,en,False,167597,,https://w3id.org/eusoilvoc#FertiliserUse,80
+crop management,soil management,soil management,en,False,167600,,https://w3id.org/eusoilvoc#SoilManagement,80
+nutrient balance,soil productivity,soil nutrient balance,en,False,167603,,https://w3id.org/eusoilvoc#SoilProductivity,86
+nutrient uptake,plant nutrient uptake,plant nutrient uptake,en,False,167605,,https://w3id.org/eusoilvoc#PlantNutrientUptake,83
+crop production,food production,food production,en,False,167633,,https://w3id.org/eusoilvoc#FoodProduction,80
+organic matter,soil organic matter,soil organic matter,en,False,167647,,https://w3id.org/eusoilvoc#SoilOrganicMatter,85
+degradation,soil desertification,Bodendegradation,de,True,167659,,https://w3id.org/eusoilvoc#SoilDesertification,81
+crop production,food production,food production,en,False,167661,,https://w3id.org/eusoilvoc#FoodProduction,80
+temperature,soil temperature,soil temperature,en,False,167681,,https://w3id.org/eusoilvoc#SoilTemperature,81
+mikro-organismit,microbes,micro-organisms,en,False,167696,,https://w3id.org/eusoilvoc#Microbes,84
+soil aggregates,soil aggregate,soil aggregate,en,False,169621,,https://w3id.org/eusoilvoc#SoilAggregate,97
+bodemtype,soil types,Bodentyp,de,False,167825,,https://w3id.org/eusoilvoc#SoilTypes,82
+scale,sand,sable,fr,False,167835,,https://w3id.org/eusoilvoc#Sand,80
+granite,hail,Grandine,it,False,167851,,https://w3id.org/eusoilvoc#Hail,80
+acidification,soil acidification,soil acidification,en,False,167866,,https://w3id.org/eusoilvoc#SoilAcidification,84
+erosie,soil erosion,Erosione,it,False,167880,,https://w3id.org/eusoilvoc#SoilErosion,86
+stable oxygen,medium sand,sable moyen,fr,False,167949,,https://w3id.org/eusoilvoc#MediumSand,83
+soil-phosphorus,soil phosphorus loss,soil phosphorus loss,en,False,168014,,https://w3id.org/eusoilvoc#SoilPLoss,80
+soil inorganic carbon stocks,soil inorganic carbon,soil inorganic carbon,en,False,168034,,https://w3id.org/eusoilvoc#SoilInorganicCarbon,86
+weather impact,weather past,weather past,en,False,168048,,https://w3id.org/eusoilvoc#WeatherPast,85
+soil evaluation,soil saturation,soil saturation,en,False,168074,,https://w3id.org/eusoilvoc#SoilSaturation,80
+water potential,soil water potential,soil water potential,en,False,168124,,https://w3id.org/eusoilvoc#SoilWaterPotential,86
+water deficit,soil moisture deficit,soil water deficit,en,False,168127,,https://w3id.org/eusoilvoc#SoilMoistureDeficit,84
+image classification,void classification,void classification,en,False,168185,,https://w3id.org/eusoilvoc#VoidClassification,82
+temporal data,season,temporada,es,True,168210,,https://w3id.org/eusoilvoc#Season,82
+thickness,stickiness,stickiness,en,False,168224,,https://w3id.org/eusoilvoc#Stickiness,84
+qe geology,geology,geology,en,False,168233,,https://w3id.org/eusoilvoc#Geology,82
+fermentation,cementation,cementation,en,False,168256,,https://w3id.org/eusoilvoc#Cementation,87
+caproate,carbonate,carbonate,en,False,168257,,https://w3id.org/eusoilvoc#Carbonate,82
+physical-properties,soil physical properties,soil physical properties,en,False,168271,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,84
+compaction,soil compaction,soil compaction,en,False,168304,,https://w3id.org/eusoilvoc#SoilCompaction,80
+soil water index,soil aeration index,soil aeration index,en,False,168327,,https://w3id.org/eusoilvoc#SoilAerationIndex,80
+finland,fine sand,Feinsand,de,False,168362,,https://w3id.org/eusoilvoc#FineSand,80
+carbon,carbonate,carbonate,en,False,168393,,https://w3id.org/eusoilvoc#Carbonate,80
+finland,fine sand,Feinsand,de,False,168450,,https://w3id.org/eusoilvoc#FineSand,80
+105405 geoecology,geology,geology,en,False,173540,,https://w3id.org/eusoilvoc#Geology,82
+environmental indicator,environmental factors,environmental factor,en,False,168485,,https://w3id.org/eusoilvoc#EnvironmentalFactors,84
+crop production,food production,food production,en,False,168511,,https://w3id.org/eusoilvoc#FoodProduction,80
+georgia,geology,Geologia,it,False,168514,,https://w3id.org/eusoilvoc#Geology,80
+water,weather,weather,en,False,168532,,https://w3id.org/eusoilvoc#Weather,83
+armenia,sand,Arena,es,False,168608,,https://w3id.org/eusoilvoc#Sand,83
+bâtiments,building,bâtiment,fr,True,168624,,https://w3id.org/eusoilvoc#Building,94
+hydrographie,physiography,physiographie,fr,False,168629,,https://w3id.org/eusoilvoc#Physiography,80
+description,soil description,soil description,en,False,168649,,https://w3id.org/eusoilvoc#SoilDescription,81
+bodenaufnahmen,soil thawing,Bodenauftauen,de,True,168663,,https://w3id.org/eusoilvoc#SoilThawing,81
+bodenschicht,soil coating,Bodenbeschichtung,de,True,168676,,https://w3id.org/eusoilvoc#SoilCoating,83
+bodenstruktur,soil structure index,Bodenstrukturindex,de,True,168677,,https://w3id.org/eusoilvoc#SoilStructureIndex,84
+bodenverbreitung,soil tillage,Bodenbearbeitung,de,True,168694,,https://w3id.org/eusoilvoc#SoilTillage,88
+bodeneigenschaften,soil properties,Bodeneigenschaft,de,False,168696,,https://w3id.org/eusoilvoc#SoilProperties,94
+edificios,building,edificio,it,True,168735,,https://w3id.org/eusoilvoc#Building,94
+servicio de catálogo,supporting services,Servicio de apoyo,es,False,168739,,https://w3id.org/eusoilvoc#SupportingServices,81
+bomben,trees,bomen,nl,True,168756,,https://w3id.org/eusoilvoc#Trees,91
+drote,road,route,fr,True,168818,,https://w3id.org/eusoilvoc#Road,80
+idrogeologia,geology,Geologia,it,False,168826,,https://w3id.org/eusoilvoc#Geology,80
+bodennutzung,soil settlement,Bodensetzung,de,True,168833,,https://w3id.org/eusoilvoc#SoilSettlement,83
+bodenbedeckung,soil movement,Bodenbewegung,de,False,168834,,https://w3id.org/eusoilvoc#SoilMovement,81
+uso do solo,soil flow,fluxo do solo,pt,True,168883,,https://w3id.org/eusoilvoc#SoilFlow,83
+flächennutzung,land use class,Flächennutzungsklasse,de,True,168922,,https://w3id.org/eusoilvoc#LandUseClass,80
+glaciologia,lithology,Litologia,it,False,168960,,https://w3id.org/eusoilvoc#Lithology,80
+alluvioni,inundation,Alluvione,it,False,169005,,https://w3id.org/eusoilvoc#Inundation,89
+opere,copper,koper,nl,True,169014,,https://w3id.org/eusoilvoc#Copper,80
+bodenwasserhaushalt,soil moisture,Bodenwassergehalt,de,False,169060,,https://w3id.org/eusoilvoc#SoilMoisture,83
+crop production,food production,food production,en,False,169702,,https://w3id.org/eusoilvoc#FoodProduction,80
+bodenkarte,soil cohesion,Bodenart,de,False,169135,,https://w3id.org/eusoilvoc#SoilCohesion,89
+bodenprobe,soil colour,Bodenfarbe,de,True,169137,,https://w3id.org/eusoilvoc#SoilColour,80
+bodenstruktur,soil structure index,Bodenstrukturindex,de,True,169138,,https://w3id.org/eusoilvoc#SoilStructureIndex,84
+biogeochemical processes,soil chemical processes,soil chemical processes,en,False,173542,,https://w3id.org/eusoilvoc#SoilChemicalProcesses,81
+regenwürmer,earthworms,regenwormen,nl,True,169157,,https://w3id.org/eusoilvoc#Earthworms,82
+bodendaten,soil age,Bodenalter,de,False,169180,,https://w3id.org/eusoilvoc#SoilAge,80
+bodenzustand,soil location,Bodenstandort,de,True,169181,,https://w3id.org/eusoilvoc#SoilLocation,80
+pedologia,lithology,Petrologia,it,False,169193,,https://w3id.org/eusoilvoc#Lithology,84
+carta del suolo,land cover,Copertura del suolo,it,False,169195,,https://w3id.org/eusoilvoc#LandCover,82
+bodemproces,soil processes,bodemprocessen,nl,True,169211,,https://w3id.org/eusoilvoc#SoilProcesses,88
+bodemfunctie,soil functions,bodemfuncties,nl,True,169217,,https://w3id.org/eusoilvoc#SoilFunctions,96
+bodemgebruik,land use forests,bosgebruik,nl,True,169218,,https://w3id.org/eusoilvoc#LandUseForests,82
+bodemorganisme,soil organisms,bodemorganismen,nl,True,169222,,https://w3id.org/eusoilvoc#SoilOrganisms,97
+bodemvocht,soil air,bodemlucht,nl,True,169225,,https://w3id.org/eusoilvoc#SoilAir,80
+bodemvruchtbaarheid,soil compressibility,bodemverdichtbaarheid,nl,True,169227,,https://w3id.org/eusoilvoc#SoilCompressibility,90
+tip de sol,soil types,tipo de solo,pt,False,169238,,https://w3id.org/eusoilvoc#SoilTypes,91
+bâtiments,building,bâtiment,fr,True,169250,,https://w3id.org/eusoilvoc#Building,94
+soils,soil,soil,en,False,169280,,https://w3id.org/eusoilvoc#Soil,89
+aménagement du territoire,land use grasses,herbes d'aménagement du territoire,fr,True,169283,,https://w3id.org/eusoilvoc#LandUseGrasses,85
+classification,void classification,void classification,en,False,169308,,https://w3id.org/eusoilvoc#VoidClassification,85
+occupation du sol,soil flocculation,floculation du sol,fr,True,169392,,https://w3id.org/eusoilvoc#SoilFlocculation,86
+conhecimento do solo,soil freezing,congelamento do solo,pt,True,169408,,https://w3id.org/eusoilvoc#SoilFreezing,85
+soil microbiome,soil microfauna,soil microbiota,en,False,169979,,https://w3id.org/eusoilvoc#SoilMicrofauna,87
+indicators,soil indicators,soil indicators,en,False,170046,,https://w3id.org/eusoilvoc#SoilIndicators,80
+pesticides,pesticide use,pesticide use,en,False,170047,,https://w3id.org/eusoilvoc#PesticideUse,87
+major-nutrients,macronutrients,macronutrients,en,False,170053,,https://w3id.org/eusoilvoc#Macronutrients,83
+water-quality,water quality,water quality,en,False,170068,,https://w3id.org/eusoilvoc#WaterQuality,92
+soil-properties,soil properties,soil properties,en,False,170072,,https://w3id.org/eusoilvoc#SoilProperties,93
+kationenaustauschkapazität,cation exchange capacity,Kationenaustauschkapazität,de,False,170127,,https://w3id.org/eusoilvoc#CationExchangeCapacity,94
+point process,soil processes,soil process,en,False,172883,,https://w3id.org/eusoilvoc#SoilProcesses,80
+strade,road,Straße,de,True,170261,,https://w3id.org/eusoilvoc#Road,83
+aerobic respiration,root respiration,root respiration,en,False,172918,,https://w3id.org/eusoilvoc#RootRespiration,80
+segmentation,cementation,cementation,en,False,172954,,https://w3id.org/eusoilvoc#Cementation,87
+ecipitation,precipitation,precipitation,en,False,172962,,https://w3id.org/eusoilvoc#Precipitation,92
+crops,crop,crop,en,False,170354,,https://w3id.org/eusoilvoc#Crop,89
+nutrient imbalance,soil productivity,soil nutrient balance,en,False,173026,,https://w3id.org/eusoilvoc#SoilProductivity,82
+ecosystem services flows,ecosystem services,ecosystem services,en,False,173040,,https://w3id.org/eusoilvoc#EcosystemServices,86
+soil loss,soil nitrogen loss,soil N loss,en,False,173061,,https://w3id.org/eusoilvoc#SoilNLoss,90
+soil functioning,soil functions,soil function,en,False,173066,,https://w3id.org/eusoilvoc#SoilFunctions,90
+crop management,soil management,soil management,en,False,173067,,https://w3id.org/eusoilvoc#SoilManagement,80
+n balance,ion exchange,ionic balance,en,False,173094,,https://w3id.org/eusoilvoc#IonExchange,82
+soil gas flow,soil air flow,soil air flow,en,False,173123,,https://w3id.org/eusoilvoc#SoilAirFlow,85
+soil maps,soil gas,soil gas,en,False,173133,,https://w3id.org/eusoilvoc#SoilGas,82
+soil physicochemical and biological properties,soil physical properties,soil physicochemical properties,en,False,173136,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,81
+organic matter,soil organic matter,soil organic matter,en,False,170810,,https://w3id.org/eusoilvoc#SoilOrganicMatter,85
+decomposition,peat decompostion,peat decompostion,en,False,170811,,https://w3id.org/eusoilvoc#PeatDecompostion,80
+environmental monitoring,environmental factors,environmental conditions,en,False,170812,,https://w3id.org/eusoilvoc#EnvironmentalFactors,83
+soil layer,soil water,soil water,en,False,173429,,https://w3id.org/eusoilvoc#SoilWater,80
+soil es,soil types,soil types,en,False,173432,,https://w3id.org/eusoilvoc#SoilTypes,82
+environmental law,environmental factors,environmental factor,en,False,173164,,https://w3id.org/eusoilvoc#EnvironmentalFactors,81
+soil gas transport,soil transport,soil transport,en,False,173202,,https://w3id.org/eusoilvoc#SoilTransport,88
+wood production,food production,food production,en,False,171015,,https://w3id.org/eusoilvoc#FoodProduction,93
+data quality,water quality,water quality,en,False,171026,,https://w3id.org/eusoilvoc#WaterQuality,80
+soil profiles,soil particles,soil particles,en,False,171035,,https://w3id.org/eusoilvoc#SoilParticles,81
+topsoil erosion,soil erosion,soil erosion,en,False,171046,,https://w3id.org/eusoilvoc#SoilErosion,89
+dinitrogen,nitrogen,nitrogen,en,False,171051,,https://w3id.org/eusoilvoc#Nitrogen,89
+bulk density,bulk density peat,bulk density peat,en,False,171113,,https://w3id.org/eusoilvoc#BulkDensityPeat,83
+acidification,soil acidification,soil acidification,en,False,171123,,https://w3id.org/eusoilvoc#SoilAcidification,84
+nutrient availability,soil nutrient availability,soil nutrient availability,en,False,171126,,https://w3id.org/eusoilvoc#SoilNutrientAvailability,89
+soil sampling,soil sealing,soil sealing,en,False,171138,,https://w3id.org/eusoilvoc#SoilSealing,88
+compaction,soil compaction,soil compaction,en,False,171179,,https://w3id.org/eusoilvoc#SoilCompaction,80
+conventional farming,conventional drainage,conventional drainage,en,False,171219,,https://w3id.org/eusoilvoc#ConventionalDrainage,83
+basal respiration,soil respiration,soil respiration,en,False,171253,,https://w3id.org/eusoilvoc#SoilRespiration,85
+productivity,soil productivity,soil productivity,en,False,171258,,https://w3id.org/eusoilvoc#SoilProductivity,83
+soil mechanical properties,soil chemical properties,soil chemical properties,en,False,171261,,https://w3id.org/eusoilvoc#SoilChemicalProperties,88
+evaporation,evapouration,evapouration,en,False,171303,,https://w3id.org/eusoilvoc#Evapouration,96
+luftbewegung,soil air movement,Bodenluftbewegung,de,True,171323,,https://w3id.org/eusoilvoc#SoilAirMovement,83
+n2o emissions,emissions,emissions,en,False,171325,,https://w3id.org/eusoilvoc#Emissions,82
+soil profiles,soil particles,soil particles,en,False,171349,,https://w3id.org/eusoilvoc#SoilParticles,81
+mineral matter,soil mineral matter,soil mineral matter,en,False,171352,,https://w3id.org/eusoilvoc#SoilMineralMatter,85
+soil profile,soil particles,soil particle,en,False,171356,,https://w3id.org/eusoilvoc#SoilParticles,80
+nnitrogen,nitrogen,nitrogen,en,False,173209,,https://w3id.org/eusoilvoc#Nitrogen,94
+ocupação do solo,soil flocculation,floculação do solo,pt,True,171392,,https://w3id.org/eusoilvoc#SoilFlocculation,88
+buildings,building,building,en,False,171450,,https://w3id.org/eusoilvoc#Building,94
+atmospheric conditions,weather,weather conditions,en,False,171451,,https://w3id.org/eusoilvoc#Weather,80
+soil fertilit y,soil productivity,soil fertility,en,False,173225,,https://w3id.org/eusoilvoc#SoilProductivity,97
+soil st,soil crusts,soil crust,en,False,173433,,https://w3id.org/eusoilvoc#SoilCrusts,82
+bodeneigenschaften,soil properties,Bodeneigenschaft,de,False,171489,,https://w3id.org/eusoilvoc#SoilProperties,94
+bodenkarte,soil cohesion,Bodenart,de,False,171496,,https://w3id.org/eusoilvoc#SoilCohesion,89
+environmental information,environmental factors,environmental factor,en,False,171497,,https://w3id.org/eusoilvoc#EnvironmentalFactors,80
+bauamt,trees,Baum,de,False,171502,,https://w3id.org/eusoilvoc#Trees,80
+bodenaufbau,soil thawing,Bodenauftauen,de,True,171523,,https://w3id.org/eusoilvoc#SoilThawing,83
+microbial acidification,soil acidification,soil acidification,en,False,173443,,https://w3id.org/eusoilvoc#SoilAcidification,83
+hydrographie,physiography,physiographie,fr,False,171547,,https://w3id.org/eusoilvoc#Physiography,80
+esondazioni,floods,inondazioni,it,True,171559,,https://w3id.org/eusoilvoc#Floods,82
+argine,clay,argile,fr,False,171566,,https://w3id.org/eusoilvoc#Clay,83
+landbruk,land use,landgebruik,nl,True,171577,,https://w3id.org/eusoilvoc#LandUse,84
+fertiliser,fertiliser use,fertiliser use,en,False,173238,,https://w3id.org/eusoilvoc#FertiliserUse,83
+bodenzustand,soil location,Bodenstandort,de,True,171605,,https://w3id.org/eusoilvoc#SoilLocation,80
+minéralisation du carbone,soil mineralization,minéralisation du sol,fr,True,173244,,https://w3id.org/eusoilvoc#SoilMineralization,83
+mineralization,soil mineralization,soil mineralization,en,False,173247,,https://w3id.org/eusoilvoc#SoilMineralization,85
+flächennutzungsplan,land use class,Flächennutzungsklasse,de,True,171665,,https://w3id.org/eusoilvoc#LandUseClass,85
+ressourcenbewirtschaftung,soil management,Bodenbewirtschaftung,de,False,171666,,https://w3id.org/eusoilvoc#SoilManagement,80
+water retention,soil water retention,soil water retention,en,False,171688,,https://w3id.org/eusoilvoc#SoilWaterRetention,86
+air permeability,soil air permeability,soil air permeability,en,False,173260,,https://w3id.org/eusoilvoc#SoilAirPermeability,86
+edificios,building,edificio,it,True,171786,,https://w3id.org/eusoilvoc#Building,94
+bodenbedeckung,soil movement,Bodenbewegung,de,False,171840,,https://w3id.org/eusoilvoc#SoilMovement,81
+land cover unit,land cover,land cover,en,False,171893,,https://w3id.org/eusoilvoc#LandCover,80
+crop productivity,soil productivity,soil productivity,en,False,173287,,https://w3id.org/eusoilvoc#SoilProductivity,82
+buildings,building,building,en,False,171928,,https://w3id.org/eusoilvoc#Building,94
+non-travail du sol,soil tillage,travail du sol,fr,True,173298,,https://w3id.org/eusoilvoc#SoilTillage,88
+conservation des sols,soil consolidation,consolidation des sols,fr,True,173304,,https://w3id.org/eusoilvoc#SoilConsolidation,84
+bodennutzung,soil settlement,Bodensetzung,de,True,172013,,https://w3id.org/eusoilvoc#SoilSettlement,83
+bodennutzung,soil settlement,Bodensetzung,de,True,172080,,https://w3id.org/eusoilvoc#SoilSettlement,83
+phosphorus fractionation,phosphorus retention,phosphorus retention,en,False,172115,,https://w3id.org/eusoilvoc#PhosphorusRetention,82
+water availability,soil water availability,soil water availability,en,False,172119,,https://w3id.org/eusoilvoc#SoilWaterAvailability,88
+microbiome,microbes,Microbios,es,False,172146,,https://w3id.org/eusoilvoc#Microbes,84
+environmental predictors,environmental factors,environmental factors,en,False,172168,,https://w3id.org/eusoilvoc#EnvironmentalFactors,84
+2303 ecology,geology,geology,en,False,172218,,https://w3id.org/eusoilvoc#Geology,86
+microbiomes,microbes,Microbios,es,False,172220,,https://w3id.org/eusoilvoc#Microbes,90
+cold temperature,soil temperature,soil temperature,en,False,172225,,https://w3id.org/eusoilvoc#SoilTemperature,88
+soil protists,soil processes,soil process,en,False,172287,,https://w3id.org/eusoilvoc#SoilProcesses,80
+soil fungi,soil fluid,soil fluid,en,False,172306,,https://w3id.org/eusoilvoc#SoilFluid,80
+nutrient availability,soil nutrient availability,soil nutrient availability,en,False,172336,,https://w3id.org/eusoilvoc#SoilNutrientAvailability,89
+microbial respiration,soil microbial respiration,soil microbial respiration,en,False,172338,,https://w3id.org/eusoilvoc#SoilMicrobialRespiration,89
+3103 ecology,geology,geology,en,False,172345,,https://w3id.org/eusoilvoc#Geology,86
+global ecological processes,soil biological processes,soil biological processes,en,False,172380,,https://w3id.org/eusoilvoc#SoilBiologicalProcesses,81
+soil fungal,soil fauna,soil fauna,en,False,172397,,https://w3id.org/eusoilvoc#SoilFauna,86
+water retention,soil water retention,soil water retention,en,False,172428,,https://w3id.org/eusoilvoc#SoilWaterRetention,86
+solute movement,soil movement,soil movement,en,False,172552,,https://w3id.org/eusoilvoc#SoilMovement,86
+elasticity,wet plasticity,wet plasticity,en,False,172555,,https://w3id.org/eusoilvoc#WetPlasticity,83
+biofilm formation,soil formation,soil formation,en,False,172565,,https://w3id.org/eusoilvoc#SoilFormation,84
+compression,soil compression,soil compression,en,False,172590,,https://w3id.org/eusoilvoc#SoilCompression,81
+soil-structure,soil structure,soil structure,en,False,172593,,https://w3id.org/eusoilvoc#SoilStructure,93
+soil hydromechanical properties,soil physical properties,soil physicochemical properties,en,False,172627,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,81
+phosphorus (p),phosphorus,phosphorus,en,False,172634,,https://w3id.org/eusoilvoc#Phosphorus,83
+soil gelling,soil swelling,soil swelling,en,False,172645,,https://w3id.org/eusoilvoc#SoilSwelling,88
+soil organic carbon storage,soil organic carbon,soil organic carbon,en,False,173326,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,83
+soil sustainability,soil stability,soil stability,en,False,173342,,https://w3id.org/eusoilvoc#SoilStability,85
+conventional tillage,conventional drainage,conventional drainage,en,False,173380,,https://w3id.org/eusoilvoc#ConventionalDrainage,83
+shear strength,soil shear strength,soil shear strength,en,False,173385,,https://w3id.org/eusoilvoc#SoilShearStrength,85
+organic contaminant,soil contaminants,soil contaminant,en,False,173394,,https://w3id.org/eusoilvoc#SoilContaminants,80
+soil amendment,soil movement,soil movement,en,False,173397,,https://w3id.org/eusoilvoc#SoilMovement,81
+fertiliser guide,fertiliser use,fertiliser use,en,False,173406,,https://w3id.org/eusoilvoc#FertiliserUse,87
+lande use,land use,land use,en,False,173468,,https://w3id.org/eusoilvoc#LandUse,94
+environmental fate,environmental factors,environmental factor,en,False,173471,,https://w3id.org/eusoilvoc#EnvironmentalFactors,89
+organic contaminants,soil contaminants,soil contaminants,en,False,173473,,https://w3id.org/eusoilvoc#SoilContaminants,81
+105405 geoökologie,geology,Geologie,de,False,173544,,https://w3id.org/eusoilvoc#Geology,84
+401902 soil science,soil subsidence,soil subsidence,en,False,173545,,https://w3id.org/eusoilvoc#SoilSubsidence,81
+bonare,boron,bore,fr,False,173577,,https://w3id.org/eusoilvoc#Boron,80
+soil test,soil types,soil types,en,False,173583,,https://w3id.org/eusoilvoc#SoilTypes,84
+soil cover classification,soil classification,soil classification,en,False,173593,,https://w3id.org/eusoilvoc#SoilClassification,86
+land‑use,land use,land use,en,False,173633,,https://w3id.org/eusoilvoc#LandUse,88
+data quality,water quality,water quality,en,False,173638,,https://w3id.org/eusoilvoc#WaterQuality,80
+damping,evapouration,verdamping,nl,True,173718,,https://w3id.org/eusoilvoc#Evapouration,82
+soil quality index,soil health,soil quality,en,False,173747,,https://w3id.org/eusoilvoc#SoilHealth,80
+soil metataxonomy,soil classification,soil taxonomy,en,False,173835,,https://w3id.org/eusoilvoc#SoilClassification,87
+ultrafiltration,filtration,filtration,en,False,173890,,https://w3id.org/eusoilvoc#Filtration,80
+nanofiltration,filtration,filtration,en,False,173896,,https://w3id.org/eusoilvoc#Filtration,83
+biome,trees,bomen,nl,True,173945,,https://w3id.org/eusoilvoc#Trees,80
+nitrogen dynamics,nutrient dynamics,nutrient dynamics,en,False,173949,,https://w3id.org/eusoilvoc#NutrientDynamics,82
+physicochemical property,soil physical properties,soil physicochemical properties,en,False,174015,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,84
+particle size,soil particle size,soil particle size,en,False,174016,,https://w3id.org/eusoilvoc#SoilParticleSize,84
+mineral dust particles,mineral particles,mineral particles,en,False,174037,,https://w3id.org/eusoilvoc#MineralParticles,87
+caliop,calcium,Calcio,it,False,174051,,https://w3id.org/eusoilvoc#Calcium,83
+climatology,lithology,lithology,en,False,174065,,https://w3id.org/eusoilvoc#Lithology,80
+climatologia,lithology,Litologia,it,False,174067,,https://w3id.org/eusoilvoc#Lithology,86
+irradiation,irrigation,irrigation,en,False,174096,,https://w3id.org/eusoilvoc#Irrigation,86
+earth's atmosphere,soil air,earth atmosphere,en,False,174101,,https://w3id.org/eusoilvoc#SoilAir,94
+no2 pollution,soil pollution,soil pollution,en,False,174110,,https://w3id.org/eusoilvoc#SoilPollution,81
+aerosol absorption,soil absorption,soil absorption,en,False,174134,,https://w3id.org/eusoilvoc#SoilAbsorption,85
+radiació,roots,Radici,it,False,174165,,https://w3id.org/eusoilvoc#Roots,86
+air-quality,air quality,air quality,en,False,174186,,https://w3id.org/eusoilvoc#AirQuality,91
+aerosol particles,soil particles,soil particles,en,False,174205,,https://w3id.org/eusoilvoc#SoilParticles,84
+particle size distribution (psd),soil particle size distribution,soil particle size distribution,en,False,174206,,https://w3id.org/eusoilvoc#SoilParticleSizeDistribution,83
+1 model description,soil description,soil description,en,False,174219,,https://w3id.org/eusoilvoc#SoilDescription,85
+soil wind erosion,soil erosion,soil erosion,en,False,174237,,https://w3id.org/eusoilvoc#SoilErosion,83
+air movements,soil air movement,soil air movement,en,False,174269,,https://w3id.org/eusoilvoc#SoilAirMovement,80
+fuel and weather conditions,weather,weather conditions,en,False,174361,,https://w3id.org/eusoilvoc#Weather,80
+file content,soil contents,soil content,en,False,174388,,https://w3id.org/eusoilvoc#SoilContents,83
+adsorption,soil adsorption,soil adsorption,en,False,174412,,https://w3id.org/eusoilvoc#SoilAdsorption,80
+soil organic carbon stocks,soil organic carbon loss,soil organic carbon loss,en,False,174420,,https://w3id.org/eusoilvoc#SOCLoss,88
+nodulation,inundation,inondation,fr,False,174434,,https://w3id.org/eusoilvoc#Inundation,80
+soil flood,soil flow,soil flow,en,False,174477,,https://w3id.org/eusoilvoc#SoilFlow,84
+soil healty,soil health,soil health,en,False,174500,,https://w3id.org/eusoilvoc#SoilHealth,91
+"waste disposal, fluid",waste disposal,waste disposal,en,False,174552,,https://w3id.org/eusoilvoc#WasteDisposal,80
+soil enzyme activity,soil reactivity,soil reactivity,en,False,174615,,https://w3id.org/eusoilvoc#SoilReactivity,80
+biofilm management,soil management,soil management,en,False,174642,,https://w3id.org/eusoilvoc#SoilManagement,85
+environmental communication,environmental factors,environmental conditions,en,False,174752,,https://w3id.org/eusoilvoc#EnvironmentalFactors,86
+soil moisture monitoring,soil moisture contents,soil moisture content,en,False,174757,,https://w3id.org/eusoilvoc#SoilMoistureContents,80
+sdg indicators,soil indicators,soil indicators,en,False,174766,,https://w3id.org/eusoilvoc#SoilIndicators,83
+soil affinity,soil salinity,soil salinity,en,False,174807,,https://w3id.org/eusoilvoc#SoilSalinity,85
+plant preservation,plant respiration,plant respiration,en,False,174855,,https://w3id.org/eusoilvoc#PlantRespiration,86
+phylogeography,physiography,physical geography,en,False,174879,,https://w3id.org/eusoilvoc#Physiography,81
+soil specialization,soil salinization,soil salinization,en,False,174920,,https://w3id.org/eusoilvoc#SoilSalinization,83
+fragmentation,soil fragmentation,soil fragmentation,en,False,174923,,https://w3id.org/eusoilvoc#SoilFragmentation,84
+ecologia,geology,Geologia,it,False,174936,,https://w3id.org/eusoilvoc#Geology,88
+vegetació,vegetation,Vegetación,es,False,174937,,https://w3id.org/eusoilvoc#Vegetation,95
+infiltration,filtration,filtration,en,False,174952,,https://w3id.org/eusoilvoc#Filtration,91
+translation,transpiration,transpiration,en,False,175069,,https://w3id.org/eusoilvoc#Transpiration,83
+innovation,inundation,inundation,en,False,175158,,https://w3id.org/eusoilvoc#Inundation,80
+spectral decomposition,peat decompostion,peat decompostion,en,False,175170,,https://w3id.org/eusoilvoc#PeatDecompostion,82
+slope processes,soil processes,soil processes,en,False,175176,,https://w3id.org/eusoilvoc#SoilProcesses,83
+earthworks,earthworms,earthworms,en,False,175193,,https://w3id.org/eusoilvoc#Earthworms,90
+soil heating,soil melting,soil melting,en,False,175209,,https://w3id.org/eusoilvoc#SoilMelting,83
+soil microbial functions,soil chemical functions,soil chemical functions,en,False,175210,,https://w3id.org/eusoilvoc#SoilChemicalFunctions,85
+seed production,food production,food production,en,False,175262,,https://w3id.org/eusoilvoc#FoodProduction,80
+slash management,soil management,soil management,en,False,175266,,https://w3id.org/eusoilvoc#SoilManagement,84
+forest production,food production,food production,en,False,175273,,https://w3id.org/eusoilvoc#FoodProduction,81
+peat thickness,salt thickness,salt thickness,en,False,175296,,https://w3id.org/eusoilvoc#SaltThickness,86
+microbial degradation,soil degradation,soil degradation,en,False,175322,,https://w3id.org/eusoilvoc#SoilDegradation,81
+ergosterol fragmentation,soil fragmentation,soil fragmentation,en,False,175343,,https://w3id.org/eusoilvoc#SoilFragmentation,81
+wood production,food production,food production,en,False,175350,,https://w3id.org/eusoilvoc#FoodProduction,93
+site preparation,seedbed preparation,seedbed preparation,en,False,175362,,https://w3id.org/eusoilvoc#SeedbedPreparation,80
+soil c balance,ion exchange,ionic balance,en,False,175385,,https://w3id.org/eusoilvoc#IonExchange,81
+soil pore water,soil pore shape,soil pore shape,en,False,175460,,https://w3id.org/eusoilvoc#SoilPoreShape,80
+permeability,soil permeability,soil permeability,en,False,175498,,https://w3id.org/eusoilvoc#SoilPermeability,83
+explosion,slope orientation,exposition,en,False,175680,,https://w3id.org/eusoilvoc#SlopeOrientation,84
+environmental speciation,environmental factors,environmental conditions,en,False,175767,,https://w3id.org/eusoilvoc#EnvironmentalFactors,83
+atom exchange,cation exchange,cation exchange,en,False,175790,,https://w3id.org/eusoilvoc#CationExchange,86
+carbonates,carbonate,carbonate,en,False,175816,,https://w3id.org/eusoilvoc#Carbonate,95
+soil nutrient concentrations,soil productivity,soil nutrient content,en,False,175918,,https://w3id.org/eusoilvoc#SoilProductivity,82
+soil carbon pools,carbon pools,carbon pools,en,False,175925,,https://w3id.org/eusoilvoc#CarbonPools,83
+phosphorus fractions,phosphorus retention,phosphorus retention,en,False,175928,,https://w3id.org/eusoilvoc#PhosphorusRetention,80
+geochemical processes,soil chemical processes,soil chemical processes,en,False,175931,,https://w3id.org/eusoilvoc#SoilChemicalProcesses,86
+deposition,slope orientation,exposition,en,False,175958,,https://w3id.org/eusoilvoc#SlopeOrientation,90
+soil nitrogen content,soil productivity,soil nutrient content,en,False,175962,,https://w3id.org/eusoilvoc#SoilProductivity,86
+exploitation,slope orientation,exposition,en,False,175975,,https://w3id.org/eusoilvoc#SlopeOrientation,82
+environmental indicators,environmental factors,environmental factors,en,False,175976,,https://w3id.org/eusoilvoc#EnvironmentalFactors,84
+flood regulation,flood duration,flood duration,en,False,175985,,https://w3id.org/eusoilvoc#FloodDuration,80
+durabilité du sol,soil erodibility,érodabilité du sol,fr,True,176009,,https://w3id.org/eusoilvoc#SoilErodibility,86
+primary productivity,biomass productivity,biomass productivity,en,False,176058,,https://w3id.org/eusoilvoc#BiomassProductivity,80
+soil capability,soil stability,soil stability,en,False,176076,,https://w3id.org/eusoilvoc#SoilStability,83
+environmental zones,environmental factors,environmental factors,en,False,176082,,https://w3id.org/eusoilvoc#EnvironmentalFactors,80
+nutrient uptake,plant nutrient uptake,plant nutrient uptake,en,False,176091,,https://w3id.org/eusoilvoc#PlantNutrientUptake,83
+letter,weather,Wetter,de,False,176151,,https://w3id.org/eusoilvoc#Weather,83
+nutrient content,soil productivity,soil nutrient content,en,False,176255,,https://w3id.org/eusoilvoc#SoilProductivity,86
+cast physicochemical properties,soil physical properties,soil physicochemical properties,en,False,176410,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,90
+crop biomass,root biomass,root biomass,en,False,176414,,https://w3id.org/eusoilvoc#RootBiomass,83
+mp abundance,pore abundance,pore abundance,en,False,176450,,https://w3id.org/eusoilvoc#PoreAbundance,85
+mass concentration,mineral concentration,mineral concentration,en,False,176454,,https://w3id.org/eusoilvoc#MineralConcentration,82
+tourbière,peat,tourbe,fr,False,176557,,https://w3id.org/eusoilvoc#Peat,80
+agroecología,geology,Geología,es,False,176593,,https://w3id.org/eusoilvoc#Geology,80
+soil organic matter decomposition,soil organic matter contents,soil organic matter content,en,False,176617,,https://w3id.org/eusoilvoc#SoilOrganicMatterContents,80
+soil biocrust,soil crusts,soil crust,en,False,176632,,https://w3id.org/eusoilvoc#SoilCrusts,87
+nutrient bioavailability,soil nutrient availability,soil nutrient availability,en,False,176636,,https://w3id.org/eusoilvoc#SoilNutrientAvailability,84
+women,trees,bomen,nl,True,176642,,https://w3id.org/eusoilvoc#Trees,80
+social sustainability,soil stability,soil stability,en,False,176646,,https://w3id.org/eusoilvoc#SoilStability,80
+salute del suolo,soil salinity,Salinità del suolo,it,False,176671,,https://w3id.org/eusoilvoc#SoilSalinity,82
+land use sites,land use forests,land use forests,en,False,176795,,https://w3id.org/eusoilvoc#LandUseForests,80
+water-quality,water quality,water quality,en,False,176904,,https://w3id.org/eusoilvoc#WaterQuality,92
+soil water regime,soil water storage,soil water storage,en,False,176910,,https://w3id.org/eusoilvoc#SoilWaterStorage,80
+nutrient balance,soil productivity,soil nutrient balance,en,False,176913,,https://w3id.org/eusoilvoc#SoilProductivity,86
+crop growth,root growth,root growth,en,False,176914,,https://w3id.org/eusoilvoc#RootGrowth,82
+bodenanalyse,soil channel,Bodenkanal,de,True,176936,,https://w3id.org/eusoilvoc#SoilChannel,82
+soil-water-retention,soil water retention,soil water retention,en,False,176945,,https://w3id.org/eusoilvoc#SoilWaterRetention,90
+total carbon,soil total carbon,soil total carbon,en,False,177005,,https://w3id.org/eusoilvoc#SoilTotalCarbon,83
+water holding capacity,soil water holding capacity,soil water holding capacity,en,False,177006,,https://w3id.org/eusoilvoc#SoilWaterHoldingCapacity,90
+physical properties,soil physical properties,soil physical properties,en,False,177038,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,88
+environmental stress,environmental factors,environmental factors,en,False,177051,,https://w3id.org/eusoilvoc#EnvironmentalFactors,83
+co2 emission,emissions,emission,en,False,177102,,https://w3id.org/eusoilvoc#Emissions,80
+soil aggregates,soil aggregate,soil aggregate,en,False,177162,,https://w3id.org/eusoilvoc#SoilAggregate,97
+components,soil components,soil components,en,False,177186,,https://w3id.org/eusoilvoc#SoilComponents,80
+suitability,soil stability,soil stability,en,False,177231,,https://w3id.org/eusoilvoc#SoilStability,80
+clp classification,soil classification,soil classification,en,False,177296,,https://w3id.org/eusoilvoc#SoilClassification,86
+ion exchange resin,ion exchange,ion exchange,en,False,177331,,https://w3id.org/eusoilvoc#IonExchange,80
+pfas adsorption,soil adsorption,soil adsorption,en,False,177333,,https://w3id.org/eusoilvoc#SoilAdsorption,80
+desorption,soil sorption,Bodensorption,de,False,177352,,https://w3id.org/eusoilvoc#SoilSorption,87
+water repellency,soil water repellency,soil water repellency,en,False,177372,,https://w3id.org/eusoilvoc#SoilWaterRepellency,86
+water transport,soil water transport,soil water transport,en,False,177405,,https://w3id.org/eusoilvoc#SoilWaterTransport,86
+pore-size,soil pore size,pores size,en,False,177412,,https://w3id.org/eusoilvoc#SoilPoreSize,84
+plasticity,wet plasticity,wet plasticity,en,False,177441,,https://w3id.org/eusoilvoc#WetPlasticity,83
+disaggregation,soil aggregation,soil aggregation,en,False,177607,,https://w3id.org/eusoilvoc#SoilAggregation,80
+crop vegetation,vegetation,vegetation,en,False,177609,,https://w3id.org/eusoilvoc#Vegetation,80
+deep percolation,percolation,percolation,en,False,177617,,https://w3id.org/eusoilvoc#Percolation,81
+soil evaporation,soil aeration,soil aeration,en,False,177624,,https://w3id.org/eusoilvoc#SoilAeration,83
+balance,soil structure,battance,fr,False,177634,,https://w3id.org/eusoilvoc#SoilStructure,80
+humidite du sol,soil moisture,humidité du sol,fr,False,177642,,https://w3id.org/eusoilvoc#SoilMoisture,93
+water content,soil moisture,soil water content,en,False,177648,,https://w3id.org/eusoilvoc#SoilMoisture,84
+evaporation,evapouration,evapouration,en,False,177658,,https://w3id.org/eusoilvoc#Evapouration,96
+soil resistance,soil substance,soil substance,en,False,177686,,https://w3id.org/eusoilvoc#SoilSubstance,83
+groundwater extraction,groundwater reproduction,groundwater reproduction,en,False,177725,,https://w3id.org/eusoilvoc#GroundwaterReproduction,83
+transformation,transpiration,transpiration,en,False,177734,,https://w3id.org/eusoilvoc#Transpiration,81
+disinfection,water purification,water disinfection,en,False,177740,,https://w3id.org/eusoilvoc#WaterPurification,80
+soil microbial diversity,soil microbial activity,soil microbial activity,en,False,177896,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,85
+soil land management,soil management,soil management,en,False,177949,,https://w3id.org/eusoilvoc#SoilManagement,86
+oil quality,soil health,soil quality,en,False,178001,,https://w3id.org/eusoilvoc#SoilHealth,96
+description,soil description,soil description,en,False,178004,,https://w3id.org/eusoilvoc#SoilDescription,81
+soil variability,soil erodibility,soil erodibility,en,False,178040,,https://w3id.org/eusoilvoc#SoilErodibility,81
+level,seedling emergence,levée,fr,False,178044,,https://w3id.org/eusoilvoc#SeedlingEmergence,80
+environmental effects,environmental factors,environmental factors,en,False,178103,,https://w3id.org/eusoilvoc#EnvironmentalFactors,86
+soil particle size fractions,particle size fraction sum,particle size fraction sum,en,False,178129,,https://w3id.org/eusoilvoc#ParticleSizeFractionSum,85
+environmental dimension,environmental factors,environmental conditions,en,False,178175,,https://w3id.org/eusoilvoc#EnvironmentalFactors,81
+model organisms,soil organisms,soil organisms,en,False,178226,,https://w3id.org/eusoilvoc#SoilOrganisms,83
+fertilizer value,fertiliser use,fertiliser use,en,False,178318,,https://w3id.org/eusoilvoc#FertiliserUse,80
+bacterias,pavements,aceras,es,True,178323,,https://w3id.org/eusoilvoc#Pavements,80
+microbioano,microbes,Microbios,es,False,178347,,https://w3id.org/eusoilvoc#Microbes,80
+crop nutrients,macronutrients,macronutrients,en,False,178349,,https://w3id.org/eusoilvoc#Macronutrients,86
+vegetation type,vegetation,vegetation types,en,False,178416,,https://w3id.org/eusoilvoc#Vegetation,97
+nitrogen loss,soil nitrogen loss,soil nitrogen loss,en,False,178446,,https://w3id.org/eusoilvoc#SoilNLoss,84
+matière organique,soil organic matter,matière organique du sol,fr,False,178471,,https://w3id.org/eusoilvoc#SoilOrganicMatter,83
+flocculation,soil flocculation,soil flocculation,en,False,178493,,https://w3id.org/eusoilvoc#SoilFlocculation,83
+loading,inundation,flooding,en,False,178534,,https://w3id.org/eusoilvoc#Inundation,80
+flocculatie,soil flocculation,bodemflocculatie,nl,True,178577,,https://w3id.org/eusoilvoc#SoilFlocculation,81
+drip irrigation,irrigation,irrigation,en,False,178683,,https://w3id.org/eusoilvoc#Irrigation,80
+soil physical parameters,soil physical properties,soil physical properties,en,False,178691,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,83
+seasonal,season,season,en,False,178942,,https://w3id.org/eusoilvoc#Season,86
+weathering,weather,weather,en,False,178946,,https://w3id.org/eusoilvoc#Weather,82
+sensitivity,soil sensitivity,soil sensitivity,en,False,179016,,https://w3id.org/eusoilvoc#SoilSensitivity,81
+vegetation shift,vegetation,Vegetationstyp,de,False,179020,,https://w3id.org/eusoilvoc#Vegetation,80
+bicarbonate,carbonate,carbonate,en,False,179077,,https://w3id.org/eusoilvoc#Carbonate,90
+soilx,soil,soil,en,False,185701,,https://w3id.org/eusoilvoc#Soil,89
+bodemclassificaties,soil classification,bodemclassificatie,nl,True,179113,,https://w3id.org/eusoilvoc#SoilClassification,97
+bodemkaarten,soil crusts,bodemkorsten,nl,True,179126,,https://w3id.org/eusoilvoc#SoilCrusts,83
+soil science,soil subsidence,soil subsidence,en,False,188193,,https://w3id.org/eusoilvoc#SoilSubsidence,81
+soilloss,soil nitrogen loss,soil N loss,en,False,179161,,https://w3id.org/eusoilvoc#SoilNLoss,84
+bodemsanering,soil strain,bodemspanning,nl,True,179272,,https://w3id.org/eusoilvoc#SoilStrain,85
+structure-du-sol,soil tilth,structure du sol,fr,True,179321,,https://w3id.org/eusoilvoc#SoilTilth,88
+organisme-du-sol,soil organisms,organisme du sol,fr,False,179322,,https://w3id.org/eusoilvoc#SoilOrganisms,88
+chimie-des-sols,soil chemical,chimie des sols,fr,True,179326,,https://w3id.org/eusoilvoc#SoilChemical,87
+type-de-sol,soil types,type de sol,fr,False,179346,,https://w3id.org/eusoilvoc#SoilTypes,82
+habitation,habitats,habitat,en,False,179374,,https://w3id.org/eusoilvoc#Habitats,82
+bâtiment,building,bâtiment,fr,True,179375,,https://w3id.org/eusoilvoc#Building,82
+roads,road,road,en,False,185829,,https://w3id.org/eusoilvoc#Road,89
+plant uptake,plant water uptake,plant water uptake,en,False,187515,,https://w3id.org/eusoilvoc#PlantWaterUptake,80
+soil structure.,soil structure,soil structure,en,False,187517,,https://w3id.org/eusoilvoc#SoilStructure,97
+armenia,sand,Arena,es,False,185851,,https://w3id.org/eusoilvoc#Sand,83
+georgia,geology,Geologia,it,False,185852,,https://w3id.org/eusoilvoc#Geology,80
+land production,food production,food production,en,False,181655,,https://w3id.org/eusoilvoc#FoodProduction,80
+dissolved organic carbon,soil organic carbon,soil organic carbon,en,False,181691,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,84
+historical geography,physiography,physical geography,en,False,179676,,https://w3id.org/eusoilvoc#Physiography,84
+gaseous emission,soil gaseous emission,soil gaseous emission,en,False,179740,,https://w3id.org/eusoilvoc#SoilGaseousEmission,86
+environmental fluctuation,soil environmental functions,soil environmental function,en,False,179827,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,81
+pedogenesis,soil formation,Pedogenese,de,False,179835,,https://w3id.org/eusoilvoc#SoilFormation,86
+thermal properties,soil thermal properties,soil thermal properties,en,False,179915,,https://w3id.org/eusoilvoc#SoilThermalProperties,88
+production,food production,food production,en,False,179931,,https://w3id.org/eusoilvoc#FoodProduction,80
+erosión suelo,soil erosion,Erosión del suelo,es,False,179932,,https://w3id.org/eusoilvoc#SoilErosion,87
+cubiertas vegetales,ground cover,cubierta vegetal,es,True,179934,,https://w3id.org/eusoilvoc#GroundCover,91
+conservación del suelo,soil freezing,congelación del suelo,es,True,179943,,https://w3id.org/eusoilvoc#SoilFreezing,88
+soil erosion model,soil erosion degree,soil erosion degree,en,False,179974,,https://w3id.org/eusoilvoc#SoilErosionDegree,81
+dry consistence,dry consistency,dry consistency,en,False,179989,,https://w3id.org/eusoilvoc#DryConsistency,93
+f06 irrigation,irrigation,irrigation,en,False,179994,,https://w3id.org/eusoilvoc#Irrigation,83
+soil moisture heterogeneity,soil pore heterogeneity,soil pore heterogeneity,en,False,179997,,https://w3id.org/eusoilvoc#SoilPoreHeterogeneity,88
+soil water management,soil water movement,soil water movement,en,False,180009,,https://w3id.org/eusoilvoc#SoilWaterMovement,85
+biological treatments,biological features,biological features,en,False,180015,,https://w3id.org/eusoilvoc#BiologicalFeatures,80
+plant hormones,vegetation,plant formations,en,False,180020,,https://w3id.org/eusoilvoc#Vegetation,80
+total microbial respiration,soil microbial respiration,soil microbial respiration,en,False,180024,,https://w3id.org/eusoilvoc#SoilMicrobialRespiration,91
+snow depth,soil depth,soil depth,en,False,180030,,https://w3id.org/eusoilvoc#SoilDepth,80
+soil accumulation,soil flocculation,soil flocculation,en,False,180039,,https://w3id.org/eusoilvoc#SoilFlocculation,82
+soil condition,soil consolidation,soil consolidation,en,False,180047,,https://w3id.org/eusoilvoc#SoilConsolidation,81
+p11 drainage,peat drainage,peat drainage,en,False,180051,,https://w3id.org/eusoilvoc#PeatDrainage,80
+water relations,water regulation,water regulation,en,False,180053,,https://w3id.org/eusoilvoc#WaterRegulation,90
+erosion risk,erosion ratio,erosion ratio,en,False,180059,,https://w3id.org/eusoilvoc#ErosionRatio,80
+watershed characteristics,soil water characteristics,soil water characteristics,en,False,180066,,https://w3id.org/eusoilvoc#SoilWaterCharacteristics,82
+desiccation,soil desiccation,soil desiccation,en,False,180087,,https://w3id.org/eusoilvoc#SoilDesiccation,81
+stem water potential,soil water potential,soil water potential,en,False,180118,,https://w3id.org/eusoilvoc#SoilWaterPotential,85
+implementation,cementation,cementation,en,False,180139,,https://w3id.org/eusoilvoc#Cementation,80
+water uptake,plant water uptake,plant water uptake,en,False,180141,,https://w3id.org/eusoilvoc#PlantWaterUptake,80
+salt sensing,salt sieving,salt sieving,en,False,180143,,https://w3id.org/eusoilvoc#SaltSieving,83
+relative transpiration,transpiration,plant transpiration,en,False,180146,,https://w3id.org/eusoilvoc#Transpiration,83
+soil and water,soil water,soil water,en,False,180158,,https://w3id.org/eusoilvoc#SoilWater,83
+2508.02 evaporación,evapouration,evaporación,es,True,180162,,https://w3id.org/eusoilvoc#Evapouration,85
+vine transpiration,transpiration,transpiration,en,False,180165,,https://w3id.org/eusoilvoc#Transpiration,84
+water storage,soil water storage,soil water storage,en,False,180175,,https://w3id.org/eusoilvoc#SoilWaterStorage,84
+metrology,lithology,petrology,en,False,180176,,https://w3id.org/eusoilvoc#Lithology,89
+no tillage,no till,no till,en,False,180360,,https://w3id.org/eusoilvoc#NoTill,82
+scoring function,soil functions,soil function,en,False,180361,,https://w3id.org/eusoilvoc#SoilFunctions,83
+soil care,soil age,soil age,en,False,180365,,https://w3id.org/eusoilvoc#SoilAge,82
+soil-water content,soil moisture,soil water content,en,False,180367,,https://w3id.org/eusoilvoc#SoilMoisture,94
+carboxylate,carbonate,carbonate,en,False,180391,,https://w3id.org/eusoilvoc#Carbonate,80
+bodenschätze,soil melting,Bodenschmelze,de,True,180421,,https://w3id.org/eusoilvoc#SoilMelting,80
+production,food production,food production,en,False,180426,,https://w3id.org/eusoilvoc#FoodProduction,80
+capacidade de uso do solo,soil bearing capacity,capacidade de suporte do solo,pt,True,180459,,https://w3id.org/eusoilvoc#SoilBearingCapacity,89
+topographie,boundary topography,Grenztopographie,de,True,180477,,https://w3id.org/eusoilvoc#BoundaryTopography,81
+pedologia,lithology,Petrologia,it,False,180501,,https://w3id.org/eusoilvoc#Lithology,84
+árboles,trees,Árbol,es,False,180519,,https://w3id.org/eusoilvoc#Trees,83
+flächennutzung,land use class,Flächennutzungsklasse,de,True,180594,,https://w3id.org/eusoilvoc#LandUseClass,80
+landuse,land use,land use,en,False,180654,,https://w3id.org/eusoilvoc#LandUse,93
+gebouwen,building,gebouw,nl,True,180680,,https://w3id.org/eusoilvoc#Building,86
+bodemgebruik,land use forests,bosgebruik,nl,True,180693,,https://w3id.org/eusoilvoc#LandUseForests,82
+uso del suolo,land use,Uso del suelo,es,False,180711,,https://w3id.org/eusoilvoc#LandUse,92
+stradario,road,strada,it,True,181832,,https://w3id.org/eusoilvoc#Road,80
+organic matter loss,soil organic matter class,soil organic matter class,en,False,181875,,https://w3id.org/eusoilvoc#SoilOrganicMatterClass,82
+silt content,salt contents,salt content,en,False,180802,,https://w3id.org/eusoilvoc#SaltContents,92
+bodenlösung,soil solution,Bodenlösung,de,False,180818,,https://w3id.org/eusoilvoc#SoilSolution,87
+bäume,trees,Baum,de,False,180820,,https://w3id.org/eusoilvoc#Trees,80
+soil organic carbon content,soil organic matter contents,soil organic matter content,en,False,185933,,https://w3id.org/eusoilvoc#SoilOrganicMatterContents,85
+bodenaufbau,soil thawing,Bodenauftauen,de,True,180858,,https://w3id.org/eusoilvoc#SoilThawing,83
+bodenentsiegelung,soil sealing,Bodenversiegelung,de,False,180860,,https://w3id.org/eusoilvoc#SoilSealing,88
+cation-exchange-capacity,cation exchange capacity,cation exchange capacity,en,False,181938,,https://w3id.org/eusoilvoc#CationExchangeCapacity,92
+soil-moisture,soil moisture,soil moisture,en,False,180972,,https://w3id.org/eusoilvoc#SoilMoisture,92
+sisbon,season,saison,fr,True,181006,,https://w3id.org/eusoilvoc#Season,83
+foreste-e-uso-del-suolo,land use forests,foreste e uso del suolo,it,True,181014,,https://w3id.org/eusoilvoc#LandUseForests,83
+subsoil organic carbon,soil organic carbon,soil organic carbon,en,False,181029,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,93
+evaporation,evapouration,evapouration,en,False,182034,,https://w3id.org/eusoilvoc#Evapouration,96
+slope stability,soil slope stability,soil slope stability,en,False,182064,,https://w3id.org/eusoilvoc#SoilSlopeStability,86
+bodenqualität,soil health,Bodenqualität,de,False,181107,,https://w3id.org/eusoilvoc#SoilHealth,89
+processi-del-suolo,soil processes,processi del suolo,it,True,181323,,https://w3id.org/eusoilvoc#SoilProcesses,89
+pentes,slope gradient,pente,fr,True,181337,,https://w3id.org/eusoilvoc#SlopeGradient,91
+air-quality,air quality,air quality,en,False,186230,,https://w3id.org/eusoilvoc#AirQuality,91
+soil exploration,soil location,soil location,en,False,187611,,https://w3id.org/eusoilvoc#SoilLocation,83
+root plasticity,wet plasticity,wet plasticity,en,False,187612,,https://w3id.org/eusoilvoc#WetPlasticity,83
+1111 soil science,soil subsidence,soil subsidence,en,False,187613,,https://w3id.org/eusoilvoc#SoilSubsidence,81
+crop productivity,soil productivity,soil productivity,en,False,182639,,https://w3id.org/eusoilvoc#SoilProductivity,82
+topsoil organic carbon,soil organic carbon,soil organic carbon,en,False,182729,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,93
+land use systems,land use grasses,land use grasses,en,False,182835,,https://w3id.org/eusoilvoc#LandUseGrasses,81
+"physiography, soil",physiography,physiography,en,False,182890,,https://w3id.org/eusoilvoc#Physiography,80
+water,weather,weather,en,False,186583,,https://w3id.org/eusoilvoc#Weather,83
+subsurface runoff,surface runoff,surface runoff,en,False,186588,,https://w3id.org/eusoilvoc#SurfaceRunoff,90
+carta del suolo,land cover,Copertura del suolo,it,False,186600,,https://w3id.org/eusoilvoc#LandCover,82
+environmental risk,environmental factors,environmental factors,en,False,187635,,https://w3id.org/eusoilvoc#EnvironmentalFactors,82
+soil microhabitats,soil microfauna,soil microbiota,en,False,187654,,https://w3id.org/eusoilvoc#SoilMicrofauna,85
+environmental data,environmental factors,environmental factor,en,False,187664,,https://w3id.org/eusoilvoc#EnvironmentalFactors,84
+land productivity,soil productivity,soil productivity,en,False,187670,,https://w3id.org/eusoilvoc#SoilProductivity,82
+soil nitrification,soil denitrification,soil denitrification,en,False,187705,,https://w3id.org/eusoilvoc#SoilDenitrification,95
+soil disturbance,soil substance,soil substance,en,False,187721,,https://w3id.org/eusoilvoc#SoilSubstance,80
+topsoil moisture,soil moisture,soil moisture,en,False,186636,,https://w3id.org/eusoilvoc#SoilMoisture,90
+soil health indicator,soil indicators,soil indicator,en,False,186656,,https://w3id.org/eusoilvoc#SoilIndicators,80
+biochemical properties,soil chemical properties,soil chemical properties,en,False,186693,,https://w3id.org/eusoilvoc#SoilChemicalProperties,87
+induced resistance,index of resistance,indice de résistance,fr,True,186744,,https://w3id.org/eusoilvoc#IndexOfResistance,84
+soil biological activity,soil microbial activity,soil microbial activity,en,False,187729,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,81
+soill,soil,soil,en,False,187734,,https://w3id.org/eusoilvoc#Soil,89
+eu missions,emissions,emissions,en,False,187735,,https://w3id.org/eusoilvoc#Emissions,90
+bodenschätzung,soil settlement,Bodensetzung,de,True,188210,,https://w3id.org/eusoilvoc#SoilSettlement,85
+limnologia,lithology,Litologia,it,False,186776,,https://w3id.org/eusoilvoc#Lithology,84
+sil biodiversity,soil biodiversity loss,soil biodiversity loss,en,False,186789,,https://w3id.org/eusoilvoc#SoilBiodiversityLoss,84
+acidification,soil acidification,soil acidification,en,False,186791,,https://w3id.org/eusoilvoc#SoilAcidification,84
+soil guide,soil fluid,soil fluid,en,False,186852,,https://w3id.org/eusoilvoc#SoilFluid,80
+soil carbon models,soil carbon density,soil carbon density,en,False,186871,,https://w3id.org/eusoilvoc#SoilCarbonDensity,81
+soc/clay ratio,clay ratio,clay ratio,en,False,186886,,https://w3id.org/eusoilvoc#ClayRatio,83
+ion transport,soil transport,soil transport,en,False,187761,,https://w3id.org/eusoilvoc#SoilTransport,81
+nitrogen (n),nitrogen,nitrogen,en,False,187767,,https://w3id.org/eusoilvoc#Nitrogen,80
+biological properties,soil biological properties,soil biological properties,en,False,187798,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,89
+solar radiation,soil heat radiation,soil heat radiation,en,False,186932,,https://w3id.org/eusoilvoc#SoilHeatRadiation,82
+bodennutzung,soil settlement,Bodensetzung,de,True,186977,,https://w3id.org/eusoilvoc#SoilSettlement,83
+soil sampling,soil sealing,soil sealing,en,False,187027,,https://w3id.org/eusoilvoc#SoilSealing,88
+optical property,soil properties,soil property,en,False,187090,,https://w3id.org/eusoilvoc#SoilProperties,83
+climate effect,climate,climatic effects,en,False,187091,,https://w3id.org/eusoilvoc#Climate,87
+atmosphäre,soil air,Bodenatmosphäre,de,False,187102,,https://w3id.org/eusoilvoc#SoilAir,80
+251109 microbiología de suelos,soil microfauna,Microbiota del suelo,es,False,187932,,https://w3id.org/eusoilvoc#SoilMicrofauna,84
+soil organic layer,soil organic matter,soil organic matter,en,False,187111,,https://w3id.org/eusoilvoc#SoilOrganicMatter,86
+spatial structure,soil structure,soil structure,en,False,187116,,https://w3id.org/eusoilvoc#SoilStructure,84
+asociaciones vegetales,vegetation,Formaciones vegetales,es,False,187127,,https://w3id.org/eusoilvoc#Vegetation,84
+mitigación,irrigation,Irrigación,es,False,187149,,https://w3id.org/eusoilvoc#Irrigation,80
+peat decomposition,peat decompostion,peat decompostion,en,False,187162,,https://w3id.org/eusoilvoc#PeatDecompostion,97
+microbial properties,soil properties,soil properties,en,False,187223,,https://w3id.org/eusoilvoc#SoilProperties,80
+model particles,soil particles,soil particles,en,False,187956,,https://w3id.org/eusoilvoc#SoilParticles,83
+microresp,microbes,microbes,en,False,187959,,https://w3id.org/eusoilvoc#Microbes,82
+mineral contamination,mineral concentration,mineral concentration,en,False,187998,,https://w3id.org/eusoilvoc#MineralConcentration,81
+viscoelasticity,soil elasticity,soil elasticity,en,False,187337,,https://w3id.org/eusoilvoc#SoilElasticity,80
+phosphorous,phosphorus,phosphorus,en,False,187347,,https://w3id.org/eusoilvoc#Phosphorus,95
+transition,transpiration,transpiration,en,False,187372,,https://w3id.org/eusoilvoc#Transpiration,87
+root aeration,root respiration,root respiration,en,False,188033,,https://w3id.org/eusoilvoc#RootRespiration,83
+soil nutrient management,soil productivity,soil nutrient content,en,False,188088,,https://w3id.org/eusoilvoc#SoilProductivity,80
+504 - ciencias del medio ambiente,environmental factors,Condiciones del medio ambiente,es,False,188091,,https://w3id.org/eusoilvoc#EnvironmentalFactors,81
+soil column,soil volume,soil volume,en,False,188093,,https://w3id.org/eusoilvoc#SoilVolume,82
+irrigation area,irrigation,irrigation,en,False,188100,,https://w3id.org/eusoilvoc#Irrigation,80
+water,weather,weather,en,False,185423,,https://w3id.org/eusoilvoc#Weather,83
+information,soil formation,soil formation,en,False,187399,,https://w3id.org/eusoilvoc#SoilFormation,80
+landuse,land use,land use,en,False,187407,,https://w3id.org/eusoilvoc#LandUse,93
+soil biological indicators,soil biological functions,soil biological functions,en,False,188141,,https://w3id.org/eusoilvoc#SoilBiologicalFunctions,82
+labile organic carbon,soil organic carbon,soil organic carbon,en,False,188142,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,85
+maximum water holding capacity,soil water holding capacity,soil water holding capacity,en,False,188147,,https://w3id.org/eusoilvoc#SoilWaterHoldingCapacity,84
+plastic degradation,soil degradation,soil degradation,en,False,188155,,https://w3id.org/eusoilvoc#SoilDegradation,80
+pedologija,lithology,Petrologia,it,False,185626,,https://w3id.org/eusoilvoc#Lithology,80
+nutrient retention,soil nutrient retention,soil nutrient retention,en,False,187455,,https://w3id.org/eusoilvoc#SoilNutrientRetention,88
