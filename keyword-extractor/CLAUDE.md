@@ -18,7 +18,10 @@ database. A production script comes later, once an approach wins.
   SELECT). Connection via `utils.database.dbInit()` using env vars
   `POSTGRES_HOST/PORT/DB/USER/PASSWORD`. For testing, prefer a CSV snapshot
   (`identifier,title,abstract`) checked into the experiment folder so runs are
-  reproducible without DB access.
+  reproducible without DB access. `snapshot/records.csv` holds 27,674 records
+  (`identifier,title,abstract`, no language column). It is **not English-only**
+  — the first row is German, so any experiment run over the snapshot must say
+  what it does with non-English text.
 - **Vocabulary:** SoilVoc. Original TTL:
   `../keyword-matcher/vocabs/SoilVoc.ttl` (SKOS, `eusoilvoc:` namespace,
   ~1048 concepts, `skos:prefLabel` mostly English-only, `skos:exactMatch`
@@ -31,6 +34,28 @@ database. A production script comes later, once an approach wins.
   before relying on it. `../keyword-matcher/enriched-ce-testing/` additionally
   builds `enriched_concepts.json` with `skos:definition` text (~50% coverage),
   useful wherever concept *descriptions* help.
+- **Vocabulary to actually use here:** `concepts_multilingual.json`, built by
+  `build_multilingual_vocab.py` (cache-only, no network, ~0.3 s). It derives
+  from `concepts.json` with two changes:
+  - **Procedures dropped.** 249 concepts typed `a skos:Concept, sosa:Procedure`
+    in the TTL are measurement-procedure identifiers (`ExchAcid_ph0-kcl1m`,
+    `CaCO3_acid-hcl-dc`) that never occur in running text. **1048 → 799.**
+    The RDF typing is the right filter — after the drop, zero code-like labels
+    remain. Keep them in keyword-matcher, where a harvested subject may
+    literally *be* such a code; they are noise only for extraction.
+  - **All seven languages filled.** Missing slots come from the DeepL cache at
+    `../keyword-matcher/translate-fuzzy-testing/translations_cache.json`.
+    Coverage is now 799/799 for en/fr/de/it/es/nl/pt, with zero cache misses.
+    Curated labels are never overwritten.
+
+  Each concept carries `label_sources: {lang: "curated"|"mt-deepl"}` —
+  provenance is per-language because MT fills whole empty slots. Curated
+  German is 133 concepts; the other 666 are machine-translated and
+  **unreviewed**. Treat `mt-deepl` labels as recall aids, not truth: an
+  exact-match tier should require `curated`, an embedding tier may use both.
+  Context-free MT of short technical labels misfires predictably
+  (`building stability` → `Stabilität schaffen`, `aluminium exchangeable base`
+  → `austauschbarer Sockel aus Aluminium`).
 
 ## Output (per record)
 
@@ -65,7 +90,12 @@ the phrase↔phrase matching there.
   batch all CE pairs into one `predict()`, log every scored pair to a
   candidates CSV before thresholding — same pattern as keyword-matcher.
 
-### 2. `keybert/` — KeyBERT (folder exists, empty)
+### 2. `keybert/` — KeyBERT
+
+Exploration so far lives in `keybert/keybert_testing.ipynb` (notebook kernel is
+`.venvipynb`, **not** `../.venv` — it has `keybert`/`sentence-transformers`/
+`sklearn` but **no `thefuzz`**, so notebook cells must stay stdlib-only or the
+package has to be installed there).
 
 KeyBERT extracts keyword phrases from a document by embedding similarity.
 Several implementations are worth separate experiments:
@@ -84,6 +114,100 @@ Several implementations are worth separate experiments:
 
 Name each variant's folder/script and `method` label explicitly
 (e.g. `keybert_free`, `keybert_vocab`, `keybert_seeded`).
+
+#### Finding: `candidates=` is a lexical filter, not a semantic one
+
+**`candidates=` and `vectorizer=CountVectorizer(vocabulary=…)` are the same
+code path, and it is purely lexical.** KeyBERT builds a doc-term matrix over
+the vocabulary and keeps only terms with a nonzero count in that document
+(`df[index].nonzero()`), so a candidate must occur in the text *literally*
+before the encoder ever scores it. Consequences:
+
+- An English vocabulary against a German document returns `[]`. A multilingual
+  backbone does **not** fix this — it changes only the scoring stage, and
+  there is nothing left to score. (The notebook's note "need a multilingual
+  embedding model" is only half the story.)
+- The candidate list must be lowercased — the CountVectorizer lowercases the
+  document. Keep a `lower→(identifier, en label, de label)` map to report both
+  labels back.
+- `concepts_multilingual.json` yields **854** German candidates from 799
+  concepts: some concepts carry several German labels (`soil erosion` has
+  *Erosion*, *Bodenerosion*, *Erosionserscheinungen*), each its own candidate
+  pointing at the same concept.
+
+#### Finding: German records (`keybert_vocab_de`)
+
+The snapshot contains German records, so this is not a later refinement.
+Established on the German test record (`ch.bafu.…-phosphor`, in the notebook):
+
+Feeding the 854 German labels as `candidates=` lifts the record from 0 hits to
+exactly **1** — `Bodenerosion` → soil erosion, 0.4379. That is the ceiling of
+the approach, not a tuning problem. Four reasons the rest go missing (first
+three fixable, the fourth is correct behaviour):
+
+1. **The lexical pre-filter** discards candidates before scoring (above).
+2. **German compounding** — the vocabulary term hides inside a longer word.
+   `Phosphor`, `Landnutzung` and `Bodenauswaschung` are all in the vocabulary;
+   the text writes `Phosphoreinträge`, `Landnutzungskategorie`, `Auswaschung`.
+   Vocabulary-constrained KeyBERT is structurally weaker in German than in
+   English for this reason alone.
+3. **The label uses a different word than the document** — text `Drainage` vs.
+   label `Entwässerung`; text `Abschwemmung` vs. label `Abfluss`; text `Wald`
+   vs. label `Flächennutzung: Wälder`. MT gives one wording per concept; real
+   writing uses the others. See the `altLabel` open item.
+4. **Genuinely out of scope** — `Gletscher`, `Dauergrünland` and atmospheric
+   deposition have no SoilVoc concept in any language. Not a bug.
+
+#### Working shape: free extraction, then a cascade (`keybert_free_de`)
+
+Let KeyBERT extract German phrases with no vocabulary (it does this well —
+but pass German stop words, the default is `"english"`), then match the phrases
+to labels yourself, most certain first, tagging each result with the tier that
+produced it:
+
+1. `de_exact` — casefolded label equals the phrase or one of its words.
+2. `de_substring` — label inside a phrase word (`Phosphor` ⊂
+   `phosphoreinträge`) or a phrase word inside a *single-word* label
+   (`auswaschung` ⊂ `Bodenauswaschung`). Guard at ≥5 characters, or `Ton`
+   matches half the dictionary. Matching a word inside a *multi-word* label
+   lets function words through (`basierend` → `Index basierend auf Textur`).
+3. `de_semantic` — nearest label by cosine, high bar only (0.90).
+
+On the test record this returns 2 clean hits at `top_n=15, diversity=0.6`
+(`Bodenerosion`, `Phosphor`) and 4 correct + 3 false positives at
+`top_n=30, diversity=0.4` — the *extraction* stage is the limiter, not the
+matching. Two false positives there came from the productive prefix `Gesamt-`,
+which behaves like a stop word inside compounds.
+
+**The embedding model cannot discriminate German compounds.** This is why the
+semantic tier is last and gated. Nearest German labels to `bodenerosion`:
+
+    0.8469  Bodentaxonomie      soil classification
+    0.8425  Bodensedimentation  soil sedimentation
+    0.8224  Bodenfestigkeit     soil strength
+    0.8194  Bodenerosion        soil erosion   ← correct answer, ranked 6th
+
+`paraphrase-multilingual-MiniLM-L12-v2` keys on the shared `Boden-` subword and
+the whole band is 0.81–0.85. A pure-cosine matcher returns confident nonsense
+(`atmosphärische deposition` → `Luftverhältnis`). The model is reliable when
+words *look* different but *mean* the same (`Drainage`/`Entwässerung`), and
+unreliable when they look alike but differ — the opposite of the English case,
+where the encoder is the workhorse and string matching the fallback. For
+German, cheap substring matching beats the encoder.
+
+Also note: the `de_substring` length-ratio score is a tie-break within its
+tier, **not** a ranking signal — at loose extraction settings it puts false
+positives (0.96) above true positives (0.19). Sort by tier first. Using
+`thefuzz.fuzz.partial_ratio` instead would fix this, but see the `.venvipynb`
+caveat above.
+
+#### Not yet done in `keybert/`
+
+Everything so far is notebook-only on a single German record. Still missing:
+no `.py` script, no results CSV, no candidates log, no run over
+`snapshot/records.csv`, and no English-side re-run against the
+procedure-filtered vocabulary (the notebook's English cells predate
+`concepts_multilingual.json` and still use all 1048 concepts).
 
 ### 3. `llm/` — LLM extraction
 
@@ -119,6 +243,22 @@ invent plausible near-miss labels. Log raw responses alongside parsed output.
   first artifact, and all experiments should run on that same sample.
 - LLM provider/model not chosen.
 - `concepts.json` staleness vs. the keyword-matcher copy (see Inputs).
-- Records CSV snapshot not yet exported into this folder.
+- **Language distribution of the snapshot is unmeasured.** 27,674 records, no
+  language column, German present. Run detection before deciding how much
+  multilingual machinery is justified — it decides whether this is a German
+  problem or a de/fr/it problem.
+- **The 666 machine-translated German labels are unreviewed.** Cheapest QC is
+  back-translation (de→en, compare to the original English label, flag the
+  low-similarity rows) — that yields a review shortlist instead of eyeballing
+  ~670 rows. Re-translating with the `skos:definition` context from
+  `enriched_concepts.json` would also beat context-free DeepL.
+- **One German word per concept is the main recall limit** (reason 3 above).
+  AGROVOC/GEMET `skos:altLabel` synonyms are human-written and currently
+  ignored by `get_thesaurus.py`, which also never queries GEMET or INRAE at
+  all. Worth ~37 concepts upgraded from `mt-deepl` to `curated`, plus synonyms
+  for the ones already curated.
 - How many keywords per record to keep (fixed top-k vs. score threshold) —
   decide after looking at score distributions.
+- Thresholds cannot be shared across languages. Multilingual encoders score
+  same-language pairs higher than translation pairs, so a threshold calibrated
+  on English will not transfer to German. Calibrate per language.
