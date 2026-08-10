@@ -71,7 +71,7 @@ keyword table feeding the `mv_records` view), but no experiment writes there.
 One subfolder per approach (per-implementation subfolders where needed), each
 self-contained: its own copy of the input snapshot, its own results CSV.
 
-### 1. `embedding/` — bi-encoder retrieval (+ cross-encoder rerank)
+### 1. `ce/` — cross-encoder (+ bi-encoder retrieval)
 
 Reuse the `../keyword-matcher/` CE stack, but note the task is now
 **asymmetric**: a multi-sentence abstract vs. a 1–3 word concept label, unlike
@@ -90,12 +90,108 @@ the phrase↔phrase matching there.
   batch all CE pairs into one `predict()`, log every scored pair to a
   candidates CSV before thresholding — same pattern as keyword-matcher.
 
+#### Status: `ce/ce_testing.ipynb`
+
+Two cells, both run: one English record, one German record. Both skip
+retrieval entirely and cross-encode **all 1064 English labels** (799 concepts)
+against the document as `(label, document)` pairs — `max_length=256`, sigmoid,
+~1.5 min/record on CPU. **The label side is English in both cells**, so the
+German cell is a cross-lingual test and the unreviewed `mt-deepl` labels are
+not involved anywhere in `ce/`.
+
+**English record** (parkland C-13, same text as `keybert_testing.ipynb`):
+
+    0.8791  soil organic matter content   0.4254  soil organic component
+    0.8339  soil organic matter contents  0.2185  critical soil organic matter…
+    0.7613  soil organic matter           0.1831  soil inorganic carbon
+    0.7025  soil organic carbon           0.1815  soil organic matter class
+    0.4383  soil organic components       0.1516  critical soil organic matter…
+
+- **The CE reaches concepts no lexical method can.** *soil organic carbon*
+  (0.70) is never a literal span in the text; vocabulary-constrained KeyBERT
+  cannot return it at all. That is the structural advantage over approach 2.
+- **The CE discriminates where cosine does not.** In a separate run with
+  bi-encoder retrieval in front (chunked title + abstract sentences), all 40
+  retrieved candidates sat in a 0.55–0.74 cosine band — including junk like
+  *soil biological degradation* at 0.63 — while the CE spread the same set over
+  0.07–0.997. Retrieval proposes; only the CE ranks.
+- **Scores are text-sensitive, so they are not comparable across runs.** An
+  earlier run on a hand-shortened version of this abstract (232 tokens, no
+  truncation) put the same top four at 0.97/0.95/0.95/0.93. The cell now uses
+  the full Title-Cased original, which exceeds `max_length=256` and is silently
+  truncated. Same concepts, different numbers — do not mix them.
+
+**German record** (`ch.bafu.…-phosphor`, same text as the KeyBERT notebook):
+
+    0.8466  phosphorus total elements  ← de label is "Gesamtphosphor"
+    0.6913  soil phosphorus loss           0.4143  soil particle movement
+    0.5186  soil water loss                0.4046  land use class
+    0.4520  soil P loss                    0.3834  soil organic carbon loss
+    0.4472  soil water deficit             0.3286  soil water contents
+
+- **Cross-lingual pairing works, and beats KeyBERT on the topic.** No
+  translation, no lexical filter, no language detection — English labels
+  against German text return the phosphorus concepts and *land use class*.
+  Vocabulary-constrained KeyBERT returned exactly one hit on this record.
+  Note the top hit corresponds to German *Gesamtphosphor* while the text writes
+  *Gesamt-Phosphoreinträge*: the CE crossed both the language and the compound.
+- **But whole-document scoring buries the concepts the text names outright.**
+  Ranks of the expected answers over all 1064 labels:
+
+        1  phosphorus total elements    183  soil erosion    ("Bodenerosion")
+        7  land use class               403  surface runoff  ("Abschwemmung")
+       69  phosphorus                   534  soil leaching   ("Auswaschung")
+      287  land use                     796  soil drainage   ("Drainage")
+
+  `Bodenerosion` is KeyBERT's one hit on this record and the CE puts it at 183.
+  The pathway terms appear in a single parenthetical list, and scoring the
+  whole document drowns them — the model answers "what is this document
+  about?", which is *total phosphorus inputs*. The same effect is visible in
+  English (*trees*, *roots*, *crops* miss the top 15 despite being literal
+  words). So "the CE beats KeyBERT in German" is true for topic and false for
+  recall of enumerated terms; the honest conclusion is that they fail in
+  opposite directions.
+- **This makes chunk-level scoring the next experiment, not a refinement.**
+  Scoring per sentence and taking the max per concept would put
+  "Bodenerosion, Auswaschung, Abschwemmung, Drainage" in a passage of its own.
+- Also note the generic-vs-specific inversion: *phosphorus* ranks 69 while
+  *phosphorus total elements* ranks 1, and *land use* 287 while *land use
+  class* is 7. The CE prefers the longer, more specific label — relevant to
+  how results are deduped and reported.
+
+Still missing / known issues:
+
+- **No negative control.** Every scored label is a soil term, so the numbers
+  give a ranking but not a scale. Score the same labels against an unrelated
+  abstract — the top score of the *wrong* document is the number that decides
+  whether a threshold is possible at all.
+- **Duplicate labels of one concept fill the top-k** (English ranks 1–2 and
+  5–6 are two concepts across four rows; German 2 and 4 are both `SoilPLoss`).
+  Dedupe to best-label-per-concept before reporting.
+- **`max_length=256` silently truncates real records** — see the English cell
+  above. In `snapshot/records.csv` **42% of abstracts exceed ~1000 characters
+  (~256 tokens)** (p50 468, p90 2113, p99 5247). Raise the cap, chunk, or print
+  token counts so truncation is visible.
+- **Thresholds are not comparable across the two cells.** Same model, but
+  same-language vs. cross-lingual pairs come from different distributions.
+  Compare ranks, calibrate per language.
+- **Full scoring does not scale**: 1064 pairs/record × 27,674 records ≈ 1.5
+  min/record on CPU. A bi-encoder pre-filter is required for anything
+  corpus-wide; the notebook's configuration is the quality ceiling, not a
+  pipeline.
+- No `.py` script, no results CSV, no candidates log, no run over the snapshot.
+
 ### 2. `keybert/` — KeyBERT
 
 Exploration so far lives in `keybert/keybert_testing.ipynb` (notebook kernel is
-`.venvipynb`, **not** `../.venv` — it has `keybert`/`sentence-transformers`/
-`sklearn` but **no `thefuzz`**, so notebook cells must stay stdlib-only or the
-package has to be installed there).
+`.venvipynb`, **not** `../.venv`). `.venvipynb` has `keybert 0.9.0`,
+`sentence-transformers 5.6.0`, `torch 2.13.0`, `sklearn`, `yake`, `jellyfish`,
+and `openai 2.53.0` (installed for approach 3). It has **no `thefuzz`** — but
+`jellyfish` covers the same ground (`jaro_winkler_similarity`), so fuzzy
+matching in notebook cells is available, just under a different API. No
+`rdflib`/`SPARQLWrapper`/`psycopg2` there: no TTL parsing and no DB access from
+the notebooks. Versions drift slightly from `../.venv` (ST 5.5.1, torch 2.12);
+run both under `../.venv` if notebook and script numbers must match exactly.
 
 KeyBERT extracts keyword phrases from a document by embedding similarity.
 Several implementations are worth separate experiments:
@@ -201,22 +297,96 @@ positives (0.96) above true positives (0.19). Sort by tier first. Using
 `thefuzz.fuzz.partial_ratio` instead would fix this, but see the `.venvipynb`
 caveat above.
 
+#### Finding: KeyBERT can never emit English keywords from German text
+
+Extraction is span selection, not generation: `extract_keywords` builds its
+candidate pool with a `CountVectorizer` over the *document itself* and the
+encoder only scores those n-grams. So a German document yields German phrases,
+whatever the backbone. `seed_keywords=` does not change this either — it shifts
+the document embedding the candidates are scored against, not the pool.
+
+Consequences for the language problem: the only ways to get English concepts
+out of German text are (a) extract German then map (the `keybert_free_de`
+cascade above), (b) translate the document first, or (c) use a model that is
+not span-bound — KeyLLM (approach 3) or the cross-encoder (approach 1, where
+the cross-lingual cell now shows this working without any translation).
+
+Translating the **document** dissolves both German failure modes (compounding
+*and* one-wording-per-concept); translating the **vocabulary** fixes neither.
+That makes document translation the stronger MT direction if MT is used at all.
+Corpus volume for costing: 29.5M characters of title+abstract over 27,674
+records (~7.4M tokens), of which only the non-English share would need
+translating — and that share is still unmeasured (see open items).
+
 #### Not yet done in `keybert/`
 
-Everything so far is notebook-only on a single German record. Still missing:
-no `.py` script, no results CSV, no candidates log, no run over
-`snapshot/records.csv`, and no English-side re-run against the
-procedure-filtered vocabulary (the notebook's English cells predate
-`concepts_multilingual.json` and still use all 1048 concepts).
+Everything so far is notebook-only, on one German record and one English
+record. Still missing: no `.py` script, no results CSV, no candidates log, no
+run over `snapshot/records.csv`, and no English-side re-run against the
+procedure-filtered vocabulary — the notebook's English cells still load
+`../concepts.json` (1303 en labels, procedures included) rather than
+`concepts_multilingual.json` (1064 en labels, 799 concepts).
 
-### 3. `llm/` — LLM extraction
+### 3. LLM extraction — KeyLLM, in `keybert/keyllm_testing.ipynb`
 
-Prompt an LLM with the record text and ask for SoilVoc concepts. Undecided:
-provider/model, and how to fit ~1048 concepts into the prompt (full label
-list, retrieval-shortlisted subset — i.e. approach 1 as a pre-filter — or
-free extraction followed by matching). Constrain output to exact concept
-identifiers/labels and validate against `concepts.json`; LLMs will otherwise
-invent plausible near-miss labels. Log raw responses alongside parsed output.
+Prompt an LLM with the record text and ask for SoilVoc concepts. Being done
+with **KeyLLM** (KeyBERT's LLM mode), so the notebook lives beside the KeyBERT
+one rather than in an `llm/` folder.
+
+**Provider: OpenRouter**, via the OpenAI SDK — `keybert.llm.OpenAI` takes a
+client you construct, so `base_url="https://openrouter.ai/api/v1"` is the only
+provider-specific line, and model IDs ending `:free` cost nothing. One key
+gives Llama/Qwen/DeepSeek/Gemma/Mistral behind one string, which turns the
+model comparison into a one-line change. Free limits: **20 RPM**, and **~50
+requests/day** until a one-time $10 credit purchase raises it to 1,000/day
+permanently. 50/day is one gold-set pass with no room to iterate on the prompt.
+
+Caveat carried over from the free tiers generally: most `:free` variants
+require enabling the OpenRouter setting that permits providers **which may
+train on inputs**. Same question as the MT egress one — worth a single policy
+answer from ISRIC rather than re-deciding per tool. If the answer is no, every
+free API option dies at once and the fallbacks are local models
+(`keybert.llm.TextGeneration`) or the cross-lingual CE, which needs no LLM.
+
+#### What KeyLLM actually does (checked against the installed source)
+
+`KeyLLM.extract_keywords(docs, check_vocab=False, candidate_keywords=None,
+threshold=None, embeddings=None)`.
+
+- **`candidate_keywords=` + the `[CANDIDATES]` prompt tag is the pattern to
+  use here.** The backend does a plain `prompt.replace("[DOCUMENT]", doc)` and
+  `.replace("[CANDIDATES]", ", ".join(candidates))`. Feed a ~30-concept
+  shortlist from approach 1 and ask the model to *select*, not invent. That is
+  the "retrieval-shortlisted subset" option, and it drops the prompt from
+  ~5,000 tokens (whole vocabulary) to ~200. For reference, the full English
+  label list **does** fit in a prompt: 1054 unique labels = 20,213 chars ≈
+  5,000 tokens.
+- **Do not use `check_vocab=True`.** It is a post-hoc, case-sensitive
+  `if keyword in document` filter applied *after* the API call. It saves no
+  tokens, drops correct answers on case alone, and reintroduces exactly the
+  lexical trap that limits `candidates=` in approach 2 — it would delete
+  *soil organic carbon*, the best answer on the English test record.
+- **`threshold=` + `embeddings=` clustering is dangerous on this corpus.** It
+  runs `util.community_detection(...)`, calls the LLM only for the first
+  document of each cluster, and copies those keywords to every member. The
+  snapshot is full of template families — records 1 and 2 are the same MODIFFUS
+  boilerplate with nitrogen swapped for phosphorus — which at `threshold=.75`
+  would cluster and lose the one distinction that matters. Use ≥0.90 if at all,
+  and inspect the clusters.
+- **The parser is `response.split(",")`.** No scores, no JSON (passing
+  `response_format` through `generator_kwargs` still gets comma-shredded), no
+  raw-response log. KeyLLM therefore **cannot produce the output convention**
+  above (`score`, `method` per row).
+- Wiring gotchas: pass `chat=True` (the default is `gpt-3.5-turbo-instruct` on
+  the dead completions endpoint), plus `delay_in_seconds=3` and
+  `exponential_backoff=True` for the 20 RPM cap.
+
+**Plan:** use KeyLLM for the quick qualitative read — does LLM selection over a
+CE shortlist beat CE reranking alone on a few records? Then write the real
+experiment as a direct client loop returning `{concept_identifier,
+confidence}` under a JSON schema, validated against
+`concepts_multilingual.json` (LLMs invent plausible near-miss labels; count the
+invalid rate, it is itself a result). Log raw responses alongside parsed output.
 
 ## Shared conventions (inherit from keyword-matcher)
 
@@ -234,6 +404,9 @@ invent plausible near-miss labels. Log raw responses alongside parsed output.
 - All thresholds are **placeholders until a gold set exists**. Scores from
   different models/input formats come from different distributions — never
   reuse a threshold across them.
+- **API keys come from the environment** (`OPENROUTER_API_KEY`, …), never
+  literals in a notebook cell or script — the notebooks are in the repo. Same
+  convention as the `POSTGRES_*` variables.
 
 ## Open items
 
@@ -241,12 +414,17 @@ invent plausible near-miss labels. Log raw responses alongside parsed output.
   (record → correct SoilVoc concepts), the three approaches can only be
   compared qualitatively. A shared labelled sample of records should be the
   first artifact, and all experiments should run on that same sample.
-- LLM provider/model not chosen.
+- LLM provider chosen (OpenRouter); **model not chosen** — that comparison is
+  the point of the OpenRouter setup.
+- **Whether record text may be sent to services that train on it** is
+  unanswered, and it gates every free LLM tier and every hosted MT option.
+  Needs one policy answer, not a per-tool decision.
 - `concepts.json` staleness vs. the keyword-matcher copy (see Inputs).
 - **Language distribution of the snapshot is unmeasured.** 27,674 records, no
   language column, German present. Run detection before deciding how much
   multilingual machinery is justified — it decides whether this is a German
-  problem or a de/fr/it problem.
+  problem or a de/fr/it problem, and it sizes any MT bill (29.5M chars total,
+  of which only the non-English share would be translated).
 - **The 666 machine-translated German labels are unreviewed.** Cheapest QC is
   back-translation (de→en, compare to the original English label, flag the
   low-similarity rows) — that yields a review shortlist instead of eyeballing
