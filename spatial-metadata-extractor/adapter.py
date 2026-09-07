@@ -5,6 +5,7 @@ import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Iterator, Optional
+from urllib.parse import unquote
 
 import requests
 from requests.sessions import HTTPAdapter
@@ -91,12 +92,12 @@ class PostgreSQLAdapter(SourceAdapter):
     DEFAULT_QUERY = """
         SELECT identifier, spatial
         FROM metadata.records
-        WHERE COALESCE(spatial, '') <> ''
-          AND identifier NOT IN (
-              SELECT record_id
-              FROM metadata.augment_status
-              WHERE process = 'spatial-locator'
-          )
+        WHERE spatial IS NOT NULL
+        AND spatial <> ''
+        AND identifier NOT IN (
+            SELECT record_id FROM metadata.augment_status
+            WHERE process = 'spatial-extractor'
+        )
     """
 
     def __init__(
@@ -125,20 +126,19 @@ class PostgreSQLAdapter(SourceAdapter):
 
             for row in rows:
                 identifier = row.get(self.identifier_col, "unknown")
-                raw_links  = row.get(self.links_col, "")
-                extra      = {
+                url = identifier  # Use identifier as the URL to check
+                extra = {
                     k: v for k, v in row.items()
                     if k not in (self.identifier_col, self.links_col)
                 }
 
-                for url, mediatype in self.parse_url_field(raw_links):
-                    yield SourceRecord(
-                        identifier=identifier,
-                        url=url,
-                        mediatype=mediatype,
-                        skip_link_check=False,
-                        extra=extra,
-                    )
+                yield SourceRecord(
+                    identifier=identifier,
+                    url=url,
+                    mediatype=None,
+                    skip_link_check=False,
+                    extra=extra,
+                )
         finally:
             conn.close()
 
@@ -155,11 +155,15 @@ class CSVAdapter(SourceAdapter):
         self,
         filepath: str,
         url_col: str = "url",
+        identifier_col: str = "identifier",
+        mediatype_col: str = "mediatype",
         encoding: str = "utf-8",
     ):
-        self.filepath = filepath
-        self.url_col  = url_col
-        self.encoding = encoding
+        self.filepath       = filepath
+        self.url_col        = url_col
+        self.identifier_col = identifier_col
+        self.mediatype_col  = mediatype_col
+        self.encoding       = encoding
 
     def records(self) -> Iterator[SourceRecord]:
         with open(self.filepath, newline="", encoding=self.encoding) as fh:
@@ -172,9 +176,9 @@ class CSVAdapter(SourceAdapter):
                 )
 
             for i, row in enumerate(reader, 1):
-                raw_url    = row.pop(self.url_col, "").strip()
-                identifier = row.pop("identifier", f"row_{i}").strip() or f"row_{i}"
-                mediatype  = row.pop("mediatype", None) or None
+                raw_url    = unquote(row.pop(self.url_col, "").strip())
+                identifier = row.pop(self.identifier_col, f"row_{i}").strip() or f"row_{i}"
+                mediatype  = row.pop(self.mediatype_col, None) or None
 
                 urls = self.parse_url_field(raw_url)
                 if not urls:

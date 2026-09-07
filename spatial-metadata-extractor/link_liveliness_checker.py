@@ -51,7 +51,7 @@ class AsyncURLChecker:
             # Check OGC capabilities if requested (even if status code is not 2xx)
             # OGC services may return error codes but still have valid capability info
             if check_ogc_capabilities:
-                ogc_capabilities = self._check_ogc_capabilities(url, identifier)
+                ogc_capabilities = self._check_ogc_capabilities(url, identifier, lname)
                 result['gis_capabilities'] = ogc_capabilities
             else:
                 result['gis_capabilities'] = None
@@ -119,8 +119,6 @@ class AsyncURLChecker:
             service_type = self._detect_service_type(url)
             
             if service_type:
-                # Use existing process_ogc_links function
-                # Pass None for layer name and metadata ID since we're just checking capabilities
                 capabilities = process_ogc_links(url, service_type, lname, identifier)
                 return capabilities
             
@@ -146,9 +144,9 @@ class AsyncURLChecker:
         if is_ogcapi_url:
             return 'ogcapi'
         
-        # Check for service parameter in query string
+        # Check for service parameter in query string (query keys are case-insensitive per the OGC spec)
         parsed_url = urlparse(url)
-        query_params = parse_qs(parsed_url.query)
+        query_params = {k.lower(): v for k, v in parse_qs(parsed_url.query).items()}
         if 'service' in query_params:
             service = query_params['service'][0].lower()
             if service in ['wms', 'wmts', 'wfs', 'wcs']:

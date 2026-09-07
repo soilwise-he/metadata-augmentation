@@ -246,7 +246,71 @@ class GDALMetadataExtractor:
                 'type': field_def.GetTypeName(),
             })
 
+        # Vector resolution proxies
+        layer_meta['coordinate_precision'] = self._calculate_coordinate_precision(layer)
+        layer_meta['feature_density'] = self._calculate_feature_density(layer_meta['feature_count'], layer_meta['bbox'])
+
         return layer_meta
+
+    def _calculate_coordinate_precision(self, layer, max_features: int = 50) -> Optional[int]:
+        precisions = []
+        layer.ResetReading()
+        try:
+            feature = layer.GetNextFeature()
+            feature_count = 0
+            while feature is not None and feature_count < max_features:
+                geom = feature.GetGeometryRef()
+                if geom is not None:
+                    self._collect_geometry_precisions(geom, precisions)
+                feature = None
+                feature_count += 1
+                feature = layer.GetNextFeature()
+        except Exception as e:
+            logger.debug(f"Coordinate precision sampling failed: {e}")
+        finally:
+            layer.ResetReading()
+
+        if not precisions:
+            return None
+        return int(max(precisions))
+
+    def _collect_geometry_precisions(self, geom, precisions: list):
+        if geom is None:
+            return
+
+        if geom.GetGeometryCount() > 0:
+            for i in range(geom.GetGeometryCount()):
+                self._collect_geometry_precisions(geom.GetGeometryRef(i), precisions)
+            return
+
+        point_count = geom.GetPointCount()
+        for i in range(point_count):
+            point = geom.GetPoint(i)
+            x, y = point[0], point[1]
+            precisions.append(self._count_decimal_places(x))
+            precisions.append(self._count_decimal_places(y))
+
+    def _count_decimal_places(self, value: float) -> int:
+        try:
+            text = f"{value:.12f}".rstrip('0').rstrip('.')
+            if '.' in text:
+                return len(text.split('.')[-1])
+        except Exception:
+            pass
+        return 0
+
+    def _calculate_feature_density(self, feature_count: int, bbox: Optional[list]) -> Optional[float]:
+        if not bbox or len(bbox) != 4:
+            return None
+        minx, miny, maxx, maxy = bbox
+        width = maxx - minx
+        height = maxy - miny
+        if width <= 0 or height <= 0:
+            return None
+        area = width * height
+        if area == 0:
+            return None
+        return feature_count / area
 
     def extract_raster_metadata(self, dataset) -> Dict[str, Any]:
         metadata = {

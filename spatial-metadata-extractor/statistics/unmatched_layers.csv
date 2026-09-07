@@ -1,0 +1,545 @@
+record_id,name,description,service_type
+3caab607-66af-40a8-a8ad-f4c2d780dc04,gsoc:S_CLAY,Subsoil Clay Fraction,wms
+r_friuve:m3952-cc-i1443,NULL,NULL,wms
+r_friuve:m3952-cc-i1443,NULL,NULL,wfs
+http://www.lgl-bw.de/903d622c-845c-11ee-87fc-00505699ce57,INSPIRE-WMS BW Bodenbedeckung System zur Identifizierung landwirtschaftlicher Parzellen 2022,NULL,wms
+1234567,NULL,NULL,wms
+0c568272-5117-492f-b6dc-e37b5a0458df,gsoc:T_GRAVEL,Topsoil Gravel Content,wms
+DAT-14-en,NULL,NULL,wms
+DAT-14-en,NULL,NULL,wms
+eea_r_3035_100_m_imd-2015-acc_p_2014-2016_v01_r03,NULL,NULL,wms
+DAT-14-en,NULL,NULL,wms
+a66f61a2-fdfa-41a1-b14b-8a26fe869bc1,gsoc:S_REF_BULK,Subsoil Reference Bulk Density,wms
+e33c04ee-4f0a-464d-9d59-7a90fbe13896,Inspire View Services,Inspire view service,wms
+r_friuve:m3986-cc-i4021,NULL,NULL,wfs
+r_friuve:m3986-cc-i4021,NULL,NULL,wms
+DAT-14-en,NULL,NULL,wms
+r_friuve:m3967-cc-i1468,NULL,NULL,wfs
+r_friuve:m3967-cc-i1468,NULL,NULL,wms
+eea_r_3035_1_km_clc-forest-cover-gain-eu_p_2000-2006_v01_r00,NULL,NULL,wms
+21f3a653-6422-4bbd-8937-5a29477620fe,gsoc:ISSOIL,Soil or non-Soil Unit,wms
+r_friuve:m4004-cc-i4086,NULL,NULL,wms
+r_friuve:m4004-cc-i4086,NULL,NULL,wfs
+28a900a9-28a2-415e-b08d-d5d3e89deb03,gsoc:S_PH_H2O,Subsoil pH (H2O),wms
+https://www.dov.vlaanderen.be/geonetwork/srv/metadata/64e8a11d-5602-4ad5-b370-e4d396fe218f,wrb_250000,WFS-feature WRB Reference Soil Groups 250k: Bodemkaart van het Vlaamse Gewest volgens het internationale bodemclassificatiesysteem World Reference Base op schaal 1:250.000,wfs
+eea_v_3035_1_km_heavy-metals-agri-soil_p_2008-2019_v01_r00,NULL,NULL,wms
+7730e747-eb73-49c9-bfe6-84ebae718743,gsoc:GSOCmap1.5.0,Global Soil Organic Carbon Map,wms
+eea_r_3035_1_km_imperviousness-layer_p_2018_v01_r00,NULL,NULL,wms
+r_friuve:m3956-cc-i1451,NULL,NULL,wfs
+eea_v_3035_100_m_eni-clc-2018_p_2017-2019_v01_r00,WMS Web Map Service,NULL,wms
+WRB-Reference-Soil-Groups-250k,WFS,NULL,wfs
+bbe45de0-88fd-11da-a88f-000d939bc5d8,geonetwork:crops_3845,Potential for agricolture by-products as feed and fertiliser inputs,wms
+0b644920-ff5e-4aac-a124-8b478bda606c,Service de visualisation WMS,Adresse de connexion au service de visualisation WMS de la couche de données CARBIOSOL - Incertitudes des Teneurs en Carbone organique total - période 2004-2014,wms
+ARLPA_TO:07.09.03_AD_2012-03-05-11:00,NULL,NULL,wfs
+DAT-137-en,NULL,NULL,wms
+r_friuve:m3956-cc-i1451,NULL,NULL,wms
+DAT-14-en,NULL,NULL,wms
+r_lombar:9f3daa68-02ab-451c-9de0-7ab8581c976c,NULL,NULL,wms
+DAT-14-en,NULL,NULL,wms
+c8592600-88fd-11da-a88f-000d939bc5d8,geonetwork:soilslop_3844,Soil and terrain suitability for ponds,wms
+e00c65cd-7577-4ebe-a888-5eaf7930acf5,gsoc:sq1,Soil Nutrient Availability (HWSD),wms
+Bodemprofielen-kartering-Belgische-bodemkaart,vw_profiel,WFS-feature Bodemprofielen kartering Belgische bodemkaart,wfs
+Bodemprofielen-kartering-Belgische-bodemkaart,WFS,NULL,wms
+R_SARDEG:a1ee50f3-66ab-425d-997e-5fdc288163fd,NULL,NULL,wms
+766ffdf4-286e-4c4c-b61f-10ffffd0f5ae,gsoc:S_OC,Subsoil Organic Carbon,wms
+57af3675-efc5-453b-bd66-c9be4a4a0c16,NULL,NULL,wms
+arls_031:m10809-cc-i11459,NULL,NULL,wfs
+Digitale-bodemkaart-van-het-Vlaams-Gewest-bodemtypes,bodemtypes,WFS-feature Digitale bodemkaart van het Vlaams Gewest: bodemtypes,wfs
+160635,INSPIRE prohlížecí služba (CS),NULL,wms
+160636,INSPIRE prohlížecí služba (CS),NULL,wms
+9f51ffea-549b-48a7-9d6e-19cf7c84cc40,NULL,NULL,wms
+40db0008-f365-43ca-953d-cabdcadc24a5,gsoc:sq5,Soil Quality: Excess Salts (HWSD),wms
+arls_031:m10809-cc-i11459,NULL,NULL,wms
+arls_031:m10914-cc-i11787,NULL,NULL,wms
+arls_031:m10914-cc-i11787,NULL,NULL,wfs
+d9cc67ba-5491-4640-86ac-b8d392250270,NULL,NULL,wms
+https://www.dov.vlaanderen.be/geonetwork/srv/metadata/298d34a4-d459-4fc8-a9be-e8e26cd9b354,so_potbdmerosiepp_2020,WFS-feature Potentiële bodemerosiekaart per perceel (2020),wfs
+https://www.dov.vlaanderen.be/geonetwork/srv/metadata/692a9efb-8509-4a6f-a3be-6887f969867d,erosiebestrijding_gemeente,WFS-feature Kleinschalige erosiebestrijdingswerken,wfs
+b47d2800-713c-4cd9-bd34-016161ef806e,SOLAW:fig02_06_37990,Dominant soil and terrain constraints for low input farming,wms
+b7725746-b5ef-46db-add4-d61a6cc3b8d3,Service de visualisation WMS,Adresse de connexion au service de visualisation WMS de la couche de données CARBIOSOL - Teneurs prédites en Carbone organique total - période 1949-1972,wms
+bf6483f0-88fd-11da-a88f-000d939bc5d8,geonetwork:watav_3830,Water availability,wms
+Soils-of-Scotland-map-Extend-125.000,WMS,NULL,wms
+be8658f0-88fd-11da-a88f-000d939bc5d8,geonetwork:s_tlsub1_3809,Suitability for small-scale farming and potential yield (crops/y) of Nile tilapia,wms
+c1251fb0-88fd-11da-a88f-000d939bc5d8,geonetwork:waterlos_3796,Soil suitability for ponds,wms
+r_friuve:m3972-cc-i1476,NULL,NULL,wfs
+r_friuve:m3972-cc-i1476,NULL,NULL,wms
+bc4277fe-7d0b-4d5e-9782-cccb1753f5f5,NULL,NULL,wms
+ba709b9e-79a8-43f6-97b7-6a763bf1cadf,gsoc:S_CEC_CLAY,Subsoil CEC (CLAY),wms
+bd5d1b30-88fd-11da-a88f-000d939bc5d8,geonetwork:afferll_4,Soil fertility index for Africa,wms
+bd84ee80-88fd-11da-a88f-000d939bc5d8,geonetwork:afgrouso_3,Dominant soils of Africa,wms
+686656,"Avloppsslam på jordbruksmark, visningstjänst",NULL,wms
+c1da17d0-88fd-11da-a88f-000d939bc5d8,geonetwork:tcatsub1_3804,Potential yield (crops/y) of African catfish - Small-scale farming,wms
+R_SARDEG:d56d4a44-c331-42d8-a995-efb940a3e915,NULL,NULL,wms
+c06ec800-88fd-11da-a88f-000d939bc5d8,geonetwork:txsl_3833,Engineering capability,wms
+r_friuve:m3955-cc-i1450,NULL,NULL,wfs
+r_friuve:m3955-cc-i1450,NULL,NULL,wms
+642286,brpgewaspercelen,NULL,wms
+arlpa_to:07.02.11_2019-10-16_09:00,NULL,NULL,wms
+c2be6eab-4ccb-41c5-b63b-73285f5a4c6f,gsoc:S_GRAVEL,Subsoil Gravel Content,wms
+c31a38f0-88fd-11da-a88f-000d939bc5d8,geonetwork:eurasia_taiwsoil_7385,Soil of North and Central Eurasia,wms
+c32116c0-88fd-11da-a88f-000d939bc5d8,geonetwork:soiltext_3832,Soil texture,wms
+arls_031:m10580-cc-i10497,NULL,NULL,wms
+arls_031:m10580-cc-i10497,NULL,NULL,wfs
+c7caec6d-9393-414b-a5c7-362521720b08,Service de visualisation WMS,Adresse de connexion au service de visualisation WMS de la couche de données CARBIOSOL - Incertitudes des stocks en Carbone organique total - période 2005-2014,wms
+d53f2680-88fd-11da-a88f-000d939bc5d8,geonetwork:sea_7379,Soil of Northeastern Africa,wms
+db533de0-88fd-11da-a88f-000d939bc5d8,geonetwork:soterlac_7387,Soil and terrain of Latin America and Caribbean,wms
+db767d50-88fd-11da-a88f-000d939bc5d8,geonetwork:soils_7390,Dominant Soils Map of Southern Africa,wms
+db8179d0-88fd-11da-a88f-000d939bc5d8,geonetwork:soils_7389,Soil Map of Southern Africa,wms
+7191c251-124d-4042-b45d-7dcd512d1a90,gsoc:S_SILT,Subsoil Silt Fraction,wms
+bf0e2690-88fd-11da-a88f-000d939bc5d8,geonetwork:soils_3820,Soil suitability for ponds,wms
+Soil-Organic-Carbon-Stock-Maps-for-Belgium,carbon_sd_40,"The Belgian soil organic carbon (SOC) stock map for topsoils (0-30 cm) at the resolution of 40m x 40m was composed of 2 regional SOC stock maps. For the regional maps a different approach was used for agricultural land as compared to forest. The maps are based on digital soil mapping approaches using empirical models calibrated to predict the SOC stock and using covariates that are available at a sufficient resolution at the regional scale. All maps are strongly dependent on the Belgian Soil Map (texture and drainage parameters). The regional maps were compiled at a fine resolution (10m x 10m grid cells for Flanders and 40m x 40m grid cells for Wallonia). Next they were joined (40m x 40m grid cells). The regional maps for Flanders were scaled up tot the 40m x 40m grid of Wallonia.  
+Given the different origin of the individual maps, the uncertainty varies between maps. For instance, a map of the 90% confidence interval of the SOC stocks was produced for agricultural soils in Wallonia based on a Monte Carlo Approach taking into account both the measurement and the model uncertainties. For Flemish forest soils, spatial and analytical uncertainties were taken into account using bootstrapping techniques. For Flemish agricultural soils, the uncertainty reported is the model uncertainty on point estimates for each data point, in which the estimated model parameters are simulated 1000 times as being independent normal distributed variables using their model estimation and standard error as distribution parameters. No additional uncertainty is taken into account for the conversion functions that use the stochastic variables ""bulk density"". The metadata are available and allow assessing the uncertainties of the stock estimates in the different component maps.
+The SOC stock map (resolution of 40m x 40m) is the first comprehensive map for Belgium integrating grasslands, croplands and forests. Based on this map another SOC stock map at a resolution of 1km x 1km in the coordinate reference system WGS84 was created.",wms
+38c2a87e-d38a-4359-9899-9d4a6b9f0c2a,Service de visualisation WMS,Adresse de connexion au service de visualisation WMS des données relatives à la Carte Numérique des Sols de Wallonie.,wms
+r_friuve:m3958-cc-i1454,NULL,NULL,wms
+r_friuve:m3958-cc-i1454,NULL,NULL,wfs
+21885567-5313-429d-a899-a92cc67e86a0,gsoc:sq4,Soil Quality: Oxygen Availability to Roots (HWSD),wms
+ea3a946c-f25e-44b5-be96-dce9bbc93050,Service de visualisation WMS,Adresse de connexion au service de visualisation WMS de la couche de données CARBIOSOL - Incertitudes des Teneurs en Carbone organique total - période 1949-1972,wms
+ec81aff5-2b00-4534-a780-78178288d21d,gsoc:sq6,Soil Quality: Toxicities,wms
+r_friuve:m3982-cc-i1494,NULL,NULL,wms
+2427214a-42dc-4862-b58a-00b73cbc7a6f,gsoc:T_CEC_CLAY,Topsoil CEC (CLAY),wms
+r_lombar:9e36ef24-bbb0-46d1-995c-7c50679ff096,NULL,NULL,wms
+r_friuve:m3959-cc-i1456,NULL,NULL,wfs
+r_friuve:m3959-cc-i1456,NULL,NULL,wms
+arls_031:m10574-cc-i10481,NULL,NULL,wms
+arls_031:m10574-cc-i10481,NULL,NULL,wfs
+r_friuve:m3981-cc-i1493,NULL,NULL,wfs
+r_friuve:m3981-cc-i1493,NULL,NULL,wms
+r_friuve:m4003-cc-i4085,NULL,NULL,wfs
+r_friuve:m4003-cc-i4085,NULL,NULL,wms
+r_friuve:m3982-cc-i1494,NULL,NULL,wfs
+r_friuve:m3987-cc-i4022,NULL,NULL,wfs
+r_friuve:m3987-cc-i4022,NULL,NULL,wms
+r_friuve:m3970-cc-i1474,NULL,NULL,wms
+r_friuve:m3970-cc-i1474,NULL,NULL,wfs
+r_lombar:410afd93-0871-4bb5-91df-8bf5eefc8808,NULL,NULL,wms
+r_friuve:m3963-cc-i1461,NULL,NULL,wms
+r_friuve:m3963-cc-i1461,NULL,NULL,wfs
+r_friuve:m3984-cc-i3981,NULL,NULL,wms
+r_friuve:m3984-cc-i3981,NULL,NULL,wfs
+r_friuve:m3960-cc-i1457,NULL,NULL,wfs
+r_friuve:m3960-cc-i1457,NULL,NULL,wms
+f1d5ecdd-c078-475e-9ced-0451892381ae,gsoc:sq7,Soil Quality: Workability (HWSD),wms
+d9cc67ba-5491-4640-86ac-b8d392250270,NULL,NULL,wms
+f57b4c3e-9822-426e-913e-e558868f4e9f,gsoc:T_SILT,Topsoil Silt Fraction,wms
+f5b746d0-853d-11db-b9b2-000d939bc5d8,geonetwork:constr_soil_14133,Global land area with soil constraints (FGGD),wms
+r_friuve:m3965-cc-i1465,NULL,NULL,wms
+r_friuve:m3965-cc-i1465,NULL,NULL,wfs
+eea_r_3035_1_km_clc-forest-cover-gain-eu_p_2000-2018_v01_r00,NULL,NULL,wms
+10.2909/1b43939a-cb20-4eb8-b6e7-b454971ed933,NULL,NULL,wms
+eea_v_4326_100_k_uhi-intensity_p_2008-2017_v01_r00,NULL,NULL,wms
+327b8820-6d15-4852-b6f6-6cb717eee6fa,gsoc:sq2,HWSD - Soil Nutrient retention capacity,wms
+fffc68e2-30d9-4ead-9862-b77dc9d0c41b,Mullakaardi WMS teenuse getCapabilities,NULL,wms
+eea_r_3035_100_m_uhi-modelling_p_2008-2017_v01_r00,NULL,NULL,wms
+10.2909/551d6741-84d0-43fb-bda8-1768d51bbb4c,Urban Atlas 2006,NULL,wms
+copernicus_v_3035_10_m_ua-2012_p_2011-2013_vxx_rxx,NULL,UrbanAtlas_2012,wms
+10.2909/05cbf86d-0168-47f5-9384-18c84b14f59c,NULL,NULL,wms
+copernicus_v_3035_10_m_rz-2012-lclu_p_2011-2013_v01_r00,NULL,NULL,wms
+10.2909/047f71ee-dec6-4c7b-8044-7a153c025588,Urban Atlas Change 2006-2012,NULL,wms
+copernicus_v_3035_10_m_ua-2012_p_2011-2013_v02_r00,NULL,UrbanAtlas_2012,wms
+10.2909/2afca4ec-76e2-4155-b4e6-7460f9f6ae01,Riparian Zones 2018 LCLU,NULL,wms
+"eea_r_3035_100_m_clc-2018-acc_p_2017-2018_v01_r00,DAT-214-en",0,CLC_accounting_layer_2018,wms
+https://www.dov.vlaanderen.be/geonetwork/srv/metadata/2035e01e-eef5-4806-948c-df7b966169a1,grndversch_gevoeligh,WFS-feature Gevoeligheid voor grondverschuivingen,wfs
+eea_r_3035_5_km_smoisture-anomalies-gs-2021_p_2000-2021_v01_r00,NULL,NULL,wms
+"eea_r_3035_5_km_smoisture-anomalies-gs-2019_p_2000-2019_v01_r00,DAT-247-en",NULL,NULL,wms
+eea_v_4258_100_k_impervious-area-umz_p_2015_v01_r00,NULL,NULL,wms
+eea_v_3035_1_km_n-p-agri-soil_p_2008-2019_v01_r00,NULL,NULL,wms
+eea_v_4258_100_k_impervious-area-city_p_2015_v01_r00,NULL,NULL,wms
+eea_r_3035_100_m_imd-2009-acc_p_2008-2010_v01_r03,NULL,NULL,wms
+eea_r_3035_100_m_imd-2006-acc_p_2005-2007_v01_r03,NULL,NULL,wms
+eea_r_3035_100_m_imd-2012-acc_p_2011-2013_v01_r03,NULL,NULL,wms
+10.2909/e3284161-abef-4a2e-a291-cd8ce1cab54e,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessChange_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/96b7f7df-3f79-4001-b489-1d918c813a62,NULL,NULL,wms
+10.2909/3bf542bd-eebd-4d73-b53c-a0243f2ed862,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessDensity_2018/ImageServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/73f0e3eb-ea21-4083-9b49-9c345c766775,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/9ab86774-f1f4-4562-85f1-42705da23ac0,HRL_NVLCC_IMCC_20m,CLMS_NVLCC_IMCC_C2018-2021_R20m,wms
+10.2909/3e412def-a4e6-4413-98bb-42b571afd15e,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_BuiltUp_2018/ImageServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/9d131e52-0ce9-41a1-9a96-0310eb97c415,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_12_15/MapServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/bb32d49d-71ce-4a89-884a-e7e6fb118333,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_09_12/MapServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/56b5c27b-ffaa-45c7-9b39-085dcbe725e4,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessChange_12_15/MapServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/b862001d-6635-44c3-8448-d9e793188e8a,HRL_NVLCC_IMDC_20m,CLMS_NVLCC_IMDC_C2018-2021_R20m,wms
+10.2909/62ab826c-9411-4dbf-b516-beb1db681830,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_06_09/MapServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/463f357e-6419-461b-9ed1-c38948a75f09,https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessChange_12_15/MapServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+scc_v_3035_10_k_virgin-forest-inventory-keo_i_2019_v01_r00,NULL,Virgin Forest Inventory of the Carpathians Dec. 2019,wms
+10.2909/707f3c1f-4ecd-4cd1-bb7e-5091f0f36c4c,NULL,NULL,wms
+10.2909/34ef6334-d432-4041-a3da-67e156d6501d,HRL_NVLCC_IMD_10m,CLMS_NVLCC_IMD_S2021_R10m,wms
+10.2909/d5948b24-0a46-4946-b1eb-1f96440c5685,HRL_NVLCC_IBU_10m,CLMS_NVLCC_IBU_S2021_R10m,wms
+10.2909/a6c48c2d-114f-406e-ba99-c9085a5f5aee,NULL,NULL,wms
+"eea_v_3035_25_k_european-mountain_p_2008_v1_r00,DAT-215-en",NULL,European mountain areas,wms
+10.2909/1e42e939-73ec-4e82-82ae-3625ecffc907,NULL,NULL,wms
+10.2909/971345a4-c826-49ab-9c61-46d48dbc509b,NULL,NULL,wms
+10.2909/deea2778-7023-4b81-8eab-8f3a0ac43661,NULL,NULL,wms
+10.2909/de2df446-c93b-4bea-8fc1-cad0d1d976ce,NULL,NULL,wms
+10.2909/7db5272f-5825-442b-9fa0-8b1c424f4ff1,NULL,NULL,wms
+10.2909/917348e8-42ea-4df9-8fe8-4d47bcd8d241,NULL,WMS Web Map Service,wms
+"eea_r_3035_100_m_fga2-s-2015_p_2015-2016_v01_r00,DAT-222-en",NULL,NULL,wms
+eea_r_3035_1_km_env-zones_p_2018_v01_r00,NULL,NULL,wms
+eea_r_3035_100_m_adm-boundaries-eea38-uk_p_2020_v01_r00,NULL,NULL,wms
+arls_031:m10914-cc-i11786,NULL,NULL,wms
+10.2909/169b69b5-a1f8-4aed-8042-bfcb4c1e4948,NULL,NULL,wms
+10.2909/f425a73e-dc6c-40be-93d6-9d234d4bbe1b,NULL,Forest probability WMS service,wms
+10.2909/70fbb9d1-b61b-4bdc-973b-fec4d8835ccd,NULL,NULL,wms
+10.2909/5b3e4da9-4c14-498c-b20e-bc514470eab5,NULL,NULL,wms
+10.2909/156377d3-14ee-42f9-855e-71d8c710d441,NULL,NULL,wms
+10.2909/f97c9bdc-3bdc-45e9-8f28-e687702096d7,NULL,NULL,wms
+10.2909/4e92b07d-48b0-4a53-9db2-fd8d07070cc1,0,HRL_SmallWoodyFeatures_2015_005m,wms
+arls_031:m10914-cc-i11786,NULL,NULL,wfs
+"eea_r_3035_100_m_clc-2006-acc_p_2005-2007_v02_r00,DAT-214-en,DAT-37-en",0,CLC_accounting_layer_2006,wms
+"eea_r_3035_100_m_clc-2012-acc_p_2011-2013_v02_r00,DAT-214-en",0,CLC_accounting_layer_2012,wms
+copernicus_v_3035_10_m_rz-2012-lclu_p_2011-2013_v02_r00,NULL,Riparian Zones 2012 LCLU,wms
+"eea_r_3035_100_m_clc-2000-acc_p_1999-2001_v02_r00,DAT-214-en",0,CLC_accounting_layer_2000,wms
+10.2909/debc1869-a4a2-4611-ae95-daeefce23490,UrbanAtlas_2012,NULL,wms
+10.2909/d9aeb892-04d5-42c0-b24a-29b58831316f,https://copernicus.discomap.eea.europa.eu/arcgis/services/RiparianZones/RZ_Change/MapServer/WMSServer?request=GetCapabilities&service=WMS,NULL,wms
+10.2909/6aeb0dea-9d8c-42bd-a357-cd859f148929,Riparian Zones 2012 LCLU,NULL,wms
+eea_r_3035_100_m_eni-cha-2000-2018_p_2000-2019_v01_r00,NULL,NULL,wms
+eea_v_3035_100_m_eni-cha-2000-2018_p_2000-2019_v01_r00,NULL,NULL,wms
+eea_r_3035_100_m_eni-clc-2018_p_2017-2019_v01_r00,WMS Web Map Service,NULL,wms
+eea_v_3035_100_m_eni-clc-2000_p_2000-2005_v01_r00,WMS Web Map Service,NULL,wms
+eea_r_3035_100_m_eni-clc-2000_p_2000-2005_v01_r00,WMS Web Map Service,NULL,wms
+https://www.dov.vlaanderen.be/geonetwork/srv/metadata/a1547a01-b9fc-40fa-a2eb-009a39c02c7b,bodemtypes,WFS-feature Digitale bodemkaart van het Vlaams Gewest: bodemtypes,wfs
+641D1613-5E4B-43B6-A0CB-723371356E62,"0,1,2,3,4,5,6,7,8,9","Die Karte der nutzbaren Feldkapazität im effektiven Wurzelraum in Deutschland gibt einen Überblick über das Vermögen der Böden pflanzenverfügbares Wasser zu speichern. Die Größe des Wasserspeichers des Bodens hängt von der Bodenart, der Lagerungsdichte und dem Humusgehalt ab. Der effektive Wurzelraum wird anhand von Landnutzungs- und Bodendaten bestimmt. Die Karte basiert auf der Auswertung der nutzungsdifferenzierten Bodenübersichtskarte 1:1.000.000 (BUEK1000N) und zeigt die klassifizierte nutzbare Feldkapazität. Die Methode ist in der Bodenkundlichen Kartieranleitung (KA4) und in der Methodendokumentation Bodenkunde der Ad-hoc-AG Boden veröffentlicht. Als Landnutzungsinformation und zur nutzungsabhängigen Differenzierung der Profildaten werden Daten des CORINE Land Cover Projektes (2006) genutzt.",wms
+f3a257ac-0d5d-480a-80b7-70054d6680f2,gsoc:T_CLAY,Topsoil Clay Fraction,wms
+f7ccd330-bdce-11db-a0f6-000d939bc5d8,geonetwork:dom_soil_30587,Dominant Soils,wms
+c18b5b90-88fd-11da-a88f-000d939bc5d8,geonetwork:slope_3831,Slope,wms
+18329470-472d-11db-88e0-000d939bc5d8,geonetwork:cnt_bnd_vect_14039,Coastal and country boundaries of the world,wms
+ba8a7330-88fd-11da-a88f-000d939bc5d8,geonetwork:sub_mld_3848,Suitability for small scale fish farming,wms
+16f95ad0-51e6-11db-88e0-000d939bc5d8,geonetwork:water_997_14046,Inland water bodies (FGGD),wms
+c136fa00-88fd-11da-a88f-000d939bc5d8,geonetwork:afr_mcli_6,Major Climates of Africa,wms
+maaamet_muld,Mullakaardi WMS teenuse getCapabilities,NULL,wms
+maaamet_muld,WMS teenuse getCapabilities,NULL,wms
+ca5d8180-88fd-11da-a88f-000d939bc5d8,geonetwork:com_mld_3847,Suitability for commercial fish farming,wms
+r_friuve:m3969-cc-i1471,NULL,NULL,wfs
+r_friuve:m3969-cc-i1471,NULL,NULL,wms
+r_liguri:D.2262,NULL,NULL,wms
+r_lombar:75d66de5-dee6-494a-8c4e-51aa095f4ea4,NULL,NULL,wms
+a8646a85-3f35-40b2-bc0f-db6f0008d364,gsoc:sq3,Soil Quality: Rooting Conditions (HWSD),wms
+63ee4619-6a99-45e7-8078-eb1fd29ecf38,gsoc:REF_DEPTH,Soil Reference Depth,wms
+3607167d-926d-47d8-b466-3bda654e7834,gsoc:T_OC,Topsoil Organic Carbon,wms
+93ce3ec3-cdc9-4ac1-952f-4a8da9ab6d05,gsoc:ROOTS,Obstacle to Roots,wms
+1d1e1137-de10-464c-9ea7-a945198cf7dc,gsoc:T_REF_BULK,Topsoil Reference Bulk Density,wms
+WRB-Soil-Units-40k,wrb_40000,WFS-feature WRB Soil Units 40k: Bodemkaart van het Vlaamse Gewest volgens het internationale bodemclassificatiesysteem World Reference Base op schaal 1:40.000,wfs
+WRB-Soil-Units-40k,WFS,NULL,wfs
+3f9be529-5672-4286-86c7-a63c7da39853,gsoc:T_PH_H2O,Topsoil pH (H2O),wms
+530b194d-5f66-482f-b536-22db24249f91,Service de visualisation WMS,Adresse de connexion au service de visualisation WMS de la couche de données CARBIOSOL - Stocks en Carbone organique total des sols - période 2005-2014,wms
+985366a9-cb3a-46e4-9f89-d44cad6a4154,MiljøGIS WFS,NULL,wfs
+b23dbf43-ee30-452e-ba37-e036c4dc933d,Service de visualisation WMS,Adresse de connexion au service de visualisation WMS de la couche de données CARBIOSOL - Teneurs prédites en Carbone organique total - période 2004-2014,wms
+arls_031:m10807-cc-i11449,NULL,NULL,wfs
+arls_031:m10807-cc-i11449,NULL,NULL,wms
+bf320d32-289b-476d-9dd2-abb916d8bb25,gsoc:S_SAND,Subsoil Sand Fraction,wms
+6d7bffef-ea99-4a92-9b26-89b4c915361a,gsoc:T_SAND,Topsoil Sand Fraction,wms
+35821c18-cea8-47c4-bde0-4580d6808c11,NULL,NULL,wms
+"Soil-World-Reference-Base,-Scotland",WMS,NULL,wms
+be22b520-88fd-11da-a88f-000d939bc5d8,geonetwork:soilslop_3797,Soil and terrain suitability for ponds,wms
+Potentiële-bodemerosiekaart-per-perceel-,so_potbdmerosiepp_2018,WFS-feature Potentiële bodemerosiekaart per perceel (2018),wfs
+Potentiële-bodemerosiekaart-per-perceel-,WFS,NULL,wfs
+https://www.dov.vlaanderen.be/geonetwork/srv/metadata/5e1146a5-4f72-4e93-a71d-8297d3dfec6c,grndversch_gekarteerd,WFS-feature Gekarteerde grondverschuivingen,wfs
+23682345-53fb-461c-bad5-a9bbc557ef6a,geonetwork:climaf_suitweight_dif_fut35his95_12crops_47958,Suitability index changes between the historical (1981-2010) and the future period (2021-2050),wms
+c2117b80-88fd-11da-a88f-000d939bc5d8,geonetwork:small_sl_3801,Suitability for small-scale fish farming,wms
+c4bf8480-88fd-11da-a88f-000d939bc5d8,geonetwork:comerc_3802,Suitability for commercial fish farming,wms
+f58ca6b0-88fd-11da-a88f-000d939bc5d8,geonetwork:wrl_mcli_12246,Major Climates of the Developing World,wms
+f58ef0a0-88fd-11da-a88f-000d939bc5d8,geonetwork:wrldlgp_12247,Lengths Growing Period Zones in Developing World,wms
+beefc920-88fd-11da-a88f-000d939bc5d8,geonetwork:rainfall_3829,Annual rainfall,wms
+r_friuve:m3953-cc-i1444,NULL,NULL,wms
+r_friuve:m3953-cc-i1444,NULL,NULL,wfs
+r_liguri:D.2281,NULL,NULL,wms
+r_lombar:bcb4a0f4-04fb-4e6b-8830-c3af0ee13a3a,NULL,NULL,wms
+beec94d0-88fd-11da-a88f-000d939bc5d8,geonetwork:s_cpsub1_3811,Suitability for small-scale farming and potential yield (crops/y) of Common carp,wms
+c1a4aff0-88fd-11da-a88f-000d939bc5d8,geonetwork:s_comerc_3816,"Suitability for commercial farming and potential yield (crops/y) of Nile tilapia, African catfish and Common carp",wms
+be9ec2f0-88fd-11da-a88f-000d939bc5d8,geonetwork:s_catsub1_3810,Suitability for small-scale farming and potential yield (crops/y) of African catfish,wms
+Topsoil-pH-of-Scottish-soils,WMS,NULL,wms
+soil-texture,"Parent.Material.Soil.texture.simple, Parent.Material.Soil.texture.simple.1km",NULL,wms
+Advanced-soil-geochemical-atlas-of-England-and-Wales,"Topsoil.Aluminium, Topsoil.Arsenic, Topsoil.Barium, Topsoil.Bismuth, Topsoil.Bromine, Topsoil.Bromine, Topsoil.Bromine, Topsoil.Bromine, Topsoil.Bromine, Topsoil.Cobalt, Topsoil.Chromium, Topsoil.Chromium, Topsoil.Chromium, Topsoil.Iron, Topsoil.Gallium, Topsoil.Germanium, Topsoil.Hafnium, Topsoil.Iodine, Topsoil.Potassium, Topsoil.Lanthanum, Topsoil.Lanthanum, Topsoil.Lanthanum, Topsoil.Lanthanum, Topsoil.Sodium, Topsoil.Niobium, Topsoil.Neodymium, Topsoil.Neodymium, Topsoil.Phosphorus, Topsoil.lead, Topsoil.Phosphorus, Topsoil.Sulphur, Topsoil.Antimony, Topsoil.Scandium, Topsoil.Selenium,  Topsoil.Silicon, Topsoil.Samarium, Topsoil.Tin, Topsoil.Strontium, Topsoil.Tantalum, Topsoil.Thorium, Topsoil.Titanium, Topsoil.Thallium, Topsoil.Thallium, Topsoil.Vanadium, Topsoil.Tungsten, Topsoil.Yttrium, Topsoil.Ytterbium, Topsoil.Zinc, Topsoil.Zirconium",The concentrations of aluminium were determined using wavelength dispersive X-ray fluorescence spectrometry with a lower limit of detection of 0.05 % and typical coefficients of variation of around 3% for repeated analyses of certified reference materials. The coefficient of variation (CV) expresses the error associated with subsampling and analysis; CV values of less than around 10 % suggest that analyses are reasonably accurate.,wms
+bc4828c0-88fd-11da-a88f-000d939bc5d8,geonetwork:s_catcom1_3813,Suitability for commercial farming and potential yield (crops/y) of African catfish,wms
+c6b38c50-88fd-11da-a88f-000d939bc5d8,geonetwork:s_cpcom1_3814,Suitability for commercial farming and potential yield (crops/y) of Common carp,wms
+bea1f740-88fd-11da-a88f-000d939bc5d8,geonetwork:s_tlcom1_3812,Suitability for commercial farming and potential yield (crops/y) of Nile tilapia,wms
+National-Soil-Map-of-Scotland,WMS,NULL,wms
+Soil-Layer-depth-50k,"Parent.Material.Soil.layer.thickness, Parent.Material.Soil.layer.thickness.1km",NULL,wms
+beb9c500-88fd-11da-a88f-000d939bc5d8,geonetwork:s_smallc_3815,"Suitability for small-scale farming and potential yield (crops/y) of Nile tilapia, African catfish and Common carp",wms
+6c34ec8b-f31e-4976-9344-fd11b738a850,SOLAW:dom_lu_38215,Dominant Land Cover and Use,wms
+78f93047-74f8-4419-ac3d-fc62e4b0477b,geonetwork:phy_landf_7386,Physiography of North and Central Eurasia Landform,wms
+Mapa-kategorii-glebowych,WMS,NULL,wms
+6fd05da0-853c-11db-b9b2-000d939bc5d8,geonetwork:major_soil_14129,Major soil groups of the world (FGGD),wms
+Soil-organic-carbon-content-of-scottish-topsoil,WMS,NULL,wms
+0e4c899b-42b1-4654-906e-4ad2a8d838cb,BRO - Bodemkaart (SGM) WMS,BRO Bodemkaart van Nederland,wms
+{c60fabfd-d6ba-429a-b2d7-fea4bda8b09e},geogwd_bdmkrtzldvvl,Bodemkaart Zeeland,wms
+{c60fabfd-d6ba-429a-b2d7-fea4bda8b09e},geogwd_bdmkrtzldvvl,Bodemkaart Zeeland,wfs
+1ec5bc2f-a82e-467d-8e22-3e035419db2e,GEONAM_AKK_BWGSHRST,Bodemkundige geschiktheid voor akkerbouw,wcs
+264bf251-8c0b-4a7b-aa46-5017ba176ac3,GEONAM_KLKGHLTLGRST,Kalkgehalte toplaag van de bodem,wcs
+aed54b04-03fe-4751-8889-9663f10ce9c4,GEONAM_ZGRTLGRST,Zuurgraad toplaag van de bodem,wcs
+c149614e-773c-4b56-80bf-cef91f7dc42c,GEONAM_ORGSTFTLGRST,Organische stofgehalte toplaag van de bodem,wcs
+431657a6-c438-4fd9-b588-35bc5fec52a2,geonam_bdmtpskrtvlk,Bodemtoepassingskaart,wfs
+d4608f62-da32-4ee6-b432-386c01871ee1,geonam_bdmfnckrtvlk,Bodemfunctiekaart Zeeland,wfs
+eea_r_3035_100_m_ecosystem-types-l2_p_2006_v02_r01,NULL,NULL,wms
+eea_r_3035_1_km_eunis-hab-t_p_1940-2017_v01_r00,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/a06f3c31-418c-3edf-8e4b-1e2a4a00ea7a,NULL,Darstellungsdienst - Nährstoffspeicher- / Schadstoffbindungsvermögen der Böden (KAKeff-Wert) 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Lebensraumfunktion für naturnahe und seltene Pflanzengesellschaften der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Ertragsfunktion der Böden für Kulturpflanzen 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Puffer- und Filterfunktion der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Regelungsfunktion für den Wasserhaushalt der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Archivfunktion der Böden für die Naturgeschichte 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Leistungsfähigkeit der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Verdunstungspotenzial der Böden auf Grundlage der Bodeneigenschaften 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Kühlleistung der Böden ohne Berücksichtigung der Versiegelung 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Kühlleistung der Böden mit Berücksichtigung der Versiegelung 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f11dff3b-0db9-38f8-a905-219b077fba07,NULL,Darstellungsdienst - Planungshinweise zum Bodenschutz 2020 (Umweltatlas) (WMS),wms
+http://www.podnemapy.sk/portal/prave_menu/podna_mapa/podna_mapa.aspx,WMS,NULL,wms
+"SO.SoilThemeCoverage.COT__CV_TENEURS_2015_2019,62180757-5fed-464c-a450-a05757d02864",INSPIRE - Sols en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Sols"".",wms
+"/LC_AgriculturalArea_LPIS_2021,da6558c3-507b-47b3-9cd3-2db71d7f3136",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+https://registry.gdi-de.org/id/de.be.csw/0d7dda82-9fc2-3e50-a4d1-8bf453695170,NULL,Darstellungsdienst - Regionale Seltenheit der Bodengesellschaften 2020 (Umweltatlas) (WMS),wms
+DADB8BB6-4A7A-4CB7-908D-EA0767B068D7,"0,1,2","Die Karte Bodenarten der Oberböden Deutschlands vermittelt einen visuellen Eindruck über die Verbreitung typischer, d.h. flächenhaft dominierender (i.S. von häufigsten) Bodenarten in Oberböden Deutschlands. Mit der Karte werden Ergebnisse von Untersuchungen visualisiert, die in dem BGR-Bericht Bodenarten der Böden Deutschlands; BGR Archiv, Nr. 0127305, dokumentiert sind. Dabei erfolgte eine Ableitung der Bodenart aus den Analysedaten zu Kornfraktionen der Feinböden für 16.132 Standorte in Deutschland und eine Zuweisung der dominierenden Bordenartengruppe zu den Legendeneinheiten der nutzungsdifferenzierten Bodenübersichtskarte 1:1.000.000 (BÜK1000N V2.3). Aus Gründen der dem Maßstab (1:1.000.000) angepassten Übersichtlichkeit beschränkt sich die Darstellung auf die Ebene der Bodenarten-Gruppe gem. Bodenkundlicher Kartieranleitung (KA5). Die Version 2.0 basiert auf den topographischen Grundlagen der Digitalen Topographischen Karte 1:1.000.000 (DTK1000-V) des Bundesamtes für Kartographie und Geodäsie, welche von der BGR in Teilen modifiziert wurde.",wms
+https://registry.gdi-de.org/id/de.be.csw/145a97bf-df5f-3aeb-a085-b012c968509e,NULL,Darstellungsdienst - Puffer- und Filterfunktion der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/a32fe260-a50b-335b-ac9a-b02016346bf3,NULL,Darstellungsdienst - Bodenkundliche Kartierungen - Übersicht (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/a98d621d-2702-34bd-a0e6-41ccf1d7a15f,NULL,Darstellungsdienst - Ertragsfunktion der Böden für Kulturpflanzen 2020 (Umweltatlas) (WMS),wms
+r_friuve:m3968-cc-i1470,NULL,NULL,wfs
+r_friuve:m3968-cc-i1470,NULL,NULL,wms
+r_friuve:m3977-cc-i1482,NULL,NULL,wfs
+r_friuve:m3977-cc-i1482,NULL,NULL,wms
+r_friuve:m3978-cc-i1485,NULL,NULL,wms
+r_friuve:m3978-cc-i1485,NULL,NULL,wfs
+r_friuve:m4000-cc-i1391,NULL,NULL,wms
+r_friuve:m4000-cc-i1391,NULL,NULL,wfs
+c1e28873-45a1-44c9-86b6-048a83c4816d,NULL,NULL,wms
+"http://maaamet.ee/andmekogu/pinnas/mullastiku_kaart,ee.maaamet.so-mullakaart,70003098-mullakaart",https://teenus.maaamet.ee/ows/mullakaart?,Mullakaardi WMS teenus.,wms
+"http://maaamet.ee/andmekogu/pinnas/mullastiku_kaart,ee.maaamet.so-mullakaart,70003098-mullakaart",http://kaart.maaamet.ee/wms/alus?,Maa- ja Ruumiameti aluskaardid.,wms
+"http://maaamet.ee/andmekogu/pinnas/mullastiku_kaart,ee.maaamet.so-mullakaart,70003098-mullakaart",https://inspire.geoportaal.ee/geoserver/SO_pinnas/wms?,Andmed INSPIRE andmemudelil.,wms
+https://www.dov.vlaanderen.be/dataset/c7970c8d-3eaa-42e4-8373-dbdf44f28d34,organische_koolstof:carbon_sd_1000,WCS-capabilities Soil Organic Carbon Stock Maps for Belgium: standard deviation (1 km grid),wcs
+ba5a9e27-f218-4316-af98-b8e6b6e20416,observedsoilprofile:ObservedSoilProfile,WMS-endpoint INSPIRE geharmoniseerd - Bodemlocaties,wms
+ba5a9e27-f218-4316-af98-b8e6b6e20416,observedsoilprofile:ObservedSoilProfile,WMS-capabilities INSPIRE geharmoniseerd - Bodemlocaties,wms
+ba5a9e27-f218-4316-af98-b8e6b6e20416,observedsoilprofile:ObservedSoilProfile,WMS-map INSPIRE geharmoniseerd - Bodemlocaties,wms
+https://registry.gdi-de.org/id/de.be.csw/d2e22e7a-9615-3c52-9822-fed256616d52,NULL,Darstellungsdienst - Forstliche Standorteinheiten (WMS),wms
+r_friuve:m3973-cc-i1477,NULL,NULL,wfs
+r_friuve:m3973-cc-i1477,NULL,NULL,wms
+r_lombar:7d0158d2-7129-4042-955a-05a7be20f5f1,NULL,NULL,wms
+recordsb756dabe-a331-42cd-b45e-f61828ee4534,Model Grondwaterspiegeldiepte (WDM) WMS,BRO Grondwaterspiegeldieptemodel,wms
+recordsb756dabe-a331-42cd-b45e-f61828ee4534,BRO - Model Grondwaterspiegeldiepte (WDM) WCS,BRO - Model Grondwaterspiegeldiepte (WDM) WCS Geotiffs,wcs
+r_lombar:d2b45068-22de-4ad3-8520-d1c2a5127f8f,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/8f75afc0-1e01-338d-834b-092644a71ce2,NULL,Darstellungsdienst - Verdunstungspotenzial der Böden auf Grundlage der Bodeneigenschaften 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d53ce245-e556-3934-af43-46746b79ab15,NULL,Downloaddienst - Moore (Umweltatlas) (WFS),wfs
+m_amte:299FN3:3094ea44-4c91-4ad3-f190-418d8a36634f,NULL,NULL,wms
+a4eeec18-1ab6-48f8-b394-ce0dfb9fa459,soilsite:SoilSite,WMS-endpoint INSPIRE geharmoniseerd - Bodemsites,wms
+a4eeec18-1ab6-48f8-b394-ce0dfb9fa459,soilsite:SoilSite,WMS-capabilities INSPIRE geharmoniseerd - Bodemsites,wms
+a4eeec18-1ab6-48f8-b394-ce0dfb9fa459,soilsite:SoilSite,WMS-map INSPIRE geharmoniseerd - Bodemsites,wms
+90042866-e202-4abc-ae6b-ba997e5195ce,physicalparameter:physicalParameter,WMS-endpoint INSPIRE geharmoniseerd - Fysische parameter,wms
+90042866-e202-4abc-ae6b-ba997e5195ce,physicalparameter:physicalParameter,WMS-capabilities INSPIRE geharmoniseerd - Fysische parameter,wms
+90042866-e202-4abc-ae6b-ba997e5195ce,physicalparameter:physicalParameter,WMS-map INSPIRE geharmoniseerd - Fysische parameter,wms
+ea1720ce-77e9-418f-97f4-1b2dc25e491b,biologicalparameter:biologicalParameter,WMS-endpoint INSPIRE geharmoniseerd - Biologische parameter,wms
+ea1720ce-77e9-418f-97f4-1b2dc25e491b,biologicalparameter:biologicalParameter,WMS-capabilities INSPIRE geharmoniseerd - Biologische parameter,wms
+ea1720ce-77e9-418f-97f4-1b2dc25e491b,biologicalparameter:biologicalParameter,WMS-map INSPIRE geharmoniseerd - Biologische parameter,wms
+https://registry.gdi-de.org/id/de.be.csw/a1a646e4-49f8-394a-b4ae-17199b1511fb,NULL,Darstellungsdienst - Wasserhaushalt 2022 - Versickerung aus Niederschlägen (Umweltatlas) (WMS),wms
+https://www.dov.vlaanderen.be/dataset/62667b12-ae06-4c3a-b744-debc4331d398,organische_koolstof:carbon_sd_40,WCS-capabilities Soil Organic Carbon Stock Maps for Belgium: standard deviation (40 m grid),wcs
+r_liguri:D.2262.VS,NULL,NULL,wms
+r_toscan:57bfac79-54a7-438a-a49f-93695c0bf3ef,NULL,NULL,wms
+r_friuve:m3971-cc-i1475,NULL,NULL,wms
+r_friuve:m3971-cc-i1475,NULL,NULL,wfs
+a2d52409-ca8b-448d-beec-396ccb5b4fa5,Capabilities van de MercatorNet Publieke WFS Download Service,NULL,wfs
+https://data.inspire.gv.at/93df2c3a-dc9b-4372-9b9b-ad9cb5e18814,BIOSOIL Austria (SOIL) - WFS,BIOSOIL Austria (SOIL) - WFS,ogcapi
+p_bz:Soil,NULL,NULL,wms
+"SO.SoilThemeCoverage.COT__TENEURS_2004_2014,04481ab6-e5ee-4742-a330-88649c17b2ce",INSPIRE - Sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+b0203a76-ab90-4564-9789-9b7c21fb9c65,Agricultural Soil Map of Austria - Dominant parent material (PAR-MAT-DOM) - WFS,Agricultural Soil Map of Austria - Dominant parent material (PAR-MAT-DOM) - WFS,ogcapi
+http://soluri.md/,SoilBody,Soil Body,wms
+r_lombar:2fd6a5d3-a0e6-4cf1-8155-8b42f19c5190,NULL,NULL,wms
+r_friuve:m3964-cc-i1463,NULL,NULL,wms
+r_friuve:m3964-cc-i1463,NULL,NULL,wfs
+e9941118-761a-4636-a6aa-ba2662bfa510,apl:s0100_seismic_zones,Zone Seismice mun. Chișinău,wms
+https://registry.gdi-de.org/id/de.be.csw/3dc6aa29-d3c3-3f6c-bc77-fa16b109d64f,NULL,Darstellungsdienst - Bodengesellschaften 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/00f7d37e-35f9-3e58-a63a-cdd789e64170,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodenkundliche Kartierungen) (WMS),wms
+https://rpi.gov.sk/metadata/84fd1bec-4108-4ec3-a16f-8b1f1675afaf,WMS link,NULL,wms
+http://www.podnemapy.sk/portal/verejnost/bpej/bpej.aspx,WMS,NULL,wms
+5c129f2d-4498-4bc3-8860-01cb2d513f8f,bodemtypes,WFS-feature Digitale bodemkaart van het Vlaams Gewest: bodemtypes,wfs
+30e01cb0-3f8a-4a48-b72e-444b4a6fd531,so_potbdmerosiepp_2018,WFS-feature Potentiële bodemerosiekaart per perceel (2018),wfs
+30e01cb0-3f8a-4a48-b72e-444b4a6fd531,WFS,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/b989994b-cde1-3584-9f30-4745ca0bb4c2,NULL,Darstellungsdienst - Nutzbare Feldkapazität der Böden für Flachwurzler 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/4ecf6704-5302-3739-a05e-fba86c741125,NULL,Darstellungsdienst - Bindungsstärke für Schwermetalle der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/533fea38-6de0-3174-8339-b0acc7b8e564,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Moore) (WMS),wms
+r_lombar:e6ff8f10-1ec7-426e-9ba9-93c3f4ade8d5,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/05c1911d-88bd-3099-8b51-16213d772c5a,NULL,Darstellungsdienst - Humusmenge der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/7f95e9b8-0364-36aa-9bfc-292d5fb00fac,NULL,Darstellungsdienst - Moore (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f4885d1d-6f90-3589-b749-2c97cb21de21,NULL,Darstellungsdienst - Nährstoffversorgung des Oberbodens (S-Wert) 2020 (Umweltatlas) (WMS),wms
+r_lombar:0a90d4fe-8ae7-4a22-a269-ec04a7d4b63d,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/7897d313-d4f4-3c0c-8977-28e4ba99e84d,NULL,Darstellungsdienst - Wasserversorgung der Böden 2020 (Umweltatlas) (WMS),wms
+r_lombar:599a7674-a9a2-4543-9d5b-6d0e4904ab8a,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/47dfc3ed-1b0a-3797-93e8-3b4a37337b0e,NULL,Darstellungsdienst - Lebensraumfunktion für naturnahe und seltene Pflanzengesellschaften der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/bc2da03a-8fb3-317e-a3d0-c4c6b73f7099,NULL,Darstellungsdienst - Organischer Kohlenstoffvorrat der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/bcfd52c5-a39a-3a28-81fe-7ff125e2f58f,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodenkundliche Kennwerte 2020) (WMS),wms
+e25d6117-ff65-4f0c-a776-e31df6153b7b,INSPIRE Sols - Service de visualisation WMS,"Adresse de connexion au service de visualisation WMS-Inspire des couches de données du thème ""Sols"".",wms
+https://registry.gdi-de.org/id/de.be.csw/79d91507-b5bd-3394-93ee-6a5e136267f9,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodenkundliche Kartierungen) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/1f37b418-d573-3eb9-9e0d-1ee6df5869a9,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodengesellschaften und Bodenarten 2020) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/422bbec1-6aff-3066-8da6-b3ecf5236e22,NULL,Darstellungsdienst - Filtervermögen der Böden (kf-Wert) 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/fabeb1cf-8a09-3940-9f5c-652d60924e3f,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodenfunktionen und Planungshinweise 2020) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/3c3d6dfc-b127-3c7d-971f-207ed5b9d206,NULL,Darstellungsdienst - Leistungsfähigkeit der Böden 2020 (Umweltatlas) (WMS),wms
+arls_031:m10581-cc-i10499,NULL,NULL,wms
+arls_031:m10581-cc-i10499,NULL,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/53647440-0bce-300d-88a2-e8a95a1c0891,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodenfunktionen und Planungshinweise 2020) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/82fa2fef-6087-3cd3-b903-3c5a77edb1c2,NULL,Darstellungsdienst - Archivfunktion der Böden für die Naturgeschichte 2020 (Umweltatlas) (WMS),wms
+r_friuve:m4005-cc-i4087,NULL,NULL,wms
+r_friuve:m4005-cc-i4087,NULL,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/5f93b130-3802-3a3b-a1d7-4617cc011584,NULL,Darstellungsdienst - Kühlleistung der Böden ohne Berücksichtigung der Versiegelung 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/9d7dc063-b29b-3735-a881-35d4958f473a,NULL,Darstellungsdienst - Bodenpunktdatenbank (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/7c59bcbd-4086-3c87-a679-1cce480d054b,NULL,Darstellungsdienst - Kühlleistung der Böden mit Berücksichtigung der Versiegelung 2020 (Umweltatlas) (WMS),wms
+r_friuve:m3985-cc-i4001,NULL,NULL,wms
+r_friuve:m3985-cc-i4001,NULL,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/9906ef04-afe0-300e-ba93-b8387e304768,NULL,Darstellungsdienst - Planungshinweise zum Bodenschutz 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/b144655f-7cea-3867-bfe4-75fd2c07791f,NULL,Darstellungsdienst - Bodenarten 2020 (Umweltatlas) (WMS),wms
+r_lombar:c90c42ea-bc38-4f33-aab6-0307dd34a99c,NULL,NULL,wms
+r_friuve:m3975-cc-i1479,NULL,NULL,wms
+r_friuve:m3975-cc-i1479,NULL,NULL,wfs
+r_lombar:73d5ef45-6424-4d1a-9acc-2898f9c72b5d,NULL,NULL,wms
+r_lombar:22214824-4535-4d3d-bce6-e7ca4896b7d8,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/8362c977-a6cc-36da-b434-e2de5ee823a6,NULL,Darstellungsdienst - Gesättigte Wasserleitfähigkeit (kf-Wert) der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Bodenarten 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Nutzbare Feldkapazität der Böden für Flachwurzler 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Nutzbare Feldkapazität der Böden des effektiven Wurzelraumes 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Humusmenge der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - pH-Werte des Oberbodens 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Summe austauschbarer basischer Kationen des Oberbodens (S-Wert) 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Mittlere effektive Kationenaustauschkapazität (KAKeff) der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Gesättigte Wasserleitfähigkeit (kf-Wert) der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/20ad8cd6-d70f-3ae7-8254-49b1b2de2a06,NULL,Darstellungsdienst - Organischer Kohlenstoffvorrat der Böden 2020 (Umweltatlas) (WMS),wms
+R_SARDEG:d56d4a44-c331-42d8-a995-efb940a3e915_resource,NULL,NULL,wms
+r_lombar:63cd7255-3955-469e-afbb-1f56e0933a5a,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/deb08fa8-2449-3fcc-85df-35f03e3f56f2,NULL,Darstellungsdienst - Mittelmaßstäbige Landwirtschaftliche Standortkartierung (MMK) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/1f5a607c-0133-3f6d-b655-08f777f20ff2,NULL,Darstellungsdienst - Naturnähe der Böden 2020 (Umweltatlas) (WMS),wms
+r_lombar:e6bcffe3-73de-4681-8e7e-3be5cb50c70a,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/8cef0509-eb86-3fee-926f-96538d5f6b99,NULL,Darstellungsdienst - Austauschhäufigkeit des Bodenwassers 2020 (Umweltatlas) (WMS),wms
+46a5e845-54ac-47d4-af13-3aa49d26d91f,chemicalparameter:chemicalParameter,WMS-endpoint INSPIRE geharmoniseerd - Chemische parameter,wms
+46a5e845-54ac-47d4-af13-3aa49d26d91f,chemicalparameter:chemicalParameter,WMS-capabilities INSPIRE geharmoniseerd - Chemische parameter,wms
+46a5e845-54ac-47d4-af13-3aa49d26d91f,chemicalparameter:chemicalParameter,WMS-map INSPIRE geharmoniseerd - Chemische parameter,wms
+b1f7eac6-baed-4227-bedc-28bc67086299,Agricultural Soil Map of Austria - Soil Reference Group Code from the World Reference Base (WRB Lev1) - WFS,Agricultural Soil Map of Austria - Soil Reference Group Code from the World Reference Base (WRB Lev1) - WFS,ogcapi
+https://data.inspire.gv.at/431940bc-833f-4abb-84f5-95212fe6dc48,BIOSOIL Site - WFS,BIOSOIL Site - WFS,ogcapi
+ARLPA_TO:07.09.03,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/1d1e7b5d-4d86-3ad7-8570-5245b55b6b33,NULL,Darstellungsdienst - Forstliche Standorteinheiten (WMS),wms
+8db3e658-b210-4796-82ac-e6a0a00d94b2,phvalue:pHValue,WMS-endpoint INSPIRE geharmoniseerd - pHwaarde,wms
+8db3e658-b210-4796-82ac-e6a0a00d94b2,phvalue:pHValue,WMS-capabilities INSPIRE geharmoniseerd - pHwaarde,wms
+8db3e658-b210-4796-82ac-e6a0a00d94b2,phvalue:pHValue,WMS-map INSPIRE geharmoniseerd - pHwaarde,wms
+"SO.SoilBody.CNSW__SIGLES_20,3e6fd1ad-df77-4bb3-809d-30274dd09506",INSPIRE - Sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+https://data.inspire.gv.at/517168bd-9e1b-4144-b6ed-388bd55f79b8,BIOSOIL WRB-Lev1 - WFS,BIOSOIL WRB-Lev1 - WFS,ogcapi
+00409c85-94da-475c-b58d-4fe9b448895d,organiccarboncontent:organicCarbonContent,WMS-endpoint INSPIRE geharmoniseerd - Organische C-percentage,wms
+00409c85-94da-475c-b58d-4fe9b448895d,organiccarboncontent:organicCarbonContent,WMS-capabilities INSPIRE geharmoniseerd - Organische C-percentage,wms
+00409c85-94da-475c-b58d-4fe9b448895d,organiccarboncontent:organicCarbonContent,WMS-map INSPIRE geharmoniseerd - Organische C-percentage,wms
+r_friuve:m3999-cc-i1390,NULL,NULL,wms
+r_friuve:m3999-cc-i1390,NULL,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Naturnähe der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Austauschhäufigkeit des Bodenwassers 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Nährstoffspeicher- / Schadstoffbindungsvermögen der Böden (KAKeff-Wert) 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Nährstoffversorgung des Oberbodens (S-Wert) 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Wasserversorgung der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Filtervermögen der Böden (kf-Wert) 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Bindungsstärke für Schwermetalle der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Puffervermögen im organischen Kohlenstoffhaushalt der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Regionale Seltenheit der Bodengesellschaften 2020 (Umweltatlas) (WMS),wms
+r_friuve:m3976-cc-i1481,NULL,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/d082b421-c99d-37d1-922b-e581725cfa71,NULL,Darstellungsdienst - Besondere naturräumliche Eigenart der Böden 2020 (Umweltatlas) (WMS),wms
+https://data.inspire.gv.at/68055a59-f963-4518-9c61-234710531ad1,inspire_feldstuecke_2022_2,inspire_feldstuecke_2022_2,wms
+https://data.inspire.gv.at/4f35a25a-9295-43c6-aa30-696d03e2ebed,inspire_hofstellen_2022_2,inspire_hofstellen_2022_2,wms
+6c7ae489-8a11-45af-9352-f6b9ad05414b,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,wfs
+6c7ae489-8a11-45af-9352-f6b9ad05414b,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,wfs
+6c7ae489-8a11-45af-9352-f6b9ad05414b,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,wfs
+6c7ae489-8a11-45af-9352-f6b9ad05414b,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,INSPIRE Downloaddienst Databank Ondergrond Vlaanderen,wfs
+4d283c4d-ddfc-4d27-b679-7d5881e66f85,Agricultural Soil Map of Austria - Water Permeability - WFS,Agricultural Soil Map of Austria - Water Permeability - WFS,ogcapi
+"INSPIRE_SIGEC_PARC_AGRI_ANON__2018,b0691bd7-2b15-4717-94f9-dcffc28d0627",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+"LU_ExistingLandUse_SIGEC2024,c4b05636-ad49-46ad-b38b-3b53b61f9759",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+"INSPIRE_SIGEC_PARC_AGRI_ANON__2017,2f225125-1309-45b3-804c-204f62808f48",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+"INSPIRE_SIGEC_PARC_AGRI_ANON__2015,82a3db7f-092c-4e9a-a97e-b92b31eeafe1",Service de visualisation WMS - Inspire,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+https://data.inspire.gv.at/76e56152-abca-4611-b88a-6ee7d48f9a61,inspire_schlaege_2022_2_point,inspire_schlaege_2022_2_point,wms
+https://hub.agrigis.cz/ID_Sluzby/CZ-00020478-LPIS-WFS,NULL,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/10f8e25e-217d-34dd-b6e5-e4b1c70be8a5,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodengesellschaften und Bodenarten 2020) (WMS),wms
+"INSPIRE_SIGEC_PARC_AGRI_ANON__2019,1b15175c-9465-4613-8e15-44918e77ab22",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+"INSPIRE_LU_ExistingLandUse_SIGEC2020,7e19a17e-8b1c-4c3c-a6a8-0443b59eeca7",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+"INSPIRE_SIGEC_PARC_AGRI_ANON__2015,b7f2f896-5983-46dd-bed6-c43e15613efb",Service de visualisation WMS - Inspire,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+"LU_ExistingLandUse_SIGEC2015,c55781da-dc96-4a8d-9e2e-c6c0e778e25f",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+r_friuve:m3979-cc-i1486,NULL,NULL,wms
+"/LC_AgriculturalArea_LPIS_2022,d752fab9-4560-4a32-9da6-227b51fca867",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+"LU_ExistingLandUse_SIGEC2021,a34c3c16-5ec5-41c6-839b-d1a587b52fa2",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+"LU_ExistingLandUse_SIGEC2017,14952d61-ec09-455a-ac6b-805aa03ff297",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+r_friuve:m3979-cc-i1486,NULL,NULL,wfs
+https://registry.geology.cz/id/NGMD-GEOCR50_PED-SDE-WMS,INSPIRE prohlížecí služba (CS),NULL,wms
+"INSPIRE_SIGEC_PARC_AGRI_ANON__2020,1aecd74a-e1a7-498c-b749-f0a256ba2834",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+"INSPIRE_LU_ExistingLandUse_SIGEC2018,2f747a5b-0278-43b7-91a6-d3b2d2b52323",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+r_lombar:b0d7df16-b9d0-49bb-ba32-e3604df79c1f,NULL,NULL,wms
+r_lombar:b0d7df16-b9d0-49bb-ba32-e3604df79c1f,NULL,NULL,wfs
+r_piemon:19a03f12-06ad-4f24-bb2a-3d3fe7008d07,Risorse genetiche forestali - Mappa,NULL,wfs
+7d2a00fb-2df8-4827-83eb-42aa447fe2e3,https://inspire.geoportaal.ee/geoserver/SO_pinnas/wms?,Andmed INSPIRE andmemudelil.,wms
+https://registry.gdi-de.org/id/de.be.csw/a84c212a-a92b-3439-abee-31254223455f,NULL,Darstellungsdienst - Bodenkundliche Kartierungen - Übersicht (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/2435d0e9-e7f9-32d2-8a28-0e9c99a799f0,NULL,Darstellungsdienst - Mittlere effektive Kationenaustauschkapazität (KAKeff) der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/4d174111-4c4f-3935-998a-4d16a330695f,NULL,Darstellungsdienst - Nutzbare Feldkapazität der Böden des effektiven Wurzelraumes 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/31381c4e-6552-3e70-8893-49636afc8aca,NULL,Darstellungsdienst - Regelungsfunktion für den Wasserhaushalt der Böden 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/f1090666-6381-32f8-9a01-b3750af1f8a0,NULL,Darstellungsdienst - Mittelmaßstäbige Landwirtschaftliche Standortkartierung (MMK) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/7e472e4b-36a1-34fc-adbb-aeadd6cfa238,NULL,Darstellungsdienst - Puffervermögen im organischen Kohlenstoffhaushalt der Böden 2020 (Umweltatlas) (WMS),wms
+http://www.lgl-bw.de/68953e74-cc0f-11ea-815e-005056865142,INSPIRE-WMS BW Boden ALKIS,NULL,wms
+3ef63e0d-591a-4047-a2c4-339546ed2bd7,Agricultural Soil Map of Austria - Humus Form - WFS,Agricultural Soil Map of Austria - Humus Form - WFS,ogcapi
+r_friuve:m3976-cc-i1481,NULL,NULL,wms
+9eb263f1-2fa8-4647-9ff9-295b332e93cc,Agricultural Soil Map of Austria - Soil Depth - WFS,Agricultural Soil Map of Austria - Soil Depth - WFS,ogcapi
+https://www.dov.vlaanderen.be/dataset/127c3b51-d606-47f8-8c35-df7301b35ca2,organische_koolstof:carbon_40,WCS-capabilities Soil Organic Carbon Stock Maps for Belgium: mean (40 m grid),wcs
+r_friuve:m3881-cc-i1449,NULL,NULL,wfs
+r_friuve:m3881-cc-i1449,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/162bcd8a-767e-39c5-a9d7-4e1aefc48fdd,NULL,Darstellungsdienst - Bodengesellschaften 2020 (Umweltatlas) (WMS),wms
+r_lombar:89fd2121-9e9e-48e0-9007-e15ce23c4231,NULL,NULL,wms
+20497e23-38f5-442b-b001-bdf181b1028e,NULL,NULL,wms
+https://registry.geology.cz/inspire/SO-soilBody,INSPIRE prohlížecí služba (CS),NULL,wms
+https://www.dov.vlaanderen.be/dataset/80b78280-2182-4031-ad24-2b717f110ef5,organische_koolstof:carbon_1000,WCS-capabilities Soil Organic Carbon Stock Maps for Belgium: mean (1 km grid),wcs
+arlpa_to:07.02.11,NULL,NULL,wms
+7f2a17d7-0aed-4f30-9805-eca33234df05,Agricultural Soil Map of Austria - Water Conditions - WFS,Agricultural Soil Map of Austria - Water Conditions - WFS,ogcapi
+https://registry.gdi-de.org/id/de.be.csw/5258a51e-3e60-370d-bc4e-fb9c4e530d41,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Moore) (WMS),wms
+226f7d26-71bf-4fbd-a1f9-c8510aeddd8a,Agricultural Soil Map of Austria - Textural Class (JRC) - WFS,Agricultural Soil Map of Austria - Textural Class (JRC) - WFS,ogcapi
+arlpa_to:07.06.08_11,NULL,NULL,wms
+"SO.SoilThemeCoverage.COT__TENEURS_1949_1972,ce58c3ed-03d5-43da-b5cf-376e8faf351c",INSPIRE - Sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/61b89356-8443-38aa-8d24-32ad6292b065,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Mittelmaßstäbige Landwirtschaftliche Standortkartierung MMK) (WMS),wms
+920dbf25-9ed2-471b-96ad-1183e8146ec6,Capabilities van de raadpleegdienst van MercatorNet,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/05fc75f6-13ac-3339-acce-500bf10238a0,NULL,Darstellungsdienst - Moore (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/05fc75f6-13ac-3339-acce-500bf10238a0,NULL,Downloaddienst - Moore (Umweltatlas) (WFS),wfs
+r_friuve:m3974-cc-i1478,NULL,NULL,wms
+r_friuve:m3974-cc-i1478,NULL,NULL,wfs
+"SO.SoilThemeCoverage.COT__TENEURS_2015_2019,7f867379-ebb2-4dbb-8d3d-7e6c9734b48d",INSPIRE - Sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+"SO.SoilThemeCoverage.COT__CV_TENEURS_2004_2014,8279ac41-903a-4196-8d5c-8fa836c949ea",INSPIRE - Sols en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Sols"".",wms
+"SO.SoilThemeCoverage.COT__CV_TENEURS_1949_1972,b2d711b3-2d3d-425c-b838-f3275fb62fc7",INSPIRE - Sols en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Sols"".",wms
+r_friuve:m3966-cc-i1467,NULL,NULL,wms
+r_friuve:m3966-cc-i1467,NULL,NULL,wfs
+dc1bb0b8-2341-4556-a205-9a04d5629c6f,Agricultural Soil Map of Austria - Texture (FAO) - WFS,Agricultural Soil Map of Austria - Texture (FAO) - WFS,ogcapi
+1234567,NULL,NULL,wfs
+"LC_landscapeFeature_LPIS_2024,694b0e28-4d23-4879-be00-7e1489344b8e",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+https://hub.agrigis.cz/ID_DatoveSady/EcologicalFocusAreaId/CZ-48133981-LPIS-EFA,NULL,NULL,wms
+https://hub.agrigis.cz/ID_DatoveSady/EcologicalFocusAreaId/CZ-48133981-LPIS-EFA,NULL,NULL,wfs
+https://hub.agrigis.cz/ID_DatoveSady/AgriculturalAreaId/CZ-48133981-LPIS-AA,NULL,NULL,wms
+https://hub.agrigis.cz/ID_DatoveSady/AgriculturalAreaId/CZ-48133981-LPIS-AA,NULL,NULL,wfs
+https://hub.agrigis.cz/ID_Sluzby/CZ-00020478-LPIS-WMS,NULL,NULL,wms
+https://data.inspire.gv.at/29f7bb6b-749f-4485-8da9-4e21ec67a22b,inspire_referenzen_2022_2_point,inspire_referenzen_2022_2_point,wms
+NTA_m344-ec2b-4449-bfe6-087cd3d22ac8,LU.NGMHU:LandUse2023,ngmhu2023_crs23700,wms
+714a55b9-46ad-4c73-90a9-8ef3d00762d8,NULL,WMS Departement Landbouw en Visserij,wms
+e257b17b-b868-4154-a303-23855f7e9345,WMS-tjänst Jordbruksblock,WMS-tjänst Jordbruksblock,wms
+e257b17b-b868-4154-a303-23855f7e9345,WFS-tjänst Jordbruksblock,WFS-tjänst Jordbruksblock,wfs
+a97f1e11-9538-42d8-b501-2b64a303ba1d,Jordbruksverkets visningstjänst (WMS),Jordbruksverkets visningstjänst (WMS),wms
+a97f1e11-9538-42d8-b501-2b64a303ba1d,Jordbruksverkets nedladdningstjänst (WFS),Jordbruksverkets nedladdningstjänst (WFS),wfs
+"LU_ExistingLandUse_SIGEC2016,abc1cc4b-1b0e-44d5-8afc-53173d8f17f2",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+"INSPIRE_LU_ExistingLandUse_SIGEC2019,634a8d37-c061-4309-863e-83c58db6048b",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+"LU_ExistingLandUse_SIGEC2022,2a0d9be0-ac3d-443e-9db0-a7cfb0f128e2",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+r_friuve:m4001-cc-i1392,NULL,NULL,wms
+r_friuve:m4001-cc-i1392,NULL,NULL,wfs
+r_liguri:D.2281.VS,NULL,NULL,wms
+https://hub.agrigis.cz/ID_DatoveSady/LandscapeFeatureId/CZ-48133981-LPIS-LF,NULL,NULL,wms
+https://hub.agrigis.cz/ID_DatoveSady/LandscapeFeatureId/CZ-48133981-LPIS-LF,NULL,NULL,wfs
+https://registry.gdi-de.org/id/de.be.csw/a9cd5bc4-0381-3178-bbfa-0ba4460ce6ce,NULL,Darstellungsdienst - Bodenpunktdatenbank (WMS),wms
+m_amte:299FN3:5b4b7378-cf04-41cf-be82-b7f0e100cbe8,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/452ed8f4-6eff-39b6-884d-b952cf54fab8,NULL,Darstellungsdienst - Summe austauschbarer basischer Kationen des Oberbodens (S-Wert) 2020 (Umweltatlas) (WMS),wms
+https://metadata.geo.llv.li/28afb448-1dc6-4c48-a025-1a144c0e36f6,li.au.wa.thermische_grundwassernutzung|,OGC WMS Service der Liechtensteinischen Landesverwaltung,wms
+"LU_ExistingLandUse_SIGEC2023,7ba2cb90-a5d0-46f6-9502-481a25951e55",INSPIRE - Usage des sols en Wallonie (BE) - Service de visualisation WMS,NULL,wms
+recordsed960299-a147-4c1a-bc57-41ff83a2264f,BRO - Bodemkaart (SGM) WMS,BRO - Bodemkaart (SGM) WMS,wms
+https://hub.agrigis.cz/ID_DatoveSady/AgriculturalParcelId/CZ-48133981-IACS-GSA,NULL,NULL,wms
+5856173c-e58d-4b4c-8f9b-046ee1f20c1c,NULL,NULL,wfs
+http://id.igeo.pt/cdg/35821c18-cea8-47c4-bde0-4580d6808c11,NULL,NULL,wms
+https://registry.gdi-de.org/id/de.be.csw/f926ced5-762b-35a1-8ac6-c8147e1581b6,NULL,Darstellungsdienst - Wasserhaushalt 2022 - Versickerung aus Niederschlägen (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/0f13a6e6-3e3f-32f6-af9b-b5179d479363,NULL,Darstellungsdienst - pH-Werte des Oberbodens 2020 (Umweltatlas) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/e9c465d4-3a7c-39fe-b725-43f86a1256b0,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Kriterien zur Bewertung der Bodenfunktionen 2020) (WMS),wms
+https://registry.gdi-de.org/id/de.be.csw/d30758db-bc5a-3085-9c5c-e73396f024e4,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Bodenkundliche Kennwerte 2020) (WMS),wms
+b434b52d-6c42-482f-b9ea-afaa57419f2f,Agricultural Soil Map of Austria - Full Soil Code from the World Reference Base (WRB Full) - WFS,Agricultural Soil Map of Austria - Full Soil Code from the World Reference Base (WRB Full) - WFS,ogcapi
+https://registry.gdi-de.org/id/de.bund.thuenen/1c3507ce-6631-4175-b8dd-6444fa3e9472,Darstellungsdienst Erste Bodenzustandserhebung im Wald (BZE Wald I),GetCapabilities-Dokument (Selbstbeschreibung des Dienstes),wms
+https://registry.gdi-de.org/id/de.bund.thuenen/1c3507ce-6631-4175-b8dd-6444fa3e9472,Downloaddienst Erste Bodenzustandserhebung im Wald (BZE Wald I),GetCapabilities-Dokument (Selbstbeschreibung des Dienstes),wfs
+https://registry.gdi-de.org/id/de.be.csw/4394e709-ce2b-3937-b209-283de93c380d,NULL,Darstellungsdienst - Besondere naturräumliche Eigenart der Böden 2020 (Umweltatlas) (WMS),wms
+2926a277-0208-40e7-b0ba-eb6adf37935e,INSPIRE Downloaddienst (WCS) Databank Ondergrond Vlaanderen,INSPIRE Downloaddienst (WCS) Databank Ondergrond Vlaanderen,wcs
+https://registry.gdi-de.org/id/de.be.csw/c40389f2-f121-3216-88ab-342b1151cba3,NULL,Darstellungsdienst - Boden im INSPIRE-Datenmodell (Mittelmaßstäbige Landwirtschaftliche Standortkartierung MMK) (WMS),wms
+https://hub.agrigis.cz/ID_DatoveSady/ReferenceParcelId/CZ-48133981-LPIS-RP,NULL,NULL,wms
+https://hub.agrigis.cz/ID_DatoveSady/ReferenceParcelId/CZ-48133981-LPIS-RP,NULL,NULL,wfs
+"LC_landscapeFeature_SIGEC_LPIS_2023,e0df2619-0999-45f6-9f6c-3d241415c624",INSPIRE- Occupation des terres en Wallonie (BE) - Service de visualisation WMS,"Ce service de visualisation WMS-INSPIRE permet de consulter la série de couches de données conforme au thème INSPIRE ""Occupation des terres"".",wms
+1c9b43c3-064d-40c3-aa7c-879b7376ef6f,NULL,NULL,wms
+fceb610a-5d35-4a0c-a74b-3117b30b1533,NULL,NULL,wms
+bc4277fe-7d0b-4d5e-9782-cccb1753f5f5,NULL,NULL,wms
+57af3675-efc5-453b-bd66-c9be4a4a0c16,NULL,NULL,wms

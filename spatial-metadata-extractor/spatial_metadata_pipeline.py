@@ -45,35 +45,35 @@ def insert_augment_record(conn, record_id: str, property_name: str, value: str, 
         )
     conn.commit()
 
-def insert_augment_status(conn, record_id: str, status: str, process: str = 'spatial-extractor'):
+def insert_augment_status(conn, record_id: str, url: str, status: str, process: str = 'spatial-extractor'):
     with conn.cursor() as cur:
         cur.execute(
-            """INSERT INTO metadata.augment_status (record_id, status, process, date)
-               VALUES (%s, %s, %s, now())
-               ON CONFLICT (record_id, process) DO UPDATE SET status = EXCLUDED.status, date = now()""",
-            (record_id, status, process)
+            """INSERT INTO metadata.augment_status (record_id, url, status, process, date)
+               VALUES (%s, %s, %s, %s, now())
+               ON CONFLICT (record_id, url, process) DO UPDATE SET status = EXCLUDED.status, date = now()""",
+            (record_id, url, status, process)
         )
     conn.commit()
 
-def write_metadata_to_db(conn, record_id: str, metadata: dict, status: str = 'success'):
+def write_metadata_to_db(conn, record_id: str, url: str, metadata: dict, status: str = 'success'):
     try:
         if metadata:
             with conn.cursor() as cur:
                 cur.execute(
-                    """INSERT INTO metadata.augments (record_id, metadata, process, date)
-                       VALUES (%s, %s, 'spatial-extractor', now())
-                       ON CONFLICT (record_id, process) DO UPDATE 
+                    """INSERT INTO metadata.augments (record_id, url, metadata, process, date)
+                       VALUES (%s, %s, %s, 'spatial-extractor', now())
+                       ON CONFLICT (record_id, url, process) DO UPDATE
                        SET metadata = EXCLUDED.metadata, date = now()""",
-                    (record_id, json.dumps(metadata))
+                    (record_id, url, json.dumps(metadata))
                 )
-        insert_augment_status(conn, record_id, status)
+        insert_augment_status(conn, record_id, url, status)
         conn.commit()
         return True
     except Exception as e:
         conn.rollback()
         print(f"Error writing to database: {e}")
         try:
-            insert_augment_status(conn, record_id, f"error: {str(e)}")
+            insert_augment_status(conn, record_id, url, f"error: {str(e)}")
         except Exception:
             conn.rollback()
         return False
@@ -127,12 +127,12 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
 
             ensure_record_exists(db_conn, identifier)
 
-            # Skip if already successfully processed
+            # Skip if this specific distribution (record_id + url) was already successfully processed
             with db_conn.cursor() as cur:
                 cur.execute(
-                    """SELECT status FROM metadata.augment_status 
-                    WHERE record_id = %s AND process = 'spatial-extractor'""",
-                    (identifier,)
+                    """SELECT status FROM metadata.augment_status
+                    WHERE record_id = %s AND url = %s AND process = 'spatial-extractor'""",
+                    (identifier, url)
                 )
                 row = cur.fetchone()
                 if row and row[0] in ('success', 'success_ogc'):
@@ -141,7 +141,7 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
                     continue
     
             print(f"\n[{rows_processed}] PROCESS {identifier}")
-            print(f"URL: {url[:80]}...")
+            print(f"URL: {url}")
 
             try:
                 link_result = asyncio.run(check_url_validity(url, identifier=identifier, lname=source_record.lname))
@@ -149,7 +149,7 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
                 if not link_result.get('valid') and check_links:
                     print(f"INVALID - Status: {link_result.get('status_code')}")
                     stats['invalid_urls'] += 1
-                    write_metadata_to_db(db_conn, identifier, {'error': link_result.get('error')}, status='invalid')
+                    write_metadata_to_db(db_conn, identifier, url, {'error': link_result.get('error')}, status='invalid')
                     continue
 
                 mediatype = link_result.get('content_type') or mediatype
@@ -161,11 +161,13 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
                         'service_type', 'layer_name',
                         'title', 'abstract', 'keywords',
                         'bbox', 'crs4326', 'crs3857',
-                        'metadata_urls', 'formats', 'schema'
+                        'metadata_urls', 'formats', 'schema',
+                        'scale_hint', 'pixel_sizes', 'grid_spacing', 'coordinate_precision',
+                        'feature_density', 'resolution_source',
                     }
                     db_metadata = {k: v for k, v in gis_capabilities.items() if k in OGC_KEEP}
                     db_metadata.update(source_record.extra)
-                    write_metadata_to_db(db_conn, identifier, db_metadata, status='success_ogc')
+                    write_metadata_to_db(db_conn, identifier, url, db_metadata, status='success_ogc')
                     stats['processed'] += 1
                     print(f"SUCCESS (OGC) - Layer: {db_metadata.get('layer_name')}")
                     continue  # ← skip GDAL entirely
@@ -186,11 +188,11 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
                     AUGMENT_KEEP = {
                         'type', 'driver', 'bbox', 'projection', 'epsg_code',
                         'pixel_size', 'width', 'height', 'band_count',
-                        'layer_count', 'geometry_type',
+                        'layer_count', 'geometry_type', 'layers',
                         'title', 'doi', 'zenodo_id', 'filename', 'filesize',
                     }
                     db_metadata = {k: v for k, v in metadata.items() if k in AUGMENT_KEEP}
-                    write_metadata_to_db(db_conn, identifier, db_metadata, status='success')
+                    write_metadata_to_db(db_conn, identifier, url, db_metadata, status='success')
                     results.append({'identifier': identifier, 'url': url, 'metadata': metadata})  # full version in output file
                     stats['processed'] += 1
                 else:
@@ -201,7 +203,7 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
                     else:
                         error_msg = result.get('error', 'Unknown error')
                         print(f"GDAL ERROR: {error_msg[:80]}")
-                        write_metadata_to_db(db_conn, identifier, {'error': error_msg}, status='gdal_error')
+                        write_metadata_to_db(db_conn, identifier, url, {'error': error_msg}, status='gdal_error')
                         stats['errors'] += 1
 
                 if output_f:
@@ -218,7 +220,7 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
 
             except Exception as e:
                 print(f"EXCEPTION: {e}")
-                write_metadata_to_db(db_conn, identifier, {'error': str(e)}, status='exception')
+                write_metadata_to_db(db_conn, identifier, url, {'error': str(e)}, status='exception')
                 stats['errors'] += 1
 
     finally:
@@ -255,6 +257,8 @@ if __name__ == "__main__":
 
     # CSV options
     parser.add_argument('--csv-file', help='Path to CSV file (required when --source=csv)')
+    parser.add_argument('--csv-identifier-col', default='identifier', help='CSV column holding the record identifier')
+    parser.add_argument('--csv-mediatype-col',  default='mediatype', help='CSV column holding the mediatype hint')
 
     # Zenodo options
     parser.add_argument('--zenodo-ids', nargs='+', help='Specific Zenodo record IDs')
@@ -287,7 +291,12 @@ if __name__ == "__main__":
         if not args.csv_file:
             print("--csv-file is required when --source=csv")
             exit(1)
-        adapter = get_adapter('csv', filepath=args.csv_file)
+        adapter = get_adapter(
+            'csv',
+            filepath=args.csv_file,
+            identifier_col=args.csv_identifier_col,
+            mediatype_col=args.csv_mediatype_col,
+        )
 
     elif args.source == 'zenodo':
         if not args.zenodo_ids and not args.zenodo_query:

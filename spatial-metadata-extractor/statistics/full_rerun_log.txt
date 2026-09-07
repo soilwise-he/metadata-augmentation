@@ -1,0 +1,668 @@
+2026-09-07 10:36:13,586 - INFO - Direct GDAL open failed (`/vsicurl/https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCapabilities' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:13,586 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:36:14,562 - INFO - Direct GDAL open failed (`/vsicurl/https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCoverage' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:14,563 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:36:18,990 - INFO - Direct GDAL open failed (`/vsicurl/https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionLaminarRaster/wms.aspx' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:18,990 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:36:19,617 - INFO - Direct GDAL open failed (`/vsicurl/https://wms.mapama.gob.es/sig/Biodiversidad/INESMovimientosMasa/wms.aspx' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:19,618 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:36:21,485 - INFO - Direct GDAL open failed (CURL error: Invalid status line), trying fallback...
+2026-09-07 10:36:21,485 - INFO - Skipping partial download — not a known spatial format
+Database connection successful
+[1] ALREADY PROCESSED 3caab607-66af-40a8-a8ad-f4c2d780dc04 (status: success_ogc), skipping...
+[2] ALREADY PROCESSED r_friuve:m3952-cc-i1443 (status: success_ogc), skipping...
+[3] ALREADY PROCESSED r_friuve:m3952-cc-i1443 (status: success_ogc), skipping...
+[4] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[5] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[6] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[7] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[8] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[9] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[10] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[11] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[12] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+[13] ALREADY PROCESSED 9868c7d1-ac45-41f3-83e2-791deb26a3b8 (status: success_ogc), skipping...
+
+[14] PROCESS 37aaa10d-50bd-431e-b924-209c2e88b9d7
+URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?SERVICE=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service in URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?SERVICE=WMS&version=1.3.0&request=GetCapabilities
+Matched layer 'carbon_1000' by metadata URL containing '37aaa10d-50bd-431e-b924-209c2e88b9d7'
+SUCCESS (OGC) - Layer: carbon_1000
+
+[15] PROCESS 37aaa10d-50bd-431e-b924-209c2e88b9d7
+URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?SERVICE=WMS&version=1.3.0&request=GetMap
+Detected WMS service in URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?SERVICE=WMS&version=1.3.0&request=GetMap
+Matched layer 'carbon_1000' by metadata URL containing '37aaa10d-50bd-431e-b924-209c2e88b9d7'
+SUCCESS (OGC) - Layer: carbon_1000
+
+[16] PROCESS 37aaa10d-50bd-431e-b924-209c2e88b9d7
+URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?
+Detected WMS service in URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?
+Matched layer 'carbon_1000' by metadata URL containing '37aaa10d-50bd-431e-b924-209c2e88b9d7'
+SUCCESS (OGC) - Layer: carbon_1000
+
+[17] PROCESS 37aaa10d-50bd-431e-b924-209c2e88b9d7
+URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCapabilities
+Detected WCS service in URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCapabilities
+Error getting WCS capabilities at https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCapabilities: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[18] PROCESS 37aaa10d-50bd-431e-b924-209c2e88b9d7
+URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCoverage
+Detected WCS service in URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCoverage
+Error getting WCS capabilities at https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?SERVICE=WCS&version=1.1.1&request=GetCoverage: identifier parameter is mandatory
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[19] PROCESS 37aaa10d-50bd-431e-b924-209c2e88b9d7
+URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?
+Detected WCS service in URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wcs?
+INVALID - Status: 500
+
+[20] PROCESS 37aaa10d-50bd-431e-b924-209c2e88b9d7
+URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?layers=carbon_1000
+Detected WMS service in URL: https://www.dov.vlaanderen.be/geoserver/organische_koolstof/wms?layers=carbon_1000
+Matched layer 'carbon_1000' by metadata URL containing '37aaa10d-50bd-431e-b924-209c2e88b9d7'
+SUCCESS (OGC) - Layer: carbon_1000
+
+[21] PROCESS 562127a6-0381-46b3-9ed7-10e61ec5ecb5
+URL: https://service.pdok.nl/bzk/brobhrpkenset/wms/v1_0?Service=WMS&Request=GetCapabilities
+Detected WMS service in URL: https://service.pdok.nl/bzk/brobhrpkenset/wms/v1_0?Service=WMS&Request=GetCapabilities
+Matched layer 'bhr_kenset' by metadata URL containing '562127a6-0381-46b3-9ed7-10e61ec5ecb5'
+SUCCESS (OGC) - Layer: bhr_kenset
+
+[22] PROCESS 9876d351-7476-4a39-b45d-cd41e98a4325
+URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionLaminarRaster/wms.aspx
+Detected WMS service in URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionLaminarRaster/wms.aspx
+Error getting WMS capabilities at https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionLaminarRaster/wms.aspx: HTTPSConnectionPool(host='wms.mapama.gob.es', port=443): Max retries exceeded with url: /sig/Biodiversidad/INESErosionLaminarRaster/wms.aspx?service=WMS&request=GetCapabilities&version=1.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[23] PROCESS 9b4b203a-36bb-444e-b86a-dfa609e5a5d5
+URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESMovimientosMasa/wms.aspx
+Detected WMS service in URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESMovimientosMasa/wms.aspx
+Error getting WMS capabilities at https://wms.mapama.gob.es/sig/Biodiversidad/INESMovimientosMasa/wms.aspx: HTTPSConnectionPool(host='wms.mapama.gob.es', port=443): Max retries exceeded with url: /sig/Biodiversidad/INESMovimientosMasa/wms.aspx?service=WMS&request=GetCapabilities&version=1.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[24] PROCESS fao-species-map-wtr
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[25] PROCESS 0c568272-5117-492f-b6dc-e37b5a0458df
+URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+SUCCESS (OGC) - Layer: None
+
+[26] PROCESS 0dca7ab8-56f6-4f88-9681-b03db079810b
+URL: https://io.apps.fao.org/geoserver/wms
+Detected WMS service in URL: https://io.apps.fao.org/geoserver/wms
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[27] PROCESS R_SARDEG:7a7ee722-5fea-4334-b37c-ae5a4765140d
+URL: https://webgis.regione.sardegna.it/geoserverraster/ows?service=wms&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://webgis.regione.sardegna.it/geoserverraster/ows?service=wms&version=1.3.0&request=GetCapabilities
+Matched layer 'raster:DTM_10M_OMBRE_REV01' by metadata URL containing 'R_SARDEG:7a7ee722-5fea-4334-b37c-ae5a4765140d'
+SUCCESS (OGC) - Layer: raster:DTM_10M_OMBRE_REV01
+
+[28] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessChange_12_15/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessChange_12_15/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[29] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_BuiltUp_2018/ImageServer/WMSServer?request=GetCapabilities&service=WMS2026-09-07 10:36:32,563 - INFO - Direct GDAL open failed (`/vsicurl/https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:32,564 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:36:35,798 - INFO - Direct GDAL open failed (`/vsicurl/http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:35,798 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:36:41,789 - INFO - Direct GDAL open failed (`/vsicurl/https://geoportal.saarland.de/mapbender/php/wms.php?inspire=1&layer_id=38011&withChilds=1&REQUEST=GetCapabilities&SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:41,789 - INFO - Skipping partial download — not a known spatial format
+
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_BuiltUp_2018/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+[30] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[31] PROCESS eea_r_3035_100_m_imd-2015-acc_p_2014-2016_v01_r03
+URL: https://land.discomap.eea.europa.eu/arcgis/services/Imperviousness/sealed2015/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://land.discomap.eea.europa.eu/arcgis/services/Imperviousness/sealed2015/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[32] PROCESS DAT-237-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/DownloadLayers/HRL_SWF_2015_DL/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/DownloadLayers/HRL_SWF_2015_DL/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0
+SUCCESS (OGC) - Layer: None
+
+[33] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessChange_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessChange_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[34] PROCESS a66f61a2-fdfa-41a1-b14b-8a26fe869bc1
+URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+SUCCESS (OGC) - Layer: None
+
+[35] PROCESS bcc9b3cd-9b30-4d3a-9990-db7d32ff842f
+URL: https://data.apps.fao.org/map/gsrv/gsrv1/water_accounting/wms
+Detected WMS service in URL: https://data.apps.fao.org/map/gsrv/gsrv1/water_accounting/wms
+SUCCESS (OGC) - Layer: None
+
+[36] PROCESS e33c04ee-4f0a-464d-9d59-7a90fbe13896
+URL: https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas
+Detected WMS service in URL: https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas
+Error getting WMS capabilities at https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas: 'content-type'
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[37] PROCESS fao-fsa-map-47.2.2
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[38] PROCESS r_friuve:m3986-cc-i4021
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+Detected WFS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+SUCCESS (OGC) - Layer: None
+
+[39] PROCESS r_friuve:m3986-cc-i4021
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+Detected WMS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+SUCCESS (OGC) - Layer: None
+[40] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[41] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[42] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_06_09/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_06_09/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[43] PROCESS fao-fsa-map-87.2
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[44] PROCESS fao-species-map-rng
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[45] PROCESS r_friuve:m3967-cc-i1468
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+Detected WFS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+SUCCESS (OGC) - Layer: None
+
+[46] PROCESS r_friuve:m3967-cc-i1468
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+Detected WMS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+SUCCESS (OGC) - Layer: None
+
+[47] PROCESS Carbone-organique-dans-l'horizon-de-surface
+URL: http://ws.geoportail.lu/250k
+INVALID - Status: 403
+
+[48] PROCESS Carte-des-sols-125000
+URL: http://ws.geoportail.lu/250k
+INVALID - Status: 403
+
+[49] PROCESS eea_r_3035_1_km_clc-forest-cover-gain-eu_p_2000-2006_v01_r00
+URL: https://forest.discomap.eea.europa.eu/arcgis/services/Forest_Ch_CLC/Forest_cover_gain_CLC_00_06/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://forest.discomap.eea.europa.eu/arcgis/services/Forest_Ch_CLC/Forest_cover_gain_CLC_00_06/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[50] PROCESS 5785e221-1784-4713-a109-3fe2c0a80153
+URL: http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?SERVICE=WMS&REQUEST=GetCapabilities
+Detected WMS service in URL: http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?SERVICE=WMS&REQUEST=GetCapabilities
+Error getting WMS capabilities at http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?SERVICE=WMS&REQUEST=GetCapabilities: 404 Client Error: Not Found for url: http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 404
+
+[51] PROCESS 5785e221-1784-4713-a109-3fe2c0a80153
+URL: http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?SERVICE=WMS&REQUEST=GetCapabilities
+Detected WMS service in URL: http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?SERVICE=WMS&REQUEST=GetCapabilities
+Error getting WMS capabilities at http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?SERVICE=WMS&REQUEST=GetCapabilities: 404 Client Error: Not Found for url: http://geoportal.gov.cz/arcgis/services/projekty/NIKM/MapServer/WmsServer?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 404
+
+[52] PROCESS 758c03b2-b740-8cea-8c8b-0c2639ea0f86
+URL: https://geoportal.saarland.de/mapbender/php/wms.php?inspire=1&layer_id=38011&withChilds=1&REQUEST=GetCapabilities&SERVICE=WMS
+Detected WMS service in URL: https://geoportal.saarland.de/mapbender/php/wms.php?inspire=1&layer_id=38011&withChilds=1&REQUEST=GetCapabilities&SERVICE=WMS
+Error getting WMS capabilities at https://geoportal.saarland.de/mapbender/php/wms.php?inspire=1&layer_id=38011&withChilds=1&REQUEST=GetCapabilities&SERVICE=WMS: https://geoportal.saarland.de/mapbender/php/wms.php?inspire=1&layer_id=38011&withChilds=1&service=WMS&request=GetCapabilities&version=1.3.0 responded with Content-Type 'application/xhtml+xml; charset=UTF-8': 'b'<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">\n<ServiceExceptionReport><ServiceException code="Layer not defined">Unknown layer id 38011</ServiceException></ServiceExceptionReport>\n''
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[53] PROCESS cbb08d27-4933-4537-a154-9b1f4f1d6fc6
+URL: https://io.apps.fao.org/geoserver/wms/WATER/K3_ET/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WATER/K3_ET/v2?service=WMS&version=1.3.0&request=GetCapabilities2026-09-07 10:36:51,328 - INFO - Direct GDAL open failed (`/vsicurl/http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:36:51,328 - INFO - Skipping partial download — not a known spatial format
+
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WATER/K3_ET/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WATER/K3_ET/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[54] PROCESS 09da4e4e-dd3f-4e5a-8ee8-a7e484ee5640
+URL: https://maps.isric.org/mapserv?map=/map/gyga.map
+SKIPPED: Skipped: non-spatial mediatype (text/html)
+
+[55] PROCESS 21f3a653-6422-4bbd-8937-5a29477620fe
+URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+SUCCESS (OGC) - Layer: None
+
+[56] PROCESS 2f99e108-183c-11e9-aba8-a0481ca9e724
+URL: https://maps.isric.org/mapserv?map=/map/wosis_latest.map
+SKIPPED: Skipped: non-spatial mediatype (text/html)
+
+[57] PROCESS 2f99e108-183c-11e9-aba8-a0481ca9e724
+URL: https://maps.isric.org/mapserv?map=/map/wosis_latest.map
+SKIPPED: Skipped: non-spatial mediatype (text/html)
+
+[58] PROCESS fao-fsa-map-87.1.21
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[59] PROCESS 25d0cf4d-1865-4d2a-be32-40a1b2483936
+URL: https://maps.isric.org/mapserv?map=/map/external.map
+SKIPPED: Skipped: non-spatial mediatype (text/html)
+
+[60] PROCESS r_friuve:m4004-cc-i4086
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+Detected WMS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+SUCCESS (OGC) - Layer: None
+
+[61] PROCESS r_friuve:m4004-cc-i4086
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+Detected WFS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+SUCCESS (OGC) - Layer: None
+
+[62] PROCESS 28a900a9-28a2-415e-b08d-d5d3e89deb03
+URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms?service=WMS&version=1.3.0&request=GetCapabilities
+SUCCESS (OGC) - Layer: None
+
+[63] PROCESS eea_r_3035_1_k_soilbiodiv-potential_p_2000_v01_r00
+URL: https://land.discomap.eea.europa.eu/arcgis/services/Land/SoilBiodiversityPotential/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://land.discomap.eea.europa.eu/arcgis/services/Land/SoilBiodiversityPotential/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[64] PROCESS fao-fsa-map-21.5.z.c
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[65] PROCESS fao-species-map-apu
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[66] PROCESS https://www.dov.vlaanderen.be/geonetwork/srv/metadata/64e8a11d-5602-4ad5-b370-e4d396fe218f
+URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wfs?
+Detected WFS service in URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wfs?
+INVALID - Status: 400
+
+[67] PROCESS https://www.dov.vlaanderen.be/geonetwork/srv/metadata/64e8a11d-5602-4ad5-b370-e4d396fe218f
+URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wfs?SERVICE=WFS&version=2.0.0&request=GetCapabilities
+Detected WFS service in URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wfs?SERVICE=WFS&version=2.0.0&request=GetCapabilities
+SUCCESS (OGC) - Layer: None
+
+[68] PROCESS https://www.dov.vlaanderen.be/geonetwork/srv/metadata/64e8a11d-5602-4ad5-b370-e4d396fe218f
+URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wms?SERVICE=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service in URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wms?SERVICE=WMS&version=1.3.0&request=GetCapabilities
+SUCCESS (OGC) - Layer: None
+
+[69] PROCESS https://www.dov.vlaanderen.be/geonetwork/srv/metadata/64e8a11d-5602-4ad5-b370-e4d396fe218f
+URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wms?SERVICE=WMS&version=1.3.0&request=GetMap
+Detected WMS service in URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wms?SERVICE=WMS&version=1.3.0&request=GetMap
+SUCCESS (OGC) - Layer: None
+
+[70] PROCESS https://www.dov.vlaanderen.be/geonetwork/srv/metadata/64e8a11d-5602-4ad5-b370-e4d396fe218f
+URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wms?
+Detected WMS service in URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wms?
+SUCCESS (OGC) - Layer: None
+
+[71] PROCESS https://www.dov.vlaanderen.be/geonetwork/srv/metadata/64e8a11d-5602-4ad5-b370-e4d396fe218f
+URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=wrb_250000
+Detected WFS service in URL: https://www.dov.vlaanderen.be/geoserver/bodemkaart_afgeleid/wfs?SERVICE=WFS&version=2.0.0&request=GetFeature&count=1&typeName=wrb_250000
+SUCCESS (OGC) - Layer: None
+
+[72] PROCESS eea_v_3035_1_km_heavy-metals-agri-soil_p_2008-2019_v01_r00
+URL: https://land.discomap.eea.europa.eu/arcgis/services/Agriculture/concentrations_of_heavy_metals_in_EU_agricultural_soils/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://land.discomap.eea.europa.eu/arcgis/services/Agriculture/concentrations_of_heavy_metals_in_EU_agricultural_soils/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+[73] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[74] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[75] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[76] PROCESS 7730e747-eb73-49c9-bfe6-84ebae718743
+URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms
+Detected WMS service in URL: https://data.apps.fao.org/map/gsrv/gsrv1/gsoc/wms
+SUCCESS (OGC) - Layer: None
+
+[77] PROCESS 602772dd-0112-494e-b49f-54973d99e700
+URL: https://io.apps.fao.org/geoserver/wms/WATER/K4_BF/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WATER/K4_BF/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WATER/K4_BF/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WATER/K4_BF/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[78] PROCESS 7891e711-df3b-44df-bc35-81c3856a7efc
+URL: https://service.pdok.nl/bzk/bodem/bro-bodemkundig-booronderzoek/wms/v1_0?Service=WMS&Request=GetCapabilities
+Detected WMS service in URL: https://service.pdok.nl/bzk/bodem/bro-bodemkundig-booronderzoek/wms/v1_0?Service=WMS&Request=GetCapabilities
+Matched layer 'SO.ObservedSoilProfile' by metadata URL containing '7891e711-df3b-44df-bc35-81c3856a7efc'
+SUCCESS (OGC) - Layer: SO.ObservedSoilProfile
+
+[79] PROCESS 78ac310f-7911-445b-b29a-19ccd3343f56
+URL: https://gislocal.md/geoserver/apl/wfs
+Detected WFS service in URL: https://gislocal.md/geoserver/apl/wfs
+Error getting WFS capabilities at https://gislocal.md/geoserver/apl/wfs: HTTPSConnectionPool(host='gislocal.md', port=443): Max retries exceeded with url: /geoserver/apl/wfs?service=WFS&request=GetCapabilities&version=2.0.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+INVALID - Status: 400
+
+[80] PROCESS eea_r_3035_1_km_imperviousness-layer_p_2018_v01_r00
+URL: https://land.discomap.eea.europa.eu/arcgis/services/Imperviousness/Imperviousness2018v2024/MapServer/WMSServer?request=GetCapabilities&service=WMS2026-09-07 10:37:30,913 - INFO - Direct GDAL open failed (`/vsicurl/http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:37:30,913 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:37:31,681 - INFO - Direct GDAL open failed (`/vsicurl/https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:37:31,681 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:37:34,610 - INFO - Direct GDAL open failed (`/vsicurl/https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:37:34,610 - INFO - Skipping partial download — not a known spatial format
+
+Detected WMS service from query parameter in URL: https://land.discomap.eea.europa.eu/arcgis/services/Imperviousness/Imperviousness2018v2024/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[81] PROCESS 83b0dfa4-09f3-4d2e-b6a8-9388627b68dc
+URL: https://service.pdok.nl/bzk/bro-wandonderzoek/wms/v1_0?Service=WMS&Request=GetCapabilities
+Detected WMS service in URL: https://service.pdok.nl/bzk/bro-wandonderzoek/wms/v1_0?Service=WMS&Request=GetCapabilities
+Matched layer 'wandonderzoek' by metadata URL containing '83b0dfa4-09f3-4d2e-b6a8-9388627b68dc'
+SUCCESS (OGC) - Layer: wandonderzoek
+
+[82] PROCESS eea_v_3035_100_m_eni-clc-2018_p_2017-2019_v01_r00
+URL: https://image.discomap.eea.europa.eu/arcgis/services/ENI_CLC_Pilot/ENI_CLC_Pilot_2018_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/ENI_CLC_Pilot/ENI_CLC_Pilot_2018_WM/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[83] PROCESS fao-species-map-rks
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[84] PROCESS 8d6bcb8c-f146-4a68-a819-8f59394f5d5b
+URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx
+Detected WMS service in URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx
+Error getting WMS capabilities at https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx: HTTPSConnectionPool(host='wms.mapama.gob.es', port=443): Max retries exceeded with url: /sig/Biodiversidad/INESErosionCauces/wms.aspx?service=WMS&request=GetCapabilities&version=1.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+[85] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[86] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[87] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[88] PROCESS WRB-Reference-Soil-Groups-250k
+URL: https://www.dov.vlaanderen.be/geoserver/wfs?SERVICE=WFS&version=1.1.0&request=GetFeature
+Detected WFS service in URL: https://www.dov.vlaanderen.be/geoserver/wfs?SERVICE=WFS&version=1.1.0&request=GetFeature
+SUCCESS (OGC) - Layer: None
+
+[89] PROCESS f6370904-e1ac-49be-b874-e400170d3769
+URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx
+Detected WMS service in URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx
+Error getting WMS capabilities at https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces/wms.aspx: HTTPSConnectionPool(host='wms.mapama.gob.es', port=443): Max retries exceeded with url: /sig/Biodiversidad/INESErosionCauces/wms.aspx?service=WMS&request=GetCapabilities&version=1.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[90] PROCESS f72f5698-4a3d-4af2-ae12-a4b1cf151cec
+URL: https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map
+SKIPPED: Skipped: non-spatial mediatype (text/html)
+
+[91] PROCESS bbe45de0-88fd-11da-a88f-000d939bc5d8
+URL: https://data.apps.fao.org/map/gsrv/gsrv1/geonetwork/wms?styles=geonetwork_crops_3845_style
+Detected WMS service in URL: https://data.apps.fao.org/map/gsrv/gsrv1/geonetwork/wms?styles=geonetwork_crops_3845_style
+SUCCESS (OGC) - Layer: None
+
+[92] PROCESS fd3fc7ff-07d3-477a-a905-c46dbecc9dcc
+URL: https://io.apps.fao.org/geoserver/wms/GAEZ_V4/LR_SOI2/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/GAEZ_V4/LR_SOI2/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/GAEZ_V4/LR_SOI2/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/GAEZ_V4/LR_SOI2/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+[93] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[94] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[95] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[96] PROCESS fao-fsa-map-34.1.32
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[97] PROCESS 0b644920-ff5e-4aac-a124-8b478bda606c
+URL: https://geoservices.wallonie.be/arcgis/services/SOL_SOUS_SOL/CARBIOSOL/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://geoservices.wallonie.be/arcgis/services/SOL_SOUS_SOL/CARBIOSOL/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[98] PROCESS 0b644920-ff5e-4aac-a124-8b478bda606c
+URL: https://geoservices.wallonie.be/INSPIRE/WMS/SO/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://geoservices.wallonie.be/INSPIRE/WMS/SO/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Error getting WMS capabilities at https://geoservices.wallonie.be/INSPIRE/WMS/SO/MapServer/WMSServer?request=GetCapabilities&service=WMS: <html><head><title>ArcGIS Server Error</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Error occurred while processing request</h1><HR size="1" noshade="noshade"><p><b>Type:</b> Status Report</p><p><b>Message:</b> <u></u></p><p><b>Description:</b> <u>http.400:</u></p><HR size="1" noshade="noshade"><h3>ArcGIS Server</h3></body></html>
+INVALID - Status: 400
+
+[99] PROCESS 3baa29ae-2803-443c-bc0b-8ba1444c21fd
+URL: https://io.apps.fao.org/geoserver/wms/WATER/AWA_ETRAIN/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WATER/AWA_ETRAIN/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WATER/AWA_ETRAIN/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WATER/AWA_ETRAIN/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[100] PROCESS ARLPA_TO:07.09.03_AD_2012-03-05-11:00
+URL: https://webgis.arpa.piemonte.it/ags/services/rischi_naturali/PS_SqueeSAR_Radarsat/MapServer/WFSServer?request=GetCapabilities&service=WFS
+Detected WFS service from query parameter in URL: https://webgis.arpa.piemonte.it/ags/services/rischi_naturali/PS_SqueeSAR_Radarsat/MapServer/WFSServer?request=GetCapabilities&service=WFS
+SUCCESS (OGC) - Layer: None
+
+[101] PROCESS 697ff99d-7cf2-495e-849d-a8d94212d615
+URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_LAM_NPP_M/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_LAM_NPP_M/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_LAM_NPP_M/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_LAM_NPP_M/v2?service=WMS&request=GetCapabilities&version=1.3.02026-09-07 10:37:51,954 - INFO - Direct GDAL open failed (`/vsicurl/http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:37:51,954 - INFO - Skipping partial download — not a known spatial format
+
+INVALID - Status: 502
+
+[102] PROCESS bd053730-88fd-11da-a88f-000d939bc5d8
+URL: http://geonetwork.fao.org/ows/8
+INVALID - Status: None
+
+[103] PROCESS fao-species-map-bah
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+[104] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[105] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[106] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[107] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[108] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[109] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[110] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[111] PROCESS 3d9638-3043-507b-bd62-8cb982a96e6a
+URL: https://agroenvgeo.data.inra.fr/geoserver/gissol_bdat/wms?
+INVALID - Status: None
+[112] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[113] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[114] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[115] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[116] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[117] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[118] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[119] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[120] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[121] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[122] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[123] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[124] PROCESS 0df2947b-e8b8-42e5-a52d-16cf5ded1cf2
+URL: https://maps.isric.org/mapserv?map=/map/af250m_nutrient.map
+SKIPPED: Skipped: non-spatial mediatype (text/html)
+
+[125] PROCESS af37bbe6-8f77-436e-9613-094ad14b1e54
+URL: https://www.gonini.org/geoserver/gonini/wms?request=GetCapabilities
+Detected WMS service in URL: https://www.gonini.org/geoserver/gonini/wms?request=GetCapabilities
+Error getting WMS capabilities at https://www.gonini.org/geoserver/gonini/wms?request=GetCapabilities: HTTPSConnectionPool(host='www.idola77play.com', port=443): Max retries exceeded with url: /?service=WMS&request=GetCapabilities&version=1.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+INVALID - Status: 403
+
+[126] PROCESS 2951378c-ccbe-4955-930d-2aeca095cd17
+URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_ODN_NPP_M/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_ODN_NPP_M/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_ODN_NPP_M/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_ODN_NPP_M/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[127] PROCESS 075d04be-4b56-4c1a-a17a-6684b3b3b41e
+URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_SED_NPP_D/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_SED_NPP_D/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_SED_NPP_D/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_SED_NPP_D/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[128] PROCESS 1f462050-8c95-41cd-be29-854ae0059251
+URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_KOG_E_D/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_KOG_E_D/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_KOG_E_D/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_KOG_E_D/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[129] PROCESS DAT-137-en
+URL: https://bio.discomap.eea.europa.eu/arcgis/services/EUNIS/Mosaic_Vegetated/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://bio.discomap.eea.europa.eu/arcgis/services/EUNIS/Mosaic_Vegetated/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+[130] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[131] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+[132] ALREADY PROCESSED DAT-14-en (status: success_ogc), skipping...
+
+[133] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessDensity_2009/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessDensity_2009/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[134] PROCESS 410d5762-20a9-4694-8867-beac87f00e9e
+URL: https://io.apps.fao.org/gismgr/api/v1/RICCAR/VHS/wms?service=WMS&VERSION=1.1.1&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/gismgr/api/v1/RICCAR/VHS/wms?service=WMS&VERSION=1.1.1&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/gismgr/api/v1/RICCAR/VHS/wms?service=WMS&VERSION=1.1.1&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/gismgr/api/v1/RICCAR/VHS/wms?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[135] PROCESS 410d5762-20a9-4694-8867-beac87f00e9e
+URL: https://io.apps.fao.org/geoserver/wms
+Detected WMS service in URL: https://io.apps.fao.org/geoserver/wms
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[136] PROCESS r_friuve:m3956-cc-i1451
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+Detected WFS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wfs?request=GetCapabilities&service=wfs&version=2.0.0
+SUCCESS (OGC) - Layer: None
+
+[137] PROCESS r_friuve:m3956-cc-i1451
+URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+Detected WMS service from query parameter in URL: https://serviziogc.regione.fvg.it/geoserver/CAR_GEO/wms?request=GetCapabilities&service=wms&version=1.3.0
+SUCCESS (OGC) - Layer: None
+
+[138] PROCESS 54a707a1-32ce-40c6-84bd-02d1e0e405cf
+URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_BUS_NPP_D/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_BUS_NPP_D/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_BUS_NPP_D/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WAPOR_2/L3_BUS_NPP_D/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[139] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessClassifiedChange_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS2026-09-07 10:38:14,979 - INFO - Direct GDAL open failed (`/vsicurl/http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:38:14,979 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:38:16,771 - INFO - Direct GDAL open failed (`/vsicurl/https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionEolica/wms.aspx' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:38:16,771 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:38:17,394 - INFO - Direct GDAL open failed (`/vsicurl/https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:38:17,394 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:38:17,868 - INFO - Direct GDAL open failed (`/vsicurl/http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:38:17,869 - INFO - Skipping partial download — not a known spatial format
+2026-09-07 10:38:19,358 - INFO - Direct GDAL open failed (`/vsicurl/http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS' not recognized as being in a supported file format.), trying fallback...
+2026-09-07 10:38:19,358 - INFO - Skipping partial download — not a known spatial format
+
+SUCCESS (OGC) - Layer: None
+
+[140] PROCESS 86fcbd00-3eff-4375-956b-afa202dd10f9
+URL: https://io.apps.fao.org/geoserver/wms/WATER/K3_PERCO/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WATER/K3_PERCO/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WATER/K3_PERCO/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WATER/K3_PERCO/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[141] PROCESS ffa182a0-241d-4cb3-bd1f-a6d256125a55
+URL: https://io.apps.fao.org/geoserver/wms/GAEZ_V4/RES01_WDE/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/GAEZ_V4/RES01_WDE/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/GAEZ_V4/RES01_WDE/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/GAEZ_V4/RES01_WDE/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[142] PROCESS daa7c719-2ce6-457d-97da-8868175032c5
+URL: https://agroenvgeo.data.inra.fr/geoserver/gissol_rmqs/wms?
+INVALID - Status: None
+
+[143] PROCESS r_lombar:9f3daa68-02ab-451c-9de0-7ab8581c976c
+URL: https://www.cartografia.servizirl.it/arcgis1/services/territorio/fattibilita_geologica/MapServer/WMSServer?
+Detected WMS service in URL: https://www.cartografia.servizirl.it/arcgis1/services/territorio/fattibilita_geologica/MapServer/WMSServer?
+SUCCESS (OGC) - Layer: None
+
+[144] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessDensity_2018/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessDensity_2018/ImageServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[145] PROCESS eea_v_3035_1_mio_crop-intens-nuts3_p_2005-2010_v01_r00
+URL: https://land.discomap.eea.europa.eu/arcgis/services/Agriculture/Cropland_intensification_Nutrient_2005_2010/MapServer/WMSServer?request=GetCapabilities&service=WMS
+Detected WMS service from query parameter in URL: https://land.discomap.eea.europa.eu/arcgis/services/Agriculture/Cropland_intensification_Nutrient_2005_2010/MapServer/WMSServer?request=GetCapabilities&service=WMS
+SUCCESS (OGC) - Layer: None
+
+[146] PROCESS r_piemon:37c6413b-b07f-4f4c-9344-f2e43ea52bbd
+URL: https://geomap.reteunitaria.piemonte.it/ws/agrigeo/rp-01/carsuowms/wms_carsuo?service=WMS&version=1.1.1&request=getCapabilities
+Detected WMS service from query parameter in URL: https://geomap.reteunitaria.piemonte.it/ws/agrigeo/rp-01/carsuowms/wms_carsuo?service=WMS&version=1.1.1&request=getCapabilities
+Matched layer 'ReazioneSubsoil' by metadata URL containing 'r_piemon:37c6413b-b07f-4f4c-9344-f2e43ea52bbd'
+SUCCESS (OGC) - Layer: ReazioneSubsoil
+
+[147] PROCESS r_piemon:dl45po47-sh45-p44w-854d-58fdq6p9iu45
+URL: https://geomap.reteunitaria.piemonte.it/ws/agrigeo/rp-01/carpedwms/wms_carped?service=WMS&version=1.1.1&request=getCapabilities
+Detected WMS service from query parameter in URL: https://geomap.reteunitaria.piemonte.it/ws/agrigeo/rp-01/carpedwms/wms_carped?service=WMS&version=1.1.1&request=getCapabilities
+Matched layer 'Suoli' by metadata URL containing 'r_piemon:dl45po47-sh45-p44w-854d-58fdq6p9iu45'
+SUCCESS (OGC) - Layer: Suoli
+
+[148] PROCESS DAT-14-en
+URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessDensity_2015/MapServer/WMSServer?service=WMS
+Detected WMS service from query parameter in URL: https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ImperviousnessDensity_2015/MapServer/WMSServer?service=WMS
+SUCCESS (OGC) - Layer: None
+
+[149] PROCESS fao-species-map-yht
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[150] PROCESS fao-fsa-map-47.1
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[151] PROCESS fcaa58a1-07ae-438f-a268-9f4e576aa892
+URL: https://io.apps.fao.org/geoserver/wms
+Detected WMS service in URL: https://io.apps.fao.org/geoserver/wms
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[152] PROCESS 9e808b73-b212-49e9-ae94-9588eb56406d
+URL: https://www.gonini.org/geoserver/gonini/wms?request=GetCapabilities
+Detected WMS service in URL: https://www.gonini.org/geoserver/gonini/wms?request=GetCapabilities
+Error getting WMS capabilities at https://www.gonini.org/geoserver/gonini/wms?request=GetCapabilities: HTTPSConnectionPool(host='www.idola77play.com', port=443): Max retries exceeded with url: /?service=WMS&request=GetCapabilities&version=1.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+INVALID - Status: 403
+
+[153] PROCESS 78ad1bb8-27f2-48bf-93f7-1298be002980
+URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionEolica/wms.aspx
+Detected WMS service in URL: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionEolica/wms.aspx
+Error getting WMS capabilities at https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionEolica/wms.aspx: HTTPSConnectionPool(host='wms.mapama.gob.es', port=443): Max retries exceeded with url: /sig/Biodiversidad/INESErosionEolica/wms.aspx?service=WMS&request=GetCapabilities&version=1.3.0 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[154] PROCESS 8ebab619-0d7f-4320-adcc-8aac616d9ef8
+URL: https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas
+Detected WMS service in URL: https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas
+Error getting WMS capabilities at https://resource.sgu.se/service/wms/inspire/SO-Markgeokemi-atlas: 'content-type'
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[155] PROCESS fao-species-map-yxs
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+
+[156] PROCESS ebbdf610-2070-458b-8617-d37d64bc576f
+URL: https://io.apps.fao.org/geoserver/wms/WATER/K3_TF/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Detected WMS service from query parameter in URL: https://io.apps.fao.org/geoserver/wms/WATER/K3_TF/v2?service=WMS&version=1.3.0&request=GetCapabilities
+Error getting WMS capabilities at https://io.apps.fao.org/geoserver/wms/WATER/K3_TF/v2?service=WMS&version=1.3.0&request=GetCapabilities: 502 Server Error: Bad Gateway for url: https://io.apps.fao.org/geoserver/wms/WATER/K3_TF/v2?service=WMS&request=GetCapabilities&version=1.3.0
+INVALID - Status: 502
+
+[157] PROCESS fao-fsa-nested-map-34
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[158] PROCESS fao-fsa-map-87.1.15
+URL: http://www.fao.org/fishery/geoserver/fsa/ows?SERVICE=WMS
+INVALID - Status: 404
+
+[159] PROCESS fao-species-map-hqb
+URL: http://www.fao.org/fishery/geoserver/species/ows?SERVICE=WMS
+GDAL ERROR: Could not open file with GDAL (unsupported format or inaccessible)
+Traceback (most recent call last):
+  File "C:\Users\v_gkoles\Desktop\Projects\spatial_metadata_extractor\metadata-augmentation\spatial-metadata-extractor\spatial_metadata_pipeline.py", line 314, in <module>
+    process_records(DB_CONFIG, adapter, args.output, args.limit, check_links=not args.no_link_check)
+  File "C:\Users\v_gkoles\Desktop\Projects\spatial_metadata_extractor\metadata-augmentation\spatial-metadata-extractor\spatial_metadata_pipeline.py", line 143, in process_records
+    print(f"\n[{rows_processed}] PROCESS {identifier}")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1253.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\xfa' in position 20: character maps to <undefined>
