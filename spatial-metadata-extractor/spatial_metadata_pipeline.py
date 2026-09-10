@@ -9,7 +9,7 @@ from datetime import datetime
 import argparse
 from link_liveliness_checker import AsyncURLChecker
 from gdal_metadata import GDALMetadataExtractor
-from adapter import get_adapter
+from adapter import get_adapter, read_zenodo_ids_from_csv
 from datetime import datetime, timezone
 from dotenv import load_dotenv
 
@@ -136,7 +136,7 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
                 )
                 row = cur.fetchone()
                 if row and row[0] in ('success', 'success_ogc'):
-                    print(f"[{rows_processed}] ALREADY PROCESSED {identifier} (status: {row[0]}), skipping...")
+                    print(f"[{rows_processed}] ALREADY PROCESSED {identifier} [{mediatype}] ({url}) (status: {row[0]}), skipping...")
                     stats['skipped'] += 1
                     continue
     
@@ -163,7 +163,7 @@ def process_records(db_config: dict, adapter, output_file=None, limit=None, chec
                         'bbox', 'crs4326', 'crs3857',
                         'metadata_urls', 'formats', 'schema',
                         'scale_hint', 'pixel_sizes', 'grid_spacing', 'coordinate_precision',
-                        'feature_density', 'resolution_source',
+                        'feature_density', 'resolution_source', 'resolution_borrowed_from_layer',
                     }
                     db_metadata = {k: v for k, v in gis_capabilities.items() if k in OGC_KEEP}
                     db_metadata.update(source_record.extra)
@@ -262,6 +262,8 @@ if __name__ == "__main__":
 
     # Zenodo options
     parser.add_argument('--zenodo-ids', nargs='+', help='Specific Zenodo record IDs')
+    parser.add_argument('--zenodo-ids-csv', help='CSV file with a column of Zenodo DOIs/IDs to process')
+    parser.add_argument('--zenodo-ids-col', default='identifier', help='Column in --zenodo-ids-csv holding the DOI/ID')
     parser.add_argument('--zenodo-query',     help='Zenodo search query (required when --source=zenodo)')
     parser.add_argument('--zenodo-community', help='Zenodo community slug (optional)')
     parser.add_argument('--zenodo-token',     help='Zenodo access token (optional)')
@@ -299,12 +301,17 @@ if __name__ == "__main__":
         )
 
     elif args.source == 'zenodo':
-        if not args.zenodo_ids and not args.zenodo_query:
-            print("--zenodo-ids or --zenodo-query is required when --source=zenodo")
+        zenodo_ids = args.zenodo_ids
+        if args.zenodo_ids_csv:
+            zenodo_ids = read_zenodo_ids_from_csv(args.zenodo_ids_csv, args.zenodo_ids_col)
+            print(f"Loaded {len(zenodo_ids)} Zenodo IDs from {args.zenodo_ids_csv}")
+
+        if not zenodo_ids and not args.zenodo_query:
+            print("--zenodo-ids, --zenodo-ids-csv, or --zenodo-query is required when --source=zenodo")
             exit(1)
         adapter = get_adapter(
             'zenodo',
-            record_ids=args.zenodo_ids,
+            record_ids=zenodo_ids,
             search_query=args.zenodo_query,
             community=args.zenodo_community,
             access_token=args.zenodo_token,

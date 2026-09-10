@@ -1,7 +1,9 @@
 from __future__ import annotations
 import csv
+import io
 import json
 import logging
+import re
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Iterator, Optional
@@ -199,6 +201,63 @@ class CSVAdapter(SourceAdapter):
 # ---------------------------------------------------------------------------
 # Zenodo adapter
 # ---------------------------------------------------------------------------
+
+_ZENODO_DOI_RE = re.compile(r'zenodo\.(\d+)', re.IGNORECASE)
+
+
+def extract_zenodo_id(value: str) -> Optional[str]:
+    """
+    Pull the bare numeric Zenodo record ID out of a value that may be a full
+    DOI (e.g. "10.5281/zenodo.10866515" -> "10866515") or already a bare ID.
+    """
+    if not value:
+        return None
+    value = value.strip()
+    if value.isdigit():
+        return value
+    match = _ZENODO_DOI_RE.search(value)
+    return match.group(1) if match else None
+
+
+def read_zenodo_ids_from_csv(filepath: str, column: str, encoding: str = "utf-8-sig") -> list[str]:
+    """
+    Read a column of Zenodo DOIs/IDs from a CSV export (e.g. an .xlsx saved
+    as CSV) and return the bare numeric record IDs, de-duplicated and in the
+    order first seen. Rows whose value doesn't resolve to a Zenodo ID are
+    skipped with a warning rather than aborting the whole file.
+    """
+    ids: list[str] = []
+    seen: set[str] = set()
+    with open(filepath, "rb") as fh:
+        raw_bytes = fh.read()
+    try:
+        text = raw_bytes.decode(encoding)
+    except UnicodeDecodeError:
+        # latin-1 maps every byte value 0-255, so it never raises — safe as a
+        # last resort since we only read the ID/DOI column (plain ASCII);
+        # any garbling in unrelated columns doesn't affect the result.
+        logger.warning(f"[Zenodo] {filepath} isn't valid {encoding} — retrying as latin-1")
+        text = raw_bytes.decode("latin-1")
+
+    with io.StringIO(text, newline="") as fh:
+        reader = csv.DictReader(fh)
+        if reader.fieldnames and column not in reader.fieldnames:
+            raise ValueError(
+                f"Column '{column}' not found in {filepath}. Available columns: {reader.fieldnames}"
+            )
+        for i, row in enumerate(reader, 1):
+            raw = (row.get(column) or "").strip()
+            if not raw:
+                continue
+            zenodo_id = extract_zenodo_id(raw)
+            if not zenodo_id:
+                logger.warning(f"[Zenodo] Row {i}: couldn't extract a Zenodo ID from '{raw}' — skipped")
+                continue
+            if zenodo_id not in seen:
+                seen.add(zenodo_id)
+                ids.append(zenodo_id)
+    return ids
+
 
 class ZenodoAdapter(SourceAdapter):
     """

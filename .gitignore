@@ -2,3 +2,4 @@
 /lib/
 *.env
 keyword-matcher/cache_trankit_models*
+/spatial-metadata-extractor/statistics/

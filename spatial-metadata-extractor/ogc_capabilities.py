@@ -228,6 +228,7 @@ def process_ogc_links(url, ltype, lname, md_id):
 
                 scale_hint = extract_scale_hint(layer)
                 resolution_source = 'matched_layer' if scale_hint else None
+                resolution_borrowed_from_layer = None
 
                 # Matched layer has no scale hint — same service likely shares one
                 # base resolution across sibling layers, so borrow from another layer
@@ -239,6 +240,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                         if candidate:
                             scale_hint = candidate
                             resolution_source = 'service_fallback'
+                            resolution_borrowed_from_layer = other.name
                             break
 
                 # No match and no lname — return service-level info
@@ -257,6 +259,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                         'styles': [],
                         'scale_hint': scale_hint,
                         'resolution_source': resolution_source,
+                        'resolution_borrowed_from_layer': resolution_borrowed_from_layer,
                         'metadata_urls': []
                     }
 
@@ -273,6 +276,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                     'styles': list(layer.styles.keys()) if hasattr(layer, 'styles') else [],
                     'scale_hint': scale_hint,
                     'resolution_source': resolution_source,
+                    'resolution_borrowed_from_layer': resolution_borrowed_from_layer,
                     'metadata_urls': extract_metadata_urls(layer.metadataUrls) if hasattr(layer, 'metadataUrls') else []
                 }
             except Exception as e:
@@ -302,6 +306,7 @@ def process_ogc_links(url, ltype, lname, md_id):
 
                 pixel_sizes = extract_pixel_sizes(layer)
                 resolution_source = 'matched_layer' if pixel_sizes else None
+                resolution_borrowed_from_layer = None
 
                 # Matched layer has no scale denominators — same service likely shares
                 # one base tile grid across sibling layers, so borrow from another layer
@@ -313,6 +318,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                         if candidate:
                             pixel_sizes = candidate
                             resolution_source = 'service_fallback'
+                            resolution_borrowed_from_layer = other.name
                             break
 
                 return {
@@ -325,6 +331,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                     'tilematrixsets': list(layer.tilematrixsets) if hasattr(layer, 'tilematrixsets') else [],
                     'pixel_sizes': pixel_sizes,
                     'resolution_source': resolution_source,
+                    'resolution_borrowed_from_layer': resolution_borrowed_from_layer,
                     'metadata_urls': extract_metadata_urls(layer.metadataUrls) if hasattr(layer, 'metadataUrls') else []
                 }
             except Exception as e:
@@ -355,6 +362,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                     sample_wfs_resolution(wfs, layer.id, bbox) if layer else (None, None)
                 )
                 resolution_source = 'matched_layer' if coord_precision or feature_density else None
+                resolution_borrowed_from_layer = None
 
                 # Matched layer had no usable sample — try a bounded number of
                 # sibling layers on the same service before giving up. Each
@@ -373,6 +381,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                         if candidate_precision or candidate_density:
                             coord_precision, feature_density = candidate_precision, candidate_density
                             resolution_source = 'service_fallback'
+                            resolution_borrowed_from_layer = other.id
                             break
 
                 return {
@@ -387,6 +396,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                     'coordinate_precision': coord_precision,
                     'feature_density': feature_density,
                     'resolution_source': resolution_source,
+                    'resolution_borrowed_from_layer': resolution_borrowed_from_layer,
                     'metadata_urls': extract_metadata_urls(layer.metadataUrls) if (layer and hasattr(layer, 'metadataUrls')) else [],
                     'schema': (schema if isinstance(schema, dict) else schema.__dict__) if schema else None
                 }
@@ -426,6 +436,7 @@ def process_ogc_links(url, ltype, lname, md_id):
 
                 grid_spacing = extract_grid_spacing(layer)
                 resolution_source = 'matched_layer' if grid_spacing else None
+                resolution_borrowed_from_layer = None
 
                 # Matched layer has no grid info — same service likely shares one
                 # base grid across sibling coverages, so borrow from another layer.
@@ -443,6 +454,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                         if candidate:
                             grid_spacing = candidate
                             resolution_source = 'service_fallback'
+                            resolution_borrowed_from_layer = other.id
                             break
 
                 return {
@@ -454,6 +466,7 @@ def process_ogc_links(url, ltype, lname, md_id):
                     'bbox': safe_bbox(layer),
                     'grid_spacing': grid_spacing,
                     'resolution_source': resolution_source,
+                    'resolution_borrowed_from_layer': resolution_borrowed_from_layer,
                     'supported_formats': list(layer.supportedFormats) if (layer and hasattr(layer, 'supportedFormats')) else [],
                     'metadata_urls': extract_metadata_urls(layer.metadataUrls) if (layer and hasattr(layer, 'metadataUrls')) else []
                 }
