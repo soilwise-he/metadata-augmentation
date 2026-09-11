@@ -1,0 +1,226 @@
+"uri","keyword_label","vocab_label","thesaurus_name","thesaurus_url","vocab_id","fuzzymatch_score"
+NULL,"microbial activity","soil microbial activity","keyword","","https://w3id.org/eusoilvoc#SoilMicrobialActivity",88
+NULL,"soil microbiology","soil microfauna","keyword","","https://w3id.org/eusoilvoc#SoilMicrofauna",81
+NULL,"ekologi","geology","keyword","","https://w3id.org/eusoilvoc#Geology",80
+NULL,"ecology","geology","keyword","","https://w3id.org/eusoilvoc#Geology",86
+NULL,"carbon","carbonate","keyword","","https://w3id.org/eusoilvoc#Carbonate",80
+NULL,"soc content","soil contents","keyword","","https://w3id.org/eusoilvoc#SoilContents",83
+NULL,"soil stabilization","soil salinization","keyword","","https://w3id.org/eusoilvoc#SoilSalinization",86
+NULL,"water","weather","keyword","","https://w3id.org/eusoilvoc#Weather",83
+NULL,"soil pollutants","soil pollution","keyword","","https://w3id.org/eusoilvoc#SoilPollution",83
+NULL,"soil microbiome","soil microfauna","keyword","","https://w3id.org/eusoilvoc#SoilMicrofauna",87
+NULL,"soil science","soil subsidence","keyword","","https://w3id.org/eusoilvoc#SoilSubsidence",81
+NULL,"biological process","soil biological processes","keyword","","https://w3id.org/eusoilvoc#SoilBiologicalProcesses",84
+NULL,"multiple ecosystem services","ecosystem services","keyword","","https://w3id.org/eusoilvoc#EcosystemServices",80
+NULL,"soil modeling","soil melting","keyword","","https://w3id.org/eusoilvoc#SoilMelting",88
+NULL,"solute transport","soil transport","keyword","","https://w3id.org/eusoilvoc#SoilTransport",87
+NULL,"soils","soil","keyword","","https://w3id.org/eusoilvoc#Soil",89
+NULL,"microbial biomass","soil microbial biomass","keyword","","https://w3id.org/eusoilvoc#SoilMicrobialBiomass",87
+NULL,"soil threat","soil threats","keyword","","https://w3id.org/eusoilvoc#SoilThreats",96
+NULL,"indicators","soil indicators","keyword","","https://w3id.org/eusoilvoc#SoilIndicators",80
+NULL,"soil ecosystem services","ecosystem services","keyword","","https://w3id.org/eusoilvoc#EcosystemServices",88
+NULL,"organic matter","soil organic matter","keyword","","https://w3id.org/eusoilvoc#SoilOrganicMatter",85
+NULL,"soil improvement","soil movement","keyword","","https://w3id.org/eusoilvoc#SoilMovement",90
+NULL,"incubation","inundation","keyword","","https://w3id.org/eusoilvoc#Inundation",80
+NULL,"soil profiles","soil particles","keyword","","https://w3id.org/eusoilvoc#SoilParticles",81
+NULL,"soil biodiversity","soil biodiversity loss","keyword","","https://w3id.org/eusoilvoc#SoilBiodiversityLoss",87
+NULL,"carbone","carbonate","keyword","","https://w3id.org/eusoilvoc#Carbonate",88
+NULL,"pesticides","pesticide use","keyword","","https://w3id.org/eusoilvoc#PesticideUse",87
+NULL,"agroécologie","geology","keyword","","https://w3id.org/eusoilvoc#Geology",80
+NULL,"land degradation","soil degradation","keyword","","https://w3id.org/eusoilvoc#SoilDegradation",81
+NULL,"denitrification","soil denitrification","keyword","","https://w3id.org/eusoilvoc#SoilDenitrification",86
+NULL,"soil nutrient imbalance","soil productivity","keyword","","https://w3id.org/eusoilvoc#SoilProductivity",95
+NULL,"salinization","salinisation","keyword","","https://w3id.org/eusoilvoc#Salinisation",92
+NULL,"ghg and climate regulation","climate regulation","keyword","","https://w3id.org/eusoilvoc#ClimateRegulation",82
+NULL,"soil contamination","soil contaminants","keyword","","https://w3id.org/eusoilvoc#SoilContaminants",86
+NULL,"n-mineralization","soil mineralization","keyword","","https://w3id.org/eusoilvoc#SoilMineralization",80
+NULL,"tillage","mulching","keyword","","https://w3id.org/eusoilvoc#Mulching",80
+NULL,"aggregate stability","soil aggregate stability","keyword","","https://w3id.org/eusoilvoc#SoilAggregateStability",88
+NULL,"evaluation","evapouration","keyword","","https://w3id.org/eusoilvoc#Evapouration",82
+NULL,"land management","soil management","keyword","","https://w3id.org/eusoilvoc#SoilManagement",80
+NULL,"soil sampling","soil sealing","keyword","","https://w3id.org/eusoilvoc#SoilSealing",88
+NULL,"contaminants","soil contaminants","keyword","","https://w3id.org/eusoilvoc#SoilContaminants",83
+NULL,"environmental pollution","environmental factors","keyword","","https://w3id.org/eusoilvoc#EnvironmentalFactors",81
+NULL,"management","soil management","keyword","","https://w3id.org/eusoilvoc#SoilManagement",80
+NULL,"soil organic carbon (soc)","soil organic carbon loss","keyword","","https://w3id.org/eusoilvoc#SOCLoss",86
+NULL,"gis","gypsum","keyword","","https://w3id.org/eusoilvoc#Gypsum",86
+NULL,"ghg emissions","emissions","keyword","","https://w3id.org/eusoilvoc#Emissions",82
+NULL,"soil modelling","soil melting","keyword","","https://w3id.org/eusoilvoc#SoilMelting",85
+NULL,"crop production","food production","keyword","","https://w3id.org/eusoilvoc#FoodProduction",80
+NULL,"dinitrogen","nitrogen","keyword","","https://w3id.org/eusoilvoc#Nitrogen",89
+NULL,"soil information","soil formation","keyword","","https://w3id.org/eusoilvoc#SoilFormation",93
+NULL,"soil conservation","soil consolidation","keyword","","https://w3id.org/eusoilvoc#SoilConsolidation",80
+NULL,"biomass production","biomass productivity","keyword","","https://w3id.org/eusoilvoc#BiomassProductivity",84
+NULL,"environmental economics","environmental factors","keyword","","https://w3id.org/eusoilvoc#EnvironmentalFactors",81
+NULL,"boreal","boron","keyword","","https://w3id.org/eusoilvoc#Boron",80
+NULL,"saline soil classification","soil classification","keyword","","https://w3id.org/eusoilvoc#SoilClassification",84
+NULL,"soil surface properties","soil charge properties","keyword","","https://w3id.org/eusoilvoc#SoilChargeProperties",80
+NULL,"dissolved organic carbon","soil organic carbon","keyword","","https://w3id.org/eusoilvoc#SoilOrganicCarbon",84
+NULL,"groundcovers","ground cover","keyword","","https://w3id.org/eusoilvoc#GroundCover",92
+NULL,"atmosphere","soil air","keyword","","https://w3id.org/eusoilvoc#SoilAir",80
+NULL,"environmental monitoring","environmental factors","keyword","","https://w3id.org/eusoilvoc#EnvironmentalFactors",83
+NULL,"mitigation","irrigation","keyword","","https://w3id.org/eusoilvoc#Irrigation",80
+NULL,"bulk density","bulk density peat","keyword","","https://w3id.org/eusoilvoc#BulkDensityPeat",83
+NULL,"soil organic carbon content","soil organic matter contents","keyword","","https://w3id.org/eusoilvoc#SoilOrganicMatterContents",84
+NULL,"topsoil properties","soil properties","keyword","","https://w3id.org/eusoilvoc#SoilProperties",91
+NULL,"soil organic carbon stock","soil organic carbon loss","keyword","","https://w3id.org/eusoilvoc#SOCLoss",86
+NULL,"soil cover","salt cover","keyword","","https://w3id.org/eusoilvoc#SaltCover",80
+NULL,"soil restoration","soil respiration","keyword","","https://w3id.org/eusoilvoc#SoilRespiration",88
+NULL,"identification","soil denitrification","keyword","","https://w3id.org/eusoilvoc#SoilDenitrification",82
+NULL,"vegetation stripes","vegetation","keyword","","https://w3id.org/eusoilvoc#Vegetation",88
+NULL,"subsoil compaction","soil compaction","keyword","","https://w3id.org/eusoilvoc#SoilCompaction",91
+NULL,"topsoil compaction","soil compaction","keyword","","https://w3id.org/eusoilvoc#SoilCompaction",91
+NULL,"water movements","soil water movement","keyword","","https://w3id.org/eusoilvoc#SoilWaterMovement",82
+NULL,"n2o emissions","emissions","keyword","","https://w3id.org/eusoilvoc#Emissions",82
+NULL,"particle size fractionation","particle size fraction sum","keyword","","https://w3id.org/eusoilvoc#ParticleSizeFractionSum",83
+NULL,"soil parameter","soil separate","keyword","","https://w3id.org/eusoilvoc#SoilSeparate",81
+NULL,"soil carbon storage","soil water storage","keyword","","https://w3id.org/eusoilvoc#SoilWaterStorage",81
+NULL,"respiration","transpiration","keyword","","https://w3id.org/eusoilvoc#Transpiration",83
+NULL,"potato production","food production","keyword","","https://w3id.org/eusoilvoc#FoodProduction",81
+NULL,"wasserbewegung","soil water movement","","","https://w3id.org/eusoilvoc#SoilWaterMovement",85
+NULL,"hydraulicconductivity","soil hydraulic conductivity","","","https://w3id.org/eusoilvoc#SoilHydraulicConductivity",98
+NULL,"wasserbindung","soil water retention","","","https://w3id.org/eusoilvoc#SoilWaterRetention",84
+NULL,"photorespiration","root respiration","keyword","","https://w3id.org/eusoilvoc#RootRespiration",81
+NULL,"cell respiration","soil respiration","keyword","","https://w3id.org/eusoilvoc#SoilRespiration",81
+NULL,"climate action","climate regulation","keyword","","https://w3id.org/eusoilvoc#ClimateRegulation",81
+NULL,"soil sensing","soil sealing","keyword","","https://w3id.org/eusoilvoc#SoilSealing",83
+NULL,"soil, eu mission","soil gaseous emission","keyword","","https://w3id.org/eusoilvoc#SoilGaseousEmission",81
+NULL,"soil o-live","soil organisms","keyword","","https://w3id.org/eusoilvoc#SoilOrganisms",80
+NULL,"soil-thermal-conductivity","soil thermal conductivity","","","https://w3id.org/eusoilvoc#SoilThermalConductivity",92
+NULL,"fr","iron","","","https://w3id.org/eusoilvoc#Iron",80
+NULL,"fertilizers","fertiliser use","keyword","","https://w3id.org/eusoilvoc#FertiliserUse",80
+NULL,"sostanza organica del terreno","soil organic matter","keyword","","https://w3id.org/eusoilvoc#SoilOrganicMatter",82
+NULL,"no-till","no till","keyword","","https://w3id.org/eusoilvoc#NoTill",86
+NULL,"no emissions","emissions","keyword","","https://w3id.org/eusoilvoc#Emissions",86
+NULL,"bodenverbreitung","soil compaction","","","https://w3id.org/eusoilvoc#SoilCompaction",81
+NULL,"soil-moisture","soil moisture","","","https://w3id.org/eusoilvoc#SoilMoisture",92
+NULL,"bodenkarte","soil cohesion","","","https://w3id.org/eusoilvoc#SoilCohesion",89
+NULL,"arsen","sand","","","https://w3id.org/eusoilvoc#Sand",80
+NULL,"bodenbelastung","soil respiration","","","https://w3id.org/eusoilvoc#SoilRespiration",80
+NULL,"pédologie","lithology","keyword",NULL,"https://w3id.org/eusoilvoc#Lithology",84
+NULL,"soil-texture","soil cohesion","","","https://w3id.org/eusoilvoc#SoilCohesion",92
+NULL,"classification","void classification","","","https://w3id.org/eusoilvoc#VoidClassification",85
+NULL,"soil type","soil types","","","https://w3id.org/eusoilvoc#SoilTypes",95
+NULL,"basic soil properties","soil properties","","","https://w3id.org/eusoilvoc#SoilProperties",83
+NULL,"soil mineralogy","soil clay mineralogy","keyword",NULL,"https://w3id.org/eusoilvoc#SoilClayMineralogy",86
+NULL,"soilr","soil","keyword",NULL,"https://w3id.org/eusoilvoc#Soil",89
+NULL,"lmineralization","soil mineralization","keyword","","https://w3id.org/eusoilvoc#SoilMineralization",88
+NULL,"sonochemical","soil chemical","keyword","","https://w3id.org/eusoilvoc#SoilChemical",80
+NULL,"species sensitivity","soil sensitivity","keyword","","https://w3id.org/eusoilvoc#SoilSensitivity",80
+NULL,"biodegradation","soil degradation","keyword","","https://w3id.org/eusoilvoc#SoilDegradation",87
+NULL,"groundwater pollution","groundwater reproduction","keyword","","https://w3id.org/eusoilvoc#GroundwaterReproduction",84
+NULL,"groundwater quality","water quality","keyword","","https://w3id.org/eusoilvoc#WaterQuality",81
+NULL,"vapor pressure","soil vapour pressure","keyword","","https://w3id.org/eusoilvoc#SoilVapourPressure",82
+NULL,"soil-erosion","soil erosion","","","https://w3id.org/eusoilvoc#SoilErosion",92
+NULL,"environmental covariates","environmental factors","keyword",NULL,"https://w3id.org/eusoilvoc#EnvironmentalFactors",80
+NULL,"temperature","soil temperature","keyword",NULL,"https://w3id.org/eusoilvoc#SoilTemperature",81
+NULL,"clay mineralogy","soil clay mineralogy","keyword",NULL,"https://w3id.org/eusoilvoc#SoilClayMineralogy",86
+NULL,"island","sand","keyword",NULL,"https://w3id.org/eusoilvoc#Sand",80
+NULL,"soil minerals","soil clay mineral","keyword",NULL,"https://w3id.org/eusoilvoc#SoilClayMineral",80
+NULL,"soiltype","soil types","","","https://w3id.org/eusoilvoc#SoilTypes",89
+NULL,"bodendaten","soil age","","","https://w3id.org/eusoilvoc#SoilAge",80
+NULL,"seasons","season","keyword",NULL,"https://w3id.org/eusoilvoc#Season",92
+NULL,"land-use","land use","keyword",NULL,"https://w3id.org/eusoilvoc#LandUse",88
+NULL,"soil carbon data","soil carbon density","keyword",NULL,"https://w3id.org/eusoilvoc#SoilCarbonDensity",80
+NULL,"soil radiocarbon","soil organic carbon","keyword",NULL,"https://w3id.org/eusoilvoc#SoilOrganicCarbon",80
+NULL,"stem respiration","root respiration","keyword",NULL,"https://w3id.org/eusoilvoc#RootRespiration",81
+NULL,"soil property","soil properties","keyword",NULL,"https://w3id.org/eusoilvoc#SoilProperties",86
+NULL,"decomposition","peat decompostion","keyword",NULL,"https://w3id.org/eusoilvoc#PeatDecompostion",80
+NULL,"litter quality","water quality","keyword",NULL,"https://w3id.org/eusoilvoc#WaterQuality",81
+NULL,"microfauna","soil microfauna","keyword",NULL,"https://w3id.org/eusoilvoc#SoilMicrofauna",80
+NULL,"matric potential","soil matric potential","keyword",NULL,"https://w3id.org/eusoilvoc#SoilMatricPotential",86
+NULL,"microbiota","microbes","keyword",NULL,"https://w3id.org/eusoilvoc#Microbes",84
+NULL,"soil microhabitat","soil microfauna","keyword",NULL,"https://w3id.org/eusoilvoc#SoilMicrofauna",88
+NULL,"soil organic matter fractions","soil organic matter contents","keyword",NULL,"https://w3id.org/eusoilvoc#SoilOrganicMatterContents",84
+NULL,"soil type","soil types","keyword",NULL,"https://w3id.org/eusoilvoc#SoilTypes",95
+NULL,"environmental impact","environmental factors","keyword",NULL,"https://w3id.org/eusoilvoc#EnvironmentalFactors",83
+NULL,"biotic properties","soil properties","keyword",NULL,"https://w3id.org/eusoilvoc#SoilProperties",81
+NULL,"hydrophobicity","soil hydrophobicity","keyword",NULL,"https://w3id.org/eusoilvoc#SoilHydrophobicity",85
+NULL,"soil water retention curve","soil water retention","keyword",NULL,"https://w3id.org/eusoilvoc#SoilWaterRetention",87
+NULL,"soil hydraulic properties","soil thermal properties","keyword",NULL,"https://w3id.org/eusoilvoc#SoilThermalProperties",83
+NULL,"sols","soil","keyword",NULL,"https://w3id.org/eusoilvoc#Soil",86
+NULL,"soil nitrogen","soil nitrogen loss","keyword",NULL,"https://w3id.org/eusoilvoc#SoilNLoss",84
+NULL,"eu mission","emissions","keyword",NULL,"https://w3id.org/eusoilvoc#Emissions",84
+NULL,"pesticide","pesticide use","keyword",NULL,"https://w3id.org/eusoilvoc#PesticideUse",82
+NULL,"soil microorganism","soil microfauna","keyword",NULL,"https://w3id.org/eusoilvoc#SoilMicrofauna",97
+NULL,"clay content","soil clay contents","keyword",NULL,"https://w3id.org/eusoilvoc#SoilClayContents",80
+NULL,"sand content","salt contents","keyword",NULL,"https://w3id.org/eusoilvoc#SaltContents",80
+NULL,"soil heath","soil health","keyword",NULL,"https://w3id.org/eusoilvoc#SoilHealth",95
+NULL,"crop classification","void classification","keyword",NULL,"https://w3id.org/eusoilvoc#VoidClassification",84
+NULL,"degradation","soil degradation","keyword",NULL,"https://w3id.org/eusoilvoc#SoilDegradation",81
+NULL,"soil microbes","soil micropore","keyword",NULL,"https://w3id.org/eusoilvoc#SoilMicropore",81
+NULL,"land fragmentation","soil fragmentation","keyword",NULL,"https://w3id.org/eusoilvoc#SoilFragmentation",83
+NULL,"soil organic carbon density","soil carbon density","keyword",NULL,"https://w3id.org/eusoilvoc#SoilCarbonDensity",83
+NULL,"spatial aggregation","soil aggregation","keyword",NULL,"https://w3id.org/eusoilvoc#SoilAggregation",86
+NULL,"particle size distribution","soil particle size distribution","keyword",NULL,"https://w3id.org/eusoilvoc#SoilParticleSizeDistribution",91
+NULL,"grain","rain","keyword",NULL,"https://w3id.org/eusoilvoc#Rain",89
+NULL,"mission","emissions","keyword",NULL,"https://w3id.org/eusoilvoc#Emissions",88
+NULL,"land class","land use class","keyword",NULL,"https://w3id.org/eusoilvoc#LandUseClass",83
+NULL,"soil mission","soil dispersion","keyword",NULL,"https://w3id.org/eusoilvoc#SoilDispersion",81
+NULL,"soil health indicators","soil indicators","keyword",NULL,"https://w3id.org/eusoilvoc#SoilIndicators",81
+NULL,"atmospheric conditions","weather","keyword",NULL,"https://w3id.org/eusoilvoc#Weather",80
+NULL,"food","floods","keyword",NULL,"https://w3id.org/eusoilvoc#Floods",80
+NULL,"ecosystem science","ecosystem services","keyword",NULL,"https://w3id.org/eusoilvoc#EcosystemServices",80
+NULL,"hot temperature","soil temperature","keyword",NULL,"https://w3id.org/eusoilvoc#SoilTemperature",84
+NULL,"conventional farming","conventional drainage","keyword",NULL,"https://w3id.org/eusoilvoc#ConventionalDrainage",83
+NULL,"total organic carbon","soil organic carbon","keyword",NULL,"https://w3id.org/eusoilvoc#SoilOrganicCarbon",87
+NULL,"cesd-soil quality","soil health","keyword",NULL,"https://w3id.org/eusoilvoc#SoilHealth",83
+NULL,"root water uptake","plant water uptake","keyword",NULL,"https://w3id.org/eusoilvoc#PlantWaterUptake",80
+NULL,"pore size distribution (psd)","soil pore size distribution","keyword",NULL,"https://w3id.org/eusoilvoc#SoilPoreSizeDistribution",80
+NULL,"pore size distribution","soil pore size distribution","keyword",NULL,"https://w3id.org/eusoilvoc#SoilPoreSizeDistribution",90
+NULL,"soil organic matter (som)","soil organic matter","keyword",NULL,"https://w3id.org/eusoilvoc#SoilOrganicMatter",86
+NULL,"electrical conductivity","soil electrical conductivity","keyword",NULL,"https://w3id.org/eusoilvoc#SoilElectricalConductivity",90
+NULL,"thermal conductivity","soil thermal conductivity","keyword",NULL,"https://w3id.org/eusoilvoc#SoilThermalConductivity",89
+NULL,"productivity","soil productivity","keyword",NULL,"https://w3id.org/eusoilvoc#SoilProductivity",83
+NULL,"biosorption","soil sorption","keyword",NULL,"https://w3id.org/eusoilvoc#SoilSorption",83
+NULL,"classification","void classification","keyword",NULL,"https://w3id.org/eusoilvoc#VoidClassification",85
+NULL,"meteorology","lithology","keyword",NULL,"https://w3id.org/eusoilvoc#Lithology",80
+NULL,"uv degradation","soil degradation","keyword",NULL,"https://w3id.org/eusoilvoc#SoilDegradation",80
+NULL,"brain","rain","keyword",NULL,"https://w3id.org/eusoilvoc#Rain",89
+NULL,"pesticide mixture","pesticide use","keyword",NULL,"https://w3id.org/eusoilvoc#PesticideUse",80
+NULL,"microbial","microbes","keyword",NULL,"https://w3id.org/eusoilvoc#Microbes",88
+NULL,"porosity","air porosity","keyword",NULL,"https://w3id.org/eusoilvoc#AirPorosity",80
+NULL,"water content","soil moisture","mag",NULL,"https://w3id.org/eusoilvoc#SoilMoisture",84
+NULL,"filter","filtration","keyword",NULL,"https://w3id.org/eusoilvoc#Filtration",80
+NULL,"soil nutrient analysis","soil nutrient loss","keyword",NULL,"https://w3id.org/eusoilvoc#SoilNutrientLoss",85
+NULL,"environmental water","environmental factors","keyword",NULL,"https://w3id.org/eusoilvoc#EnvironmentalFactors",85
+NULL,"soc:clay ratio","clay ratio","keyword",NULL,"https://w3id.org/eusoilvoc#ClayRatio",83
+NULL,"senet","sleet","keyword",NULL,"https://w3id.org/eusoilvoc#Sleet",80
+NULL,"soil compounds","soil components","keyword",NULL,"https://w3id.org/eusoilvoc#SoilComponents",83
+NULL,"soil lipids","soil liquid","keyword",NULL,"https://w3id.org/eusoilvoc#SoilLiquid",82
+NULL,"soil microbial community","soil microbial activity","keyword",NULL,"https://w3id.org/eusoilvoc#SoilMicrobialActivity",81
+NULL,"crops","crop","keyword",NULL,"https://w3id.org/eusoilvoc#Crop",89
+NULL,"nuts","inputs","keyword",NULL,"https://w3id.org/eusoilvoc#Inputs",80
+NULL,"aggregation","soil aggregation","keyword",NULL,"https://w3id.org/eusoilvoc#SoilAggregation",81
+NULL,"soil storage","soil water storage","keyword",NULL,"https://w3id.org/eusoilvoc#SoilWaterStorage",80
+NULL,"social identification","soil denitrification","keyword",NULL,"https://w3id.org/eusoilvoc#SoilDenitrification",88
+NULL,"cultural ecosystem services","ecosystem services","keyword",NULL,"https://w3id.org/eusoilvoc#EcosystemServices",80
+NULL,"alkalinity","soil pH","keyword",NULL,"https://w3id.org/eusoilvoc#SoilpH",80
+NULL,"carbone organique dissout (cod)","soil organic carbon","keyword",NULL,"https://w3id.org/eusoilvoc#SoilOrganicCarbon",80
+NULL,"ecologie","geology","keyword",NULL,"https://w3id.org/eusoilvoc#Geology",88
+NULL,"nee","snow","keyword",NULL,"https://w3id.org/eusoilvoc#Snow",86
+NULL,"earthworm","earthworms","keyword",NULL,"https://w3id.org/eusoilvoc#Earthworms",95
+NULL,"borneo","boron","keyword",NULL,"https://w3id.org/eusoilvoc#Boron",80
+NULL,"oden","soil","keyword",NULL,"https://w3id.org/eusoilvoc#Soil",89
+NULL,"3705 geology","geology","keyword",NULL,"https://w3id.org/eusoilvoc#Geology",93
+NULL,"pre depositional","parent deposition","keyword",NULL,"https://w3id.org/eusoilvoc#ParentDeposition",85
+NULL,"error","iron","keyword",NULL,"https://w3id.org/eusoilvoc#Iron",80
+NULL,"microfiltration","filtration","keyword",NULL,"https://w3id.org/eusoilvoc#Filtration",80
+NULL,"soil protection","soil retention","keyword",NULL,"https://w3id.org/eusoilvoc#SoilRetention",83
+NULL,"penetration resistance","soil penetration resistance","keyword",NULL,"https://w3id.org/eusoilvoc#SoilPenetrationResistance",90
+NULL,"dissolved organic matter","soil organic matter","keyword",NULL,"https://w3id.org/eusoilvoc#SoilOrganicMatter",84
+NULL,"ecología","geology","keyword",NULL,"https://w3id.org/eusoilvoc#Geology",88
+NULL,"organic carbon","soil organic carbon","keyword",NULL,"https://w3id.org/eusoilvoc#SoilOrganicCarbon",85
+NULL,"groundwater inputs","groundwater depth","keyword",NULL,"https://w3id.org/eusoilvoc#GroundwaterDepth",80
+NULL,"co2 emissions","emissions","keyword",NULL,"https://w3id.org/eusoilvoc#Emissions",82
+NULL,"tree","trees","keyword",NULL,"https://w3id.org/eusoilvoc#Trees",89
+NULL,"urban development","land use","keyword",NULL,"https://w3id.org/eusoilvoc#LandUse",80
+NULL,"soil physical-properties","soil physical properties","keyword",NULL,"https://w3id.org/eusoilvoc#SoilPhysicalProperties",96
+NULL,"soil organic carbon dynamics","soil organic carbon loss","keyword",NULL,"https://w3id.org/eusoilvoc#SOCLoss",81
+NULL,"yield stability","soil stability","keyword",NULL,"https://w3id.org/eusoilvoc#SoilStability",83
+NULL,"crop yields","crop yield","keyword",NULL,"https://w3id.org/eusoilvoc#CropYield",95
+NULL,"soc saturation","soil saturation","keyword",NULL,"https://w3id.org/eusoilvoc#SoilSaturation",90
+NULL,"desertification","soil desertification","keyword",NULL,"https://w3id.org/eusoilvoc#SoilDesertification",86
+NULL,"risk management","soil management","keyword",NULL,"https://w3id.org/eusoilvoc#SoilManagement",80
+NULL,"plant productivity","soil productivity","keyword",NULL,"https://w3id.org/eusoilvoc#SoilProductivity",80
+NULL,"carbon content","carbonate contents","keyword",NULL,"https://w3id.org/eusoilvoc#CarbonateContents",88
