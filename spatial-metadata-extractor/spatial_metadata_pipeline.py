@@ -59,7 +59,7 @@ csv.field_size_limit(int(1e8))
 
 # Number of records processed concurrently in process_records(). Raise/lower
 # to trade off throughput against load on the DB and remote servers/APIs.
-MAX_WORKERS = 7
+MAX_WORKERS = 10
 
 SPATIAL_MEDIATYPES = {
     'application/x-shapefile',

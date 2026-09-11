@@ -26,6 +26,14 @@ NON_SPATIAL_ZIP_HINTS  = ('bundle', 'submission', 'review', 'manuscript', 'suppl
 # Partial download size — enough to read any GeoTIFF/NetCDF header
 PARTIAL_DOWNLOAD_BYTES = 5 * 1024 * 1024  # 5 MB
 
+# Shorter, thread-local HTTP timeout used only while listing a ZIP's contents
+# (construct_gdal_path). This is just a directory check, not the real data
+# fetch, so a server that can't/won't do it should fail fast instead of
+# tying up the full GDAL_HTTP_TIMEOUT/CONNECTTIMEOUT budget used for actual
+# file downloads.
+ZIP_PROBE_HTTP_TIMEOUT = '15'
+ZIP_PROBE_HTTP_CONNECTTIMEOUT = '8'
+
 
 class GDALMetadataExtractor:
     """Extract spatial metadata from remote files using GDAL."""
@@ -95,8 +103,8 @@ class GDALMetadataExtractor:
         """
         Build the GDAL virtual path for a URL.
         For non-ZIP files returns /vsicurl/<url>.
-        For ZIPs, scans the archive contents and returns the path to the
-        first spatial file found (root or one subfolder deep).
+        For ZIPs, lists the archive contents (any depth, one call) and
+        returns the path to the first spatial file found.
         Returns: (gdal_path, inner_filename_or_None)
         """
         encoded_url = url.replace(' ', '%20')
@@ -113,39 +121,35 @@ class GDALMetadataExtractor:
         # because ReadDir follows the redirect internally.
         vsizip_base = f"/vsizip/{{/vsicurl/{encoded_url}}}"
 
+        # This is just a listing/capability check, not the real file fetch —
+        # give it its own short, thread-local timeout so a server that can't
+        # do range requests fails fast instead of tying up the full budget
+        # used for actual downloads (and without affecting other threads).
+        gdal.SetThreadLocalConfigOption('GDAL_HTTP_TIMEOUT', ZIP_PROBE_HTTP_TIMEOUT)
+        gdal.SetThreadLocalConfigOption('GDAL_HTTP_CONNECTTIMEOUT', ZIP_PROBE_HTTP_CONNECTTIMEOUT)
         try:
-            root_files = gdal.ReadDir(vsizip_base)
-            if not root_files:
-                logger.info("ZIP is empty or unreadable")
-                return vsizip_base, None
-
-            logger.info(f"ZIP root contains: {root_files}")
-
-            # 1. Check root level
-            for filename in root_files:
-                if filename.lower().endswith(SPATIAL_EXTENSIONS):
-                    path = f"{vsizip_base}/{filename}"
-                    logger.info(f"Found spatial file at root: {filename}")
-                    return path, filename
-
-            # 2. Check one subfolder level
-            for entry in root_files:
-                subdir = f"{vsizip_base}/{entry}"
-                try:
-                    subfiles = gdal.ReadDir(subdir)
-                    if not subfiles:
-                        continue
-                    logger.info(f"Scanning subfolder '{entry}': {len(subfiles)} files")
-                    for subfile in subfiles:
-                        if subfile.lower().endswith(SPATIAL_EXTENSIONS):
-                            path = f"{subdir}/{subfile}"
-                            logger.info(f"Found spatial file in subfolder '{entry}': {subfile}")
-                            return path, subfile
-                except Exception:
-                    continue
-
+            all_entries = gdal.ReadDirRecursive(vsizip_base)
         except Exception as e:
             logger.debug(f"ZIP ReadDir failed: {e}")
+            all_entries = None
+        finally:
+            gdal.SetThreadLocalConfigOption('GDAL_HTTP_TIMEOUT', None)
+            gdal.SetThreadLocalConfigOption('GDAL_HTTP_CONNECTTIMEOUT', None)
+
+        if not all_entries:
+            logger.info("ZIP is empty or unreadable")
+            return vsizip_base, None
+
+        logger.info(f"ZIP contains {len(all_entries)} entries")
+
+        for entry in all_entries:
+            if entry.endswith('/'):
+                continue  # directory marker, not a file
+            if entry.lower().endswith(SPATIAL_EXTENSIONS):
+                path = f"{vsizip_base}/{entry}"
+                filename = entry.rsplit('/', 1)[-1]
+                logger.info(f"Found spatial file: {entry}")
+                return path, filename
 
         logger.info("No spatial file found in ZIP, returning base vsizip path")
         return vsizip_base, None
