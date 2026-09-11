@@ -39,6 +39,10 @@ class GDALMetadataExtractor:
     def __init__(self, token: Optional[str] = None):
         gdal.AllRegister()
         self.token = token
+        # Without these, a slow/unresponsive server can hang a /vsicurl fetch
+        # indefinitely — GDAL has no timeout by default.
+        gdal.SetConfigOption('GDAL_HTTP_TIMEOUT', '30')
+        gdal.SetConfigOption('GDAL_HTTP_CONNECTTIMEOUT', '10')
 
     # ------------------------------------------------------------------
     # Helpers

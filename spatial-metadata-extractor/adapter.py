@@ -118,7 +118,15 @@ class PostgreSQLAdapter(SourceAdapter):
         import psycopg2
         import psycopg2.extras
 
-        conn = psycopg2.connect(**self.db_config)
+        conn = psycopg2.connect(
+            connect_timeout=10,
+            keepalives=1,
+            keepalives_idle=30,
+            keepalives_interval=10,
+            keepalives_count=3,
+            options='-c statement_timeout=30000',
+            **self.db_config,
+        )
         try:
             with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
                 cur.execute(self.query)
