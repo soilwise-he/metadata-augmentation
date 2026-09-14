@@ -81,6 +81,9 @@
       ],
       "nl": [
         "luchtkwaliteit"
+      ],
+      "pt": [
+        "qualidade do ar"
       ]
     }
   },
@@ -102,7 +105,8 @@
     ],
     "labels": {
       "en": [
-        "antecedent soil moisture contents"
+        "antecedent soil moisture contents",
+        "antecedent soil moisture content"
       ]
     }
   },
@@ -135,7 +139,8 @@
     ],
     "labels": {
       "en": [
-        "biological features"
+        "biological features",
+        "biological feature"
       ]
     }
   },
@@ -164,6 +169,10 @@
       "es": [
         "Fijación biológica del nitrógeno",
         "FBN"
+      ],
+      "pt": [
+        "fixação biológica do azoto",
+        "FBA"
       ]
     }
   },
@@ -263,7 +272,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "carbon pools"
+        "carbon pools",
+        "carbon pool"
       ]
     }
   },
@@ -285,7 +295,8 @@
     ],
     "labels": {
       "en": [
-        "carbonate contents"
+        "carbonate contents",
+        "carbonate content"
       ]
     }
   },
@@ -296,7 +307,8 @@
     ],
     "labels": {
       "en": [
-        "carbonate forms"
+        "carbonate forms",
+        "carbonate form"
       ]
     }
   },
@@ -331,7 +343,8 @@
     ],
     "labels": {
       "en": [
-        "cation sum"
+        "cation sum",
+        "cations sum"
       ]
     }
   },
@@ -403,6 +416,9 @@
       ],
       "es": [
         "Arcilla"
+      ],
+      "pt": [
+        "argila"
       ]
     }
   },
@@ -482,7 +498,8 @@
     ],
     "labels": {
       "en": [
-        "coating forms"
+        "coating forms",
+        "coating form"
       ]
     }
   },
@@ -541,6 +558,9 @@
       ],
       "es": [
         "Labranza de conservación"
+      ],
+      "pt": [
+        "mobilização solo para conservação"
       ]
     }
   },
@@ -551,7 +571,8 @@
     ],
     "labels": {
       "en": [
-        "conservative solutes"
+        "conservative solutes",
+        "conservative solute"
       ]
     }
   },
@@ -606,7 +627,8 @@
     ],
     "labels": {
       "en": [
-        "critical soil organic matter contents"
+        "critical soil organic matter contents",
+        "critical soil organic matter content"
       ]
     }
   },
@@ -668,6 +690,9 @@
       ],
       "es": [
         "Rendimiento de cultivos"
+      ],
+      "pt": [
+        "rendimento de cultura"
       ]
     }
   },
@@ -679,7 +704,8 @@
     ],
     "labels": {
       "en": [
-        "cultural services"
+        "cultural services",
+        "cultural service"
       ],
       "fr": [
         "service culturel"
@@ -757,6 +783,7 @@
     "labels": {
       "en": [
         "earthworms",
+        "earthworm",
         "earth worms"
       ],
       "fr": [
@@ -770,6 +797,9 @@
       ],
       "es": [
         "Lombriz de tierra"
+      ],
+      "pt": [
+        "minhoca"
       ]
     }
   },
@@ -780,7 +810,8 @@
     ],
     "labels": {
       "en": [
-        "emissions"
+        "emissions",
+        "emission"
       ]
     }
   },
@@ -793,6 +824,7 @@
     "labels": {
       "en": [
         "environmental factors",
+        "environmental factor",
         "environmental conditions",
         "ambient conditions"
       ],
@@ -814,6 +846,10 @@
         "Factor ambiental",
         "Condiciones ambientales",
         "Condiciones del medio ambiente"
+      ],
+      "pt": [
+        "factor ambiental",
+        "condição ambiental"
       ]
     }
   },
@@ -852,6 +888,9 @@
       ],
       "es": [
         "Evapotranspiración"
+      ],
+      "pt": [
+        "evapotranspiração"
       ]
     }
   },
@@ -947,6 +986,10 @@
       ],
       "es": [
         "Niebla"
+      ],
+      "pt": [
+        "nevoeiro",
+        "neblina"
       ]
     }
   },
@@ -972,6 +1015,9 @@
       ],
       "es": [
         "Producción alimentaria"
+      ],
+      "pt": [
+        "produção de alimentos"
       ]
     }
   },
@@ -1060,7 +1106,8 @@
     ],
     "labels": {
       "en": [
-        "grasses"
+        "grasses",
+        "grass"
       ],
       "fr": [
         "graminée"
@@ -1073,6 +1120,9 @@
       ],
       "es": [
         "Graminea"
+      ],
+      "pt": [
+        "gramínea"
       ]
     }
   },
@@ -1117,7 +1167,8 @@
     ],
     "labels": {
       "en": [
-        "gypsum contents"
+        "gypsum contents",
+        "gypsum content"
       ]
     }
   },
@@ -1128,7 +1179,8 @@
     ],
     "labels": {
       "en": [
-        "gypsum forms"
+        "gypsum forms",
+        "gypsum form"
       ]
     }
   },
@@ -1161,7 +1213,8 @@
     ],
     "labels": {
       "en": [
-        "habitats"
+        "habitats",
+        "habitat"
       ],
       "fr": [
         "habitat"
@@ -1178,6 +1231,9 @@
       ],
       "nl": [
         "habitats"
+      ],
+      "pt": [
+        "habitat"
       ]
     }
   },
@@ -1204,6 +1260,9 @@
       ],
       "es": [
         "Granizo"
+      ],
+      "pt": [
+        "granizo"
       ]
     }
   },
@@ -1236,7 +1295,8 @@
     ],
     "labels": {
       "en": [
-        "index based on texture and cementing agents"
+        "index based on texture and cementing agents",
+        "index based on texture and cementing agent"
       ]
     }
   },
@@ -1292,7 +1352,8 @@
     ],
     "labels": {
       "en": [
-        "inputs"
+        "inputs",
+        "input"
       ],
       "fr": [
         "input agricole"
@@ -1305,6 +1366,9 @@
       ],
       "es": [
         "Insumo"
+      ],
+      "pt": [
+        "meio de produção"
       ]
     }
   },
@@ -1326,7 +1390,8 @@
     ],
     "labels": {
       "en": [
-        "interaggregate pores"
+        "interaggregate pores",
+        "interaggregate pore"
       ]
     }
   },
@@ -1370,7 +1435,8 @@
     ],
     "labels": {
       "en": [
-        "interstructural pores"
+        "interstructural pores",
+        "interstructural pore"
       ]
     }
   },
@@ -1392,7 +1458,8 @@
     ],
     "labels": {
       "en": [
-        "intraaggregate pores"
+        "intraaggregate pores",
+        "intraaggregate pore"
       ]
     }
   },
@@ -1431,6 +1498,9 @@
       "es": [
         "Riego",
         "Irrigación"
+      ],
+      "pt": [
+        "irrigação"
       ]
     }
   },
@@ -1452,7 +1522,8 @@
     ],
     "labels": {
       "en": [
-        "labile solutes"
+        "labile solutes",
+        "labile solute"
       ]
     }
   },
@@ -1485,7 +1556,8 @@
     ],
     "labels": {
       "en": [
-        "land use forests"
+        "land use forests",
+        "land use forest"
       ]
     }
   },
@@ -1496,7 +1568,8 @@
     ],
     "labels": {
       "en": [
-        "land use grasses"
+        "land use grasses",
+        "land use grass"
       ]
     }
   },
@@ -1507,7 +1580,8 @@
     ],
     "labels": {
       "en": [
-        "land use shrubs"
+        "land use shrubs",
+        "land use shrub"
       ]
     }
   },
@@ -1581,6 +1655,10 @@
       "es": [
         "Petrología",
         "Litologia"
+      ],
+      "pt": [
+        "Petrologia",
+        "Litologia"
       ]
     }
   },
@@ -1614,7 +1692,8 @@
     ],
     "labels": {
       "en": [
-        "major land forms"
+        "major land forms",
+        "major land form"
       ]
     }
   },
@@ -1625,7 +1704,8 @@
     ],
     "labels": {
       "en": [
-        "matrix pores"
+        "matrix pores",
+        "matrix pore"
       ]
     }
   },
@@ -1685,6 +1765,7 @@
     "labels": {
       "en": [
         "microbes",
+        "microbe",
         "microorganisms",
         "micro-organisms"
       ],
@@ -1703,6 +1784,10 @@
       "es": [
         "Microorganismo",
         "Microbios"
+      ],
+      "pt": [
+        "microrganismo",
+        "micróbio"
       ]
     }
   },
@@ -1715,6 +1800,7 @@
     "labels": {
       "en": [
         "microorganisms",
+        "microorganism",
         "microbes",
         "micro-organisms"
       ],
@@ -1733,6 +1819,10 @@
       "es": [
         "Microorganismo",
         "Microbios"
+      ],
+      "pt": [
+        "microrganismo",
+        "micróbio"
       ]
     }
   },
@@ -1831,7 +1921,8 @@
     ],
     "labels": {
       "en": [
-        "mineral contents"
+        "mineral contents",
+        "mineral content"
       ]
     }
   },
@@ -1842,7 +1933,8 @@
     ],
     "labels": {
       "en": [
-        "mineral fragments"
+        "mineral fragments",
+        "mineral fragment"
       ]
     }
   },
@@ -1887,7 +1979,8 @@
     ],
     "labels": {
       "en": [
-        "mottle abundance"
+        "mottle abundance",
+        "mottles abundance"
       ]
     }
   },
@@ -1898,7 +1991,8 @@
     ],
     "labels": {
       "en": [
-        "mottle boundary classification"
+        "mottle boundary classification",
+        "mottles boundary classification"
       ]
     }
   },
@@ -1909,7 +2003,8 @@
     ],
     "labels": {
       "en": [
-        "mottle colour"
+        "mottle colour",
+        "mottles colour"
       ]
     }
   },
@@ -1920,7 +2015,8 @@
     ],
     "labels": {
       "en": [
-        "mottle contrast"
+        "mottle contrast",
+        "mottles contrast"
       ]
     }
   },
@@ -1931,7 +2027,8 @@
     ],
     "labels": {
       "en": [
-        "mottle presence"
+        "mottle presence",
+        "mottles presence"
       ]
     }
   },
@@ -1942,7 +2039,8 @@
     ],
     "labels": {
       "en": [
-        "mottle size"
+        "mottle size",
+        "mottles size"
       ]
     }
   },
@@ -1987,6 +2085,9 @@
         "Acolchado por distribuidor",
         "Acolchado por película",
         "Empajado"
+      ],
+      "pt": [
+        "mulching"
       ]
     }
   },
@@ -2008,7 +2109,8 @@
     ],
     "labels": {
       "en": [
-        "non matrix pores"
+        "non matrix pores",
+        "non matrix pore"
       ]
     }
   },
@@ -2041,7 +2143,8 @@
     ],
     "labels": {
       "en": [
-        "nutrient dynamics"
+        "nutrient dynamics",
+        "nutrient dynamic"
       ]
     }
   },
@@ -2229,7 +2332,8 @@
     ],
     "labels": {
       "en": [
-        "plant available water contents"
+        "plant available water contents",
+        "plant available water content"
       ]
     }
   },
@@ -2285,7 +2389,8 @@
     ],
     "labels": {
       "en": [
-        "pore abundance"
+        "pore abundance",
+        "pores abundance"
       ]
     }
   },
@@ -2330,7 +2435,8 @@
     ],
     "labels": {
       "en": [
-        "provisioning services"
+        "provisioning services",
+        "provisioning service"
       ],
       "fr": [
         "services d'approvisionnement"
@@ -2370,6 +2476,9 @@
       ],
       "es": [
         "Lluvia"
+      ],
+      "pt": [
+        "chuva"
       ]
     }
   },
@@ -2380,7 +2489,8 @@
     ],
     "labels": {
       "en": [
-        "reactive solutes"
+        "reactive solutes",
+        "reactive solute"
       ]
     }
   },
@@ -2392,7 +2502,8 @@
     ],
     "labels": {
       "en": [
-        "regulating services"
+        "regulating services",
+        "regulating service"
       ],
       "fr": [
         "service de régulation"
@@ -2447,7 +2558,8 @@
     ],
     "labels": {
       "en": [
-        "rock outcrop cover"
+        "rock outcrop cover",
+        "rock outcrops cover"
       ]
     }
   },
@@ -2458,7 +2570,8 @@
     ],
     "labels": {
       "en": [
-        "rock outcrop distance"
+        "rock outcrop distance",
+        "rock outcrops distance"
       ]
     }
   },
@@ -2491,7 +2604,8 @@
     ],
     "labels": {
       "en": [
-        "root abundance"
+        "root abundance",
+        "roots abundance"
       ]
     }
   },
@@ -2514,7 +2628,8 @@
     ],
     "labels": {
       "en": [
-        "root presence"
+        "root presence",
+        "roots presence"
       ]
     }
   },
@@ -2537,7 +2652,8 @@
     ],
     "labels": {
       "en": [
-        "soil organic carbon loss"
+        "soil organic carbon loss",
+        "SOC loss"
       ]
     }
   },
@@ -2559,7 +2675,8 @@
     ],
     "labels": {
       "en": [
-        "salt contents"
+        "salt contents",
+        "salt content"
       ]
     }
   },
@@ -2697,6 +2814,9 @@
       ],
       "es": [
         "Preparación del almácigo"
+      ],
+      "pt": [
+        "preparação do solo para sementeira"
       ]
     }
   },
@@ -2728,6 +2848,10 @@
       "es": [
         "Despunte de la plántula",
         "Emergencia"
+      ],
+      "pt": [
+        "emergência de plântulas",
+        "emergência"
       ]
     }
   },
@@ -2790,6 +2914,9 @@
       ],
       "es": [
         "Aguanieve"
+      ],
+      "pt": [
+        "chuva congelada"
       ]
     }
   },
@@ -2800,7 +2927,8 @@
     ],
     "labels": {
       "en": [
-        "slope forms"
+        "slope forms",
+        "slope form"
       ]
     }
   },
@@ -2855,7 +2983,8 @@
     ],
     "labels": {
       "en": [
-        "slope pathways"
+        "slope pathways",
+        "slope pathway"
       ]
     }
   },
@@ -2882,6 +3011,9 @@
       ],
       "es": [
         "Nieve"
+      ],
+      "pt": [
+        "neve"
       ]
     }
   },
@@ -2921,6 +3053,9 @@
       ],
       "es": [
         "Suelo"
+      ],
+      "pt": [
+        "solo"
       ]
     }
   },
@@ -3089,7 +3224,8 @@
     ],
     "labels": {
       "en": [
-        "soil algal crusts"
+        "soil algal crusts",
+        "soil algal crust"
       ]
     }
   },
@@ -3155,7 +3291,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological functions"
+        "soil biological functions",
+        "soil biological function"
       ]
     }
   },
@@ -3210,7 +3347,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical crusts"
+        "soil chemical crusts",
+        "soil chemical crust"
       ]
     }
   },
@@ -3232,7 +3370,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical functions"
+        "soil chemical functions",
+        "soil chemical function"
       ]
     }
   },
@@ -3281,7 +3420,8 @@
     ],
     "labels": {
       "en": [
-        "soil clay contents"
+        "soil clay contents",
+        "soil clay content"
       ]
     }
   },
@@ -3334,6 +3474,10 @@
       "es": [
         "Textura del suelo",
         "Cohesión del suelo"
+      ],
+      "pt": [
+        "textura do solo",
+        "coesão do solo"
       ]
     }
   },
@@ -3522,7 +3666,8 @@
     ],
     "labels": {
       "en": [
-        "soil depositional crusts"
+        "soil depositional crusts",
+        "soil depositional crust"
       ]
     }
   },
@@ -3819,6 +3964,10 @@
       "es": [
         "Génesis del suelo",
         "Formación del suelo"
+      ],
+      "pt": [
+        "génese do solo",
+        "formação do solo"
       ]
     }
   },
@@ -3862,7 +4011,8 @@
     ],
     "labels": {
       "en": [
-        "soil gravel contents"
+        "soil gravel contents",
+        "soil gravel content"
       ]
     }
   },
@@ -3873,7 +4023,8 @@
     ],
     "labels": {
       "en": [
-        "soil gravimetric moisture contents"
+        "soil gravimetric moisture contents",
+        "soil gravimetric moisture content"
       ]
     }
   },
@@ -3926,6 +4077,9 @@
       ],
       "nl": [
         "bodemkwaliteit"
+      ],
+      "pt": [
+        "qualidade do solo"
       ]
     }
   },
@@ -4024,7 +4178,8 @@
     ],
     "labels": {
       "en": [
-        "soil immobile water contents"
+        "soil immobile water contents",
+        "soil immobile water content"
       ]
     }
   },
@@ -4170,7 +4325,8 @@
     ],
     "labels": {
       "en": [
-        "soil microbiotic crusts"
+        "soil microbiotic crusts",
+        "soil microbiotic crust"
       ]
     }
   },
@@ -4211,6 +4367,12 @@
         "Microbiota del suelo",
         "Microflora del suelo",
         "Microfauna del suelo"
+      ],
+      "pt": [
+        "microrganismo do solo",
+        "microbiota do solo",
+        "microflora do solo",
+        "microfauna do solo"
       ]
     }
   },
@@ -4254,7 +4416,8 @@
     ],
     "labels": {
       "en": [
-        "soil mobile water contents"
+        "soil mobile water contents",
+        "soil mobile water content"
       ]
     }
   },
@@ -4286,6 +4449,10 @@
       "es": [
         "Contenido de agua en el suelo",
         "Humedad del suelo"
+      ],
+      "pt": [
+        "teor de água no solo",
+        "humidade do solo"
       ]
     }
   },
@@ -4296,7 +4463,8 @@
     ],
     "labels": {
       "en": [
-        "soil moisture characteristics"
+        "soil moisture characteristics",
+        "soil moisture characteristic"
       ]
     }
   },
@@ -4325,6 +4493,9 @@
       ],
       "es": [
         "Déficit de humedad en el suelo"
+      ],
+      "pt": [
+        "deficiência de água no solo"
       ]
     }
   },
@@ -4368,7 +4539,8 @@
     ],
     "labels": {
       "en": [
-        "soil nitrogen loss"
+        "soil nitrogen loss",
+        "soil N loss"
       ]
     }
   },
@@ -4458,7 +4630,8 @@
     ],
     "labels": {
       "en": [
-        "soil organic matter contents"
+        "soil organic matter contents",
+        "soil organic matter content"
       ]
     }
   },
@@ -4535,7 +4708,8 @@
     ],
     "labels": {
       "en": [
-        "soil phosphorus loss"
+        "soil phosphorus loss",
+        "soil P loss"
       ]
     }
   },
@@ -4679,7 +4853,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical functions"
+        "soil physical functions",
+        "soil physical function"
       ]
     }
   },
@@ -4903,6 +5078,13 @@
         "Equilibrio nutritivo del suelo",
         "Estado en nutrientes (suelo)",
         "Infertilidad del suelo"
+      ],
+      "pt": [
+        "fertilidade do solo",
+        "produtividade do solo",
+        "teor em nutriente do solo",
+        "equilíbrio nutritivo do solo",
+        "estado nutritivo (solo)"
       ]
     }
   },
@@ -4985,6 +5167,9 @@
       ],
       "es": [
         "Respiración del suelo"
+      ],
+      "pt": [
+        "respiração do solo"
       ]
     }
   },
@@ -5023,6 +5208,9 @@
       ],
       "es": [
         "Salinidad del suelo"
+      ],
+      "pt": [
+        "salinidade do solo"
       ]
     }
   },
@@ -5049,6 +5237,9 @@
       ],
       "es": [
         "Salinización del suelo"
+      ],
+      "pt": [
+        "salinização do solo"
       ]
     }
   },
@@ -5059,7 +5250,8 @@
     ],
     "labels": {
       "en": [
-        "soil sand contents"
+        "soil sand contents",
+        "soil sand content"
       ]
     }
   },
@@ -5103,7 +5295,8 @@
     ],
     "labels": {
       "en": [
-        "soil secondary particles"
+        "soil secondary particles",
+        "soil secondary particle"
       ]
     }
   },
@@ -5203,7 +5396,8 @@
     ],
     "labels": {
       "en": [
-        "soil silt contents"
+        "soil silt contents",
+        "soil silt content"
       ]
     }
   },
@@ -5361,6 +5555,9 @@
       ],
       "es": [
         "Sorción del suelo"
+      ],
+      "pt": [
+        "sorção do solo"
       ]
     }
   },
@@ -5404,7 +5601,8 @@
     ],
     "labels": {
       "en": [
-        "soil structural crusts"
+        "soil structural crusts",
+        "soil structural crust"
       ]
     }
   },
@@ -5519,6 +5717,9 @@
       ],
       "es": [
         "Temperatura del suelo"
+      ],
+      "pt": [
+        "temperatura do solo"
       ]
     }
   },
@@ -5598,7 +5799,8 @@
     ],
     "labels": {
       "en": [
-        "soil types"
+        "soil types",
+        "soil type"
       ],
       "fr": [
         "type de sol"
@@ -5611,6 +5813,9 @@
       ],
       "es": [
         "Tipo de suelos"
+      ],
+      "pt": [
+        "tipo de solo"
       ]
     }
   },
@@ -5643,7 +5848,8 @@
     ],
     "labels": {
       "en": [
-        "soil volumetric moisture contents"
+        "soil volumetric moisture contents",
+        "soil volumetric moisture content"
       ]
     }
   },
@@ -5684,6 +5890,9 @@
       "es": [
         "Agua del suelo",
         "Perfíl hídrico del suelo"
+      ],
+      "pt": [
+        "água do solo"
       ]
     }
   },
@@ -5728,7 +5937,8 @@
     ],
     "labels": {
       "en": [
-        "soil water characteristics"
+        "soil water characteristics",
+        "soil water characteristic"
       ],
       "fr": [
         "caractéristique hydrique du sol"
@@ -5848,6 +6058,10 @@
       "es": [
         "Potencial hídrico del suelo",
         "Presión de succión (suelo)"
+      ],
+      "pt": [
+        "potencial hídrico do solo",
+        "pressão de sucção (solo)"
       ]
     }
   },
@@ -5880,7 +6094,8 @@
     ],
     "labels": {
       "en": [
-        "soil water sorption properties"
+        "soil water sorption properties",
+        "soil water sorption property"
       ]
     }
   },
@@ -5946,7 +6161,8 @@
     ],
     "labels": {
       "en": [
-        "soluble anion total"
+        "soluble anion total",
+        "soluble anions total"
       ]
     }
   },
@@ -5957,7 +6173,8 @@
     ],
     "labels": {
       "en": [
-        "soluble cation total"
+        "soluble cation total",
+        "soluble cations total"
       ]
     }
   },
@@ -5984,6 +6201,9 @@
       ],
       "es": [
         "Adhesividad"
+      ],
+      "pt": [
+        "adesividade"
       ]
     }
   },
@@ -6005,7 +6225,8 @@
     ],
     "labels": {
       "en": [
-        "structural pores"
+        "structural pores",
+        "structural pore"
       ]
     }
   },
@@ -6050,7 +6271,8 @@
     ],
     "labels": {
       "en": [
-        "supporting services"
+        "supporting services",
+        "supporting service"
       ],
       "fr": [
         "service d'appui"
@@ -6100,6 +6322,9 @@
       "es": [
         "Escorrentia",
         "Desague"
+      ],
+      "pt": [
+        "escoamento"
       ]
     }
   },
@@ -6112,6 +6337,7 @@
     "labels": {
       "en": [
         "termites",
+        "termite",
         "white ants"
       ],
       "fr": [
@@ -6133,6 +6359,10 @@
       ],
       "nl": [
         "termieten"
+      ],
+      "pt": [
+        "cupim",
+        "formiga branca"
       ]
     }
   },
@@ -6143,7 +6373,8 @@
     ],
     "labels": {
       "en": [
-        "textural pores"
+        "textural pores",
+        "textural pore"
       ]
     }
   },
@@ -6219,6 +6450,10 @@
       "es": [
         "Transpiración",
         "Pérdida normal de agua (plantas)"
+      ],
+      "pt": [
+        "transpiração",
+        "perda normal água (das plantas)"
       ]
     }
   },
@@ -6297,7 +6532,8 @@
     ],
     "labels": {
       "en": [
-        "void classification"
+        "void classification",
+        "voids classification"
       ]
     }
   },
@@ -6308,7 +6544,8 @@
     ],
     "labels": {
       "en": [
-        "void diameter"
+        "void diameter",
+        "voids diameter"
       ]
     }
   },
@@ -6350,6 +6587,10 @@
       "es": [
         "Purificación del agua",
         "Desinfección del agua"
+      ],
+      "pt": [
+        "purificação da água",
+        "desinfecção da água"
       ]
     }
   },
@@ -6404,7 +6645,8 @@
     ],
     "labels": {
       "en": [
-        "weathering fragments"
+        "weathering fragments",
+        "weathering fragment"
       ]
     }
   },
@@ -8565,6 +8807,11 @@
         "Clima",
         "Efecto del clima",
         "Clima natural"
+      ],
+      "pt": [
+        "clima",
+        "efeito do clima",
+        "clima natural"
       ]
     }
   },
@@ -8605,6 +8852,10 @@
       "es": [
         "Filtración",
         "Filtraje"
+      ],
+      "pt": [
+        "filtração",
+        "filtragem"
       ]
     }
   },
@@ -8646,6 +8897,10 @@
       ],
       "es": [
         "Inundación"
+      ],
+      "pt": [
+        "inundação",
+        "cheia (inundação)"
       ]
     }
   },
@@ -8677,6 +8932,10 @@
       "es": [
         "Intercambio iónico",
         "Equilibrio iónico"
+      ],
+      "pt": [
+        "troca iónica",
+        "balanço iónico"
       ]
     }
   },
@@ -8688,7 +8947,8 @@
     ],
     "labels": {
       "en": [
-        "ions"
+        "ions",
+        "ion"
       ],
       "fr": [
         "ion"
@@ -8701,6 +8961,9 @@
       ],
       "es": [
         "Ion"
+      ],
+      "pt": [
+        "ião"
       ]
     }
   },
@@ -8754,6 +9017,10 @@
       "es": [
         "Nitrógeno",
         "N (símbolo)"
+      ],
+      "pt": [
+        "azoto",
+        "N (símbolo)"
       ]
     }
   },
@@ -8764,7 +9031,8 @@
     ],
     "labels": {
       "en": [
-        "pavements"
+        "pavements",
+        "pavement"
       ]
     }
   },
@@ -8831,6 +9099,9 @@
       "es": [
         "Escorrentia",
         "Desague"
+      ],
+      "pt": [
+        "escoamento"
       ]
     }
   },
@@ -8924,6 +9195,9 @@
       ],
       "es": [
         "Edad del suelo"
+      ],
+      "pt": [
+        "idade do solo"
       ]
     }
   },
@@ -8978,6 +9252,11 @@
       "es": [
         "Aire del suelo",
         "Atmósfera del suelo"
+      ],
+      "pt": [
+        "ar do solo",
+        "atmosfera terrestre",
+        "atmosfera do solo"
       ]
     }
   },
@@ -8988,7 +9267,8 @@
     ],
     "labels": {
       "en": [
-        "soil air contents"
+        "soil air contents",
+        "soil air content"
       ]
     }
   },
@@ -9021,7 +9301,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological crusts"
+        "soil biological crusts",
+        "soil biological crust"
       ]
     }
   },
@@ -9082,6 +9363,9 @@
       ],
       "es": [
         "Agrietamiento del suelo"
+      ],
+      "pt": [
+        "fendilhamento"
       ]
     }
   },
@@ -9194,7 +9478,8 @@
     ],
     "labels": {
       "en": [
-        "soil inorganic components"
+        "soil inorganic components",
+        "soil inorganic component"
       ]
     }
   },
@@ -9216,7 +9501,8 @@
     ],
     "labels": {
       "en": [
-        "soil organic components"
+        "soil organic components",
+        "soil organic component"
       ]
     }
   },
@@ -9249,7 +9535,8 @@
     ],
     "labels": {
       "en": [
-        "soil oxygen contents"
+        "soil oxygen contents",
+        "soil oxygen content"
       ]
     }
   },
@@ -9314,6 +9601,9 @@
       "es": [
         "Polución del suelo",
         "Contaminación del suelo"
+      ],
+      "pt": [
+        "poluição do solo"
       ]
     }
   },
@@ -9325,7 +9615,8 @@
     ],
     "labels": {
       "en": [
-        "soil pore size"
+        "soil pore size",
+        "pores size"
       ]
     }
   },
@@ -9397,6 +9688,9 @@
       ],
       "es": [
         "Esfuerzo del suelo"
+      ],
+      "pt": [
+        "resistência do solo"
       ]
     }
   },
@@ -9477,6 +9771,10 @@
       "es": [
         "Textura del suelo",
         "Cohesión del suelo"
+      ],
+      "pt": [
+        "textura do solo",
+        "coesão do solo"
       ]
     }
   },
@@ -9605,6 +9903,9 @@
       ],
       "es": [
         "Retención de agua por el suelo"
+      ],
+      "pt": [
+        "retenção da água pelo solo"
       ]
     }
   },
@@ -9638,7 +9939,8 @@
     ],
     "labels": {
       "en": [
-        "trees"
+        "trees",
+        "tree"
       ],
       "fr": [
         "arbre"
@@ -9651,6 +9953,9 @@
       ],
       "es": [
         "Árbol"
+      ],
+      "pt": [
+        "árvore"
       ]
     }
   },
@@ -9678,6 +9983,9 @@
       ],
       "es": [
         "Calidad del agua"
+      ],
+      "pt": [
+        "qualidade da água"
       ]
     }
   },
@@ -9732,6 +10040,10 @@
       "es": [
         "Biomasa",
         "Fitomasa"
+      ],
+      "pt": [
+        "biomassa",
+        "fitomassa"
       ]
     }
   },
@@ -9761,6 +10073,10 @@
         "B (simbolo)"
       ],
       "es": [
+        "Boro",
+        "B (símbolo)"
+      ],
+      "pt": [
         "Boro",
         "B (símbolo)"
       ]
@@ -9794,6 +10110,10 @@
       "es": [
         "Cadmio",
         "Cd (símbolo)"
+      ],
+      "pt": [
+        "Cádmio",
+        "Cd (símbolo)"
       ]
     }
   },
@@ -9825,6 +10145,10 @@
       "es": [
         "Cobre",
         "Cu (símbolo)"
+      ],
+      "pt": [
+        "Cobre",
+        "Cu (símbolo)"
       ]
     }
   },
@@ -9846,7 +10170,8 @@
     ],
     "labels": {
       "en": [
-        "exchangeable cations"
+        "exchangeable cations",
+        "exchangeable cation"
       ]
     }
   },
@@ -9858,7 +10183,8 @@
     ],
     "labels": {
       "en": [
-        "floods"
+        "floods",
+        "flood"
       ]
     }
   },
@@ -9890,6 +10216,10 @@
       "es": [
         "Hierro",
         "Fe (símbolo)"
+      ],
+      "pt": [
+        "Ferro",
+        "Fe (símbolo)"
       ]
     }
   },
@@ -9898,7 +10228,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "mineral particles"
+        "mineral particles",
+        "mineral particle"
       ]
     }
   },
@@ -9929,6 +10260,10 @@
       "es": [
         "Molibdeno",
         "Mo (símbolo)"
+      ],
+      "pt": [
+        "Molibdénio",
+        "Mo (símbolo)"
       ]
     }
   },
@@ -9939,7 +10274,8 @@
     ],
     "labels": {
       "en": [
-        "nonconservative solutes"
+        "nonconservative solutes",
+        "nonconservative solute"
       ]
     }
   },
@@ -9950,7 +10286,8 @@
     ],
     "labels": {
       "en": [
-        "non-soil indicators"
+        "non-soil indicators",
+        "non-soil indicator"
       ]
     }
   },
@@ -9970,7 +10307,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "rock outcrops"
+        "rock outcrops",
+        "rock outcrop"
       ]
     }
   },
@@ -9983,7 +10321,8 @@
     ],
     "labels": {
       "en": [
-        "roots"
+        "roots",
+        "root"
       ],
       "fr": [
         "racine"
@@ -9996,6 +10335,9 @@
       ],
       "es": [
         "Raíz"
+      ],
+      "pt": [
+        "raiz"
       ]
     }
   },
@@ -10090,6 +10432,9 @@
       ],
       "es": [
         "Compactación del suelo"
+      ],
+      "pt": [
+        "compactação do solo"
       ]
     }
   },
@@ -10111,7 +10456,8 @@
     ],
     "labels": {
       "en": [
-        "soil contaminants"
+        "soil contaminants",
+        "soil contaminant"
       ]
     }
   },
@@ -10122,7 +10468,8 @@
     ],
     "labels": {
       "en": [
-        "soil cracking physical properties"
+        "soil cracking physical properties",
+        "soil cracking physical property"
       ]
     }
   },
@@ -10237,6 +10584,9 @@
       ],
       "es": [
         "Permeabilidad del suelo"
+      ],
+      "pt": [
+        "permeabilidade do solo"
       ]
     }
   },
@@ -10247,7 +10597,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical crusts"
+        "soil physical crusts",
+        "soil physical crust"
       ]
     }
   },
@@ -10344,6 +10695,9 @@
       ],
       "es": [
         "Solución del suelo"
+      ],
+      "pt": [
+        "solução do solo"
       ]
     }
   },
@@ -10377,6 +10731,9 @@
       ],
       "es": [
         "Estructura del suelo"
+      ],
+      "pt": [
+        "estrutura do solo"
       ]
     }
   },
@@ -10409,7 +10766,8 @@
     ],
     "labels": {
       "en": [
-        "soil swell shrink properties"
+        "soil swell shrink properties",
+        "soil swell shrink property"
       ]
     }
   },
@@ -10505,6 +10863,10 @@
       "es": [
         "Azufre",
         "S (símbolo)"
+      ],
+      "pt": [
+        "Enxofre",
+        "S (símbolo)"
       ]
     }
   },
@@ -10542,6 +10904,11 @@
         "Vegetación",
         "Formaciones vegetales",
         "Tipos de vegetación"
+      ],
+      "pt": [
+        "vegetação",
+        "formação vegetal",
+        "tipo de vegetação"
       ]
     }
   },
@@ -10572,6 +10939,10 @@
       ],
       "es": [
         "Eliminación de desechos"
+      ],
+      "pt": [
+        "eliminação de resíduos",
+        "eliminação de excrementos"
       ]
     }
   },
@@ -10602,6 +10973,10 @@
       "es": [
         "Tiempo meteorológico",
         "Condiciones meteorológicos"
+      ],
+      "pt": [
+        "tempo meteorológico",
+        "condição meteorológica"
       ]
     }
   },
@@ -10634,6 +11009,10 @@
         "Cinc",
         "Zinc",
         "Zn (símbolo)"
+      ],
+      "pt": [
+        "Zinco",
+        "Zn (símbolo)"
       ]
     }
   },
@@ -10665,6 +11044,10 @@
       ],
       "es": [
         "Aluminio",
+        "Al (símbolo)"
+      ],
+      "pt": [
+        "Alumínio",
         "Al (símbolo)"
       ]
     }
@@ -10708,6 +11091,10 @@
       "es": [
         "Calcio",
         "Ca (símbolo)"
+      ],
+      "pt": [
+        "Cálcio",
+        "Ca (símbolo)"
       ]
     }
   },
@@ -10746,6 +11133,9 @@
       ],
       "es": [
         "Capacidad de cambio catiónico"
+      ],
+      "pt": [
+        "capacidade de troca catiónica"
       ]
     }
   },
@@ -10756,7 +11146,8 @@
     ],
     "labels": {
       "en": [
-        "coarse fragments"
+        "coarse fragments",
+        "coarse fragment"
       ]
     }
   },
@@ -10783,6 +11174,9 @@
       ],
       "es": [
         "Geología"
+      ],
+      "pt": [
+        "Geologia"
       ]
     }
   },
@@ -10813,6 +11207,10 @@
       "es": [
         "Magnesio",
         "Mg (símbolo)"
+      ],
+      "pt": [
+        "Magnésio",
+        "Mg (símbolo)"
       ]
     }
   },
@@ -10842,6 +11240,10 @@
       ],
       "es": [
         "Manganeso",
+        "Mn (símbolo)"
+      ],
+      "pt": [
+        "Manganês",
         "Mn (símbolo)"
       ]
     }
@@ -10882,6 +11284,9 @@
       ],
       "es": [
         "Turba"
+      ],
+      "pt": [
+        "turfa"
       ]
     }
   },
@@ -10912,6 +11317,10 @@
       "es": [
         "Fósforo",
         "P (símbolo)"
+      ],
+      "pt": [
+        "Fósforo",
+        "P (símbolo)"
       ]
     }
   },
@@ -10939,6 +11348,10 @@
       ],
       "es": [
         "Fisiografía"
+      ],
+      "pt": [
+        "Fisiografia",
+        "Geografia física"
       ]
     }
   },
@@ -10966,6 +11379,9 @@
       ],
       "es": [
         "Cubierta vegetal"
+      ],
+      "pt": [
+        "cobertura vegetal"
       ]
     }
   },
@@ -10995,6 +11411,10 @@
       ],
       "es": [
         "Potasio",
+        "K (símbolo)"
+      ],
+      "pt": [
+        "Potássio",
         "K (símbolo)"
       ]
     }
@@ -11026,6 +11446,10 @@
       "es": [
         "Sodio",
         "Na (símbolo)"
+      ],
+      "pt": [
+        "Sódio",
+        "Na (símbolo)"
       ]
     }
   },
@@ -11047,7 +11471,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological properties"
+        "soil biological properties",
+        "soil biological property"
       ]
     }
   },
@@ -11058,7 +11483,8 @@
     ],
     "labels": {
       "en": [
-        "soil charge properties"
+        "soil charge properties",
+        "soil charge property"
       ]
     }
   },
@@ -11099,6 +11525,10 @@
       "es": [
         "Clasificación de suelos",
         "Taxonomía de suelos"
+      ],
+      "pt": [
+        "classificação de solos",
+        "taxonomia do solo"
       ]
     }
   },
@@ -11120,7 +11550,8 @@
     ],
     "labels": {
       "en": [
-        "soil cracks"
+        "soil cracks",
+        "soil crack"
       ]
     }
   },
@@ -11131,7 +11562,8 @@
     ],
     "labels": {
       "en": [
-        "soil crust physical properties"
+        "soil crust physical properties",
+        "soil crust physical property"
       ]
     }
   },
@@ -11158,6 +11590,9 @@
       ],
       "nl": [
         "bodemdiepte"
+      ],
+      "pt": [
+        "profundidade do solo"
       ]
     }
   },
@@ -11195,6 +11630,9 @@
       ],
       "es": [
         "Fauna del suelo"
+      ],
+      "pt": [
+        "fauna do solo"
       ]
     }
   },
@@ -11216,7 +11654,8 @@
     ],
     "labels": {
       "en": [
-        "soil indicators"
+        "soil indicators",
+        "soil indicator"
       ]
     }
   },
@@ -11239,7 +11678,8 @@
     ],
     "labels": {
       "en": [
-        "soil nutrients"
+        "soil nutrients",
+        "soil nutrient"
       ]
     }
   },
@@ -11252,6 +11692,7 @@
     "labels": {
       "en": [
         "soil organisms",
+        "soil organism",
         "soil life"
       ],
       "fr": [
@@ -11267,6 +11708,9 @@
       ],
       "es": [
         "Organismo del suelo"
+      ],
+      "pt": [
+        "organismo do solo"
       ]
     }
   },
@@ -11288,7 +11732,8 @@
     ],
     "labels": {
       "en": [
-        "soil primary particles"
+        "soil primary particles",
+        "soil primary particle"
       ]
     }
   },
@@ -11301,7 +11746,8 @@
     ],
     "labels": {
       "en": [
-        "soil processes"
+        "soil processes",
+        "soil process"
       ]
     }
   },
@@ -11334,6 +11780,9 @@
       ],
       "nl": [
         "bodemkwaliteit"
+      ],
+      "pt": [
+        "qualidade do solo"
       ]
     }
   },
@@ -11344,7 +11793,8 @@
     ],
     "labels": {
       "en": [
-        "soil solute physical properties"
+        "soil solute physical properties",
+        "soil solute physical property"
       ]
     }
   },
@@ -11377,7 +11827,8 @@
     ],
     "labels": {
       "en": [
-        "soil thermal properties"
+        "soil thermal properties",
+        "soil thermal property"
       ]
     }
   },
@@ -11388,7 +11839,8 @@
     ],
     "labels": {
       "en": [
-        "soil voids"
+        "soil voids",
+        "soil void"
       ]
     }
   },
@@ -11399,7 +11851,8 @@
     ],
     "labels": {
       "en": [
-        "soil water contents"
+        "soil water contents",
+        "soil water content"
       ]
     }
   },
@@ -11446,6 +11899,11 @@
         "Movimiento del agua en el suelo",
         "Percolación del agua del suelo",
         "Transferencia de agua (suelo)"
+      ],
+      "pt": [
+        "movimento da água no solo",
+        "infiltração de água no solo",
+        "translocação da água (solo)"
       ]
     }
   },
@@ -11487,6 +11945,7 @@
     "labels": {
       "en": [
         "ecosystem services",
+        "ecosystem service",
         "ecosystem goods and services"
       ],
       "fr": [
@@ -11512,7 +11971,8 @@
     ],
     "labels": {
       "en": [
-        "external factors"
+        "external factors",
+        "external factor"
       ]
     }
   },
@@ -11521,7 +11981,8 @@
     "uris": [],
     "labels": {
       "en": [
-        "fragments"
+        "fragments",
+        "fragment"
       ]
     }
   },
@@ -11550,6 +12011,9 @@
         "Cobertura de suelos",
         "Cubierta terrestre",
         "Cobertura del suelo"
+      ],
+      "pt": [
+        "cobertura do solo"
       ]
     }
   },
@@ -11586,6 +12050,10 @@
         "Uso de la tierra",
         "Desarrollo de tierras (agricultura)",
         "Uso del suelo"
+      ],
+      "pt": [
+        "uso da terra",
+        "desenvolvimento fundiário"
       ]
     }
   },
@@ -11611,6 +12079,9 @@
       ],
       "es": [
         "Roca"
+      ],
+      "pt": [
+        "rocha"
       ]
     }
   },
@@ -11623,7 +12094,8 @@
     ],
     "labels": {
       "en": [
-        "salts"
+        "salts",
+        "salt"
       ],
       "fr": [
         "sel"
@@ -11636,6 +12108,9 @@
       ],
       "es": [
         "Sal"
+      ],
+      "pt": [
+        "sal"
       ]
     }
   },
@@ -11663,6 +12138,9 @@
       ],
       "es": [
         "Arena"
+      ],
+      "pt": [
+        "areia"
       ]
     }
   },
@@ -11707,7 +12185,8 @@
     ],
     "labels": {
       "en": [
-        "soil air physical properties"
+        "soil air physical properties",
+        "soil air physical property"
       ]
     }
   },
@@ -11719,7 +12198,8 @@
     ],
     "labels": {
       "en": [
-        "soil crusts"
+        "soil crusts",
+        "soil crust"
       ],
       "fr": [
         "croûte du sol"
@@ -11732,6 +12212,9 @@
       ],
       "es": [
         "Costra del suelo"
+      ],
+      "pt": [
+        "crosta do solo"
       ]
     }
   },
@@ -11801,6 +12284,9 @@
       ],
       "es": [
         "Movimiento del suelo"
+      ],
+      "pt": [
+        "movimento do solo"
       ]
     }
   },
@@ -11812,7 +12298,8 @@
     ],
     "labels": {
       "en": [
-        "soil particles"
+        "soil particles",
+        "soil particle"
       ]
     }
   },
@@ -11823,7 +12310,8 @@
     ],
     "labels": {
       "en": [
-        "soil spatial properties"
+        "soil spatial properties",
+        "soil spatial property"
       ]
     }
   },
@@ -11834,7 +12322,8 @@
     ],
     "labels": {
       "en": [
-        "soil thermal processes"
+        "soil thermal processes",
+        "soil thermal process"
       ]
     }
   },
@@ -11856,7 +12345,8 @@
     ],
     "labels": {
       "en": [
-        "soluble salts"
+        "soluble salts",
+        "soluble salt"
       ]
     }
   },
@@ -11868,7 +12358,8 @@
     ],
     "labels": {
       "en": [
-        "macronutrients"
+        "macronutrients",
+        "macronutrient"
       ],
       "fr": [
         "macronutriment"
@@ -11891,7 +12382,8 @@
     ],
     "labels": {
       "en": [
-        "planetary phenomena"
+        "planetary phenomena",
+        "planetary phenomenon"
       ]
     }
   },
@@ -11913,7 +12405,8 @@
     ],
     "labels": {
       "en": [
-        "soil air physical processes"
+        "soil air physical processes",
+        "soil air physical process"
       ]
     }
   },
@@ -11933,7 +12426,8 @@
     ],
     "labels": {
       "en": [
-        "soil environmental functions"
+        "soil environmental functions",
+        "soil environmental function"
       ]
     }
   },
@@ -11964,6 +12458,9 @@
       ],
       "es": [
         "Materia orgánica del suelo"
+      ],
+      "pt": [
+        "matéria orgânica do solo"
       ]
     }
   },
@@ -11976,7 +12473,8 @@
     ],
     "labels": {
       "en": [
-        "soil properties"
+        "soil properties",
+        "soil property"
       ],
       "fr": [
         "propriété du sol",
@@ -12038,6 +12536,11 @@
         "pH del suelo",
         "Acidez del suelo",
         "Alcalinidad del suelo"
+      ],
+      "pt": [
+        "pH do solo",
+        "acidez do solo",
+        "alcalinidade do solo"
       ]
     }
   },
@@ -12076,6 +12579,9 @@
       ],
       "es": [
         "Precipitación atmosférica"
+      ],
+      "pt": [
+        "precipitação atmosférica"
       ]
     }
   },
@@ -12119,6 +12625,10 @@
       "es": [
         "Degradación del suelo",
         "Deterioro del suelo"
+      ],
+      "pt": [
+        "degradação do solo",
+        "deterioração do solo"
       ]
     }
   },
@@ -12165,6 +12675,10 @@
       "es": [
         "Erosión",
         "Erosión del suelo"
+      ],
+      "pt": [
+        "erosão",
+        "erosão do solo"
       ]
     }
   },
@@ -12195,7 +12709,8 @@
     ],
     "labels": {
       "en": [
-        "soil particle physical properties"
+        "soil particle physical properties",
+        "soil particle physical property"
       ]
     }
   },
@@ -12217,7 +12732,8 @@
     ],
     "labels": {
       "en": [
-        "soil solutes"
+        "soil solutes",
+        "soil solute"
       ]
     }
   },
@@ -12406,6 +12922,7 @@
     "labels": {
       "en": [
         "micronutrients",
+        "micronutrient",
         "trace elements",
         "microelements"
       ],
@@ -12430,6 +12947,11 @@
         "Micronutrientes",
         "Elementos traza",
         "Elementos menores"
+      ],
+      "pt": [
+        "micronutriente",
+        "microelemento",
+        "oligoelemento"
       ]
     }
   },
@@ -12440,7 +12962,8 @@
     ],
     "labels": {
       "en": [
-        "soil aggregate physical properties"
+        "soil aggregate physical properties",
+        "soil aggregate physical property"
       ]
     }
   },
@@ -12451,7 +12974,8 @@
     ],
     "labels": {
       "en": [
-        "soil biological processes"
+        "soil biological processes",
+        "soil biological process"
       ]
     }
   },
@@ -12493,6 +13017,12 @@
         "Densidad de masa (suelo)",
         "Densidad de los agregados del suelo",
         "Densidad de las particulas (suelo)"
+      ],
+      "pt": [
+        "densidade do solo",
+        "massa volúmica aparente do solo",
+        "densidade dos agregados do solo",
+        "densidade das partículas (solo)"
       ]
     }
   },
@@ -12556,7 +13086,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical degradative processes"
+        "soil chemical degradative processes",
+        "soil chemical degradative process"
       ]
     }
   },
@@ -12591,7 +13122,8 @@
     ],
     "labels": {
       "en": [
-        "soil function indicators"
+        "soil function indicators",
+        "soil function indicator"
       ]
     }
   },
@@ -12602,7 +13134,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical degradative processes"
+        "soil physical degradative processes",
+        "soil physical degradative process"
       ]
     }
   },
@@ -12624,7 +13157,8 @@
     ],
     "labels": {
       "en": [
-        "soil phenomena"
+        "soil phenomena",
+        "soil phenomenon"
       ]
     }
   },
@@ -12673,6 +13207,9 @@
       ],
       "es": [
         "Yeso"
+      ],
+      "pt": [
+        "gesso"
       ]
     }
   },
@@ -12683,7 +13220,8 @@
     ],
     "labels": {
       "en": [
-        "soil contents"
+        "soil contents",
+        "soil content"
       ]
     }
   },
@@ -12715,6 +13253,10 @@
       "es": [
         "Conductividad hidráulica",
         "Conductividad hidráulica del suelo"
+      ],
+      "pt": [
+        "condutividade hidráulica",
+        "condutividade hidráulica do solo"
       ]
     }
   },
@@ -12748,6 +13290,9 @@
         "Administración del suelo",
         "Ordenación de suelos",
         "Gestión del suelo"
+      ],
+      "pt": [
+        "preparação do solo"
       ]
     }
   },
@@ -12769,7 +13314,8 @@
     ],
     "labels": {
       "en": [
-        "soil threats"
+        "soil threats",
+        "soil threat"
       ]
     }
   },
@@ -12802,7 +13348,8 @@
     ],
     "labels": {
       "en": [
-        "hydrogen exchangeable bases"
+        "hydrogen exchangeable bases",
+        "hydrogen exchangeable base"
       ]
     }
   },
@@ -12813,7 +13360,8 @@
     ],
     "labels": {
       "en": [
-        "magnesium exchangeable bases"
+        "magnesium exchangeable bases",
+        "magnesium exchangeable base"
       ]
     }
   },
@@ -12824,7 +13372,8 @@
     ],
     "labels": {
       "en": [
-        "manganese exchangeable bases"
+        "manganese exchangeable bases",
+        "manganese exchangeable base"
       ]
     }
   },
@@ -12846,7 +13395,8 @@
     ],
     "labels": {
       "en": [
-        "potassium exchangeable bases"
+        "potassium exchangeable bases",
+        "potassium exchangeable base"
       ]
     }
   },
@@ -12857,7 +13407,8 @@
     ],
     "labels": {
       "en": [
-        "sodium exchangeable bases"
+        "sodium exchangeable bases",
+        "sodium exchangeable base"
       ]
     }
   },
@@ -12868,7 +13419,8 @@
     ],
     "labels": {
       "en": [
-        "soil engineering functions"
+        "soil engineering functions",
+        "soil engineering function"
       ]
     }
   },
@@ -12896,6 +13448,9 @@
       ],
       "es": [
         "Porosidad del suelo"
+      ],
+      "pt": [
+        "porosidade do solo"
       ]
     }
   },
@@ -12917,7 +13472,8 @@
     ],
     "labels": {
       "en": [
-        "soil agricultural functions"
+        "soil agricultural functions",
+        "soil agricultural function"
       ]
     }
   },
@@ -12929,7 +13485,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical properties"
+        "soil chemical properties",
+        "soil chemical property"
       ]
     }
   },
@@ -12942,7 +13499,8 @@
     ],
     "labels": {
       "en": [
-        "soil functions"
+        "soil functions",
+        "soil function"
       ],
       "fr": [
         "fonction du sol"
@@ -13449,7 +14007,8 @@
     ],
     "labels": {
       "en": [
-        "soil chemical processes"
+        "soil chemical processes",
+        "soil chemical process"
       ]
     }
   },
@@ -13460,7 +14019,8 @@
     ],
     "labels": {
       "en": [
-        "soil pore physical properties"
+        "soil pore physical properties",
+        "soil pore physical property"
       ]
     }
   },
@@ -13471,7 +14031,8 @@
     ],
     "labels": {
       "en": [
-        "soil water physical processes"
+        "soil water physical processes",
+        "soil water physical process"
       ]
     }
   },
@@ -13482,7 +14043,8 @@
     ],
     "labels": {
       "en": [
-        "soil components"
+        "soil components",
+        "soil component"
       ]
     }
   },
@@ -13503,7 +14065,8 @@
     ],
     "labels": {
       "en": [
-        "soil pores"
+        "soil pores",
+        "soil pore"
       ]
     }
   },
@@ -13515,7 +14078,9 @@
     ],
     "labels": {
       "en": [
-        "soil moisture contents"
+        "soil moisture contents",
+        "moisture content",
+        "soil moisture content"
       ]
     }
   },
@@ -13526,7 +14091,8 @@
     ],
     "labels": {
       "en": [
-        "aluminium total elements"
+        "aluminium total elements",
+        "aluminium total element"
       ]
     }
   },
@@ -13537,7 +14103,8 @@
     ],
     "labels": {
       "en": [
-        "boron total elements"
+        "boron total elements",
+        "boron total element"
       ]
     }
   },
@@ -13548,7 +14115,8 @@
     ],
     "labels": {
       "en": [
-        "cadmium total elements"
+        "cadmium total elements",
+        "cadmium total element"
       ]
     }
   },
@@ -13691,7 +14259,8 @@
     ],
     "labels": {
       "en": [
-        "soil water physical properties"
+        "soil water physical properties",
+        "soil water physical property"
       ]
     }
   },
@@ -13702,7 +14271,8 @@
     ],
     "labels": {
       "en": [
-        "soil physical processes"
+        "soil physical processes",
+        "soil physical process"
       ]
     }
   },
@@ -13713,7 +14283,8 @@
     ],
     "labels": {
       "en": [
-        "aluminium extractable elements"
+        "aluminium extractable elements",
+        "aluminium extractable element"
       ]
     }
   },
@@ -13724,7 +14295,8 @@
     ],
     "labels": {
       "en": [
-        "boron extractable elements"
+        "boron extractable elements",
+        "boron extractable element"
       ]
     }
   },
@@ -13735,7 +14307,8 @@
     ],
     "labels": {
       "en": [
-        "cadmium extractable elements"
+        "cadmium extractable elements",
+        "cadmium extractable element"
       ]
     }
   },
@@ -13909,6 +14482,7 @@
     "labels": {
       "en": [
         "soil physical properties",
+        "soil physical property",
         "soil chemicophysical properties",
         "soil physicochemical properties"
       ],
@@ -13929,6 +14503,11 @@
       "es": [
         "Propiedad físico - química suelo",
         "Propiedades físicas del suelo"
+      ],
+      "pt": [
+        "propriedade físico-química do solo",
+        "propriedade químico-física do solo",
+        "propriedade física do solo"
       ]
     }
   }

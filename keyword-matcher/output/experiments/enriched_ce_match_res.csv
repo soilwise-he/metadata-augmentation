@@ -1,0 +1,1353 @@
+subject_label,vocab_label,subject_id,subject_uri,vocab_identifier,cosine_score,ce_score,has_definition
+plants,plant cover,158938,,https://w3id.org/eusoilvoc#PlantCover,0.926,0.9184,True
+plant roots,root abundance,158941,,https://w3id.org/eusoilvoc#RootAbundance,0.8012,0.8394,True
+soil microbiology,soil biological properties,158948,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.886,0.9944,True
+agricultural soils,soil agricultural functions,158985,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,0.9232,0.8899,False
+forests,land use forests,159027,,https://w3id.org/eusoilvoc#LandUseForests,0.7795,0.6676,True
+soil stabilization,soil structural stability,159059,,https://w3id.org/eusoilvoc#SoilStructuralStability,0.8747,0.874,False
+water,water quality,159064,,https://w3id.org/eusoilvoc#WaterQuality,0.909,0.6556,True
+soil pollutants,soil pollution,159072,,https://w3id.org/eusoilvoc#SoilPollution,0.8639,0.9931,True
+soil microbiome,soil microfauna,160133,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9927,0.9679,True
+biological soil crusts,soil biological crusts,159096,,https://w3id.org/eusoilvoc#SoilBiologicalCrusts,0.9961,0.9653,False
+ecosystem,ecosystem services,159102,,https://w3id.org/eusoilvoc#EcosystemServices,0.8474,0.9585,True
+soil science,soil,159105,,https://w3id.org/eusoilvoc#Soil,0.936,0.9398,True
+soil management practices,soil management,160139,,https://w3id.org/eusoilvoc#SoilManagement,0.975,0.6924,True
+physical geography and environmental geoscience,physiography,159140,,https://w3id.org/eusoilvoc#Physiography,0.8419,0.9978,True
+physical sciences,physiography,159153,,https://w3id.org/eusoilvoc#Physiography,0.7094,0.6864,True
+sciences de la terre & géographie physique,physiography,159173,,https://w3id.org/eusoilvoc#Physiography,0.8393,0.884,True
+saturated-unsaturated flow,unsaturated water flow,159178,,https://w3id.org/eusoilvoc#UnsaturatedWaterFlow,0.8023,0.8845,False
+0406 physical geography and environmental geoscience,physiography,159188,,https://w3id.org/eusoilvoc#Physiography,0.8137,0.8524,True
+ecosystems,ecosystem services,159195,,https://w3id.org/eusoilvoc#EcosystemServices,0.8485,0.9552,True
+solute transport,soil solute dispersive transport,159205,,https://w3id.org/eusoilvoc#SoilSoluteDispersiveTransport,0.5782,0.8977,False
+soil sciences,soil,159207,,https://w3id.org/eusoilvoc#Soil,0.9187,0.957,True
+earth sciences & physical geography,physiography,159209,,https://w3id.org/eusoilvoc#Physiography,0.7912,0.9803,True
+soils,soil,159210,,https://w3id.org/eusoilvoc#Soil,0.9863,0.995,True
+yield,crop yield,159264,,https://w3id.org/eusoilvoc#CropYield,0.6922,0.6671,True
+sustainable agriculture,agricultural sustainability,159271,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9506,0.9943,False
+soil ecosystem services,soil quality,159276,,https://w3id.org/eusoilvoc#SoilQuality,0.806,0.9993,True
+organic matter,soil organic matter,159279,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8594,0.9853,True
+soil-based ecosystem services and soil threats' bundles,soil threats,159283,,https://w3id.org/eusoilvoc#SoilThreats,0.8285,0.793,True
+subsoils,soil subsidence,159284,,https://w3id.org/eusoilvoc#SoilSubsidence,0.5424,0.6995,False
+soil carbon,soil total carbon,159287,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.9437,0.9992,True
+fertilisation,soil productivity,159316,,https://w3id.org/eusoilvoc#SoilProductivity,0.7453,0.6272,True
+plante de couverture,plant cover,159331,,https://w3id.org/eusoilvoc#PlantCover,0.9391,0.9981,True
+soil health objectives,soil health,159357,,https://w3id.org/eusoilvoc#SoilHealth,0.9458,0.8364,True
+land degradation,soil degradation,159361,,https://w3id.org/eusoilvoc#SoilDegradation,0.914,0.8285,True
+oxidation-reduction,soil oxidation reduction reaction,159383,,https://w3id.org/eusoilvoc#SoilOxidationReductionReaction,0.7226,0.8498,False
+nitrites,nitrogen,159384,,https://w3id.org/eusoilvoc#Nitrogen,0.7082,0.6639,True
+pxrf,Total_xrf-p,159386,,https://w3id.org/eusoilvoc#totalElementsProcedure-Total_xrf-p,0.6841,0.9755,True
+land use change,land use,159410,,https://w3id.org/eusoilvoc#LandUse,0.8819,0.9929,True
+soil nutrient imbalance,soil nutrient loss,159412,,https://w3id.org/eusoilvoc#SoilNutrientLoss,0.8831,0.7494,False
+salinization,soil salinization,159413,,https://w3id.org/eusoilvoc#SoilSalinization,0.731,0.9895,True
+loss of diversity,soil biodiversity loss,159417,,https://w3id.org/eusoilvoc#SoilBiodiversityLoss,0.5006,0.952,False
+loss of soil,soil water loss,159422,,https://w3id.org/eusoilvoc#SoilWaterLoss,0.8985,0.916,False
+soil contamination,soil pollution,159437,,https://w3id.org/eusoilvoc#SoilPollution,0.9196,0.9928,True
+organic-carbon,soil organic carbon,159453,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.896,0.9153,True
+land management,land use,159497,,https://w3id.org/eusoilvoc#LandUse,0.8547,0.8767,True
+soil-based ecosystem services,soil environmental functions,159501,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,0.7535,0.7535,False
+2505.04 utilización del terreno,land use,159506,,https://w3id.org/eusoilvoc#LandUse,0.7827,0.785,True
+soil sampling,soil depth sampled,159511,,https://w3id.org/eusoilvoc#SoilDepthSampled,0.8934,0.976,True
+agricultural soil management,soil management,159514,,https://w3id.org/eusoilvoc#SoilManagement,0.9633,0.9061,True
+soils and soil sciences,soil,159518,,https://w3id.org/eusoilvoc#Soil,0.9064,0.8711,True
+geosciences,geology,159527,,https://w3id.org/eusoilvoc#Geology,0.8046,0.7984,True
+plastic mulch,mulching,159528,,https://w3id.org/eusoilvoc#Mulching,0.7395,0.9697,True
+"water pollutants, chemical",soil pollution,159540,,https://w3id.org/eusoilvoc#SoilPollution,0.6469,0.7528,True
+soil organic carbon (soc),soil organic carbon,159590,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9267,1.0,True
+crop production,crop yield,159604,,https://w3id.org/eusoilvoc#CropYield,0.9149,0.6819,True
+agricultural soil,soil agricultural functions,159611,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,0.932,0.8543,False
+agricultural resilience,agricultural sustainability,159618,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.7197,0.6477,False
+soil management knowledge,soil management,159623,,https://w3id.org/eusoilvoc#SoilManagement,0.9248,0.7108,True
+soil information,soil,159625,,https://w3id.org/eusoilvoc#Soil,0.9113,0.8547,True
+sustainable agro-ecosystems,agricultural sustainability,159629,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.829,0.8827,False
+soil conservation,conservation tillage,159631,,https://w3id.org/eusoilvoc#ConservationTillage,0.8993,0.9755,True
+sustainable soil management,soil management,159646,,https://w3id.org/eusoilvoc#SoilManagement,0.9105,0.8245,True
+plant,plant cover,159656,,https://w3id.org/eusoilvoc#PlantCover,0.91,0.9368,True
+"ecosystem services, agronomic practices, soil quality indicators",soil quality,159691,,https://w3id.org/eusoilvoc#SoilQuality,0.7459,0.887,True
+grasslands,land use grasses,159704,,https://w3id.org/eusoilvoc#LandUseGrasses,0.8161,0.6904,True
+land use and land use change,land use,159715,,https://w3id.org/eusoilvoc#LandUse,0.852,0.9925,True
+ejp soil; mir; probefield; soil organic carbon; soil organic matter,soil organic carbon,159723,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8304,0.7034,True
+soil based ecosystem services,soil environmental functions,159726,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,0.784,0.6472,False
+soilbased ecosystem services,soil environmental functions,159740,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,0.7556,0.6909,False
+soil science terminology,soil,159742,,https://w3id.org/eusoilvoc#Soil,0.8779,0.9853,True
+soil- based ecosystem services,soil environmental functions,159746,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,0.7504,0.6459,False
+saline soil classification,soil salinity,159758,,https://w3id.org/eusoilvoc#SoilSalinity,0.8035,0.6089,True
+soil surface properties,soil properties,159768,,https://w3id.org/eusoilvoc#SoilProperties,0.946,0.8963,True
+sustainable land management practice,land use class,159774,,https://w3id.org/eusoilvoc#LandUseClass,0.7147,0.9128,True
+química,salts,159821,,https://w3id.org/eusoilvoc#Salts,0.7069,0.858,True
+bulk density,bulk density mineral,159856,,https://w3id.org/eusoilvoc#BulkDensityMineral,0.7857,0.9977,True
+soil organic carbon content,soil inorganic carbon,159858,,https://w3id.org/eusoilvoc#SoilInorganicCarbon,0.9367,0.9972,True
+textural fractions,soil texture,159861,,https://w3id.org/eusoilvoc#SoilTexture,0.5214,0.7027,True
+soil organic carbon stock,soil organic carbon,159863,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9629,0.9895,True
+soil cover,land cover,159896,,https://w3id.org/eusoilvoc#LandCover,0.8861,0.7376,True
+soil challenges,soil threats,159901,,https://w3id.org/eusoilvoc#SoilThreats,0.8892,0.9623,True
+soil restoration,soil retention,159902,,https://w3id.org/eusoilvoc#SoilRetention,0.8428,0.7521,False
+soil organic carbon concentration,soil carbon density,159927,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8941,0.9967,True
+nutrients,macronutrients,159946,,https://w3id.org/eusoilvoc#Macronutrients,0.7515,0.6714,True
+subsoil compaction,soil compaction,159985,,https://w3id.org/eusoilvoc#SoilCompaction,0.6597,0.9991,True
+topsoil compaction,soil compaction,159986,,https://w3id.org/eusoilvoc#SoilCompaction,0.6952,0.9985,True
+"soil ecosystem services, soil threats, indicators, scenario-based, agroecosystems",soil threats,160012,,https://w3id.org/eusoilvoc#SoilThreats,0.8036,0.7167,True
+preferential flow,soil preferential flow path,160039,,https://w3id.org/eusoilvoc#SoilPreferentialFlowPath,0.5073,0.8327,False
+soil-based ecosystem service,soil environmental functions,160051,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,0.7527,0.6559,False
+soil erosion control,soil erosion degree,160052,,https://w3id.org/eusoilvoc#SoilErosionDegree,0.8792,0.7494,True
+residue restitution,waste disposal,160055,,https://w3id.org/eusoilvoc#WasteDisposal,0.5922,0.6096,True
+pollution,soil pollution,160061,,https://w3id.org/eusoilvoc#SoilPollution,0.8441,0.818,True
+water-stable aggregates,percent water stable aggregation,160062,,https://w3id.org/eusoilvoc#PercentWaterStableAggregation,0.8117,0.9662,False
+landwirtschaft,land use,160203,,https://w3id.org/eusoilvoc#LandUse,0.8573,0.6765,True
+biological activity,biological features,160068,,https://w3id.org/eusoilvoc#BiologicalFeatures,0.7713,0.9828,True
+cropland,crop class,160075,,https://w3id.org/eusoilvoc#CropClass,0.7349,0.8416,True
+forest,land use forests,160076,,https://w3id.org/eusoilvoc#LandUseForests,0.7609,0.6931,True
+soil carbon storage,soil carbon density,160118,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8772,0.9888,True
+salinity,soil salinity,160323,,https://w3id.org/eusoilvoc#SoilSalinity,0.8241,0.9716,True
+auxin,ions,160337,,https://w3id.org/eusoilvoc#Ions,0.6525,0.6483,True
+phosphorylation,phosphorus retention,160358,,https://w3id.org/eusoilvoc#PhosphorusRetention,0.5619,0.6681,True
+bodenkunde,soil,161150,,https://w3id.org/eusoilvoc#Soil,0.8329,0.8028,True
+wasserbewegung,soil water movement,161151,,https://w3id.org/eusoilvoc#SoilWaterMovement,0.9551,0.8466,False
+landwirtschaft,land use,161159,,https://w3id.org/eusoilvoc#LandUse,0.8573,0.6765,True
+düngung,mulching,161161,,https://w3id.org/eusoilvoc#Mulching,0.8724,0.773,True
+ambiente,climate,161190,,https://w3id.org/eusoilvoc#Climate,0.8025,0.7547,True
+et,ions,161213,,https://w3id.org/eusoilvoc#Ions,0.9462,0.6062,True
+wms,VMC_ud,161243,,https://w3id.org/eusoilvoc#moistureContentProcedure-VMC_ud,0.4856,0.9093,True
+wasserretention,soil water retention,161254,,https://w3id.org/eusoilvoc#SoilWaterRetention,0.7949,0.8335,False
+ph-wert,soil pH,161259,,https://w3id.org/eusoilvoc#SoilpH,0.7328,0.8519,True
+schwermetall,cadmium total elements,161260,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.6451,0.6467,True
+leaf hydraulic conductance,soil hydraulic conductivity,160438,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,0.7834,0.6117,True
+wasserdurchlässigkeit,soil water potential,161267,,https://w3id.org/eusoilvoc#SoilWaterPotential,0.7897,0.7101,True
+sonaravno kmetijstvo,agricultural sustainability,160475,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.8027,0.6435,False
+trajnostno kmetijstvo,agricultural sustainability,160476,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9588,0.9702,False
+kakovost tal,soil quality,160482,,https://w3id.org/eusoilvoc#SoilQuality,0.8967,0.9192,True
+upravljanje zemljišč,land use,160483,,https://w3id.org/eusoilvoc#LandUse,0.8981,0.7304,True
+soil sensing,soil,160494,,https://w3id.org/eusoilvoc#Soil,0.873,0.9448,True
+it,salts,160506,,https://w3id.org/eusoilvoc#Salts,0.7842,0.6315,True
+human impact,human influence class,162917,,https://w3id.org/eusoilvoc#HumanInfluenceClass,0.7341,0.9987,True
+klasifikacija staništa,slope,162918,,https://w3id.org/eusoilvoc#Slope,0.5529,0.6349,True
+nitrogen losses,soil nitrogen loss,160549,,https://w3id.org/eusoilvoc#SoilNLoss,0.8554,0.6478,False
+air pollutants,soil pollution,160560,,https://w3id.org/eusoilvoc#SoilPollution,0.7776,0.75,True
+način korišćenja zemljišta,land use,162919,,https://w3id.org/eusoilvoc#LandUse,0.9314,0.6583,True
+sostanza organica del terreno,soil organic matter,160612,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.9732,0.9419,True
+начин коришћења земљишта,land use,162921,,https://w3id.org/eusoilvoc#LandUse,0.9559,0.8875,True
+bodenverbreitung,land cover,161316,,https://w3id.org/eusoilvoc#LandCover,0.813,0.7447,True
+bodenerosionsgefährdung,soil threats,161324,,https://w3id.org/eusoilvoc#SoilThreats,0.7477,0.6108,True
+habitat classification,habitats,162925,,https://w3id.org/eusoilvoc#Habitats,0.8092,0.9195,True
+човеков утицај,human influence class,162928,,https://w3id.org/eusoilvoc#HumanInfluenceClass,0.7441,0.9989,True
+ökologie,habitats,161341,,https://w3id.org/eusoilvoc#Habitats,0.8632,0.7934,True
+subsoil,soil subsidence,161352,,https://w3id.org/eusoilvoc#SoilSubsidence,0.5256,0.6998,False
+bodenbelastung,soil productivity,161371,,https://w3id.org/eusoilvoc#SoilProductivity,0.8395,0.9191,True
+nitrat,nitrogen,161391,,https://w3id.org/eusoilvoc#Nitrogen,0.9395,0.75,True
+nickel,nitrogen,161398,,https://w3id.org/eusoilvoc#Nitrogen,0.5548,0.9715,True
+surveillance des sols,soil sealing,162948,,https://w3id.org/eusoilvoc#SoilSealing,0.6934,0.6189,True
+kohlenstoff,biomass,161406,,https://w3id.org/eusoilvoc#Biomass,0.6686,0.6463,True
+soil-texture,soil texture,161423,,https://w3id.org/eusoilvoc#SoilTexture,0.9027,0.9998,True
+"water content, soil",soil moisture,161439,,https://w3id.org/eusoilvoc#SoilMoisture,0.9819,0.9999,True
+basic soil properties,soil chemical properties,161442,,https://w3id.org/eusoilvoc#SoilChemicalProperties,0.9126,0.9935,True
+heavy metals,cadmium total elements,160664,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.6821,0.7035,True
+water pollution,soil pollution,160681,,https://w3id.org/eusoilvoc#SoilPollution,0.7463,0.8035,True
+pfos,phosphorus,160717,,https://w3id.org/eusoilvoc#Phosphorus,0.7586,0.6616,True
+biomass (ecology),biomass,161665,,https://w3id.org/eusoilvoc#Biomass,0.9333,0.9949,True
+climate research,climate,160767,,https://w3id.org/eusoilvoc#Climate,0.8951,0.6213,True
+biodegradation,soil biological degradation,160782,,https://w3id.org/eusoilvoc#SoilBiologicalDegradation,0.6569,0.798,False
+soil-erosion,soil erosion,161499,,https://w3id.org/eusoilvoc#SoilErosion,0.8849,0.9997,True
+nir,nitrogen,162952,,https://w3id.org/eusoilvoc#Nitrogen,0.6209,0.8531,True
+temperature,climate,161518,,https://w3id.org/eusoilvoc#Climate,0.8469,0.6987,True
+geophysics,physiography,161520,,https://w3id.org/eusoilvoc#Physiography,0.8162,0.9783,True
+soil carbon modeling,soil carbon density,161564,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8826,0.9006,True
+meteorology & atmospheric sciences,weather,161566,,https://w3id.org/eusoilvoc#Weather,0.8325,0.62,True
+soil minerals,soil mineral matter,161571,,https://w3id.org/eusoilvoc#SoilMineralMatter,0.9759,0.9347,False
+py-gc/ms,pHKCl_ratio1-2.5,161572,,https://w3id.org/eusoilvoc#pHProcedure-pHKCl_ratio1-2.5,0.607,0.6973,True
+radiocarbon; soil organic matter; mineral-associated organic matter; py-gc/ms; soil minerals,soil organic matter,161575,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.7237,0.7811,True
+terrestrisch,termites,161465,,https://w3id.org/eusoilvoc#Termites,0.8902,0.6904,True
+soiltype,soil types,161470,,https://w3id.org/eusoilvoc#SoilTypes,0.9674,0.9999,True
+p33 - chimie et physique du sol,soil physical properties,162956,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,0.6858,0.6225,True
+environmental degradation,soil degradation,161624,,https://w3id.org/eusoilvoc#SoilDegradation,0.8212,0.8968,True
+land-use,land use,161627,,https://w3id.org/eusoilvoc#LandUse,0.9591,0.9998,True
+soil carbon stabilization,soil carbon density,161632,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8468,0.6644,True
+soil carbon data,soil carbon density,161633,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.9182,0.9513,True
+soil bacteria,soil microfauna,161023,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9362,0.8274,True
+biota,soil biota,161073,,https://w3id.org/eusoilvoc#SoilBiota,0.671,0.6616,False
+sem,soil organic matter,161079,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8769,0.6577,True
+xrf,Total_xrf,161654,,https://w3id.org/eusoilvoc#totalElementsProcedure-Total_xrf,0.7692,0.9774,True
+mineral soil,soil mineral matter,161683,,https://w3id.org/eusoilvoc#SoilMineralMatter,0.9686,0.9687,False
+decomposition,peat decompostion,161685,,https://w3id.org/eusoilvoc#PeatDecompostion,0.6521,0.901,True
+abundance,mottle abundance,161690,,https://w3id.org/eusoilvoc#MottleAbundance,0.7261,0.7878,True
+soil biology,soil biological properties,161699,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.941,0.9994,True
+microfauna,soil microfauna,161708,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9369,0.685,True
+wood decomposition,peat decompostion,161713,,https://w3id.org/eusoilvoc#PeatDecompostion,0.491,0.6443,True
+ecological niche,habitats,161719,,https://w3id.org/eusoilvoc#Habitats,0.8921,0.6403,True
+manganese deficiency,manganese exchangeable bases,161735,,https://w3id.org/eusoilvoc#ManganeseExchangeableBases,0.6701,0.9357,True
+soil microhabitat,soil microfauna,161748,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9243,0.9671,True
+soil organic matter fractions,soil organic matter class,161759,,https://w3id.org/eusoilvoc#SoilOrganicMatterClass,0.824,0.9389,True
+soil hydraulic properties,soil hydraulic conductivity,161782,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,0.926,0.8657,True
+sols,soil,162974,,https://w3id.org/eusoilvoc#Soil,0.9047,0.9441,True
+land use/land cover,land use,163064,,https://w3id.org/eusoilvoc#LandUse,0.8709,0.9997,True
+sand content,fine sand,163079,,https://w3id.org/eusoilvoc#FineSand,0.9187,0.9549,True
+water erosion,soil erosion,161810,,https://w3id.org/eusoilvoc#SoilErosion,0.8524,0.9859,True
+wind erosion,soil erosion,161814,,https://w3id.org/eusoilvoc#SoilErosion,0.6597,0.7805,True
+productividad de la tierra,soil productivity,161823,,https://w3id.org/eusoilvoc#SoilProductivity,0.9573,0.926,True
+soil health monitoring,soil health,161834,,https://w3id.org/eusoilvoc#SoilHealth,0.8735,0.896,True
+crop classification,crop class,161838,,https://w3id.org/eusoilvoc#CropClass,0.8267,0.9999,True
+degradation,soil degradation,161843,,https://w3id.org/eusoilvoc#SoilDegradation,0.8041,0.9103,True
+soil microbes,soil microfauna,161845,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9525,0.9985,True
+geography,geology,161857,,https://w3id.org/eusoilvoc#Geology,0.7568,0.7088,True
+soil organic carbon density,soil carbon density,161872,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.9472,1.0,True
+particle size distribution,particle size fraction sum,161880,,https://w3id.org/eusoilvoc#ParticleSizeFractionSum,0.7479,0.9976,True
+function,soil functions,161884,,https://w3id.org/eusoilvoc#SoilFunctions,0.5277,0.7846,True
+land class,land use class,161888,,https://w3id.org/eusoilvoc#LandUseClass,0.8993,0.9996,True
+soil mission,soil functions,161901,,https://w3id.org/eusoilvoc#SoilFunctions,0.8449,0.8614,True
+soil health indicators,soil health,161905,,https://w3id.org/eusoilvoc#SoilHealth,0.9308,0.8136,True
+atmospheric conditions,weather,161908,,https://w3id.org/eusoilvoc#Weather,0.905,0.8877,True
+soil samples,soil depth sampled,161927,,https://w3id.org/eusoilvoc#SoilDepthSampled,0.9201,0.989,True
+groundwater,groundwater depth,161931,,https://w3id.org/eusoilvoc#GroundwaterDepth,0.8808,0.8012,True
+"soil, detection, microbial inoculants, bacteria, fungi, biofertilisers, biopesticides, microorganisms",soil microfauna,161948,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.8392,0.6441,True
+long‐distance dispersal (ldd),longitudinal dispersion,162032,,https://w3id.org/eusoilvoc#LongitudinalDispersion,0.5523,0.6227,False
+total organic carbon,soil total carbon,162045,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.7138,0.9946,True
+soil carbon sequestration,soil carbon density,162056,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8268,0.987,True
+velikosti por,soil pore size,162074,,https://w3id.org/eusoilvoc#SoilPoreSize,0.7028,0.9447,True
+ekosistem,habitats,162085,,https://w3id.org/eusoilvoc#Habitats,0.7839,0.9604,True
+soil organic matter (som),soil organic matter,162086,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.9825,1.0,True
+zoology,habitats,162111,,https://w3id.org/eusoilvoc#Habitats,0.7332,0.6477,True
+insects,termites,162121,,https://w3id.org/eusoilvoc#Termites,0.756,0.6131,True
+grain yield,crop yield,162156,,https://w3id.org/eusoilvoc#CropYield,0.7592,0.6593,True
+tenebrio,slope,162255,,https://w3id.org/eusoilvoc#Slope,0.787,0.8115,True
+zoologie,habitats,162272,,https://w3id.org/eusoilvoc#Habitats,0.7364,0.6757,True
+zoología,habitats,162278,,https://w3id.org/eusoilvoc#Habitats,0.7448,0.823,True
+meteorology,weather,162349,,https://w3id.org/eusoilvoc#Weather,0.9041,0.8487,True
+phb,soil pH,162415,,https://w3id.org/eusoilvoc#SoilpH,0.6569,0.6173,True
+magnetics,magnesium,162582,,https://w3id.org/eusoilvoc#Magnesium,0.4748,0.7544,True
+tl1-4050,Total_tp05,162489,,https://w3id.org/eusoilvoc#totalElementsProcedure-Total_tp05,0.6629,0.7239,True
+soil health assessment,soil health,163137,,https://w3id.org/eusoilvoc#SoilHealth,0.9256,0.9622,True
+pentanes,termites,162638,,https://w3id.org/eusoilvoc#Termites,0.5813,0.6663,True
+ddc:,OrgC_dc,162648,,https://w3id.org/eusoilvoc#carbonOrganicProcedure-OrgC_dc,0.6705,0.8278,True
+porosity,soil porosity,162708,,https://w3id.org/eusoilvoc#SoilPorosity,0.7605,0.9393,True
+seed priming,seedling emergence,162745,,https://w3id.org/eusoilvoc#SeedlingEmergence,0.8116,0.6803,True
+grain yield,crop yield,162747,,https://w3id.org/eusoilvoc#CropYield,0.7592,0.6593,True
+water content,soil moisture,162751,,https://w3id.org/eusoilvoc#SoilMoisture,0.8103,0.9903,True
+siirtymämetallit,copper,162779,,https://w3id.org/eusoilvoc#Copper,0.6992,0.7777,True
+mineral composition,mineral conc nature,162816,,https://w3id.org/eusoilvoc#MineralConcNature,0.7908,0.9261,True
+land cover change,land use,162824,,https://w3id.org/eusoilvoc#LandUse,0.7282,0.7201,True
+land use and land cover analysis,land use,162834,,https://w3id.org/eusoilvoc#LandUse,0.8608,0.9963,True
+oxides,ions,162849,,https://w3id.org/eusoilvoc#Ions,0.6174,0.7066,True
+metals,copper,162851,,https://w3id.org/eusoilvoc#Copper,0.7868,0.6341,True
+soil ecosystems,soil environmental functions,163174,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,0.9092,0.6918,False
+soil compounds,soil particles,163195,,https://w3id.org/eusoilvoc#SoilParticles,0.8902,0.7951,False
+soil microbial community,soil microfauna,163234,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9449,0.8905,True
+crops,crop class,163243,,https://w3id.org/eusoilvoc#CropClass,0.8425,0.6789,True
+calcium carbonate,total carbonate equivalent,163279,,https://w3id.org/eusoilvoc#TotalCarbonateEquivalent,0.7412,0.975,True
+silk,silt,163711,,https://w3id.org/eusoilvoc#Silt,0.5299,0.6996,True
+cultural ecosystem services,cultural services,163326,,https://w3id.org/eusoilvoc#CulturalServices,0.8352,1.0,True
+/dk/atira/pure/sustainabledevelopmentgoals/affordable_and_clean_energy; name=sdg 7 - affordable and clean energy,agricultural sustainability,163357,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.4358,0.7184,False
+mineral soils,soil mineral matter,163365,,https://w3id.org/eusoilvoc#SoilMineralMatter,0.9577,0.9762,False
+géologie et minéralogie,geology,163402,,https://w3id.org/eusoilvoc#Geology,0.9285,0.9662,True
+температура,climate,163427,,https://w3id.org/eusoilvoc#Climate,0.8381,0.7574,True
+соленость,soil salinity,163430,,https://w3id.org/eusoilvoc#SoilSalinity,0.8119,0.8481,True
+iron particles,iron total elements,163440,,https://w3id.org/eusoilvoc#IronTotalElements,0.7973,0.8148,True
+органические вещества,soil organic matter,163445,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8288,0.6723,True
+деградация,soil degradation,163446,,https://w3id.org/eusoilvoc#SoilDegradation,0.8237,0.7865,True
+наземный углерод,soil organic carbon,163469,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8715,0.8916,True
+почвы,soil,163472,,https://w3id.org/eusoilvoc#Soil,0.9306,0.8707,True
+total,Total_unk,163499,,https://w3id.org/eusoilvoc#totalElementsProcedure-Total_unkn,0.7349,0.6292,True
+oden,salts,163531,,https://w3id.org/eusoilvoc#Salts,0.826,0.7302,True
+"carbon, organic, total",soil total carbon,163555,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.6927,0.9916,True
+climate science,climate,163565,,https://w3id.org/eusoilvoc#Climate,0.908,0.9134,True
+klimatforskning,climate,163566,,https://w3id.org/eusoilvoc#Climate,0.915,0.6193,True
+klimatvetenskap,climate,163569,,https://w3id.org/eusoilvoc#Climate,0.9122,0.7979,True
+сброс,runoff,163572,,https://w3id.org/eusoilvoc#Runoff,0.8753,0.7764,True
+"depth, water",soil depth,163608,,https://w3id.org/eusoilvoc#SoilDepth,0.8117,0.6107,True
+nickel,nitrogen,163652,,https://w3id.org/eusoilvoc#Nitrogen,0.5548,0.9715,True
+penetration resistance; soil protection; minimum tillage; mechanisation; european law,soil penetration resistance,163683,,https://w3id.org/eusoilvoc#SoilPenetrationResistance,0.7569,0.6817,True
+sustainable agriculture intensification,agricultural sustainability,163692,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.8168,0.611,False
+nitrate nitrogen,nitrogen total,163733,,https://w3id.org/eusoilvoc#NitrogenTotal,0.871,0.8139,True
+"nitrogen, inorganic, dissolved/nitrogen, total dissolved ratio",nitrogen total,163734,,https://w3id.org/eusoilvoc#NitrogenTotal,0.8027,0.8469,True
+"total organic carbon analyzer (toc-vcph/tnm-1), shimadzu",TotC_dc-ht-analyser,163741,,https://w3id.org/eusoilvoc#carbonTotalProcedure-TotC_dc-ht-analyser,0.5308,0.7216,True
+"nitrogen, total dissolved",nitrogen total,163745,,https://w3id.org/eusoilvoc#NitrogenTotal,0.8404,0.9174,True
+sum cations,cation sum,163752,,https://w3id.org/eusoilvoc#CationSum,0.9601,0.9994,True
+ammonium nitrogen,nitrogen total,163765,,https://w3id.org/eusoilvoc#NitrogenTotal,0.784,0.8232,True
+conductivity,soil electrical conductivity,163774,,https://w3id.org/eusoilvoc#SoilElectricalConductivity,0.6166,0.8685,True
+compostos orgànics,soil organic components,163815,,https://w3id.org/eusoilvoc#SoilOrganicComponents,0.6171,0.7461,False
+flow intermittence,interflow,163848,,https://w3id.org/eusoilvoc#Interflow,0.5578,0.6959,False
+gas-exchange,soil gaseous exchange,163884,,https://w3id.org/eusoilvoc#SoilGaseousExchange,0.5943,0.7558,False
+fulvic acids,FulAcidC_unk,163903,,https://w3id.org/eusoilvoc#organicMatterProcedure-FulAcidC_unkn,0.6634,0.9391,True
+fulvic-acids,FulAcidC_unk,163908,,https://w3id.org/eusoilvoc#organicMatterProcedure-FulAcidC_unkn,0.7251,0.9519,True
+nitrogen fixation,biological nitrogen fixation,163913,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.9192,0.9999,True
+sustainable land management,land use,163920,,https://w3id.org/eusoilvoc#LandUse,0.7915,0.7836,True
+bulk-density,bulk density mineral,163938,,https://w3id.org/eusoilvoc#BulkDensityMineral,0.7263,0.9974,True
+land-use change,land use,163948,,https://w3id.org/eusoilvoc#LandUse,0.8547,0.9687,True
+waste management and disposal,waste disposal,163963,,https://w3id.org/eusoilvoc#WasteDisposal,0.9657,0.9818,True
+"land use, land-use change and forestry",land use,164019,,https://w3id.org/eusoilvoc#LandUse,0.7613,0.9955,True
+degradación de tierras,soil degradation,164050,,https://w3id.org/eusoilvoc#SoilDegradation,0.9218,0.9753,True
+santé des sols,soil health,164062,,https://w3id.org/eusoilvoc#SoilHealth,0.8857,0.9979,True
+salud de los suelos,soil health,164064,,https://w3id.org/eusoilvoc#SoilHealth,0.9007,0.9969,True
+soil physical-properties,soil physical properties,164074,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,0.9681,0.9956,True
+soil organic carbon dynamics,soil carbon density,164088,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8537,0.9946,True
+crop yields,crop yield,164112,,https://w3id.org/eusoilvoc#CropYield,0.9879,0.9998,True
+plant productivity,soil productivity,164172,,https://w3id.org/eusoilvoc#SoilProductivity,0.7831,0.9598,True
+2511.02 biología de suelos,soil biological properties,164189,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.8482,0.6991,True
+soil microbial ecology,soil microfauna,164206,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9448,0.8964,True
+umweltatlas,environmental factors,164235,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.9399,0.6497,True
+bodenfunktionskriterien,soil functions,164237,,https://w3id.org/eusoilvoc#SoilFunctions,0.5945,0.8733,True
+schadstoffbindungsvermögen,cation exchange capacity,164243,,https://w3id.org/eusoilvoc#CationExchangeCapacity,0.7053,0.9364,True
+soil functions data - /documentspublications,soil functions,164255,,https://w3id.org/eusoilvoc#SoilFunctions,0.8337,0.8915,True
+soil threats data,soil threats,164257,,https://w3id.org/eusoilvoc#SoilThreats,0.9248,0.9992,True
+actual evapotranspiration,evapotranspiration,164259,,https://w3id.org/eusoilvoc#Evapotranspiration,0.9681,0.9518,True
+soil functions data - /resource-type/soil-threats-data,soil functions,164278,,https://w3id.org/eusoilvoc#SoilFunctions,0.8606,0.6303,True
+cec (cation exchange capacity),cation exchange capacity effective,164279,,https://w3id.org/eusoilvoc#CationExchangeCapacityEffective,0.7814,1.0,True
+soil threats data - /documentspublications,soil threats,164282,,https://w3id.org/eusoilvoc#SoilThreats,0.851,0.9363,True
+ecosystem functions,ecosystem services,164287,,https://w3id.org/eusoilvoc#EcosystemServices,0.789,0.9164,True
+soil governance,soil management,164290,,https://w3id.org/eusoilvoc#SoilManagement,0.9104,0.8861,True
+soil degradation processes,soil chemical degradative processes,164291,,https://w3id.org/eusoilvoc#SoilChemicalDegradativeProcesses,0.9227,0.982,False
+soil functions data,soil functions,164292,,https://w3id.org/eusoilvoc#SoilFunctions,0.9401,0.9927,True
+calcium carbonate,total carbonate equivalent,164340,,https://w3id.org/eusoilvoc#TotalCarbonateEquivalent,0.7412,0.975,True
+boring,boron,164355,,https://w3id.org/eusoilvoc#Boron,0.4405,0.6967,True
+suoli,soil,164372,,https://w3id.org/eusoilvoc#Soil,0.9367,0.9666,True
+zn,zinc,164391,,https://w3id.org/eusoilvoc#Zinc,0.8153,0.7807,True
+bodemkunde,soil,164409,,https://w3id.org/eusoilvoc#Soil,0.838,0.7846,True
+bodem,soil,164421,,https://w3id.org/eusoilvoc#Soil,0.7028,0.6056,True
+bodemeenheden,soil properties,164426,,https://w3id.org/eusoilvoc#SoilProperties,0.6336,0.7052,True
+organischer kohlenstoffvorrat,soil organic carbon loss,164440,,https://w3id.org/eusoilvoc#SOCLoss,0.7153,0.657,False
+effektive kationenaustauschkapazitäten,cation exchange capacity effective,164444,,https://w3id.org/eusoilvoc#CationExchangeCapacityEffective,0.7839,1.0,True
+bodenformen,soil structure,164449,,https://w3id.org/eusoilvoc#SoilStructure,0.8098,0.7377,True
+körnung,slope,164472,,https://w3id.org/eusoilvoc#Slope,0.5748,0.6917,True
+stammnährkraftstufe,soil hydraulic conductivity,164480,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,0.5557,0.724,True
+grondwaterspiegeldiepte,groundwater depth,164495,,https://w3id.org/eusoilvoc#GroundwaterDepth,0.841,0.9262,True
+wdm,VMC_d-ww,164498,,https://w3id.org/eusoilvoc#moistureContentProcedure-VMC_d-ww,0.6286,0.988,True
+speicherung,waste disposal,164511,,https://w3id.org/eusoilvoc#WasteDisposal,0.5595,0.7255,True
+wasserhaushalt,water quality,164525,,https://w3id.org/eusoilvoc#WaterQuality,0.8583,0.9877,True
+terreno,soil,164533,,https://w3id.org/eusoilvoc#Soil,0.9418,0.6989,True
+bodenrichtwertzonen,soil quality,169439,,https://w3id.org/eusoilvoc#SoilQuality,0.8514,0.6672,True
+dipartimento,inputs,166623,,https://w3id.org/eusoilvoc#Inputs,0.8355,0.6651,True
+elevaciones,slope,169447,,https://w3id.org/eusoilvoc#Slope,0.8191,0.6185,True
+basensättigung,base saturation,166675,,https://w3id.org/eusoilvoc#BaseSaturation,0.8836,0.9971,True
+atmospheric conditions,weather,166693,,https://w3id.org/eusoilvoc#Weather,0.905,0.8877,True
+bodem,soil,164561,,https://w3id.org/eusoilvoc#Soil,0.7028,0.6056,True
+soil layer,soil,164571,,https://w3id.org/eusoilvoc#Soil,0.9015,0.9871,True
+metals and elements,zinc,164579,,https://w3id.org/eusoilvoc#Zinc,0.6963,0.7541,True
+bodenwasserhaushalt,soil water potential,164601,,https://w3id.org/eusoilvoc#SoilWaterPotential,0.7654,0.8987,True
+wasserspeicherfähigkeit,water storage capacity,164604,,https://w3id.org/eusoilvoc#WaterStorageCapacity,0.8945,0.9786,False
+landwirtschaft,land use,164611,,https://w3id.org/eusoilvoc#LandUse,0.8573,0.6765,True
+landwirtschaftliche bewirtschaftung,land use,164614,,https://w3id.org/eusoilvoc#LandUse,0.8817,0.6275,True
+landwirtschaft,land use,164615,,https://w3id.org/eusoilvoc#LandUse,0.8573,0.6765,True
+sols,soil,164617,,https://w3id.org/eusoilvoc#Soil,0.9047,0.9441,True
+usage des sols,land use,164618,,https://w3id.org/eusoilvoc#LandUse,0.9479,0.9731,True
+sol contaminé,soil pollution,164620,,https://w3id.org/eusoilvoc#SoilPollution,0.6801,0.9187,True
+arealuri de sol,land cover,164634,,https://w3id.org/eusoilvoc#LandCover,0.8034,0.6185,True
+înveliş de sol,soil sealing,164636,,https://w3id.org/eusoilvoc#SoilSealing,0.8837,0.8651,True
+calitate a solului,soil quality,164637,,https://w3id.org/eusoilvoc#SoilQuality,0.9647,0.9951,True
+bodenkunde,soil,164680,,https://w3id.org/eusoilvoc#Soil,0.8329,0.8028,True
+landwirtschaft,land use,164701,,https://w3id.org/eusoilvoc#LandUse,0.8573,0.6765,True
+wms,VMC_ud,164703,,https://w3id.org/eusoilvoc#moistureContentProcedure-VMC_ud,0.4856,0.9093,True
+wasserspeicherfähigkeit,water storage capacity,164707,,https://w3id.org/eusoilvoc#WaterStorageCapacity,0.8945,0.9786,False
+wasserkapazität,water quality,164708,,https://w3id.org/eusoilvoc#WaterQuality,0.8999,0.9751,True
+verdunstung,mulching,164735,,https://w3id.org/eusoilvoc#Mulching,0.9209,0.8174,True
+natürlicher wasserhaushalt,water quality,164739,,https://w3id.org/eusoilvoc#WaterQuality,0.7897,0.6408,True
+bodensystematik,soil structure,164746,,https://w3id.org/eusoilvoc#SoilStructure,0.8209,0.6457,True
+ondergrond,soil,164751,,https://w3id.org/eusoilvoc#Soil,0.8448,0.6868,True
+landbouw,land use,164752,,https://w3id.org/eusoilvoc#LandUse,0.8226,0.8531,True
+totaal aan organische koolstof,soil total carbon,164754,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.6807,0.9501,True
+bodem,soil,164758,,https://w3id.org/eusoilvoc#Soil,0.7028,0.6056,True
+ondergrond,soil,164762,,https://w3id.org/eusoilvoc#Soil,0.8448,0.6868,True
+soil map,soil,164820,,https://w3id.org/eusoilvoc#Soil,0.8809,0.6106,True
+bulk soil,bulk density whole soil,164835,,https://w3id.org/eusoilvoc#BulkDensityWholeSoil,0.8871,0.8055,True
+avaliable water capacity,available water holding capacity,164847,,https://w3id.org/eusoilvoc#AvailableWaterHoldingCapacity,0.8969,0.6762,True
+calcium carbonate,total carbonate equivalent,164850,,https://w3id.org/eusoilvoc#TotalCarbonateEquivalent,0.7412,0.975,True
+habitat e biotopi,habitats,164854,,https://w3id.org/eusoilvoc#Habitats,0.8686,0.9035,True
+incendio,fog,164855,,https://w3id.org/eusoilvoc#Fog,0.5325,0.6718,True
+dienst objecttoegang,provisioning services,164883,,https://w3id.org/eusoilvoc#ProvisioningServices,0.706,0.8112,True
+bodem,soil,164890,,https://w3id.org/eusoilvoc#Soil,0.7028,0.6056,True
+landgebruik,land use,164894,,https://w3id.org/eusoilvoc#LandUse,0.9825,0.9999,True
+habitats en biotopen,habitats,164895,,https://w3id.org/eusoilvoc#Habitats,0.873,0.689,True
+bodenauslaugung,soil salinization,164904,,https://w3id.org/eusoilvoc#SoilSalinization,0.7722,0.7358,True
+bodenbelastung,soil productivity,164906,,https://w3id.org/eusoilvoc#SoilProductivity,0.8395,0.9191,True
+bodenfeuchtigkeit,soil moisture,164911,,https://w3id.org/eusoilvoc#SoilMoisture,0.9014,0.6683,True
+bodengestaltung,soil structure,164914,,https://w3id.org/eusoilvoc#SoilStructure,0.7804,0.7064,True
+bodennutzbarkeit,soil productivity,164919,,https://w3id.org/eusoilvoc#SoilProductivity,0.7004,0.7505,True
+bodeneigenschaften,soil properties,164922,,https://w3id.org/eusoilvoc#SoilProperties,0.7962,0.9873,True
+bodenverbreitung,land cover,164928,,https://w3id.org/eusoilvoc#LandCover,0.813,0.7447,True
+wastewater reuse,waste disposal,164937,,https://w3id.org/eusoilvoc#WasteDisposal,0.7593,0.7591,True
+geografische bezeichnungen,geology,164941,,https://w3id.org/eusoilvoc#Geology,0.651,0.6097,True
+bodenbedeckung,land cover,164943,,https://w3id.org/eusoilvoc#LandCover,0.8305,0.8677,True
+meteorology,weather,164986,,https://w3id.org/eusoilvoc#Weather,0.9041,0.8487,True
+bodemtextuur,soil texture,165005,,https://w3id.org/eusoilvoc#SoilTexture,0.9303,0.9586,True
+habitats et biotopes,habitats,165010,,https://w3id.org/eusoilvoc#Habitats,0.871,0.8917,True
+arbres,trees,165017,,https://w3id.org/eusoilvoc#Trees,0.989,0.9525,True
+uso del suolo,land use,165019,,https://w3id.org/eusoilvoc#LandUse,0.9278,0.8985,True
+uso suolo,land use,165025,,https://w3id.org/eusoilvoc#LandUse,0.7049,0.8575,True
+drainage,peat drainage,165041,,https://w3id.org/eusoilvoc#PeatDrainage,0.8319,0.6238,True
+geography,geology,165046,,https://w3id.org/eusoilvoc#Geology,0.7568,0.7088,True
+streek,slope,165050,,https://w3id.org/eusoilvoc#Slope,0.6779,0.8789,True
+landbeheer,land use,165054,,https://w3id.org/eusoilvoc#LandUse,0.8517,0.8339,True
+bodemgesteldheid,soil properties,165063,,https://w3id.org/eusoilvoc#SoilProperties,0.869,0.8376,True
+bodemdegradatie,soil degradation,165068,,https://w3id.org/eusoilvoc#SoilDegradation,0.9483,0.9956,True
+bodemstructuur,soil structure,165069,,https://w3id.org/eusoilvoc#SoilStructure,0.8383,0.957,True
+bodemgebruik,land use,165074,,https://w3id.org/eusoilvoc#LandUse,0.9255,0.9562,True
+bodemverdichting,soil sorption,165079,,https://w3id.org/eusoilvoc#SoilSorption,0.6643,0.6902,True
+bodemvruchtbaarheid,soil productivity,165082,,https://w3id.org/eusoilvoc#SoilProductivity,0.8969,0.9637,True
+geowissenschaften,geology,165090,,https://w3id.org/eusoilvoc#Geology,0.926,0.9399,True
+psff,KSat_calcul-ptf,165096,,https://w3id.org/eusoilvoc#hydraulicConductivityProcedure-KSat_calcul-ptf,0.6175,0.6393,True
+datenspeicherung,cation exchange capacity,165120,,https://w3id.org/eusoilvoc#CationExchangeCapacity,0.4336,0.6504,True
+datenaustausch,cation exchange,165122,,https://w3id.org/eusoilvoc#CationExchange,0.5674,0.9184,False
+bodenschicht,soil structure,165129,,https://w3id.org/eusoilvoc#SoilStructure,0.8112,0.7776,True
+bodenfeuchtigkeit,soil moisture,165133,,https://w3id.org/eusoilvoc#SoilMoisture,0.9014,0.6683,True
+wasserspeicherung,water storage capacity,165134,,https://w3id.org/eusoilvoc#WaterStorageCapacity,0.8409,0.918,False
+speicherfähigkeit,water storage capacity,165135,,https://w3id.org/eusoilvoc#WaterStorageCapacity,0.6547,0.6748,False
+bodenbelastung,soil productivity,165137,,https://w3id.org/eusoilvoc#SoilProductivity,0.8395,0.9191,True
+schwermetall,cadmium total elements,165143,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.6451,0.6467,True
+occupation des terres,land use,165167,,https://w3id.org/eusoilvoc#LandUse,0.8698,0.9796,True
+využitie územia,land use,165174,,https://w3id.org/eusoilvoc#LandUse,0.87,0.8282,True
+bodenbedeckung,land cover,165194,,https://w3id.org/eusoilvoc#LandCover,0.8305,0.8677,True
+oltrepò,slope,165234,,https://w3id.org/eusoilvoc#Slope,0.8729,0.6866,True
+resurse minerale,mineral contents,165249,,https://w3id.org/eusoilvoc#MineralContents,0.9236,0.7694,True
+utilizarea terenului,land use,165257,,https://w3id.org/eusoilvoc#LandUse,0.9759,0.9935,True
+elevazione,slope,165266,,https://w3id.org/eusoilvoc#Slope,0.8278,0.6627,True
+incendi,runoff,165269,,https://w3id.org/eusoilvoc#Runoff,0.5098,0.6143,True
+bodenfeuchtigkeit,soil moisture,166720,,https://w3id.org/eusoilvoc#SoilMoisture,0.9014,0.6683,True
+carbone organique,soil organic carbon,165283,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9134,0.9223,True
+carbone organique total,soil total carbon,165291,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.7184,0.9899,True
+matière organique,soil organic matter,165294,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8794,0.8623,True
+culture,cultural services,165300,,https://w3id.org/eusoilvoc#CulturalServices,0.8702,0.9232,True
+cos,soil organic carbon,165315,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8174,0.8335,True
+teneur en carbone,soil carbon density,165319,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.607,0.7951,True
+foreste e uso del suolo,land use forests,165338,,https://w3id.org/eusoilvoc#LandUseForests,0.8843,0.8487,True
+bodenkohlenstoff,soil pollution,165349,,https://w3id.org/eusoilvoc#SoilPollution,0.7212,0.8639,True
+componente geologica,geology,165360,,https://w3id.org/eusoilvoc#Geology,0.932,0.8399,True
+liquefazione,mulching,165369,,https://w3id.org/eusoilvoc#Mulching,0.6638,0.734,True
+půda,soil,166726,,https://w3id.org/eusoilvoc#Soil,0.889,0.8029,True
+půda,soil,166728,,https://w3id.org/eusoilvoc#Soil,0.889,0.8029,True
+typ půdní,soil types,166729,,https://w3id.org/eusoilvoc#SoilTypes,0.9602,0.6646,True
+sealing,soil sealing,165444,,https://w3id.org/eusoilvoc#SoilSealing,0.6827,0.861,True
+habitats and biotopes,habitats,165449,,https://w3id.org/eusoilvoc#Habitats,0.8558,0.7657,True
+forest,land use forests,165450,,https://w3id.org/eusoilvoc#LandUseForests,0.7609,0.6931,True
+forest biodiversity,land use forests,165455,,https://w3id.org/eusoilvoc#LandUseForests,0.7024,0.8301,True
+water,water quality,165458,,https://w3id.org/eusoilvoc#WaterQuality,0.909,0.6556,True
+soil fertilisation,soil productivity,165477,,https://w3id.org/eusoilvoc#SoilProductivity,0.8742,0.9779,True
+soil map,soil,165478,,https://w3id.org/eusoilvoc#Soil,0.8809,0.6106,True
+ph-value,soil pH,165482,,https://w3id.org/eusoilvoc#SoilpH,0.6454,0.741,True
+total organic carbon,soil total carbon,165484,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.7138,0.9946,True
+land,land use,165502,,https://w3id.org/eusoilvoc#LandUse,0.8241,0.8113,True
+salinization,soil salinization,165506,,https://w3id.org/eusoilvoc#SoilSalinization,0.731,0.9895,True
+soil contamination,soil pollution,165512,,https://w3id.org/eusoilvoc#SoilPollution,0.9196,0.9928,True
+půda,soil,166750,,https://w3id.org/eusoilvoc#Soil,0.889,0.8029,True
+bodenbeschaffenheit,soil properties,166755,,https://w3id.org/eusoilvoc#SoilProperties,0.8006,0.9128,True
+bodenartenschichtung,soil sorption,166758,,https://w3id.org/eusoilvoc#SoilSorption,0.8154,0.8235,True
+zaštita šuma,conservation tillage,166769,,https://w3id.org/eusoilvoc#ConservationTillage,0.7092,0.7335,True
+habitats and biotopes,habitats,166773,,https://w3id.org/eusoilvoc#Habitats,0.8558,0.7657,True
+available water storage capacity,available water holding capacity,166776,,https://w3id.org/eusoilvoc#AvailableWaterHoldingCapacity,0.8882,0.9957,True
+heavy metal,cadmium total elements,166796,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.6034,0.8602,True
+pollution,soil pollution,166799,,https://w3id.org/eusoilvoc#SoilPollution,0.8441,0.818,True
+grunnforurensning,soil pollution,166814,,https://w3id.org/eusoilvoc#SoilPollution,0.8477,0.7058,True
+landform,major land forms,166815,,https://w3id.org/eusoilvoc#MajorLandForms,0.8041,0.9953,True
+subsoil reference bulk density,bulk density mineral,165608,,https://w3id.org/eusoilvoc#BulkDensityMineral,0.625,0.985,True
+bodenkunde,soil,165625,,https://w3id.org/eusoilvoc#Soil,0.8329,0.8028,True
+bodennutzbarkeit,soil productivity,165626,,https://w3id.org/eusoilvoc#SoilProductivity,0.7004,0.7505,True
+bodenschicht,soil structure,165629,,https://w3id.org/eusoilvoc#SoilStructure,0.8112,0.7776,True
+bodenstruktur,soil structure,165631,,https://w3id.org/eusoilvoc#SoilStructure,0.9024,0.9443,True
+peat extraction,peat,165682,,https://w3id.org/eusoilvoc#Peat,0.7915,0.6837,True
+maankäyttö,land use,165685,,https://w3id.org/eusoilvoc#LandUse,0.9614,0.9678,True
+suot,silt,165692,,https://w3id.org/eusoilvoc#Silt,0.8814,0.9432,True
+peatlands,peat,165694,,https://w3id.org/eusoilvoc#Peat,0.8968,0.8475,True
+peatland,peat,165705,,https://w3id.org/eusoilvoc#Peat,0.8109,0.7874,True
+saturated soil water content,soil moisture,165710,,https://w3id.org/eusoilvoc#SoilMoisture,0.9437,0.7431,True
+geovetenskap,geology,165722,,https://w3id.org/eusoilvoc#Geology,0.9247,0.87,True
+miljö,climate,165723,,https://w3id.org/eusoilvoc#Climate,0.7969,0.6555,True
+wasserkapazität,water quality,165763,,https://w3id.org/eusoilvoc#WaterQuality,0.8999,0.9751,True
+naturgefahr,environmental factors,165779,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.7772,0.6785,True
+subsoil ph (h2o),pHH2O_ratio1-2.5,165798,,https://w3id.org/eusoilvoc#pHProcedure-pHH2O_ratio1-2.5,0.6805,0.7536,True
+copertura-del-suolo,land cover,165839,,https://w3id.org/eusoilvoc#LandCover,0.8255,0.9512,True
+permeabilità,soil permeability,165846,,https://w3id.org/eusoilvoc#SoilPermeability,0.6431,0.9736,True
+soil characteristic,soil properties,169464,,https://w3id.org/eusoilvoc#SoilProperties,0.9613,0.9972,True
+forestale,land use forests,165884,,https://w3id.org/eusoilvoc#LandUseForests,0.7324,0.6747,True
+consumo-di-suolo,land use,165900,,https://w3id.org/eusoilvoc#LandUse,0.6191,0.9064,True
+lambro,slope,165902,,https://w3id.org/eusoilvoc#Slope,0.7721,0.6525,True
+soildepth,soil depth,165907,,https://w3id.org/eusoilvoc#SoilDepth,0.9968,0.9997,True
+soil-water-index,soil moisture,165915,,https://w3id.org/eusoilvoc#SoilMoisture,0.835,0.9257,True
+stem,slope,166885,,https://w3id.org/eusoilvoc#Slope,0.746,0.6189,True
+temperature,climate,165940,,https://w3id.org/eusoilvoc#Climate,0.8469,0.6987,True
+bodennutzbarkeit,soil productivity,165964,,https://w3id.org/eusoilvoc#SoilProductivity,0.7004,0.7505,True
+bodeneigenschaften,soil properties,165969,,https://w3id.org/eusoilvoc#SoilProperties,0.7962,0.9873,True
+bodengestaltung,soil structure,165970,,https://w3id.org/eusoilvoc#SoilStructure,0.7804,0.7064,True
+bodenauslaugung,soil salinization,165974,,https://w3id.org/eusoilvoc#SoilSalinization,0.7722,0.7358,True
+bodensystematik,soil structure,165977,,https://w3id.org/eusoilvoc#SoilStructure,0.8209,0.6457,True
+irrigated farming,irrigation,166015,,https://w3id.org/eusoilvoc#Irrigation,0.7487,0.6488,True
+zuurtegraad,slope,166028,,https://w3id.org/eusoilvoc#Slope,0.6818,0.7744,True
+mineralogische-samenstelling,mineral contents,166034,,https://w3id.org/eusoilvoc#MineralContents,0.8531,0.828,True
+wms,VMC_ud,166037,,https://w3id.org/eusoilvoc#moistureContentProcedure-VMC_ud,0.4856,0.9093,True
+soil hydraulic properties,soil hydraulic conductivity,166049,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,0.926,0.8657,True
+soil physics,soil,166050,,https://w3id.org/eusoilvoc#Soil,0.9055,0.9722,True
+soil organic carbon (soc) stock,soil organic carbon,166063,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8903,0.993,True
+bodengüte,soil texture,166906,,https://w3id.org/eusoilvoc#SoilTexture,0.8593,0.7224,True
+bodengefüge,land cover,166909,,https://w3id.org/eusoilvoc#LandCover,0.8881,0.7767,True
+terremoto,inundation,166097,,https://w3id.org/eusoilvoc#Inundation,0.5234,0.6997,True
+geologi,geology,166103,,https://w3id.org/eusoilvoc#Geology,0.9748,0.9979,True
+sand content,fine sand,166110,,https://w3id.org/eusoilvoc#FineSand,0.9187,0.9549,True
+géologie,geology,166916,,https://w3id.org/eusoilvoc#Geology,1.0,0.9994,True
+cum mo,soil organic matter,166168,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.7711,0.6745,True
+soilcare,soil health,166923,,https://w3id.org/eusoilvoc#SoilHealth,0.834,0.665,True
+forest cover,land use forests,166198,,https://w3id.org/eusoilvoc#LandUseForests,0.7105,0.8555,True
+tree stem,trees,166249,,https://w3id.org/eusoilvoc#Trees,0.8619,0.966,True
+soil co2,soil total carbon,166259,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.7938,0.9744,True
+sandy soils,soil sand contents,166262,,https://w3id.org/eusoilvoc#SoilSandContents,0.9441,0.6558,False
+clay soils,soil clay mineralogy,166264,,https://w3id.org/eusoilvoc#SoilClayMineralogy,0.9342,0.9893,False
+geologici,geology,166290,,https://w3id.org/eusoilvoc#Geology,0.9471,0.9885,True
+bakterijske celice,microorganisms,166314,,https://w3id.org/eusoilvoc#Microorganisms,0.8014,0.7551,True
+érosion-des-sols,soil erosion,166935,,https://w3id.org/eusoilvoc#SoilErosion,0.8177,0.9941,True
+microbiomes,microorganisms,166351,,https://w3id.org/eusoilvoc#Microorganisms,0.9583,0.6057,True
+soil bacteria,soil microfauna,166352,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9362,0.8274,True
+soil fungi,soil microfauna,166353,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.7928,0.712,True
+yield (agricultural),crop yield,166357,,https://w3id.org/eusoilvoc#CropYield,0.8663,0.7463,True
+crops,crop class,166949,,https://w3id.org/eusoilvoc#CropClass,0.8425,0.6789,True
+mullastik,soil texture,166376,,https://w3id.org/eusoilvoc#SoilTexture,0.9058,0.678,True
+mullalõimis,soil sealing,166382,,https://w3id.org/eusoilvoc#SoilSealing,0.9041,0.8222,True
+sealing,soil sealing,166385,,https://w3id.org/eusoilvoc#SoilSealing,0.6827,0.861,True
+carbonio-organico,soil organic carbon,166955,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8771,0.6122,True
+erosion;,soil erosion,166418,,https://w3id.org/eusoilvoc#SoilErosion,0.9799,0.6842,True
+soil formation;,soil structure,166420,,https://w3id.org/eusoilvoc#SoilStructure,0.8838,0.7186,True
+agricultural soils;,soil agricultural functions,166421,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,0.9192,0.884,False
+air pollution,air quality,166427,,https://w3id.org/eusoilvoc#AirQuality,0.8837,0.8515,True
+système de culture,cultural services,166477,,https://w3id.org/eusoilvoc#CulturalServices,0.6905,0.8604,True
+poroelasticity,textural porosity,166498,,https://w3id.org/eusoilvoc#TexturalPorosity,0.7625,0.8371,False
+kationenaustauschverhältnisse,cation exchange capacity,166523,,https://w3id.org/eusoilvoc#CationExchangeCapacity,0.8551,0.7739,True
+höhe,slope,166530,,https://w3id.org/eusoilvoc#Slope,0.8066,0.8934,True
+abundance,mottle abundance,166538,,https://w3id.org/eusoilvoc#MottleAbundance,0.7261,0.7878,True
+conventional tillage,conservation tillage,166542,,https://w3id.org/eusoilvoc#ConservationTillage,0.485,0.9267,True
+ombreggiatura,mulching,166554,,https://w3id.org/eusoilvoc#Mulching,0.8394,0.8619,True
+adsorptionsvermögen,cation exchange capacity,166570,,https://w3id.org/eusoilvoc#CationExchangeCapacity,0.64,0.6781,True
+carbone-organique-total,soil total carbon,167008,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.6669,0.9299,True
+carbone-organique,soil organic carbon,167011,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8874,0.7709,True
+matière-organique,soil organic matter,167013,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8392,0.6694,True
+culture,cultural services,167014,,https://w3id.org/eusoilvoc#CulturalServices,0.8702,0.9232,True
+biologie-du-sol,soil,167016,,https://w3id.org/eusoilvoc#Soil,0.5872,0.91,True
+sols,soil,167021,,https://w3id.org/eusoilvoc#Soil,0.9047,0.9441,True
+geologi,geology,167055,,https://w3id.org/eusoilvoc#Geology,0.9748,0.9979,True
+delfstoffen,salts,167068,,https://w3id.org/eusoilvoc#Salts,0.7313,0.7815,True
+klimaat,climate,167070,,https://w3id.org/eusoilvoc#Climate,0.9919,0.9984,True
+plant available phosphorus,phosphorus total elements,167075,,https://w3id.org/eusoilvoc#PhosphorusTotalElements,0.8108,0.9899,True
+available-field-capacity,available water holding capacity,167101,,https://w3id.org/eusoilvoc#AvailableWaterHoldingCapacity,0.4984,0.9837,True
+soil-physics,soil physical properties,167102,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,0.9232,0.9701,True
+land-use,land use,167279,,https://w3id.org/eusoilvoc#LandUse,0.9591,0.9998,True
+saturation,base saturation,167160,,https://w3id.org/eusoilvoc#BaseSaturation,0.7226,0.7465,True
+bodenschicht,soil structure,167173,,https://w3id.org/eusoilvoc#SoilStructure,0.8112,0.7776,True
+bodem,soil,167218,,https://w3id.org/eusoilvoc#Soil,0.7028,0.6056,True
+landgebruik,land use,167219,,https://w3id.org/eusoilvoc#LandUse,0.9825,0.9999,True
+climats,climate,167233,,https://w3id.org/eusoilvoc#Climate,0.979,0.9833,True
+land-cover,land cover,167281,,https://w3id.org/eusoilvoc#LandCover,0.9073,0.9999,True
+geo,geology,169527,,https://w3id.org/eusoilvoc#Geology,0.8401,0.8892,True
+dioxide,nitrogen,167328,,https://w3id.org/eusoilvoc#Nitrogen,0.6374,0.6372,True
+so,soil organic matter,167367,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8927,0.8991,True
+bodenkörper,soil,167368,,https://w3id.org/eusoilvoc#Soil,0.7238,0.6119,True
+soil structural units,soil structure,169572,,https://w3id.org/eusoilvoc#SoilStructure,0.9192,0.7609,True
+osservazione-della-terra,land cover,167410,,https://w3id.org/eusoilvoc#LandCover,0.7924,0.7525,True
+bioconversion,biological nitrogen fixation,167434,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.665,0.6639,True
+crop production,crop yield,167459,,https://w3id.org/eusoilvoc#CropYield,0.9149,0.6819,True
+esondazione,inundation,167477,,https://w3id.org/eusoilvoc#Inundation,0.9582,0.9377,True
+evapotranspiration from precipitation,evapotranspiration,167495,,https://w3id.org/eusoilvoc#Evapotranspiration,0.8477,0.882,True
+baumarteneignung,slope orientation,169610,,https://w3id.org/eusoilvoc#SlopeOrientation,0.8258,0.6633,True
+gesamtwasserhaushalt,soil water potential,169611,,https://w3id.org/eusoilvoc#SoilWaterPotential,0.7469,0.8587,True
+ekosysteemit,ecosystem services,167559,,https://w3id.org/eusoilvoc#EcosystemServices,0.8657,0.9064,True
+atmosphärische bedingungen,weather,167588,,https://w3id.org/eusoilvoc#Weather,0.8179,0.8802,True
+crop residues,crop residue mulch,167601,,https://w3id.org/eusoilvoc#CropResidueMulch,0.8441,0.8615,False
+nitrogen content,nitrogen total,167609,,https://w3id.org/eusoilvoc#NitrogenTotal,0.9296,0.7026,True
+crop production,crop yield,167633,,https://w3id.org/eusoilvoc#CropYield,0.9149,0.6819,True
+food production (agriculture),food production,167638,,https://w3id.org/eusoilvoc#FoodProduction,0.8993,0.6955,False
+irrigation farming,irrigation,167639,,https://w3id.org/eusoilvoc#Irrigation,0.9052,0.8019,True
+organic matter,soil organic matter,167647,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8594,0.9853,True
+soil biology,soil biological properties,167651,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.941,0.9994,True
+ekosystémové služby,ecosystem services,167653,,https://w3id.org/eusoilvoc#EcosystemServices,0.9836,0.9996,True
+pôdne vlastnosti,soil properties,167655,,https://w3id.org/eusoilvoc#SoilProperties,0.8774,0.9675,True
+degradation,soil degradation,167659,,https://w3id.org/eusoilvoc#SoilDegradation,0.8041,0.9103,True
+crop production,crop yield,167661,,https://w3id.org/eusoilvoc#CropYield,0.9149,0.6819,True
+temperature,climate,167681,,https://w3id.org/eusoilvoc#Climate,0.8469,0.6987,True
+mikro-organismit,microorganisms,167696,,https://w3id.org/eusoilvoc#Microorganisms,0.842,0.9991,True
+texture,texture lab class,167697,,https://w3id.org/eusoilvoc#TextureLabClass,0.7651,0.767,True
+microbial soil carbon,soil total carbon,167701,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.7819,0.9578,True
+soil resilience,soil structural resilience,167726,,https://w3id.org/eusoilvoc#SoilStructuralResilience,0.9706,0.7375,False
+soil functions; soil; management; climate;,soil functions,167755,,https://w3id.org/eusoilvoc#SoilFunctions,0.8953,0.9288,True
+soil functions soil management climate,soil functions,167756,,https://w3id.org/eusoilvoc#SoilFunctions,0.8874,0.6783,True
+ca,calcium,167773,,https://w3id.org/eusoilvoc#Calcium,0.7599,0.6612,True
+soil aggregates,soil aggregation,169621,,https://w3id.org/eusoilvoc#SoilAggregation,0.9394,0.9435,False
+landbouw,land use,167808,,https://w3id.org/eusoilvoc#LandUse,0.8226,0.8531,True
+totaal aan organische koolstof,soil total carbon,167817,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.6807,0.9501,True
+agricultural soil quality,soil quality,167841,,https://w3id.org/eusoilvoc#SoilQuality,0.9604,0.8186,True
+erosie,soil erosion,167880,,https://w3id.org/eusoilvoc#SoilErosion,0.9526,0.6214,True
+soil organic carbon sequestration potential,soil carbon density,167890,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.812,0.9447,True
+total nitrogen,nitrogen total,167894,,https://w3id.org/eusoilvoc#NitrogenTotal,0.9962,1.0,True
+soil multifunctionality,soil functions,167960,,https://w3id.org/eusoilvoc#SoilFunctions,0.8603,0.7033,True
+decline soil biodiversity,soil biodiversity loss,167963,,https://w3id.org/eusoilvoc#SoilBiodiversityLoss,0.9383,0.9454,False
+soil challenges and threats,soil threats,167969,,https://w3id.org/eusoilvoc#SoilThreats,0.9652,0.995,True
+total phosphorus,phosphorus total elements,167982,,https://w3id.org/eusoilvoc#PhosphorusTotalElements,0.9541,0.9998,True
+total potassium,potassium total elements,167983,,https://w3id.org/eusoilvoc#PotassiumTotalElements,0.9574,0.9999,True
+total nitrogen,nitrogen total,167984,,https://w3id.org/eusoilvoc#NitrogenTotal,0.9962,1.0,True
+heavy-metal concentrations,mineral conc hardness,167996,,https://w3id.org/eusoilvoc#MineralConcHardness,0.5865,0.7323,True
+soil-phosphorus,soil pH,168014,,https://w3id.org/eusoilvoc#SoilpH,0.8419,0.9666,True
+agricultural irrigation,irrigation,168020,,https://w3id.org/eusoilvoc#Irrigation,0.9537,0.7803,True
+soil inorganic carbon stocks,soil inorganic carbon,168034,,https://w3id.org/eusoilvoc#SoilInorganicCarbon,0.9532,0.9901,True
+weather impact,weather,168048,,https://w3id.org/eusoilvoc#Weather,0.7905,0.7368,True
+crop type classification,crop class,168057,,https://w3id.org/eusoilvoc#CropClass,0.8227,0.9989,True
+agricultural land use,land use class,168081,,https://w3id.org/eusoilvoc#LandUseClass,0.8452,0.9928,True
+soil carbon dynamics,soil carbon density,168090,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.9034,0.9793,True
+iot,ions,168112,,https://w3id.org/eusoilvoc#Ions,0.8872,0.6059,True
+water potential,soil water potential,168124,,https://w3id.org/eusoilvoc#SoilWaterPotential,0.9313,0.9964,True
+gas exchange,soil gaseous exchange,168126,,https://w3id.org/eusoilvoc#SoilGaseousExchange,0.6145,0.6595,False
+meteorology. climatology,weather,168138,,https://w3id.org/eusoilvoc#Weather,0.822,0.8374,True
+land use planning,land use class,168157,,https://w3id.org/eusoilvoc#LandUseClass,0.8192,0.999,True
+agricultural land use evaluation system,land use class,168160,,https://w3id.org/eusoilvoc#LandUseClass,0.8033,0.8911,True
+land type,major land forms,168214,,https://w3id.org/eusoilvoc#MajorLandForms,0.8474,0.8363,True
+land use zoning,land use,168216,,https://w3id.org/eusoilvoc#LandUse,0.8681,0.9007,True
+symbiotic nitrogen fixation in legumes,biological nitrogen fixation,168263,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.8012,0.9675,True
+bulk soil,bulk density whole soil,168267,,https://w3id.org/eusoilvoc#BulkDensityWholeSoil,0.8871,0.8055,True
+texture,texture lab class,168292,,https://w3id.org/eusoilvoc#TextureLabClass,0.7651,0.767,True
+support,supporting services,168295,,https://w3id.org/eusoilvoc#SupportingServices,0.8436,0.6451,True
+compaction,soil compaction,168304,,https://w3id.org/eusoilvoc#SoilCompaction,0.7435,0.8852,True
+density,soil density,168306,,https://w3id.org/eusoilvoc#SoilDensity,0.7857,0.648,True
+red soil,soil redox potential,168316,,https://w3id.org/eusoilvoc#SoilRedoxPotential,0.8949,0.8441,False
+subsoil,soil subsidence,168320,,https://w3id.org/eusoilvoc#SoilSubsidence,0.5256,0.6998,False
+geophysical environment,physiography,168326,,https://w3id.org/eusoilvoc#Physiography,0.8208,0.9485,True
+soil water index,soil water transmission index,168327,,https://w3id.org/eusoilvoc#SoilWaterTransmissionIndex,0.8998,0.7811,False
+ecosystem function,ecosystem services,168344,,https://w3id.org/eusoilvoc#EcosystemServices,0.7993,0.8922,True
+ecosystem degradation,soil degradation,168375,,https://w3id.org/eusoilvoc#SoilDegradation,0.7581,0.9954,True
+ecosystem degradation,soil degradation,168428,,https://w3id.org/eusoilvoc#SoilDegradation,0.7581,0.9954,True
+heavy metal,cadmium total elements,168461,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.6034,0.8602,True
+pollution,soil pollution,168465,,https://w3id.org/eusoilvoc#SoilPollution,0.8441,0.818,True
+forest,land use forests,168488,,https://w3id.org/eusoilvoc#LandUseForests,0.7609,0.6931,True
+habitats and biotopes,habitats,168491,,https://w3id.org/eusoilvoc#Habitats,0.8558,0.7657,True
+forest biodiversity,land use forests,168499,,https://w3id.org/eusoilvoc#LandUseForests,0.7024,0.8301,True
+crop production,crop yield,168511,,https://w3id.org/eusoilvoc#CropYield,0.9149,0.6819,True
+land,land use,168520,,https://w3id.org/eusoilvoc#LandUse,0.8241,0.8113,True
+water,water quality,168532,,https://w3id.org/eusoilvoc#WaterQuality,0.909,0.6556,True
+land,land use,168556,,https://w3id.org/eusoilvoc#LandUse,0.8241,0.8113,True
+occupation des terres,land use,168631,,https://w3id.org/eusoilvoc#LandUse,0.8698,0.9796,True
+usage des sols,land use,168632,,https://w3id.org/eusoilvoc#LandUse,0.9479,0.9731,True
+habitats et biotopes,habitats,168638,,https://w3id.org/eusoilvoc#Habitats,0.871,0.8917,True
+sols,soil,168640,,https://w3id.org/eusoilvoc#Soil,0.9047,0.9441,True
+bodenaufnahmen,land cover,168663,,https://w3id.org/eusoilvoc#LandCover,0.7063,0.7867,True
+schichten,slope,168670,,https://w3id.org/eusoilvoc#Slope,0.9035,0.6957,True
+bodenschicht,soil structure,168676,,https://w3id.org/eusoilvoc#SoilStructure,0.8112,0.7776,True
+bodenstruktur,soil structure,168677,,https://w3id.org/eusoilvoc#SoilStructure,0.9024,0.9443,True
+bodenverbreitung,land cover,168694,,https://w3id.org/eusoilvoc#LandCover,0.813,0.7447,True
+bodeneigenschaften,soil properties,168696,,https://w3id.org/eusoilvoc#SoilProperties,0.7962,0.9873,True
+tipuri de soluri,soil types,168697,,https://w3id.org/eusoilvoc#SoilTypes,0.9401,0.9744,True
+calitatea solurilor,soil quality,168700,,https://w3id.org/eusoilvoc#SoilQuality,0.9688,0.9964,True
+hábitats y biotopos,habitats,168731,,https://w3id.org/eusoilvoc#Habitats,0.8034,0.8157,True
+elevaciones,slope,168734,,https://w3id.org/eusoilvoc#Slope,0.8191,0.6185,True
+gefahrenabwehr,soil penetration resistance,168755,,https://w3id.org/eusoilvoc#SoilPenetrationResistance,0.6412,0.6748,True
+wmts,VMC_d-ww,168766,,https://w3id.org/eusoilvoc#moistureContentProcedure-VMC_d-ww,0.4913,0.6651,True
+geowissenschaften,geology,168773,,https://w3id.org/eusoilvoc#Geology,0.926,0.9399,True
+podložnost,slope,168785,,https://w3id.org/eusoilvoc#Slope,0.9194,0.6607,True
+ackerzahl,copper,168793,,https://w3id.org/eusoilvoc#Copper,0.7838,0.6798,True
+bodenbedeckung,land cover,168834,,https://w3id.org/eusoilvoc#LandCover,0.8305,0.8677,True
+atmosphärische bedingungen,weather,168835,,https://w3id.org/eusoilvoc#Weather,0.8179,0.8802,True
+höhe,slope,168840,,https://w3id.org/eusoilvoc#Slope,0.8066,0.8934,True
+geografische bezeichnungen,geology,168842,,https://w3id.org/eusoilvoc#Geology,0.651,0.6097,True
+mineralische bodenschätze,mineral contents,168852,,https://w3id.org/eusoilvoc#MineralContents,0.8708,0.7852,True
+soil chemistry,soil chemical properties,168904,,https://w3id.org/eusoilvoc#SoilChemicalProperties,0.9506,0.9617,True
+soil quality assessment,soil quality,168906,,https://w3id.org/eusoilvoc#SoilQuality,0.9449,0.9285,True
+usługa pobierania,provisioning services,168910,,https://w3id.org/eusoilvoc#ProvisioningServices,0.7824,0.7183,True
+bodenbonitierung,soil sealing,168921,,https://w3id.org/eusoilvoc#SoilSealing,0.7918,0.8878,True
+flächennutzung,land use,168922,,https://w3id.org/eusoilvoc#LandUse,0.8925,0.9847,True
+landwirtschaft,land use,168923,,https://w3id.org/eusoilvoc#LandUse,0.8573,0.6765,True
+forestale,land use forests,168936,,https://w3id.org/eusoilvoc#LandUseForests,0.7324,0.6747,True
+condizioni atmosferiche,weather,168954,,https://w3id.org/eusoilvoc#Weather,0.9436,0.9569,True
+alunecări de pământ,soil sealing,168977,,https://w3id.org/eusoilvoc#SoilSealing,0.7087,0.813,True
+textura solului,soil texture,168978,,https://w3id.org/eusoilvoc#SoilTexture,0.9137,0.9905,True
+apă din sol,soil water potential,168979,,https://w3id.org/eusoilvoc#SoilWaterPotential,0.9102,0.6103,True
+textură a solului,soil texture,168981,,https://w3id.org/eusoilvoc#SoilTexture,0.9099,0.9891,True
+plan de utilizare a terenului,land use class,168983,,https://w3id.org/eusoilvoc#LandUseClass,0.8146,0.9512,True
+stabilitatea solului,soil permeability,168985,,https://w3id.org/eusoilvoc#SoilPermeability,0.8282,0.6807,True
+hartă a solurilor,soil density,168987,,https://w3id.org/eusoilvoc#SoilDensity,0.6839,0.844,True
+calitate a solului,soil quality,168988,,https://w3id.org/eusoilvoc#SoilQuality,0.9647,0.9951,True
+rischio sismico,soil threats,168993,,https://w3id.org/eusoilvoc#SoilThreats,0.5245,0.9851,True
+textura solurilor,soil texture,168995,,https://w3id.org/eusoilvoc#SoilTexture,0.809,0.991,True
+alunecare de pământ,soil sealing,168999,,https://w3id.org/eusoilvoc#SoilSealing,0.7673,0.8632,True
+drenaggio,mulching,169020,,https://w3id.org/eusoilvoc#Mulching,0.8316,0.7967,True
+permeabilità,soil permeability,169038,,https://w3id.org/eusoilvoc#SoilPermeability,0.6431,0.9736,True
+soil and root-associated microbiota,soil microbial biomass,169694,,https://w3id.org/eusoilvoc#SoilMicrobialBiomass,0.8608,0.638,False
+eroziunea solurilor,soil erosion,169050,,https://w3id.org/eusoilvoc#SoilErosion,0.7784,0.9966,True
+bodenwasserhaushalt,soil water potential,169060,,https://w3id.org/eusoilvoc#SoilWaterPotential,0.7654,0.8987,True
+korkeus,slope,169066,,https://w3id.org/eusoilvoc#Slope,0.8467,0.7413,True
+maankäyttö,land use,169069,,https://w3id.org/eusoilvoc#LandUse,0.9614,0.9678,True
+crop production,crop yield,169702,,https://w3id.org/eusoilvoc#CropYield,0.9149,0.6819,True
+water erosion,soil erosion,169113,,https://w3id.org/eusoilvoc#SoilErosion,0.8524,0.9859,True
+bodenstruktur,soil structure,169138,,https://w3id.org/eusoilvoc#SoilStructure,0.9024,0.9443,True
+bodenkunde,soil,169139,,https://w3id.org/eusoilvoc#Soil,0.8329,0.8028,True
+adsorptionsvermögen,cation exchange capacity,169153,,https://w3id.org/eusoilvoc#CationExchangeCapacity,0.64,0.6781,True
+einrichtungen,inputs,169165,,https://w3id.org/eusoilvoc#Inputs,0.8232,0.8876,True
+messstellen,mulching,169167,,https://w3id.org/eusoilvoc#Mulching,0.8736,0.6107,True
+bodemtextuur,soil texture,169204,,https://w3id.org/eusoilvoc#SoilTexture,0.9303,0.9586,True
+bodemkunde,soil,169209,,https://w3id.org/eusoilvoc#Soil,0.838,0.7846,True
+bodemstructuur,soil structure,169212,,https://w3id.org/eusoilvoc#SoilStructure,0.8383,0.957,True
+bodemdegradatie,soil degradation,169215,,https://w3id.org/eusoilvoc#SoilDegradation,0.9483,0.9956,True
+bodemgebruik,land use,169218,,https://w3id.org/eusoilvoc#LandUse,0.9255,0.9562,True
+bodemgesteldheid,soil properties,169219,,https://w3id.org/eusoilvoc#SoilProperties,0.869,0.8376,True
+bodemverdichting,soil sorption,169223,,https://w3id.org/eusoilvoc#SoilSorption,0.6643,0.6902,True
+bodemvruchtbaarheid,soil productivity,169227,,https://w3id.org/eusoilvoc#SoilProductivity,0.8969,0.9637,True
+fertilitate a solului,soil productivity,169236,,https://w3id.org/eusoilvoc#SoilProductivity,0.985,0.9855,True
+capacitatea solului,soil quality,169237,,https://w3id.org/eusoilvoc#SoilQuality,0.8598,0.9975,True
+subsoil,soil subsidence,169728,,https://w3id.org/eusoilvoc#SoilSubsidence,0.5256,0.6998,False
+ökologie,habitats,169273,,https://w3id.org/eusoilvoc#Habitats,0.8632,0.7934,True
+observed soil profile,soil depth sampled,169279,,https://w3id.org/eusoilvoc#SoilDepthSampled,0.8517,0.8156,True
+soils,soil,169280,,https://w3id.org/eusoilvoc#Soil,0.9863,0.995,True
+observed soil profiles,soil depth sampled,169281,,https://w3id.org/eusoilvoc#SoilDepthSampled,0.844,0.6854,True
+texture,texture lab class,169292,,https://w3id.org/eusoilvoc#TextureLabClass,0.7651,0.767,True
+bodendenkmal,soil quality,169382,,https://w3id.org/eusoilvoc#SoilQuality,0.856,0.8887,True
+compactare a solului,soil compaction,169384,,https://w3id.org/eusoilvoc#SoilCompaction,0.9279,0.9926,True
+salinizare a solului,soil salinity,169385,,https://w3id.org/eusoilvoc#SoilSalinity,0.8658,0.9716,True
+acidifiere a solului,soil acidification,169386,,https://w3id.org/eusoilvoc#SoilAcidification,0.8939,0.9693,False
+occupation des terres,land use,169393,,https://w3id.org/eusoilvoc#LandUse,0.8698,0.9796,True
+gestão sustentável do solo,soil management,169410,,https://w3id.org/eusoilvoc#SoilManagement,0.8457,0.9084,True
+landwirtschaftliche nutzung,land use,169429,,https://w3id.org/eusoilvoc#LandUse,0.8257,0.9855,True
+nutzung der landwirtschaftlichen fläche,land use,169430,,https://w3id.org/eusoilvoc#LandUse,0.891,0.676,True
+meteorologi,weather,169763,,https://w3id.org/eusoilvoc#Weather,0.9159,0.9221,True
+snö,slope,169764,,https://w3id.org/eusoilvoc#Slope,0.5651,0.7815,True
+forests,land use forests,169767,,https://w3id.org/eusoilvoc#LandUseForests,0.7795,0.6676,True
+yield,crop yield,169768,,https://w3id.org/eusoilvoc#CropYield,0.6922,0.6671,True
+sustainable agriculture,agricultural sustainability,169830,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9506,0.9943,False
+forest ecology,land use forests,172768,,https://w3id.org/eusoilvoc#LandUseForests,0.7902,0.7929,True
+size distribution,soil aggregate size distribution,169951,,https://w3id.org/eusoilvoc#SoilAggregateSizeDistribution,0.5914,0.6128,False
+sorptionskapazität,soil penetration resistance,169965,,https://w3id.org/eusoilvoc#SoilPenetrationResistance,0.7692,0.6811,True
+soil microbiome,soil microfauna,169979,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9927,0.9679,True
+dry soil,soil colour dry,172809,,https://w3id.org/eusoilvoc#SoilColourDry,0.8771,0.9948,True
+soil multi-functionality,soil functions,169993,,https://w3id.org/eusoilvoc#SoilFunctions,0.8699,0.7406,True
+insediamenti,land use,169999,,https://w3id.org/eusoilvoc#LandUse,0.6891,0.7529,True
+nitrogen deposition,biological nitrogen fixation,172842,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.8626,0.6596,True
+sub-soil,soil subsidence,170034,,https://w3id.org/eusoilvoc#SoilSubsidence,0.6885,0.8214,False
+chemical contamination,soil pollution,170040,,https://w3id.org/eusoilvoc#SoilPollution,0.6553,0.6843,True
+grasslands,land use grasses,170044,,https://w3id.org/eusoilvoc#LandUseGrasses,0.8161,0.6904,True
+water pollution,soil pollution,170049,,https://w3id.org/eusoilvoc#SoilPollution,0.7463,0.8035,True
+major-nutrients,macronutrients,170053,,https://w3id.org/eusoilvoc#Macronutrients,0.6392,0.7874,True
+water-quality-monitoring,water quality,170062,,https://w3id.org/eusoilvoc#WaterQuality,0.8297,0.7952,True
+water-quality,water quality,170068,,https://w3id.org/eusoilvoc#WaterQuality,0.9691,0.9999,True
+wasserkapazität,water quality,170091,,https://w3id.org/eusoilvoc#WaterQuality,0.8999,0.9751,True
+wasserspeicherfähigkeit,water storage capacity,170092,,https://w3id.org/eusoilvoc#WaterStorageCapacity,0.8945,0.9786,False
+elementcontentchromium,cadmium total elements,170112,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.7256,0.643,True
+elementcontentcadmium,cadmium total elements,170121,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.6546,0.9067,True
+kationenaustauschkapazität,cation exchange capacity effective,170127,,https://w3id.org/eusoilvoc#CationExchangeCapacityEffective,0.747,0.9998,True
+nitrogen-fixation,biological nitrogen fixation,172860,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.8907,0.9996,True
+molybdenum-nitrogenase,molybdenum total elements,172890,,https://w3id.org/eusoilvoc#MolybdenumTotalElements,0.7155,0.78,True
+treviso,termites,170210,,https://w3id.org/eusoilvoc#Termites,0.7696,0.679,True
+soil texture mapping,soil texture,172946,,https://w3id.org/eusoilvoc#SoilTexture,0.9293,0.9567,True
+heat-transfer,soil heat transfer,170313,,https://w3id.org/eusoilvoc#SoilHeatTransfer,0.6437,0.8115,False
+ecipitation,precipitation,172962,,https://w3id.org/eusoilvoc#Precipitation,0.9732,0.877,True
+crops,crop class,170354,,https://w3id.org/eusoilvoc#CropClass,0.8425,0.6789,True
+groundwater table,groundwater depth,170384,,https://w3id.org/eusoilvoc#GroundwaterDepth,0.7398,0.8436,True
+agricultural land management,land use class,173041,,https://w3id.org/eusoilvoc#LandUseClass,0.751,0.7555,True
+global soil carbon,soil organic carbon,173046,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8894,0.9244,True
+soil organic carbon sequestration,soil carbon density,173056,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.7926,0.997,True
+soil loss,soil failure,173061,,https://w3id.org/eusoilvoc#SoilFailure,0.8938,0.7743,False
+bioavailable phosphorus,phosphorus extractable elements,173062,,https://w3id.org/eusoilvoc#PhosphorusExtractableElements,0.8159,0.992,True
+soil functioning,soil functions,173066,,https://w3id.org/eusoilvoc#SoilFunctions,0.9527,0.9998,True
+decomposer,peat decompostion,173084,,https://w3id.org/eusoilvoc#PeatDecompostion,0.7171,0.916,True
+"ejp soil, serena, soil sealing, soil based ecosystem service, ireland",soil sealing,173089,,https://w3id.org/eusoilvoc#SoilSealing,0.6575,0.6054,True
+insure,inputs,173099,,https://w3id.org/eusoilvoc#Inputs,0.4981,0.6048,True
+farming sustainability,agricultural sustainability,173106,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9419,0.7655,False
+soil physicochemical and biological properties,soil biological properties,173136,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.9385,0.9959,True
+soil physicochemical and biological properties; soil co<sub>2</sub> emission; crop rotation; pre-crop; continuous bare fallow; perennial grasses; wheat yield,soil properties,173139,,https://w3id.org/eusoilvoc#SoilProperties,0.7055,0.8907,True
+organic matter,soil organic matter,170810,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8594,0.9853,True
+decomposition,peat decompostion,170811,,https://w3id.org/eusoilvoc#PeatDecompostion,0.6521,0.901,True
+soil layer,soil,173429,,https://w3id.org/eusoilvoc#Soil,0.9015,0.9871,True
+soil es,soil,173432,,https://w3id.org/eusoilvoc#Soil,0.9082,0.8058,True
+land cover change,land use,170824,,https://w3id.org/eusoilvoc#LandUse,0.7282,0.7201,True
+land cover mapping,land cover,170825,,https://w3id.org/eusoilvoc#LandCover,0.8816,0.8645,True
+"land degradation, soil literacy",soil degradation,170844,,https://w3id.org/eusoilvoc#SoilDegradation,0.8035,0.8011,True
+"soil structure, soil literacy",soil structure,170877,,https://w3id.org/eusoilvoc#SoilStructure,0.7886,0.9027,True
+"soil carbon, soil structure, soil literacy",soil carbon density,170878,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.7724,0.6795,True
+"erosion, soil structure",soil erosion,170881,,https://w3id.org/eusoilvoc#SoilErosion,0.9502,0.9893,True
+"soil carbon, erosion",soil erosion,170889,,https://w3id.org/eusoilvoc#SoilErosion,0.8534,0.7434,True
+"erosion, soil literacy",soil erosion,170892,,https://w3id.org/eusoilvoc#SoilErosion,0.7917,0.8915,True
+vegetation structure,vegetation class,170895,,https://w3id.org/eusoilvoc#VegetationClass,0.853,0.8841,True
+"soil carbon, soil structure",soil total carbon,170910,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.9046,0.9893,True
+dušik,nitrogen,173181,,https://w3id.org/eusoilvoc#Nitrogen,0.9517,0.8358,True
+ohranitveno kmetijstvo,agricultural sustainability,173187,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9081,0.9457,False
+soil managment practices,soil management,173189,,https://w3id.org/eusoilvoc#SoilManagement,0.9335,0.6097,True
+sustainable management of forest soils,soil management,170953,,https://w3id.org/eusoilvoc#SoilManagement,0.7852,0.723,True
+soil &amp; croping management,soil management,170955,,https://w3id.org/eusoilvoc#SoilManagement,0.9147,0.9136,True
+phospholipids,phosphorus,170978,,https://w3id.org/eusoilvoc#Phosphorus,0.7524,0.7845,True
+hochschwarzwald,medium sand,171095,,https://w3id.org/eusoilvoc#MediumSand,0.7616,0.6121,True
+nitrogen fixation,biological nitrogen fixation,171107,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.9192,0.9999,True
+dichte,salts,171110,,https://w3id.org/eusoilvoc#Salts,0.9368,0.6204,True
+bulk density,bulk density mineral,171113,,https://w3id.org/eusoilvoc#BulkDensityMineral,0.7857,0.9977,True
+fruchtfolge,crop yield,171129,,https://w3id.org/eusoilvoc#CropYield,0.6834,0.7029,True
+soil sampling,soil depth sampled,171138,,https://w3id.org/eusoilvoc#SoilDepthSampled,0.8934,0.976,True
+kohlenstoff,biomass,171141,,https://w3id.org/eusoilvoc#Biomass,0.6686,0.6463,True
+land,land use,171176,,https://w3id.org/eusoilvoc#LandUse,0.8241,0.8113,True
+pollution,soil pollution,171178,,https://w3id.org/eusoilvoc#SoilPollution,0.8441,0.818,True
+compaction,soil compaction,171179,,https://w3id.org/eusoilvoc#SoilCompaction,0.7435,0.8852,True
+agricultural land management,land use class,171185,,https://w3id.org/eusoilvoc#LandUseClass,0.751,0.7555,True
+services,provisioning services,171186,,https://w3id.org/eusoilvoc#ProvisioningServices,0.8533,0.7041,True
+groundwater,groundwater depth,171212,,https://w3id.org/eusoilvoc#GroundwaterDepth,0.8808,0.8012,True
+soil chemistry,soil chemical properties,171215,,https://w3id.org/eusoilvoc#SoilChemicalProperties,0.9506,0.9617,True
+gießen,mulching,171228,,https://w3id.org/eusoilvoc#Mulching,0.9317,0.6455,True
+biological activity in soil,soil biological properties,171247,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.923,0.9999,True
+organic mulches,mulching,171250,,https://w3id.org/eusoilvoc#Mulching,0.7194,0.9876,True
+cover plants,plant cover,171251,,https://w3id.org/eusoilvoc#PlantCover,0.9657,0.9993,True
+soil biology,soil biological properties,171252,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.941,0.9994,True
+soil mechanical properties,soil properties,171261,,https://w3id.org/eusoilvoc#SoilProperties,0.9353,0.8624,True
+peatlands,peat,171265,,https://w3id.org/eusoilvoc#Peat,0.8968,0.8475,True
+fen,iron,171275,,https://w3id.org/eusoilvoc#Iron,0.8248,0.6072,True
+soil carbon,soil total carbon,171293,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.9437,0.9992,True
+evaporation,evapotranspiration,171303,,https://w3id.org/eusoilvoc#Evapotranspiration,0.8675,0.8611,True
+land-use change,land use,171311,,https://w3id.org/eusoilvoc#LandUse,0.8547,0.9687,True
+nitrites,nitrogen,171324,,https://w3id.org/eusoilvoc#Nitrogen,0.7082,0.6639,True
+soil-related ecosystem service,soil quality,171332,,https://w3id.org/eusoilvoc#SoilQuality,0.7672,0.9973,True
+losses from soil,soil water loss,171347,,https://w3id.org/eusoilvoc#SoilWaterLoss,0.8347,0.7898,False
+soil horizons,soil horizon boundary,171348,,https://w3id.org/eusoilvoc#SoilHorizonBoundary,0.8694,0.6765,False
+mineral matter,mineral contents,171352,,https://w3id.org/eusoilvoc#MineralContents,0.9109,0.6396,True
+subsoil,soil subsidence,171357,,https://w3id.org/eusoilvoc#SoilSubsidence,0.5256,0.6998,False
+soil biology,soil biological properties,171360,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.941,0.9994,True
+carbone dans le sol,soil total carbon,171385,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.8454,0.9936,True
+nnitrogen,nitrogen,173209,,https://w3id.org/eusoilvoc#Nitrogen,0.6823,0.9852,True
+ocupação do solo,land use,171392,,https://w3id.org/eusoilvoc#LandUse,0.9074,0.8693,True
+açores,slope,171394,,https://w3id.org/eusoilvoc#Slope,0.8375,0.6177,True
+peot,peat,171409,,https://w3id.org/eusoilvoc#Peat,0.8315,0.9571,True
+atmospheric conditions,weather,171451,,https://w3id.org/eusoilvoc#Weather,0.905,0.8877,True
+soil fertilit y,soil productivity,173225,,https://w3id.org/eusoilvoc#SoilProductivity,0.9321,0.8994,True
+d2.2,pHH2O_ratio1-2.5,173234,,https://w3id.org/eusoilvoc#pHProcedure-pHH2O_ratio1-2.5,0.5244,0.7314,True
+bodeneigenschaften,soil properties,171489,,https://w3id.org/eusoilvoc#SoilProperties,0.7962,0.9873,True
+bodenkunde,soil,171494,,https://w3id.org/eusoilvoc#Soil,0.8329,0.8028,True
+bebauung,mulching,171499,,https://w3id.org/eusoilvoc#Mulching,0.8889,0.7755,True
+umring,mulching,171504,,https://w3id.org/eusoilvoc#Mulching,0.7159,0.6228,True
+bbfs,BlkDensF_fe-co-od,173440,,https://w3id.org/eusoilvoc#bulkDensityFineEarthProcedure-BlkDensF_fe-co-od,0.5531,0.6935,True
+darstellungsdienst,provisioning services,171528,,https://w3id.org/eusoilvoc#ProvisioningServices,0.8677,0.8075,True
+mineralische bodenschätze,mineral contents,171537,,https://w3id.org/eusoilvoc#MineralContents,0.8708,0.7852,True
+chimie a solului,soil chemical properties,171553,,https://w3id.org/eusoilvoc#SoilChemicalProperties,0.7996,0.9053,True
+esondazioni,inundation,171559,,https://w3id.org/eusoilvoc#Inundation,0.9677,0.9166,True
+laminazione,mulching,171564,,https://w3id.org/eusoilvoc#Mulching,0.7559,0.6697,True
+landbruk,land use,171577,,https://w3id.org/eusoilvoc#LandUse,0.8317,0.7728,True
+jordkvalitet,soil quality,171583,,https://w3id.org/eusoilvoc#SoilQuality,0.958,0.9928,True
+půda,soil,171588,,https://w3id.org/eusoilvoc#Soil,0.889,0.8029,True
+umweltdaten,environmental factors,171600,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.88,0.7247,True
+schadstoff,copper,171604,,https://w3id.org/eusoilvoc#Copper,0.7933,0.7297,True
+bdf,BlkDensF_fe-unk,171607,,https://w3id.org/eusoilvoc#bulkDensityFineEarthProcedure-BlkDensF_fe-unkn,0.7153,0.6204,True
+n-fertilization,biological nitrogen fixation,173254,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.4975,0.6455,True
+sedimento,slope,171640,,https://w3id.org/eusoilvoc#Slope,0.78,0.7027,True
+raumstruktur,soil structure,171660,,https://w3id.org/eusoilvoc#SoilStructure,0.6631,0.9603,True
+wasserbewirtschaftung,irrigation,171661,,https://w3id.org/eusoilvoc#Irrigation,0.8593,0.7598,True
+erholung,mulching,171663,,https://w3id.org/eusoilvoc#Mulching,0.8852,0.7551,True
+flächennutzungsplan,land use class,171665,,https://w3id.org/eusoilvoc#LandUseClass,0.7849,0.7215,True
+land,land use,171693,,https://w3id.org/eusoilvoc#LandUse,0.8241,0.8113,True
+grundwassertiefenlinie,groundwater depth,171707,,https://w3id.org/eusoilvoc#GroundwaterDepth,0.7778,0.919,True
+soil-based ecosystem servises,soil properties,173264,,https://w3id.org/eusoilvoc#SoilProperties,0.7567,0.6393,True
+emparcelamento,mulching,171719,,https://w3id.org/eusoilvoc#Mulching,0.8724,0.7681,True
+chimie des sols,soil chemical,171736,,https://w3id.org/eusoilvoc#SoilChemical,0.7269,0.6183,False
+sorption,slope,173270,,https://w3id.org/eusoilvoc#Slope,0.6247,0.6257,True
+umweltdaten,environmental factors,171757,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.88,0.7247,True
+elevaciones,slope,171777,,https://w3id.org/eusoilvoc#Slope,0.8191,0.6185,True
+condiciones atmosféricas,weather,171784,,https://w3id.org/eusoilvoc#Weather,0.9561,0.9096,True
+hábitats y biotopos,habitats,171789,,https://w3id.org/eusoilvoc#Habitats,0.8034,0.8157,True
+recursos minerales,mineral contents,171792,,https://w3id.org/eusoilvoc#MineralContents,0.9251,0.871,True
+features,biological features,171914,,https://w3id.org/eusoilvoc#BiologicalFeatures,0.6012,0.6288,True
+océanos,soil,171813,,https://w3id.org/eusoilvoc#Soil,0.5078,0.6483,True
+bodenbedeckung,land cover,171840,,https://w3id.org/eusoilvoc#LandCover,0.8305,0.8677,True
+landwirtschaft,land use,171841,,https://w3id.org/eusoilvoc#LandUse,0.8573,0.6765,True
+crop residues,crop residue mulch,173283,,https://w3id.org/eusoilvoc#CropResidueMulch,0.8441,0.8615,False
+využití území,land use,171881,,https://w3id.org/eusoilvoc#LandUse,0.8958,0.9021,True
+půda,soil,171890,,https://w3id.org/eusoilvoc#Soil,0.889,0.8029,True
+land cover data set,land cover,171892,,https://w3id.org/eusoilvoc#LandCover,0.8387,0.6223,True
+land cover unit,land cover,171893,,https://w3id.org/eusoilvoc#LandCover,0.9096,0.8806,True
+crop productivity,soil productivity,173287,,https://w3id.org/eusoilvoc#SoilProductivity,0.8246,0.6446,True
+geografie,geology,171938,,https://w3id.org/eusoilvoc#Geology,0.7667,0.9321,True
+landbouwgebruiksperceel,land use,171950,,https://w3id.org/eusoilvoc#LandUse,0.8453,0.6525,True
+conservation des sols,conservation tillage,173304,,https://w3id.org/eusoilvoc#ConservationTillage,0.9066,0.9514,True
+schläge,slope,172016,,https://w3id.org/eusoilvoc#Slope,0.8983,0.9037,True
+acoperire a terenului,land cover,172074,,https://w3id.org/eusoilvoc#LandCover,0.879,0.8624,True
+utilizare a terenului,land use,172075,,https://w3id.org/eusoilvoc#LandUse,0.9804,0.9908,True
+utilizarea terenului,land use,172081,,https://w3id.org/eusoilvoc#LandUse,0.9759,0.9935,True
+phosphorus availability,phosphorus retention,172116,,https://w3id.org/eusoilvoc#PhosphorusRetention,0.8947,0.965,True
+water availability,available water holding capacity,172119,,https://w3id.org/eusoilvoc#AvailableWaterHoldingCapacity,0.8379,0.9541,True
+habitat (ecology),habitats,172123,,https://w3id.org/eusoilvoc#Habitats,0.9019,0.9993,True
+soil organic carbon accumulation,soil organic carbon,172126,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9482,0.9792,True
+soil microbial biogeography,soil microfauna,172148,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9366,0.7037,True
+climate (mesh),climate,172164,,https://w3id.org/eusoilvoc#Climate,0.7439,0.8002,True
+mowing,mulching,172165,,https://w3id.org/eusoilvoc#Mulching,0.6498,0.7738,True
+microbiomes,microorganisms,172220,,https://w3id.org/eusoilvoc#Microorganisms,0.9583,0.6057,True
+vegetation cover,plant cover,172296,,https://w3id.org/eusoilvoc#PlantCover,0.8656,0.7401,True
+soil fungi,soil microfauna,172306,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.7928,0.712,True
+soil microbial communities,soil microfauna,172314,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9328,0.8996,True
+science::geology,geology,172360,,https://w3id.org/eusoilvoc#Geology,0.8934,0.9862,True
+:geology [science],geology,172361,,https://w3id.org/eusoilvoc#Geology,0.9068,0.9918,True
+ethylene,ions,172367,,https://w3id.org/eusoilvoc#Ions,0.5627,0.7348,True
+ecosystem functionality,ecosystem services,172391,,https://w3id.org/eusoilvoc#EcosystemServices,0.8565,0.665,True
+fertility,soil productivity,172393,,https://w3id.org/eusoilvoc#SoilProductivity,0.8074,0.7518,True
+crcf,CrsFrg_lab,172420,,https://w3id.org/eusoilvoc#coarseFragmentsProcedure-CrsFrg_lab,0.7839,0.9903,True
+mecànica dels sòls,soil physical properties,172443,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,0.918,0.6373,True
+fos: health sciences,phosphorus,172452,,https://w3id.org/eusoilvoc#Phosphorus,0.4834,0.7234,True
+biological soil crust,soil biological crusts,172467,,https://w3id.org/eusoilvoc#SoilBiologicalCrusts,0.9958,0.9711,False
+mucilage,mulching,172502,,https://w3id.org/eusoilvoc#Mulching,0.7226,0.7476,True
+soil-structure,soil structure,172593,,https://w3id.org/eusoilvoc#SoilStructure,0.9705,0.9997,True
+phosphorus (p),phosphorus,172634,,https://w3id.org/eusoilvoc#Phosphorus,0.9502,0.7062,True
+iron (fe),iron,172639,,https://w3id.org/eusoilvoc#Iron,0.9272,0.9998,True
+soil organic carbon storage,soil carbon density,173326,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.833,0.9991,True
+soil sustainability,soil productivity,173342,,https://w3id.org/eusoilvoc#SoilProductivity,0.872,0.9865,True
+land-use and land-cover change,land use,173357,,https://w3id.org/eusoilvoc#LandUse,0.8445,0.9946,True
+conventional tillage,conservation tillage,173380,,https://w3id.org/eusoilvoc#ConservationTillage,0.485,0.9267,True
+regulation,regulating services,173403,,https://w3id.org/eusoilvoc#RegulatingServices,0.9238,0.9074,True
+"soil, carbon, sequestration, climate change mitigation",soil carbon density,173408,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.7245,0.9289,True
+soil organic carbon inventory,soil organic carbon,173412,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.931,0.9819,True
+soil organic carbon modelling,soil organic carbon,173413,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9362,0.992,True
+sustainability-promoting agricultural practices,agricultural sustainability,173417,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9251,0.909,False
+soil organic carbon stabilization,soil carbon density,173457,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8082,0.8938,True
+"soil bulk density, rock fragment content, soil organic carbon stock, national soil carbon inventory, agricultural mineral soil",soil carbon density,173466,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8188,0.7454,True
+lande use,land use,173468,,https://w3id.org/eusoilvoc#LandUse,0.7109,0.9978,True
+soil carbon mapping,soil carbon density,173478,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8666,0.9126,True
+soc storage,soil organic carbon,173520,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.5031,0.819,True
+soil erosion models,soil erosion category,173551,,https://w3id.org/eusoilvoc#SoilErosionCategory,0.9295,0.9714,True
+phosphorus fertilization,phosphorus retention,173552,,https://w3id.org/eusoilvoc#PhosphorusRetention,0.7817,0.9256,True
+soil microbial functional groups,soil microfauna,173578,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.8806,0.9987,True
+nirs,nitrogen,173589,,https://w3id.org/eusoilvoc#Nitrogen,0.5941,0.7844,True
+organske kisline,OrgC_acid-dc-lt,173618,,https://w3id.org/eusoilvoc#carbonOrganicProcedure-OrgC_acid-dc-lt,0.6737,0.7145,True
+organism abundance,biological abundance,173629,,https://w3id.org/eusoilvoc#BiologicalAbundance,0.9395,0.9613,True
+land‑use,land use,173633,,https://w3id.org/eusoilvoc#LandUse,0.9648,0.9998,True
+organic soils,soil organic matter class,173672,,https://w3id.org/eusoilvoc#SoilOrganicMatterClass,0.9082,0.9985,True
+soil quality index,soil quality,173747,,https://w3id.org/eusoilvoc#SoilQuality,0.9366,0.667,True
+soil microbiome diversity,soil microfauna,173798,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9145,0.695,True
+beneficial soil microorganisms,soil microfauna,173804,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9013,0.9706,True
+ddc:500,OrgC_dc-lt,173852,,https://w3id.org/eusoilvoc#carbonOrganicProcedure-OrgC_dc-lt,0.4862,0.9368,True
+wvmv,VMC_d-ww,173866,,https://w3id.org/eusoilvoc#moistureContentProcedure-VMC_d-ww,0.6115,0.9873,True
+land,land use,173877,,https://w3id.org/eusoilvoc#LandUse,0.8241,0.8113,True
+soil-phosphorus availability,phosphorus retention,173879,,https://w3id.org/eusoilvoc#PhosphorusRetention,0.8016,0.9864,True
+plant growth,plant cover,173900,,https://w3id.org/eusoilvoc#PlantCover,0.7359,0.972,True
+[phys.phys.phys-geo-ph] physics [physics]/physics [physics]/geophysics [physics.geo-ph],physiography,173929,,https://w3id.org/eusoilvoc#Physiography,0.5331,0.8953,True
+land-cover change,land cover,173935,,https://w3id.org/eusoilvoc#LandCover,0.745,0.61,True
+biome,biomass,173945,,https://w3id.org/eusoilvoc#Biomass,0.8303,0.8865,True
+[phys.phys.phys-ao-ph] physics [physics]/physics [physics]/atmospheric and oceanic physics [physics.ao-ph],physiography,174013,,https://w3id.org/eusoilvoc#Physiography,0.5077,0.7424,True
+particle size,particle size fraction sum,174016,,https://w3id.org/eusoilvoc#ParticleSizeFractionSum,0.7275,0.9799,True
+climatology,climate,174065,,https://w3id.org/eusoilvoc#Climate,0.7318,0.9611,True
+climatologia,climate,174067,,https://w3id.org/eusoilvoc#Climate,0.9172,0.9277,True
+aire--contaminació,soil pollution,174077,,https://w3id.org/eusoilvoc#SoilPollution,0.7929,0.9876,True
+air--pollution,soil pollution,174078,,https://w3id.org/eusoilvoc#SoilPollution,0.8003,0.8472,True
+contaminació,soil pollution,174112,,https://w3id.org/eusoilvoc#SoilPollution,0.8262,0.7387,True
+erosió eòlica,soil erosion,174146,,https://w3id.org/eusoilvoc#SoilErosion,0.8791,0.8561,True
+air-pollution,soil pollution,174172,,https://w3id.org/eusoilvoc#SoilPollution,0.8121,0.7701,True
+air-quality,air quality,174186,,https://w3id.org/eusoilvoc#AirQuality,0.9602,0.9998,True
+particle size distribution (psd),particle size fraction sum,174206,,https://w3id.org/eusoilvoc#ParticleSizeFractionSum,0.6266,0.9475,True
+mineral-composition,mineral contents,174211,,https://w3id.org/eusoilvoc#MineralContents,0.9299,0.9756,True
+air quality legislation,air quality,174230,,https://w3id.org/eusoilvoc#AirQuality,0.818,0.8323,True
+air pollution.,air quality,174233,,https://w3id.org/eusoilvoc#AirQuality,0.8576,0.81,True
+aire--qualitat,air quality,174234,,https://w3id.org/eusoilvoc#AirQuality,0.9104,0.9993,True
+soil wind erosion,soil erosion,174237,,https://w3id.org/eusoilvoc#SoilErosion,0.8071,0.9961,True
+geowissenschaften,geology,174259,,https://w3id.org/eusoilvoc#Geology,0.926,0.9399,True
+air quality models,air quality,174263,,https://w3id.org/eusoilvoc#AirQuality,0.9128,0.7654,True
+aire -- qualitat,air quality,174264,,https://w3id.org/eusoilvoc#AirQuality,0.968,0.9989,True
+el-nino,ions,174363,,https://w3id.org/eusoilvoc#Ions,0.6139,0.8448,True
+soil microbial physiology,soil microfauna,174416,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9507,0.8537,True
+soil organic carbon stocks,soil organic carbon,174420,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9469,0.9701,True
+soil carbon decomposition,soil organic carbon,174440,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8649,0.9788,True
+"metals, heavy",cadmium total elements,174476,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.6577,0.6229,True
+soil health/quality,soil quality,174503,,https://w3id.org/eusoilvoc#SoilQuality,0.9538,0.9847,True
+polluted soils,soil pollution,174506,,https://w3id.org/eusoilvoc#SoilPollution,0.927,0.9961,True
+xylenes,ions,174530,,https://w3id.org/eusoilvoc#Ions,0.6246,0.6119,True
+"waste disposal, fluid",liquid waste disposal,174552,,https://w3id.org/eusoilvoc#LiquidWasteDisposal,0.9639,0.9764,False
+contaminación,soil pollution,174601,,https://w3id.org/eusoilvoc#SoilPollution,0.8209,0.8065,True
+agua-contaminación,soil moisture,174647,,https://w3id.org/eusoilvoc#SoilMoisture,0.7828,0.7356,True
+water-pollution,soil pollution,174648,,https://w3id.org/eusoilvoc#SoilPollution,0.7695,0.862,True
+aluminium alloy,aluminium exchangeable base,174685,,https://w3id.org/eusoilvoc#AluminiumExchangeableBase,0.6952,0.6406,True
+soil moisture monitoring,soil moisture contents,174757,,https://w3id.org/eusoilvoc#SoilMoistureContents,0.896,0.8466,True
+soil moisture; network,soil moisture,174780,,https://w3id.org/eusoilvoc#SoilMoisture,0.9118,0.8472,True
+soil affinity,soil water affinity,174807,,https://w3id.org/eusoilvoc#SoilWaterAffinity,0.8835,0.793,False
+habitats directive,habitats,174853,,https://w3id.org/eusoilvoc#Habitats,0.7973,0.658,True
+gypsophyte,gypsum,174854,,https://w3id.org/eusoilvoc#Gypsum,0.8592,0.8149,True
+infiltration rate measurements,soil water infiltration rate numeric,174877,,https://w3id.org/eusoilvoc#SoilWaterInfiltrationRateNumeric,0.7145,0.9929,True
+phylogeography,physiography,174879,,https://w3id.org/eusoilvoc#Physiography,0.8885,0.8353,True
+diversity loss,soil biodiversity loss,174898,,https://w3id.org/eusoilvoc#SoilBiodiversityLoss,0.525,0.6,False
+climatología,weather,174915,,https://w3id.org/eusoilvoc#Weather,0.8292,0.9541,True
+geophyte,physiography,174927,,https://w3id.org/eusoilvoc#Physiography,0.6676,0.6764,True
+ecosistemes,habitats,174934,,https://w3id.org/eusoilvoc#Habitats,0.8134,0.9803,True
+vegetació,vegetation class,174937,,https://w3id.org/eusoilvoc#VegetationClass,0.8644,0.9081,True
+plant biomass,biomass,174951,,https://w3id.org/eusoilvoc#Biomass,0.9267,0.991,True
+gypsum mining,gypsum,174967,,https://w3id.org/eusoilvoc#Gypsum,0.6877,0.9926,True
+gypsophil,gypsum,174969,,https://w3id.org/eusoilvoc#Gypsum,0.8929,0.6803,True
+sulfates,salts,174970,,https://w3id.org/eusoilvoc#Salts,0.7066,0.6923,True
+root depth,soil depth rootable,174989,,https://w3id.org/eusoilvoc#SoilDepthRootable,0.752,0.9658,True
+gypsum affinity,gypsum,174997,,https://w3id.org/eusoilvoc#Gypsum,0.7909,0.7579,True
+gypsum crystallization water,gypsum forms,175001,,https://w3id.org/eusoilvoc#GypsumForms,0.6306,0.7455,True
+almidae,aluminium,175045,,https://w3id.org/eusoilvoc#Aluminium,0.6326,0.6945,True
+human impacts,human influence class,175084,,https://w3id.org/eusoilvoc#HumanInfluenceClass,0.7182,0.9962,True
+soil chemistry,soil chemical properties,175089,,https://w3id.org/eusoilvoc#SoilChemicalProperties,0.9506,0.9617,True
+soil erosion modelling,soil erosion,175189,,https://w3id.org/eusoilvoc#SoilErosion,0.9306,0.8518,True
+sustainable agricultural environments,agricultural sustainability,175194,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9326,0.9614,False
+soil heating,soil heat exchange,175209,,https://w3id.org/eusoilvoc#SoilHeatExchange,0.8684,0.6363,False
+soil microbial functions,soil microfauna,175210,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9361,0.9747,True
+sòls,soil,175216,,https://w3id.org/eusoilvoc#Soil,0.9099,0.9668,True
+sòls forestals,land use forests,175218,,https://w3id.org/eusoilvoc#LandUseForests,0.7971,0.6031,True
+volumetric soil water content,soil moisture,175226,,https://w3id.org/eusoilvoc#SoilMoisture,0.9352,0.7467,True
+healthy soils,soil health,175229,,https://w3id.org/eusoilvoc#SoilHealth,0.9246,0.9917,True
+drainage,peat drainage,175358,,https://w3id.org/eusoilvoc#PeatDrainage,0.8319,0.6238,True
+nitrogen-fertilization,biological nitrogen fixation,175364,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.8358,0.9961,True
+shrubland,land use shrubs,175384,,https://w3id.org/eusoilvoc#LandUseShrubs,0.7993,0.9872,True
+drainage water,drainage to groundwater,175458,,https://w3id.org/eusoilvoc#DrainageToGroundwater,0.9106,0.7077,False
+humic acids,HumAcidC_unk,175465,,https://w3id.org/eusoilvoc#organicMatterProcedure-HumAcidC_unkn,0.6991,0.6072,True
+permeability,soil permeability,175498,,https://w3id.org/eusoilvoc#SoilPermeability,0.6384,0.9179,True
+complex formation,landform complex,175514,,https://w3id.org/eusoilvoc#LandformComplex,0.5801,0.7923,True
+iron minerals,iron,175752,,https://w3id.org/eusoilvoc#Iron,0.8869,0.6435,True
+carbonates,carbonate forms,175816,,https://w3id.org/eusoilvoc#CarbonateForms,0.912,0.936,True
+ccs,effective CEC,175825,,https://w3id.org/eusoilvoc#EffectiveCEC,0.6791,0.8337,True
+crop type,crop class,175834,,https://w3id.org/eusoilvoc#CropClass,0.8945,0.8416,True
+soil/chemistry,soil chemical properties,175848,,https://w3id.org/eusoilvoc#SoilChemicalProperties,0.953,0.8937,True
+nitrogen/analysis,nitrogen,175854,,https://w3id.org/eusoilvoc#Nitrogen,0.8666,0.8948,True
+sustainable agroecosystem,agricultural sustainability,175856,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.8414,0.8764,False
+soil organic carbon and total nitrogen stock,soil total carbon,175859,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.8624,0.985,True
+available phosphorus,phosphorus,175872,,https://w3id.org/eusoilvoc#Phosphorus,0.9656,0.9969,True
+soil incubation | microorganisms,soil microfauna,175880,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.8728,0.728,True
+légume,slope,175907,,https://w3id.org/eusoilvoc#Slope,0.773,0.7822,True
+phosphatase,pHH2O_sat,175930,,https://w3id.org/eusoilvoc#pHProcedure-pHH2O_sat,0.5769,0.7336,True
+soil carbon stock,soil carbon density,175933,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.8967,0.8276,True
+land use type,land use,175934,,https://w3id.org/eusoilvoc#LandUse,0.9143,0.9995,True
+phosphorus limitation,phosphorus retention,175951,,https://w3id.org/eusoilvoc#PhosphorusRetention,0.8778,0.9663,True
+conservation des forêts,conservation tillage,176016,,https://w3id.org/eusoilvoc#ConservationTillage,0.7756,0.7497,True
+déboisement,runoff,176030,,https://w3id.org/eusoilvoc#Runoff,0.8939,0.767,True
+conservación de la diversidad biológica,biological abundance,176033,,https://w3id.org/eusoilvoc#BiologicalAbundance,0.7699,0.6221,True
+réserve forestière,conservation tillage,176047,,https://w3id.org/eusoilvoc#ConservationTillage,0.666,0.6365,True
+dégradation des forêts,soil degradation,176049,,https://w3id.org/eusoilvoc#SoilDegradation,0.6566,0.9816,True
+optain,inputs,176053,,https://w3id.org/eusoilvoc#Inputs,0.7517,0.6283,True
+hydrological connectivity,soil hydraulic conductivity,176062,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,0.71,0.7767,True
+soil attributes,soil properties,176066,,https://w3id.org/eusoilvoc#SoilProperties,0.951,0.9563,True
+geoscience,geology,176072,,https://w3id.org/eusoilvoc#Geology,0.8314,0.7995,True
+soil capability,soil quality,176076,,https://w3id.org/eusoilvoc#SoilQuality,0.9155,0.9957,True
+deplete soil-nitrogen,soil nitrogen loss,176105,,https://w3id.org/eusoilvoc#SoilNLoss,0.9141,0.8378,False
+habitat provisioning,habitat provision capacity,176107,,https://w3id.org/eusoilvoc#HabitatProvisionCapacity,0.9101,0.9554,False
+seedlings,seedling emergence,176161,,https://w3id.org/eusoilvoc#SeedlingEmergence,0.8297,0.6731,True
+healthy soil,soil health,176292,,https://w3id.org/eusoilvoc#SoilHealth,0.9313,0.9898,True
+ecosystem quality,soil quality,176294,,https://w3id.org/eusoilvoc#SoilQuality,0.7024,0.9706,True
+land cover changes,land use bare cover,176298,,https://w3id.org/eusoilvoc#LandUseBareCover,0.6904,0.6559,True
+estaño,slope,176331,,https://w3id.org/eusoilvoc#Slope,0.9167,0.7116,True
+/dk/atira/pure/sustainabledevelopmentgoals/responsible_consumption_and_production; name=sdg 12 - responsible consumption and production,agricultural sustainability,176422,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.4922,0.891,False
+soil ecosystem,soil environmental functions,176424,,https://w3id.org/eusoilvoc#SoilEnvironmentalFunctions,0.9034,0.8283,False
+/dk/atira/pure/sustainabledevelopmentgoals/clean_water_and_sanitation; name=sdg 6 - clean water and sanitation,water purification,176483,,https://w3id.org/eusoilvoc#WaterPurification,0.6061,0.8005,False
+forested land,land use forests,176553,,https://w3id.org/eusoilvoc#LandUseForests,0.9015,0.991,True
+cropland management,crop class,176556,,https://w3id.org/eusoilvoc#CropClass,0.734,0.6568,True
+écosystème,ecosystem services,176570,,https://w3id.org/eusoilvoc#EcosystemServices,0.8619,0.8445,True
+woody  perennials,trees,176576,,https://w3id.org/eusoilvoc#Trees,0.6065,0.9502,True
+biomass sampling,biomass,176589,,https://w3id.org/eusoilvoc#Biomass,0.8608,0.8351,True
+agricultura sostenible,agricultural sustainability,176592,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9553,0.9775,False
+soil organic matter decomposition,soil organic matter,176617,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.909,0.9592,True
+soil lichens,soil mineral matter,176630,,https://w3id.org/eusoilvoc#SoilMineralMatter,0.7179,0.7771,False
+soil biocrust,soil biological crusts,176632,,https://w3id.org/eusoilvoc#SoilBiologicalCrusts,0.8347,0.9559,False
+soil health living lab,soil health,176668,,https://w3id.org/eusoilvoc#SoilHealth,0.8272,0.6324,True
+salute del suolo,soil health,176671,,https://w3id.org/eusoilvoc#SoilHealth,0.9369,0.9873,True
+f300,PAWHC_calcul-fc300wp,176752,,https://w3id.org/eusoilvoc#availableWaterHoldingCapacityProcedure-PAWHC_calcul-fc300wp,0.4688,0.9736,True
+biomaterials,biomass,176779,,https://w3id.org/eusoilvoc#Biomass,0.5863,0.6869,True
+nitrogen-fixing bacteria,biological nitrogen fixation,176785,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,0.8259,0.9971,True
+land use sites,land use class,176795,,https://w3id.org/eusoilvoc#LandUseClass,0.8388,0.9425,True
+kakovosti voda,water quality,176852,,https://w3id.org/eusoilvoc#WaterQuality,0.991,0.9983,True
+water quality management,water quality,176858,,https://w3id.org/eusoilvoc#WaterQuality,0.8992,0.9226,True
+swat,salts,176889,,https://w3id.org/eusoilvoc#Salts,0.6999,0.6083,True
+kakovost voda,water quality,176894,,https://w3id.org/eusoilvoc#WaterQuality,0.9915,0.9993,True
+water-quality,water quality,176904,,https://w3id.org/eusoilvoc#WaterQuality,0.9691,0.9999,True
+soil hydraulics,soil hydraulic conductivity,176944,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,0.9063,0.9954,True
+soil-water-retention,soil water retention index,176945,,https://w3id.org/eusoilvoc#SoilWaterRetentionIndex,0.907,0.7919,False
+heterogeneous soils,soil pore heterogeneity,176953,,https://w3id.org/eusoilvoc#SoilPoreHeterogeneity,0.8345,0.9773,False
+ecological water-quality,water quality,176966,,https://w3id.org/eusoilvoc#WaterQuality,0.8485,0.6408,True
+realistic soil pollution,soil pollution,177003,,https://w3id.org/eusoilvoc#SoilPollution,0.9416,0.6503,True
+total carbon,soil total carbon,177005,,https://w3id.org/eusoilvoc#SoilTotalCarbon,0.7616,0.9972,True
+water holding capacity,available water holding capacity,177006,,https://w3id.org/eusoilvoc#AvailableWaterHoldingCapacity,0.9749,0.9989,True
+agricultural plastics,soil plasticity,177009,,https://w3id.org/eusoilvoc#SoilPlasticity,0.5382,0.8974,True
+pf-curve,pF curve,177026,,https://w3id.org/eusoilvoc#pFcurve,0.9022,0.9795,False
+physical properties,soil physical properties,177038,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,0.811,0.8288,True
+maaperäbiologia,soil biological properties,177042,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.8292,0.7254,True
+ympäristökuormitus,environmental factors,177049,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.9359,0.7462,True
+muovi,aluminium,177054,,https://w3id.org/eusoilvoc#Aluminium,0.6093,0.6669,True
+zemlja,soil,177112,,https://w3id.org/eusoilvoc#Soil,0.9258,0.7135,True
+kasvien kasvu,plant cover,177139,,https://w3id.org/eusoilvoc#PlantCover,0.7672,0.8433,True
+soil aggregates,soil aggregation,177162,,https://w3id.org/eusoilvoc#SoilAggregation,0.9394,0.9435,False
+climatologie et météorologie,weather,177184,,https://w3id.org/eusoilvoc#Weather,0.9112,0.955,True
+vegetation composition,vegetation class,177191,,https://w3id.org/eusoilvoc#VegetationClass,0.8737,0.9434,True
+land use types,land use class,177235,,https://w3id.org/eusoilvoc#LandUseClass,0.9222,0.9976,True
+heavy-metal,cadmium total elements,177255,,https://w3id.org/eusoilvoc#CadmiumTotalElements,0.5784,0.6237,True
+ekosystemtjänster,ecosystem services,177259,,https://w3id.org/eusoilvoc#EcosystemServices,0.9827,0.9999,True
+jordhälsa,soil health,177260,,https://w3id.org/eusoilvoc#SoilHealth,0.7094,0.9646,True
+urban land use,land use,177262,,https://w3id.org/eusoilvoc#LandUse,0.8976,0.9981,True
+soil architecture,soil structure,177383,,https://w3id.org/eusoilvoc#SoilStructure,0.9379,0.7959,True
+pore network,soil pore connectivity,177409,,https://w3id.org/eusoilvoc#SoilPoreConnectivity,0.6477,0.744,False
+pore-size,soil pore size,177412,,https://w3id.org/eusoilvoc#SoilPoreSize,0.9268,0.9874,True
+fen,iron,177413,,https://w3id.org/eusoilvoc#Iron,0.8248,0.6072,True
+controlled environments,regulating services,177424,,https://w3id.org/eusoilvoc#RegulatingServices,0.5007,0.704,True
+suokasvillisuus,stickiness,177426,,https://w3id.org/eusoilvoc#Stickiness,0.8921,0.6888,True
+plasticity,wet plasticity,177441,,https://w3id.org/eusoilvoc#WetPlasticity,0.773,0.6692,True
+metales,copper,177488,,https://w3id.org/eusoilvoc#Copper,0.7781,0.6458,True
+fitodecontaminación,soil pollution,177491,,https://w3id.org/eusoilvoc#SoilPollution,0.6219,0.8387,True
+altimétrie,slope orientation,177527,,https://w3id.org/eusoilvoc#SlopeOrientation,0.6153,0.6935,True
+sòls -- humitat -- mesurament,soil moisture contents,177530,,https://w3id.org/eusoilvoc#SoilMoistureContents,0.8361,0.9536,True
+soil moisture--measurement--remote sensing,soil moisture,177531,,https://w3id.org/eusoilvoc#SoilMoisture,0.8258,0.8349,True
+copper deficiency,copper total elements,177572,,https://w3id.org/eusoilvoc#CopperTotalElements,0.7569,0.8052,True
+plant-growth,plant cover,177585,,https://w3id.org/eusoilvoc#PlantCover,0.7184,0.8781,True
+organic-acids,OrgC_acid-dc-lt,177588,,https://w3id.org/eusoilvoc#carbonOrganicProcedure-OrgC_acid-dc-lt,0.647,0.6985,True
+soil evaporation,soil water evapouration,177624,,https://w3id.org/eusoilvoc#SoilWaterEvapouration,0.9265,0.8133,False
+irrigated farming,irrigation,177639,,https://w3id.org/eusoilvoc#Irrigation,0.7487,0.6488,True
+humidite du sol,soil moisture,177642,,https://w3id.org/eusoilvoc#SoilMoisture,0.8844,0.9085,True
+water content,soil moisture,177648,,https://w3id.org/eusoilvoc#SoilMoisture,0.8103,0.9903,True
+evaporation,evapotranspiration,177658,,https://w3id.org/eusoilvoc#Evapotranspiration,0.8675,0.8611,True
+saline soil,soil salinity,177675,,https://w3id.org/eusoilvoc#SoilSalinity,0.9377,0.7169,True
+reference evapotranspiration,evapotranspiration,177678,,https://w3id.org/eusoilvoc#Evapotranspiration,0.8942,1.0,True
+soil resistance,soil penetration resistance,177686,,https://w3id.org/eusoilvoc#SoilPenetrationResistance,0.9527,0.9994,True
+thermal effects on soil,soil thermal conductivity,177693,,https://w3id.org/eusoilvoc#SoilThermalConductivity,0.8786,0.7127,False
+smos,soil organic matter,177698,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.5576,0.9562,True
+rooting depth,soil depth rootable,177845,,https://w3id.org/eusoilvoc#SoilDepthRootable,0.7685,0.939,True
+soil microbial diversity,soil microfauna,177896,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9082,0.8933,True
+mesoporous silica,soil mesopore,177905,,https://w3id.org/eusoilvoc#SoilMesopore,0.6083,0.9044,False
+soil land management,soil management,177949,,https://w3id.org/eusoilvoc#SoilManagement,0.954,0.8389,True
+gestion durable des sols,soil management,177956,,https://w3id.org/eusoilvoc#SoilManagement,0.8712,0.9209,True
+fruchtfolge,crop yield,178029,,https://w3id.org/eusoilvoc#CropYield,0.6834,0.7029,True
+phosphorus mobilization,phosphorus retention,178030,,https://w3id.org/eusoilvoc#PhosphorusRetention,0.8723,0.6146,True
+land and farm management,land use,178049,,https://w3id.org/eusoilvoc#LandUse,0.8807,0.7588,True
+co<sub>2</sub>,Extr_nh4-co3-2-ambic1,178067,,https://w3id.org/eusoilvoc#extractableElementsProcedure-Extr_nh4-co3-2-ambic1,0.5337,0.7994,True
+compacted subsoils,soil compaction,178113,,https://w3id.org/eusoilvoc#SoilCompaction,0.5927,0.9929,True
+irrigation management,irrigation,178133,,https://w3id.org/eusoilvoc#Irrigation,0.9445,0.7102,True
+biologia dels sòls,soil biological properties,178148,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.9012,0.9907,True
+clay loam soil,soil clay mineralogy,178170,,https://w3id.org/eusoilvoc#SoilClayMineralogy,0.8687,0.8597,False
+soil quality; sustainable soil management; adoption; crop management; environmental dimension; sociocultural dimension; economic dimension,soil quality,178174,,https://w3id.org/eusoilvoc#SoilQuality,0.702,0.6304,True
+intrinsic and dynamic soil properties,soil physical properties,178182,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,0.894,0.9987,True
+degraded land,soil degradation,178195,,https://w3id.org/eusoilvoc#SoilDegradation,0.8654,0.6067,True
+irrigation water,irrigation,178220,,https://w3id.org/eusoilvoc#Irrigation,0.9499,0.9803,True
+organic nitrogen,nitrogen total,178229,,https://w3id.org/eusoilvoc#NitrogenTotal,0.8143,0.9297,True
+plant senescence,seedling emergence,178250,,https://w3id.org/eusoilvoc#SeedlingEmergence,0.5348,0.6909,True
+insectos,termites,178324,,https://w3id.org/eusoilvoc#Termites,0.761,0.6714,True
+plantas,plant cover,178326,,https://w3id.org/eusoilvoc#PlantCover,0.9222,0.951,True
+maaperän organismit,soil biological properties,178339,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.8605,0.6528,True
+organic material,soil organic matter,178350,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8045,0.6552,True
+individual aggregates,soil structure,178403,,https://w3id.org/eusoilvoc#SoilStructure,0.7586,0.8208,True
+nitrogen content,nitrogen total,178409,,https://w3id.org/eusoilvoc#NitrogenTotal,0.9296,0.7026,True
+vegetation type,vegetation class,178416,,https://w3id.org/eusoilvoc#VegetationClass,0.9217,0.9993,True
+environmental variables,environmental factors,178417,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.9192,0.8238,True
+matière organique,soil organic matter,178471,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8794,0.8623,True
+blas,boron,178483,,https://w3id.org/eusoilvoc#Boron,0.7529,0.7748,True
+organische koolstof,soil organic carbon,178573,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9089,0.8793,True
+waste reuse,waste disposal,178611,,https://w3id.org/eusoilvoc#WasteDisposal,0.8719,0.906,True
+waste disposal facilities,waste disposal,178615,,https://w3id.org/eusoilvoc#WasteDisposal,0.9421,0.8878,True
+irrigation strategy,irrigation,178633,,https://w3id.org/eusoilvoc#Irrigation,0.9235,0.8233,True
+soil bacteria contamination,soil contaminants,178635,,https://w3id.org/eusoilvoc#SoilContaminants,0.7919,0.6165,False
+soil quality indicators,soil quality,178654,,https://w3id.org/eusoilvoc#SoilQuality,0.9391,0.7416,True
+water stable aggregates index,percent water stable aggregation,178675,,https://w3id.org/eusoilvoc#PercentWaterStableAggregation,0.8281,0.8267,False
+ecosystem management,ecosystem services,178690,,https://w3id.org/eusoilvoc#EcosystemServices,0.8773,0.7111,True
+soil physical parameters,soil physical properties,178691,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,0.9359,0.9887,True
+crop uptake,crop yield,178726,,https://w3id.org/eusoilvoc#CropYield,0.7777,0.7613,True
+soil organic matter mineralisation,soil organic matter,178727,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.9042,0.9401,True
+ekosistemske storitve,ecosystem services,178753,,https://w3id.org/eusoilvoc#EcosystemServices,0.9791,0.9993,True
+conservation management,conservation tillage,178757,,https://w3id.org/eusoilvoc#ConservationTillage,0.8947,0.8369,True
+water quality indices,water quality,178871,,https://w3id.org/eusoilvoc#WaterQuality,0.9238,0.7502,True
+"water retainer, krzywa retencji glebowej",soil water retention,178891,,https://w3id.org/eusoilvoc#SoilWaterRetention,0.84,0.7624,False
+psf,KSat_calcul-ptf,178932,,https://w3id.org/eusoilvoc#hydraulicConductivityProcedure-KSat_calcul-ptf,0.6074,0.6472,True
+metal complexation,mineral conc hardness,178935,,https://w3id.org/eusoilvoc#MineralConcHardness,0.6178,0.749,True
+weathering,weather,178946,,https://w3id.org/eusoilvoc#Weather,0.9373,0.7114,True
+soil (mesh),soil,179011,,https://w3id.org/eusoilvoc#Soil,0.8945,0.73,True
+"water pollution, chemical",soil pollution,179022,,https://w3id.org/eusoilvoc#SoilPollution,0.746,0.7699,True
+mineral elements,mineral contents,179040,,https://w3id.org/eusoilvoc#MineralContents,0.9495,0.7683,True
+chloride anion,soluble anion total,179062,,https://w3id.org/eusoilvoc#SolubleAnionTotal,0.7678,0.8545,True
+sodium cation,soluble cation total,179063,,https://w3id.org/eusoilvoc#SolubleCationTotal,0.6244,0.8807,True
+sulfate anion,soluble anion total,179064,,https://w3id.org/eusoilvoc#SolubleAnionTotal,0.6498,0.8478,True
+calcium cation,soluble cation total,179071,,https://w3id.org/eusoilvoc#SolubleCationTotal,0.5674,0.8205,True
+"conductivity, electrical",soil electrical conductivity,179076,,https://w3id.org/eusoilvoc#SoilElectricalConductivity,0.6815,0.9981,True
+bodemclassificaties,crop class,179113,,https://w3id.org/eusoilvoc#CropClass,0.5042,0.6366,True
+soil science,soil,188193,,https://w3id.org/eusoilvoc#Soil,0.936,0.9398,True
+available phosphorus,phosphorus,181412,,https://w3id.org/eusoilvoc#Phosphorus,0.9656,0.9969,True
+ruiming,mulching,179239,,https://w3id.org/eusoilvoc#Mulching,0.7971,0.7278,True
+grond,soil,179252,,https://w3id.org/eusoilvoc#Soil,0.9725,0.8303,True
+bodemdecreet,soil texture,179254,,https://w3id.org/eusoilvoc#SoilTexture,0.72,0.7689,True
+bodemsanering,soil sealing,179272,,https://w3id.org/eusoilvoc#SoilSealing,0.8623,0.9308,True
+degraded soil,soil degradation,181500,,https://w3id.org/eusoilvoc#SoilDegradation,0.9645,0.9994,True
+structure-du-sol,soil structure,179321,,https://w3id.org/eusoilvoc#SoilStructure,0.6041,0.9663,True
+organisme-du-sol,soil organisms,179322,,https://w3id.org/eusoilvoc#SoilOrganisms,0.741,0.9306,False
+déterioration-du-sol,soil degradation,179323,,https://w3id.org/eusoilvoc#SoilDegradation,0.8364,0.9986,True
+fertilité-du-sol,soil productivity,179324,,https://w3id.org/eusoilvoc#SoilProductivity,0.8388,0.99,True
+pratiche,mulching,181503,,https://w3id.org/eusoilvoc#Mulching,0.7834,0.615,True
+fertilité,soil productivity,179339,,https://w3id.org/eusoilvoc#SoilProductivity,0.8208,0.7407,True
+qualité-du-sol,soil productivity,179345,,https://w3id.org/eusoilvoc#SoilProductivity,0.6938,0.7182,True
+conservation-du-sol,conservation tillage,179348,,https://w3id.org/eusoilvoc#ConservationTillage,0.7481,0.7793,True
+facteur-socio-économique,environmental factors,179363,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.6808,0.6082,True
+habitat-rural,habitats,179368,,https://w3id.org/eusoilvoc#Habitats,0.9173,0.9731,True
+densité,soil density,179372,,https://w3id.org/eusoilvoc#SoilDensity,0.7957,0.6475,True
+habitation,habitats,179374,,https://w3id.org/eusoilvoc#Habitats,0.8927,0.7777,True
+sciences-du-sol,soil,179400,,https://w3id.org/eusoilvoc#Soil,0.6047,0.7668,True
+existing-land-use,land use,179413,,https://w3id.org/eusoilvoc#LandUse,0.881,0.7821,True
+soil-regeneration,soil degradation,181535,,https://w3id.org/eusoilvoc#SoilDegradation,0.8022,0.9953,True
+peatlands,peat,185823,,https://w3id.org/eusoilvoc#Peat,0.8968,0.8475,True
+soil structure.,soil structure,187517,,https://w3id.org/eusoilvoc#SoilStructure,0.9919,0.9995,True
+land production,land use,181655,,https://w3id.org/eusoilvoc#LandUse,0.8789,0.7258,True
+polluted soil,soil pollution,187535,,https://w3id.org/eusoilvoc#SoilPollution,0.935,0.9963,True
+despoblación,waste disposal,179688,,https://w3id.org/eusoilvoc#WasteDisposal,0.7705,0.6649,True
+despovoamento,waste disposal,179694,,https://w3id.org/eusoilvoc#WasteDisposal,0.8445,0.631,True
+solar sintering,soil sorption,179713,,https://w3id.org/eusoilvoc#SoilSorption,0.6635,0.61,True
+phosphorus distribution,phosphorus retention,179725,,https://w3id.org/eusoilvoc#PhosphorusRetention,0.8772,0.9098,True
+phytobiome,biomass,179833,,https://w3id.org/eusoilvoc#Biomass,0.8023,0.6086,True
+sensing soil,soil,179910,,https://w3id.org/eusoilvoc#Soil,0.8655,0.9721,True
+geovetenskap och miljövetenskap,geology,179922,,https://w3id.org/eusoilvoc#Geology,0.8166,0.6232,True
+erosión suelo,soil erosion,179932,,https://w3id.org/eusoilvoc#SoilErosion,0.9825,0.9995,True
+cubiertas vegetales,plant cover,179934,,https://w3id.org/eusoilvoc#PlantCover,0.9317,0.7221,True
+restauración,waste disposal,179939,,https://w3id.org/eusoilvoc#WasteDisposal,0.5644,0.7239,True
+conservación del suelo,conservation tillage,179943,,https://w3id.org/eusoilvoc#ConservationTillage,0.9332,0.948,True
+水源涵养,soil water retention,179951,,https://w3id.org/eusoilvoc#SoilWaterRetention,0.8538,0.8125,False
+土壤保持,conservation tillage,179952,,https://w3id.org/eusoilvoc#ConservationTillage,0.8548,0.9715,True
+water conservation,conservation tillage,179957,,https://w3id.org/eusoilvoc#ConservationTillage,0.7589,0.6644,True
+soil erosion model,soil erosion category,179974,,https://w3id.org/eusoilvoc#SoilErosionCategory,0.9285,0.9683,True
+streamflow,runoff,179977,,https://w3id.org/eusoilvoc#Runoff,0.8135,0.6358,True
+biological activities,biological features,179986,,https://w3id.org/eusoilvoc#BiologicalFeatures,0.82,0.9844,True
+dry consistence,dry consistency,179989,,https://w3id.org/eusoilvoc#DryConsistency,0.9836,0.9999,True
+qualitative soil indicators,soil quality,179990,,https://w3id.org/eusoilvoc#SoilQuality,0.8479,0.6704,True
+ethylene,ions,180001,,https://w3id.org/eusoilvoc#Ions,0.5627,0.7348,True
+soil-moisture assimilation,soil moisture redistribution,180031,,https://w3id.org/eusoilvoc#SoilMoistureRedistribution,0.8531,0.7156,False
+salinidad,soil salinity,180071,,https://w3id.org/eusoilvoc#SoilSalinity,0.7563,0.9689,True
+surface soil-moisture,soil surface seal,180104,,https://w3id.org/eusoilvoc#SoilSurfaceSeal,0.9004,0.7338,False
+soil erosion regulation,soil erosion degree,180114,,https://w3id.org/eusoilvoc#SoilErosionDegree,0.8749,0.6339,True
+salt sensing,salts,180143,,https://w3id.org/eusoilvoc#Salts,0.8584,0.6191,True
+soil and water,soil moisture,180158,,https://w3id.org/eusoilvoc#SoilMoisture,0.9396,0.6271,True
+organic mulch,mulching,180166,,https://w3id.org/eusoilvoc#Mulching,0.7348,0.9961,True
+degraded water,soil degradation,180189,,https://w3id.org/eusoilvoc#SoilDegradation,0.7924,0.9481,True
+secondary soil salinization,soil salinization,180190,,https://w3id.org/eusoilvoc#SoilSalinization,0.9358,0.7422,True
+irrigated agriculture,irrigation,180191,,https://w3id.org/eusoilvoc#Irrigation,0.7857,0.8591,True
+sustainable agricultural practice,agricultural sustainability,180288,,https://w3id.org/eusoilvoc#AgriculturalSustainability,0.9075,0.9746,False
+soil care,soil management,180365,,https://w3id.org/eusoilvoc#SoilManagement,0.9212,0.7322,True
+soil-water content,soil moisture,180367,,https://w3id.org/eusoilvoc#SoilMoisture,0.9864,1.0,True
+soil&#8208,soil,180379,,https://w3id.org/eusoilvoc#Soil,0.8908,0.9543,True
+nährstoffaufnahme,waste disposal,180390,,https://w3id.org/eusoilvoc#WasteDisposal,0.6036,0.6899,True
+bodenschätze,crop yield,180421,,https://w3id.org/eusoilvoc#CropYield,0.789,0.8315,True
+historisch bodemgebruik en vegetatie,land use forests,181732,,https://w3id.org/eusoilvoc#LandUseForests,0.7058,0.6982,True
+mineralogische samenstelling,mineral contents,181733,,https://w3id.org/eusoilvoc#MineralContents,0.9187,0.9634,True
+capacidade de uso do solo,soil quality,180459,,https://w3id.org/eusoilvoc#SoilQuality,0.89,0.9827,True
+árboles,trees,180519,,https://w3id.org/eusoilvoc#Trees,0.997,0.9549,True
+ocupações de solo,land use,180535,,https://w3id.org/eusoilvoc#LandUse,0.8331,0.7559,True
+sos,soil organic matter,180547,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.8922,0.8376,True
+wandbeschrijving,soil,180557,,https://w3id.org/eusoilvoc#Soil,0.8195,0.7113,True
+bodemopbouw,soil structure,180563,,https://w3id.org/eusoilvoc#SoilStructure,0.8829,0.7128,True
+flächennutzung,land use,180594,,https://w3id.org/eusoilvoc#LandUse,0.8925,0.9847,True
+landbouw,land use,180602,,https://w3id.org/eusoilvoc#LandUse,0.8226,0.8531,True
+landgebruik,land use,180604,,https://w3id.org/eusoilvoc#LandUse,0.9825,0.9999,True
+pôda,slope,180608,,https://w3id.org/eusoilvoc#Slope,0.8785,0.8446,True
+pôdne typy,soil types,180610,,https://w3id.org/eusoilvoc#SoilTypes,0.9205,0.7773,True
+coverage,land cover,180666,,https://w3id.org/eusoilvoc#LandCover,0.7564,0.7513,True
+organic soils,soil organic matter class,182239,,https://w3id.org/eusoilvoc#SoilOrganicMatterClass,0.9082,0.9985,True
+drainage for agriculture,peat drainage,182241,,https://w3id.org/eusoilvoc#PeatDrainage,0.7361,0.8813,True
+gebouwen,building,180680,,https://w3id.org/eusoilvoc#Building,0.8866,0.6009,False
+habitats en biotopen,habitats,180683,,https://w3id.org/eusoilvoc#Habitats,0.873,0.689,True
+hoogte,slope,180685,,https://w3id.org/eusoilvoc#Slope,0.8305,0.8943,True
+bodemgebruik,land use,180693,,https://w3id.org/eusoilvoc#LandUse,0.9255,0.9562,True
+atmosferische omstandigheden,weather,180695,,https://w3id.org/eusoilvoc#Weather,0.8655,0.9598,True
+uso del suolo,land use,180711,,https://w3id.org/eusoilvoc#LandUse,0.9278,0.8985,True
+soil physics,soil,180723,,https://w3id.org/eusoilvoc#Soil,0.9055,0.9722,True
+pathways,slope pathways,181841,,https://w3id.org/eusoilvoc#SlopePathways,0.6755,0.8162,True
+ecosystem,ecosystem services,188207,,https://w3id.org/eusoilvoc#EcosystemServices,0.8474,0.9585,True
+silt content,silt,180802,,https://w3id.org/eusoilvoc#Silt,0.7373,0.8062,True
+siti-contaminati,soil contaminants,180810,,https://w3id.org/eusoilvoc#SoilContaminants,0.5189,0.8195,False
+procedimenti-di-bonifica,mulching,180813,,https://w3id.org/eusoilvoc#Mulching,0.601,0.7747,True
+soil organic carbon content,soil inorganic carbon,185933,,https://w3id.org/eusoilvoc#SoilInorganicCarbon,0.9367,0.9972,True
+available potassium,potassium total elements,180844,,https://w3id.org/eusoilvoc#PotassiumTotalElements,0.9013,0.7848,True
+bodenentsiegelung,conservation tillage,180860,,https://w3id.org/eusoilvoc#ConservationTillage,0.8329,0.6044,True
+naturpotenzial,environmental factors,180861,,https://w3id.org/eusoilvoc#EnvironmentalFactors,0.6833,0.8377,True
+cation-exchange-capacity,cation exchange capacity effective,181938,,https://w3id.org/eusoilvoc#CationExchangeCapacityEffective,0.8891,0.9999,True
+dépollution,runoff,180990,,https://w3id.org/eusoilvoc#Runoff,0.6084,0.7669,True
+vienne,ions,181016,,https://w3id.org/eusoilvoc#Ions,0.8232,0.6211,True
+subsoil organic carbon,soil organic carbon,181029,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.7754,0.926,True
+allagamento,mulching,181037,,https://w3id.org/eusoilvoc#Mulching,0.8774,0.7566,True
+evaporation,evapotranspiration,182034,,https://w3id.org/eusoilvoc#Evapotranspiration,0.8675,0.8611,True
+slope stability,slope forms,182064,,https://w3id.org/eusoilvoc#SlopeForms,0.7842,0.7879,True
+soiling transmittance,soil fluid transmission,181106,,https://w3id.org/eusoilvoc#SoilFluidTransmission,0.7438,0.9022,False
+bodenqualität,soil quality,181107,,https://w3id.org/eusoilvoc#SoilQuality,0.78,0.9918,True
+rhône,ions,181136,,https://w3id.org/eusoilvoc#Ions,0.9215,0.6934,True
+salinità,soil salinity,181161,,https://w3id.org/eusoilvoc#SoilSalinity,0.798,0.9677,True
+waterkwaliteit,water quality,182100,,https://w3id.org/eusoilvoc#WaterQuality,0.9898,0.9999,True
+"water-content,-soil",soil moisture,181192,,https://w3id.org/eusoilvoc#SoilMoisture,0.8066,0.9996,True
+tektites,termites,181201,,https://w3id.org/eusoilvoc#Termites,0.6667,0.6354,True
+zn,zinc,181211,,https://w3id.org/eusoilvoc#Zinc,0.8153,0.7807,True
+falda,slope,181215,,https://w3id.org/eusoilvoc#Slope,0.849,0.7416,True
+verdichtungsempfindlichkeit,soil penetration resistance,182197,,https://w3id.org/eusoilvoc#SoilPenetrationResistance,0.8496,0.628,True
+air-quality,air quality,186230,,https://w3id.org/eusoilvoc#AirQuality,0.9602,0.9998,True
+habitats-et-biotopes,habitats,182304,,https://w3id.org/eusoilvoc#Habitats,0.7868,0.957,True
+land utilization types,land use class,182425,,https://w3id.org/eusoilvoc#LandUseClass,0.9112,0.9976,True
+boundaries,boundary distinctness,182441,,https://w3id.org/eusoilvoc#BoundaryDistinctness,0.7834,0.8555,True
+incremental evapo-transpiration,evapotranspiration,182475,,https://w3id.org/eusoilvoc#Evapotranspiration,0.7504,0.7313,True
+land-use changes,land use,187569,,https://w3id.org/eusoilvoc#LandUse,0.8688,0.944,True
+gestion des ressources naturelles,ecosystem services,187614,,https://w3id.org/eusoilvoc#EcosystemServices,0.7544,0.6058,True
+gestion foncière,soil management,187619,,https://w3id.org/eusoilvoc#SoilManagement,0.9276,0.9033,True
+irrigation water use,irrigation,182583,,https://w3id.org/eusoilvoc#Irrigation,0.9118,0.7255,True
+processi del suolo,soil functions,182599,,https://w3id.org/eusoilvoc#SoilFunctions,0.8834,0.9087,True
+mullalõimis,soil sealing,182604,,https://w3id.org/eusoilvoc#SoilSealing,0.9041,0.8222,True
+volta,slope,182614,,https://w3id.org/eusoilvoc#Slope,0.8176,0.6993,True
+crop productivity,soil productivity,182639,,https://w3id.org/eusoilvoc#SoilProductivity,0.8246,0.6446,True
+soil reference depth,soil depth,182720,,https://w3id.org/eusoilvoc#SoilDepth,0.9269,0.9991,True
+topsoil organic carbon,soil organic carbon,182729,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.8131,0.816,True
+topsoil reference bulk density,bulk density mineral,182740,,https://w3id.org/eusoilvoc#BulkDensityMineral,0.6082,0.9617,True
+topsoil ph (h2o),pHH2O_ratio1-2.5,182747,,https://w3id.org/eusoilvoc#pHProcedure-pHH2O_ratio1-2.5,0.6621,0.6862,True
+land use systems,land use,182835,,https://w3id.org/eusoilvoc#LandUse,0.9257,0.9831,True
+eos),ions,182853,,https://w3id.org/eusoilvoc#Ions,0.7194,0.6723,True
+mowing,mulching,182895,,https://w3id.org/eusoilvoc#Mulching,0.6498,0.7738,True
+surface coating,coating location,182926,,https://w3id.org/eusoilvoc#CoatingLocation,0.8198,0.8105,True
+landgebruik,land use,186557,,https://w3id.org/eusoilvoc#LandUse,0.9825,0.9999,True
+directive 2006/7/ec of the european parliament and of the council of 15 february 2006 concerning the management of bathing water quality and repealing directive 76/160/eec,water regulation,186579,,https://w3id.org/eusoilvoc#WaterRegulation,0.6148,0.7826,False
+"directive 2000/60/ec of the european parliament and of the council of 23 october 2000 establishing a framework for community action in the field of water policy as amended by decision 2455/2001/ec and directives 2008/32/ec, 2008/105/ec and 2009/31/ec.",water regulation,186581,,https://w3id.org/eusoilvoc#WaterRegulation,0.5478,0.902,False
+water,water quality,186583,,https://w3id.org/eusoilvoc#WaterQuality,0.909,0.6556,True
+sols,soil,186603,,https://w3id.org/eusoilvoc#Soil,0.9047,0.9441,True
+occupation des terres,land use,186613,,https://w3id.org/eusoilvoc#LandUse,0.8698,0.9796,True
+usage des sols,land use,186615,,https://w3id.org/eusoilvoc#LandUse,0.9479,0.9731,True
+soil microhabitats,soil microfauna,187654,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9192,0.9818,True
+biomass estimation,biomass,187663,,https://w3id.org/eusoilvoc#Biomass,0.8881,0.8158,True
+arealdække,land cover,186620,,https://w3id.org/eusoilvoc#LandCover,0.792,0.7726,True
+planting,plant cover,186623,,https://w3id.org/eusoilvoc#PlantCover,0.7799,0.6179,True
+kohlenstoffkreislauf im boden,soil carbon density,186641,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.6712,0.8562,True
+soil moisture dynamics,soil moisture,186654,,https://w3id.org/eusoilvoc#SoilMoisture,0.9393,0.6403,True
+climate variability,climate,186655,,https://w3id.org/eusoilvoc#Climate,0.8309,0.7792,True
+soil health indicator,soil health,186656,,https://w3id.org/eusoilvoc#SoilHealth,0.931,0.9457,True
+jordskælv,soil sealing,183321,,https://w3id.org/eusoilvoc#SoilSealing,0.5174,0.8039,True
+p-fmv,VMC_calcul-ptf,186703,,https://w3id.org/eusoilvoc#moistureContentProcedure-VMC_calcul-ptf,0.6203,0.8366,True
+bodenkundliche-aufnahmen,land cover,183434,,https://w3id.org/eusoilvoc#LandCover,0.6084,0.6122,True
+waste collection,waste disposal,186733,,https://w3id.org/eusoilvoc#WasteDisposal,0.9333,0.7422,True
+semi-variogram analysis crop yield,crop yield,187727,,https://w3id.org/eusoilvoc#CropYield,0.7938,0.8096,True
+soil biological activity,soil biological properties,187729,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.9472,0.9997,True
+soill,soil,187734,,https://w3id.org/eusoilvoc#Soil,0.9252,0.994,True
+"ministrstvo za okelje, podnebje in energijo; agencija republike slovenije za okelje (arso) -ministry of environment, climate and energy; environmental agency of the republic of slovenia",climate regulation,188212,,https://w3id.org/eusoilvoc#ClimateRegulation,0.4696,0.9975,False
+géographie physique,physiography,186759,,https://w3id.org/eusoilvoc#Physiography,0.9851,0.9999,True
+land use scenario,land use,186782,,https://w3id.org/eusoilvoc#LandUse,0.9226,0.9536,True
+indicators of soil quality,soil quality,186853,,https://w3id.org/eusoilvoc#SoilQuality,0.9491,0.6318,True
+soil fauna and microbial communities,soil microfauna,186858,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.8912,0.943,True
+soil carbon models,soil carbon density,186871,,https://w3id.org/eusoilvoc#SoilCarbonDensity,0.901,0.7811,True
+acid soil,soil acidification,186894,,https://w3id.org/eusoilvoc#SoilAcidification,0.9185,0.6141,False
+air pollution; climate change; coordinated research networks; environmental monitoring; functional diversity; mediterranean ecosystems; air pollutants; air pollution; atmosphere; biodiversity; climate; humans; nitrogen; research; climate change; ecosystem; environmental monitoring,air quality,187744,,https://w3id.org/eusoilvoc#AirQuality,0.4185,0.796,True
+"air pollution; climate change; coordinated research networks; environmental monitoring; functional diversity; mediterranean ecosystems; air pollutants; air pollution; atmosphere; biodiversity; climate; humans; nitrogen; research; climate change; ecosystem; environmental monitoring; toxicology; pollution; health, toxicology and mutagenesis",air quality,187746,,https://w3id.org/eusoilvoc#AirQuality,0.4232,0.8266,True
+nitrogen (n),nitrogen,187767,,https://w3id.org/eusoilvoc#Nitrogen,0.9362,0.9997,True
+biological properties,biological features,187798,,https://w3id.org/eusoilvoc#BiologicalFeatures,0.8822,0.8233,True
+deep soil horizons,soil depth sampled,186929,,https://w3id.org/eusoilvoc#SoilDepthSampled,0.8069,0.8957,True
+atmospheric precipitation,precipitation,186933,,https://w3id.org/eusoilvoc#Precipitation,0.9858,0.7344,True
+acidifikácia pôd,soil salinization,186938,,https://w3id.org/eusoilvoc#SoilSalinization,0.793,0.9119,True
+soil organic carbon transformation,soil organic carbon,186940,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,0.9203,0.9867,True
+rotación,slope,186968,,https://w3id.org/eusoilvoc#Slope,0.7635,0.7758,True
+"soil organic carbon sequestration potential, conservation agriculture, land use, fine soil fraction, soil management, soil organic carbon",soil inorganic carbon,186980,,https://w3id.org/eusoilvoc#SoilInorganicCarbon,0.7608,0.6963,True
+geofysik,physiography,184148,,https://w3id.org/eusoilvoc#Physiography,0.8107,0.9442,True
+geophysics,physiography,184149,,https://w3id.org/eusoilvoc#Physiography,0.8162,0.9783,True
+"soil microorganisms, soil microbiome, soil microbial diversity, c sequestration, ghg emissions, n2o emissions, ch4 emissions, n leaching, om input",soil microfauna,186989,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.7639,0.9674,True
+"ecosystem service, land use change, soil degradation, land planning",soil degradation,186994,,https://w3id.org/eusoilvoc#SoilDegradation,0.6922,0.9472,True
+"sensing soil fertility, chemometrics",soil productivity,187835,,https://w3id.org/eusoilvoc#SoilProductivity,0.7844,0.9351,True
+salinity;,soil salinity,187854,,https://w3id.org/eusoilvoc#SoilSalinity,0.805,0.9771,True
+soil fertility sensing,soil productivity,187860,,https://w3id.org/eusoilvoc#SoilProductivity,0.9024,0.9808,True
+ecosystem degradation,soil degradation,187864,,https://w3id.org/eusoilvoc#SoilDegradation,0.7581,0.9954,True
+metals,copper,187008,,https://w3id.org/eusoilvoc#Copper,0.7868,0.6341,True
+total phosphorus,phosphorus total elements,187009,,https://w3id.org/eusoilvoc#PhosphorusTotalElements,0.9541,0.9998,True
+soil sampling,soil depth sampled,187027,,https://w3id.org/eusoilvoc#SoilDepthSampled,0.8934,0.976,True
+251109 microbiología de suelos,soil microfauna,187932,,https://w3id.org/eusoilvoc#SoilMicrofauna,0.9074,0.66,True
+soil organic layer,soil organic matter,187111,,https://w3id.org/eusoilvoc#SoilOrganicMatter,0.9129,0.9665,True
+ecología vegetal,vegetation class,187122,,https://w3id.org/eusoilvoc#VegetationClass,0.8152,0.6976,True
+ecologia vegetal,vegetation class,187123,,https://w3id.org/eusoilvoc#VegetationClass,0.8159,0.635,True
+geociências,geology,187136,,https://w3id.org/eusoilvoc#Geology,0.8697,0.9723,True
+changement climatique carbone solutions fondées sur la nature écosystème terrestre atténuation climate change carbon nature-based solution terrestrial ecosystem attenuation cambio climático carbono solución basada en la naturaleza ecosistema terrestre mitigación,soil organic carbon loss,187151,,https://w3id.org/eusoilvoc#SOCLoss,0.5762,0.9999,False
+peat decomposition,peat,187162,,https://w3id.org/eusoilvoc#Peat,0.8356,0.8877,True
+fos: natural sciences,phosphorus,187218,,https://w3id.org/eusoilvoc#Phosphorus,0.555,0.8643,True
+soil physicochemical,soil chemical properties,187221,,https://w3id.org/eusoilvoc#SoilChemicalProperties,0.9623,0.8296,True
+soil hydraulic,soil hydraulic conductivity,187222,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,0.9025,0.9975,True
+evapotranspiration modeling and partition,evapotranspiration,188019,,https://w3id.org/eusoilvoc#Evapotranspiration,0.6728,0.7324,True
+phosphorus bioavailability,phosphorus extractable elements,187304,,https://w3id.org/eusoilvoc#PhosphorusExtractableElements,0.7922,0.9817,True
+2311 waste management and disposal,waste disposal,187305,,https://w3id.org/eusoilvoc#WasteDisposal,0.9085,0.6552,True
+biologisk overvåkning,biological abundance,187311,,https://w3id.org/eusoilvoc#BiologicalAbundance,0.6065,0.812,True
+phosphorous,phosphorus,187347,,https://w3id.org/eusoilvoc#Phosphorus,0.9125,0.9948,True
+nucleotides,ions,187390,,https://w3id.org/eusoilvoc#Ions,0.4254,0.6638,True
+vegetation activity,vegetation class,188048,,https://w3id.org/eusoilvoc#VegetationClass,0.8439,0.8649,True
+sealing,soil sealing,188054,,https://w3id.org/eusoilvoc#SoilSealing,0.6827,0.861,True
+management of soil fertility and crop productivity,soil productivity,188086,,https://w3id.org/eusoilvoc#SoilProductivity,0.8541,0.8731,True
+crop yield stability,crop yield,188087,,https://w3id.org/eusoilvoc#CropYield,0.8562,0.6814,True
+soil nutrient management,soil management,188088,,https://w3id.org/eusoilvoc#SoilManagement,0.8984,0.7892,True
+sandy soil,soil sand contents,188095,,https://w3id.org/eusoilvoc#SoilSandContents,0.9493,0.6957,False
+water,water quality,185423,,https://w3id.org/eusoilvoc#WaterQuality,0.909,0.6556,True
+vegetation cover,plant cover,185426,,https://w3id.org/eusoilvoc#PlantCover,0.8656,0.7401,True
+water-stable aggregates (wsa),percent water stable aggregation,188139,,https://w3id.org/eusoilvoc#PercentWaterStableAggregation,0.785,0.746,False
+soil biological indicators,soil biological properties,188141,,https://w3id.org/eusoilvoc#SoilBiologicalProperties,0.9096,0.8513,True
+labile organic carbon,soil inorganic carbon,188142,,https://w3id.org/eusoilvoc#SoilInorganicCarbon,0.7087,0.8314,True
+maximum water holding capacity,available water holding capacity,188147,,https://w3id.org/eusoilvoc#AvailableWaterHoldingCapacity,0.8985,0.6401,True
+soil quality parameters,soil quality,188150,,https://w3id.org/eusoilvoc#SoilQuality,0.9605,0.9411,True
+soil management effects,soil management,188152,,https://w3id.org/eusoilvoc#SoilManagement,0.9318,0.8939,True
+mulla omadused,soil properties,188184,,https://w3id.org/eusoilvoc#SoilProperties,0.9317,0.9875,True
+som fractions,particle size fraction sum,188191,,https://w3id.org/eusoilvoc#ParticleSizeFractionSum,0.7037,0.9206,True
+py-gc-ms,pHKCl,188192,,https://w3id.org/eusoilvoc#pHProcedure-pHKCl,0.5965,0.7895,True
+ecological system,ecosystem services,187413,,https://w3id.org/eusoilvoc#EcosystemServices,0.8103,0.8726,True
+land utilization,land use,187428,,https://w3id.org/eusoilvoc#LandUse,0.9579,0.9999,True
+"soil matric potential, soil water availability, drought, minimum agriculture, minimum tillage, conventional tillage, soil penetration resistance",soil matric potential,187449,,https://w3id.org/eusoilvoc#SoilMatricPotential,0.7494,0.706,False
+agricultural plastic surface,soil plasticity,187465,,https://w3id.org/eusoilvoc#SoilPlasticity,0.6216,0.6133,True

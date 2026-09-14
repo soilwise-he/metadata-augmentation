@@ -1,0 +1,522 @@
+{
+  "description": "Uniformly random test sample of records with both a title and an abstract, drawn from snapshot/records.csv. Unstratified and unfiltered beyond the title+abstract requirement, so the composition reflects the corpus. Not a gold set: inputs only, no correct-concept labels.",
+  "source": "snapshot/records.csv",
+  "built_by": "make_random_sample.py 50 20260817",
+  "built": "2026-08-17",
+  "sampling": {
+    "method": "random.Random(seed).sample over the eligible pool, no stratification",
+    "seed": 20260817,
+    "pool_size": 19611,
+    "pool_definition": "non-empty title AND non-empty abstract ('' and 'NULL' both count as missing)",
+    "pool_sorted_by": "identifier, so the draw is independent of CSV row order",
+    "excluded_from_pool": "4040 records with a title but no abstract; 4023 with neither"
+  },
+  "caveats": [
+    "A random draw of this size cannot support per-language conclusions: non-English is ~8% of the corpus, so the expected non-English count here is a handful and German/Dutch/Portuguese may be absent entirely. Use the curated set for language-specific questions.",
+    "Text is verbatim from the snapshot, including markup and bilingual duplication.",
+    "Language fields describe the abstract as a whole; records can be internally bilingual, so detect per chunk when the per-chunk language matters."
+  ],
+  "n_records": 50,
+  "records": [
+    {
+      "identifier": "10.1016/j.scitotenv.2022.156265",
+      "title": "Building a risk matrix for the safety assessment of wood derived biochars",
+      "abstract": "Biochar is recognized as an efficient amendment and soil improver. However, environmental and quality assessments are needed to ensure the sustainability of its use in agriculture. This work considers the biochar's chemical-physical characterization and its potential phyto- and geno-toxicity, assessed with germination and Ames tests, obtaining valuable information for a safe field application. Three biochar types, obtained from gasification at different temperatures of green biomasses from the Tuscan-Emilian Apennines (in Italy), were compared through a broad chemical, physical and biological evaluation. The results obtained showed the relevance of temperature in determining the chemical and morphological properties of biochar, which was shown with several analytical techniques such as the elemental composition, water holding capacity, ash content, but also with FTIR and X-ray spectroscopies. These techniques showed the presence of different relevant surface aliphatic and aromatic groups. The procedures for evaluating the potential toxicity using seeds germination and Ames genotoxicity assay highlights that biochar does not cause detrimental effects when it enters in contact with soil, micro- and macro-organisms, and plants. The genotoxicity test provided a new highlight in evaluating biochar environmental safety.",
+      "n_chars_title": 73,
+      "n_chars_abstract": 1335,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "http://data.europa.eu/88u/dataset/f6370904-e1ac-49be-b874-e400170d3769",
+      "title": "Servicio WMS (Web Map Service)Inventario Nacional de Erosión de Suelos (2002-2019). Erosión en cauces",
+      "abstract": "El Servicio Web de Mapas denominado Inventario Nacional de Erosión de Suelos (2002-2019) Erosión en cauces, permite la visualización y consulta de la evolución de los fenómenos erosivos, con el fin último de delimitar con la mayor exactitud posible las áreas prioritarias de actuación en la lucha contra la erosión, así como definir y valorar las actuaciones a llevar a cabo, dentro de los planes y programas cuya elaboración atribuye igualmente el Real Decreto 1415/2000 (derogado), por el que se establece la estructura orgánica del Ministerio de Medio Ambiente. El riesgo de erosión en cauces se clasifica por unidades hidrológicas según niveles cualitativos, determinado a partir de la pendiente, litología, geomorfología, intensidad de precipitación, erosión laminar, movimientos en masa, erosión en laderas y erosión en laderas con pluviometría. Permite la clasificación cualitativa de unidades hidrológicas según susceptibilidad de sufrir fenómenos torrenciales en su red de drenaje\n\t\t\t\tLa URL del Servicio WMS Erosión en cauces es: https://wms.mapama.gob.es/sig/Biodiversidad/INESErosionCauces\n\t\t\t\tLos sistemas de referencia que ofrece este servicio son: \n\t\t\t\t- Para coordenadas geográficas: CRS: 84, EPSG:4230 (ED50), EPSG:4326 (WGS 84), EPSG:4258 (ETRS 89). \n\t\t\t\t- Para coordenadas U.T.M: EPSG:32628 (WGS 84 / UTM zone 28N), EPSG:32629 (WGS 84 / UTM zone 29N), EPSG:32630 (WGS 84 / UTM zone 30N), EPSG:32631 (WGS 84 / UTM zone 31N), EPSG:25828 (ETRS 89 / UTM zone 28N), EPSG:25829 (ETRS 89 / UTM zone 29N), EPSG:25830 (ETRS 89 / UTM zone 30N), EPSG:25831 (ETRS 89 / UTM zone 31N), EPSG:23028 (ED50 / UTM zone 28N), EPSG:23029 (ED50 / UTM zone 29N), EPSG:23030 (ED50 / UTM zone 30N), EPSG:23031 (ED50 / UTM zone 31N).",
+      "n_chars_title": 101,
+      "n_chars_abstract": 1726,
+      "lang_abstract": "es",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "es"
+    },
+    {
+      "identifier": "10.1101/2021.11.19.468202",
+      "title": "Smart soils to observe hidden rhizosphere processes",
+      "abstract": "<jats:title>Summary</jats:title>                 <jats:p>Agriculture must reduce green-house gas emission and pollution, produce safer and healthier food, closer to home, reducing waste whilst delivering more diverse diets to a growing world population. Soils could enable this transformation, but unfortunately, they have a hugely complex and opaque structure and studies of its myriad of mechanisms are difficult. Here, the fabrication of smart soils for the screening of below-ground bio-processes is demonstrated. Particles were generated from fluoropolymer waste with functionalisation converting them into sensors able to report on key chemical dynamics. Tailored functionalization was obtained by radical terpolymerisation to improve growth conditions and sensing capabilities. The study demonstrates the potential for the development of accelerated genetic or agrochemical screens and could pave the way for improved models for rhizosphere dynamics.</jats:p>",
+      "n_chars_title": 51,
+      "n_chars_abstract": 966,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1038/s41396-020-00806-9",
+      "title": "Microbial competition reduces metabolic interaction distances to the low µm-range",
+      "abstract": "<jats:title>Abstract</jats:title>                   <jats:p>Metabolic interactions between cells affect microbial community compositions and hence their function in ecosystems. It is well-known that under competition for the exchanged metabolite, concentration gradients constrain the distances over which interactions can occur. However, interaction distances are typically quantified in two-dimensional systems or without accounting for competition or other metabolite-removal, conditions which may not very often match natural ecosystems. We here analyze the impact of cell-to-cell distance on unidirectional cross-feeding in a three-dimensional aqueous system with competition for the exchanged metabolite. Effective interaction distances were computed with a reaction-diffusion model and experimentally verified by growing a synthetic consortium of 1 µm-sized metabolite producer, receiver, and competitor cells in different spatial structures. We show that receivers cannot interact with producers located on average 15 µm away from them, as product concentration gradients flatten close to producer cells. We developed an aggregation protocol and varied the receiver cells’ product affinity, to show that within producer–receiver aggregates even low-affinity receiver cells could interact with producers. These results show that competition or other metabolite-removal of a public good in a three-dimensional system reduces metabolic interaction distances to the low µm-range, highlighting the importance of concentration gradients as physical constraint for cellular interactions.</jats:p>",
+      "n_chars_title": 81,
+      "n_chars_abstract": 1597,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.2136/sssaj1997.03615995006100030038x",
+      "title": "Automated Chamber Measurements Of Methane And Nitrous Oxide Flux In A Flooded Rice Soil .1. Residue, Nitrogen, And Water Management",
+      "abstract": "Methane And N2o Are Gases That Are Several Times More Radiatively Active Than Co2. It Is Well Known That Flooded Rice (Oryza Sativa L.) Soils Are A Globally Important Source Of Atmospheric Ch4. Mitigation Strategies For Ch4 Flux, Such As Mid-Season Drainage, Might Have The Opposite Effect On Nio Emissions. An Automated Chamber System At The International Rice Research Institute In The Philippines Measured Ch4 And N2o Nu?Res From Flooded Rice And Fallow Rice Fields Essentially 24 H A Day Between December 1992 And April 1994. This Period Included Two Irrigated Dry Rite-Growing Seasons (Ds) And One Wet Rice-Growing Season (Ws). Nitrous Oxide Fluxes Were Generally Barely Detectable During The Growing Seasons, But Small Peaks (Maximum 3.5 Mg N2o-N M(-2) D(-1)) Appeared After N Fertilizer Applications. Methane Fluxes, On The Other Hand, Were Evident Throughout The Rice-Growing Seasons. Organic Matter Additions As Straw (5.5 T Ha(-1), Dry) Or Green Manure (Gm; Sesbania Rostrata L.; 12 T Ha(-1), Wet) Stimulated Chi Flux Severalfold. Seasonal Ch4 Flux With Ammonium Sulfate (As) Was One-Fourth To One-Third The Flux With Urea. During Tile Ds, However, The Seasonal N2o Flux Was 2.5 Times Higher With As Than With Urea. Mid-Season Drainage (2-Wk Duration) At Either Mid-Tillering Or Panicle Initiation Was Very Successful In Suppressing Ch4 Flux Up To 60%. However, N2o Flux Increased Sharply During The Drainage Period At Mid-Tillering Until Reflooding, When It Dropped Back To Near Zero.",
+      "n_chars_title": 131,
+      "n_chars_abstract": 1495,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5194/egusphere-2024-348",
+      "title": "When and why microbial-explicit soil organic carbon models can be unstable",
+      "abstract": "<jats:p>Abstract. Microbial-explicit soil organic carbon (SOC) cycling models are increasingly recognized for their advantages over linear models in describing SOC dynamics. These models are known to exhibit oscillations, but it is not clear when they yield stable vs. unstable equilibrium points (EPs) – i.e. EPs that exist analytically, but are not stable to small perturbations and cannot be reached by transient simulations. Occurrence of such unstable EPs can lead to unexpected model behaviour in transient simulations or unrealistic predictions of steady state soil organic carbon (SOC) stocks. Here we ask when and why unstable EPs can occur in an archetypal microbial-explicit model (representing SOC, dissolved OC [DOC], microbial biomass, and extracellular enzymes) and some simplified versions of it. Further, if a model formulation allows for physically meaningful but unstable EPs, can we find constraints in the model parameters (i.e. environmental conditions and microbial traits) that ensure stability of the EPs? We use analytical, numerical and descriptive tools to answer these questions. We found that instability can occur when the resupply of a growth substrate (DOC) is (via a positive feedback loop) dependent on its abundance. We identified a conservative, sufficient condition on model parameters to ensure stability of EPs. Interactive effects of environmental conditions and parameters describing microbial physiology point to the relevance of basic ecological principles for avoidance of unrealistic (i.e. unstable) simulation outcomes. These insights can help to improve applicability of microbial-explicit models, aid our understanding of the dynamics of these models and highlight the relation between mathematical requirements and (in silico) microbial ecology.</jats:p>",
+      "n_chars_title": 74,
+      "n_chars_abstract": 1804,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.18548081",
+      "title": "Code and data: Microbial carbon metabolism is linked to organic matter chemistry across soil systems",
+      "abstract": "<p>This repository contains R code and data that belong to the preprint:</p>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>Microbial carbon metabolism is linked to organic matter chemistry across soil systems</div>\n</div>\n<div>Daniel Wasner, Oliver Lechtenfeld, Jan Kaesler, Sebastian Doetterl, Meret Aeppli</div>\n<div>bioRxiv 2026.01.20.700515; doi: https://doi.org/10.64898/2026.01.20.700515</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+      "n_chars_title": 100,
+      "n_chars_abstract": 468,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.3465229",
+      "title": "3D geological model reconstruction for liquefaction hazard assessment in the Po Plain",
+      "abstract": "Proceedings of the VII ICEGE 7th International Conference on Earthquake Geotechnical Engineering, Rome, Italy, 17-20 June 2019.",
+      "n_chars_title": 85,
+      "n_chars_abstract": 127,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 0.992,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.12583774",
+      "title": "Soilcare data agricultural soil quality improvement",
+      "abstract": "Dataset that contains survey data on Spanish and UK respondents on agricultural soil quality protection and improvement",
+      "n_chars_title": 51,
+      "n_chars_abstract": 119,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 0.991,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5194/soil-11-1053-2025",
+      "title": "The potential of reed canary grass and the importance  of field heterogeneity for reducing GHG emissions  in a rewetting fen peatland",
+      "abstract": "<jats:p>Abstract. Rewetting drained peatlands can reduce CO2 emissions but prevents traditional agriculture. Crop production under rewetted conditions may continue with flood-tolerant crops in paludiculture, but its effects on greenhouse gas (GHG) emissions compared to rewetting without further management are largely unknown. This study was conducted between 2021 and 2022 on a fen peatland in central Denmark established with Phalaris arundinacea L. (Reed Canary Grass) in 2018. Three harvest/fertilization management treatments (0, 2, and 5-cut) were applied with the 2-cut and 5-cut treatments receiving 200 kg N ha−1 yr−1 in equal split doses, whereas the 0-cut remained unfertilized. Measurements of CO2 and CH4 emissions were conducted biweekly under four different light intensities using a manual chamber connected to a gas analyzer. Although the mean annual water table depth (WTD) was −8 cm, indicating a rather wet peatland, the site remained a CO2 source with a mean net ecosystem C balance (NECB) of 6.6 t C ha−1 yr−1 across treatments. Methane emissions averaged 90 kg CH4-C ha−1 yr−1, equivalent to 11.7 % of NECB given as CO2 equivalents. Results showed that management marginally increased biomass production reflected by more negative gross primary productivity (GPP) in 2-cut and 5-cut compared to 0-cut. No significant treatment effect was found on NECB due to field heterogeneity reflected by differences in pore water nutrient concentrations and WTD dynamics among the studied blocks, with higher Reco corresponding to blocks where higher pore water nutrient concentrations were observed. The results indicated that GHG emissions might potentially be reduced when the biomass is harvested from the more productive peatland area in comparison with no management, whereas on the less productive area it might be beneficial to leave the biomass unmanaged. Model simulation of ecosystem respiration (Reco) using WTD data of high temporal resolution captured the variability better as compared to the use of mean annual WTD, which underestimated Reco by 18 % on average compared to the hourly WTD model. Data on pore water chemistry further improved statistical linear models of CO2 fluxes using soil temperature (Ts), WTD, ratio vegetation index (RVI) and photosynthetic active radiation (PAR) as explanatory variables. Overall, from a climate perspective the study supported biomass production compared to no management activity in rewetted fertile peatlands.</jats:p>",
+      "n_chars_title": 133,
+      "n_chars_abstract": 2489,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.14184825",
+      "title": "The EJP SOIL ProbeField Session of seven presentations at the GPSS workshop in Gent October 2024",
+      "abstract": "This presentation is a compilation of seven presentations covering a large part of the work and findings of the EJP SOIL project ProbeField - A novel protocol for robust in field monitoring of carbon stock and soil fertility based on proximal sensors and existing soil spectral libraries given at a special session during The Sixth Global Proximal Soil Sensing Workshop (https://www.gpss-2024.com/)  in Gent in October 2024. ProbeField is a joint project involving 14 partners from 12 countries:   Swedish University of Agricultural Sciences (SLU), Aarhus University (AU), Austrian Agency for Health and Food Safety Ltd. (AGES), Agroscope (AGS), University of Natural Resources and Life Sciences Vienna (BOKU), National Research Council of Italy (CNR), Council for Agricultural Research and Economics (CREA), Spanish National Research Council (CSIC), Czech University of Life Sciences Prague (CZU), National Research Institute for Agriculture, Food and Environment (INRAE), Institute of Soil Science and Plant Cultivation - State Research Institute (IUNG-PIB), General Directorate of Agricultural Research and Policies (TAGEM), University of Maribor, Faculty of Agriculture and Life Sciences (UM-FKBV) and Wageningen Environmental Research (WR).",
+      "n_chars_title": 96,
+      "n_chars_abstract": 1245,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.11190062",
+      "title": "Assessing Apical Toxicity and Sublethal Responses of Earthworms in PFAS-Contaminated Soils: A Comprehensive Study at a Fire Training Site in Sweden",
+      "abstract": "Poster presentation at SETEC 2024",
+      "n_chars_title": 147,
+      "n_chars_abstract": 33,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 0.339,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.34725/DVN/66BFOB",
+      "title": "Wet chemistry data for a subset of AfSIS: Phase I archived soil samples",
+      "abstract": "This dataset contains a subset of the samples collected during the AfSIS Phase I project and was a collaborative effort between World Agroforestry (ICRAF) and Rothamsted Research. The soil samples were retrieved from ICRAF Soil Archive: https://worldagroforestry.org/output/icraf-soil-archive-physical-archive-systematically-collected-soil-samples and subject to wet chemical analysis at Rothamsted Research in the UK under a Global Challenges Research Fund project, \"BBS/OS/GC/000014B: Chemical and Biological Assessment of AfSIS soils\" funded through the UK Biotechnology and Biological Sciences Research Council. This dataset includes the Site, Cluster, Plot as well as the GPS coordinates and wet chemistry data from 2002 samples collected from 18 countries and 51 LDSF sites. The original data collection was part of the AfSIS Phase I project, funded by the Bill and Melinda Gates Foundation (BMGF) and took place between 2009-2013. ICRAF and CIAT contributed the Site, Cluster, Plot and GPS coordinates for the soil samples, ICRAF organized the sub-sampling of the soil samples from the ICRAF physical archive in Nairobi and Rothamsted analysed the soil samples in the UK in 2017 and 2018. Visit our websites here: https://worldagroforestry.org/landhealth and https://www.rothamsted.ac.uk/. The AfSIS Phase I project funded by the Bill and Melinda Gates Foundation (BMGF) from 2009-2013, aimed to provide a consistent baseline of soil information across sub-Saharan Africa (SSA). Led by CIAT-TSBF, partners included: ISRIC, CIESIN, The Earth Institute at Columbia University and World Agroforestry (ICRAF). ICRAF led the systematic assessments of soil health using the Land Degradation Surveillance Framework (LDSF), which was developed at ICRAF, http://landscapeportal.org/blog/2015/03/25/the-land-degradation-surveillance-framework-ldsf/. LDSF sites were randomized using spatial stratification based on Koeppen-Geiger Climate zones across 19 countries in SSA. In total 60 LDSF sites were sampled. Soil samples were collected using the LDSF at two depths, 0-20 cm (labelled Topsoil) and 20-50 cm (labelled Subsoil). In each LDSF site, approximately 320 standard soil samples were collected. All of these were also scanned using MIR Spectroscopy and are available on Dataverse here: Vågen, Tor-Gunnar;Winowiecki, Leigh Ann;Desta, Luseged;Tondoh, Ebagnerin Jérôme;Weullow, Elvis;Shepherd, Keith;Sila, Andrew, 2020, \"Mid-Infrared Spectra (MIRS) from ICRAF Soil and Plant Spectroscopy Laboratory: Africa Soil Information Service (AfSIS) Phase I 2009-2013\", https://doi.org/10.34725/DVN/QXCWP1, World Agroforestry - Research Data Repository, V1.",
+      "n_chars_title": 71,
+      "n_chars_abstract": 2648,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e50e724afb",
+      "title": "Practice Abstracts 2",
+      "abstract": "A total of 5 practice abstracts covering relevant deliverables from tasks associated with WP1-4.",
+      "n_chars_title": 20,
+      "n_chars_abstract": 96,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 0.994,
+      "lang_title": "unk"
+    },
+    {
+      "identifier": "https://doi.org/10.1016/j.soilbio.2010.02.011",
+      "title": "Effects Of Warming And Grazing On N2o Fluxes In An Alpine Meadow Ecosystem On The Tibetan Plateau",
+      "abstract": "A Great Deal Of Uncertainty Is Associated With Estimates Of Global Nitrous Oxide (N2o) Emissions Because Emissions From Arid And Polar Climates Were Not Included In The Estimates Due To A Lack Of Available Data. In Particular, Very Few Studies Have Assessed The Response Of N2o Flux To Grazing Under Future Warming Conditions. This Experiment Was Conducted To Determine The Effects Of Warming And Grazing On N2o Flux At Different Time Scales For Three Years Under A Controlled Warming-Grazing System. A Free-Air Temperature Enhancement System (Fate) Using Infrared Heaters And Grazing Significantly Increased Soil Temperatures For Both Of Growing (Average 1.8 Degrees C In 2008) And No-Growing Seasons (Average 3.0 Degrees C For 3-Years) Within 20-Cm Depth, But Only Warming Reduced Soil Moisture At 10-Cm Soil Depth During The Growing Season During The Drought Year Of 2008. Generally, The Effects Of Warming And Grazing On N2o Flux Varied With Sampling Date, Season, And Year. No Interactive Effect Between Warming And Grazing Was Found. Warming Did Not Affect Annual N2o Flux When Grazing Was Moderate During The Growing Season Because The Tradeoff Of The Effect Of Warming On N2o Flux Was Observed Between The Growing Season And No-Growing Season. No-Warming With Grazing (Nwg) And Warming With Grazing (Wg) Significantly Increased The Average Annual N2o Flux (57.8 And 31.0%) Compared With No-Warming With No-Grazing (Nwng) And Warming With No-Grazing (Wng), Respectively, Indicating That Warming Reduced The Response Of N2o Flux To Grazing In The Region. Winter Accounted For 36-57% Of Annual N2o Flux For Nwng And Nwg, Whereas Only For 5-8% Of Annual N2o Flux For Wng And Wg. Soil Temperature Could Explain 5-35% Of Annual N2o Flux Variation. (C) 2010 Elsevier Ltd. All Rights Reserved.",
+      "n_chars_title": 97,
+      "n_chars_abstract": 1793,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.1046/j.1469-8137.1997.00682.x",
+      "title": "Effects Of Elevated Atmospheric Co2 And Soil Water Availability On Root Biomass, Root Length, And N, P And K Uptake By Wheat",
+      "abstract": "We Investigated Interactions Between The Effects Of Elevated Atmospheric Carbon Dioxide Concentrations ([Co2]) And Soil Water Availability On Root Biomass, Root Length And Nutrient Uptake By Spring Wheat (Triticum Aestivum Cv. Tonic). We Grew Plants At 350 And 700 Mu Mol Mol(-1) Co2 And With Frequent And Infrequent Watering ('Wet' And 'Dry' Treatments, Respectively). Water Use Per Plant Was 1.25 Times Greater At 350 Than At 700 Mu Mol Co2 Mol(-1), And 1.4 Times Greater In The 'Wet' Than In The 'Dry' Treatment. Root Biomass Increased With [Co2] And With Watering Frequency. Elevated [Co2] Changed The Vertical Distribution Of The Roots, With A Greater Stimulation Of Root Growth In The Top Layers Of The Soil. These Data Were Confirmed By The Video Data Of Root Lengths In The 'Dry' Treatment, Which Showed A Delayed Root Development At Depth Under Elevated [Co2]. The Apparent Amount Of N Mineralized Appeared To Be Equal For All Treatments. Nutrient Uptake Was Affected By [Co2] And By Watering Frequency, And There Were Interactions Between These Treatments. These Interactions Were Different For N, K And P, Which Appeared To Be Related To Differences In Nutrient Availability And Mobility In The Soil. Moreover, These Interactions Changed With Time As The Root System Became Larger With [Co2] And With Watering Frequency, And As Fluctuations In Soil Moisture Contents Increased. Elevated [Co2] Affected Nutrient Uptake In Contrasting Ways. Potassium Uptake Appeared To Be Reduced By The Smaller Mass How Of Water Reaching The Root Surface. However, This Might Be Countered With Time By The Greater Root Biomass At Elevated [Co2], By The Greater Soil Moisture Contents At Elevated [Co2], Enabling Faster Diffusion, Or Both. Phosphorus Uptake Appeared To Be Increased By The Greater Root Biomass At Elevated [Co2]. We Conclude That Plant Nutrient Uptake At Elevated [Co2] Is Affected By Interactions With Water Availability, Though Differences Between Nutrients Preclude Generalizations Of The Response.",
+      "n_chars_title": 124,
+      "n_chars_abstract": 2011,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1186/s13570-020-00190-1",
+      "title": "Understanding ‘culture’ of pastoralism and ‘modern development’ in Thar: Muslim pastoralists of north-west Rajasthan, India",
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>The paper attempts to understand the relation between pastoral cultures and irrigation-based intensive farming regimes promoted by modern development represented by the Indira Gandhi Canal (IGNP) in western Rajasthan. Participant observation and development practice engagement with pastoral communities over the past three decades give an opportunity to reflect on epistemic rationality that constitutes the discourse of modern development, formal statecraft of technocracy, and rule by experts. Historical markers of pastoralism in the interconnected regions of north-west Rajasthan and bordering regions of Multan and Bahawalpur in Pakistan are situated to trace the<jats:italic>longuee duree</jats:italic>of pastoral life systems in the Thar desert region. This oscillation between enhanced moisture regimes following inundation and increased desiccation of a moisture-deficient arid region has been at the core of sustaining the culture of pastoralism among semi-nomadic pastoralists of Muslim communities in north-west Rajasthan. The IGNP canal produces a space for modern development that opens up irrigated farming and an intensive natural resource use regime. This political economy of the IGNP canal systematically marginalizes pastoral natural resource use that was ecologically embedded. The varied experiences of adaptation responses by pastoral communities to this state-led marginalization points to the tenacious ability of pastoralism to continually adapt to the radically changing ecology. The paper argues for a complementarity of pastoral and farming use as an inclusive development vision. Beginnings can be made by a compassionate engagement with cultures of pastoralism that are endowed with resilience rooted in a historically constituted rationality to adapt and innovate with changing times. This may hold cues for a sustainable future of Thar.</jats:p>",
+      "n_chars_title": 123,
+      "n_chars_abstract": 1920,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "copernicus_hrl-small-landscape-features_s,DAT-237-en",
+      "title": "HRL Small Landscape Features",
+      "abstract": "The High Resolution Layer Small Landscape Features provides detailed information about woody vegetation (hedgerows, shrubs, lines and small clusters of trees) at a pan-European level. These features are categorized based on their linear or patchy elements, offering insights into landscape structure and vegetation density. \n \nSmall Landscape Features is available in high resolution with updates provided on three-year cycle for the 2015, 2018 and 2021 reference years. It is well-suited to enhance understanding of landscapes, support biodiversity and carbon sequestration assessments, inform sustainable land management practices, and aid in climate change mitigation strategies.  \n\nThe former Woody Vegetation Mask is now offered as a new Woody Vegetation Layer. This new layer maps the presence or absence of woody vegetation of any type without any differentiation of height, size or nature and without masking forested areas including isolated trees or permanent crops such as orchards. \n\nSmall Woody Features (now a status layer) is referred to as Small Landscape Features, reflecting ambitions to move towards mapping non-woody elements in the future. This is still under development, with additional non-woody elements being assessed in test phases prior to potential integration.  \n\nHigh Resolution Layer Small Landscape Features is part of the European Union’s Copernicus Land Monitoring Service.",
+      "n_chars_title": 28,
+      "n_chars_abstract": 1408,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.1111/1365-2435.12329",
+      "title": "Interactive Effects Of C, N And P Fertilization On Soil Microbial Community Structure And Function In An Amazonian Rain Forest",
+      "abstract": "1. Resource Control Over Abundance, Structure And Functional Diversity Of Soil Microbial Communities Is A Key Determinant Of Soil Processes And Related Ecosystem Functioning. Copiotrophic Organisms Tend To Be Found In Environments Which Are Rich In Nutrients, Particularly Carbon, In Contrast To Oligotrophs, Which Survive In Much Lower Carbon Concentrations. We Hypothesized That Microbial Biomass, Activity And Community Structure In Nutrient-Poor Soils Of An Amazonian Rain Forest Are Limited By Multiple Elements In Interaction. We Tested This Hypothesis With A Fertilization Experiment By Adding C (As Cellulose), N (As Urea) And P (As Phosphate) In All Possible Combinations To A Total Of 40 Plots Of An Undisturbed Tropical Forest In French Guiana. After 2years Of Fertilization, We Measured A 47% Higher Biomass, A 21% Increase In Substrate-Induced Respiration Rate And A 5-Fold Higher Rate Of Decomposition Of Cellulose Paper Discs Of Soil Microbial Communities That Grew In P-Fertilized Plots Compared To Plots Without P Fertilization. These Responses Were Amplified With A Simultaneous C Fertilization Suggesting P And C Colimitation Of Soil Micro-Organisms At Our Study Site. Moreover, P Fertilization Modified Microbial Community Structure (Plfas) To A More Copiotrophic Bacterial Community Indicated By A Significant Decrease In The Gram-Positive:Gram-Negative Ratio. The Fungi:Bacteria Ratio Increased In N Fertilized Plots, Suggesting That Fungi Are Relatively More Limited By N Than Bacteria. Changes In Microbial Community Structure Did Not Affect Rates Of General Processes Such As Glucose Mineralization And Cellulose Paper Decomposition. In Contrast, Community Level Physiological Profiles Under P Fertilization Combined With Either C Or N Fertilization Or Both Differed Strongly From All Other Treatments, Indicating Functionally Different Microbial Communities. While P Appears To Be The Most Critical From The Three Major Elements We Manipulated, The Strongest Effects Were Observed In Combination With Either Supplementary C Or N Addition In Support Of Multiple Element Control On Soil Microbial Functioning And Community Structure. We Conclude That The Soil Microbial Community In The Studied Tropical Rain Forest And The Processes It Drives Is Finely Tuned By The Relative Availability In C, N And P. Any Shifts In The Relative Abundance Of These Key Elements May Affect Spatial And Temporal Heterogeneity In Microbial Community Structure, Their Associated Functions And The Dynamics Of C And Nutrients In Tropical Ecosystems.",
+      "n_chars_title": 126,
+      "n_chars_abstract": 2553,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.1111/j.1469-8137.2004.00977.x",
+      "title": "Response Of An Understory Plant Community To Elevated [Co2] Depends On Differential Responses Of Dominant Invasive Species And Is Mediated By Soil Water Availability",
+      "abstract": "Rising Atmospheric Co2 Concentrations Are Likely To Have Direct Effects On Terrestrial Ecosystems. Here, We Describe Effects Of Elevated Concentrations Of Co2 On An Understory Plant Community In Terms Of Production And Community Composition. In 2001 And 2002 Total And Species-Specific Above-Ground Net Primary Productivity (Anpp) Were Estimated By Harvesting Above-Ground Biomass Within An Understory Community Receiving Ambient [Co2] And Elevated [Co2] At Oak Ridge National Laboratory'S Free-Air Carbon Dioxide Enrichment (Face) Facility. During A Wet Year, Community Composition Differed Between Plots Receiving Ambient [Co2] And Elevated [Co2], But Total Anpp Did Not Differ. By Contrast, During A Drier Year, Community Composition Did Not Differ, But Total Anpp Was Greater In Elevated Than Ambient [Co2] Plots. These Patterns Were Driven By The Response Of Two Codominant Species, Lonicera Japonica And Microstegium Vimineum, Both Considered Invasive Species In The South-Eastern United States. The Anpp Of L. Japonica Was Consistently Greater Under Elevated [Co2], Whereas The Response Of M. Vimineum To Co2 Enrichment Differed Between Years And Mediated Total Community Response. These Data Suggest That Community And Species Responses To A Future, Co2-Enriched Atmosphere May Be Mediated By Other Environmental Factors And Will Depend On Individual Species Responses.",
+      "n_chars_title": 165,
+      "n_chars_abstract": 1377,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.3030/101112951",
+      "title": "Building momentum and trust to achieve credible soil carbon farming in the EU",
+      "abstract": "The main goal of the CREDIBLE project is to build momentum and trust for the implementation of carbon farming in the EU. This will be primarily achieved by setting up and moderating a network of initiatives/projects/stakeholders (referred to here as the Network of Networks - NoN) for favouring transparency, environmental integrity, and methodology standardisation in soil carbon accounting. Such a NoN will be responsible for pushing forward multiple discussions (articulated around three main themes: which practises; what standards; how to monitor) and is expected to evolve from a mostly technical/scientific network at the onset of the project, into a process catalysing policy making and business innovation toward its end. The transparent, open access, multi actor dialogues required to build trust and co-create solutions will be orchestrated around three annual European Carbon Farming Summits, which will present opportunities for the NoN to interact with the broader stakeholder community and grow to the point it would attract further fundings for long term sustainability. Through the action, four specific objectives will be achieved: O1) to build and disseminate a practical toolbox for promoting carbon farming, capable of taking into account local land uses, best practices, and multi-actor interests; O2) to identify options for benchmarking and selecting standards, certification mechanisms, and policy instruments for carbon farming; O3) to favour the establishment of a network of soil carbon data collectors and repositories to improve measuring and monitoring carbon dynamics; O4) to build up processes and tools to drive conversations for the upscaling of carbon farming. CREDIBLE’s ambition is to support the European Commission and the Expert Group on Carbon Removal in the identification and upscale of solutions for soil carbon farming.",
+      "n_chars_title": 77,
+      "n_chars_abstract": 1865,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.3030/635201",
+      "title": "LAND Management: Assessment, Research, Knowledge base",
+      "abstract": "LANDMARK is a pan-European multi-actor consortium of leading academic and applied research institutes, chambers of agriculture and policy makers that will develop a coherent framework for soil management aimed at sustainable food production across Europe.\nThe LANDMARK proposal builds on the concept that soils are a finite resource that provides a range of ecosystem services known as “soil functions”. Functions relating to agriculture include: primary productivity, water regulation & purification, carbon-sequestration & regulation, habitat for biodiversity and nutrient provision & cycling. Trade-offs between these functions may occur: for example, management aimed at maximising primary production may inadvertently affect the ‘water purification’ or ‘habitat’ functions. This has led to conflicting management recommendations and policy initiatives. There is now an urgent need to develop a coherent scientific and practical framework for the sustainable management of soils.\nLANDMARK will uniquely respond to the breadth of this challenge by delivering (through multi-actor development):\n1. LOCAL SCALE: A toolkit for farmers with cost-effective, practical measures for sustainable (and context specific) soil management.\n2. REGIONAL SCALE - A blueprint for a soil monitoring scheme, using harmonised indicators: this will facilitate the assessment of soil functions for different soil types and land-uses for all major EU climatic zones.\n3. EU SCALE – An assessment of EU policy instruments for incentivising sustainable land management.\nThere have been many individual research initiatives that either address the management & assessment of individual soil functions, or address multiple soil functions, but only at local scales. LANDMARK will build on these existing R&D initiatives: the consortium partners bring together a wide range of significant national and EU datasets, with the ambition of developing an interdisciplinary scientific framework for sustainable soil management.",
+      "n_chars_title": 53,
+      "n_chars_abstract": 1995,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "oai:pub.epsilon.slu.se:33460",
+      "title": "Depth-dependent responses of soil organic carbon under nitrogen deposition",
+      "abstract": "Emerging evidence points out that the responses of soil organic carbon (SOC) to nitrogen (N) addition differ along the soil profile, highlighting the importance of synthesizing results from different soil layers. Here, using a global meta-analysis, we found that N addition significantly enhanced topsoil (0-30 cm) SOC by 3.7% (+/- 1.4%) in forests and grasslands. In contrast, SOC in the subsoil (30-100 cm) initially increased with N addition but decreased over time. The model selection analysis revealed that experimental duration and vegetation type are among the most important predictors across a wide range of climatic, environmental, and edaphic variables. The contrasting responses of SOC to N addition indicate the importance of considering deep soil layers, particularly for long-term continuous N deposition. Finally, the lack of depth-dependent SOC responses to N addition in experimental and modeling frameworks has likely resulted in the overestimation of changes in SOC storage under enhanced N deposition.Nitrogen addition may profoundly affect soil organic carbon (SOC), but its impact on SOC in different soil layers remains unclear. Nitrogen addition significantly enhanced SOC in the topsoil (0-30 cm), while subsoil SOC (30-100 cm) initially increased with nitrogen addition but decreased over time. These results likely imply an overestimation of soil carbon sequestration with long-term nitrogen deposition.image",
+      "n_chars_title": 74,
+      "n_chars_abstract": 1437,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "eea_r_3035_100_m_imd-2009-acc_p_2008-2010_v01_r03",
+      "title": "High Resolution Layer: Imperviousness Density 2009 (raster 100m) accounting layer, Jan. 2019",
+      "abstract": "The current dataset was derived from original Copernicus High Resolution Layer Imperviousness Density 2009 product product for the purposes of imperviousness indicator (LSI002) calculations within the EEA LEAC CUBE environment. The dataset is also input to the imperviousness indicator itself. \n\nThe high resolution imperviousness products capture the percentage and change of soil sealing. Built-up areas are characterized by the substitution of the original (semi-) natural land cover or water surface with an artificial, often impervious cover. These artificial surfaces are usually maintained over long periods of time. A series of high resolution imperviousness datasets (for the 2006, 2009, 2012 and 2015 reference years) with all artificially sealed areas was produced using automatic derivation based on calibrated Normalized Difference Vegetation Index (NDVI). This series of imperviousness layers constitutes the main status layers. They are per-pixel estimates of impermeable cover of soil (soil sealing) and are mapped as the degree of imperviousness (0-100%). Imperviousness change layers were produced as a difference between the reference years (2006-2009, 2009-2012, 2012-2015 and additionally 2006-2012, to fully match the CORINE Land Cover production cycle) and are presented 1) as degree of imperviousness change (100% - +100%), in 20m and 100m pixel size, and 2) a classified (categorical) 20m change product. The latest version (published: 15/01/2019) of 100m resolution imperviousness status layers represents a time series consistent with 100m resolution imperviousness change layers - the cell by cell difference of the degree of imperviousness status corresponds to the degree of imperviousness change. The production of the High Resolution Imperviousness products was coordinated by the European Environment Agency in the frame of the EU Copernicus programme.",
+      "n_chars_title": 92,
+      "n_chars_abstract": 1885,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1111/ejss.13532",
+      "title": "Role of cover crop roots in soil organic carbon accrual—A review",
+      "abstract": "<jats:title>Abstract</jats:title>                   <jats:p>Appropriate cover crop (CC) management is an important tool for the improvement of soil carbon stock; however, the relationships between carbon accumulation and CC root traits remain unclear. A literature review was performed to identify the extent and focus of recent research and to answer questions about the role of root traits of CCs in soil C accumulation with regard to species selection, mixture composition and agronomic management. The findings based on the analysis of 69 publications show that a range of root traits such as root biomass, architecture, depth of rooting, root chemical composition, as well as quantity and quality of rhizodeposition, can contribute to soil structure formation and C accumulation. These traits are usually species specific, and it seems that appropriate species combinations in the mixtures can offer the highest potential for optimization of C stock across various environments. However, there has been twice as much recent research on roots of CC monocultures than on mixtures, with little attention paid to agronomic aspects such as plant spatial arrangement or soil tillage in relation to CC root development. Considerations of real management under field conditions could be beneficial in providing greater accuracy of estimation of the contribution of CCs in increasing the SOC stock in croplands.</jats:p>",
+      "n_chars_title": 64,
+      "n_chars_abstract": 1416,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1007/s10457-025-01358-7",
+      "title": "Hidden gems: small woody landscape features on agricultural land are overlooked in current assessments of agroforestry in Germany",
+      "abstract": "<jats:title>Abstract</jats:title>                   <jats:p>                     In the light of escalating climate challenges, agroforestry is receiving renewed attention for its potential to mitigate greenhouse gas emissions while enhancing the resilience of agricultural systems. The main difference between agroforestry and conventional agricultural systems is the presence and management of woody landscape features (WLF). The few datasets assessing WLF on agricultural land are limited in their spatial resolution and apply minimum mapping thresholds, potentially biasing derived estimates of WLF characteristics. Our study aimed to assess the current extent of WLF in Germany with high spatial resolution, including size variability and WLF type composition. We investigated WLF on agricultural land across seven federal states. In each of the seven states, 100 grid cells totalling 25 km                     <jats:sup>2</jats:sup>                     of agricultural land were selected, amounting to a total area of 175 km                     <jats:sup>2</jats:sup>                     . Within this area, WLF were manually identified, delineated and classified using digital orthophotos. The results were compared with state-of-the-art datasets, particularly the Digital Basic Landscape Model (ATKIS). We identified a total of 4.8 km                     <jats:sup>2</jats:sup>                     land hosting WLF, covering 2.7% of the investigated area. The extent of WLF estimated in our study was twice as large as the estimate derived from the ATKIS dataset. Overall, we identified a much larger number of WLF, which were on average much smaller in size compared to the WLF in the ATKIS dataset. Extrapolating our results to the national level, we estimate WLF coverage at 4,899 km                     <jats:sup>2</jats:sup>                     , corresponding to 57.2 Tg above-ground biomass or 28.6 Tg carbon. The biomass and carbon content were estimated based on literature-derived biomass densities. Our study indicates that accurately assessing WLF requires higher spatial resolutions than previously used. Datasets based on low-resolution images and those using minimal mapping units are not suited for capturing small WLF.                   </jats:p>",
+      "n_chars_title": 129,
+      "n_chars_abstract": 2271,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "4a244ff3-bd55-4d99-9943-26e799cf56cb",
+      "title": "SoilGrids250m 2.0 - Soil pH in H2O aggregated 5000m",
+      "abstract": "Soil pH x 10 in H2O at 6 standard depths (to convert to pH values divide by 10). Predictions were derived using a digital soil mapping approach based on Quantile Random Forest, drawing on a global compilation of soil profile data and environmental layers. This map is the result of resampling the mean SoilGrids 250 m predictions (Poggio et al. 2021) for each 5000 m cell.",
+      "n_chars_title": 51,
+      "n_chars_abstract": 372,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.20387/bonares-5bqk-c919",
+      "title": "Soil Compaction, Deformation, and Changes in Soil Physical Parameters Caused by Digestate Application on a Loess-Luvisol in 2019",
+      "abstract": "This dataset contains soil data from a traffic experiment for digestate application using four different agricultural vehicle combinations (tractor with tandem slurry tank, approx. 25.1 t; tractor with tridem slurry tank, approx. 50.1 t; Self-propelled slurry tank, approx. 41.2 t; tractor with umbilical cord technique, approx. 12.9 t). The experiment took place in the spring of 2019. The soil is a stagnic Luvisol. The vehicle combinations drove successively over defined plots. The experiments were conducted only in the inner field. Before the traffic, two pits were dug, and after the traffic, two pits were dug per variant. The following measurements were conducted at depths of 20, 35, and 50 cm in each pit: \n•\tSoil pressure and plastic soil deformation \n•\tWater retention properties, bulk density, and saturated hydraulic conductivity (Ks) (100 cm³ core samples; 5 replicates per pit and depth (for Ks 5 to 8)). Derived from these were total porosity, air capacity, field capacity, permanent wilting point, and dry bulk density \n•\tBiopores were counted in each pit and depth\"",
+      "n_chars_title": 128,
+      "n_chars_abstract": 1085,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1186/s13071-022-05581-4",
+      "title": "The pipeline for drugs for control and elimination of neglected tropical diseases: 1. Anti-infective drugs for regulatory registration",
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>The World Health Organization ‘Ending the neglect to attain the Sustainable Development Goals: A road map for neglected tropical diseases 2021–2030’ outlines the targets for control and elimination of neglected tropical diseases (NTDs). New drugs are needed to achieve some of them. We are providing an overview of the pipeline for new anti-infective drugs for regulatory registration and steps to effective use for NTD control and elimination. Considering drugs approved for an NTD by at least one stringent regulatory authority: fexinidazole, included in WHO guidelines for <jats:italic>Trypanosoma brucei gambiense</jats:italic> African trypanosomiasis, is in development for Chagas disease. Moxidectin, registered in 2018 for treatment of individuals ≥ 12 years old with onchocerciasis, is undergoing studies to extend the indication to 4–11-year-old children and obtain additional data to inform WHO and endemic countries' decisions on moxidectin inclusion in guidelines and policies. Moxidectin is also being evaluated for other NTDs. Considering drugs in at least Phase 2 clinical development, a submission is being prepared for registration of acoziborole as an oral treatment for first and second stage <jats:italic>T.b. gambiense</jats:italic> African trypanosomiasis. Bedaquiline, registered for tuberculosis, is being evaluated for multibacillary leprosy. Phase 2 studies of emodepside and flubentylosin in <jats:italic>O. volvulus</jats:italic>-infected individuals are ongoing; studies for <jats:italic>Trichuris trichuria</jats:italic> and hookworm are planned. A trial of fosravuconazole in <jats:italic>Madurella mycetomatis</jats:italic>-infected patients is ongoing. JNJ-64281802 is undergoing Phase 2 trials for reducing dengue viral load. Studies are ongoing or planned to evaluate oxantel pamoate for onchocerciasis and soil-transmitted helminths, including <jats:italic>Trichuris</jats:italic>, and oxfendazole for onchocerciasis, <jats:italic>Fasciola hepatica</jats:italic>, <jats:italic>Taenia solium</jats:italic> cysticercosis, <jats:italic>Echinococcus granulosus</jats:italic> and soil-transmitted helminths, including <jats:italic>Trichuris</jats:italic>. Additional steps from first registration to effective use for NTD control and elimination include country registrations, possibly additional studies to inform WHO guidelines and country policies, and implementation research to address barriers to effective use of new drugs. Relative to the number of people suffering from NTDs, the pipeline is small. Close collaboration and exchange of experience among all stakeholders developing drugs for NTDs may increase the probability that the current pipeline will translate into new drugs effectively implemented in affected countries.</jats:p>                 <jats:p><jats:bold>Graphical Abstract</jats:bold></jats:p>",
+      "n_chars_title": 134,
+      "n_chars_abstract": 2891,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1111/pce.13638",
+      "title": "Soil carbon dioxide venting through rice roots",
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>The growth of rice in submerged soils depends on its ability to form continuous gas channels—aerenchyma—through which oxygen (O<jats:sub>2</jats:sub>) diffuses from the shoots to aerate the roots. Less well understood is the extent to which aerenchyma permits venting of respiratory carbon dioxide (CO<jats:sub>2</jats:sub>) in the opposite direction. Large, potentially toxic concentrations of dissolved CO<jats:sub>2</jats:sub> develop in submerged rice soils. We show using X‐ray computed tomography and image‐based mathematical modelling that CO<jats:sub>2</jats:sub> venting through rice roots is far greater than thought hitherto. We found rates of venting equivalent to a third of the daily CO<jats:sub>2</jats:sub> fixation in photosynthesis. Without this venting through the roots, the concentrations of CO<jats:sub>2</jats:sub> and associated bicarbonate (HCO<jats:sub>3</jats:sub><jats:sup>−</jats:sup>) in root cells would have been well above levels known to be toxic to roots. Removal of CO<jats:sub>2</jats:sub> and hence carbonic acid (H<jats:sub>2</jats:sub>CO<jats:sub>3</jats:sub>) from the soil was sufficient to increase the pH in the rhizosphere close to the roots by 0.7 units, which is sufficient to solubilize or immobilize various nutrients and toxicants. A sensitivity analysis of the model showed that such changes are expected for a wide range of plant and soil conditions.</jats:p>",
+      "n_chars_title": 46,
+      "n_chars_abstract": 1452,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.10065971",
+      "title": "Database of topsoil  chemical and physical properties in Croatia",
+      "abstract": "<h3>Sources</h3><p>Data for database is collected from four main sources:&nbsp;</p><ul><li>Data published in book \"Martinović, J. and Vranković, A. (Editors), 1997. Baza podataka o hrvatskim tlima, I. Državna uprava za zaštitu prirode i okoliša, Zagreb\" labeled as \"martinovic_1997\" in the database.<ul><li>This source consists of 2199 pedological profiles sampled from 1963 to 1996, most of which include depth to bedrock information.</li></ul></li><li>Data from project: \"Spatial variability of trace and toxic metals in agricultural soils of Croatia\", Ministry of Science and Education and Croatian Waters. Project leader: prof.dr.sc. Marija Romić from Faculty of Agriculture, Zagreb, labeled as \"agricultural_2013\".<ul><li>Data are sampled from \"database of properties and quality of agricultural soils of Croatia\" on 8x8 km grid and consists only from top soil samples (0-30 cm). There are 811 samples in this database.</li></ul></li><li>Data from the the project: \"Change in soil carbon stocks and calculation of trends in total nitrogen and organic carbon in soil and C: N ratio\", from Ministry of Environmental Protection and Energy, carried on by Croatian Geological Institute (HGI), the Croatian Forestry Institute (HŠI) and the Agricultural Land Agency (APZ).<ul><li>This dataset consists of two subsets:<ul><li>\"azo_2013\" - 2519 samples of topsoil (0-25 cm), from 1994 to 2004 for making of Geochemistry Atlas of Croatia</li><li>\"azo_2016\" - 742 locations were revisited during 2015-2016 and new samples are taken and analyzed in horizons 0-10 cm, 10-20 cm, 20-30 cm.</li></ul></li></ul></li><li>Network of piezometers</li></ul><h3>Description of sources&nbsp;</h3><h4>Martinović, J. and Vranković, A. (Editors), 1997. Baza podataka o hrvatskim tlima (Database of Croatian Soils)&nbsp;</h4><p>The database contains data on soil profiles and covers the total area of the Republic of Croatia. Only data accepted by external control are entered in the Database, as well as those profiles for which there is a minimum data. External control of data reliability was performed by comparing the genetical-morphological characteristics of the soil determined by field research and the data of laboratory soil analyses. The profiles for which the field and laboratory analyses are found to differ are rejected. In addition to data on soil properties, basic data on pedogenetic factors are given. The soil profiles surveyed in the period 1963-1996 are entered in the database. The majority of data come from the Basic Pedological Map of Croatia (Osnovna pedološka karta Hrvatske - OPKH) project. The following are entered in the Database: 1347 profiles in volume I and 851 profiles in volume II, a total of 2198 pedological profiles</p><h4>Spatial variability of trace and toxic metals in agricultural soils of Croatia, Project Leader: Marija Romić&nbsp;</h4><p>The problem of exposure of agricultural soils to different anthropogenic inputs of toxic metals, but also of other potentially toxic substances, has acquired global dimensions in the last decades. Besides atmospheric deposition, environmental dispersion of chemicals used in agriculture is an important factor directly affecting the natural soil functions, or indirectly endangering the biosphere by bioaccumulation and inclusion into the food chain. Metal concentrations in soil can be generally predicted starting with the element abundance in the parent material. The extent to which pedogenesis affects heavy metals distribution varies according to the prevailing factors affecting soil processes. Because of the toxicity to plants and animals, it is important to determine their content, forms and distribution. Such hypotheses may be tested by total metal content determination, as well as other elements relevant for geochemical valorization of the agricultural soils of Croatia. Thus, the spatial variability and baseline of elements in soils will be determined by means of relevant statistical and geostatistical methods. The maps of toxic metal distribution will be produced and the suitability of soils for agriculture will be assessed. GIS is increasingly used in environmental assessment studies because of its ability to superimpose different spatial information and to combine them with the results of statistical analysis, enabling thus the detection of complex spatial relationships among different parameters. Geostatistics and multivariate statistics has been widely used in geochemical studies to identify pollution sources and to apportion natural vs. anthropogenic contribution, establishing a geochemical background as well. The main objectives of the investigation are: (i) to provide a geochemical database relevant to the agricultural soils in Croatia; (ii) to provide a detailed information about the natural variability of the geochemical background which is pertinent to administrative and legal issues as well as to safety food production and environmental protection; (iii) presenting the influence of human and other environmental activities on the soil quality mainly regarding the toxic and trace metal contents, and (iv) we are going to observe the influence of natural conditions on regional differences which have been widely neglected so far, and have not been taken into account while national regulations and guidelines on soil toxic metal contents have been established.</p><h4>Change in soil carbon stocks and calculation of trends in total nitrogen and organic carbon in soil and C: N ratio&nbsp;</h4><p>The project is funded by the Fund for Environmental Protection and Energy Efficiency within the Program \"Upgrading and Development of the Environmental Information System and Improving the Monitoring and Reporting System on the State of the Environment in the Republic of Croatia\", Component 2: Improving the Monitoring and Reporting System on the State of the Environment Croatia; improving the system of data collection and exchange and developing methodologies for their processing in accordance with the guidelines of the UNFCCC and the Kyoto Protocol defined by the IPCC (Intergovernmental Panel on Climate Change).&nbsp;</p><p>The project holder is the Ministry of Environmental Protection and Energy, and the executors are the Croatian Geological Institute, the Croatian Forestry Institute and the Agricultural Land Agency.</p><p>In the period 2014-2017, field and laboratory research of soil conditions was conducted at 725 representative locations. General data on the location of sampling were collected, which contain administrative, locational, geographical and other data (relief, climatic and meteorological data, detailed data on land use and vegetation cover, description of surface soil properties).</p><p>Field soil sampling for each LULUCF land use category was performed according to a modified methodology described in the EU DG JRC (Joint Research Center) \"Protocol for soil sampling to confirm changes in organic carbon stocks in the EU\" by Stolbovoy et al. 2007 (Soil sampling protocol to certify the changes of organic carbon stock in mineral soil of the European Union - EU JRC). The protocol modifications aimed to ensure reporting under the UNFCCC and Kyoto protocols, i.e., to ensure compliance with the IPCC methodology. Soil sampling on forest land (FL) according to the JRC protocol is planned at two depths of 0-10 cm and 10 - 20 cm and an organic layer (list), but due to reporting requirements under the UNFCCC and Kyoto protocol, sampling was carried out at a depth of 20 - 30 cm. Land under crops (CL) was sampled at two depths (0-20 cm and 20-30 cm) and grasslands (GL), wetlands (WL), settlements (SL) and other land (OL) were sampled at three depths 0- 10, 10-20 and 20-30 cm. Geochemical analyzes were performed at depths of 0–10 and 20–30 cm for forest soils (FL) and for meadows and pastures (GL) while for soils under crops (CL) composite samples of 0–30 cm and 0–20 cm were analyzed.</p><h4>Network of piezometers</h4><p>To get a more accurate depth to bedrock parameter, positions of 812 piezometers are considered as they have at least 4 meters of depth to bedrock.</p><h3>Description of database</h3><p>Column names and descriptions:</p><p>Metadata columns:</p><p><strong>site_key </strong>- unique identifier that identifies sample in source database&nbsp;<br><strong>source_db</strong> - label of source database&nbsp;<br><strong>source_sampled</strong> - label of organization/team who sampled and analyzed data&nbsp;<br><strong>site_obsdate</strong> - year of taking sample&nbsp;<br><strong>longitude_decimal_degrees</strong> - longitude in degrees in WGS84 geographical projection&nbsp;<br><strong>latitude_decimal_degrees</strong> - latitude in degrees in WGS84 geographical projection&nbsp;<br><strong>pedon_completeness_index</strong> - quality factor (0-100)&nbsp;<br><strong>taxgrtgroup</strong> - classification of sample according to WBR 2014/2016 classification&nbsp;</p><p>Soil properties columns:</p><p>column name - property - measurement units - description<br><strong>oc</strong> - Carbon, Organic - % wt - CMS analyte. Organic carbon is a measure of all organic forms of carbon in the soil, including organic carbon within minerals.&nbsp;<br><strong>n_tot_ncs</strong> - Nitrogen, Total NCS - % wt - Total nitrogen is a measure of all organic and inorganic nitrogen, including that found in nitrogen minerals.<br><strong>ca_mehlich3</strong> - Calcium, Mehlich3 Extractable &nbsp;- mg/kg - The calcium extracted by the Mehlich III solution.&nbsp;<br><strong>k_mehlich3</strong> - Potassium, Mehlich3 Extractable - mg/kg - The potassium extracted by the Mehlich III solution.&nbsp;<br><strong>mg_mehlich3</strong> - Magnesium, Mehlich3 Extractable - mg/kg - The magnesium extracted by the Mehlich III solution.&nbsp;<br><strong>p_mehlich3</strong> - Phosphorus, Mehlich3 Extractable - mg/kg - The phosphorus extracted by the Mehlich III solution.&nbsp;<br><strong>cec_sum</strong> - Cation Exchange Capacity, Summary &nbsp; cmol(+)/kg - The effective cation exchange capacity is calculated by BASE_SUM+AL_KCL. It is not calculated if soluble salts are present. It is reported as meq per 100 grams on a &lt;2 mm base. CMS derived value default&nbsp;<br><strong>ec_satp</strong> - Electrical Conductivity , Saturation Extract - dS/m - The electrical conductivity of the saturation extract is used to estimate the concentration of salts in a sample, and provides inferences on cation concentration in solution and osmotic pressure. It is reported as mmhos per centimeter.&nbsp;<br><strong>caco3</strong> - Carbonates - % wt - Carbonate in the &lt; 2mm fraction is measured by CO2 evolution after acid treatment. It is reported as gravimetric percent CaCO3 on a &lt;2 mm base, even though carbonates of Mg, Na, K, and Fe may be present and react with the acid<br><strong>ph_h2o</strong> - pH, 1:1 Soil-Water Suspension - (NA) - The pH, 1:1 soil-water suspension is the pH of a sample measured in distilled water at a 1:1 soil:solution ratio. If wider ratios increase the pH, salts are indicated.&nbsp;<br><strong>ph_kcl</strong> - The pH, 1:1 soil-KCl suspension - (NA) - The pH, 1:1 soil-KCl suspension is the pH of a sample measured in 1.0N KCl at a 1:1 soil:solution ratio. If the pH in KCl &lt; pH in water, Al+++ is indicated.&nbsp;<br><strong>total_clay</strong> - Clay, Total - % wt - Total clay is the soil separate with &lt;0.002 mm particle diameter. Clay size carbonate is included. Total clay is reported as a weight percent of the &lt;2 mm fraction.&nbsp;<br><strong>total_silt</strong> - Silt, Total - % wt - Total silt is the soil separate with 0.002 to 0.05 mm particle size. It is reported as a gravimetric percent on a &lt;2 mm base.&nbsp;<br><strong>total_sand</strong> - Sand, Total - % wt - Total sand is the soil separate with 0.05 to 2.0 mm particle diameter. It is reported as a gravimetric percent on a &lt;2 mm base.&nbsp;<br><strong>wpg2</strong> - Coarse fragments - % wt - The weight fraction of particles with &gt;2 mm diameter is reported as a gravimetric percent on a whole soil base.&nbsp;<br><strong>db_od</strong> Bulk Density, &lt;2mm Fraction, Ovendry - g/cc - Bulk density, oven dry (105 C) is the weight per unit volume of the &lt;2 mm fraction, with volume measured on oven dry (105 C) natural fabric (clods). It is reported as grams per cubic centimeter on a &lt;2 mm base.&nbsp;<br><strong>dbr</strong> - Depth to bedrock - cm - Depth to the R horizon or similar</p>",
+      "n_chars_title": 64,
+      "n_chars_abstract": 12481,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.17221/60/2023-swr",
+      "title": "Seasonal variations of vegetative indices and their correlation with evapotranspiration and soil water storage in a small agricultural catchment",
+      "abstract": "A precise measurement of evapotranspiration (ET) and soil water storage (SWS) is necessary for crop management and understanding hydrological processes in agricultural catchments. In this study, we extracted the vegetative indices (VIs, including normalised difference vegetation index (NDVI), soil-adjusted vegetation index (SAVI), and enhanced vegetation index (EVI)) from satellite images of the Nučice catchment. We found a consistent seasonal pattern of VIs across the catchment with higher values and variation ranges during spring and summer and lower values and variation ranges during autumn and winter. Spatial variation of VIs also followed a seasonal trend, decreasing during crop growth and increasing after crop harvesting. Seasonal correlations were observed between monthly average ET and SWS with VIs throughout one crop season, which can be expressed mathematically as exponential functions. We propose that VIs can be used as a surrogate measure for ET and SWS in catchments with poor monitoring capabilities. Further studies are required to investigate the spatial distribution of ET and SWS throughout the watershed and their relationship with VIs. Furthermore, our research emphasises the importance of subsurface recharge in the water balance of the investigated fields. It suggests that subsurface flow may be influenced by potential gradients of the water table, driving its seasonal behaviour in response to bedrock morphology.",
+      "n_chars_title": 144,
+      "n_chars_abstract": 1453,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "57c27a06-cf9d-4e12-bb31-3ff1b57a3ffe",
+      "title": "Regional till geochemistry",
+      "abstract": "The data set give information on the concentrations of ca. 25 elements in unaltered basal till. The samples have been taken, during 1983-1991, from the unaltered basal till (horizon C) below the groundwater table at a depth of ca. 1.5-2 m with a density of one sample per four square kilometres. The data set covers the whole of Finland with 82 062 samples in total. The samples are composite field samples: the recorded coordinates of the sample points in the data is a calculated centroid for three to five subsamples. The subsamples may also be mixed samples from a linear moraine (till). For the analysis, a fraction with grain size under 0.06 mm has been sieved from the samples. The aqua regia extractable concentrations of ca. 25 elements have been determined. The data has been published as a set of 1:400 000 maps. The number of elements published is 22-26 depending on map sheet.",
+      "n_chars_title": 26,
+      "n_chars_abstract": 889,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.10883909",
+      "title": "Landsat-based Spectral Indices for pan-EU 2000-2022  - Annual predictor P25 (2006): Reflectances bands, NDVI and NDWI",
+      "abstract": "Data information          This dataset provides the P25 (percentile 25) values of corresponding predictors for the year 2006.          The P25 values are calculated from the bimonthly values of six corresponding predictors throughout the year.          The predictors in this subset include seven reflectance bands: red, green, blue, NIR, SWIR1, SWIR2, and thermal;          as well as two spectral indices: NDVI and NDWI.          As a part of a Data Cube          This data represents a subset of the Time-series of Landsat-based Spectral Indices (EU, 30m) data cube.          For a comprehensive overview and full dataset information, please visit the landing page of this data cube using the provided link.                    To cite this dataset, refer to the DOI available on the landing page.          To access other data layers in the data cube, use the navigation catalog on the landing page as well.                   Support          If you discover a bug, artifact, or inconsistency, or if you have a question, please raise a Github Issue!",
+      "n_chars_title": 117,
+      "n_chars_abstract": 1052,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1111/ejss.13024",
+      "title": "A decision support framework assessing management impacts on crop yield, soil carbon changes and nitrogen losses to the environment",
+      "abstract": "<jats:title>Abstract</jats:title>                   <jats:sec>                     <jats:label/>                     <jats:p>                       Agricultural management practices have multiple impacts on farming systems, including crop yield, soil fertility parameters such as soil organic carbon (SOC), and environmental quality. Agricultural decision support tools (DSTs) are key in sustainable farm strategies to optimize yield and minimize environmental losses because both the current agroecosystem properties as well as the effectiveness of management practices are highly variable in time and space. Here, we introduce a highly data‐driven framework focusing on the evaluation of agronomic measures to reach agronomic and environmental targets. We demonstrate the potential of this approach by a proof of principle for 81 selected farm types across Europe, focusing on measures with respect to crop rotation, fertilization and soil tillage. Synthesizing data from long‐term experiments and meta‐analytical models, we estimated the impact of these measures on crop yield, SOC and N surpluses, while accounting for site‐specific properties for the current and desired situation. The impacts of these measures on all farm types have been quantified, and optimum sets of agronomic measures have been selected in order to maximize crop yield and SOC levels and minimize N surpluses to reach the critical values for NO                       <jats:sub>3</jats:sub>                       <jats:sup>−</jats:sup>                       concentrations in groundwater. Our results, quantifying trade‐offs among sustainability indicators that have traditionally been analyzed separately, illustrate that the suitability of measures varies by soil, climate and crop types within Europe. Our approach is promising for mapping region‐specific management recommendations and evaluating the effectiveness of agronomic measures over multiple environmental goals and targets.                     </jats:p>                   </jats:sec>                   <jats:sec>                     <jats:title>Highlights</jats:title>                     <jats:p>                       <jats:list list-type=\"bullet\">                         <jats:list-item>                           <jats:p>We find a lack of empirical‐based DSTs holistically assessing agronomic practices and indicators.</jats:p>                         </jats:list-item>                         <jats:list-item>                           <jats:p>Meta‐analytical models were used to assess impacts of best fertilizer, tillage and crop measures.</jats:p>                         </jats:list-item>                         <jats:list-item>                           <jats:p>Our multi‐criteria analysis shows impacts vary with crop, soil and climate in European regions.</jats:p>                         </jats:list-item>                         <jats:list-item>                           <jats:p>We demonstrate our developed framework focusing on crop yield, soil carbon and nitrogen losses.</jats:p>                         </jats:list-item>                       </jats:list>                     </jats:p>                   </jats:sec>",
+      "n_chars_title": 131,
+      "n_chars_abstract": 3178,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1080/17583004.2025.2568042",
+      "title": "Improving agricultural carbon monitoring with Sentinel-2 and eddy-covariance-based plant productivity estimates",
+      "abstract": "<p>Carbon balances of croplands are often assessed using models that depend critically on accurate estimates of soil carbon inputs such as crop residues, dead roots, and root exudates. Here, we develop a method to estimate soil carbon inputs by combining satellite-based gross primary productivity (GPP) estimates with harvest yields extracted from agricultural statistics. We model the daily GPP as a statistical regression on photosynthetically active radiation and the red edge chlorophyll index measured by the Sentinel-2 satellites and train the model using data from five eddy covariance flux measurement sites. When tested with leave-one-site-out cross-validation, the model predicted the yearly GPP with a root mean squared error equal to about 10% of the mean. We furthermore show that the predicted cumulative GPP explains 60%&ndash;70% of the observed variability within a set of 135 above-ground biomass measurements collected on 40 agricultural fields. Finally, we apply the method to three Finnish regions and estimate the soil carbon inputs as the difference between the net primary productivity (NPP), assumed 50% of the GPP, and the carbon removed in harvest. Compared to the allometric method used in the current national greenhouse gas inventory, our annual carbon inputs are within 5%&ndash;30% for wheat but 50%&ndash;100% higher for barley, 40%&ndash;50% higher for green fallows, and 100%&ndash;160% higher for forage grasses. By highlighting a discrepancy between the current national greenhouse gas inventory and carbon budgets derived from eddy covariance measurements, these results provide a path towards closer integration of Earth observation and flux measurement data into greenhouse gas inventories and reporting systems.</p>",
+      "n_chars_title": 111,
+      "n_chars_abstract": 1757,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://ec.europa.eu/research/participants/documents/downloadPublic?documentIds=080166e5fdd002b2",
+      "title": "Final update of the Dissemination and Exploitation Plan",
+      "abstract": "Update of the protocols as there is an obligation for partners to carry out exploitation for another four years after the project. The Knowledge Output Pathways and Knowledge Transfer Plans are included. An update of the Horizon Results Platform and information about that in the DEP.",
+      "n_chars_title": 55,
+      "n_chars_abstract": 284,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.15083810",
+      "title": "A review of existing soil monitoring systems",
+      "abstract": "This study addresses main questions when developing a soil monitoring programme and underlines possible ways to harmonize national programmes with EU Soil Observatory",
+      "n_chars_title": 44,
+      "n_chars_abstract": 166,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.3389/fenvs.2019.00058",
+      "title": "Development of an Agricultural Primary Productivity Decision Support Model: A Case Study in France",
+      "abstract": "Agricultural soils provide society with several functions, one of which is primary productivity. This function is defined as the capacity of a soil to supply nutrients and water and to produce plant biomass for human use, providing food, feed, fiber, and fuel. For farmers, the productivity function delivers an economic basis and is a prerequisite for agricultural sustainability. Our study was designed to develop an agricultural primary productivity decision support model. To obtain a highly accurate decision support model that helps farmers and advisors to assess and manage the provision of the primary productivity soil function on their agricultural fields, we addressed the following specific objectives: (i) to construct a qualitative decision support model to assess the primary productivity soil function at the agricultural field level; (ii) to carry out verification, calibration, and sensitivity analysis of this model; and (iii) to validate the model based on empirical data. The result is a hierarchical qualitative model consisting of 25 input attributes describing soil properties, environmental conditions, cropping specifications, and management practices on each respective field. An extensive dataset from France containing data from 399 sites was used to calibrate and validate the model. The large amount of data enabled data mining to support model calibration. The accuracy of the decision support model prior to calibration supported by data mining was similar to 40%. The data mining approach improved the accuracy to 77%. The proposed methodology of combining decision modeling and data mining proved to be an important step forward. This iterative approach yielded an accurate, reliable, and useful decision support model for the assessment of the primary productivity soil function at the field level. This can assist farmers and advisors in selecting the most appropriate crop management practices. Embedding this decision support model in a set of complementary models for four adjacent soil functions, as endeavored in the H2020 LANDMARK project, will help take the integrated sustainability of arable cropping systems to a new level.",
+      "n_chars_title": 98,
+      "n_chars_abstract": 2170,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.1021/acs.analchem.5c01659",
+      "title": "Evaluation of Three Sample Preparation Methods for LC-HRMS Suspect Screening of Contaminants of Emerging Concern in Effluent Wastewater",
+      "abstract": "Suspect screening is a valuable tool for studying the pollution footprint of environmental samples, but the sample preparation (SP) method significantly affects the results. In this study, three SP methods─lyophilization, direct injection, and online solid-phase extraction (SPE)─were evaluated for suspect screening of contaminants of emerging concern (CECs) in effluent wastewater using liquid chromatography-high resolution mass spectrometry (LC-HRMS). LC-HRMS was performed with a Q-ToF mass analyzer in both positive and negative electrospray ionization modes, and pollutants were identified using the NORMAN SusDat database. A total of 119 CECs were identified with high confidence (all above level 2a). Of these, 115 were detected using lyophilization, 37 with direct injection, and 49 with online SPE. Principal component analysis revealed distinct patterns for each SP method. In all cases, the pollution profile was dominated by pharmaceuticals, followed by industrial chemicals. Articaine, a local anesthetic previously unreported in the aquatic environment, was the most abundant compound found. Industrial chemicals included phthalates, flame retardants, benzotriazoles, and perfluoroalkyl substances, among others. The remaining identified CECs were personal care products, pesticides, and drugs of abuse. Compound prioritization, based on abundance, persistence, mobility, bioaccumulation potential, and toxicity, identified the antibiotics clindamycin and tiamulin, the analgesic flufenamic acid, the musk fragrance metabolite galaxolidone, and the antidepressant venlafaxine metabolite, O-desmethyl venlafaxine, as top priority. These results highlight the importance of applying an appropriate SP method to obtain a comprehensive CEC footprint in suspect screening analysis and demonstrate the suitability of lyophilization for wastewater characterization.",
+      "n_chars_title": 135,
+      "n_chars_abstract": 1874,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.2136/sssaj2003.1620",
+      "title": "Interpretation Of Soil Carbon And Nitrogen Dynamics In Agricultural And Afforested Soils",
+      "abstract": "Interpretation Of Soil Organic C (Soc) Dynamics Depends Heavily On Analytical Methods And Management Systems Studied. Comparison Of Data From Long-Term Corn (Zea Mays)-Plot Soils In Eastern North America Showed Mean Residence Times (Mrts) Of Soc Determined By C-14 Dating Were 176 Times Those Measured With C-13 Abundance Following A 30-Yr Replacement Of C-3 By C-4 Plants On The Same Soils. However, Mrts Of The Two Methods Were Related (R(2) = 0.71). Field C-13 Mrts Of Soc Were Also Related (R-2 = 0.55 To 0.85) To Those Measured By (Co2)-C-13 Evolution And Curve Fitting During Laboratory Incubation. The Strong Relations, But Different Mrts, Were Interpreted To Mean That The Three Methods Sampled Different Parts Of A Soc Continuum. The Soc Of All Parts Of This Continuum Must Be Affected By The Same Controls On Soc Dynamics For This To Occur. Methods For Site Selection, Plant Biomass, Soil Sampling And Analysis Were Tested On Agricultural, Afforested-Agriculture, And Native Forest Sites To Determine The Controls On Soc Dynamics. Soil-C Changes After Afforestation Were -0.07 To 0.55 Mg C Ha(-1) Yr(-1) On Deciduous Sites And -0.85 To 0.58 Mg C Ha(-1) Yr(-1) Under Conifers. Soil N Changes Under Afforestation Ranged From -0.1 To 0.025 Mg N Ha(-1) Yr(-1). Ecosystem N Accumulation Was -0.09 To 0.08 Mg N Ha(-1) Yr(-1). Soil C And N Sequestration But Not Plant Biomass Were Related To Soil Ca, Mg, And K Contents. Comparative, Independent Assays Of Long-Term Plots Provides Information For Concept Testing And The Confidence Necessary For Decision-Makers Determining C-Cycle Policies.",
+      "n_chars_title": 88,
+      "n_chars_abstract": 1594,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.5061/dryad.9kd51c5n4",
+      "title": "Species of fast bulk-soil nutrient cycling have lower rhizosphere effects: A nutrient spectrum of rhizosphere effects",
+      "abstract": "<p>Tree roots not only acquire readily-usable soil nutrients but also affect microbial decomposition and manipulate nutrient availability in their surrounding soils, i.e., rhizosphere effects (REs). Thus, REs challenge the basic understanding how plants adapt to environment and co-exist with other species. Yet, how REs vary among species in response to species-specific bulk soil nutrient cycling is not well-known. Here we studied how plant-controlled microbial decomposition activities in rhizosphere soils respond to those in their corresponding bulk soils and whether these relations depend on species-specific nutrient cycling in the bulk soils. We targeted 55 woody species of different clades and mycorrhizal types in three contrasting biomes, namely a temperate forest, a subtropical forest and a tropical forest. We found that microbial decomposition activities in rhizosphere soils responded linearly to those in their corresponding bulk soils at the species level. Thereafter, we found that REs (parameters in rhizosphere soils minus those in corresponding bulk soils) of microbial decomposition activities had negative linear correlations with microbial decomposition activities in corresponding bulk soils. A multiple factor analysis revealed that soil organic carbon, total nitrogen and soil water content favored bulk soil decomposition activities in all three biomes, showing that the magnitude of REs varied along a fast-slow nutrient cycling spectrum in bulk soils. The species of fast nutrient cycling in their bulk soils tended to have smaller or even negative REs. Therefore, woody plants commonly utilize both positive and negative REs as a nutrient-acquisition strategy. Based on the trade-offs between REs and other nutrient-acquisition strategies, we proposed a push and pull conceptual model which can bring plant nutrient-acquisition cost and plant carbon economics spectrum together in the future. This model will facilitate not only the carbon and nutrient cycling but also the mechanisms of species co-existence in forest ecosystems.</p>",
+      "n_chars_title": 117,
+      "n_chars_abstract": 2069,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.1016/j.agee.2015.10.021",
+      "title": "Grazing Intensity And Micro-Topographical Effects On Some Nitrogen And Carbon Pools And Fluxes In Sheep-Grazed Hill Country In New Zealand",
+      "abstract": "A Significant Proportion Of Grazed Land In New Zealand Is In Hill Country And This Area Supports A Large Proportion Of The National Sheep And Beef Herd. Little Is Known About The Effect Of Increased Grazing Intensity On Nitrogen (N) And Carbon (C) Cycling And Losses From These Hill Country Grazing Systems, Nor Of The Effect Of Micro-Topography-On N And C Pools And Fluxes. A Three Year Grazing Trial Was Conducted To Gather Information On The Effect Of An Increase In Grazing Intensity On Soil Chemistry And N And C Leaching In Three Distinct Micro-Topographical Classes. In This Temperate Environment, Micro-Topography Was The Dominant Influence On Annual Net Herbage Accumulation, Soil Chemistry And N And C Leaching. Net Herbage Accumulation Was Two- And Five-Fold Greater On Low (<13 Degrees) Compared To Medium (13-25 Degrees) And High (>25 Degrees) Slopes (14.6, 7.8, And 2.9 T Dm Ha(-1) Yr(-1), Respectively). Low Slope Soils Had Generally Higher Concentrations Of Phosphorus And N And C Species Compared To Soils On Medium And High Slopes. Nitrogen Leaching Was Greatest In Low Compared To Medium Slope Areas: Three-Year Mean Estimates Of Annual Leaching Were So Vs. 7 Kg Inorganic N Ha(-1), And 40 Vs. 8 Kg Dissolved Organic N Ha(-1), Respectively. Per Ha Estimates Of Inorganic N Leaching In This Landscape (Where Low, Medium And High Slopes Occupy 10, 60 And 30% Of The Land Area) Are 15 Kg N Ha(-1) If We Make The Assumption That High Slopes Leach As Much Inorganic N As Medium Slopes, Or 12 Kg N Ha(-1) If It Is Assumed That High Slopes Do Not Leach At All. The Significant Effect Of Slope On Parameters Measured Is A Reflection Of Micro-Topographical Influences On Livestock Grazing, Resting And Excreting Patterns. Estimates Of Annual Dissolved Organic C Leaching Were Not Significantly Different Between Low And Medium Slopes (185 Vs. 132 Kg C Ha(-1), Respectively). Grazing Intensity, At The Two Contrasting Grazing Pressures Employed (Annual Mean Standing Biomass Of 1900 Vs. 1475 Kg Dm Ha(-1)), Had No Significant Impact On The Variables Measured In This Three Year Study, Demonstrating The Robust Nature Of These Grazing Systems In The Short-Term. Our Study Provides New And Quantitative Information On Net Herbage Accumulation, Soil Characteristics And Nutrient Leaching In Grazed Hill Country. This New Information Will Enable The Development And Refinement Of N And C Models To Inform Sustainable Farming Practices For This Nationally Important Land Use. (C) 2015 Elsevier B.V. All Rights Reserved.",
+      "n_chars_title": 138,
+      "n_chars_abstract": 2523,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.19336397",
+      "title": "Global Dataset of cumulative post fire soil erosion estimates (2001–2019)",
+      "abstract": "Annual post-fire soil erosion including past fires; Grid shapefile for tiles references + overview.png: 2001–2019 (annual) - 200 m resolution - global extent. Wildfires induce significant disturbances to topsoil properties, increasing surface runoff and accelerating soil erosion. Despite extensive research, a global, spatially explicit quantification of cumulative post-fire erosion has been missing. This dataset addresses that gap by providing annual global estimates of post-fire soil erosion from 2001–2019. Soil loss is quantified using the Revised Universal Soil Loss Equation (RUSLE), where post-fire modifications to cover-management (C)  factors parameterized to acount for burn severity and land cover characteristics after fire. The dataset integrates erosion estimates with spatial information enabling the assessment of cumulative soil degradation driven by repeated burns. This resource supports global-scale analysis of wildfire-induced land degradation and offers a basis for post-fire risk mitigation and policy strategies aligned with Land Degradation Neutrality targets.",
+      "n_chars_title": 73,
+      "n_chars_abstract": 1091,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.1016/j.soilbio.2012.10.033",
+      "title": "Microbial Biomass Growth, Following Incorporation Of Biochars Produced At 350 Degrees C Or 700 Degrees C, In A Silty-Clay Loam Soil Of High And Low Ph",
+      "abstract": "Biochar Has Been Widely Proposed As A Soil Amendment, With Reports Of Benefits To Soil Physical, Chemical And Biological Properties. To Quantify The Changes In Soil Microbial Biomass And To Understand The Mechanisms Involved, Two Biochars Were Prepared At 350 Degrees C (Bc350) And 700 Degrees C (Bc700) From Miscanthus Giganteus, A C4 Plant, Naturally Enriched With C-13. The Biochars Were Added To Soils Of About Ph 4 And 8, Which Were Both Sampled From A Soil Ph Gradient Of The Same Soil Type. Isotopic (C-13) Techniques Were Used To Investigate Biochar C Availability To The Biomass. Scanning Electron Microscopy (Sem) Was Used To Observe The Microbial Colonization, And Attenuated Total Reflectance (Atr) To Highlight Structural Changes At The Surface Of The Biochars. After 90 Days Incubation, Bc350 Significantly Increased The Biomass C Concentration Relative To The Controls In Both The Low (P < 0.05) And High Ph Soil (P <0.01). It Declined Between Day 90 And 180. The Same Trend Occurred With Soil Microbial Atp. Overall, Biomass C And Atp Concentrations Were Closely Correlated Over All Treatments (R-2 = 0.87). This Indicates That Neither The Biomass C, Nor Atp Analyses Were Affected By The Biochars, Unless, Of Course, They Were Both Affected In The Same Way, Which Is Highly Unlikely. About 20% Of Microbial Biomass Bc Was Derived From Bc350 After 90 Days Of Incubation In Both Low And High Ph Soils. However, Less Than 2% Of Biomass C-13 Was Derived From Bc700 In The High Ph Soil, Showing Very Low Biological Availability Of Bc700. After 90 Days Of Incubation, Microbial Colonization In The Charsphere (Defined Here As The Interface Between Soil And Biochar) Was More Pronounced With The Bc350 In The Low Ph Soil. This Was Consistent With The Biomass C And Atp Results. The Microbial Colonization Following Biochar Addition In Our Study Was Mainly Attributed To Biochar C Availability And Its Large Surface Area. There Was A Close Linear Relationship Between (Co2)-C-13 Evolved And Biomass C-13, Suggesting That Biochar Mineralization Is Essentially A Biological Process. The Interactions Between Non-Living And Living Organic C Forms, Which Are Vital In Terms Of Soil Fertility And The Global C Cycle, May Be Favoured In The Charsphere, Which Has Unique Properties, Distinct From Both The Internal Biochar And The Bulk Soil. (C) 2012 Elsevier Ltd. All Rights Reserved.",
+      "n_chars_title": 150,
+      "n_chars_abstract": 2387,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.1007/s11104-011-0870-3",
+      "title": "Biochar Adsorbed Ammonia Is Bioavailable",
+      "abstract": "Biochar Is Produced As A By-Product Of The Low Temperature Pyrolysis Of Biomass During Bioenergy Extraction And Its Incorporation Into Soil Is Of Global Interest As A Potential Carbon Sequestration Tool. Biochar Influences Soil Nitrogen Transformations And Its Capacity To Take Up Ammonia Is Well Recognized. Anthropogenic Emissions Of Ammonia Need To Be Mitigated Due To Negative Environmental Impacts And Economic Losses. Here We Use An Isotope Of Nitrogen To Show That Ammonia-N Adsorbed By Biochar Is Stable In Ambient Air, But Readily Bioavailable When Placed In The Soil. When Biochars, Containing Adsorbed N-15 Labelled Ammonia, Were Incorporated Into Soil The N-15 Recovery By Roots Averaged 6.8% But Ranged From 26.1% To 10.9% In Leaf Tissue Due To Differing Biochar Properties With Plant N-15 Recovery Greater When Acidic Biochars Were Used To Capture Ammonia. Recovery Of N-15 As Total Soil Nitrogen (Organic+Inorganic) Ranged From 45% To 29% Of N-15 Applied. We Provide A Proof Of Concept For A Synergistic Mitigation Option Where Anthropogenic Ammonia Emissions Could Be Captured Using Biochar, And Made Bioavailable In Soils, Thus Leading To Nitrogen Capture By Crops, While Simultaneously Sequestering Carbon In Soils.",
+      "n_chars_title": 40,
+      "n_chars_abstract": 1233,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "10.5281/zenodo.7705060",
+      "title": "Dataset: Strauss et al. 2023 Sustainable soil management measures: a synthesis of stakeholder recommendations",
+      "abstract": "The provided dataset contains the used information for the scientific publication Strauss, V., Paul, C., Dönmez, C., Löbmann, M., &amp; Helming, K. (2023). Sustainable soil management measures: a synthesis of stakeholder recommendations. <em>Agronomy for Sustainable Development</em>, <em>43</em>(1), 17 Due to the assessment language, parts of the dataset are in German. Specifically, it contains: - Stakeholder documents (welche ausgewertet wurden) &amp; Einteilung in Stakeholder Groups<br> - Erfassung der Aussagen &amp; Kategorisierung<br> - Auswertung zur Longlist<br> - Ergebnisse der Farmer Survey",
+      "n_chars_title": 109,
+      "n_chars_abstract": 605,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://data.isric.org/geonetwork/srv/fre/catalog.search#/metadata/a36f7919-0d6e-4044-902c-64a74feade6b",
+      "title": "Africa SoilGrids nutrients - Extractable Aluminium (Al)",
+      "abstract": "Extractable Aluminium (Al) content of the soil fine earth fraction in mg/kg (ppm) as measured according to the soil analytical procedure of Mehlich 3 and spatially predicted for 0-30 cm depth interval at 250 m spatial resolution across sub-Saharan Africa using Machine Learning (ensemble between random forest and gradient boosting) using soil data from the Africa Soil Profiles database (AfSP) compiled by AfSIS and recent soil data newly collected by AfSIS in partnership with EthioSIS (Ethiopia), GhaSIS (Ghana) and NiSIS (Nigeria as made possible by OCP Africa and IITA), combined with soil data as made available by Wageningen University and Research, IFDC, VitalSigns, University of California and the OneAcreFund. [Values M = mean value predicted]. For details see below for peer reviewed paper (T. Hengl, J.G.B. Leenaars, K.D. Shepherd, M.G. Walsh, G.B.M. Heuvelink, Tekalign Mamo, H. Tilahun, E. Berkhout, M. Cooper, E. Fegraus, I. Wheeler, N.A. Kwabena, 2017. Soil nutrient maps of Sub-Saharan Africa: assessment of soil nutrient content at 250 m spatial resolution using machine learning. Nutriënt Cycling in Agroecosystems 109(1): 77-102). Maps produced for the Environmental Assessment Agency (PBL), funded by the Netherlands government, in collaboration with the AfSIS and the Vital Signs projects.",
+      "n_chars_title": 55,
+      "n_chars_abstract": 1312,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "https://doi.org/10.1111/gcbb.12356",
+      "title": "Dynamic Responses Of Nitrous Oxide Emission And Nitrogen Use Efficiency To Nitrogen And Biochar Amendment In An Intensified Vegetable Field In Southeastern China",
+      "abstract": "Intensive Vegetable Production Exhibits Contrasting Characteristics Of High Nitrous Oxide (N2o) Emissions And Low Nitrogen Use Efficiency (Nue). In An Effort To Mitigate N2o Emissions And Improve Nue, A Field Experiment With Nine Consecutive Vegetable Crops Was Designed To Study The Combined Effects Of Nitrogen (N) And Biochar Amendment And Their Interaction On Soil Properties, N2o Emission And Nue In An Intensified Vegetable Field In Southeastern China. We Found That N Application Significantly Increased N2o Emissions, N2o-N Emission Factors And Yield-Scaled N2o Emissions By 51-159%, 9-125% And 14-131%, Respectively. Moreover, High N Input Significantly Decreased N Partial Factor Productivity (Pfpn) And Even Yield During The Seventh To Ninth Vegetable Crops Along With Obvious Soil Degradation And Mineral N Accumulation. To The Contrary, Biochar Amendment Resulted In Significant Decreases In Cumulative N2o Emissions, N2o-N Emission Factor And Yield-Scaled N2o Emissions By 5-39%, 16-67% And 14-53%, Respectively. In Addition, Biochar Significantly Increased Yield, Pfpn And Apparent Recovery Of N (Arn). Although Without Obvious Influence During The First To Fourth Vegetable Crops, Biochar Amendment Mitigated N2o Emissions During The Fifth To Ninth Vegetable Crops. The Relative Effects Of Biochar Amendments Were Reduced With Increasing N Application Rate. Hence, While High N Input Produced Adverse Consequences Such As Mineral N Accumulation And Soil Degradation In The Vegetable Field, Biochar Amendment Can Be A Beneficial Agricultural Strategy To Mitigate N2o Emissions And Improve Nue And Soil Quality In Vegetable Field.",
+      "n_chars_title": 161,
+      "n_chars_abstract": 1644,
+      "lang_abstract": "en",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "en"
+    },
+    {
+      "identifier": "d4608f62-da32-4ee6-b432-386c01871ee1",
+      "title": "Bodemfunctiekaart Zeeland",
+      "abstract": "De Bodemkwaliteitskaart (bkk) is een gemeentelijke kaart, die de algemene chemische bodemkwaliteit van een gebied beschrijft. De kaart bestaat uit drie kaartlagen: de functiekaart, bodemkwaliteitskaart en de toepassingskaart. \nElke gemeente heeft een Nota Bodembeheer, waar de kaart bestuurlijk in is vastgesteld en verankerd. Per gemeente zijn dan ook nuance verschillen in kaart mogelijk. Deze kaart is samengesteld uit alle beschikbare bkk's van de Zeeuwse gemeenten.\nDe bodemkwaliteitskaart wordt primair gebruikt om grondverzet op een efficiënte, kosteneffectieve en milieu hygiënisch verantwoorde manier mogelijk maken.",
+      "n_chars_title": 25,
+      "n_chars_abstract": 625,
+      "lang_abstract": "nl",
+      "lang_abstract_confidence": 1.0,
+      "lang_title": "nl"
+    }
+  ]
+}

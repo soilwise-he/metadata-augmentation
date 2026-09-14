@@ -5,3 +5,6 @@ keyword-matcher/cache_trankit_models*
 /spatial-metadata-extractor/statistics/
 __pycache__/
 *.pyc
+*.venv
+**/datadump/
+**/.ipynb_checkpoints/*
