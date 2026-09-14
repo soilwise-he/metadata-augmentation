@@ -3,3 +3,5 @@
 *.env
 keyword-matcher/cache_trankit_models*
 /spatial-metadata-extractor/statistics/
+__pycache__/
+*.pyc
