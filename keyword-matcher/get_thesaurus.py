@@ -155,7 +155,7 @@ def main():
     '''
 
     kg_concs = sparqlLocal(kg_path, query, "ttl")
-    langs = ["en", "fr", "de", "it", "es", "nl"]
+    langs = ["en", "fr", "de", "it", "es", "nl", "pt"]
 
     # Initialize a list to hold formatted concepts
     formatted_cons = []

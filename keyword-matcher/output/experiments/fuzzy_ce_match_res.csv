@@ -1,0 +1,281 @@
+subject_label,vocab_label,subject_id,subject_uri,vocab_identifier,fuzzy_score,ce_score
+microbial activity,soil microbial activity,158939,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,88,0.9027
+soil microbiology,soil microbial biomass,158948,,https://w3id.org/eusoilvoc#SoilMicrobialBiomass,72,0.8095
+mycobiome,microbes,158965,,https://w3id.org/eusoilvoc#Microbes,67,0.7907
+agricultural soils,soil agricultural functions,158985,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,67,0.8899
+soil stabilization,soil structural stability,159059,,https://w3id.org/eusoilvoc#SoilStructuralStability,60,0.874
+soil microbiome,soil microbial biomass,160133,,https://w3id.org/eusoilvoc#SoilMicrobialBiomass,76,0.9601
+biological soil crusts,soil biological crusts,159096,,https://w3id.org/eusoilvoc#SoilBiologicalCrusts,77,0.9653
+ecosystem,ecosystem services,159102,,https://w3id.org/eusoilvoc#EcosystemServices,69,0.8338
+biological process,soil biological processes,159142,,https://w3id.org/eusoilvoc#SoilBiologicalProcesses,88,0.6415
+saturated-unsaturated flow,unsaturated water flow,159178,,https://w3id.org/eusoilvoc#UnsaturatedWaterFlow,71,0.8845
+ecosystems,ecosystem services,159195,,https://w3id.org/eusoilvoc#EcosystemServices,74,0.8841
+solute transport,soil solute dispersive transport,159205,,https://w3id.org/eusoilvoc#SoilSoluteDispersiveTransport,67,0.8977
+organic matter,soil organic matter class,159279,,https://w3id.org/eusoilvoc#SoilOrganicMatterClass,72,0.8396
+soil carbon,soil organic carbon,159287,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,73,0.7222
+plante de couverture,plant cover,159331,,https://w3id.org/eusoilvoc#PlantCover,71,0.6483
+oxidation-reduction,soil oxidation reduction reaction,159383,,https://w3id.org/eusoilvoc#SoilOxidationReductionReaction,69,0.8498
+soil nutrient imbalance,soil nutrient loss,159412,,https://w3id.org/eusoilvoc#SoilNutrientLoss,73,0.7494
+loss of diversity,soil biodiversity loss,159417,,https://w3id.org/eusoilvoc#SoilBiodiversityLoss,62,0.952
+soil contamination,soil contaminants,159437,,https://w3id.org/eusoilvoc#SoilContaminants,88,0.7384
+organic-carbon,soil organic carbon,159453,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,79,0.8563
+2505.04 utilización del terreno,land use,159506,,https://w3id.org/eusoilvoc#LandUse,78,0.6337
+agricultural soil,soil agricultural functions,159611,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,65,0.9607
+agricultural resilience,agricultural sustainability,159618,,https://w3id.org/eusoilvoc#AgriculturalSustainability,68,0.6477
+seawater intrusion,soil water infiltration,159756,,https://w3id.org/eusoilvoc#SoilWaterInfiltration,68,0.7198
+groundcovers,ground cover,159773,,https://w3id.org/eusoilvoc#GroundCover,92,0.607
+bulk density,soil density,159856,,https://w3id.org/eusoilvoc#SoilDensity,77,0.9511
+soil organic carbon content,soil organic matter contents,159858,,https://w3id.org/eusoilvoc#SoilOrganicMatterContents,85,0.656
+soil restoration,soil water retention,159902,,https://w3id.org/eusoilvoc#SoilWaterRetention,67,0.8079
+biopores,soil biopore,160037,,https://w3id.org/eusoilvoc#SoilBiopore,70,0.7849
+preferential flow,soil preferential flow path,160039,,https://w3id.org/eusoilvoc#SoilPreferentialFlowPath,77,0.8327
+water-stable aggregates,percent water stable aggregation,160062,,https://w3id.org/eusoilvoc#PercentWaterStableAggregation,73,0.9662
+landwirtschaft,land use,160203,,https://w3id.org/eusoilvoc#LandUse,60,0.7693
+bodenbearbeitung,conservation tillage,160204,,https://w3id.org/eusoilvoc#ConservationTillage,76,0.8305
+soil parameters,soil indicators,160090,,https://w3id.org/eusoilvoc#SoilIndicators,60,0.6371
+landwirtschaft,land use,161159,,https://w3id.org/eusoilvoc#LandUse,60,0.7693
+wasserretention,soil water retention,161254,,https://w3id.org/eusoilvoc#SoilWaterRetention,74,0.8335
+wasserbindung,soil water retention,161256,,https://w3id.org/eusoilvoc#SoilWaterRetention,84,0.6195
+nitrogen losses,soil nitrogen loss,160549,,https://w3id.org/eusoilvoc#SoilNLoss,79,0.6478
+bodenverbreitung,soil sealing,161316,,https://w3id.org/eusoilvoc#SoilSealing,73,0.6901
+soil-moisture,soil moisture movement,161332,,https://w3id.org/eusoilvoc#SoilMoistureMovement,69,0.6465
+organiccarbonstock,soil organic carbon,161407,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,70,0.7848
+organic-carbon-stock,soil organic carbon,161408,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,67,0.7754
+soil-texture,soil cohesion,161423,,https://w3id.org/eusoilvoc#SoilCohesion,92,0.8298
+soil-scans,soil channel,161434,,https://w3id.org/eusoilvoc#SoilChannel,64,0.6274
+"water content, soil",soil mobile water contents,161439,,https://w3id.org/eusoilvoc#SoilMobileWaterContents,62,0.9901
+biodegradation,soil biological degradation,160782,,https://w3id.org/eusoilvoc#SoilBiologicalDegradation,68,0.798
+soil-erosion,soil erosion category,161499,,https://w3id.org/eusoilvoc#SoilErosionCategory,67,0.8445
+soil minerals,soil mineral matter,161571,,https://w3id.org/eusoilvoc#SoilMineralMatter,75,0.9347
+environmental degradation,soil ecological degradation,161624,,https://w3id.org/eusoilvoc#SoilEcologicalDegradation,62,0.6761
+land-use,land use class,161627,,https://w3id.org/eusoilvoc#LandUseClass,64,0.7293
+biota,soil biota,161073,,https://w3id.org/eusoilvoc#SoilBiota,67,0.6616
+soil biology,soil biological functions,161699,,https://w3id.org/eusoilvoc#SoilBiologicalFunctions,61,0.8921
+soil microhabitat,soil microbial activity,161748,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,70,0.6119
+land use/land cover,land use bare cover,163064,,https://w3id.org/eusoilvoc#LandUseBareCover,79,0.9316
+sand content,soil sand contents,163079,,https://w3id.org/eusoilvoc#SoilSandContents,83,0.6023
+soil microbes,soil microbial biomass,161845,,https://w3id.org/eusoilvoc#SoilMicrobialBiomass,69,0.8346
+arable land,land use,161854,,https://w3id.org/eusoilvoc#LandUse,65,0.8423
+soil samples,soil depth sampled,161927,,https://w3id.org/eusoilvoc#SoilDepthSampled,73,0.815
+graphene,slope,162766,,https://w3id.org/eusoilvoc#Slope,62,0.6077
+soil compounds,soil components,163195,,https://w3id.org/eusoilvoc#SoilComponents,83,0.6644
+cultural ecosystem services,cultural services,163326,,https://w3id.org/eusoilvoc#CulturalServices,77,0.7345
+"nitrogen, total dissolved",nitrogen total,163745,,https://w3id.org/eusoilvoc#NitrogenTotal,72,0.7509
+gas-exchange,soil gaseous exchange,163884,,https://w3id.org/eusoilvoc#SoilGaseousExchange,67,0.7558
+nitrogen fixation,biological nitrogen fixation,163913,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,76,0.8686
+bulk-density,soil density,163938,,https://w3id.org/eusoilvoc#SoilDensity,71,0.8847
+degradación de tierras,soil degradation,164050,,https://w3id.org/eusoilvoc#SoilDegradation,74,0.6761
+soil physical-properties,soil physical properties,164074,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,96,0.6972
+cec (cation exchange capacity),cation exchange capacity effective,164279,,https://w3id.org/eusoilvoc#CationExchangeCapacityEffective,75,0.8153
+ecosystem functions,ecosystem services,164287,,https://w3id.org/eusoilvoc#EcosystemServices,65,0.7247
+soil degradation processes,soil chemical degradative processes,164291,,https://w3id.org/eusoilvoc#SoilChemicalDegradativeProcesses,79,0.982
+soil functions data,soil function indicators,164292,,https://w3id.org/eusoilvoc#SoilFunctionIndicators,81,0.6727
+landcover,land use bare cover,164377,,https://w3id.org/eusoilvoc#LandUseBareCover,64,0.9325
+bodenfunktion,soil functions,164514,,https://w3id.org/eusoilvoc#SoilFunctions,93,0.8004
+assetto strutturale,soil structural crusts,164594,,https://w3id.org/eusoilvoc#SoilStructuralCrusts,60,0.7971
+landwirtschaft,land use,164611,,https://w3id.org/eusoilvoc#LandUse,60,0.7693
+landwirtschaft,land use,164615,,https://w3id.org/eusoilvoc#LandUse,60,0.7693
+sol contaminé,soil contaminants,164620,,https://w3id.org/eusoilvoc#SoilContaminants,83,0.8829
+organische substanz,soil organic matter,164685,,https://w3id.org/eusoilvoc#SoilOrganicMatter,88,0.7624
+landwirtschaft,land use,164701,,https://w3id.org/eusoilvoc#LandUse,60,0.7693
+bulk soil,soil density,164835,,https://w3id.org/eusoilvoc#SoilDensity,64,0.7075
+bodenbearbeitung,conservation tillage,164905,,https://w3id.org/eusoilvoc#ConservationTillage,76,0.8305
+bodenfunktion,soil functions,164913,,https://w3id.org/eusoilvoc#SoilFunctions,93,0.8004
+bodeneigenschaften,soil physical properties,164922,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,67,0.796
+bodenverbreitung,soil sealing,164928,,https://w3id.org/eusoilvoc#SoilSealing,73,0.6901
+solar radiation,soil heat radiation,164991,,https://w3id.org/eusoilvoc#SoilHeatRadiation,82,0.6514
+bodemtextuur,soil cohesion,165005,,https://w3id.org/eusoilvoc#SoilCohesion,87,0.7473
+bodemfunctie,soil functions,165062,,https://w3id.org/eusoilvoc#SoilFunctions,74,0.8798
+bodemverzuring,soil sealing,165066,,https://w3id.org/eusoilvoc#SoilSealing,65,0.6931
+bodemdegradatie,soil degradation,165068,,https://w3id.org/eusoilvoc#SoilDegradation,84,0.6509
+bodemorganisme,soil microfauna,165070,,https://w3id.org/eusoilvoc#SoilMicrofauna,76,0.8324
+bodemerosie,soil erosion,165080,,https://w3id.org/eusoilvoc#SoilErosion,78,0.7041
+soil contamination,soil contaminants,165512,,https://w3id.org/eusoilvoc#SoilContaminants,88,0.7384
+landform,landform complex,166815,,https://w3id.org/eusoilvoc#LandformComplex,67,0.7576
+root microbiome,root biomass,165555,,https://w3id.org/eusoilvoc#RootBiomass,67,0.8557
+organische substanz,soil organic matter,165635,,https://w3id.org/eusoilvoc#SoilOrganicMatter,88,0.7624
+uso-suolo,land use,165838,,https://w3id.org/eusoilvoc#LandUse,64,0.6352
+copertura-del-suolo,soil crusts,165839,,https://w3id.org/eusoilvoc#SoilCrusts,69,0.8031
+soil characteristic,soil water characteristics,169464,,https://w3id.org/eusoilvoc#SoilWaterCharacteristics,86,0.6984
+utilizzo-del-territorio,land use,165903,,https://w3id.org/eusoilvoc#LandUse,82,0.9579
+soildepth,soil depth bedrock,165907,,https://w3id.org/eusoilvoc#SoilDepthBedrock,67,0.8133
+soil-water-index,soil water transmission index,165915,,https://w3id.org/eusoilvoc#SoilWaterTransmissionIndex,62,0.742
+soil-scans,soil channel,165960,,https://w3id.org/eusoilvoc#SoilChannel,64,0.6274
+bodeneigenschaften,soil physical properties,165969,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,67,0.796
+fysico-chemische-eigenschappen,soil physical properties,166022,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,70,0.735
+soil physics,soil physical processes,166050,,https://w3id.org/eusoilvoc#SoilPhysicalProcesses,73,0.8573
+sand content,soil sand contents,166110,,https://w3id.org/eusoilvoc#SoilSandContents,83,0.6023
+érosion-des-sols,soil erosion,166935,,https://w3id.org/eusoilvoc#SoilErosion,69,0.6217
+carbonio-organico,soil organic carbon,166955,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,73,0.7282
+agricultural soils;,soil agricultural functions,166421,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,65,0.884
+carbone-organique,soil organic carbon,167011,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,78,0.6253
+profil-du-sol,soil water,167015,,https://w3id.org/eusoilvoc#SoilWater,63,0.6407
+utilisation-du-sol,land use,167024,,https://w3id.org/eusoilvoc#LandUse,89,0.9561
+usage du sol,land use,169495,,https://w3id.org/eusoilvoc#LandUse,67,0.8969
+pf-wg-kurve,pF curve,167099,,https://w3id.org/eusoilvoc#pFcurve,63,0.7197
+soil-physics,soil physical processes,167102,,https://w3id.org/eusoilvoc#SoilPhysicalProcesses,67,0.9036
+land-use,land use class,167279,,https://w3id.org/eusoilvoc#LandUseClass,64,0.7293
+land-cover,land use bare cover,167281,,https://w3id.org/eusoilvoc#LandUseBareCover,62,0.9751
+uso-del-suolo,land use,167284,,https://w3id.org/eusoilvoc#LandUse,77,0.7625
+soil structural units,soil structure index,169572,,https://w3id.org/eusoilvoc#SoilStructureIndex,73,0.6832
+ekosysteemit,ecosystem services,167559,,https://w3id.org/eusoilvoc#EcosystemServices,62,0.7704
+crop residues,crop residue mulch,167601,,https://w3id.org/eusoilvoc#CropResidueMulch,77,0.8615
+food production (agriculture),food production,167638,,https://w3id.org/eusoilvoc#FoodProduction,68,0.6955
+organic matter,soil organic matter class,167647,,https://w3id.org/eusoilvoc#SoilOrganicMatterClass,72,0.8396
+soil biology,soil biological functions,167651,,https://w3id.org/eusoilvoc#SoilBiologicalFunctions,61,0.8921
+mikro-organismit,microbes,167696,,https://w3id.org/eusoilvoc#Microbes,84,0.8385
+soil multifunctionality index,soil function indicators,167702,,https://w3id.org/eusoilvoc#SoilFunctionIndicators,65,0.7842
+soil resilience,soil structural resilience,167726,,https://w3id.org/eusoilvoc#SoilStructuralResilience,73,0.7375
+soil aggregates,soil aggregate physical properties,169621,,https://w3id.org/eusoilvoc#SoilAggregatePhysicalProperties,64,0.978
+soil obstacles,soil threats,167959,,https://w3id.org/eusoilvoc#SoilThreats,62,0.7045
+decline soil biodiversity,soil biodiversity loss,167963,,https://w3id.org/eusoilvoc#SoilBiodiversityLoss,72,0.9454
+soil-phosphorus,soil phosphorus loss,168014,,https://w3id.org/eusoilvoc#SoilPLoss,80,0.6775
+gas exchange,soil gaseous exchange,168126,,https://w3id.org/eusoilvoc#SoilGaseousExchange,73,0.6595
+water deficit,soil water diffusivity,168127,,https://w3id.org/eusoilvoc#SoilWaterDiffusivity,63,0.6535
+bulk soil,soil density,168267,,https://w3id.org/eusoilvoc#SoilDensity,64,0.7075
+soil water index,soil water transmission index,168327,,https://w3id.org/eusoilvoc#SoilWaterTransmissionIndex,71,0.7811
+ecosystem degradation,soil ecological degradation,168375,,https://w3id.org/eusoilvoc#SoilEcologicalDegradation,62,0.8063
+ecosystem degradation,soil ecological degradation,168428,,https://w3id.org/eusoilvoc#SoilEcologicalDegradation,62,0.8063
+bodenverbreitung,soil sealing,168694,,https://w3id.org/eusoilvoc#SoilSealing,73,0.6901
+bodeneigenschaften,soil physical properties,168696,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,67,0.796
+soil chemistry,soil chemical properties,168904,,https://w3id.org/eusoilvoc#SoilChemicalProperties,67,0.9295
+landwirtschaft,land use,168923,,https://w3id.org/eusoilvoc#LandUse,60,0.7693
+apă din sol,soil water,168979,,https://w3id.org/eusoilvoc#SoilWater,67,0.8286
+textură a solului,soil cohesion,168981,,https://w3id.org/eusoilvoc#SoilCohesion,71,0.7735
+bodemtextuur,soil cohesion,169204,,https://w3id.org/eusoilvoc#SoilCohesion,87,0.7473
+bodemdegradatie,soil degradation,169215,,https://w3id.org/eusoilvoc#SoilDegradation,84,0.6509
+bodemerosie,soil erosion,169216,,https://w3id.org/eusoilvoc#SoilErosion,78,0.7041
+bodemfunctie,soil functions,169217,,https://w3id.org/eusoilvoc#SoilFunctions,74,0.8798
+bodemorganisme,soil microfauna,169222,,https://w3id.org/eusoilvoc#SoilMicrofauna,76,0.8324
+bodemverzuring,soil sealing,169224,,https://w3id.org/eusoilvoc#SoilSealing,65,0.6931
+fertilitate a solului,soil productivity,169236,,https://w3id.org/eusoilvoc#SoilProductivity,70,0.7193
+compactare a solului,soil compaction,169384,,https://w3id.org/eusoilvoc#SoilCompaction,76,0.91
+salinizare a solului,soil salinization,169385,,https://w3id.org/eusoilvoc#SoilSalinization,67,0.8058
+size distribution,soil aggregate size distribution,169951,,https://w3id.org/eusoilvoc#SoilAggregateSizeDistribution,69,0.6128
+soil microbiome,soil microbial biomass,169979,,https://w3id.org/eusoilvoc#SoilMicrobialBiomass,76,0.9601
+nitrogen-fixation,biological nitrogen fixation,172860,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,71,0.9361
+heat-transfer,soil heat transfer,170313,,https://w3id.org/eusoilvoc#SoilHeatTransfer,77,0.8115
+soil loss,soil nitrogen loss,173061,,https://w3id.org/eusoilvoc#SoilNLoss,90,0.7477
+soil functioning,soil function indicators,173066,,https://w3id.org/eusoilvoc#SoilFunctionIndicators,77,0.8925
+n loss,soil nitrogen loss,173093,,https://w3id.org/eusoilvoc#SoilNLoss,71,0.6753
+farming sustainability,agricultural sustainability,173106,,https://w3id.org/eusoilvoc#AgriculturalSustainability,73,0.7655
+soil physicochemical and biological properties,soil physical properties,173136,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,81,0.7245
+organic matter,soil organic matter class,170810,,https://w3id.org/eusoilvoc#SoilOrganicMatterClass,72,0.8396
+agricultural soil science,soil agricultural functions,173194,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,63,0.7088
+arable land,land use,170948,,https://w3id.org/eusoilvoc#LandUse,65,0.8423
+nitrogen fixation,biological nitrogen fixation,171107,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,76,0.8686
+bulk density,soil density,171113,,https://w3id.org/eusoilvoc#SoilDensity,77,0.9511
+soil chemistry,soil chemical properties,171215,,https://w3id.org/eusoilvoc#SoilChemicalProperties,67,0.9295
+biological activity in soil,soil microbial activity,171247,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,60,0.9676
+soil biology,soil biological functions,171252,,https://w3id.org/eusoilvoc#SoilBiologicalFunctions,61,0.8921
+soil carbon,soil organic carbon,171293,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,73,0.7222
+soil horizons,soil horizon boundary,171348,,https://w3id.org/eusoilvoc#SoilHorizonBoundary,71,0.6765
+soil biology,soil biological functions,171360,,https://w3id.org/eusoilvoc#SoilBiologicalFunctions,61,0.8921
+bodeneigenschaften,soil physical properties,171489,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,67,0.796
+difesa del suolo,soil properties,171563,,https://w3id.org/eusoilvoc#SoilProperties,69,0.6546
+landwirtschaft,land use,171841,,https://w3id.org/eusoilvoc#LandUse,60,0.7693
+crop residues,crop residue mulch,173283,,https://w3id.org/eusoilvoc#CropResidueMulch,77,0.8615
+utilizare a terenului,land use,172075,,https://w3id.org/eusoilvoc#LandUse,62,0.8413
+soil organic carbon accumulation,soil organic carbon loss,172126,,https://w3id.org/eusoilvoc#SOCLoss,79,0.91
+:geology [science],geology,172361,,https://w3id.org/eusoilvoc#Geology,62,0.6804
+biological soil crust,soil biological crusts,172467,,https://w3id.org/eusoilvoc#SoilBiologicalCrusts,76,0.9624
+soil-structure,soil structure index,172593,,https://w3id.org/eusoilvoc#SoilStructureIndex,76,0.9077
+soil organic carbon storage,soil organic carbon loss,173326,,https://w3id.org/eusoilvoc#SOCLoss,82,0.618
+soil sustainability,soil aggregate stability,173342,,https://w3id.org/eusoilvoc#SoilAggregateStability,65,0.8184
+land-use and land-cover change,land use bare cover,173357,,https://w3id.org/eusoilvoc#LandUseBareCover,61,0.6199
+soil fractionation,soil fragmentation,173459,,https://w3id.org/eusoilvoc#SoilFragmentation,78,0.9598
+agricultural mineral soil,soil agricultural functions,173465,,https://w3id.org/eusoilvoc#SoilAgriculturalFunctions,62,0.7039
+lande use,land use grasses,173468,,https://w3id.org/eusoilvoc#LandUseGrasses,70,0.9097
+land‑use,land use grasses,173633,,https://w3id.org/eusoilvoc#LandUseGrasses,64,0.8591
+organic soils,soil organic solid,173672,,https://w3id.org/eusoilvoc#SoilOrganicSolid,71,0.985
+mycobiota,microbes,173837,,https://w3id.org/eusoilvoc#Microbes,67,0.7445
+particle size,particle size fraction sum,174016,,https://w3id.org/eusoilvoc#ParticleSizeFractionSum,67,0.6939
+dust particles,soil density,174050,,https://w3id.org/eusoilvoc#SoilDensity,62,0.6052
+earth's atmosphere,soil air,174101,,https://w3id.org/eusoilvoc#SoilAir,94,0.942
+mineral-composition,mineral concentration,174211,,https://w3id.org/eusoilvoc#MineralConcentration,65,0.8365
+"waste disposal, fluid",liquid waste disposal,174552,,https://w3id.org/eusoilvoc#LiquidWasteDisposal,67,0.9764
+soil affinity,soil water affinity,174807,,https://w3id.org/eusoilvoc#SoilWaterAffinity,81,0.793
+diversity loss,soil biodiversity loss,174898,,https://w3id.org/eusoilvoc#SoilBiodiversityLoss,78,0.6
+ecosistemes,ecosystem services,174934,,https://w3id.org/eusoilvoc#EcosystemServices,69,0.6064
+seed dispersal,soil dispersion,174941,,https://w3id.org/eusoilvoc#SoilDispersion,62,0.6869
+soil chemistry,soil chemical properties,175089,,https://w3id.org/eusoilvoc#SoilChemicalProperties,67,0.9295
+soil heating,soil heat exchange,175209,,https://w3id.org/eusoilvoc#SoilHeatExchange,73,0.6363
+soil microbial functions,soil microbial activity,175210,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,77,0.8071
+nitrogen-fertilization,biological nitrogen fixation,175364,,https://w3id.org/eusoilvoc#BiologicalNitrogenFixation,60,0.8541
+drainage water,drainage to groundwater,175458,,https://w3id.org/eusoilvoc#DrainageToGroundwater,76,0.7077
+contaminated land,soil pollution,175821,,https://w3id.org/eusoilvoc#SoilPollution,60,0.6199
+soil/chemistry,soil chemical properties,175848,,https://w3id.org/eusoilvoc#SoilChemicalProperties,61,0.9393
+soil nutrient concentrations,soil productivity,175918,,https://w3id.org/eusoilvoc#SoilProductivity,82,0.717
+soil attributes,soil properties,176066,,https://w3id.org/eusoilvoc#SoilProperties,60,0.68
+soil capability,soil physical capacity,176076,,https://w3id.org/eusoilvoc#SoilPhysicalCapacity,65,0.673
+deplete soil-nitrogen,soil nitrogen loss,176105,,https://w3id.org/eusoilvoc#SoilNLoss,62,0.8378
+habitat provisioning,habitat provision capacity,176107,,https://w3id.org/eusoilvoc#HabitatProvisionCapacity,78,0.9554
+lumbricus terrestris,land cover,176411,,https://w3id.org/eusoilvoc#LandCover,63,0.7305
+agricultura sostenible,agricultural sustainability,176592,,https://w3id.org/eusoilvoc#AgriculturalSustainability,73,0.9775
+soil biocrust,soil biological crusts,176632,,https://w3id.org/eusoilvoc#SoilBiologicalCrusts,76,0.94
+mycobiont,microbes,176647,,https://w3id.org/eusoilvoc#Microbes,67,0.6042
+soil hydraulics,soil hydraulic conductivity,176944,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,67,0.7735
+soil-water-retention,soil water retention index,176945,,https://w3id.org/eusoilvoc#SoilWaterRetentionIndex,78,0.7919
+total carbon,total carbonate equivalent,177005,,https://w3id.org/eusoilvoc#TotalCarbonateEquivalent,63,0.7748
+pf-curve,pF curve,177026,,https://w3id.org/eusoilvoc#pFcurve,88,0.9795
+mulching film,mulching,177067,,https://w3id.org/eusoilvoc#Mulching,76,0.6124
+soil aggregates,soil aggregate physical properties,177162,,https://w3id.org/eusoilvoc#SoilAggregatePhysicalProperties,64,0.978
+ekosystemtjänster,ecosystem services,177259,,https://w3id.org/eusoilvoc#EcosystemServices,65,0.9843
+water transport,soil water movement,177405,,https://w3id.org/eusoilvoc#SoilWaterMovement,62,0.6278
+organic-acids,OrgC_acid-dc,177588,,https://w3id.org/eusoilvoc#carbonOrganicProcedure-OrgC_acid-dc,64,0.6257
+soil evaporation,soil water evapouration,177624,,https://w3id.org/eusoilvoc#SoilWaterEvapouration,82,0.8133
+soil resistance,soil penetration resistance,177686,,https://w3id.org/eusoilvoc#SoilPenetrationResistance,71,0.905
+soil particle size fractions,particle size fraction sum,178129,,https://w3id.org/eusoilvoc#ParticleSizeFractionSum,85,0.6021
+biologia dels sòls,soil biological processes,178148,,https://w3id.org/eusoilvoc#SoilBiologicalProcesses,60,0.66
+nutritional status,soil productivity,178430,,https://w3id.org/eusoilvoc#SoilProductivity,65,0.9004
+organische koolstof,soil organic carbon,178573,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,77,0.8635
+water stable aggregates index,percent water stable aggregation,178675,,https://w3id.org/eusoilvoc#PercentWaterStableAggregation,75,0.8267
+ekosistemske storitve,ecosystem services,178753,,https://w3id.org/eusoilvoc#EcosystemServices,63,0.9939
+bodemtypes,soil types,179207,,https://w3id.org/eusoilvoc#SoilTypes,78,0.6107
+biopore,soil biopore,181486,,https://w3id.org/eusoilvoc#SoilBiopore,74,0.6281
+degraded soil,soil degradation,181500,,https://w3id.org/eusoilvoc#SoilDegradation,71,0.9254
+structure-du-sol,soil structure,179321,,https://w3id.org/eusoilvoc#SoilStructure,88,0.8083
+organisme-du-sol,soil microfauna,179322,,https://w3id.org/eusoilvoc#SoilMicrofauna,74,0.9305
+déterioration-du-sol,soil degradation,179323,,https://w3id.org/eusoilvoc#SoilDegradation,78,0.7632
+soil-regeneration,soil degradation,181535,,https://w3id.org/eusoilvoc#SoilDegradation,73,0.7996
+soil structure.,soil structural crusts,187517,,https://w3id.org/eusoilvoc#SoilStructuralCrusts,72,0.9401
+polluted soil,soil pollution,187535,,https://w3id.org/eusoilvoc#SoilPollution,76,0.6724
+solar sintering,soil sedimentation,179713,,https://w3id.org/eusoilvoc#SoilSedimentation,61,0.7325
+phosphorus distribution,phosphorus retention,179725,,https://w3id.org/eusoilvoc#PhosphorusRetention,74,0.6629
+caprylates,carbonate,179759,,https://w3id.org/eusoilvoc#Carbonate,63,0.6862
+erosión suelo,soil erosion,179932,,https://w3id.org/eusoilvoc#SoilErosion,87,0.6987
+cubiertas vegetales,plant cover,179934,,https://w3id.org/eusoilvoc#PlantCover,91,0.6041
+dry consistence,consistence dry,179989,,https://w3id.org/eusoilvoc#ConsistenceDry,73,0.8882
+soil-moisture assimilation,soil moisture redistribution,180031,,https://w3id.org/eusoilvoc#SoilMoistureRedistribution,70,0.7156
+plant water deficiency,soil moisture deficit,180187,,https://w3id.org/eusoilvoc#SoilMoistureDeficit,70,0.6974
+soil-water content,soil moisture,180367,,https://w3id.org/eusoilvoc#SoilMoisture,94,0.9097
+fysico-chemische eigenschappen,soil physical properties,181730,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,73,0.6453
+organic soils,soil organic solid,182239,,https://w3id.org/eusoilvoc#SoilOrganicSolid,71,0.985
+soil physics,soil physical processes,180723,,https://w3id.org/eusoilvoc#SoilPhysicalProcesses,73,0.8573
+ecosystem,ecosystem services,188207,,https://w3id.org/eusoilvoc#EcosystemServices,69,0.8338
+silt content,soil silt contents,180802,,https://w3id.org/eusoilvoc#SoilSiltContents,83,0.6097
+siti-contaminati,soil contaminants,180810,,https://w3id.org/eusoilvoc#SoilContaminants,75,0.8321
+contaminazione-dei-suoli,soil pollution,180816,,https://w3id.org/eusoilvoc#SoilPollution,68,0.8996
+soil organic carbon content,soil organic matter contents,185933,,https://w3id.org/eusoilvoc#SoilOrganicMatterContents,85,0.656
+cation-exchange-capacity,cation exchange capacity effective,181938,,https://w3id.org/eusoilvoc#CationExchangeCapacityEffective,76,0.9987
+soil-moisture,soil moisture movement,180972,,https://w3id.org/eusoilvoc#SoilMoistureMovement,69,0.6465
+subsoil organic carbon,soil organic carbon,181029,,https://w3id.org/eusoilvoc#SoilOrganicCarbon,93,0.6069
+allagamento,inundation,181037,,https://w3id.org/eusoilvoc#Inundation,61,0.9375
+slope stability,soil slope stability,182064,,https://w3id.org/eusoilvoc#SoilSlopeStability,86,0.6201
+soiling transmittance,soil fluid transmission,181106,,https://w3id.org/eusoilvoc#SoilFluidTransmission,64,0.9022
+"water-content,-soil",soil moisture,181192,,https://w3id.org/eusoilvoc#SoilMoisture,65,0.9795
+soil reference depth,soil depth,182720,,https://w3id.org/eusoilvoc#SoilDepth,67,0.6743
+topsoil organic carbon,soil organic solid,182729,,https://w3id.org/eusoilvoc#SoilOrganicSolid,70,0.6775
+soil biological activity,soil biological functions,187729,,https://w3id.org/eusoilvoc#SoilBiologicalFunctions,79,0.9162
+solar radiation,soil heat radiation,186932,,https://w3id.org/eusoilvoc#SoilHeatRadiation,82,0.6514
+soil organic carbon transformation,soil organic carbon loss,186940,,https://w3id.org/eusoilvoc#SOCLoss,72,0.8741
+ecosystem degradation,soil ecological degradation,187864,,https://w3id.org/eusoilvoc#SoilEcologicalDegradation,62,0.8063
+soil organic layer,soil organic components,187111,,https://w3id.org/eusoilvoc#SoilOrganicComponents,70,0.8952
+peat decomposition,peat decompostion,187162,,https://w3id.org/eusoilvoc#PeatDecompostion,97,0.7617
+soil physicochemical,soil physical properties,187221,,https://w3id.org/eusoilvoc#SoilPhysicalProperties,78,0.8735
+soil hydraulic,soil hydraulic conductivity,187222,,https://w3id.org/eusoilvoc#SoilHydraulicConductivity,68,0.7847
+phosphorous,phosphorus,187347,,https://w3id.org/eusoilvoc#Phosphorus,95,0.6585
+water-stable aggregates (wsa),percent water stable aggregation,188139,,https://w3id.org/eusoilvoc#PercentWaterStableAggregation,66,0.746
+agregaatide stabiilsus,soil aggregate stability,188173,,https://w3id.org/eusoilvoc#SoilAggregateStability,65,0.8304
+microbial activities,soil microbial activity,187476,,https://w3id.org/eusoilvoc#SoilMicrobialActivity,79,0.9206
+soil pretreatment,soil degradation,187477,,https://w3id.org/eusoilvoc#SoilDegradation,63,0.806

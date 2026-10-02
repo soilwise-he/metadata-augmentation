@@ -51,6 +51,12 @@ CONCEPTS_PATH = os.path.join(HERE, "..", "concepts.json")
 SUBJECTS_PATH = os.path.join(HERE, "subjects.csv")
 OUTPUT_PATH = os.path.join(HERE, "embedding_ce_match_res.csv")
 CACHE_PATH = os.path.join(HERE, "concept_embeddings.npz")
+CANDIDATES_LOG_PATH = os.path.join(HERE, "embedding_candidates_log.csv")
+
+# When True, log every (subject, candidate) retrieval pair fed to the cross-encoder,
+# with its cosine score and CE score, before best-per-subject selection. This is
+# the raw retrieval output (one row per candidate), useful for threshold tuning.
+LOG_CANDIDATES = True
 
 BI_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 CE_MODEL_NAME = "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1"
@@ -276,13 +282,38 @@ def run():
         ce_model = CrossEncoder(CE_MODEL_NAME, activation_fn=torch.nn.Sigmoid())
         scores = ce_model.predict(ce_pairs, show_progress_bar=True)
 
-        # Keep the single best-reranked candidate per subject.
+        # Keep the single best-reranked candidate per subject. Optionally log
+        # every scored pair (before this selection) for threshold tuning.
         best_by_subject = {}  # subj_idx -> (ce_score, concept_idx, cosine)
-        for (subj_idx, cidx, cos), ce_score in zip(ce_pair_meta, scores):
+        candidate_log = []    # rows for CANDIDATES_LOG_PATH
+        for (subj_idx, cidx, cos), (pair, ce_score) in zip(ce_pair_meta, zip(ce_pairs, scores)):
             ce_score = float(ce_score)
             cur = best_by_subject.get(subj_idx)
             if cur is None or ce_score > cur[0]:
                 best_by_subject[subj_idx] = (ce_score, cidx, cos)
+            if LOG_CANDIDATES:
+                subj_label, matched_label = pair
+                concept = cons[cidx]
+                candidate_log.append({
+                    "subject_id": results[subj_idx]["subject_id"],
+                    "subject_label": subj_label,
+                    "candidate_vocab_identifier": concept["identifier"],
+                    "candidate_vocab_label": primary_label(concept),
+                    "matched_label": matched_label,
+                    "cosine_score": round(cos, 4),
+                    "ce_score": round(ce_score, 4),
+                })
+
+        if LOG_CANDIDATES and candidate_log:
+            log_fieldnames = [
+                "subject_id", "subject_label", "candidate_vocab_identifier",
+                "candidate_vocab_label", "matched_label", "cosine_score", "ce_score",
+            ]
+            with open(CANDIDATES_LOG_PATH, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=log_fieldnames, quoting=csv.QUOTE_ALL)
+                writer.writeheader()
+                writer.writerows(candidate_log)
+            print(f"Wrote {len(candidate_log)} candidate pairs to {CANDIDATES_LOG_PATH}")
 
         for subj_idx, (ce_score, cidx, cos) in best_by_subject.items():
             row = results[subj_idx]
@@ -295,23 +326,21 @@ def run():
                 row["vocab_identifier"] = concept["identifier"]
                 row["vocab_label"] = primary_label(concept)
 
-    # --- Write output (matched pairs only) ----------------------------------
-    matched_rows = [r for r in results if r["method"] != "no_match"]
+    # --- Write output: only embedding+CE matches (exclude url/exact/no_match) --
+    # The method column is dropped since every row is an embedding_cross_encoder match.
+    matched_rows = [r for r in results if r["method"] == "embedding_cross_encoder"]
     fieldnames = [
-        "method", "subject_label", "vocab_label", "subject_id",
+        "subject_label", "vocab_label", "subject_id",
         "subject_uri", "vocab_identifier", "cosine_score", "ce_score",
     ]
     with open(OUTPUT_PATH, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+        writer = csv.DictWriter(
+            f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL, extrasaction="ignore"
+        )
         writer.writeheader()
         writer.writerows(matched_rows)
 
-    from collections import Counter
-    counts = Counter(r["method"] for r in results)
-    print("\nMethod breakdown:")
-    for method, n in counts.most_common():
-        print(f"  {method:24s} {n}")
-    print(f"\nWrote {len(matched_rows)} matched rows "
+    print(f"\nWrote {len(matched_rows)} embedding_cross_encoder matches "
           f"(of {len(results)} subjects) to {OUTPUT_PATH}")
 
     elapsed_min = (time.time() - start_time) / 60

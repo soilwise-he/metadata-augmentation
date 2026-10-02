@@ -81,6 +81,9 @@
       ],
       "nl": [
         "luchtkwaliteit"
+      ],
+      "pt": [
+        "qualidade do ar"
       ]
     }
   },
@@ -166,6 +169,10 @@
       "es": [
         "Fijación biológica del nitrógeno",
         "FBN"
+      ],
+      "pt": [
+        "fixação biológica do azoto",
+        "FBA"
       ]
     }
   },
@@ -409,6 +416,9 @@
       ],
       "es": [
         "Arcilla"
+      ],
+      "pt": [
+        "argila"
       ]
     }
   },
@@ -548,6 +558,9 @@
       ],
       "es": [
         "Labranza de conservación"
+      ],
+      "pt": [
+        "mobilização solo para conservação"
       ]
     }
   },
@@ -677,6 +690,9 @@
       ],
       "es": [
         "Rendimiento de cultivos"
+      ],
+      "pt": [
+        "rendimento de cultura"
       ]
     }
   },
@@ -781,6 +797,9 @@
       ],
       "es": [
         "Lombriz de tierra"
+      ],
+      "pt": [
+        "minhoca"
       ]
     }
   },
@@ -827,6 +846,10 @@
         "Factor ambiental",
         "Condiciones ambientales",
         "Condiciones del medio ambiente"
+      ],
+      "pt": [
+        "factor ambiental",
+        "condição ambiental"
       ]
     }
   },
@@ -865,6 +888,9 @@
       ],
       "es": [
         "Evapotranspiración"
+      ],
+      "pt": [
+        "evapotranspiração"
       ]
     }
   },
@@ -960,6 +986,10 @@
       ],
       "es": [
         "Niebla"
+      ],
+      "pt": [
+        "nevoeiro",
+        "neblina"
       ]
     }
   },
@@ -985,6 +1015,9 @@
       ],
       "es": [
         "Producción alimentaria"
+      ],
+      "pt": [
+        "produção de alimentos"
       ]
     }
   },
@@ -1087,6 +1120,9 @@
       ],
       "es": [
         "Graminea"
+      ],
+      "pt": [
+        "gramínea"
       ]
     }
   },
@@ -1195,6 +1231,9 @@
       ],
       "nl": [
         "habitats"
+      ],
+      "pt": [
+        "habitat"
       ]
     }
   },
@@ -1221,6 +1260,9 @@
       ],
       "es": [
         "Granizo"
+      ],
+      "pt": [
+        "granizo"
       ]
     }
   },
@@ -1324,6 +1366,9 @@
       ],
       "es": [
         "Insumo"
+      ],
+      "pt": [
+        "meio de produção"
       ]
     }
   },
@@ -1453,6 +1498,9 @@
       "es": [
         "Riego",
         "Irrigación"
+      ],
+      "pt": [
+        "irrigação"
       ]
     }
   },
@@ -1607,6 +1655,10 @@
       "es": [
         "Petrología",
         "Litologia"
+      ],
+      "pt": [
+        "Petrologia",
+        "Litologia"
       ]
     }
   },
@@ -1732,6 +1784,10 @@
       "es": [
         "Microorganismo",
         "Microbios"
+      ],
+      "pt": [
+        "microrganismo",
+        "micróbio"
       ]
     }
   },
@@ -1763,6 +1819,10 @@
       "es": [
         "Microorganismo",
         "Microbios"
+      ],
+      "pt": [
+        "microrganismo",
+        "micróbio"
       ]
     }
   },
@@ -2025,6 +2085,9 @@
         "Acolchado por distribuidor",
         "Acolchado por película",
         "Empajado"
+      ],
+      "pt": [
+        "mulching"
       ]
     }
   },
@@ -2413,6 +2476,9 @@
       ],
       "es": [
         "Lluvia"
+      ],
+      "pt": [
+        "chuva"
       ]
     }
   },
@@ -2748,6 +2814,9 @@
       ],
       "es": [
         "Preparación del almácigo"
+      ],
+      "pt": [
+        "preparação do solo para sementeira"
       ]
     }
   },
@@ -2779,6 +2848,10 @@
       "es": [
         "Despunte de la plántula",
         "Emergencia"
+      ],
+      "pt": [
+        "emergência de plântulas",
+        "emergência"
       ]
     }
   },
@@ -2841,6 +2914,9 @@
       ],
       "es": [
         "Aguanieve"
+      ],
+      "pt": [
+        "chuva congelada"
       ]
     }
   },
@@ -2935,6 +3011,9 @@
       ],
       "es": [
         "Nieve"
+      ],
+      "pt": [
+        "neve"
       ]
     }
   },
@@ -2974,6 +3053,9 @@
       ],
       "es": [
         "Suelo"
+      ],
+      "pt": [
+        "solo"
       ]
     }
   },
@@ -3392,6 +3474,10 @@
       "es": [
         "Textura del suelo",
         "Cohesión del suelo"
+      ],
+      "pt": [
+        "textura do solo",
+        "coesão do solo"
       ]
     }
   },
@@ -3878,6 +3964,10 @@
       "es": [
         "Génesis del suelo",
         "Formación del suelo"
+      ],
+      "pt": [
+        "génese do solo",
+        "formação do solo"
       ]
     }
   },
@@ -3987,6 +4077,9 @@
       ],
       "nl": [
         "bodemkwaliteit"
+      ],
+      "pt": [
+        "qualidade do solo"
       ]
     }
   },
@@ -4274,6 +4367,12 @@
         "Microbiota del suelo",
         "Microflora del suelo",
         "Microfauna del suelo"
+      ],
+      "pt": [
+        "microrganismo do solo",
+        "microbiota do solo",
+        "microflora do solo",
+        "microfauna do solo"
       ]
     }
   },
@@ -4350,6 +4449,10 @@
       "es": [
         "Contenido de agua en el suelo",
         "Humedad del suelo"
+      ],
+      "pt": [
+        "teor de água no solo",
+        "humidade do solo"
       ]
     }
   },
@@ -4390,6 +4493,9 @@
       ],
       "es": [
         "Déficit de humedad en el suelo"
+      ],
+      "pt": [
+        "deficiência de água no solo"
       ]
     }
   },
@@ -4972,6 +5078,13 @@
         "Equilibrio nutritivo del suelo",
         "Estado en nutrientes (suelo)",
         "Infertilidad del suelo"
+      ],
+      "pt": [
+        "fertilidade do solo",
+        "produtividade do solo",
+        "teor em nutriente do solo",
+        "equilíbrio nutritivo do solo",
+        "estado nutritivo (solo)"
       ]
     }
   },
@@ -5054,6 +5167,9 @@
       ],
       "es": [
         "Respiración del suelo"
+      ],
+      "pt": [
+        "respiração do solo"
       ]
     }
   },
@@ -5092,6 +5208,9 @@
       ],
       "es": [
         "Salinidad del suelo"
+      ],
+      "pt": [
+        "salinidade do solo"
       ]
     }
   },
@@ -5118,6 +5237,9 @@
       ],
       "es": [
         "Salinización del suelo"
+      ],
+      "pt": [
+        "salinização do solo"
       ]
     }
   },
@@ -5433,6 +5555,9 @@
       ],
       "es": [
         "Sorción del suelo"
+      ],
+      "pt": [
+        "sorção do solo"
       ]
     }
   },
@@ -5592,6 +5717,9 @@
       ],
       "es": [
         "Temperatura del suelo"
+      ],
+      "pt": [
+        "temperatura do solo"
       ]
     }
   },
@@ -5685,6 +5813,9 @@
       ],
       "es": [
         "Tipo de suelos"
+      ],
+      "pt": [
+        "tipo de solo"
       ]
     }
   },
@@ -5759,6 +5890,9 @@
       "es": [
         "Agua del suelo",
         "Perfíl hídrico del suelo"
+      ],
+      "pt": [
+        "água do solo"
       ]
     }
   },
@@ -5924,6 +6058,10 @@
       "es": [
         "Potencial hídrico del suelo",
         "Presión de succión (suelo)"
+      ],
+      "pt": [
+        "potencial hídrico do solo",
+        "pressão de sucção (solo)"
       ]
     }
   },
@@ -6063,6 +6201,9 @@
       ],
       "es": [
         "Adhesividad"
+      ],
+      "pt": [
+        "adesividade"
       ]
     }
   },
@@ -6181,6 +6322,9 @@
       "es": [
         "Escorrentia",
         "Desague"
+      ],
+      "pt": [
+        "escoamento"
       ]
     }
   },
@@ -6215,6 +6359,10 @@
       ],
       "nl": [
         "termieten"
+      ],
+      "pt": [
+        "cupim",
+        "formiga branca"
       ]
     }
   },
@@ -6302,6 +6450,10 @@
       "es": [
         "Transpiración",
         "Pérdida normal de agua (plantas)"
+      ],
+      "pt": [
+        "transpiração",
+        "perda normal água (das plantas)"
       ]
     }
   },
@@ -6435,6 +6587,10 @@
       "es": [
         "Purificación del agua",
         "Desinfección del agua"
+      ],
+      "pt": [
+        "purificação da água",
+        "desinfecção da água"
       ]
     }
   },
@@ -8651,6 +8807,11 @@
         "Clima",
         "Efecto del clima",
         "Clima natural"
+      ],
+      "pt": [
+        "clima",
+        "efeito do clima",
+        "clima natural"
       ]
     }
   },
@@ -8691,6 +8852,10 @@
       "es": [
         "Filtración",
         "Filtraje"
+      ],
+      "pt": [
+        "filtração",
+        "filtragem"
       ]
     }
   },
@@ -8732,6 +8897,10 @@
       ],
       "es": [
         "Inundación"
+      ],
+      "pt": [
+        "inundação",
+        "cheia (inundação)"
       ]
     }
   },
@@ -8763,6 +8932,10 @@
       "es": [
         "Intercambio iónico",
         "Equilibrio iónico"
+      ],
+      "pt": [
+        "troca iónica",
+        "balanço iónico"
       ]
     }
   },
@@ -8788,6 +8961,9 @@
       ],
       "es": [
         "Ion"
+      ],
+      "pt": [
+        "ião"
       ]
     }
   },
@@ -8840,6 +9016,10 @@
       ],
       "es": [
         "Nitrógeno",
+        "N (símbolo)"
+      ],
+      "pt": [
+        "azoto",
         "N (símbolo)"
       ]
     }
@@ -8919,6 +9099,9 @@
       "es": [
         "Escorrentia",
         "Desague"
+      ],
+      "pt": [
+        "escoamento"
       ]
     }
   },
@@ -9012,6 +9195,9 @@
       ],
       "es": [
         "Edad del suelo"
+      ],
+      "pt": [
+        "idade do solo"
       ]
     }
   },
@@ -9066,6 +9252,11 @@
       "es": [
         "Aire del suelo",
         "Atmósfera del suelo"
+      ],
+      "pt": [
+        "ar do solo",
+        "atmosfera terrestre",
+        "atmosfera do solo"
       ]
     }
   },
@@ -9172,6 +9363,9 @@
       ],
       "es": [
         "Agrietamiento del suelo"
+      ],
+      "pt": [
+        "fendilhamento"
       ]
     }
   },
@@ -9407,6 +9601,9 @@
       "es": [
         "Polución del suelo",
         "Contaminación del suelo"
+      ],
+      "pt": [
+        "poluição do solo"
       ]
     }
   },
@@ -9491,6 +9688,9 @@
       ],
       "es": [
         "Esfuerzo del suelo"
+      ],
+      "pt": [
+        "resistência do solo"
       ]
     }
   },
@@ -9571,6 +9771,10 @@
       "es": [
         "Textura del suelo",
         "Cohesión del suelo"
+      ],
+      "pt": [
+        "textura do solo",
+        "coesão do solo"
       ]
     }
   },
@@ -9699,6 +9903,9 @@
       ],
       "es": [
         "Retención de agua por el suelo"
+      ],
+      "pt": [
+        "retenção da água pelo solo"
       ]
     }
   },
@@ -9746,6 +9953,9 @@
       ],
       "es": [
         "Árbol"
+      ],
+      "pt": [
+        "árvore"
       ]
     }
   },
@@ -9773,6 +9983,9 @@
       ],
       "es": [
         "Calidad del agua"
+      ],
+      "pt": [
+        "qualidade da água"
       ]
     }
   },
@@ -9827,6 +10040,10 @@
       "es": [
         "Biomasa",
         "Fitomasa"
+      ],
+      "pt": [
+        "biomassa",
+        "fitomassa"
       ]
     }
   },
@@ -9856,6 +10073,10 @@
         "B (simbolo)"
       ],
       "es": [
+        "Boro",
+        "B (símbolo)"
+      ],
+      "pt": [
         "Boro",
         "B (símbolo)"
       ]
@@ -9889,6 +10110,10 @@
       "es": [
         "Cadmio",
         "Cd (símbolo)"
+      ],
+      "pt": [
+        "Cádmio",
+        "Cd (símbolo)"
       ]
     }
   },
@@ -9918,6 +10143,10 @@
         "Cu (simbolo)"
       ],
       "es": [
+        "Cobre",
+        "Cu (símbolo)"
+      ],
+      "pt": [
         "Cobre",
         "Cu (símbolo)"
       ]
@@ -9987,6 +10216,10 @@
       "es": [
         "Hierro",
         "Fe (símbolo)"
+      ],
+      "pt": [
+        "Ferro",
+        "Fe (símbolo)"
       ]
     }
   },
@@ -10026,6 +10259,10 @@
       ],
       "es": [
         "Molibdeno",
+        "Mo (símbolo)"
+      ],
+      "pt": [
+        "Molibdénio",
         "Mo (símbolo)"
       ]
     }
@@ -10098,6 +10335,9 @@
       ],
       "es": [
         "Raíz"
+      ],
+      "pt": [
+        "raiz"
       ]
     }
   },
@@ -10192,6 +10432,9 @@
       ],
       "es": [
         "Compactación del suelo"
+      ],
+      "pt": [
+        "compactação do solo"
       ]
     }
   },
@@ -10341,6 +10584,9 @@
       ],
       "es": [
         "Permeabilidad del suelo"
+      ],
+      "pt": [
+        "permeabilidade do solo"
       ]
     }
   },
@@ -10449,6 +10695,9 @@
       ],
       "es": [
         "Solución del suelo"
+      ],
+      "pt": [
+        "solução do solo"
       ]
     }
   },
@@ -10482,6 +10731,9 @@
       ],
       "es": [
         "Estructura del suelo"
+      ],
+      "pt": [
+        "estrutura do solo"
       ]
     }
   },
@@ -10611,6 +10863,10 @@
       "es": [
         "Azufre",
         "S (símbolo)"
+      ],
+      "pt": [
+        "Enxofre",
+        "S (símbolo)"
       ]
     }
   },
@@ -10648,6 +10904,11 @@
         "Vegetación",
         "Formaciones vegetales",
         "Tipos de vegetación"
+      ],
+      "pt": [
+        "vegetação",
+        "formação vegetal",
+        "tipo de vegetação"
       ]
     }
   },
@@ -10678,6 +10939,10 @@
       ],
       "es": [
         "Eliminación de desechos"
+      ],
+      "pt": [
+        "eliminação de resíduos",
+        "eliminação de excrementos"
       ]
     }
   },
@@ -10708,6 +10973,10 @@
       "es": [
         "Tiempo meteorológico",
         "Condiciones meteorológicos"
+      ],
+      "pt": [
+        "tempo meteorológico",
+        "condição meteorológica"
       ]
     }
   },
@@ -10740,6 +11009,10 @@
         "Cinc",
         "Zinc",
         "Zn (símbolo)"
+      ],
+      "pt": [
+        "Zinco",
+        "Zn (símbolo)"
       ]
     }
   },
@@ -10771,6 +11044,10 @@
       ],
       "es": [
         "Aluminio",
+        "Al (símbolo)"
+      ],
+      "pt": [
+        "Alumínio",
         "Al (símbolo)"
       ]
     }
@@ -10814,6 +11091,10 @@
       "es": [
         "Calcio",
         "Ca (símbolo)"
+      ],
+      "pt": [
+        "Cálcio",
+        "Ca (símbolo)"
       ]
     }
   },
@@ -10852,6 +11133,9 @@
       ],
       "es": [
         "Capacidad de cambio catiónico"
+      ],
+      "pt": [
+        "capacidade de troca catiónica"
       ]
     }
   },
@@ -10890,6 +11174,9 @@
       ],
       "es": [
         "Geología"
+      ],
+      "pt": [
+        "Geologia"
       ]
     }
   },
@@ -10920,6 +11207,10 @@
       "es": [
         "Magnesio",
         "Mg (símbolo)"
+      ],
+      "pt": [
+        "Magnésio",
+        "Mg (símbolo)"
       ]
     }
   },
@@ -10949,6 +11240,10 @@
       ],
       "es": [
         "Manganeso",
+        "Mn (símbolo)"
+      ],
+      "pt": [
+        "Manganês",
         "Mn (símbolo)"
       ]
     }
@@ -10989,6 +11284,9 @@
       ],
       "es": [
         "Turba"
+      ],
+      "pt": [
+        "turfa"
       ]
     }
   },
@@ -11019,6 +11317,10 @@
       "es": [
         "Fósforo",
         "P (símbolo)"
+      ],
+      "pt": [
+        "Fósforo",
+        "P (símbolo)"
       ]
     }
   },
@@ -11046,6 +11348,10 @@
       ],
       "es": [
         "Fisiografía"
+      ],
+      "pt": [
+        "Fisiografia",
+        "Geografia física"
       ]
     }
   },
@@ -11073,6 +11379,9 @@
       ],
       "es": [
         "Cubierta vegetal"
+      ],
+      "pt": [
+        "cobertura vegetal"
       ]
     }
   },
@@ -11103,6 +11412,10 @@
       "es": [
         "Potasio",
         "K (símbolo)"
+      ],
+      "pt": [
+        "Potássio",
+        "K (símbolo)"
       ]
     }
   },
@@ -11132,6 +11445,10 @@
       ],
       "es": [
         "Sodio",
+        "Na (símbolo)"
+      ],
+      "pt": [
+        "Sódio",
         "Na (símbolo)"
       ]
     }
@@ -11208,6 +11525,10 @@
       "es": [
         "Clasificación de suelos",
         "Taxonomía de suelos"
+      ],
+      "pt": [
+        "classificação de solos",
+        "taxonomia do solo"
       ]
     }
   },
@@ -11269,6 +11590,9 @@
       ],
       "nl": [
         "bodemdiepte"
+      ],
+      "pt": [
+        "profundidade do solo"
       ]
     }
   },
@@ -11306,6 +11630,9 @@
       ],
       "es": [
         "Fauna del suelo"
+      ],
+      "pt": [
+        "fauna do solo"
       ]
     }
   },
@@ -11381,6 +11708,9 @@
       ],
       "es": [
         "Organismo del suelo"
+      ],
+      "pt": [
+        "organismo do solo"
       ]
     }
   },
@@ -11450,6 +11780,9 @@
       ],
       "nl": [
         "bodemkwaliteit"
+      ],
+      "pt": [
+        "qualidade do solo"
       ]
     }
   },
@@ -11566,6 +11899,11 @@
         "Movimiento del agua en el suelo",
         "Percolación del agua del suelo",
         "Transferencia de agua (suelo)"
+      ],
+      "pt": [
+        "movimento da água no solo",
+        "infiltração de água no solo",
+        "translocação da água (solo)"
       ]
     }
   },
@@ -11673,6 +12011,9 @@
         "Cobertura de suelos",
         "Cubierta terrestre",
         "Cobertura del suelo"
+      ],
+      "pt": [
+        "cobertura do solo"
       ]
     }
   },
@@ -11709,6 +12050,10 @@
         "Uso de la tierra",
         "Desarrollo de tierras (agricultura)",
         "Uso del suelo"
+      ],
+      "pt": [
+        "uso da terra",
+        "desenvolvimento fundiário"
       ]
     }
   },
@@ -11734,6 +12079,9 @@
       ],
       "es": [
         "Roca"
+      ],
+      "pt": [
+        "rocha"
       ]
     }
   },
@@ -11760,6 +12108,9 @@
       ],
       "es": [
         "Sal"
+      ],
+      "pt": [
+        "sal"
       ]
     }
   },
@@ -11787,6 +12138,9 @@
       ],
       "es": [
         "Arena"
+      ],
+      "pt": [
+        "areia"
       ]
     }
   },
@@ -11858,6 +12212,9 @@
       ],
       "es": [
         "Costra del suelo"
+      ],
+      "pt": [
+        "crosta do solo"
       ]
     }
   },
@@ -11927,6 +12284,9 @@
       ],
       "es": [
         "Movimiento del suelo"
+      ],
+      "pt": [
+        "movimento do solo"
       ]
     }
   },
@@ -12098,6 +12458,9 @@
       ],
       "es": [
         "Materia orgánica del suelo"
+      ],
+      "pt": [
+        "matéria orgânica do solo"
       ]
     }
   },
@@ -12173,6 +12536,11 @@
         "pH del suelo",
         "Acidez del suelo",
         "Alcalinidad del suelo"
+      ],
+      "pt": [
+        "pH do solo",
+        "acidez do solo",
+        "alcalinidade do solo"
       ]
     }
   },
@@ -12211,6 +12579,9 @@
       ],
       "es": [
         "Precipitación atmosférica"
+      ],
+      "pt": [
+        "precipitação atmosférica"
       ]
     }
   },
@@ -12254,6 +12625,10 @@
       "es": [
         "Degradación del suelo",
         "Deterioro del suelo"
+      ],
+      "pt": [
+        "degradação do solo",
+        "deterioração do solo"
       ]
     }
   },
@@ -12300,6 +12675,10 @@
       "es": [
         "Erosión",
         "Erosión del suelo"
+      ],
+      "pt": [
+        "erosão",
+        "erosão do solo"
       ]
     }
   },
@@ -12568,6 +12947,11 @@
         "Micronutrientes",
         "Elementos traza",
         "Elementos menores"
+      ],
+      "pt": [
+        "micronutriente",
+        "microelemento",
+        "oligoelemento"
       ]
     }
   },
@@ -12633,6 +13017,12 @@
         "Densidad de masa (suelo)",
         "Densidad de los agregados del suelo",
         "Densidad de las particulas (suelo)"
+      ],
+      "pt": [
+        "densidade do solo",
+        "massa volúmica aparente do solo",
+        "densidade dos agregados do solo",
+        "densidade das partículas (solo)"
       ]
     }
   },
@@ -12817,6 +13207,9 @@
       ],
       "es": [
         "Yeso"
+      ],
+      "pt": [
+        "gesso"
       ]
     }
   },
@@ -12860,6 +13253,10 @@
       "es": [
         "Conductividad hidráulica",
         "Conductividad hidráulica del suelo"
+      ],
+      "pt": [
+        "condutividade hidráulica",
+        "condutividade hidráulica do solo"
       ]
     }
   },
@@ -12893,6 +13290,9 @@
         "Administración del suelo",
         "Ordenación de suelos",
         "Gestión del suelo"
+      ],
+      "pt": [
+        "preparação do solo"
       ]
     }
   },
@@ -13048,6 +13448,9 @@
       ],
       "es": [
         "Porosidad del suelo"
+      ],
+      "pt": [
+        "porosidade do solo"
       ]
     }
   },
@@ -14100,6 +14503,11 @@
       "es": [
         "Propiedad físico - química suelo",
         "Propiedades físicas del suelo"
+      ],
+      "pt": [
+        "propriedade físico-química do solo",
+        "propriedade químico-física do solo",
+        "propriedade física do solo"
       ]
     }
   }
