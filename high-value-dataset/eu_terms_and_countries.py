@@ -178,13 +178,11 @@ DEFAULT_SCOPE_TAG_FOR_VALUES = frozenset({
 # ``global warming``, ``global change``, ``global fire risk``, ``worldwide leaf
 # economics spectrum``. ``global``/``worldwide`` in such a phrase is not a
 # multi-country scope signal (see ADR 0002). Used by :mod:`mcf_parser` to mask
-# these phrases before broad-term matching, so a genuine ``global`` elsewhere in
-# the same title (``"Global Soil Erosion and Global Warming Potential"``) still
-# fires. High-precision, deliberately narrow; ambiguous collocations
+# these phrases before broad-term matching.
 DEFAULT_GLOBAL_THEMATIC_MODIFIERS = frozenset({
     "warming", "change", "changes", "environmental", "fire", "fires",
     "radiation", "greenhouse", "methane", "nitrous",
     "biogeochemical", "biogeochemistry", "dilemma", "leaf", "leaves",
     "economy", "economic", "temperature", "temperatures",
-    "dimming", "stabilization", "burned", "burning",
+    "dimming", "stabilization", "burned", "burning", "soil"
 })

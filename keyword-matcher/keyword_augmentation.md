@@ -1,22 +1,22 @@
 # Keyword-Matcher and Keyword-Extractor
 
 ## Objective
-To harmonize metatdata keywords by a vocabulary for a better findability.
-
-### Catalogue
-Use of keyword-augmentation in catalogue: facet search, augmented keywords field (pictures).
-
-### Soilvoc
-why use soilvoc: controlled list, cover concepts of soil phenomena, linked with other vocabs for synonyms, definitions support semantic match.
+To extract and harmonize keywords (subjects) in metadata for improved findability.
 
 ## Architecture
 
 ### Database structure
 
 ### Workflow:
-keyword-matcher: subjects (label, url) - vocab (label, borrowed label, mt-label, definition)
 
-keyword-extractor: records (title, abstract) - vocab (label)
+#### Keyword matcher
+
+For each keyword or subject in a record, identify if it matches with a keyword from a preselected list of relevant terms (SoilVoc).
+Matching is based on label translation, synonyms, sameAs/closeMatch/exactMatch relationships.
+
+#### Keyword extractor 
+
+The textual content of the record (title, abstract, full text) is analysed to extract relevant keywords from a preselected list of relevant terms (SoilVoc).
 
 ## Methods exploration: keyword-matcher
 V1.0 (current status):\
