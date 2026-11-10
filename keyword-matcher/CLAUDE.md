@@ -7,10 +7,64 @@ keeps a plain fuzzy match; the other three add a cross-encoder re-ranking stage
 on top of that idea (the last also feeds the CE concept *definitions*). None
 touch the database; all read/write local CSVs only.
 
+## Vocabulary build — `get_thesaurus.py`
+
+Builds `concepts.json` from the **remote** SoilVoc
+(`https://raw.githubusercontent.com/soilwise-he/soil-vocabs/main/SoilVoc.ttl`,
+parsed directly by rdflib). The local `vocabs/SoilVoc.ttl` is an older snapshot
+(1048 concepts) and is no longer read by this script; the remote version has
+1572 concepts, 1323 after the procedure filter, and ~4x as many AgroVoc
+exactMatch links (521 vs 120). If the file is unreachable (HTTP error, DNS,
+timeout) or fails to parse, the script logs the error and exits with status 1
+before touching `concepts.json`. Run from the repo root
+(`.venv/bin/python keyword-matcher/get_thesaurus.py`; paths are root-relative).
+
+- **Procedures are excluded:** concepts also typed `sosa:Procedure` (249 lab
+  methods such as `ExchAcid_ph0-kcl1m`, label = method code) are filtered out
+  in the SPARQL query.
+- `uris` holds both `skos:exactMatch` and `skos:closeMatch` URIs (used by URL
+  match).
+- ISO 11074 labels come from the local `vocabs/ISO11074v2025.ttl`, the 2025
+  edition that SoilVoc links to (`…/ncl/ISO11074v2025/3.306`). It was downloaded
+  from the namespace URI (`curl -L -H "Accept: text/turtle"
+  https://data.geoscience.earth/ncl/ISO11074v2025`) and replaced the older
+  `ISO11074.ttl`, which used incompatible numbering (`…/ncl/ISO11074/5.2.4`).
+  The 2025 edition has **en and fr labels only** (the old one also had de).
+- Multilingual labels are fetched from AgroVoc (remote) and ISO 11074 (local)
+  for **both exactMatch and closeMatch URIs**. An exactMatch-only variant was
+  tried and reverted: it dropped 205 labels across 16 concepts. Some of those
+  were false synonyms (soil productivity ← "soil fertility", soil cohesion ←
+  "soil texture"), but about half were good ones (micronutrients ← "trace
+  elements", soil formation ← "soil genesis", inundation ← "flooding") that
+  would otherwise depend on the fuzzy/semantic stages.
+- **AgroVoc pacing:** every request waits `AGROVOC_DELAY_S = 0.3` s and 429s
+  are retried with exponential backoff (`AGROVOC_RETRIES = 5`). If any URI
+  still fails, the script logs it and exits **without writing `concepts.json`**
+  (a run without pacing hit 78 x 429 out of ~560 requests). A full run takes
+  ~3.5 min.
+- **Current `concepts.json` (2026-11-10):** 1323 concepts, 5766 labels.
+  Labels / concepts covered per language: en 2056 / 1323 (100%), fr 810 / 566
+  (43%), es 774 / 561 (42%), de 763 / 538 (41%), it 732 / 535 (40%), pt 597 /
+  438 (33%), nl 34 / 34 (3%).
+- **Known, accepted: label overlaps across concepts.** 171 labels (all
+  languages) belong to more than one concept, in 33 concept groups:
+  - 85 labels / 23 groups are soil-classification parallels: one AgroVoc
+    concept is linked from SoilVoc's FAO, WRB and USDA variants (e.g.
+    `acrisols` → AcrisolsFAO / AcrisolsWRB).
+  - The rest are SoilVoc splitting one AgroVoc concept in two, with the
+    close/exactMatch side carrying the other concept's labels, e.g. `soil
+    texture` (SoilCohesion / SoilTexture), `soil quality` (SoilHealth /
+    SoilQuality), `runoff` (Runoff / SurfaceRunoff), SoilMicrofauna /
+    SoilMicroorganisms (24 labels).
+  `match.py` takes the first concept in file order, so these can resolve to
+  the less specific concept. Possible fixes if it matters: drop fetched labels
+  that equal another concept's SoilVoc pref/altLabel, or allowlist which
+  closeMatch links contribute labels.
+
 ## Task
 
 Match harvested subject keywords to a controlled vocabulary
-(~1048 concepts, labels in en/de/nl/it/fr/es). Each experiment runs the same
+(1323 concepts, labels in en/fr/de/it/es/pt/nl). Each experiment runs the same
 cascade — cheap exact steps first, then a semantic stage — and labels every
 match with the method that produced it.
 
@@ -142,7 +196,8 @@ than the phrase-vs-phrase pairs the other two CE scripts feed it. Method label:
   logic itself over `SoilVoc_skosmos.ttl` in the folder: SPARQL for concepts,
   en pref/altLabels, `skos:definition` and exact/close match URIs, then fetches
   multilingual labels from **AgroVoc** (remote SPARQL) and **ISO 11074** (local
-  `../vocabs/ISO11074.ttl`). Definitions are blank nodes — the query traverses
+  `../vocabs/ISO11074v2025.ttl`), from both exact and closeMatch URIs as
+  `get_thesaurus.py` does. Definitions are blank nodes — the query traverses
   `skos:definition/rdf:value` — and `clean_definition()` strips the trailing
   `Source: …` citation tail.
 - **Cache:** the built vocabulary is written to `enriched_concepts.json`
@@ -188,3 +243,12 @@ than the phrase-vs-phrase pairs the other two CE scripts feed it. Method label:
   are guesses. The intended next step is ~150–200 hand-labelled subjects to set
   them from a real precision/recall curve and to compare the experiments
   fairly. Until then, treat the outputs as exploratory, not validated.
+  `enriched-ce-testing/keyword_extraction_review_subjects.csv`
+  (`subject_label, concept_uri`) looks like a start on this; no script reads it yet.
+- The closeMatch trade-off figures above (205 labels / 16 concepts) were
+  measured on the old local SoilVoc (1048 concepts), before the switch to the
+  remote one. `enriched-ce-testing/` builds its own vocabulary from its own TTL
+  and has neither the remote source nor the procedure filter.
+- **`enriched-ce-testing/enriched_concepts.json` predates the ISO 2025 file.**
+  Its TTL links to the v2025 namespace, so the cached vocabulary has no ISO
+  labels; delete the cache to rebuild with them.

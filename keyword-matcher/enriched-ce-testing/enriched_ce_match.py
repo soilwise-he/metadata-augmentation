@@ -15,7 +15,7 @@ Workflow:
          - SPARQL over SoilVoc_skosmos.ttl for concepts, en pref/alt labels,
            definitions (blank node -> rdf:value) and exact/close match URIs.
          - For AgroVoc / ISO11074 match URIs, fetch multilingual labels
-           (AgroVoc: remote SPARQL endpoint; ISO: local ../vocabs/ISO11074.ttl).
+           (AgroVoc: remote SPARQL endpoint; ISO: local ../vocabs/ISO11074v2025.ttl).
          - Attach enriched_text and has_definition to each concept.
     1. URL match        -> subject URI looked up in the concept match URIs.
     2. Exact label       -> subject label equals a concept label
@@ -63,7 +63,7 @@ from sentence_transformers import SentenceTransformer, CrossEncoder, util
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SOILVOC_TTL_PATH = os.path.join(HERE, "SoilVoc_skosmos.ttl")
-ISO_TTL_PATH = os.path.join(HERE, "..", "vocabs", "ISO11074.ttl")
+ISO_TTL_PATH = os.path.join(HERE, "..", "vocabs", "ISO11074v2025.ttl")
 SUBJECTS_PATH = os.path.join(HERE, "subjects.csv")
 OUTPUT_PATH = os.path.join(HERE, "enriched_ce_match_res.csv")
 CONCEPTS_CACHE_PATH = os.path.join(HERE, "enriched_concepts.json")

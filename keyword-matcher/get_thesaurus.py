@@ -1,12 +1,46 @@
 # get concepts from soil-health knowledge graph and :
-# attach the exactMatch Agrovoc and iso urls;
-# attach labels (en, fr, de, it, es)
+# attach the exactMatch and closeMatch Agrovoc and iso urls;
+# attach labels (en, fr, de, it, es, nl, pt) from both exactMatch and closeMatch urls
 
 import sys
 sys.path.append('utils')
 from sparql import sparqlLocal, sparqlRemote
 import json
+import logging
+import time
+import urllib.request
+import urllib.error
 from collections import Counter
+from rdflib import Graph
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+logger = logging.getLogger(__name__)
+
+SOILVOC_URL = "https://raw.githubusercontent.com/soilwise-he/soil-vocabs/main/SoilVoc.ttl"
+
+AGROVOC_DELAY_S = 0.3   # pause before every AgroVoc request
+AGROVOC_RETRIES = 5     # retry waits: 2.4, 4.8, 9.6, 19.2 s
+AGROVOC_FAILED = []     # URIs still failing after all retries
+
+
+def fetchSoilVoc(url, timeout=60):
+    """
+    Download the SoilVoc TTL as text. If the file is unreachable (network error,
+    HTTP error, timeout), log the error and exit: building concepts.json without
+    the source vocabulary would only produce an empty or broken file.
+    """
+    try:
+        with urllib.request.urlopen(url, timeout=timeout) as resp:
+            ttl = resp.read().decode("utf-8")
+    except urllib.error.HTTPError as e:
+        logger.error(f"SoilVoc unreachable at {url}: HTTP {e.code} {e.reason}")
+        sys.exit(1)
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        reason = getattr(e, "reason", e)
+        logger.error(f"SoilVoc unreachable at {url}: {reason}")
+        sys.exit(1)
+    logger.info(f"Fetched SoilVoc from {url} ({len(ttl)} bytes)")
+    return ttl
 
 
 def searchAgro(ag_uri):
@@ -22,12 +56,20 @@ def searchAgro(ag_uri):
         {{ <{ag_uri}> skos:altLabel ?label }}  
     }}
     '''
-    res = sparqlRemote(endpoint, sparql)
-    return res
+    # AgroVoc returns HTTP 429 under load and sparqlRemote returns None on any error,
+    # so pace every request and retry failures with exponential backoff
+    for attempt in range(AGROVOC_RETRIES):
+        time.sleep(AGROVOC_DELAY_S if attempt == 0 else AGROVOC_DELAY_S * 2 ** (attempt + 2))
+        res = sparqlRemote(endpoint, sparql)
+        if res is not None:
+            return res
+    logger.error(f"AgroVoc lookup failed after {AGROVOC_RETRIES} attempts: {ag_uri}")
+    AGROVOC_FAILED.append(ag_uri)
+    return None
 
 def searchIso(iso_uri):
     # query the iso11074 by an iso uri, to get prelabels and altLabels
-    iso_path = "keyword-matcher/vocabs/ISO11074.ttl"
+    iso_path = "keyword-matcher/vocabs/ISO11074v2025.ttl"
     sparql = f'''
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
@@ -43,7 +85,7 @@ def searchIso(iso_uri):
     res = sparqlLocal(iso_path, sparql,"ttl")
     return res
 
-# print(searchIso("https://data.geoscience.earth/ncl/ISO11074/7.1.5"))
+# print(searchIso("https://data.geoscience.earth/ncl/ISO11074v2025/3.306"))
 
 
 def processLabels(res, mode, langs):
@@ -137,24 +179,40 @@ def remove_redun_cons(concepts):
     return concepts
 
 def main():
+    # SoilVoc is read from its GitHub repo (raw file URL); exits if unreachable
     # Change below to a remote sparql query when the KG updated to triple store
-    kg_path = "./keyword-matcher/vocabs/SoilVoc.ttl"
+    kg_ttl = fetchSoilVoc(SOILVOC_URL)
 
     # Query for all concepts with their labels, exact matches, and close matches
     # Removed DISTINCT to allow duplicates when a concept has multiple matches
+    # Procedures (sosa:Procedure, e.g. lab methods like "ExchAcid_ph0-kcl1m") are
+    # also typed skos:Concept but are not subject keywords, so exclude them
     query = '''
     prefix skos: <http://www.w3.org/2004/02/skos/core#>
+    prefix sosa: <http://www.w3.org/ns/sosa/>
     SELECT ?concept ?label ?alt_label ?exact_match_uri ?close_match_uri
     WHERE {
         ?concept a skos:Concept;
                 skos:prefLabel ?label.
+        FILTER NOT EXISTS { ?concept a sosa:Procedure }
         OPTIONAL { ?concept skos:altLabel ?alt_label }
         OPTIONAL { ?concept skos:exactMatch ?exact_match_uri }
         OPTIONAL { ?concept skos:closeMatch ?close_match_uri }
     }
     '''
 
-    kg_concs = sparqlLocal(kg_path, query, "ttl")
+    # Parse the downloaded text with data= (sparqlLocal would treat it as a file path)
+    try:
+        g = Graph()
+        g.parse(data=kg_ttl, format="turtle")
+        results = g.query(query)
+    except Exception as e:
+        logger.error(f"SoilVoc fetched but could not be parsed/queried: {e}")
+        sys.exit(1)
+    kg_concs = [
+        {str(var): str(row[var]) for var in results.vars if row[var] is not None}
+        for row in results
+    ]
     langs = ["en", "fr", "de", "it", "es", "nl", "pt"]
 
     # Initialize a list to hold formatted concepts
@@ -221,14 +279,14 @@ def main():
             # Add URI to the list if not already present
             if uri not in existing_concept["uris"]:
                 existing_concept["uris"].append(uri)
-                
+
                 # Query for labels based on URI type
                 if uri.startswith("http://aims.fao.org/aos/agrovoc"):
                     res_agro = searchAgro(uri)
                     if res_agro is not None:
                         lab_dict = processLabels(res_agro, 1, langs)
                         existing_concept["labels"] = mergeLabels(existing_concept["labels"], lab_dict)
-                        
+
                 elif uri.startswith("https://data.geoscience.earth/ncl/ISO11074"):
                     res_iso = searchIso(uri)
                     if res_iso is not None:
@@ -237,6 +295,10 @@ def main():
 
     print(f"Total concepts: {len(formatted_cons)}")
 
+    # Don't write a vocabulary with silently missing AgroVoc labels; re-run instead
+    if AGROVOC_FAILED:
+        logger.error(f"{len(AGROVOC_FAILED)} AgroVoc lookups failed; concepts.json NOT updated. Re-run to retry.")
+        sys.exit(1)
 
     # Save the concepts to JSON file
     with open("./keyword-matcher/concepts.json", "w", encoding='utf-8') as json_file:
