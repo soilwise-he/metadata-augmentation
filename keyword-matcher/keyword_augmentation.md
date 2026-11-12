@@ -1,7 +1,7 @@
 # Keyword-Matcher and Keyword-Extractor
 
 ## Objective
-To extract and harmonize keywords (subjects) in metadata for improved findability.
+The objective is to make records in the soilwise metadata catalogue more FAIR (Findable, Accessible, Interoperable and Reusable) by linking their subject metadata to standard vocabularies such as [SoilVoc](https://w3id.org/eusoilvoc). The keyword matcher aligns keywords already present in a record with relevant SoilVoc concepts, while the keyword extractor identifies relevant concepts from the record’s text when subject metadata is missing or incomplete.
 
 ## Architecture
 
