@@ -1,21 +1,84 @@
-source_label,target_label
-https://creativecommons.org/licenses/by-sa/4.0/deed.sk,cc-by-sa
-Embargo,Restricted
-https://creativecommons.org/licenses/by/4.0/,cc-by
-http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply,cc-0
-http://creativecommons.org/publicdomain/zero/1.0/deed.nl,cc-0
-not available,Restricted
-Restricted,Restricted
-https://creativecommons.org/licenses/by/3.0/legalcode.it,cc-by
-https://geoportail.wallonie.be/files/documents/ConditionsSPW/DataSPW-CGA.pdf,
-http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/conditionsUnknown,Unknown
-https://creativecommons.org/publicdomain/zero/1.0/,cc-0
-,
-https://geoportale.regione.emilia-romagna.it/approfondimenti/licenze/utilizzo-ristretto-dei-dati,Restricted
-https://geoportail.wallonie.be/files/documents/ConditionsSPW/LicServicesSPW.pdf,
-https://data.norge.no/nlod/no/2.0,cc-by
-Open Access,cc-by
-http://creativecommons.org/licenses/by/4.0/deed.nl,cc-by
-https://opendata.swiss/en/terms-of-use/#terms_by,cc-by
-https://opendata.swiss/en/terms-of-use/#terms_open,cc-0
-Closed Access,Restricted
+source_label,target_license,target_license_class
+https://creativecommons.org/licenses/by/4.0/,CC-BY-4.0,open
+https://creativecommons.org/licenses/by/4.0/deed.ja,CC-BY-4.0,open
+https://creativecommons.org/licenses/by/4.0/deed.en_GB,CC-BY-4.0,open
+http://creativecommons.org/licenses/by/4.0/deed.uk,CC-BY-4.0,open
+https://creativecommons.org/licenses/by/4.0/deed.es_ES,CC-BY-4.0,open
+http://creativecommons.org/licenses/by/4.0/deed.nl,CC-BY-4.0,open
+https://creativecommons.org/licenses/by/4.0/?utm_source=chatgpt.com,CC-BY-4.0,open
+https://creativecommons.org/licenses/by/3.0/legalcode.it,CC-BY-3.0,open
+https://creativecommons.org/licenses/by/3.0/nl/legalcode,CC-BY-3.0-NL,open
+https://creativecommons.org/licenses/by-sa/4.0/deed.sk,CC-BY-SA-4.0,open
+https://spdx.org/licenses/CC-BY-SA-4.0,CC-BY-SA-4.0,open
+https://creativecommons.org/licenses/by-nc/4.0/deed.es,CC-BY-NC-4.0,open-restricted
+https://creativecommons.org/licenses/by-nc-nd/3.0/cr/,CC-BY-NC-ND-3.0,open-restricted
+https://creativecommons.org/publicdomain/zero/1.0/,CC0-1.0,open
+http://creativecommons.org/publicdomain/zero/1.0/deed.nl,CC0-1.0,open
+https://creativecommons.org/public-domain/cc0/,CC0-1.0,open
+CC BY,CC-BY,open
+CC BY SA,CC-BY-SA,open
+CC BY ND,CC-BY-ND,open-restricted
+CC BY NC,CC-BY-NC,open-restricted
+CC BY NC SA,CC-BY-NC-SA,open-restricted
+CC BY NC ND,CC-BY-NC-ND,open-restricted
+CC 0,CC0-1.0,open
+PDM,CC-PDM-1.0,open
+https://opendatacommons.org/licenses/by/1-0/,ODC-By-1.0,open
+https://opendatacommons.org/licenses/pddl/1-0/,PDDL-1.0,open
+http://www.opendefinition.org/licenses/odc-odbl,ODbL-1.0,open
+http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/,OGL-UK-3.0,open
+http://open.canada.ca/en/open-government-licence-canada,OGL-Canada-2.0,open
+https://data.norge.no/nlod/no/2.0,NLOD-2.0,open
+https://www.apache.org/licenses/LICENSE-2.0.html,Apache-2.0,open
+http://www.apache.org/licenses/LICENSE-2.0,Apache-2.0,open
+https://opensource.org/licenses/MIT,MIT,open
+https://www.gnu.org/licenses/gpl-3.0-standalone.html,GPL-3.0-only,open
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html,GPL-2.0-only,open
+https://opendata.swiss/en/terms-of-use/#terms_by,provider-specific,open
+https://opendata.swiss/en/terms-of-use/#terms_open,provider-specific,open
+http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply,no-conditions,open
+Open Access,open-access,open
+http://rightsstatements.org/vocab/InC/1.0/,InC,restricted
+http://rightsstatements.org/page/InC-NC/1.0/,InC-NC,restricted
+https://www.rioxx.net/licenses/all-rights-reserved/,all-rights-reserved,restricted
+taverne,taverne,restricted
+Embargo,embargo,restricted
+Closed Access,closed-access,restricted
+Restricted,restricted,restricted
+not available,,restricted
+https://geoportale.regione.emilia-romagna.it/approfondimenti/licenze/utilizzo-ristretto-dei-dati,provider-specific,restricted
+Elsevier TDM,provider-specific,restricted
+Elsevier Non-Commercial,provider-specific,restricted
+Wiley TDM,provider-specific,restricted
+Wiley Online Library User Agreement,provider-specific,restricted
+Springer TDM,provider-specific,restricted
+Springer Nature TDM,provider-specific,restricted
+Emerald Insight TDM,provider-specific,restricted
+Emerald Insight Site Policies,provider-specific,restricted
+ASM Journals Non-Commercial TDM,provider-specific,restricted
+CSP TDM,provider-specific,restricted
+https://journals.sagepub.com/page/policies/text-and-data-mining-license,provider-specific,restricted
+https://doi.org/10.1080/policies-text-data-mining,provider-specific,restricted
+IEEE Copyright,provider-specific,restricted
+Cambridge Core User Agreement,provider-specific,restricted
+OUP Standard Publication Reuse,provider-specific,restricted
+Royal Society of Chemistry Licence to Publish,provider-specific,restricted
+http://rsc.li/journals-terms-of-use#chorus,provider-specific,restricted
+https://royalsociety.org/-/media/journals/author/Licence-to-Publish-20062019-final.pdf,provider-specific,restricted
+https://publishingsupport.iopscience.iop.org/iop-standard/v1,provider-specific,restricted
+https://publishingsupport.iopscience.iop.org/questions/alternative-author-rights-policies/,provider-specific,restricted
+https://www.acm.org/publications/policies/copyright_policy#Background,provider-specific,restricted
+APS Licenses for Journal Article Re-use,provider-specific,restricted
+http://www.ametsoc.org/PUBSReuseLicenses,provider-specific,restricted
+http://www.bioone.org/page/resources/researchers/rights_and_permissions,provider-specific,restricted
+Trans Tech Publications Copyright and Content Usage Policy,provider-specific,restricted
+http://aspb.org/publications/aspb-journals/open-articles,provider-specific,restricted
+STM Policy #29,provider-specific,restricted
+https://doi.org/10.15223/policy-001,provider-specific,restricted
+https://doi.org/10.1071/journalslicense,provider-specific,restricted
+Royal Society Data Sharing and Accessibility,provider-specific,unknown
+https://ijsrst.com/index.php/home/publication-access,provider-specific,unknown
+https://ijsrst.com/home/publication-access,provider-specific,unknown
+https://geoportail.wallonie.be/files/documents/ConditionsSPW/DataSPW-CGA.pdf,provider-specific,unknown
+https://geoportail.wallonie.be/files/documents/ConditionsSPW/LicServicesSPW.pdf,provider-specific,unknown
+http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/conditionsUnknown,,unknown
