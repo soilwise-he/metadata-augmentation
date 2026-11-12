@@ -14,6 +14,41 @@ The objective is to make records in the soilwise metadata catalogue more FAIR (F
 For each keyword or subject in a record, identify if it matches with a keyword from a preselected list of relevant terms (SoilVoc).
 Matching is based on label translation, synonyms, sameAs/closeMatch/exactMatch relationships.
 
+
+```mermaid
+flowchart TD
+    S(["Subject keyword<br/>(URI and/or label)"]) --> U{"Has a URI?"}
+
+    U -- yes --> UM{"URI in a concept's<br/>skos:exactMatch / closeMatch URIs?"}
+    UM -- yes --> M100["Match<br/>score = 100"]
+    UM -- no --> L
+    U -- no --> L
+
+    L{"Has a label?<br/>(after stripping numeric prefix,<br/>e.g. '106022 mikrobiologie')"}
+    L -- no --> NM(["No match<br/>score = NULL"])
+    L -- yes --> E{"Label equals a concept label?<br/>(case-insensitive, any language:<br/>en, fr, de, it, es, pt, nl)"}
+    E -- yes --> M100
+
+    E -- no --> R["Retrieve: bi-encoder embeds the label,<br/>top 15 nearest concept labels (all languages)"]
+    R --> F["Keep candidates with cosine ≥ 0.40,<br/>best label per concept"]
+    F --> C{"Any candidates left?"}
+    C -- no --> NM
+    C -- yes --> X["Rerank: cross-encoder scores each pair<br/>(subject label, concept passage)<br/>passage = 'label: definition', or label only"]
+    X --> B["Pick the candidate with the<br/>highest cross-encoder score (0–1)"]
+    B --> T{"Score ≥ 0.60?"}
+    T -- yes --> MCE["Match<br/>score = round(score × 100)"]
+    T -- no --> NM
+
+    M100 --> O(["Output: concept ID +<br/>primary label (English first)"])
+    MCE --> O
+
+    classDef match fill:#d4edda,stroke:#2e7d32,color:#1b1b1b;
+    classDef nomatch fill:#f8d7da,stroke:#c62828,color:#1b1b1b;
+    class M100,MCE,O match;
+    class NM nomatch;
+```
+
+
 #### Keyword extractor 
 
 The textual content of the record (title, abstract, full text) is analysed to extract relevant keywords from a preselected list of relevant terms (SoilVoc).
