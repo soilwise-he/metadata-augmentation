@@ -114,10 +114,36 @@ root: `.venv/bin/python keyword-matcher/match.py` (needs `.env` with the
   ONNX/quantized cross-encoder.
 - **No intermediate commits:** all pairs are scored in one `predict()` and
   inserted in one `insertBulkSQL` at the end; a crash mid-run loses the whole
-  run. Chunking (score + insert per ~2000 subjects) is a possible improvement.
-- **Full re-run on 2026-11-12:** `keyword_match` was emptied and `match.py`
-  started over all 42,085 subjects. Older rows from the previous matcher held
-  `fuzz.ratio` scores (80–100) and NULL for URL matches.
+  run. The DB is reached through `kubectl port-forward service/soilwise-postgis
+  15432:5432`, which **drops during long runs** (it did during the 3 h full
+  run). `keyword_match_log.csv` is written *before* the insert, so a failed
+  insert can be recovered from it (see below). Fix candidates: reconnect right
+  before the insert, or score + insert per ~2000 subjects.
+  Also note `insertBulkSQL` prints and swallows errors — check the row count
+  afterwards.
+- **Full re-run on 2026-11-12:** `keyword_match` was emptied (older rows from
+  the previous matcher held `fuzz.ratio` scores 80–100 and NULL for URL
+  matches) and `match.py` re-run over all subjects:
+  | batch (`process_time`, UTC) | subjects | matched |
+  |---|---|---|
+  | 12:59:16 — full run | 42,085 | 4,500 (998 exact, 75 URL, 3,427 CE) |
+  | 13:12:29 — arrived during the full run | 1,702 | 325 (186 exact, 139 CE) |
+  | 13:22:46 — arrived after | 867 | 24 (3 exact, 21 CE) |
+  | **total** | **44,654** | **4,849 (10.9%)** |
+  The first batch's insert failed (port-forward down after 2 h 58 min of
+  matching); its rows were loaded from `keyword_match_log.csv` with the same
+  `insertBulkSQL` call and the original `process_time`, after checking the table
+  was still empty. Final state: one row per subject, none unprocessed.
+  1,641 rows of the first batch have score 100 but only 1,073 are URL/exact —
+  568 CE matches rounded up from ≥ 0.995 (16 more in the second batch). Capping
+  CE scores at 99 would keep 100 unambiguous.
+- **`keyword_match_log.csv` is appended per run**, so it now holds all three
+  batches; filter on `process_time`.
+- **`mv_records`** reads only `km.vocab_label` from this table; if it is
+  materialized it needs a refresh before the catalogue shows new matches.
+- **Analysis snapshots** of the table go in `keyword-matcher/analysis/`, named
+  `keyword_match_pairs_<YYYY-MM-DD>.csv` (matched pairs only) or
+  `keyword_match_results_<YYYY-MM-DD>.csv` (including no-match rows).
 - **Known issue showing up in production:** label overlaps across concepts
   (see the vocabulary section above) — e.g. `Soil texture` exact-matches
   *soil cohesion* with score 100.
