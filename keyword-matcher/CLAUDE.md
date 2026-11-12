@@ -1,8 +1,9 @@
 # Keyword matcher — experiments
 
-Production matcher is `match.py` (URL match → fuzzy label match, writes to the
-`metadata.keyword_match` table). The folders below are **offline testing
-experiments**. The first enriches the vocabulary with machine translation and
+Production matcher is `match.py` (URL match → exact label match → embedding
+retrieval + cross-encoder rerank, ported from `enriched-ce-testing/`; writes to
+the `metadata.keyword_match` table — see the `match.py` section below). The
+folders below are **offline testing experiments**. The first enriches the vocabulary with machine translation and
 keeps a plain fuzzy match; the other three add a cross-encoder re-ranking stage
 on top of that idea (the last also feeds the CE concept *definitions*). None
 touch the database; all read/write local CSVs only.
@@ -37,6 +38,17 @@ before touching `concepts.json`. Run from the repo root
   "soil texture"), but about half were good ones (micronutrients ← "trace
   elements", soil formation ← "soil genesis", inundation ← "flooding") that
   would otherwise depend on the fuzzy/semantic stages.
+- **Definitions (same shape as `enriched-ce-testing/enriched_concepts.json`):**
+  each concept also gets `definition` (string or `null`), `enriched_text`
+  (`"{primary_en_label}: {definition}"`, or the bare primary label) and
+  `has_definition`. Definitions are SoilVoc `skos:definition/rdf:value` blank
+  nodes (English only), cleaned with `clean_definition()` (whitespace collapsed,
+  trailing `Source: …` stripped). **At most one per concept:** 32 concepts have
+  2–3; the one written first in the TTL is kept (rdflib loses triple order, so
+  `getDefinitions()` recovers it from the value's position in the raw text).
+  Fetched in a separate query so it doesn't multiply the label/match cross
+  product. Coverage: 751/1323 concepts (57%). Other `concepts.json` readers only
+  use `identifier`/`uris`/`labels`, so the extra keys are harmless.
 - **AgroVoc pacing:** every request waits `AGROVOC_DELAY_S = 0.3` s and 429s
   are retried with exponential backoff (`AGROVOC_RETRIES = 5`). If any URI
   still fails, the script logs it and exits **without writing `concepts.json`**
@@ -60,6 +72,55 @@ before touching `concepts.json`. Run from the repo root
   the less specific concept. Possible fixes if it matters: drop fetched labels
   that equal another concept's SoilVoc pref/altLabel, or allowlist which
   closeMatch links contribute labels.
+
+## Production matcher — `match.py`
+
+Since 2026-11-12 it runs the `enriched-ce-testing/` cascade against the live
+database, replacing the old URL → `fuzz.ratio ≥ 80` matcher. Run from the repo
+root: `.venv/bin/python keyword-matcher/match.py` (needs `.env` with the
+`POSTGRES_*` settings).
+
+- **Input:** subjects in `metadata.subjects` with no row in
+  `metadata.keyword_match` yet (`NOT EXISTS` filter), and the vocabulary from
+  `keyword-matcher/concepts.json` (uses its `enriched_text`). It does **not**
+  build its own vocabulary from a TTL, unlike `enriched-ce-testing/`.
+- **Cascade:** 1) URL match, 2) exact label match (case-insensitive, any
+  language, numeric prefix stripped), 3) bi-encoder retrieval over labels
+  (`TOP_K = 15`, `COSINE_FLOOR = 0.40`) → cross-encoder on
+  `(subject_label, enriched_text)`, accepted if `≥ CE_THRESHOLD = 0.60`. Models
+  and settings are the same as `enriched-ce-testing/`; the thresholds are still
+  unvalidated placeholders. A subject whose URI does not match now falls through
+  to the label steps (the old script stopped there). `vocab_label` is
+  `primary_label()` (English first), so concepts without an English label no
+  longer crash.
+- **Table unchanged, temporary score convention.** `fuzzymatch_score` is an
+  **integer** column, so it holds `100` for URL/exact matches,
+  `round(ce_score * 100)` for cross-encoder matches, and `NULL` for no match.
+  A raw 0–1 score would be rounded to 0/1 by Postgres. A cross-encoder score
+  ≥ 0.995 also stores 100, so the method can't be told apart in the table.
+  Unmatched subjects still get a row (NULL vocab) so they aren't reprocessed.
+  The table has no method column; it shows up only in the local log below.
+- **Local files (both in `keyword-matcher/`):** `concept_embeddings.npz`
+  (embedding cache, rebuilt automatically when the labels or model change) and
+  `keyword_match_log.csv` (appended each run: method, raw `ce_score` — also
+  sub-threshold — and the DB score per subject; disable with
+  `MATCH_LOG_PATH = None`). Write failures for either are logged, not fatal.
+- **Models load only if needed:** if every subject resolves by URL or exact
+  match, no model is loaded.
+- **Runtime (12-core CPU):** measured on 1000 random subjects: 265 s, 92% of it
+  cross-encoder scoring (~9 pairs/subject, ~35 pairs/s). A full run over all
+  42,085 subjects is **~3 h**. In the sample about 10% matched (2.7% exact,
+  6.9% cross-encoder). Speed levers: `COSINE_FLOOR`/`TOP_K` (fewer pairs), or an
+  ONNX/quantized cross-encoder.
+- **No intermediate commits:** all pairs are scored in one `predict()` and
+  inserted in one `insertBulkSQL` at the end; a crash mid-run loses the whole
+  run. Chunking (score + insert per ~2000 subjects) is a possible improvement.
+- **Full re-run on 2026-11-12:** `keyword_match` was emptied and `match.py`
+  started over all 42,085 subjects. Older rows from the previous matcher held
+  `fuzz.ratio` scores (80–100) and NULL for URL matches.
+- **Known issue showing up in production:** label overlaps across concepts
+  (see the vocabulary section above) — e.g. `Soil texture` exact-matches
+  *soil cohesion* with score 100.
 
 ## Task
 

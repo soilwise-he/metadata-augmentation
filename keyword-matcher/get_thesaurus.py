@@ -7,6 +7,7 @@ sys.path.append('utils')
 from sparql import sparqlLocal, sparqlRemote
 import json
 import logging
+import re
 import time
 import urllib.request
 import urllib.error
@@ -178,6 +179,56 @@ def remove_redun_cons(concepts):
     print(f"length of concepts after removing redun: {len(concepts)}")
     return concepts
 
+def clean_definition(text):
+    """Collapse whitespace and drop a trailing 'Source: ...' citation tail
+    (same cleaning as enriched-ce-testing/enriched_ce_match.py)."""
+    text = " ".join(text.split())
+    text = re.sub(r"\s*Source:\s.*$", "", text)
+    return text.strip()
+
+
+def getDefinitions(g, kg_ttl):
+    """
+    Return {concept_uri: definition} with at most one definition per concept.
+
+    Definitions are blank nodes (skos:definition [ rdf:value "..." ; dcterms:source ... ]);
+    plain-literal definitions are accepted too. When a concept has several, keep the
+    FIRST one as written in the SoilVoc TTL: rdflib does not preserve triple order, so
+    the order is recovered from each value's position in the raw TTL text (ties and
+    values not found verbatim, e.g. because of escapes, fall back to alphabetical).
+    """
+    query = '''
+    prefix skos: <http://www.w3.org/2004/02/skos/core#>
+    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    prefix sosa: <http://www.w3.org/ns/sosa/>
+    SELECT DISTINCT ?concept ?definition
+    WHERE {
+        ?concept a skos:Concept .
+        FILTER NOT EXISTS { ?concept a sosa:Procedure }
+        { ?concept skos:definition/rdf:value ?definition }
+        UNION
+        { ?concept skos:definition ?definition . FILTER(isLiteral(?definition)) }
+    }
+    '''
+    candidates = {}
+    for row in g.query(query):
+        candidates.setdefault(str(row.concept), []).append(str(row.definition))
+
+    def file_position(text):
+        pos = kg_ttl.find(text[:60])
+        return pos if pos >= 0 else len(kg_ttl)
+
+    definitions = {}
+    for concept, texts in candidates.items():
+        first = min(texts, key=lambda t: (file_position(t), t))
+        cleaned = clean_definition(first)
+        if cleaned:
+            definitions[concept] = cleaned
+    n_multi = sum(1 for t in candidates.values() if len(t) > 1)
+    print(f"Definitions: {len(definitions)} concepts ({n_multi} had several; kept the first)")
+    return definitions
+
+
 def main():
     # SoilVoc is read from its GitHub repo (raw file URL); exits if unreachable
     # Change below to a remote sparql query when the KG updated to triple store
@@ -213,6 +264,8 @@ def main():
         {str(var): str(row[var]) for var in results.vars if row[var] is not None}
         for row in results
     ]
+    # Separate query so definitions don't multiply the label/match cross product above
+    definitions = getDefinitions(g, kg_ttl)
     langs = ["en", "fr", "de", "it", "es", "nl", "pt"]
 
     # Initialize a list to hold formatted concepts
@@ -294,6 +347,16 @@ def main():
                         existing_concept["labels"] = mergeLabels(existing_concept["labels"], lab_dict)
 
     print(f"Total concepts: {len(formatted_cons)}")
+
+    # Attach the definition, same structure as enriched-ce-testing/enriched_concepts.json:
+    # enriched_text = "{primary_en_label}: {definition}", or the bare label without one
+    for con in formatted_cons:
+        en = con["labels"].get("en", [])
+        primary = en[0] if en else next((v[0] for v in con["labels"].values() if v), "")
+        definition = definitions.get(con["identifier"])
+        con["definition"] = definition
+        con["enriched_text"] = f"{primary}: {definition}" if definition else primary
+        con["has_definition"] = definition is not None
 
     # Don't write a vocabulary with silently missing AgroVoc labels; re-run instead
     if AGROVOC_FAILED:
